@@ -6918,28 +6918,28 @@
                 "instructor": "Mendez, J",
                 "locations": "B157 CRL\nB122 GCL",
                 "number": 1,
-                "times": "T 08:00 - 10:55\nF 09:00 - 09:55"
+                "times": "T 08:00 - 10:55\nF 13:00 - 13:55"
             },
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Mendez, J",
                 "locations": "B157 CRL\nB122 GCL",
                 "number": 2,
-                "times": "T 13:00 - 15:55\nF 09:00 - 09:55"
+                "times": "T 13:00 - 15:55\nF 13:00 - 13:55"
             },
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Mendez, J",
                 "locations": "B122 GCL\nB157 CRL",
                 "number": 3,
-                "times": "F 09:00 - 09:55\nW 13:00 - 15:55"
+                "times": "F 13:00 - 13:55\nW 13:00 - 15:55"
             },
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Mendez, J",
                 "locations": "B122 GCL\nB157 CRL",
                 "number": 4,
-                "times": "F 09:00 - 09:55\nR 08:00 - 10:55"
+                "times": "F 13:00 - 13:55\nR 08:00 - 10:55"
             }
         ],
         "units": [
