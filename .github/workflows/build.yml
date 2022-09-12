@@ -27,15 +27,12 @@ jobs:
 
     - name: Install dependencies
       run: npm install
-
-    - name: Build
-      run: npm run build
     
     - name: Deploy
       run: |
         git config --global user.name rchalamala
         git config --global user.email 22563365+rchalamala@users.noreply.github.com
-        git remote set-url origin https://${github_token}@github.com/${repository}
+        git remote set-url origin git@{github_token}@github.com/beavered
         npm run deploy
       env:
         user_name: 'github-actions[bot]'
