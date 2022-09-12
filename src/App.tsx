@@ -522,31 +522,30 @@ function App() {
               workspace, press the X button.
             </p>
             <p>
-              In addition, this scheduler features an{" "}
-              <em>automatic section selector</em> for your convenience. To use,
-              simply unlock any number of courses in the workspace.
-              This scheduler will then calculate all possible
-              arrangements of sections for which none of the unlocked
-              classes/sections will overlap. Use the left and right arrows to
-              navigate these sections.
-              The arrangements should automatically recalculate possible sections
-              every time you enable/disable, lock/unlock, or add/remove a class.
-              However, if a class is <em>locked</em>, we guarantee that the section
-              number will not be changed.
+              In addition, this scheduler features an <em>automatic section
+                selector</em> for your convenience. To use, simply unlock any
+              number of courses in the workspace. This scheduler will then
+              calculate all possible arrangements of sections for which none of
+              the unlocked classes/sections will overlap. Use the left and
+              right arrows to navigate these sections. The arrangements should
+              automatically recalculate possible sections every time you
+              enable/disable, lock/unlock, or add/remove a class. However, if a
+              class is <em>locked</em>, we guarantee that the section number
+              will not be changed.
             </p>
             <p>
-              You can also limit sections be time. Above the calendar, you can change the
-              allowed time range for any day of the week.
-              The course scheduler should respect these times, and it will not generate
-              arrangements with courses that start before the first time or end after the second.
+              You can also limit sections be time. Above the calendar, you can
+              change the allowed time range for any day of the week. The course
+              scheduler should respect these times, and it will not generate
+              arrangements with courses that start before the first time or end
+              after the second. Note: If has a course doesn't have a time
+              (marked as A), then the scheduler will leave it blank.
             </p>
             <p>
-              Note: If has a course doesn't have a time (marked as A), then the scheduler
-              will leave it blank.
-            </p>
-            <p>
-              We hope that this course schuduler makes your life easier!
-              You can find the source code <a href="https://github.com/rchalamala/beavered" target="_blank" rel="noreferrer">here</a>.
+              We hope that this course schuduler makes your life easier! You
+              can find the source code <a
+                href="https://github.com/rchalamala/beavered" target="_blank"
+                rel="noreferrer">here</a>.
             </p>
           </Modal>
         </div>
