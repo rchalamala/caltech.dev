@@ -61,5 +61,5 @@
     "@types/react-big-calendar": "^0.38.1",
     "gh-pages": "^4.0.0"
   },
-  "homepage": "http://rchalamala.github.io"
+  "homepage": "."
 }
