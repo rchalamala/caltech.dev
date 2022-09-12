@@ -546,7 +546,7 @@ function App() {
             </p>
             <p>
               We hope that this course schuduler makes your life easier!
-              You can find the source code <a href="https://github.com/" target="_blank" rel="noreferrer">here</a>.
+              You can find the source code <a href="https://github.com/rchalamala/beavered" target="_blank" rel="noreferrer">here</a>.
             </p>
           </Modal>
         </div>
