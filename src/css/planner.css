@@ -1,0 +1,33 @@
+.rbc-allday-cell {
+  display: none;
+}
+
+.rbc-time-view .rbc-header {
+  border-bottom: none;
+}
+
+.time-picker {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  max-width: 4rem;
+}
+
+.time-picker > input {
+  text-align: center;
+}
+
+.flatpickr-input {
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+}
+
+.time-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 65px;
+  margin-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

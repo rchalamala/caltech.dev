@@ -1,0 +1,50 @@
+body {
+  /* margin: 0; */
+  font-family: "ProximaSoft", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 0.9em; /* basically zooms out to 90% by default */
+  min-height: 100vh;
+}
+
+#column-container {
+  display: flex;
+  align-items: top;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  #column-container {
+    flex-direction: row;
+  }
+}
+
+.column {
+  flex: 1;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.sticky-help {
+  position: fixed;
+  z-index: 999;
+}
+
+.help-button {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  background-color: white;
+  border: none;
+  border-radius: 100px;
+}
+
+.help-button:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+}
