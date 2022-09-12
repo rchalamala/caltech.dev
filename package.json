@@ -1,7 +1,7 @@
 {
-  "name": "turtle-pond",
+  "name": "beavered",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "-": "^0.0.1",
     "@emotion/react": "^11.10.4",
@@ -19,7 +19,6 @@
     "@types/react-flatpickr": "^3.8.7",
     "@types/react-toggle": "^4.0.3",
     "fzf": "^0.5.1",
-    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-beautiful-dnd": "^13.1.1",
     "react-big-calendar": "^1.4.0",
@@ -59,8 +58,8 @@
     ]
   },
   "devDependencies": {
-    "@types/react-big-calendar": "^0.38.1"
+    "@types/react-big-calendar": "^0.38.1",
+    "gh-pages": "^4.0.0"
   },
-
-  "homepage": "rchalamala.github.io/beavered/"
+  "homepage": "http://rchalamala.github.io"
 }
