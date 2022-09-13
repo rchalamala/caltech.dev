@@ -95,9 +95,9 @@ li {
 .workspace-entries {
   display: flex;
   flex-direction: column;
-  height: calc(95vh - 220px);
   padding-top: 12px;
-  overflow-y: none;
+  overflow-y: unset;
+  max-height: auto;
 }
 
 
@@ -107,6 +107,7 @@ li {
   }
   .workspace-entries {
     overflow-y: auto;
+    max-height: calc(95vh - 220px);
   }
 }
 
