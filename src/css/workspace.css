@@ -88,6 +88,11 @@
   background-color: lightgrey;
 }
 
+.workspace-units {
+  padding-top: 8px;
+  padding-bottom: 14px;
+}
+
 li {
   list-style-type: none;
 }
