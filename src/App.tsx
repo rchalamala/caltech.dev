@@ -485,7 +485,6 @@ function App() {
   const { arrangements, arrangementIdx } = workspaces[workspaceIdx];
 
 
-  // TODO: refactor modal into a hook
   const [modalOpen, setModalOpen] = useState(false);
 
   return (

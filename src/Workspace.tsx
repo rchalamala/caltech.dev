@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { AppState } from "./App";
-import Modal from "./Modal";
+import Modal, { useModal, ModalProps } from "./Modal";
 import Select from "react-select";
 import { SingleValue } from "react-select";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
@@ -174,7 +174,7 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
                 isOpen={infoModalOpen}
                 onClose={() => setInfoModalOpen(false)}
               >
-              <AdvancedCourseInfo course={props.course} />
+                <AdvancedCourseInfo course={props.course} />
               </Modal>
               <SectionDropdown course={course} />
             </div>
@@ -346,7 +346,7 @@ export default function Workspace() {
     );
   };
 
-  const exportWorkspace = () => {
+  const [openExportModal, exportModal] = useModal(props => {
     const shortened = shortenCourses(state.courses).map(c => [
       c.courseId,
       c.enabled,
@@ -354,9 +354,17 @@ export default function Workspace() {
       c.sectionId,
     ]).flat()
     const code = window.btoa(JSON.stringify(shortened))
-    navigator.clipboard.writeText(code)
-    alert("Workspace code copied to clipboard.")
-  }
+    const copy = () => {
+      navigator.clipboard.writeText(code)
+    }
+    return (
+      <div>
+        <p>Your workspace code is:</p>
+        <p style={{wordBreak: "break-all"}}>{code}</p>
+        <button onClick={copy}>Copy to clipboard</button>
+      </div>
+    )
+  })
 
   const importWorkspace = () => {
     const code = prompt("Copy in the workspace code.") || ""
@@ -401,6 +409,7 @@ export default function Workspace() {
 
   return (
     <div className="workspace-wrapper">
+      {exportModal}
       <div className="workspace-switcher">
         {[0, 1, 2, 3, 4].map((idx) => {
           return (
@@ -424,7 +433,7 @@ export default function Workspace() {
         <button onClick={disableAllClasses}>Disable All</button>
         <button onClick={setDefaultSchedule}>Default Schedule</button>
         <button onClick={importWorkspace}>Import Workspace</button>
-        <button onClick={exportWorkspace}>Export Workspace</button>
+        <button onClick={openExportModal}>Export Workspace</button>
         <button onClick={removeAllClasses}>Remove All</button>
       </div>
       <div className="workspace-entries">
