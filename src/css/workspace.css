@@ -227,3 +227,31 @@ li {
   cursor: pointer;
   background-color: lightgrey;
 }
+
+.export-modal {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.export-modal > button {
+  margin: auto;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+}
+
+.export-modal > button:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+}
+
+.export-modal > p {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1.2em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75%;
+}

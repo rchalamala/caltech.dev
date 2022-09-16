@@ -367,7 +367,7 @@ export default function Workspace() {
       navigator.clipboard.writeText(code)
     }
     return (
-      <div>
+      <div className="export-modal">
         <p>Your workspace code is:</p>
         <p style={{wordBreak: "break-all"}}>{code}</p>
         <button onClick={copy}>Copy to clipboard</button>
