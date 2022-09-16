@@ -302,6 +302,15 @@ export default function Workspace() {
       />
     ));
 
+  let units = [0, 0, 0];
+  for (let i = 0; i < state.courses.length; ++i) {
+    if (state.courses[i].enabled) {
+      units[0] += state.courses[i].courseData.units[0];
+      units[1] += state.courses[i].courseData.units[1];
+      units[2] += state.courses[i].courseData.units[2];
+    }
+  }
+
   const removeAllClasses = () => {
     state.setCourses([]);
   };
@@ -436,6 +445,9 @@ export default function Workspace() {
         <button onClick={openExportModal}>Export Workspace</button>
         <button onClick={removeAllClasses}>Remove All</button>
       </div>
+      <b className="workspace-units">
+        {(units[0] + units[1] + units[2]) + ' units (' + units[0] + '-' + units[1] + '-' + units[2] + ')'}
+      </b>
       <div className="workspace-entries">
         {state.courses.length === 0 ? (
           <p style={{ margin: "auto" }}>
