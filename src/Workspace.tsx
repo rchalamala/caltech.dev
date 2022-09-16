@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { AppState } from "./App";
-import Modal, { useModal, ModalProps } from "./Modal";
+import Modal, { useModal } from "./Modal";
 import Select from "react-select";
 import { SingleValue } from "react-select";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
