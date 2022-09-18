@@ -135,7 +135,7 @@ li {
 
 .workspace-entry-locked {
   transition: background-color 0.2s ease;
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(241, 241, 241);
   /* background-color: rgb(238, 238, 110); */
 }
 

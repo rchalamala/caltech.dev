@@ -18,6 +18,7 @@
     "@types/react-dom": "^18.0.6",
     "@types/react-flatpickr": "^3.8.7",
     "@types/react-toggle": "^4.0.3",
+    "framer-motion": "^7.3.5",
     "fzf": "^0.5.1",
     "react": "^18.2.0",
     "react-beautiful-dnd": "^13.1.1",
@@ -59,7 +60,10 @@
   },
   "devDependencies": {
     "@types/react-big-calendar": "^0.38.1",
-    "gh-pages": "^4.0.0"
+    "autoprefixer": "^10.4.11",
+    "gh-pages": "^4.0.0",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
   },
   "homepage": "."
 }
