@@ -69,20 +69,29 @@ function SectionDropdown(props: { course: CourseStorage }) {
 function AdvancedCourseInfo(props: { course: CourseStorage }) {
 	const course = props.course.courseData;
 	return (
-		<div>
-			<b>{`${course.number}: ${course.name}`}</b>
-			<p>{course.description}</p>
-			<p>Prerequisites: {course.prerequisites || "None"}</p>
-			<p>
-				<a
-					href={course.link}
-					target="_blank"
-					rel="noreferrer"
-				>
-					TQFR rating
-				</a>
-				: {course.rating}
-			</p>
+		<div className="flex flex-col space-y-2">
+			<section>
+				<h2 className="font-bold text-lg">{`${course.number}: ${course.name}`}</h2>
+				<p>{course.description}</p>
+			</section>
+			<section>
+				<h2 className="font-bold text-lg">Prerequisites</h2>
+				<p>{course.prerequisites || "None"}</p>
+			</section>
+			<section>
+				<h2 className="font-bold text-lg">Rating</h2>
+				<p>
+					<a
+						className="text-orange-500 hover:underline font-bold"
+						href={course.link}
+						target="_blank"
+						rel="noreferrer"
+					>
+						TQFR rating
+					</a>
+					: {course.rating}
+				</p>
+			</section>
 		</div>
 	);
 }
