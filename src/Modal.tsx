@@ -71,19 +71,6 @@ function Modal({ isOpen, onClose, children }: ModalProps) {
 							</svg>
 						</motion.button>
 					</motion.div>
-					{/* <div
-						onClick={onClose}
-						className="modal-overlay"
-					/>
-					<div className="modal">
-						{children}
-						<button
-							style={{ margin: "auto" }}
-							onClick={onClose}
-						>
-							Close
-						</button>
-					</div> */}
 				</motion.div>
 			)}
 		</AnimatePresence>
