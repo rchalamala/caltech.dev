@@ -8,7 +8,7 @@ import { Fzf } from "fzf";
 import Toggle from "react-toggle";
 import Lock from "@mui/icons-material/Lock";
 import LockOpen from "@mui/icons-material/LockOpen";
-import RemoveIcon from "@mui/icons-material/Remove";
+import Delete from "@mui/icons-material/Delete";
 import ArrowBack from "@mui/icons-material/ArrowBack";
 import ArrowForward from "@mui/icons-material/ArrowForward";
 import { shortenCourses, lengthenCourses } from "./App";
@@ -16,6 +16,7 @@ import { motion } from "framer-motion";
 
 import "react-toggle/style.css";
 import "./css/workspace.css";
+import { IconButton, Switch } from "@mui/material";
 
 const courses: CourseData[] = require("./data/TotalFall2022-23.json");
 
@@ -71,18 +72,18 @@ function AdvancedCourseInfo(props: { course: CourseStorage }) {
 	return (
 		<div className="flex flex-col space-y-2">
 			<section>
-				<h2 className="font-bold text-lg">{`${course.number}: ${course.name}`}</h2>
+				<h2 className="text-lg font-bold">{`${course.number}: ${course.name}`}</h2>
 				<p>{course.description}</p>
 			</section>
 			<section>
-				<h2 className="font-bold text-lg">Prerequisites</h2>
+				<h2 className="text-lg font-bold">Prerequisites</h2>
 				<p>{course.prerequisites || "None"}</p>
 			</section>
 			<section>
-				<h2 className="font-bold text-lg">Rating</h2>
+				<h2 className="text-lg font-bold">Rating</h2>
 				<p>
 					<a
-						className="text-orange-500 hover:underline font-bold"
+						className="font-bold text-orange-500 hover:underline"
 						href={course.link}
 						target="_blank"
 						rel="noreferrer"
@@ -129,37 +130,41 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
 		>
 			{(provided) => (
 				<div
-					className={className}
+					className={`${className} bg-white shadow-lg border-0 ${course.locked && "bg-neutral-100"}`}
 					ref={provided.innerRef}
 					{...provided.draggableProps}
 					{...provided.dragHandleProps}
 				>
 					<div className="workspace-entry-buttons">
-						<Toggle
-							className="workspace-entry-toggle"
-							icons={false}
+						<Switch
+							color="warning"
 							checked={course.enabled}
 							onChange={() => {
 								state.toggleCourse(course);
 							}}
 						/>
+
 						{course.locked ? (
-							<button onClick={() => state.toggleSectionLock(course)}>
-								<Lock style={{ width: "auto", height: "auto" }} />
-							</button>
+							<IconButton
+								color="warning"
+								onClick={() => state.toggleSectionLock(course)}
+							>
+								<Lock className="" />
+							</IconButton>
 						) : (
-							<button onClick={() => state.toggleSectionLock(course)}>
-								<LockOpen style={{ width: "auto", height: "auto" }} />
-							</button>
+							<IconButton onClick={() => state.toggleSectionLock(course)}>
+								<LockOpen />
+							</IconButton>
 						)}
-						<button
+						<IconButton
+							color="error"
 							className="workspace-entry-controls-remove"
 							onClick={() => {
 								state.removeCourse(course);
 							}}
 						>
-							<RemoveIcon style={{ width: "auto", height: "auto" }} />
-						</button>
+							<Delete />
+						</IconButton>
 					</div>
 					<div className="workspace-entry-content">
 						<div className="workspace-entry-info">
@@ -385,7 +390,7 @@ export default function Workspace() {
 				<motion.button
 					whileHover={{ scale: 0.95 }}
 					whileTap={{ scale: 0.9 }}
-					className="flex space-x-2 font-bold px-4 py-2 rounded-md border-2"
+					className="flex px-4 py-2 space-x-2 font-bold border-2 rounded-md"
 					onClick={copy}
 				>
 					<svg
@@ -449,6 +454,7 @@ export default function Workspace() {
 	return (
 		<div className="workspace-wrapper">
 			{exportModal}
+			<h2 className="mb-2 text-center">Choose Workspace...</h2>
 			<div className="workspace-switcher">
 				{[0, 1, 2, 3, 4].map((idx) => {
 					return (
@@ -467,14 +473,70 @@ export default function Workspace() {
 				<WorkspaceSearch />
 			</div>
 			<div className="workspace-controls">
-				<button onClick={unlockAllSections}>Unlock All</button>
-				<button onClick={lockAllSections}>Lock All</button>
-				<button onClick={enableAllClasses}>Enable All</button>
-				<button onClick={disableAllClasses}>Disable All</button>
-				<button onClick={setDefaultSchedule}>Default Schedule</button>
-				<button onClick={importWorkspace}>Import Workspace</button>
-				<button onClick={openExportModal}>Export Workspace</button>
-				<button onClick={removeAllClasses}>Remove All</button>
+				<motion.button
+					className="px-2 py-1 font-bold transition-colors duration-300 bg-white border-2 rounded-md border-neutral-500 text-neutral-500 hover:border-orange-500 active:border-orange-700 hover:text-orange-500 active:text-orange-700"
+					whileHover={{ scale: 0.95 }}
+					whileTap={{ scale: 0.9 }}
+					onClick={unlockAllSections}
+				>
+					Unlock All
+				</motion.button>
+				<motion.button
+					className="px-2 py-1 font-bold transition-colors duration-300 bg-white border-2 rounded-md border-neutral-500 text-neutral-500 hover:border-orange-500 active:border-orange-700 hover:text-orange-500 active:text-orange-700"
+					whileHover={{ scale: 0.95 }}
+					whileTap={{ scale: 0.9 }}
+					onClick={lockAllSections}
+				>
+					Lock All
+				</motion.button>
+				<motion.button
+					className="px-2 py-1 font-bold transition-colors duration-300 bg-white border-2 rounded-md border-neutral-500 text-neutral-500 hover:border-orange-500 active:border-orange-700 hover:text-orange-500 active:text-orange-700"
+					whileHover={{ scale: 0.95 }}
+					whileTap={{ scale: 0.9 }}
+					onClick={enableAllClasses}
+				>
+					Enable All
+				</motion.button>
+				<motion.button
+					className="px-2 py-1 font-bold transition-colors duration-300 bg-white border-2 rounded-md border-neutral-500 text-neutral-500 hover:border-orange-500 active:border-orange-700 hover:text-orange-500 active:text-orange-700"
+					whileHover={{ scale: 0.95 }}
+					whileTap={{ scale: 0.9 }}
+					onClick={disableAllClasses}
+				>
+					Disable All
+				</motion.button>
+				<motion.button
+					className="px-2 py-1 font-bold transition-colors duration-300 bg-white border-2 rounded-md border-neutral-500 text-neutral-500 hover:border-orange-500 active:border-orange-700 hover:text-orange-500 active:text-orange-700"
+					whileHover={{ scale: 0.95 }}
+					whileTap={{ scale: 0.9 }}
+					onClick={setDefaultSchedule}
+				>
+					Default Schedule
+				</motion.button>
+				<motion.button
+					className="px-2 py-1 font-bold transition-colors duration-300 bg-white border-2 rounded-md border-neutral-500 text-neutral-500 hover:border-orange-500 active:border-orange-700 hover:text-orange-500 active:text-orange-700"
+					whileHover={{ scale: 0.95 }}
+					whileTap={{ scale: 0.9 }}
+					onClick={importWorkspace}
+				>
+					Import Workspace
+				</motion.button>
+				<motion.button
+					className="px-2 py-1 font-bold transition-colors duration-300 bg-white border-2 rounded-md border-neutral-500 text-neutral-500 hover:border-orange-500 active:border-orange-700 hover:text-orange-500 active:text-orange-700"
+					whileHover={{ scale: 0.95 }}
+					whileTap={{ scale: 0.9 }}
+					onClick={openExportModal}
+				>
+					Export Workspace
+				</motion.button>
+				<motion.button
+					className="px-2 py-1 font-bold transition-colors duration-300 bg-white border-2 rounded-md border-neutral-500 text-neutral-500 hover:border-orange-500 active:border-orange-700 hover:text-orange-500 active:text-orange-700"
+					whileHover={{ scale: 0.95 }}
+					whileTap={{ scale: 0.9 }}
+					onClick={removeAllClasses}
+				>
+					Remove All
+				</motion.button>
 			</div>
 			<b className="workspace-units">{units[0] + units[1] + units[2] + " units (" + units[0] + "-" + units[1] + "-" + units[2] + ")"}</b>
 			<div className="workspace-entries">

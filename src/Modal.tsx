@@ -36,7 +36,7 @@ function Modal({ isOpen, onClose, children }: ModalProps) {
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					exit={{ opacity: 0 }}
-					className="flex items-center justify-center w-screen h-screen backdrop-blur-lg fixed top-0 left-0 z-[1000]"
+					className="overflow-y-scroll flex items-center justify-center w-screen h-screen backdrop-blur-lg fixed top-0 left-0 z-[1000]"
 				>
 					<button
 						className="w-full h-full z-[500] absolute top-0 left-0"
@@ -46,14 +46,14 @@ function Modal({ isOpen, onClose, children }: ModalProps) {
 						initial={{ x: -100 }}
 						animate={{ x: 0 }}
 						exit={{ x: 100 }}
-						className="relative flex flex-col space-y-4 bg-white p-16 rounded-md border-[1px] shadow-lg w-[40%] z-[600]"
+						className="relative flex flex-col space-y-4 bg-white p-16 rounded-md border-[1px] shadow-lg sm:w-[40%] w-[80%] h-fit z-[600]"
 					>
 						{children}
 						<motion.button
 							whileHover={{ scale: 0.95, rotate: 90 }}
 							whileTap={{ scale: 0.9, rotate: 180 }}
 							onClick={onClose}
-							className="font-bold bg-red-500 text-white rounded-full p-0 m-0 absolute top-2 right-4"
+							className="absolute p-0 m-0 font-bold text-white bg-red-500 rounded-full top-2 right-4"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"

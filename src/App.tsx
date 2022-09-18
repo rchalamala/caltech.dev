@@ -4,6 +4,7 @@ import { parseTimes } from "./Planner";
 import Workspace from "./Workspace";
 import Modal from "./Modal";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
+import { motion } from "framer-motion";
 
 const indexedCourses: Record<string, CourseData> = require("./data/IndexedTotalFall2022-23.json");
 
@@ -491,14 +492,17 @@ function App() {
 				toggleSectionLock,
 			}}
 		>
-			<div className="scroll-smooth antialiased selection:bg-orange-400 selection:text-black">
-				<div className="sticky-help">
-					<button
+			<nav className="flex flex-col items-center justify-center py-8">
+				<h1 className="font-serif text-3xl font-black">🦫 Beavered</h1>
+				<p className="text-sm italic">The best Caltech course scheduler to exist</p>
+				<div className="">
+                    <motion.button
+                        whileHover={{rotate: 15}}
 						className="help-button"
 						onClick={() => setModalOpen(true)}
 					>
-						<HelpOutlineIcon style={{ width: "auto", height: "auto" }} />
-					</button>
+						<HelpOutlineIcon className="text-orange-500 bg-transparent" style={{ width: "auto", height: "auto" }} />
+					</motion.button>
 					<Modal
 						isOpen={modalOpen}
 						onClose={() => setModalOpen(false)}
@@ -521,18 +525,23 @@ function App() {
 						</p>
 					</Modal>
 				</div>
-				<div id="column-container">
-					<div className="column planner-column">
-						<Planner />
+			</nav>
+			<main className="">
+				<div className="mx-8 my-10 antialiased scroll-smooth selection:bg-orange-400 selection:text-black">
+					<div id="column-container">
+						<div className="column planner-column">
+							<Planner />
+						</div>
+						<Workspace />
 					</div>
-					<Workspace />
 				</div>
-			</div>
-			<div className="footer">
+			</main>
+
+			<footer className="footer">
 				<p>
 					Made with ❤️ by{" "}
 					<a
-						className="font-bold font-mono text-orange-500 hover:underline"
+						className="font-mono font-bold text-orange-500 hover:underline"
 						href="https://github.com/rchalamala"
 						target="_blank"
 						rel="noreferrer"
@@ -541,7 +550,7 @@ function App() {
 					</a>
 					,{" "}
 					<a
-						className="font-bold font-mono text-orange-500 hover:underline"
+						className="font-mono font-bold text-orange-500 hover:underline"
 						href="https://github.com/ericlovesmath"
 						target="_blank"
 						rel="noreferrer"
@@ -550,7 +559,7 @@ function App() {
 					</a>
 					,{" "}
 					<a
-						className="font-bold font-mono text-orange-500 hover:underline"
+						className="font-mono font-bold text-orange-500 hover:underline"
 						href="https://github.com/zack466"
 						target="_blank"
 						rel="noreferrer"
@@ -559,7 +568,7 @@ function App() {
 					</a>
 					, &{" "}
 					<a
-						className="font-bold font-mono text-orange-500 hover:underline"
+						className="font-mono font-bold text-orange-500 hover:underline"
 						href="https://armeetjatyani.com"
 						target="_blank"
 						rel="noreferrer"
@@ -567,7 +576,7 @@ function App() {
 						Armeet
 					</a>
 				</p>
-			</div>
+			</footer>
 		</AppState.Provider>
 	);
 }
