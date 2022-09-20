@@ -14793,9 +14793,9 @@
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Hill, A",
-                "locations": "A",
+                "locations": "ANB 314",
                 "number": 1,
-                "times": "A"
+                "times": "TR 14:30-15:55"
             }
         ],
         "units": [
@@ -14961,14 +14961,14 @@
             {
                 "grades": "",
                 "instructor": "Eberhardt, F",
-                "locations": "A",
+                "locations": "B119 BAX",
                 "number": 1,
                 "times": "TR 09:00 - 10:25"
             },
             {
                 "grades": "",
                 "instructor": "Eberhardt, F",
-                "locations": "A",
+                "locations": "B119 BAX",
                 "number": 2,
                 "times": "TR 13:00 - 14:25"
             }
@@ -14992,14 +14992,14 @@
             {
                 "grades": "",
                 "instructor": "Pham, A",
-                "locations": "A",
+                "locations": "127 BAX",
                 "number": 1,
                 "times": "TR 09:00 - 10:25"
             },
             {
                 "grades": "",
                 "instructor": "Pham, A",
-                "locations": "A",
+                "locations": "115 BCK",
                 "number": 2,
                 "times": "TR 13:00 - 14:25"
             }
@@ -15023,7 +15023,7 @@
             {
                 "grades": "",
                 "instructor": "Jurca, C",
-                "locations": "A",
+                "locations": "228 BAX",
                 "number": 1,
                 "times": "TR 13:00 - 14:25"
             }
