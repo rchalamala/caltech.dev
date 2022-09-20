@@ -1,4 +1,4 @@
-type Maybe<T> = T | null
+type Maybe<T> = T | null;
 
 interface CourseStorage {
   courseData: CourseData;
@@ -17,7 +17,7 @@ interface CourseData {
   prerequisites: string;
   rating: string;
   true_units: string;
-  link: string,
+  link: string;
 }
 
 interface DateData {
@@ -37,18 +37,18 @@ interface SectionData {
 }
 
 interface CourseStorageShort {
-  courseId: number,
-  sectionId: Maybe<number>,
-  enabled: boolean,
+  courseId: number;
+  sectionId: Maybe<number>;
+  enabled: boolean;
   locked: boolean;
 }
 
-type AvailableTimes = Date[][]
+type AvailableTimes = Date[][];
 
 // the overall state of a single workspace
 interface Workspace {
-  courses: CourseStorage[],
-  arrangements: CourseStorageShort[][],
-  arrangementIdx: Maybe<number>,
-  availableTimes: AvailableTimes,
+  courses: CourseStorage[];
+  arrangements: CourseStorageShort[][];
+  arrangementIdx: Maybe<number>;
+  availableTimes: AvailableTimes;
 }
