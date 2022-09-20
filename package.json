@@ -45,6 +45,12 @@
       "react-app/jest"
     ]
   },
+  "prettier": {
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": false
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -59,7 +65,9 @@
   },
   "devDependencies": {
     "@types/react-big-calendar": "^0.38.1",
-    "gh-pages": "^4.0.0"
+    "eslint": "^8.23.1",
+    "gh-pages": "^4.0.0",
+    "prettier": "^2.7.1"
   },
   "homepage": "."
 }

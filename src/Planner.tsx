@@ -2,10 +2,10 @@ import { useContext } from "react";
 import { AppState } from "./App";
 import { Calendar, momentLocalizer, Views } from "react-big-calendar";
 import moment from "moment";
-import Flatpickr from 'react-flatpickr'
+import Flatpickr from "react-flatpickr";
 
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import 'flatpickr/dist/themes/airbnb.css';
+import "flatpickr/dist/themes/airbnb.css";
 
 import "./css/planner.css";
 
@@ -30,8 +30,7 @@ function CourseToDates(courses: CourseStorage[]): DateData[] {
       if (day.length === 0) {
         continue;
       }
-      for(const interval of day) {
-
+      for (const interval of day) {
         dates.push({
           id: course.courseData.id,
           title: course.courseData.number + " Section " + section.number,
@@ -66,14 +65,14 @@ export function parseTimes(times: string): Maybe<TimeInterval>[][] {
             0,
             day_to_i.indexOf(day) + 1,
             parseInt(match[2]),
-            parseInt(match[3])
+            parseInt(match[3]),
           ),
           end: new Date(
             2018,
             0,
             day_to_i.indexOf(day) + 1,
             parseInt(match[4]),
-            parseInt(match[5])
+            parseInt(match[5]),
           ),
         });
       }
@@ -83,12 +82,12 @@ export function parseTimes(times: string): Maybe<TimeInterval>[][] {
 }
 
 /** Calendar shown on left side of screen
-* Extends from `App.tsx` */
+ * Extends from `App.tsx` */
 function Planner() {
   const state = useContext(AppState);
 
   const calEvents: DateData[] = CourseToDates(
-    state.courses.filter((course) => course.enabled)
+    state.courses.filter((course) => course.enabled),
   );
 
   /** Hashes id to proper color and styling for calendar items */
@@ -114,29 +113,39 @@ function Planner() {
             <div className="time-picker" key={idx}>
               <Flatpickr
                 data-enable-time
-                options={{ dateFormat: "H:i", enableTime: true, noCalendar: true, }}
+                options={{
+                  dateFormat: "H:i",
+                  enableTime: true,
+                  noCalendar: true,
+                }}
                 value={state.availableTimes[idx][0]}
                 onChange={([day]) => {
-                  state.updateAvailableTimes(idx, true, day)
+                  state.updateAvailableTimes(idx, true, day);
                 }}
-                />             
+              />
               <Flatpickr
                 data-enable-time
-                options={{ dateFormat: "H:i", enableTime: true, noCalendar: true, }}
+                options={{
+                  dateFormat: "H:i",
+                  enableTime: true,
+                  noCalendar: true,
+                }}
                 value={state.availableTimes[idx][1]}
                 onChange={([day]) => {
-                  state.updateAvailableTimes(idx, false, day)
+                  state.updateAvailableTimes(idx, false, day);
                 }}
-                />
+              />
             </div>
-          )
+          );
         })}
       </div>
       <Calendar
         localizer={localizer}
         formats={{
           timeGutterFormat: (date, culture, localizer) =>
-            date.getMinutes() > 0 ? "" : localizer!.format(date, "h A", culture),
+            date.getMinutes() > 0
+              ? ""
+              : localizer!.format(date, "h A", culture),
           dayFormat: "ddd",
         }}
         views={[Views.WEEK, Views.WORK_WEEK]}
@@ -151,9 +160,9 @@ function Planner() {
         events={calEvents}
         startAccessor="start"
         endAccessor="end"
-        style={{ margin: "10px", height:"calc(95vh - 50px)" }}
+        style={{ margin: "10px", height: "calc(95vh - 50px)" }}
         eventPropGetter={eventStyleGetter}
-        />
+      />
     </div>
   );
 }

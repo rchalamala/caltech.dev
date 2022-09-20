@@ -1,5 +1,5 @@
 import ReactDom from "react-dom";
-import { useState } from "react"
+import { useState } from "react";
 
 import "./css/modal.css";
 
@@ -25,23 +25,25 @@ function Modal({ isOpen, onClose, children }: ModalProps) {
         </button>
       </div>
     </>,
-    portalDiv
+    portalDiv,
   );
 }
 
-export type ModalReturn = [() => void, JSX.Element]
+export type ModalReturn = [() => void, JSX.Element];
 
-export function useModal(contents: ((props: ModalProps) => JSX.Element)): ModalReturn {
-  const [isOpen, setIsOpen] = useState(false)
+export function useModal(
+  contents: (props: ModalProps) => JSX.Element,
+): ModalReturn {
+  const [isOpen, setIsOpen] = useState(false);
   const onClose = () => {
-    setIsOpen(false)
-  }
-  return [() => setIsOpen(true),
-    (
-      <Modal isOpen={isOpen} onClose={onClose}>
-        {contents({isOpen, onClose, children: null})}
-      </Modal>
-    )]
+    setIsOpen(false);
+  };
+  return [
+    () => setIsOpen(true),
+    <Modal isOpen={isOpen} onClose={onClose}>
+      {contents({ isOpen, onClose, children: null })}
+    </Modal>,
+  ];
 }
 
 export default Modal;

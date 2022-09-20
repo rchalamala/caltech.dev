@@ -8,10 +8,10 @@ import { Fzf } from "fzf";
 import Toggle from "react-toggle";
 import Lock from "@mui/icons-material/Lock";
 import LockOpen from "@mui/icons-material/LockOpen";
-import RemoveIcon from '@mui/icons-material/Remove';
-import ArrowBack from '@mui/icons-material/ArrowBack';
-import ArrowForward from '@mui/icons-material/ArrowForward';
-import { shortenCourses, lengthenCourses } from "./App"
+import RemoveIcon from "@mui/icons-material/Remove";
+import ArrowBack from "@mui/icons-material/ArrowBack";
+import ArrowForward from "@mui/icons-material/ArrowForward";
+import { shortenCourses, lengthenCourses } from "./App";
 
 import "react-toggle/style.css";
 import "./css/workspace.css";
@@ -48,7 +48,12 @@ function SectionDropdown(props: { course: CourseStorage }) {
   const state = useContext(AppState);
 
   const onChange = (newSection: SingleValue<Maybe<SectionData>>) => {
-    course.sectionId = newSection !== null ? course.courseData.sections.findIndex(s => s.number === newSection.number) : null;
+    course.sectionId =
+      newSection !== null
+        ? course.courseData.sections.findIndex(
+            (s) => s.number === newSection.number,
+          )
+        : null;
     // if course with same id already exists, section number will simply be updated
     state.addCourse(course);
   };
@@ -60,13 +65,22 @@ function SectionDropdown(props: { course: CourseStorage }) {
         placeholder=""
         value={
           course.sectionId !== null
-            ? course.courseData.sections.find(c => c.number === course.courseData.sections[course.sectionId!].number)
+            ? course.courseData.sections.find(
+                (c) =>
+                  c.number ===
+                  course.courseData.sections[course.sectionId!].number,
+              )
             : null
         }
         onChange={onChange}
         options={course.courseData.sections}
         getOptionLabel={(section) => `${section.number}`}
-        isOptionSelected={(section) => course.sectionId !== null ? section.number === course.courseData.sections[course.sectionId].number : false}
+        isOptionSelected={(section) =>
+          course.sectionId !== null
+            ? section.number ===
+              course.courseData.sections[course.sectionId].number
+            : false
+        }
       />
     </div>
   );
@@ -136,17 +150,23 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
               onChange={() => {
                 state.toggleCourse(course);
               }}
-              />
-            {course.locked ?
-              <button onClick={() => state.toggleSectionLock(course)}><Lock style={{width: "auto", height: "auto"}}/></button> :
-              <button onClick={() => state.toggleSectionLock(course)}><LockOpen style={{width: "auto", height: "auto"}}/></button>}
+            />
+            {course.locked ? (
+              <button onClick={() => state.toggleSectionLock(course)}>
+                <Lock style={{ width: "auto", height: "auto" }} />
+              </button>
+            ) : (
+              <button onClick={() => state.toggleSectionLock(course)}>
+                <LockOpen style={{ width: "auto", height: "auto" }} />
+              </button>
+            )}
             <button
               className="workspace-entry-controls-remove"
               onClick={() => {
                 state.removeCourse(course);
               }}
             >
-              <RemoveIcon style={{width: "auto", height: "auto"}}/>
+              <RemoveIcon style={{ width: "auto", height: "auto" }} />
             </button>
           </div>
           <div className="workspace-entry-content">
@@ -243,7 +263,8 @@ function WorkspaceScheduler() {
     state.arrangementIdx !== null ? state.arrangementIdx + 1 : 0;
 
   // true if can't find a single enabled+unlocked sections
-  const allSectionsSet = -1 === state.courses.findIndex((c) => c.enabled && !c.locked)
+  const allSectionsSet =
+    -1 === state.courses.findIndex((c) => c.enabled && !c.locked);
   if (allSectionsSet) {
     return (
       <div className="workspace-scheduler">
@@ -260,11 +281,11 @@ function WorkspaceScheduler() {
     return (
       <div className="workspace-scheduler">
         <button className="small-button" onClick={handleLeft}>
-          <ArrowBack style={{width: "auto", height: "auto"}}/>
+          <ArrowBack style={{ width: "auto", height: "auto" }} />
         </button>
         <p className="workspace-scheduler-content">{`${displayIdx}/${total}`}</p>
         <button className="small-button" onClick={handleRight}>
-          <ArrowForward style={{width: "auto", height: "auto"}}/>
+          <ArrowForward style={{ width: "auto", height: "auto" }} />
         </button>
       </div>
     );
@@ -274,7 +295,7 @@ function WorkspaceScheduler() {
 function reorder<T>(
   list: Array<T>,
   startIndex: number,
-  endIndex: number
+  endIndex: number,
 ): Array<T> {
   const result = Array.from(list);
   const [removed] = result.splice(startIndex, 1);
@@ -319,7 +340,7 @@ export default function Workspace() {
     state.setCourses(
       state.courses.map((course) => {
         return { ...course, locked: false };
-      })
+      }),
     );
   };
 
@@ -327,7 +348,7 @@ export default function Workspace() {
     state.setCourses(
       state.courses.map((course) => {
         return { ...course, locked: true };
-      })
+      }),
     );
   };
 
@@ -335,7 +356,7 @@ export default function Workspace() {
     state.setCourses(
       state.courses.map((course) => {
         return { ...course, enabled: false };
-      })
+      }),
     );
   };
 
@@ -343,7 +364,7 @@ export default function Workspace() {
     state.setCourses(
       state.courses.map((course) => {
         return { ...course, enabled: true };
-      })
+      }),
     );
   };
 
@@ -351,52 +372,49 @@ export default function Workspace() {
     state.setCourses(
       ["Ma 1 a", "Ph 1 a", "Ch 1 a", "CS 1"].map(getCourse).map((course) => {
         return { ...course!, enabled: true, locked: true };
-      })
+      }),
     );
   };
 
-  const [openExportModal, exportModal] = useModal(props => {
-    const shortened = shortenCourses(state.courses).map(c => [
-      c.courseId,
-      c.enabled,
-      c.locked,
-      c.sectionId,
-    ]).flat()
-    const code = window.btoa(JSON.stringify(shortened))
+  const [openExportModal, exportModal] = useModal((props) => {
+    const shortened = shortenCourses(state.courses)
+      .map((c) => [c.courseId, c.enabled, c.locked, c.sectionId])
+      .flat();
+    const code = window.btoa(JSON.stringify(shortened));
     const copy = () => {
-      navigator.clipboard.writeText(code)
-    }
+      navigator.clipboard.writeText(code);
+    };
     return (
       <div className="export-modal">
         <p>Your workspace code is:</p>
-        <p style={{wordBreak: "break-all"}}>{code}</p>
+        <p style={{ wordBreak: "break-all" }}>{code}</p>
         <button onClick={copy}>Copy to clipboard</button>
       </div>
-    )
-  })
+    );
+  });
 
   const importWorkspace = () => {
-    const code = prompt("Copy in the workspace code.") || ""
+    const code = prompt("Copy in the workspace code.") || "";
     if (code === "") {
-      return
+      return;
     }
     try {
-      const shortened = JSON.parse(window.atob(code))
-      const courses: CourseStorageShort[] = []
+      const shortened = JSON.parse(window.atob(code));
+      const courses: CourseStorageShort[] = [];
       for (let i = 0; i * 4 < shortened.length; i++) {
         courses.push({
           courseId: shortened[i * 4],
           enabled: shortened[i * 4 + 1],
           locked: shortened[i * 4 + 2],
           sectionId: shortened[i * 4 + 3],
-        })
+        });
       }
-      const lengthened = lengthenCourses(courses)
-      state.setCourses(lengthened)
+      const lengthened = lengthenCourses(courses);
+      state.setCourses(lengthened);
     } catch {
-      alert("Error importing workspace.")
+      alert("Error importing workspace.");
     }
-  }
+  };
 
   function onDragEnd(result: any) {
     if (!result.destination) {
@@ -410,7 +428,7 @@ export default function Workspace() {
     const reorderedCourses = reorder(
       state.courses,
       result.source.index,
-      result.destination.index
+      result.destination.index,
     );
 
     state.setCourses(reorderedCourses);
@@ -425,8 +443,9 @@ export default function Workspace() {
             <button
               key={idx}
               className={state.workspaceIdx === idx ? "enabled" : ""}
-              onClick={() => state.setWorkspace(idx)}>
-              {idx+1}
+              onClick={() => state.setWorkspace(idx)}
+            >
+              {idx + 1}
             </button>
           );
         })}
@@ -446,7 +465,16 @@ export default function Workspace() {
         <button onClick={removeAllClasses}>Remove All</button>
       </div>
       <b className="workspace-units">
-        {(units[0] + units[1] + units[2]) + ' units (' + units[0] + '-' + units[1] + '-' + units[2] + ')'}
+        {units[0] +
+          units[1] +
+          units[2] +
+          " units (" +
+          units[0] +
+          "-" +
+          units[1] +
+          "-" +
+          units[2] +
+          ")"}
       </b>
       <div className="workspace-entries">
         {state.courses.length === 0 ? (

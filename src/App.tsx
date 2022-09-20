@@ -3,9 +3,12 @@ import Planner from "./Planner";
 import { parseTimes } from "./Planner";
 import Workspace from "./Workspace";
 import Modal from "./Modal";
-import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
+import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 
-const indexedCourses: Record<string, CourseData> = require("./data/IndexedTotalFall2022-23.json");
+const indexedCourses: Record<
+  string,
+  CourseData
+> = require("./data/IndexedTotalFall2022-23.json");
 
 function emptyWorkspace() {
   return {
@@ -17,7 +20,8 @@ function emptyWorkspace() {
       [new Date(2018, 0, 2, 8), new Date(2018, 0, 2, 23)],
       [new Date(2018, 0, 3, 8), new Date(2018, 0, 3, 23)],
       [new Date(2018, 0, 4, 8), new Date(2018, 0, 4, 23)],
-      [new Date(2018, 0, 5, 8), new Date(2018, 0, 5, 23)]]
+      [new Date(2018, 0, 5, 8), new Date(2018, 0, 5, 23)],
+    ],
   };
 }
 
@@ -72,8 +76,12 @@ function sectionsIntersect(a: CourseStorage, b: CourseStorage): boolean {
   if (a.sectionId === null || b.sectionId === null) {
     return false;
   }
-  const sectionA = a.courseData.sections.find(s => s.number === a.courseData.sections[a.sectionId!].number);
-  const sectionB = b.courseData.sections.find(s => s.number === b.courseData.sections[b.sectionId!].number);
+  const sectionA = a.courseData.sections.find(
+    (s) => s.number === a.courseData.sections[a.sectionId!].number,
+  );
+  const sectionB = b.courseData.sections.find(
+    (s) => s.number === b.courseData.sections[b.sectionId!].number,
+  );
 
   const timesA = parseTimes(sectionA!.times);
   const timesB = parseTimes(sectionB!.times);
@@ -96,33 +104,38 @@ function sectionsIntersect(a: CourseStorage, b: CourseStorage): boolean {
 }
 
 export function shortenCourses(courses: CourseStorage[]): CourseStorageShort[] {
-  return courses.map(storage => {
+  return courses.map((storage) => {
     return {
       courseId: storage.courseData.id,
       sectionId: storage.sectionId,
       enabled: storage.enabled,
-      locked: storage.locked
-    }
-  })
+      locked: storage.locked,
+    };
+  });
 }
 
-export function lengthenCourses(shortened: CourseStorageShort[]): CourseStorage[] {
-  return shortened.map(storage => {
+export function lengthenCourses(
+  shortened: CourseStorageShort[],
+): CourseStorage[] {
+  return shortened.map((storage) => {
     return {
       courseData: indexedCourses[storage.courseId.toString()]!,
       sectionId: storage.sectionId,
       enabled: storage.enabled,
-      locked: storage.locked
-    }
-  })
+      locked: storage.locked,
+    };
+  });
 }
 
 /** Takes a list of course requests and generates a list of possible arrangements.
  One section from each class will be selected in an arrangement, and
  none of these sections will have overlapping times. */
-function generateCourseSections(requests: CourseStorage[], availableTimes: Date[][]): CourseStorageShort[][] {
+function generateCourseSections(
+  requests: CourseStorage[],
+  availableTimes: Date[][],
+): CourseStorageShort[][] {
   if (requests.length === 0) {
-    return []
+    return [];
   }
   // console.log("generating sections, ", requests)
   const output: CourseStorageShort[][] = [];
@@ -140,15 +153,20 @@ function generateCourseSections(requests: CourseStorage[], availableTimes: Date[
       if (arr[i].sectionId === null) {
         continue;
       }
-      const section = arr[i].courseData.sections.find(s => s.number === arr[i].courseData.sections[arr[i].sectionId!].number);
+      const section = arr[i].courseData.sections.find(
+        (s) =>
+          s.number === arr[i].courseData.sections[arr[i].sectionId!].number,
+      );
       const intervals = parseTimes(section!.times);
-      for(let j = 0; j < 5; j++) {
-        for(const interval of intervals[j]) {
-          valid &&= (availableTimes[j][0].getTime() <= interval!.start.getTime() && interval!.end.getTime() <= availableTimes[j][1].getTime());
+      for (let j = 0; j < 5; j++) {
+        for (const interval of intervals[j]) {
+          valid &&=
+            availableTimes[j][0].getTime() <= interval!.start.getTime() &&
+            interval!.end.getTime() <= availableTimes[j][1].getTime();
         }
       }
     }
-    
+
     return valid;
   };
 
@@ -161,9 +179,13 @@ function generateCourseSections(requests: CourseStorage[], availableTimes: Date[
     // add a course/section pair
     const request = requests[idx];
 
-    if (!request.enabled || request.locked
+    if (
+      !request.enabled ||
+      request.locked ||
       // ignore "A" courses to reduce the number of total arrangements
-      || (request.courseData.sections.length > 0 && request.courseData.sections[0].times === "A")) {
+      (request.courseData.sections.length > 0 &&
+        request.courseData.sections[0].times === "A")
+    ) {
       acc.push(request);
       if (verify(acc)) {
         search(acc, idx + 1);
@@ -172,7 +194,7 @@ function generateCourseSections(requests: CourseStorage[], availableTimes: Date[
     } else {
       // otherwise, look through all sections
       for (let i = 0; i < request.courseData.sections.length; i++) {
-        const new_request = { ...request, sectionId: i};
+        const new_request = { ...request, sectionId: i };
         acc.push(new_request);
         if (verify(acc)) {
           search(acc, idx + 1);
@@ -199,8 +221,8 @@ function setArrayIdx<T>(arr: Array<T>, idx: number, element: T) {
 function setField(obj: any, field: string, value: any) {
   return {
     ...obj,
-    [field]: value
-  }
+    [field]: value,
+  };
 }
 
 /** Main wrapper */
@@ -211,24 +233,26 @@ function App() {
     localWorkspaces
       ? JSON.parse(localWorkspaces)
       : [
-          emptyWorkspace(),
-          emptyWorkspace(),
-          emptyWorkspace(),
-          emptyWorkspace(),
-          emptyWorkspace(),
-        ]
+        emptyWorkspace(),
+        emptyWorkspace(),
+        emptyWorkspace(),
+        emptyWorkspace(),
+        emptyWorkspace(),
+      ],
   );
   const localWorkspaceIdx = localStorage.getItem("workspaceIdx");
   const [workspaceIdx, setWorkspaceIdx] = useState<number>(
-    localWorkspaceIdx ? JSON.parse(localWorkspaceIdx) : 0
+    localWorkspaceIdx ? JSON.parse(localWorkspaceIdx) : 0,
   );
 
   const courses = workspaces[workspaceIdx].courses;
   const availableTimes: Date[][] = [[], [], [], [], []];
 
-  for(let i = 0; i < availableTimes.length; ++i) {
-    for(let j = 0; j < 2; ++j) {
-      availableTimes[i][j] = new Date(workspaces[workspaceIdx].availableTimes[i][j]);
+  for (let i = 0; i < availableTimes.length; ++i) {
+    for (let j = 0; j < 2; ++j) {
+      availableTimes[i][j] = new Date(
+        workspaces[workspaceIdx].availableTimes[i][j],
+      );
     }
   }
 
@@ -241,17 +265,19 @@ function App() {
   /** Helper functions to be sent sent through Context */
   const addCourse = (newCourse: CourseStorage) => {
     const result = courses.find(
-      (course) => course.courseData.id === newCourse.courseData.id
+      (course) => course.courseData.id === newCourse.courseData.id,
     );
     let newCourses: CourseStorage[] = [];
     if (result) {
       newCourses = courses.map((course) =>
-        course.courseData.id === newCourse.courseData.id ? setField(newCourse, "locked", true) : course
+        course.courseData.id === newCourse.courseData.id
+          ? setField(newCourse, "locked", true)
+          : course,
       );
     } else {
       newCourses = [...courses, newCourse];
     }
-    const newArrangements = generateCourseSections(newCourses, availableTimes)
+    const newArrangements = generateCourseSections(newCourses, availableTimes);
     let newArrangementIdx = null;
     if (newArrangements.length === 0) {
       newCourses = newCourses.map((course) => {
@@ -259,10 +285,11 @@ function App() {
           return setField(course, "sectionId", null);
         } else {
           return course;
-        }})
+        }
+      });
     } else {
-      newArrangementIdx = 0
-      newCourses = lengthenCourses(newArrangements[newArrangementIdx])
+      newArrangementIdx = 0;
+      newCourses = lengthenCourses(newArrangements[newArrangementIdx]);
     }
     // these happen in parallel
     setWorkspaces(
@@ -271,13 +298,13 @@ function App() {
         courses: newCourses,
         arrangements: newArrangements,
         arrangementIdx: newArrangementIdx,
-      })
+      }),
     );
   };
 
   const removeCourse = (course: CourseStorage) => {
     let newCourses = courses.filter((currCourse) => currCourse !== course);
-    const newArrangements = generateCourseSections(newCourses, availableTimes)
+    const newArrangements = generateCourseSections(newCourses, availableTimes);
     let newArrangementIdx = null;
     if (newArrangements.length === 0) {
       newCourses = newCourses.map((course) => {
@@ -285,10 +312,11 @@ function App() {
           return setField(course, "sectionId", null);
         } else {
           return course;
-        }})
+        }
+      });
     } else {
-      newArrangementIdx = 0
-      newCourses = lengthenCourses(newArrangements[newArrangementIdx])
+      newArrangementIdx = 0;
+      newCourses = lengthenCourses(newArrangements[newArrangementIdx]);
     }
     setWorkspaces(
       setArrayIdx(workspaces, workspaceIdx, {
@@ -296,7 +324,7 @@ function App() {
         courses: newCourses,
         arrangements: generateCourseSections(newCourses, availableTimes),
         arrangementIdx: newArrangementIdx,
-      })
+      }),
     );
   };
 
@@ -309,7 +337,7 @@ function App() {
         return course;
       }
     });
-    const newArrangements = generateCourseSections(newCourses, availableTimes)
+    const newArrangements = generateCourseSections(newCourses, availableTimes);
     let newArrangementIdx = arrangementIdx;
     if (newArrangements.length === 0) {
       newCourses = newCourses.map((course) => {
@@ -317,14 +345,15 @@ function App() {
           return setField(course, "sectionId", null);
         } else {
           return course;
-        }})
+        }
+      });
       newArrangementIdx = null;
     } else {
       // if course went disabled => enabled or is unlocked, then need to recalculate
       // otherwise, just keep arrangementIdx the same
       if (newCourse.enabled || !newCourse.locked) {
-        newArrangementIdx = 0
-        newCourses = lengthenCourses(newArrangements[newArrangementIdx])
+        newArrangementIdx = 0;
+        newCourses = lengthenCourses(newArrangements[newArrangementIdx]);
       }
     }
     setWorkspaces(
@@ -333,7 +362,7 @@ function App() {
         courses: newCourses,
         arrangements: newArrangements,
         arrangementIdx: newArrangementIdx,
-      })
+      }),
     );
   };
 
@@ -346,7 +375,7 @@ function App() {
         return course;
       }
     });
-    const newArrangements = generateCourseSections(newCourses, availableTimes)
+    const newArrangements = generateCourseSections(newCourses, availableTimes);
     let newArrangementIdx = arrangementIdx;
     if (newArrangements.length === 0) {
       newCourses = newCourses.map((course) => {
@@ -354,11 +383,12 @@ function App() {
           return setField(course, "sectionId", null);
         } else {
           return course;
-        }})
+        }
+      });
       newArrangementIdx = null;
     } else {
-      newArrangementIdx = 0
-      newCourses = lengthenCourses(newArrangements[newArrangementIdx])
+      newArrangementIdx = 0;
+      newCourses = lengthenCourses(newArrangements[newArrangementIdx]);
     }
     setWorkspaces(
       setArrayIdx(workspaces, workspaceIdx, {
@@ -366,7 +396,7 @@ function App() {
         courses: newCourses,
         arrangements: newArrangements,
         arrangementIdx: newArrangementIdx,
-      })
+      }),
     );
   };
 
@@ -380,14 +410,17 @@ function App() {
     } else {
       newIdx = (workspace.arrangementIdx + 1) % workspace.arrangements.length;
     }
-    const newArrangement = newIdx === null ? shortenCourses(workspace.courses) : workspace.arrangements[newIdx!];
-    const newCourses = lengthenCourses(newArrangement)
+    const newArrangement =
+      newIdx === null
+        ? shortenCourses(workspace.courses)
+        : workspace.arrangements[newIdx!];
+    const newCourses = lengthenCourses(newArrangement);
     setWorkspaces(
       setArrayIdx(workspaces, workspaceIdx, {
         ...workspaces[workspaceIdx],
         courses: newCourses,
         arrangementIdx: newIdx,
-      })
+      }),
     );
   };
 
@@ -399,22 +432,27 @@ function App() {
     } else if (workspace.arrangementIdx === null) {
       newIdx = 0;
     } else {
-      newIdx = (workspace.arrangements.length + workspace.arrangementIdx - 1) % workspace.arrangements.length;
+      newIdx =
+        (workspace.arrangements.length + workspace.arrangementIdx - 1) %
+        workspace.arrangements.length;
     }
-    const newArrangement = newIdx === null ? shortenCourses(workspace.courses) : workspace.arrangements[newIdx!];
-    const newCourses = lengthenCourses(newArrangement)
+    const newArrangement =
+      newIdx === null
+        ? shortenCourses(workspace.courses)
+        : workspace.arrangements[newIdx!];
+    const newCourses = lengthenCourses(newArrangement);
     setWorkspaces(
       setArrayIdx(workspaces, workspaceIdx, {
         ...workspaces[workspaceIdx],
         courses: newCourses,
         arrangementIdx: newIdx,
-      })
+      }),
     );
   };
 
   const setCourses = (courses: CourseStorage[]) => {
     let newCourses = courses;
-    const newArrangements = generateCourseSections(newCourses, availableTimes)
+    const newArrangements = generateCourseSections(newCourses, availableTimes);
     let newArrangementIdx = null;
     if (newArrangements.length === 0) {
       newCourses = newCourses.map((course) => {
@@ -422,10 +460,11 @@ function App() {
           return setField(course, "sectionId", null);
         } else {
           return course;
-        }})
+        }
+      });
     } else {
-      newArrangementIdx = 0
-      newCourses = lengthenCourses(newArrangements[newArrangementIdx])
+      newArrangementIdx = 0;
+      newCourses = lengthenCourses(newArrangements[newArrangementIdx]);
     }
     setWorkspaces(
       setArrayIdx(workspaces, workspaceIdx, {
@@ -433,7 +472,7 @@ function App() {
         courses: newCourses,
         arrangements: newArrangements,
         arrangementIdx: newArrangementIdx,
-      })
+      }),
     );
   };
 
@@ -446,13 +485,20 @@ function App() {
     setWorkspaceIdx(newIdx);
   };
 
-  const updateAvailableTimes = (dayIdx: number, isStart: boolean, day: Date) => {
+  const updateAvailableTimes = (
+    dayIdx: number,
+    isStart: boolean,
+    day: Date,
+  ) => {
     const newAvailableTimes = setArrayIdx(availableTimes, dayIdx, [
       isStart ? day : availableTimes[dayIdx][0],
       isStart ? availableTimes[dayIdx][1] : day,
     ]);
     let newCourses = courses;
-    const newArrangements = generateCourseSections(newCourses, newAvailableTimes)
+    const newArrangements = generateCourseSections(
+      newCourses,
+      newAvailableTimes,
+    );
     let newArrangementIdx = arrangementIdx;
     if (newArrangements.length === 0) {
       newCourses = newCourses.map((course) => {
@@ -460,14 +506,16 @@ function App() {
           return setField(course, "sectionId", null);
         } else {
           return course;
-        }})
-        newArrangementIdx = null
+        }
+      });
+      newArrangementIdx = null;
     } else {
-      const isWidening = (isStart && day < availableTimes[dayIdx][0])
-        || (!isStart && day > availableTimes[dayIdx][1])
+      const isWidening =
+        (isStart && day < availableTimes[dayIdx][0]) ||
+        (!isStart && day > availableTimes[dayIdx][1]);
       if (!isWidening || newArrangements.length !== arrangements.length) {
-        newArrangementIdx = 0
-        newCourses = lengthenCourses(newArrangements[newArrangementIdx])
+        newArrangementIdx = 0;
+        newCourses = lengthenCourses(newArrangements[newArrangementIdx]);
       }
     }
     // if current sections are invalid, jump to first valid one (or null everything)
@@ -477,13 +525,12 @@ function App() {
         courses: newCourses,
         arrangements: newArrangements,
         arrangementIdx: newArrangementIdx,
-        availableTimes: newAvailableTimes
-      })
+        availableTimes: newAvailableTimes,
+      }),
     );
-  }
+  };
 
   const { arrangements, arrangementIdx } = workspaces[workspaceIdx];
-
 
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -510,7 +557,7 @@ function App() {
       <div>
         <div className="sticky-help">
           <button className="help-button" onClick={() => setModalOpen(true)}>
-            <HelpOutlineIcon style={{width: "auto", height: "auto"}} />
+            <HelpOutlineIcon style={{ width: "auto", height: "auto" }} />
           </button>
           <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
             <p>
@@ -521,16 +568,16 @@ function App() {
               workspace, press the X button.
             </p>
             <p>
-              In addition, this scheduler features an <em>automatic section
-                selector</em> for your convenience. To use, simply unlock any
-              number of courses in the workspace. This scheduler will then
-              calculate all possible arrangements of sections for which none of
-              the unlocked classes/sections will overlap. Use the left and
-              right arrows to navigate these sections. The arrangements should
-              automatically recalculate possible sections every time you
-              enable/disable, lock/unlock, or add/remove a class. However, if a
-              class is <em>locked</em>, we guarantee that the section number
-              will not be changed.
+              In addition, this scheduler features an{" "}
+              <em>automatic section selector</em> for your convenience. To use,
+              simply unlock any number of courses in the workspace. This
+              scheduler will then calculate all possible arrangements of
+              sections for which none of the unlocked classes/sections will
+              overlap. Use the left and right arrows to navigate these sections.
+              The arrangements should automatically recalculate possible
+              sections every time you enable/disable, lock/unlock, or add/remove
+              a class. However, if a class is <em>locked</em>, we guarantee that
+              the section number will not be changed.
             </p>
             <p>
               You can also limit sections be time. Above the calendar, you can
@@ -541,10 +588,16 @@ function App() {
               (marked as A), then the scheduler will leave it blank.
             </p>
             <p>
-              We hope that this course schuduler makes your life easier! You
-              can find the source code <a
-                href="https://github.com/rchalamala/beavered" target="_blank"
-                rel="noreferrer">here</a>.
+              We hope that this course schuduler makes your life easier! You can
+              find the source code{" "}
+              <a
+                href="https://github.com/rchalamala/beavered"
+                target="_blank"
+                rel="noreferrer"
+              >
+                here
+              </a>
+              .
             </p>
           </Modal>
         </div>
@@ -574,11 +627,7 @@ function App() {
             Eric
           </a>
           , &{" "}
-          <a
-            href="https://github.com/zack466"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://github.com/zack466" target="_blank" rel="noreferrer">
             Zack
           </a>
         </p>

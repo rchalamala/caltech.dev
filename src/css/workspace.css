@@ -105,7 +105,6 @@ li {
   max-height: auto;
 }
 
-
 @media (min-width: 768px) {
   .workspace-wrapper {
     width: 40vw;
@@ -121,7 +120,7 @@ li {
   flex-direction: column;
   padding-left: 16px;
   padding-right: 16px;
-  padding-bottom:16px;
+  padding-bottom: 16px;
   align-items: center;
   border: 1px solid lightgrey;
   border-radius: 4px;
