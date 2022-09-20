@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { AppState } from "./App";
 import { Calendar, momentLocalizer, Views } from "react-big-calendar";
 import moment from "moment";
-import Flatpickr from "react-flatpickr"
+import Flatpickr from 'react-flatpickr'
 
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import 'flatpickr/dist/themes/airbnb.css';
