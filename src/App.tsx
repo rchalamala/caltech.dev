@@ -234,12 +234,12 @@ function App() {
     localWorkspaces
       ? JSON.parse(localWorkspaces)
       : [
-        emptyWorkspace(),
-        emptyWorkspace(),
-        emptyWorkspace(),
-        emptyWorkspace(),
-        emptyWorkspace(),
-      ],
+          emptyWorkspace(),
+          emptyWorkspace(),
+          emptyWorkspace(),
+          emptyWorkspace(),
+          emptyWorkspace(),
+        ],
   );
   const localWorkspaceIdx = localStorage.getItem("workspaceIdx");
   const [workspaceIdx, setWorkspaceIdx] = useState<number>(

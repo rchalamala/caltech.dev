@@ -203,12 +203,14 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
               <p>{id !== null ? sections[id].times : "Times"}</p>
             </div>
             <div className="workspace-entry-controls">
-              <button
-                className="workspace-entry-controls-info"
+              <motion.button
+                whileHover={{ scale: 0.95 }}
+                whileTap={{ scale: 0.9 }}
+                className="py-1 font-bold text-white bg-orange-500 rounded-md workspace-entry-controls-info"
                 onClick={() => setInfoModalOpen(true)}
               >
                 More Info
-              </button>
+              </motion.button>
               <Modal
                 isOpen={infoModalOpen}
                 onClose={() => setInfoModalOpen(false)}
