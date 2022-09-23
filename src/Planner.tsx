@@ -65,14 +65,14 @@ export function parseTimes(times: string): Maybe<TimeInterval>[][] {
             0,
             day_to_i.indexOf(day) + 1,
             parseInt(match[2]),
-            parseInt(match[3])
+            parseInt(match[3]),
           ),
           end: new Date(
             2018,
             0,
             day_to_i.indexOf(day) + 1,
             parseInt(match[4]),
-            parseInt(match[5])
+            parseInt(match[5]),
           ),
         });
       }
@@ -87,7 +87,7 @@ function Planner() {
   const state = useContext(AppState);
 
   const calEvents: DateData[] = CourseToDates(
-    state.courses.filter((course) => course.enabled)
+    state.courses.filter((course) => course.enabled),
   );
 
   /** Hashes id to proper color and styling for calendar items */

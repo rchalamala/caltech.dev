@@ -13829,9 +13829,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Hill, A",
-        "locations": "A",
+        "locations": "ANB 314",
         "number": 1,
-        "times": "A"
+        "times": "TR 14:30-15:55"
       }
     ],
     "units": [0, 0, 0],
@@ -13951,7 +13951,7 @@
         "instructor": "Quartz, S",
         "locations": "A",
         "number": 1,
-        "times": "TR 13:00 - 14:25"
+        "times": "TR 14:30 - 15:55"
       }
     ],
     "units": [3, 0, 6],
@@ -13969,14 +13969,14 @@
       {
         "grades": "",
         "instructor": "Eberhardt, F",
-        "locations": "A",
+        "locations": "B119 BAX",
         "number": 1,
         "times": "TR 09:00 - 10:25"
       },
       {
         "grades": "",
         "instructor": "Eberhardt, F",
-        "locations": "A",
+        "locations": "B119 BAX",
         "number": 2,
         "times": "TR 13:00 - 14:25"
       }
@@ -13996,14 +13996,14 @@
       {
         "grades": "",
         "instructor": "Pham, A",
-        "locations": "A",
+        "locations": "127 BAX",
         "number": 1,
         "times": "TR 09:00 - 10:25"
       },
       {
         "grades": "",
         "instructor": "Pham, A",
-        "locations": "A",
+        "locations": "115 BCK",
         "number": 2,
         "times": "TR 13:00 - 14:25"
       }
@@ -14023,7 +14023,7 @@
       {
         "grades": "",
         "instructor": "Jurca, C",
-        "locations": "A",
+        "locations": "228 BAX",
         "number": 1,
         "times": "TR 13:00 - 14:25"
       }
@@ -15200,7 +15200,7 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Demiroglu, Y",
+        "instructor": "Graber, T",
         "locations": "310 LINDE",
         "number": 1,
         "times": "TR 19:30 - 20:55"
@@ -16094,9 +16094,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Niemeyer, G",
-        "locations": "115 GTL",
+        "locations": "135 GTL",
         "number": 1,
-        "times": "TR 15:00 - 15:55"
+        "times": "W 13:00 - 13:55"
       }
     ],
     "units": [1, 4, 1],
@@ -20802,9 +20802,37 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Hall, S",
-        "locations": "A",
+        "instructor": "Schneiderman, J",
+        "locations": "117 DAB",
         "number": 1,
+        "times": "TR 09:00 - 10:25"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Sherazi, M",
+        "locations": "115 DAB",
+        "number": 2,
+        "times": "TR 13:00 - 14:25"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Sherazi, M",
+        "locations": "115 DAB",
+        "number": 3,
+        "times": "TR 14:30 - 15:55"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Sherazi, M",
+        "locations": "115 DAB",
+        "number": 4,
+        "times": "TR 09:00 - 10:25"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Hall, S",
+        "locations": "117 DAB",
+        "number": 5,
         "times": "TR 14:30 - 15:55"
       }
     ],

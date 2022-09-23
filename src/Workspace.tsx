@@ -53,7 +53,7 @@ function SectionDropdown(props: { course: CourseStorage }) {
     course.sectionId =
       newSection !== null
         ? course.courseData.sections.findIndex(
-            (s) => s.number === newSection.number
+            (s) => s.number === newSection.number,
           )
         : null;
     // if course with same id already exists, section number will simply be updated
@@ -70,7 +70,7 @@ function SectionDropdown(props: { course: CourseStorage }) {
             ? course.courseData.sections.find(
                 (c) =>
                   c.number ===
-                  course.courseData.sections[course.sectionId!].number
+                  course.courseData.sections[course.sectionId!].number,
               )
             : null
         }
@@ -316,7 +316,7 @@ function WorkspaceScheduler() {
 function reorder<T>(
   list: Array<T>,
   startIndex: number,
-  endIndex: number
+  endIndex: number,
 ): Array<T> {
   const result = Array.from(list);
   const [removed] = result.splice(startIndex, 1);
@@ -361,7 +361,7 @@ export default function Workspace() {
     state.setCourses(
       state.courses.map((course) => {
         return { ...course, locked: false };
-      })
+      }),
     );
   };
 
@@ -369,7 +369,7 @@ export default function Workspace() {
     state.setCourses(
       state.courses.map((course) => {
         return { ...course, locked: true };
-      })
+      }),
     );
   };
 
@@ -377,7 +377,7 @@ export default function Workspace() {
     state.setCourses(
       state.courses.map((course) => {
         return { ...course, enabled: false };
-      })
+      }),
     );
   };
 
@@ -385,7 +385,7 @@ export default function Workspace() {
     state.setCourses(
       state.courses.map((course) => {
         return { ...course, enabled: true };
-      })
+      }),
     );
   };
 
@@ -393,7 +393,7 @@ export default function Workspace() {
     state.setCourses(
       ["Ma 1 a", "Ph 1 a", "Ch 1 a", "CS 1"].map(getCourse).map((course) => {
         return { ...course!, enabled: true, locked: true };
-      })
+      }),
     );
   };
 
@@ -473,7 +473,7 @@ export default function Workspace() {
     const reorderedCourses = reorder(
       state.courses,
       result.source.index,
-      result.destination.index
+      result.destination.index,
     );
 
     state.setCourses(reorderedCourses);
