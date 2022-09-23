@@ -5,7 +5,6 @@ import Select from "react-select";
 import { SingleValue } from "react-select";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import { Fzf } from "fzf";
-import Toggle from "react-toggle";
 import Lock from "@mui/icons-material/Lock";
 import LockOpen from "@mui/icons-material/LockOpen";
 import Delete from "@mui/icons-material/Delete";
