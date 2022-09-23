@@ -1,4 +1,3 @@
-import ReactDom from "react-dom";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -27,7 +26,7 @@ function Modal({ isOpen, onClose, children }: ModalProps) {
     return () => {
       window.removeEventListener("keydown", handler);
     };
-  }, [isOpen]);
+  }, [isOpen, onClose]);
 
   return (
     <AnimatePresence mode="wait">
@@ -80,7 +79,7 @@ function Modal({ isOpen, onClose, children }: ModalProps) {
 export type ModalReturn = [() => void, JSX.Element];
 
 export function useModal(
-  contents: (props: ModalProps) => JSX.Element
+  contents: (props: ModalProps) => JSX.Element,
 ): ModalReturn {
   const [isOpen, setIsOpen] = useState(false);
   const onClose = () => {

@@ -555,67 +555,64 @@ function App() {
         toggleSectionLock,
       }}
     >
-      <nav className="flex flex-col items-center justify-center py-8">
-        <h1 className="font-serif text-3xl font-black">🦫 Beavered</h1>
-        <p className="text-sm italic">
-          The best Caltech course scheduler to exist
-        </p>
-        <div className="">
-          <motion.button
-            whileHover={{ rotate: 15 }}
-            className="help-button"
-            onClick={() => setModalOpen(true)}
-          >
-            <HelpOutlineIcon
-              className="text-orange-500 bg-transparent"
-              style={{ width: "auto", height: "auto" }}
-            />
-          </motion.button>
-          <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
-            <p>
-              Add courses from the search bar. An entry will then appear in the
-              workspace. You can click on the dropdown to select a section, and
-              the class will appear on the calendar. You can enable and disable
-              classes using the course toggle. To remove a class from your
-              workspace, press the X button.
-            </p>
-            <p>
-              In addition, this scheduler features an{" "}
-              <em>automatic section selector</em> for your convenience. To use,
-              simply unlock any number of courses in the workspace. This
-              scheduler will then calculate all possible arrangements of
-              sections for which none of the unlocked classes/sections will
-              overlap. Use the left and right arrows to navigate these sections.
-              The arrangements should automatically recalculate possible
-              sections every time you enable/disable, lock/unlock, or add/remove
-              a class. However, if a class is <em>locked</em>, we guarantee that
-              the section number will not be changed.
-            </p>
-            <p>
-              You can also limit sections be time. Above the calendar, you can
-              change the allowed time range for any day of the week. The course
-              scheduler should respect these times, and it will not generate
-              arrangements with courses that start before the first time or end
-              after the second. Note: If has a course doesn't have a time
-              (marked as A), then the scheduler will leave it blank.
-            </p>
-            <p>
-              We hope that this course schuduler makes your life easier! You can
-              find the source code{" "}
-              <a
-                href="https://github.com/rchalamala/beavered"
-                target="_blank"
-                rel="noreferrer"
-              >
-                here
-              </a>
-              .
-            </p>
-          </Modal>
-        </div>
+      <div className="sticky-help">
+        <motion.button
+          whileHover={{ rotate: 15 }}
+          className="help-button"
+          onClick={() => setModalOpen(true)}
+        >
+          <HelpOutlineIcon
+            className="text-orange-500 bg-transparent"
+            style={{ width: "auto", height: "auto" }}
+          />
+        </motion.button>
+        <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
+          <p>
+            Add courses from the search bar. An entry will then appear in the
+            workspace. You can click on the dropdown to select a section, and
+            the class will appear on the calendar. You can enable and disable
+            classes using the course toggle. To remove a class from your
+            workspace, press the X button.
+          </p>
+          <p>
+            In addition, this scheduler features an{" "}
+            <em>automatic section selector</em> for your convenience. To use,
+            simply unlock any number of courses in the workspace. This scheduler
+            will then calculate all possible arrangements of sections for which
+            none of the unlocked classes/sections will overlap. Use the left and
+            right arrows to navigate these sections. The arrangements should
+            automatically recalculate possible sections every time you
+            enable/disable, lock/unlock, or add/remove a class. However, if a
+            class is <em>locked</em>, we guarantee that the section number will
+            not be changed.
+          </p>
+          <p>
+            You can also limit sections be time. Above the calendar, you can
+            change the allowed time range for any day of the week. The course
+            scheduler should respect these times, and it will not generate
+            arrangements with courses that start before the first time or end
+            after the second. Note: If has a course doesn't have a time (marked
+            as A), then the scheduler will leave it blank.
+          </p>
+          <p>
+            We hope that this course schuduler makes your life easier! You can
+            find the source code{" "}
+            <a
+              href="https://github.com/rchalamala/beavered"
+              target="_blank"
+              rel="noreferrer"
+            >
+              here
+            </a>
+            .
+          </p>
+        </Modal>
+      </div>
+      <nav className="flex flex-col items-center justify-center py-5 p-0">
+        <h1 className="font-serif text-2xl font-black">Beavered 🦫</h1>
       </nav>
       <main className="">
-        <div className="mx-8 my-10 antialiased scroll-smooth selection:bg-orange-400 selection:text-black">
+        <div className="mx-8 antialiased scroll-smooth selection:bg-orange-400 selection:text-black">
           <div id="column-container">
             <div className="column planner-column">
               <Planner />
@@ -645,7 +642,7 @@ function App() {
           >
             Eric
           </a>
-          ,{" "}
+          , &{" "}
           <a
             className="font-mono font-bold text-orange-500 hover:underline"
             href="https://github.com/zack466"
@@ -653,15 +650,6 @@ function App() {
             rel="noreferrer"
           >
             Zack
-          </a>
-          , &{" "}
-          <a
-            className="font-mono font-bold text-orange-500 hover:underline"
-            href="https://armeetjatyani.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Armeet
           </a>
         </p>
       </footer>

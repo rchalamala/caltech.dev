@@ -5,7 +5,6 @@ import Select from "react-select";
 import { SingleValue } from "react-select";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import { Fzf } from "fzf";
-import Toggle from "react-toggle";
 import Lock from "@mui/icons-material/Lock";
 import LockOpen from "@mui/icons-material/LockOpen";
 import Delete from "@mui/icons-material/Delete";
@@ -53,8 +52,8 @@ function SectionDropdown(props: { course: CourseStorage }) {
     course.sectionId =
       newSection !== null
         ? course.courseData.sections.findIndex(
-            (s) => s.number === newSection.number,
-          )
+          (s) => s.number === newSection.number,
+        )
         : null;
     // if course with same id already exists, section number will simply be updated
     state.addCourse(course);
@@ -68,10 +67,10 @@ function SectionDropdown(props: { course: CourseStorage }) {
         value={
           course.sectionId !== null
             ? course.courseData.sections.find(
-                (c) =>
-                  c.number ===
-                  course.courseData.sections[course.sectionId!].number,
-              )
+              (c) =>
+                c.number ===
+                course.courseData.sections[course.sectionId!].number,
+            )
             : null
         }
         onChange={onChange}
@@ -80,7 +79,7 @@ function SectionDropdown(props: { course: CourseStorage }) {
         isOptionSelected={(section) =>
           course.sectionId !== null
             ? section.number ===
-              course.courseData.sections[course.sectionId].number
+            course.courseData.sections[course.sectionId].number
             : false
         }
       />
@@ -152,9 +151,8 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
     <Draggable draggableId={`${course.courseData.id}`} index={props.index}>
       {(provided) => (
         <div
-          className={`${className} bg-white shadow-lg border-0 ${
-            course.locked && "bg-neutral-100"
-          }`}
+          className={`${className} bg-white shadow-lg border-0 ${course.locked && "bg-neutral-100"
+            }`}
           ref={provided.innerRef}
           {...provided.draggableProps}
           {...provided.dragHandleProps}
