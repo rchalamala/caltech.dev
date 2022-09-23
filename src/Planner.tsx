@@ -160,7 +160,10 @@ function Planner() {
         events={calEvents}
         startAccessor="start"
         endAccessor="end"
-        style={{ margin: "10px", height: "calc(95vh - 50px)" }}
+        style={{
+          margin: "10px",
+          //   height: "calc(95vh - 50px)"
+        }}
         eventPropGetter={eventStyleGetter}
       />
     </div>

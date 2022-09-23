@@ -76,18 +76,6 @@
   margin-bottom: 0.8em;
 }
 
-.workspace-controls > button {
-  background-color: white;
-  padding: 6px;
-  border: 1px solid lightgrey;
-  border-radius: 4px;
-}
-
-.workspace-controls > button:hover {
-  cursor: pointer;
-  background-color: lightgrey;
-}
-
 .workspace-units {
   padding-top: 8px;
   padding-bottom: 14px;
@@ -110,8 +98,8 @@ li {
     width: 40vw;
   }
   .workspace-entries {
-    overflow-y: auto;
-    max-height: calc(95vh - 220px);
+    /* overflow-y: auto;
+    max-height: calc(95vh - 220px); */
   }
 }
 
@@ -134,7 +122,7 @@ li {
 
 .workspace-entry-locked {
   transition: background-color 0.2s ease;
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(241, 241, 241);
   /* background-color: rgb(238, 238, 110); */
 }
 
@@ -149,45 +137,16 @@ li {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  top: -12px;
+  /* top: -12px; */
   width: 100%;
 }
 
 .workspace-entry-toggle .react-toggle-track {
-  border-radius: 4px;
+  border-radius: 20px;
 }
 
 .workspace-entry-toggle .react-toggle-thumb {
-  border-radius: 4px;
-}
-
-.workspace-entry-buttons > button {
-  background-color: white;
-  border: 1px solid lightgrey;
-  border-radius: 4px;
-  width: 24px;
-  height: 24px;
-  padding: 2px;
-}
-
-.workspace-entry-buttons > button:hover {
-  cursor: pointer;
-  background-color: lightgrey;
-}
-
-.workspace-entry-controls-remove {
-  /*background-color: rgb(255, 55, 55);*/
-  background-color: white;
-  border: 1px solid lightgrey;
-  border-radius: 4px;
-  width: 24px;
-  height: 24px;
-}
-
-.workspace-entry-controls-remove:hover {
-  background-color: rgb(225, 114, 118);
-  border-radius: 4px;
-  cursor: pointer;
+  border-radius: 100%;
 }
 
 .workspace-entry-content {
@@ -214,17 +173,6 @@ li {
   flex-direction: column;
   row-gap: 10px;
   min-width: 7.5rem;
-}
-
-.workspace-entry-controls > button {
-  background-color: white;
-  border: 1px solid lightgrey;
-  border-radius: 4px;
-}
-
-.workspace-entry-controls > button:hover {
-  cursor: pointer;
-  background-color: lightgrey;
 }
 
 .export-modal {
