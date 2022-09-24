@@ -159,7 +159,7 @@ function Planner() {
             2018,
             0,
             1,
-            calEvents.length == 0
+            calEvents.length === 0
               ? 9
               : Math.min(
                   calEvents
@@ -178,7 +178,7 @@ function Planner() {
             2018,
             0,
             1,
-            calEvents.length == 0
+            calEvents.length === 0
               ? 16
               : Math.max(
                   calEvents
