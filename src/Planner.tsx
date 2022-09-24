@@ -154,15 +154,48 @@ function Planner() {
         step={15}
         timeslots={2}
         defaultDate={new Date(2018, 0, 1)}
-        min={new Date(2018, 0, 1, 8)}
-        max={new Date(2018, 0, 1, 23)}
+        min={
+          new Date(
+            2018,
+            0,
+            1,
+            calEvents.length == 0
+              ? 9
+              : Math.min(
+                  calEvents
+                    .reduce((prev, curr) =>
+                      curr.start.getHours() < prev.start.getHours()
+                        ? curr
+                        : prev,
+                    )
+                    .start.getHours(),
+                  9,
+                ),
+          )
+        }
+        max={
+          new Date(
+            2018,
+            0,
+            1,
+            calEvents.length == 0
+              ? 16
+              : Math.max(
+                  calEvents
+                    .reduce((prev, curr) =>
+                      curr.end.getHours() > prev.end.getHours() ? curr : prev,
+                    )
+                    .end.getHours() + 1,
+                  16,
+                ),
+          )
+        }
         toolbar={false}
         events={calEvents}
         startAccessor="start"
         endAccessor="end"
         style={{
           margin: "10px",
-          //   height: "calc(95vh - 50px)"
         }}
         eventPropGetter={eventStyleGetter}
       />
