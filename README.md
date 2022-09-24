@@ -4,6 +4,6 @@ The best Caltech course scheduler to exist
 
 Made with ❤️ by [Rahul](https://github.com/rchalamala), [Eric](https://github.com/ericlovesmath/), [Zack](https://github.com/zack466).
 
-Favicon art by Audrew Wong.
+In addition, thanks to [Armeet](https://github.com/armeetjatyani) and others for suggestions/contributions!
 
-Contributors: [Armeet](https://github.com/armeetjatyani)
+Favicon art by Audrew Wong.
