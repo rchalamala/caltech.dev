@@ -612,7 +612,7 @@ function App() {
         <h1 className="font-serif text-2xl font-black">Beavered 🦫</h1>
       </nav>
       <main className="">
-        <div className="mx-8 antialiased scroll-smooth selection:bg-orange-400 selection:text-black">
+        <div className="mx-2 antialiased scroll-smooth selection:bg-orange-400 selection:text-black">
           <div id="column-container">
             <div className="column planner-column">
               <Planner />

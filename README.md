@@ -6,4 +6,4 @@ Made with ❤️ by [Rahul](https://github.com/rchalamala), [Eric](https://githu
 
 In addition, thanks to [Armeet](https://github.com/armeetjatyani) and others for suggestions/contributions!
 
-Favicon art by Audrew Wong.
+Favicon art by Audrey Wong.
