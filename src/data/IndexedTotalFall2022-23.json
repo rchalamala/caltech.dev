@@ -10614,6 +10614,26 @@
     "true_units": "3",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=34&term_id=516&division_id=80425&department_id=275&offering_id=76117&track_id=76117-Default"
   },
+  "99999": {
+    "id": 99999,
+    "name": "Special Topics in Engineering & Applied Science",
+    "number": "E 100",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Hunt, M / Blank, A",
+        "locations": "121 ANB",
+        "number": 1,
+        "times": "F 12:00 - 12:55"
+      }
+    ],
+    "units": [1, 0, 0],
+    "description": "Open to first-year students who participated the FSRI program during summer 2022",
+    "prerequisites": "",
+    "rating": "",
+    "true_units": "",
+    "link": ""
+  },
   "14763": {
     "id": 14763,
     "name": "Introduction to Economics",
