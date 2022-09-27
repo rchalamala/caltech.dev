@@ -7292,7 +7292,7 @@
         "instructor": "Mendez, J",
         "locations": "A\nB122 GCL\n130 CHR",
         "number": 1,
-        "times": "OM,A\nF 13:00 - 13:55\nT 19:00 - 21:55"
+        "times": "OM,A\nR 20:00 - 20:55\nT 19:00 - 21:55"
       }
     ],
     "units": [1, 3, 2],
