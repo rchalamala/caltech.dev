@@ -6,10 +6,22 @@ import Modal from "./Modal";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import { motion } from "framer-motion";
 
-const indexedCourses: Record<
-  string,
-  CourseData
-> = require("./data/IndexedTotalFall2022-23.json");
+// const indexedCourses: Record<
+//   string,
+//   CourseData
+// > = require("./data/IndexedTotalFall2022-23.json");
+
+const DATA_FA2022 = require("./data/IndexedTotalFall2022-23.json")
+const DATA_WI2022 = require("./data/IndexedTotalWinter2022-23.json")
+
+const CURRENT_TERM = "/wi2022"
+
+const courseDataSources: Record<string, CourseData> = {
+  "/fa2022": DATA_FA2022,
+  "/wi2022": DATA_WI2022,
+}
+
+export const AllCourses = createContext<CourseIndex>({})
 
 function emptyWorkspace() {
   return {
@@ -117,10 +129,11 @@ export function shortenCourses(courses: CourseStorage[]): CourseStorageShort[] {
 
 export function lengthenCourses(
   shortened: CourseStorageShort[],
+  courseIndex: CourseIndex,
 ): CourseStorage[] {
   return shortened.map((storage) => {
     return {
-      courseData: indexedCourses[storage.courseId.toString()]!,
+      courseData: courseIndex[storage.courseId.toString()]!,
       sectionId: storage.sectionId,
       enabled: storage.enabled,
       locked: storage.locked,
@@ -226,10 +239,45 @@ function setField(obj: any, field: string, value: any) {
   };
 }
 
+// credit to https://stackoverflow.com/a/58443076
+const useReactPath = () => {
+  const [path, setPath] = useState(window.location.pathname);
+  const listenToPopstate = () => {
+    const winPath = window.location.pathname;
+    setPath(winPath);
+  };
+  useEffect(() => {
+    window.addEventListener("popstate", listenToPopstate);
+    return () => {
+      window.removeEventListener("popstate", listenToPopstate);
+    };
+  }, []);
+  return path;
+};
+
 /** Main wrapper */
 function App() {
+  // really basic routing
+  let pathname = useReactPath()
+  if (pathname === "/") {
+    // by default, switch to current term
+    pathname = CURRENT_TERM
+    window.location.pathname = pathname
+  }
+  const data = courseDataSources[pathname] || courseDataSources[CURRENT_TERM]
+  const [indexedCourses, setIndexedCourses] = useState({})
+
+  // load course data from a json url
+  useEffect(() => {
+    try {
+      setIndexedCourses(data);
+    } catch {
+      alert("Error loading course data")
+    }
+  }, [data])
+
   // 5 blank workspaces by default bc I'm too lazy to implement dynamic tabs and stuff
-  const localWorkspaces = localStorage.getItem("workspaces");
+  const localWorkspaces = localStorage.getItem("workspaces" + pathname);
   const [workspaces, setWorkspaces] = useState<Workspace[]>(
     localWorkspaces
       ? JSON.parse(localWorkspaces)
@@ -241,7 +289,7 @@ function App() {
           emptyWorkspace(),
         ],
   );
-  const localWorkspaceIdx = localStorage.getItem("workspaceIdx");
+  const localWorkspaceIdx = localStorage.getItem("workspaceIdx" + pathname);
   const [workspaceIdx, setWorkspaceIdx] = useState<number>(
     localWorkspaceIdx ? JSON.parse(localWorkspaceIdx) : 0,
   );
@@ -259,9 +307,9 @@ function App() {
 
   // Save state to local storage
   useEffect(() => {
-    localStorage.setItem("workspaces", JSON.stringify(workspaces));
-    localStorage.setItem("workspaceIdx", JSON.stringify(workspaceIdx));
-  }, [workspaces, workspaceIdx]);
+    localStorage.setItem("workspaces" + pathname, JSON.stringify(workspaces));
+    localStorage.setItem("workspaceIdx" + pathname, JSON.stringify(workspaceIdx));
+  }, [workspaces, workspaceIdx, pathname]);
 
   /** Helper functions to be sent sent through Context */
   const addCourse = (newCourse: CourseStorage) => {
@@ -290,7 +338,7 @@ function App() {
       });
     } else {
       newArrangementIdx = 0;
-      newCourses = lengthenCourses(newArrangements[newArrangementIdx]);
+      newCourses = lengthenCourses(newArrangements[newArrangementIdx], indexedCourses);
     }
     // these happen in parallel
     setWorkspaces(
@@ -317,7 +365,7 @@ function App() {
       });
     } else {
       newArrangementIdx = 0;
-      newCourses = lengthenCourses(newArrangements[newArrangementIdx]);
+      newCourses = lengthenCourses(newArrangements[newArrangementIdx], indexedCourses);
     }
     setWorkspaces(
       setArrayIdx(workspaces, workspaceIdx, {
@@ -354,7 +402,7 @@ function App() {
       // otherwise, just keep arrangementIdx the same
       if (newCourse.enabled || !newCourse.locked) {
         newArrangementIdx = 0;
-        newCourses = lengthenCourses(newArrangements[newArrangementIdx]);
+        newCourses = lengthenCourses(newArrangements[newArrangementIdx], indexedCourses);
       }
     }
     setWorkspaces(
@@ -389,7 +437,7 @@ function App() {
       newArrangementIdx = null;
     } else {
       newArrangementIdx = 0;
-      newCourses = lengthenCourses(newArrangements[newArrangementIdx]);
+      newCourses = lengthenCourses(newArrangements[newArrangementIdx], indexedCourses);
     }
     setWorkspaces(
       setArrayIdx(workspaces, workspaceIdx, {
@@ -415,7 +463,7 @@ function App() {
       newIdx === null
         ? shortenCourses(workspace.courses)
         : workspace.arrangements[newIdx!];
-    const newCourses = lengthenCourses(newArrangement);
+    const newCourses = lengthenCourses(newArrangement, indexedCourses);
     setWorkspaces(
       setArrayIdx(workspaces, workspaceIdx, {
         ...workspaces[workspaceIdx],
@@ -441,7 +489,7 @@ function App() {
       newIdx === null
         ? shortenCourses(workspace.courses)
         : workspace.arrangements[newIdx!];
-    const newCourses = lengthenCourses(newArrangement);
+    const newCourses = lengthenCourses(newArrangement, indexedCourses);
     setWorkspaces(
       setArrayIdx(workspaces, workspaceIdx, {
         ...workspaces[workspaceIdx],
@@ -465,7 +513,7 @@ function App() {
       });
     } else {
       newArrangementIdx = 0;
-      newCourses = lengthenCourses(newArrangements[newArrangementIdx]);
+      newCourses = lengthenCourses(newArrangements[newArrangementIdx], indexedCourses);
     }
     setWorkspaces(
       setArrayIdx(workspaces, workspaceIdx, {
@@ -516,7 +564,7 @@ function App() {
         (!isStart && day > availableTimes[dayIdx][1]);
       if (!isWidening || newArrangements.length !== arrangements.length) {
         newArrangementIdx = 0;
-        newCourses = lengthenCourses(newArrangements[newArrangementIdx]);
+        newCourses = lengthenCourses(newArrangements[newArrangementIdx], indexedCourses);
       }
     }
     // if current sections are invalid, jump to first valid one (or null everything)
@@ -536,6 +584,9 @@ function App() {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
+    <AllCourses.Provider
+      value={indexedCourses}
+    >
     <AppState.Provider
       value={{
         workspaces,
@@ -654,6 +705,7 @@ function App() {
         </p>
       </footer>
     </AppState.Provider>
+    </AllCourses.Provider>
   );
 }
 

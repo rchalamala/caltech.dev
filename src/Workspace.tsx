@@ -1,5 +1,4 @@
 import { useContext, useState } from "react";
-import { AppState } from "./App";
 import Modal, { useModal } from "./Modal";
 import Select from "react-select";
 import { SingleValue } from "react-select";
@@ -10,26 +9,29 @@ import LockOpen from "@mui/icons-material/LockOpen";
 import Delete from "@mui/icons-material/Delete";
 import ArrowBack from "@mui/icons-material/ArrowBack";
 import ArrowForward from "@mui/icons-material/ArrowForward";
-import { shortenCourses, lengthenCourses } from "./App";
+import { shortenCourses, lengthenCourses, AllCourses, AppState } from "./App";
 import { motion } from "framer-motion";
 
 import "react-toggle/style.css";
 import "./css/workspace.css";
 import { IconButton, Switch } from "@mui/material";
 
-const courses: CourseData[] = require("./data/TotalFall2022-23.json");
+// const courses: CourseData[] = require("./data/TotalFall2022-23.json");
 
 /** Fetches courses */
-function getCourse(identifier: number | string): Maybe<CourseStorage> {
+function getCourse(
+  identifier: number | string,
+  indexedCourses: CourseIndex
+): Maybe<CourseStorage> {
   let foundCourse: Maybe<CourseData> = null;
 
   if (typeof identifier === "number") {
-    foundCourse = courses.find((course) => course.id === identifier) || null;
+    foundCourse = indexedCourses[`${identifier}`] || null;
   } else {
     foundCourse =
-      courses.find((course) => course.number === identifier) ||
-      courses.find((course) => course.name === identifier) ||
-      null;
+      Object.values(indexedCourses).find((course) => course.number === identifier) ||
+        Object.values(indexedCourses).find((course) => course.name === identifier) ||
+        null;
   }
 
   if (foundCourse !== null) {
@@ -228,9 +230,21 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
 }
 
 function WorkspaceSearch() {
-  const [options, setOptions] = useState(courses);
-  const [selectedCourse, setCourse] = useState<Maybe<CourseData>>(null);
   const state = useContext(AppState);
+  const indexedCourses = useContext(AllCourses)
+  const courses = Object.values(indexedCourses) 
+
+  // For some reason, options = [] on the second render, even though
+  // courses = [...] by then and options should equal courses.
+  // I came up with this hacky solution to get around that...
+  // The dropdown options should re-render properly
+  let [options, setOptions] = useState<CourseData[]>(courses);
+  const [firstLoad, setFirstLoad] = useState(true);
+  if (firstLoad && options.length === 0) {
+    options = courses;
+  }
+
+  const [selectedCourse, setCourse] = useState<Maybe<CourseData>>(null);
 
   const handleSelect = (courseData: SingleValue<CourseData>) => {
     setCourse(courseData as CourseData);
@@ -251,6 +265,7 @@ function WorkspaceSearch() {
 
   const sortCourses = (input: string) => {
     setOptions(fzf.find(input).map((item) => item.item));
+    setFirstLoad(false);
   };
 
   return (
@@ -333,6 +348,7 @@ From the workspace, you can enable/disable courses in addition to switching the 
 // TODO: import/export classes in plaintext or a human-readable format
 export default function Workspace() {
   const state = useContext(AppState);
+  const indexedCourses = useContext(AllCourses)
 
   const workspaceEntries = (provided: any) =>
     state.courses.map((course: CourseStorage, index: number) => (
@@ -392,9 +408,11 @@ export default function Workspace() {
 
   const setDefaultSchedule = () => {
     state.setCourses(
-      ["Ma 1 a", "Ph 1 a", "Ch 1 a", "CS 1"].map(getCourse).map((course) => {
+      ["Ma 1 b", "Ph 1 b", "Ch 1 b"].map((name) => {
+        return getCourse(name, indexedCourses)
+      }).map((course) => {
         return { ...course!, enabled: true, locked: true };
-      }),
+      })
     );
   };
 
@@ -455,7 +473,7 @@ export default function Workspace() {
           sectionId: shortened[i * 4 + 3],
         });
       }
-      const lengthened = lengthenCourses(courses);
+      const lengthened = lengthenCourses(courses, indexedCourses);
       state.setCourses(lengthened);
     } catch {
       alert("Error importing workspace.");

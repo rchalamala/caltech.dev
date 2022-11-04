@@ -52,3 +52,5 @@ interface Workspace {
   arrangementIdx: Maybe<number>;
   availableTimes: AvailableTimes;
 }
+
+type CourseIndex = Record<string, CourseData>
