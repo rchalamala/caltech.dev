@@ -14,11 +14,11 @@ import { motion } from "framer-motion";
 const DATA_FA2022 = require("./data/IndexedTotalFall2022-23.json")
 const DATA_WI2022 = require("./data/IndexedTotalWinter2022-23.json")
 
-const CURRENT_TERM = "/#/wi2022"
+const CURRENT_TERM = "/wi2022"
 
 const courseDataSources: Record<string, CourseData> = {
-  "/#/fa2022": DATA_FA2022,
-  "/#/wi2022": DATA_WI2022,
+  "/fa2022": DATA_FA2022,
+  "/wi2022": DATA_WI2022,
 }
 
 export const AllCourses = createContext<CourseIndex>({})
@@ -259,11 +259,6 @@ const useReactPath = () => {
 function App() {
   // really basic routing
   let pathname = useReactPath()
-  if (pathname === "/") {
-    // by default, switch to current term
-    pathname = CURRENT_TERM
-    window.location.pathname = pathname
-  }
   const data = courseDataSources[pathname] || courseDataSources[CURRENT_TERM]
   const [indexedCourses, setIndexedCourses] = useState({})
 
