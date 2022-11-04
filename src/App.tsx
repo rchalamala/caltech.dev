@@ -14,11 +14,11 @@ import { motion } from "framer-motion";
 const DATA_FA2022 = require("./data/IndexedTotalFall2022-23.json")
 const DATA_WI2022 = require("./data/IndexedTotalWinter2022-23.json")
 
-const CURRENT_TERM = "/wi2022"
+const CURRENT_TERM = "/#/wi2022"
 
 const courseDataSources: Record<string, CourseData> = {
-  "/fa2022": DATA_FA2022,
-  "/wi2022": DATA_WI2022,
+  "/#/fa2022": DATA_FA2022,
+  "/#/wi2022": DATA_WI2022,
 }
 
 export const AllCourses = createContext<CourseIndex>({})
