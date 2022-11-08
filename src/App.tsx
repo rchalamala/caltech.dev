@@ -654,10 +654,7 @@ function App() {
           </p>
         </Modal>
       </div>
-      <nav className="flex flex-col items-center justify-center py-5 p-0">
-        <h1 className="font-serif text-2xl font-black">Beavered 🦫</h1>
-      </nav>
-      <main className="">
+      <main className="py-5">
         <div className="mx-2 antialiased scroll-smooth selection:bg-orange-400 selection:text-black">
           <div id="column-container">
             <div className="column planner-column">
