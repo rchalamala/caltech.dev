@@ -11,8 +11,8 @@ import { motion } from "framer-motion";
 //   CourseData
 // > = require("./data/IndexedTotalFall2022-23.json");
 
-const DATA_FA2022 = require("./data/IndexedTotalFA2022-23.json")
-const DATA_WI2022 = require("./data/IndexedTotalWI2022-23.json")
+const DATA_FA2022 = require("./data/IndexedTotalFall2022-23.json")
+const DATA_WI2022 = require("./data/IndexedTotalWinter2022-23.json")
 
 const CURRENT_TERM = "/wi2022"
 
