@@ -7969,62 +7969,41 @@
                 "instructor": "Chan, G / Robb, M",
                 "locations": "Lecture Hall\nBAX\n153 NYS",
                 "number": 6,
-                "times": "MTR 11:00 - 11:55\nW 14:00 - 14:55"
+                "times": "MTR 11:00 - 11:55\nW 16:00 - 16:55"
             },
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Chan, G / Robb, M",
                 "locations": "Lecture Hall\nBAX\n101 SCH",
                 "number": 7,
-                "times": "MTR 11:00 - 11:55\nW 16:00 - 16:55"
+                "times": "MTR 11:00 - 11:55\nR 14:00 - 14:55"
             },
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Chan, G / Robb, M",
                 "locations": "Lecture Hall\nBAX\n147 NYS",
                 "number": 8,
-                "times": "MTR 11:00 - 11:55\nR 14:00 - 14:55"
+                "times": "MTR 11:00 - 11:55\nR 16:00 - 16:55"
             },
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Chan, G / Robb, M",
                 "locations": "Lecture Hall\nBAX\n147 NYS",
                 "number": 9,
-                "times": "MTR 11:00 - 11:55\nR 16:00 - 16:55"
+                "times": "MTR 11:00 - 11:55\nW 15:00 - 15:55"
             },
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Chan, G / Robb, M",
                 "locations": "Lecture Hall\nBAX\n101 SCH",
                 "number": 10,
-                "times": "MTR 11:00 - 11:55\nW 15:00 - 15:55"
+                "times": "MTR 11:00 - 11:55\nR 14:00 - 14:55"
             },
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Chan, G / Robb, M",
                 "locations": "Lecture Hall\nBAX\n320 BRN",
                 "number": 11,
-                "times": "MTR 11:00 - 11:55\nW 15:00 - 15:55"
-            },
-            {
-                "grades": "PASS-FAIL",
-                "instructor": "Chan, G / Robb, M",
-                "locations": "Lecture Hall\nBAX\n153 NYS",
-                "number": 12,
-                "times": "MTR 11:00 - 11:55\nR 14:00 - 14:55"
-            },
-            {
-                "grades": "PASS-FAIL",
-                "instructor": "Chan, G / Robb, M",
-                "locations": "Lecture Hall\nBAX\n153 NYS",
-                "number": 13,
-                "times": "MTR 11:00 - 11:55\nR 16:00 - 16:55"
-            },
-            {
-                "grades": "PASS-FAIL",
-                "instructor": "Chan, G / Robb, M",
-                "locations": "Lecture Hall\nBAX\n101 SCH",
-                "number": 14,
                 "times": "MTR 11:00 - 11:55\nR 16:00 - 16:55"
             }
         ],
