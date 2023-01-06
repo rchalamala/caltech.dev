@@ -7,7 +7,7 @@
             {
                 "grades": "LETTER",
                 "instructor": "Colonius, T",
-                "locations": "115 GTL",
+                "locations": "135 GTL",
                 "number": 1,
                 "times": "MWF 10:00 - 10:55"
             }
@@ -49,8 +49,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80425&department_id=120&offering_id=85932&track_id=85932-Default"
     },
-    "24": {
-        "id": 24,
+    "1": {
+        "id": 1,
         "name": "Aerospace Control Systems",
         "number": "Ae 103 b",
         "sections": [
@@ -174,17 +174,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80425&department_id=120&offering_id=85810&track_id=85810-Default"
     },
-    "25": {
-        "id": 25,
+    "2": {
+        "id": 2,
         "name": "Introduction to the Physics of Remote Sensing",
         "number": "EE/Ae 157 b",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Rosen, P",
-                "locations": "",
+                "locations": "105 ANB",
                 "number": 1,
-                "times": "TR 14:30 - 15:55\nA"
+                "times": "TR 14:30 - 15:55"
             }
         ],
         "comment": "",
@@ -476,20 +476,20 @@
         "true_units": "",
         "link": ""
     },
-    "26": {
-        "id": 26,
+    "3": {
+        "id": 3,
         "name": "Advanced Fluid Mechanics",
         "number": "Ae 201 b",
         "sections": [
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Dimotakis, P",
-                "locations": "384 FIR",
+                "locations": "",
                 "number": 1,
-                "times": "TR 13:00 - 14:25"
+                "times": "A\nA"
             }
         ],
-        "comment": "",
+        "comment": " class cancelled",
         "units": [
             3,
             0,
@@ -551,8 +551,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80425&department_id=120&offering_id=87330&track_id=87330-Default"
     },
-    "27": {
-        "id": 27,
+    "4": {
+        "id": 4,
         "name": "Turbulence",
         "number": "Ae 239 a",
         "sections": [
@@ -601,8 +601,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=39&term_id=521&division_id=80425&department_id=120&offering_id=79540&track_id=79540-Section 1"
     },
-    "28": {
-        "id": 28,
+    "5": {
+        "id": 5,
         "name": "Fracture and Frictional Faulting",
         "number": "ME/Ge/Ae 266 a",
         "sections": [
@@ -659,12 +659,12 @@
             {
                 "grades": "LETTER",
                 "instructor": "Ensminger, J",
-                "locations": "",
+                "locations": "128 BAX",
                 "number": 1,
-                "times": "MW 14:30 - 15:55\nA"
+                "times": "MW 14:30 - 15:55"
             }
         ],
-        "comment": " maximum enrollment: 10 students // Designated as Writing Intensive Course",
+        "comment": " maximum enrollment: 10 students // Designated as Writing Intensive Course // class full, see instructor for waitlist",
         "units": [
             3,
             0,
@@ -753,6 +753,13 @@
                 "instructor": "Leong, O",
                 "locations": "",
                 "number": 4,
+                "times": "A\nA"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Hoffmann, F",
+                "locations": "",
+                "number": 5,
                 "times": "A\nA"
             }
         ],
@@ -901,9 +908,9 @@
             {
                 "grades": "",
                 "instructor": "Rangel, A",
-                "locations": "",
+                "locations": "155 ARM",
                 "number": 1,
-                "times": "TR 10:30 - 11:55\nA"
+                "times": "TR 10:30 - 11:55"
             }
         ],
         "comment": "",
@@ -951,7 +958,7 @@
             {
                 "grades": "",
                 "instructor": "Russkikh, M",
-                "locations": "187 LINDE",
+                "locations": "310 LINDE",
                 "number": 1,
                 "times": "MWF 14:00 - 14:55"
             }
@@ -968,8 +975,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80428&department_id=142&offering_id=88470&track_id=88470-Default"
     },
-    "29": {
-        "id": 29,
+    "6": {
+        "id": 6,
         "name": "Discrete Differential Geometry: Theory and Applications",
         "number": "CS/ACM 177 a",
         "sections": [
@@ -1000,7 +1007,7 @@
         "sections": [
             {
                 "grades": "PASS-FAIL",
-                "instructor": "Staff",
+                "instructor": "Bruno, O",
                 "locations": "",
                 "number": 1,
                 "times": "A\nA"
@@ -1043,8 +1050,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80425&department_id=214&offering_id=86665&track_id=86665-Default"
     },
-    "30": {
-        "id": 30,
+    "7": {
+        "id": 7,
         "name": "Advanced Topics in Probability: High-dimensional probability",
         "number": "ACM 217",
         "sections": [
@@ -1068,8 +1075,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80425&department_id=214&offering_id=84147&track_id=84147-Default"
     },
-    "31": {
-        "id": 31,
+    "8": {
+        "id": 8,
         "name": "Special Topics in Applied Mathematics:",
         "number": "ACM 256",
         "sections": [
@@ -1350,7 +1357,7 @@
                 "instructor": "Matsko, A",
                 "locations": "133 STL",
                 "number": 1,
-                "times": "TR 09:00 - 10:25"
+                "times": "WF 13:00 - 14:25"
             }
         ],
         "comment": "",
@@ -1365,8 +1372,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=41&term_id=526&division_id=80425&department_id=124&offering_id=84287&track_id=84287-Default"
     },
-    "32": {
-        "id": 32,
+    "9": {
+        "id": 9,
         "name": "Physics of Electrical Engineering",
         "number": "EE/APh 40",
         "sections": [
@@ -1676,7 +1683,7 @@
             {
                 "grades": "",
                 "instructor": "Fultz, B",
-                "locations": "104 WAT",
+                "locations": "142 KCK",
                 "number": 1,
                 "times": "TR 09:00 - 10:25"
             }
@@ -1700,7 +1707,7 @@
         "sections": [
             {
                 "grades": "",
-                "instructor": "Troian, S / Ghaffari, A",
+                "instructor": "Ghaffari, A",
                 "locations": "104 WAT",
                 "number": 1,
                 "times": "OM,W 16:00 - 16:55"
@@ -1751,9 +1758,9 @@
             {
                 "grades": "",
                 "instructor": "Troian, S",
-                "locations": "",
+                "locations": "111 KCK",
                 "number": 1,
-                "times": "TR 14:30 - 15:55\nA"
+                "times": "TR 14:30 - 15:55"
             }
         ],
         "comment": "",
@@ -1793,15 +1800,15 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80425&department_id=124&offering_id=85816&track_id=85816-Default"
     },
-    "33": {
-        "id": 33,
+    "10": {
+        "id": 10,
         "name": "Physics of Measurement",
         "number": "Ph/APh/EE/BE 118 a",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Roukes, M",
-                "locations": "107 DWN",
+                "locations": "387 LINDE",
                 "number": 1,
                 "times": "TR 14:30 - 15:55"
             }
@@ -1818,8 +1825,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80428&department_id=147&offering_id=84392&track_id=84392-Default"
     },
-    "34": {
-        "id": 34,
+    "11": {
+        "id": 11,
         "name": "Diffraction, Imaging, and Structure",
         "number": "MS/APh 122",
         "sections": [
@@ -1851,7 +1858,7 @@
             {
                 "grades": "",
                 "instructor": "Endres, M",
-                "locations": "469 LAU",
+                "locations": "387 LINDE",
                 "number": 1,
                 "times": "TR 10:30 - 11:55"
             }
@@ -1918,8 +1925,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80425&department_id=129&offering_id=88379&track_id=88379-Default"
     },
-    "35": {
-        "id": 35,
+    "12": {
+        "id": 12,
         "name": "Physical Biology of the Cell",
         "number": "BE/Bi/APh 161",
         "sections": [
@@ -1968,8 +1975,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80425&department_id=141&offering_id=88489&track_id=88489-Default"
     },
-    "36": {
-        "id": 36,
+    "13": {
+        "id": 13,
         "name": "Quantum Electronics",
         "number": "APh/EE 190 a",
         "sections": [
@@ -2537,6 +2544,13 @@
                 "locations": "",
                 "number": 33,
                 "times": "A\nA"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Falson, J",
+                "locations": "",
+                "number": 34,
+                "times": "A\nA"
             }
         ],
         "comment": "",
@@ -2559,7 +2573,7 @@
             {
                 "grades": "",
                 "instructor": "Djorgovski, S",
-                "locations": "219 CHL",
+                "locations": "Hameetman\nAud CHL",
                 "number": 1,
                 "times": "MWF 15:00 - 15:55"
             }
@@ -2576,15 +2590,15 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80428&department_id=137&offering_id=86601&track_id=86601-Default"
     },
-    "37": {
-        "id": 37,
+    "14": {
+        "id": 14,
         "name": "Writing in Astronomy",
         "number": "Ay 31",
         "sections": [
             {
                 "grades": "LETTER",
                 "instructor": "Hallinan, G",
-                "locations": "Hameetman\nAud CHL",
+                "locations": "211 CHL",
                 "number": 1,
                 "times": "F 15:00 - 15:55"
             }
@@ -2852,8 +2866,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80426&department_id=182&offering_id=86621&track_id=86621-Default"
     },
-    "38": {
-        "id": 38,
+    "15": {
+        "id": 15,
         "name": "Astronomical Measurements and Instrumentation",
         "number": "Ay 122 c",
         "sections": [
@@ -2862,7 +2876,7 @@
                 "instructor": "Ravi, V",
                 "locations": "219 CHL",
                 "number": 1,
-                "times": "TR 13:00 - 14:25"
+                "times": "TR 16:00 - 17:25"
             }
         ],
         "comment": "",
@@ -2887,7 +2901,7 @@
                 "instructor": "Howard, A",
                 "locations": "219 CHL",
                 "number": 1,
-                "times": "TR 14:30 - 15:55"
+                "times": "MW 14:30 - 15:55"
             }
         ],
         "comment": "",
@@ -2902,15 +2916,15 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80428&department_id=137&offering_id=88431&track_id=88431-Default"
     },
-    "39": {
-        "id": 39,
+    "16": {
+        "id": 16,
         "name": "Interstellar and Intergalactic Medium",
         "number": "Ay 126",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Steidel, C",
-                "locations": "Hameetman\nAud CHL",
+                "locations": "219 CHL",
                 "number": 1,
                 "times": "TR 14:30 - 15:55"
             }
@@ -2927,15 +2941,15 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80428&department_id=137&offering_id=83537&track_id=83537-Default"
     },
-    "40": {
-        "id": 40,
+    "17": {
+        "id": 17,
         "name": "Atomic and Molecular Processes in Astronomy and Planetary Sciences",
         "number": "Ge/Ay 132",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Blake, G",
-                "locations": "176 SMD",
+                "locations": "162 SMD",
                 "number": 1,
                 "times": "TR 14:30 - 15:55"
             }
@@ -3849,8 +3863,8 @@
         "true_units": "",
         "link": ""
     },
-    "41": {
-        "id": 41,
+    "18": {
+        "id": 18,
         "name": "Biophysical Chemistry",
         "number": "BE/Bi 25",
         "sections": [
@@ -4306,15 +4320,15 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80424&department_id=116&offering_id=86610&track_id=86610-Default"
     },
-    "42": {
-        "id": 42,
+    "19": {
+        "id": 19,
         "name": "Physics of Measurement",
         "number": "Ph/APh/EE/BE 118 a",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Roukes, M",
-                "locations": "107 DWN",
+                "locations": "387 LINDE",
                 "number": 1,
                 "times": "TR 14:30 - 15:55"
             }
@@ -4331,8 +4345,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80428&department_id=147&offering_id=84392&track_id=84392-Default"
     },
-    "43": {
-        "id": 43,
+    "20": {
+        "id": 20,
         "name": "Neuropharmacology",
         "number": "NB/Bi/BE 155",
         "sections": [
@@ -4356,8 +4370,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80423&department_id=153&offering_id=84447&track_id=84447-Default"
     },
-    "44": {
-        "id": 44,
+    "21": {
+        "id": 21,
         "name": "Physical Biology of the Cell",
         "number": "BE/Bi/APh 161",
         "sections": [
@@ -4381,8 +4395,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80423&department_id=575&offering_id=86546&track_id=86546-Default"
     },
-    "45": {
-        "id": 45,
+    "22": {
+        "id": 22,
         "name": "Biomedical Optics: Principles and Imaging",
         "number": "MedE/EE/BE 168 c",
         "sections": [
@@ -4406,15 +4420,15 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80425&department_id=555&offering_id=88287&track_id=88287-Default"
     },
-    "46": {
-        "id": 46,
+    "23": {
+        "id": 23,
         "name": "Principles of Modern Microscopy",
         "number": "Bi/BE 177",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Collazo, A",
-                "locations": "152 BRN",
+                "locations": "119 KRK",
                 "number": 1,
                 "times": "TR 10:30 - 11:55"
             }
@@ -4439,7 +4453,7 @@
             {
                 "grades": "",
                 "instructor": "Pachter, L",
-                "locations": "119 KRK",
+                "locations": "B180 BBB",
                 "number": 1,
                 "times": "TR 10:30 - 11:55"
             }
@@ -4456,8 +4470,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80423&department_id=153&offering_id=88347&track_id=88347-Default"
     },
-    "47": {
-        "id": 47,
+    "24": {
+        "id": 24,
         "name": "Micro/Nano Technology for Semiconductor and Medical Device",
         "number": "EE/BE/MedE 185",
         "sections": [
@@ -4481,8 +4495,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=15&term_id=399&division_id=80425&department_id=129&offering_id=63310&track_id=63310-Default"
     },
-    "48": {
-        "id": 48,
+    "25": {
+        "id": 25,
         "name": "Molecular Imaging",
         "number": "ChE/BE/MedE 188",
         "sections": [
@@ -4924,6 +4938,13 @@
                 "locations": "",
                 "number": 53,
                 "times": "A\nA"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Shimojo, S",
+                "locations": "",
+                "number": 54,
+                "times": "A\nA"
             }
         ],
         "comment": "",
@@ -4963,8 +4984,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80423&department_id=575&offering_id=86632&track_id=86632-Default"
     },
-    "49": {
-        "id": 49,
+    "26": {
+        "id": 26,
         "name": "The Biomechanics of Organismal Design",
         "number": "Bi 1 b",
         "sections": [
@@ -4988,8 +5009,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80423&department_id=153&offering_id=86978&track_id=86978-Default"
     },
-    "50": {
-        "id": 50,
+    "27": {
+        "id": 27,
         "name": "Information Flow in Biology",
         "number": "Bi 1 g",
         "sections": [
@@ -5603,9 +5624,23 @@
                 "locations": "200 BRD",
                 "number": 6,
                 "times": "OM,R 16:00 - 16:55"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Helou, A",
+                "locations": "200 BRD",
+                "number": 7,
+                "times": "OM,W 16:00 - 16:55"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "MacNabb, B",
+                "locations": "152 BRN",
+                "number": 8,
+                "times": "F 13:30 - 14:55"
             }
         ],
-        "comment": " See course syllabus link for each section's tutorial title",
+        "comment": " See course syllabus link for each section's tutorial title // Sec 8 has an alternate section that meets Fridays at 4pm in 152 BRN",
         "units": [
             1,
             0,
@@ -5617,8 +5652,8 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80423&department_id=153&offering_id=86555&track_id=86555-Section 1"
     },
-    "51": {
-        "id": 51,
+    "28": {
+        "id": 28,
         "name": "Biophysical Chemistry",
         "number": "BE/Bi 25",
         "sections": [
@@ -5857,14 +5892,14 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80423&department_id=177&offering_id=87157&track_id=87157-Default"
     },
-    "52": {
-        "id": 52,
+    "29": {
+        "id": 29,
         "name": "Introduction to Biochemistry",
         "number": "Ch/Bi 110 b",
         "sections": [
             {
                 "grades": "",
-                "instructor": "Rees, D",
+                "instructor": "Rees, D / Clemons, W",
                 "locations": "153 NYS\n153 NYS",
                 "number": 1,
                 "times": "MWF 11:00 - 11:55\nW 15:00 - 16:55"
@@ -5882,20 +5917,20 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80424&department_id=114&offering_id=86222&track_id=86222-Default"
     },
-    "53": {
-        "id": 53,
+    "30": {
+        "id": 30,
         "name": "Immunology",
         "number": "Bi 114",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Bjorkman, P / Mazmanian,",
-                "locations": "200 BRD\nS",
+                "locations": "130 CNRB\nS",
                 "number": 1,
                 "times": "MW 13:30 - 14:55"
             }
         ],
-        "comment": "",
+        "comment": " maximum enrollment: 40 students",
         "units": [
             3,
             0,
@@ -5967,7 +6002,7 @@
                 "instructor": "Tydell, C",
                 "locations": "152 BRN",
                 "number": 1,
-                "times": "MW 19:00 - 20:25"
+                "times": "TR 19:00 - 20:25"
             }
         ],
         "comment": "",
@@ -5982,8 +6017,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80423&department_id=153&offering_id=86022&track_id=86022-Default"
     },
-    "54": {
-        "id": 54,
+    "31": {
+        "id": 31,
         "name": "Neuropharmacology",
         "number": "NB/Bi/BE 155",
         "sections": [
@@ -6007,8 +6042,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80423&department_id=153&offering_id=84447&track_id=84447-Default"
     },
-    "55": {
-        "id": 55,
+    "32": {
+        "id": 32,
         "name": "Physical Biology of the Cell",
         "number": "BE/Bi/APh 161",
         "sections": [
@@ -6032,17 +6067,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80423&department_id=575&offering_id=86546&track_id=86546-Default"
     },
-    "56": {
-        "id": 56,
+    "33": {
+        "id": 33,
         "name": "Consciousness",
         "number": "Pl/CNS/NB/Bi/Ps y 167",
         "sections": [
             {
                 "grades": "LETTER",
                 "instructor": "Eberhardt, F / Adolphs, R",
-                "locations": "",
+                "locations": "130 CNRB",
                 "number": 1,
-                "times": "TR 10:30 - 11:55\nA"
+                "times": "TR 10:30 - 11:55"
             }
         ],
         "comment": " open by application only, apply at http://registrar.caltech.edu/PL167 by Nov 16th // maximum enrollment: 20 students",
@@ -6057,8 +6092,8 @@
         "true_units": "",
         "link": ""
     },
-    "57": {
-        "id": 57,
+    "34": {
+        "id": 34,
         "name": "Microbial Metabolic Diversity",
         "number": "ESE/Bi 168",
         "sections": [
@@ -6082,15 +6117,15 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80426&department_id=495&offering_id=84247&track_id=84247-Default"
     },
-    "58": {
-        "id": 58,
+    "35": {
+        "id": 35,
         "name": "Principles of Modern Microscopy",
         "number": "Bi/BE 177",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Collazo, A",
-                "locations": "152 BRN",
+                "locations": "119 KRK",
                 "number": 1,
                 "times": "TR 10:30 - 11:55"
             }
@@ -6107,17 +6142,17 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80423&department_id=153&offering_id=84448&track_id=84448-Default"
     },
-    "59": {
-        "id": 59,
+    "36": {
+        "id": 36,
         "name": "Microbial Ecology",
         "number": "Ge/ESE/Bi 178",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Orphan, V",
-                "locations": "",
+                "locations": "162 SMD",
                 "number": 1,
-                "times": "A\nA"
+                "times": "TR 13:00 - 14:25"
             }
         ],
         "comment": "",
@@ -6132,20 +6167,20 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80426&department_id=182&offering_id=84508&track_id=84508-Default"
     },
-    "60": {
-        "id": 60,
+    "37": {
+        "id": 37,
         "name": "Vision: From Computational Theory to Neuronal Mechanisms",
         "number": "CNS/Bi/EE/CS/N B 186",
         "sections": [
             {
                 "grades": "",
-                "instructor": "Shimojo, S / Perona, P /",
-                "locations": "130 CNRB\nMeister, M / Rutishauser, U",
+                "instructor": "Staff",
+                "locations": "",
                 "number": 1,
-                "times": "TR 10:30 - 11:55"
+                "times": "A\nA"
             }
         ],
-        "comment": "",
+        "comment": " class cancelled",
         "units": [
             4,
             4,
@@ -6157,8 +6192,8 @@
         "true_units": "",
         "link": ""
     },
-    "61": {
-        "id": 61,
+    "38": {
+        "id": 38,
         "name": "Genetic Dissection of Neural Circuit Function",
         "number": "NB/Bi/CNS 220",
         "sections": [
@@ -6182,8 +6217,8 @@
         "true_units": "5",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80423&department_id=535&offering_id=88873&track_id=88873-Default"
     },
-    "62": {
-        "id": 62,
+    "39": {
+        "id": 39,
         "name": "Cerebral Cortex",
         "number": "CNS/Bi/NB 247",
         "sections": [
@@ -6775,6 +6810,27 @@
                 "locations": "",
                 "number": 77,
                 "times": "A\nA"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Glover, D",
+                "locations": "",
+                "number": 78,
+                "times": "A\nA"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Demirer, G",
+                "locations": "",
+                "number": 79,
+                "times": "A\nA"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "McFall-Ngai, M",
+                "locations": "",
+                "number": 80,
+                "times": "A\nA"
             }
         ],
         "comment": "",
@@ -6814,17 +6870,17 @@
         "true_units": "",
         "link": ""
     },
-    "63": {
-        "id": 63,
+    "40": {
+        "id": 40,
         "name": "Selected Topics in Business Economics and Management: Economics of",
         "number": "BEM 101",
         "sections": [
             {
                 "grades": "LETTER",
                 "instructor": "Singh, J",
-                "locations": "",
+                "locations": "117 DAB",
                 "number": 1,
-                "times": "TR 14:30 - 15:55\nA"
+                "times": "TR 14:30 - 15:55"
             }
         ],
         "comment": " Sustainable Development",
@@ -6847,9 +6903,9 @@
             {
                 "grades": "LETTER",
                 "instructor": "Rosenthal, J",
-                "locations": "",
+                "locations": "Lecture Hall\nBAX",
                 "number": 1,
-                "times": "MWF 09:00 - 09:55\nA"
+                "times": "MWF 09:00 - 09:55"
             }
         ],
         "comment": "",
@@ -6889,20 +6945,20 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80427&department_id=165&offering_id=86694&track_id=86694-Default"
     },
-    "64": {
-        "id": 64,
+    "41": {
+        "id": 41,
         "name": "Chemical Synthesis and Characterization for Chemical Engineering",
         "number": "Ch/ChE 9",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Mendez, J",
-                "locations": "B122 GCL\n130 CHR",
+                "locations": "",
                 "number": 1,
-                "times": "F 12:00 - 12:55\nTR 13:00 - 15:55"
+                "times": "A\nA"
             }
         ],
-        "comment": " open by lottery only; see link on the REGIS home page to enter by Nov 16th // maximum enrollment: 10 students",
+        "comment": " class cancelled",
         "units": [
             1,
             6,
@@ -7373,12 +7429,12 @@
             {
                 "grades": "LETTER",
                 "instructor": "Parker, C",
-                "locations": "101 SCH",
+                "locations": "",
                 "number": 1,
-                "times": "M 14:00 - 15:55"
+                "times": "A\nA"
             }
         ],
-        "comment": "",
+        "comment": " class cancelled",
         "units": [
             2,
             0,
@@ -7515,8 +7571,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80424&department_id=116&offering_id=86542&track_id=86542-Default"
     },
-    "65": {
-        "id": 65,
+    "42": {
+        "id": 42,
         "name": "Principles and Applications of Semiconductor Photoelectrochemistry",
         "number": "Ch/ChE 140 a",
         "sections": [
@@ -7540,8 +7596,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80424&department_id=114&offering_id=88871&track_id=88871-Default"
     },
-    "66": {
-        "id": 66,
+    "43": {
+        "id": 43,
         "name": "Data Science for Chemical Systems",
         "number": "ChE 141",
         "sections": [
@@ -7615,8 +7671,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80424&department_id=116&offering_id=86387&track_id=86387-Default"
     },
-    "67": {
-        "id": 67,
+    "44": {
+        "id": 44,
         "name": "Molecular Imaging",
         "number": "ChE/BE/MedE 188",
         "sections": [
@@ -7910,6 +7966,13 @@
                 "locations": "",
                 "number": 51,
                 "times": "A\nA"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Demirer, G",
+                "locations": "",
+                "number": 52,
+                "times": "A\nA"
             }
         ],
         "comment": "",
@@ -7967,14 +8030,14 @@
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Chan, G / Robb, M",
-                "locations": "Lecture Hall\nBAX\n153 NYS",
+                "locations": "Lecture Hall\nBAX\n101 SCH",
                 "number": 6,
                 "times": "MTR 11:00 - 11:55\nW 16:00 - 16:55"
             },
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Chan, G / Robb, M",
-                "locations": "Lecture Hall\nBAX\n101 SCH",
+                "locations": "Lecture Hall\nBAX\n147 NYS",
                 "number": 7,
                 "times": "MTR 11:00 - 11:55\nR 14:00 - 14:55"
             },
@@ -7988,21 +8051,21 @@
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Chan, G / Robb, M",
-                "locations": "Lecture Hall\nBAX\n147 NYS",
+                "locations": "Lecture Hall\nBAX\n101 SCH",
                 "number": 9,
                 "times": "MTR 11:00 - 11:55\nW 15:00 - 15:55"
             },
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Chan, G / Robb, M",
-                "locations": "Lecture Hall\nBAX\n101 SCH",
+                "locations": "Lecture Hall\nBAX\n151 CRL",
                 "number": 10,
                 "times": "MTR 11:00 - 11:55\nR 14:00 - 14:55"
             },
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Chan, G / Robb, M",
-                "locations": "Lecture Hall\nBAX\n320 BRN",
+                "locations": "Lecture Hall\nBAX\n153 NYS",
                 "number": 11,
                 "times": "MTR 11:00 - 11:55\nR 16:00 - 16:55"
             }
@@ -8027,9 +8090,9 @@
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Mendez, J",
-                "locations": "B122 GCL\n130 CHR",
+                "locations": "B127 GCL\n130 CHR",
                 "number": 1,
-                "times": "F 13:00 - 13:55\nT 19:00 - 21:55\nOM,A\nA"
+                "times": "F 14:00 - 14:55\nT 19:00 - 21:55"
             }
         ],
         "comment": " open by lottery to Ch and ChE only; see REGIS to enter by Nov 16th // Students entering 2020 or before must take Ch 3 in their 1st 9 terms of residence in order to be graded pass/fail. Frosh entering 2021 must take Ch 3 in their first six terms of residence in order to be graded pass/fail",
@@ -8054,28 +8117,28 @@
                 "instructor": "Mendez, J",
                 "locations": "B122 GCL\nB157 CRL",
                 "number": 1,
-                "times": "F 09:00 - 09:55\nT 08:00 - 10:55\nOM,A\nA"
+                "times": "F 13:00 - 13:55\nT 08:00 - 10:55"
             },
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Mendez, J",
                 "locations": "B122 GCL\nB157 CRL",
                 "number": 2,
-                "times": "F 09:00 - 09:55\nT 13:00 - 15:55\nOM,A\nA"
+                "times": "F 13:00 - 13:55\nT 13:00 - 15:55"
             },
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Mendez, J",
                 "locations": "B122 GCL\nB157 CRL",
                 "number": 3,
-                "times": "F 09:00 - 09:55\nW 13:00 - 15:55\nOM,A\nA"
+                "times": "F 13:00 - 13:55\nW 13:00 - 15:55"
             },
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Mendez, J",
                 "locations": "B122 GCL\nB157 CRL",
                 "number": 4,
-                "times": "F 09:00 - 09:55\nR 08:00 - 10:55\nOM,A\nA"
+                "times": "F 13:00 - 13:55\nR 08:00 - 10:55"
             }
         ],
         "comment": " Max enroll: 22 students per sec // Students entering 2020 and before must take Ch 3 in their first 9 terms of residence in order to be graded pass/fail. Frosh entering 2021 must take Ch 3 in their first six terms of residence in order to be graded pass/fail",
@@ -8100,7 +8163,7 @@
                 "instructor": "Mendez, J",
                 "locations": "B122 GCL\n130 CHR\n130 CHR",
                 "number": 1,
-                "times": "F 11:00 - 11:55\nT 08:00 - 10:55\nR 08:00 - 10:55"
+                "times": "F 15:00 - 15:55\nT 08:00 - 10:55\nR 08:00 - 10:55"
             }
         ],
         "comment": " open by lottery only; see link on the REGIS home page to enter by Nov 16th // maximum enrollment: 10 students",
@@ -8140,20 +8203,20 @@
         "true_units": "5",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80424&department_id=114&offering_id=86194&track_id=86194-Default"
     },
-    "68": {
-        "id": 68,
+    "45": {
+        "id": 45,
         "name": "Chemical Synthesis and Characterization for Chemical Engineering",
         "number": "Ch/ChE 9",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Mendez, J",
-                "locations": "B122 GCL\n130 CHR",
+                "locations": "",
                 "number": 1,
-                "times": "F 12:00 - 12:55\nTR 13:00 - 15:55"
+                "times": "A\nA"
             }
         ],
-        "comment": " open by lottery only; see link on the REGIS home page to enter by Nov 16th // maximum enrollment: 10 students",
+        "comment": " class cancelled",
         "units": [
             1,
             6,
@@ -8197,7 +8260,7 @@
         "sections": [
             {
                 "grades": "LETTER",
-                "instructor": "Wei, L",
+                "instructor": "Winkler, J",
                 "locations": "147 NYS",
                 "number": 1,
                 "times": "MWF 13:00 - 13:55"
@@ -8538,6 +8601,13 @@
                 "locations": "",
                 "number": 50,
                 "times": "A\nA"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Mayo, S",
+                "locations": "",
+                "number": 51,
+                "times": "A\nA"
             }
         ],
         "comment": "",
@@ -8559,6 +8629,13 @@
         "sections": [
             {
                 "grades": "PASS-FAIL",
+                "instructor": "Robb, M",
+                "locations": "",
+                "number": 1,
+                "times": "A\nA"
+            },
+            {
+                "grades": "PASS-FAIL",
                 "instructor": "Reisman, S",
                 "locations": "",
                 "number": 2,
@@ -8576,6 +8653,13 @@
                 "instructor": "Gray, H",
                 "locations": "",
                 "number": 4,
+                "times": "A\nA"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Stoltz, B",
+                "locations": "",
+                "number": 5,
                 "times": "A\nA"
             },
             {
@@ -8817,9 +8901,9 @@
             {
                 "grades": "",
                 "instructor": "Fu, G",
-                "locations": "147 NYS",
+                "locations": "153 NYS",
                 "number": 1,
-                "times": "TR 10:00 - 11:55"
+                "times": "TR 14:00 - 15:55"
             }
         ],
         "comment": "",
@@ -8834,14 +8918,14 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80424&department_id=114&offering_id=86680&track_id=86680-Default"
     },
-    "69": {
-        "id": 69,
+    "46": {
+        "id": 46,
         "name": "Introduction to Biochemistry",
         "number": "Ch/Bi 110 b",
         "sections": [
             {
                 "grades": "",
-                "instructor": "Rees, D",
+                "instructor": "Rees, D / Clemons, W",
                 "locations": "153 NYS\n153 NYS",
                 "number": 1,
                 "times": "MWF 11:00 - 11:55\nW 15:00 - 16:55"
@@ -8892,12 +8976,12 @@
             {
                 "grades": "",
                 "instructor": "Weitekamp, D",
-                "locations": "151 CRL",
+                "locations": "",
                 "number": 1,
-                "times": "MWF 13:00 - 13:55"
+                "times": "A\nA"
             }
         ],
-        "comment": "",
+        "comment": " class cancelled",
         "units": [
             3,
             0,
@@ -8909,8 +8993,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80424&department_id=114&offering_id=86054&track_id=86054-Default"
     },
-    "70": {
-        "id": 70,
+    "47": {
+        "id": 47,
         "name": "Principles and Applications of Semiconductor Photoelectrochemistry",
         "number": "Ch/ChE 140 a",
         "sections": [
@@ -8967,7 +9051,7 @@
             {
                 "grades": "",
                 "instructor": "Peters, J",
-                "locations": "147 NYS\n101 SCH",
+                "locations": "101 SCH\n101 SCH",
                 "number": 1,
                 "times": "MW 14:00 - 14:55\nF 14:00 - 15:55"
             }
@@ -8984,8 +9068,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80424&department_id=114&offering_id=86501&track_id=86501-Default"
     },
-    "71": {
-        "id": 71,
+    "48": {
+        "id": 48,
         "name": "Atmospheric Chemistry I",
         "number": "ESE/Ge/Ch 171",
         "sections": [
@@ -9016,13 +9100,13 @@
         "sections": [
             {
                 "grades": "",
-                "instructor": "Hoffmann, M",
-                "locations": "135 LLB",
+                "instructor": "Staff",
+                "locations": "",
                 "number": 1,
-                "times": "MWF 10:00 - 10:55"
+                "times": "A\nA"
             }
         ],
-        "comment": "",
+        "comment": " class postponed to spring term",
         "units": [
             3,
             0,
@@ -9127,12 +9211,12 @@
             {
                 "grades": "",
                 "instructor": "Reisman, S",
-                "locations": "147 NYS\nB122 GCL",
+                "locations": "",
                 "number": 3,
-                "times": "MWF 10:00 - 10:55\nF 14:00 - 14:55"
+                "times": "A\nA"
             }
         ],
-        "comment": "",
+        "comment": " section 3 cancelled",
         "units": [
             4,
             0,
@@ -10165,15 +10249,15 @@
         "true_units": "",
         "link": ""
     },
-    "72": {
-        "id": 72,
+    "49": {
+        "id": 49,
         "name": "Machine Learning Data Mining",
         "number": "CMS/CS/CNS/EE 155",
         "sections": [
             {
                 "grades": "",
-                "instructor": "Staff",
-                "locations": "134\n(Auditorium)\nBCK",
+                "instructor": "Lee, J / Rebbapragada, U /",
+                "locations": "134\nMandrake, L\n(Auditorium)\nBCK",
                 "number": 1,
                 "times": "TR 14:30 - 15:55"
             }
@@ -10215,17 +10299,17 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80425&department_id=117&offering_id=86689&track_id=86689-Default"
     },
-    "73": {
-        "id": 73,
+    "50": {
+        "id": 50,
         "name": "Consciousness",
         "number": "Pl/CNS/NB/Bi/Ps y 167",
         "sections": [
             {
                 "grades": "LETTER",
                 "instructor": "Eberhardt, F / Adolphs, R",
-                "locations": "",
+                "locations": "130 CNRB",
                 "number": 1,
-                "times": "TR 10:30 - 11:55\nA"
+                "times": "TR 10:30 - 11:55"
             }
         ],
         "comment": " open by application only, apply at http://registrar.caltech.edu/PL167 by Nov 16th // maximum enrollment: 20 students",
@@ -10538,20 +10622,20 @@
         "true_units": "",
         "link": ""
     },
-    "74": {
-        "id": 74,
+    "51": {
+        "id": 51,
         "name": "Vision: From Computational Theory to Neuronal Mechanisms",
         "number": "CNS/Bi/EE/CS/N B 186",
         "sections": [
             {
                 "grades": "",
-                "instructor": "Shimojo, S / Perona, P /",
-                "locations": "130 CNRB\nMeister, M / Rutishauser, U",
+                "instructor": "Staff",
+                "locations": "",
                 "number": 1,
-                "times": "TR 10:30 - 11:55"
+                "times": "A\nA"
             }
         ],
-        "comment": "",
+        "comment": " class cancelled",
         "units": [
             4,
             4,
@@ -10563,8 +10647,8 @@
         "true_units": "",
         "link": ""
     },
-    "75": {
-        "id": 75,
+    "52": {
+        "id": 52,
         "name": "Genetic Dissection of Neural Circuit Function",
         "number": "NB/Bi/CNS 220",
         "sections": [
@@ -10588,8 +10672,8 @@
         "true_units": "5",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80423&department_id=535&offering_id=88873&track_id=88873-Default"
     },
-    "76": {
-        "id": 76,
+    "53": {
+        "id": 53,
         "name": "Cerebral Cortex",
         "number": "CNS/Bi/NB 247",
         "sections": [
@@ -10874,9 +10958,9 @@
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Pomatto, L",
-                "locations": "",
+                "locations": "125 BAX",
                 "number": 1,
-                "times": "M 17:00 - 17:55\nA"
+                "times": "M 17:00 - 17:55"
             }
         ],
         "comment": "",
@@ -10966,7 +11050,7 @@
             {
                 "grades": "LETTER",
                 "instructor": "Vanier, M",
-                "locations": "104 ANB",
+                "locations": "134\n(Auditorium)\nBCK",
                 "number": 1,
                 "times": "MWF 15:00 - 15:55"
             }
@@ -11081,15 +11165,8 @@
                 "grades": "PASS-FAIL",
                 "instructor": "Staff",
                 "locations": "",
-                "number": 1,
-                "times": "A\nA"
-            },
-            {
-                "grades": "PASS-FAIL",
-                "instructor": "Blank, A",
-                "locations": "105 ANB",
                 "number": 7,
-                "times": "OM,W 20:00 - 20:55"
+                "times": "A\nA"
             },
             {
                 "grades": "PASS-FAIL",
@@ -11097,9 +11174,16 @@
                 "locations": "104 ANB",
                 "number": 9,
                 "times": "OM,W 20:00 - 20:55"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Perona, P",
+                "locations": "104 ANB",
+                "number": 10,
+                "times": "OM,W 21:00 - 21:55"
             }
         ],
-        "comment": " Variable Units between 1-9 // Sec 1: cancelled, Sec 7: Computer Vision for Research, Sec 9: Single Board Computers in Research",
+        "comment": " Variable Units between 1-9 // Sec 7: cancelled, Sec 9: Single Board Computers in Research, Sec 10: Computational Methods in Neuroscience (3 units)",
         "units": [
             0,
             0,
@@ -11119,12 +11203,12 @@
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Ralph, C",
-                "locations": "105 ANB",
+                "locations": "",
                 "number": 1,
-                "times": "M 12:00 - 12:55"
+                "times": "A\nA"
             }
         ],
-        "comment": "",
+        "comment": " class cancelled",
         "units": [
             1,
             0,
@@ -11144,7 +11228,7 @@
             {
                 "grades": "LETTER",
                 "instructor": "Umans, C",
-                "locations": "105 ANB",
+                "locations": "134\n(Auditorium)\nBCK",
                 "number": 1,
                 "times": "MWF 13:00 - 13:55"
             }
@@ -11171,7 +11255,7 @@
                 "instructor": "Ralph, C / Wierman, A",
                 "locations": "106 ANB",
                 "number": 1,
-                "times": "F 10:00 - 12:55"
+                "times": "F 10:00 - 10:55"
             }
         ],
         "comment": " enrollment by application instructor permission required to add",
@@ -11336,6 +11420,13 @@
                 "instructor": "Bruno, O",
                 "locations": "",
                 "number": 21,
+                "times": "A\nA"
+            },
+            {
+                "grades": "LETTER",
+                "instructor": "Fischer, W",
+                "locations": "",
+                "number": 22,
                 "times": "A\nA"
             }
         ],
@@ -11684,6 +11775,13 @@
                 "locations": "",
                 "number": 47,
                 "times": "A\nA"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Mushkin, H",
+                "locations": "",
+                "number": 48,
+                "times": "A\nA"
             }
         ],
         "comment": "",
@@ -11924,20 +12022,20 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=18&term_id=419&division_id=80428&department_id=142&offering_id=65528&track_id=65528-Default"
     },
-    "77": {
-        "id": 77,
+    "54": {
+        "id": 54,
         "name": "Causation and Explanation",
         "number": "HPS/Pl/CS 110",
         "sections": [
             {
                 "grades": "LETTER",
                 "instructor": "Eberhardt, F",
-                "locations": "",
+                "locations": "TR DAB",
                 "number": 1,
-                "times": "TR 13:00 - 14:25\nA"
+                "times": "TR 13:00 - 14:25"
             }
         ],
-        "comment": " maximum enrollment: 15 students",
+        "comment": " class full, see instructor for waitlist // maximum enrollment: 15 students",
         "units": [
             3,
             0,
@@ -11988,8 +12086,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80425&department_id=117&offering_id=86067&track_id=86067-Section 1"
     },
-    "78": {
-        "id": 78,
+    "55": {
+        "id": 55,
         "name": "Computability Theory",
         "number": "Ma/CS 117 b",
         "sections": [
@@ -12021,12 +12119,12 @@
             {
                 "grades": "LETTER",
                 "instructor": "Holzmann, G",
-                "locations": "106 ANB",
+                "locations": "",
                 "number": 1,
-                "times": "TR 13:00 - 14:25"
+                "times": "A\nA"
             }
         ],
-        "comment": "",
+        "comment": " class cancelled, will be offered next year - Winter 2024",
         "units": [
             3,
             3,
@@ -12038,8 +12136,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80425&department_id=117&offering_id=88481&track_id=88481-Default"
     },
-    "79": {
-        "id": 79,
+    "56": {
+        "id": 56,
         "name": "Advanced Digital Systems Design",
         "number": "EE/CS 119 b",
         "sections": [
@@ -12088,8 +12186,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80425&department_id=117&offering_id=86742&track_id=86742-Default"
     },
-    "80": {
-        "id": 80,
+    "57": {
+        "id": 57,
         "name": "Interactive Theorem Proving",
         "number": "CS 128",
         "sections": [
@@ -12238,15 +12336,15 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80425&department_id=117&offering_id=85328&track_id=85328-Default"
     },
-    "81": {
-        "id": 81,
+    "58": {
+        "id": 58,
         "name": "Machine Learning Data Mining",
         "number": "CMS/CS/CNS/EE 155",
         "sections": [
             {
                 "grades": "",
-                "instructor": "Staff",
-                "locations": "134\n(Auditorium)\nBCK",
+                "instructor": "Lee, J / Rebbapragada, U /",
+                "locations": "134\nMandrake, L\n(Auditorium)\nBCK",
                 "number": 1,
                 "times": "TR 14:30 - 15:55"
             }
@@ -12288,8 +12386,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80425&department_id=129&offering_id=86678&track_id=86678-Default"
     },
-    "82": {
-        "id": 82,
+    "59": {
+        "id": 59,
         "name": "Data, Algorithms and Society",
         "number": "CS/IDS 162",
         "sections": [
@@ -12301,7 +12399,7 @@
                 "times": "TR 14:30 - 15:55"
             }
         ],
-        "comment": " Taught concurrently with VC 072 //maximum enrollment: 15 students between VC 72 and CS/IDS 162 // instructor permission required to add",
+        "comment": " Taught concurrently with VC 072 //maximum enrollment: 15 students between VC 72 and CS/IDS 162 // instructor permission required to add // apply at https://forms.gle/HxCECWgsUaujvT5d8",
         "units": [
             3,
             0,
@@ -12313,8 +12411,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80425&department_id=117&offering_id=84191&track_id=84191-Default"
     },
-    "83": {
-        "id": 83,
+    "60": {
+        "id": 60,
         "name": "Discrete Differential Geometry: Theory and Applications",
         "number": "CS/ACM 177 a",
         "sections": [
@@ -12468,20 +12566,20 @@
         "true_units": "",
         "link": ""
     },
-    "84": {
-        "id": 84,
+    "61": {
+        "id": 61,
         "name": "Vision: From Computational Theory to Neuronal Mechanisms",
         "number": "CNS/Bi/EE/CS/N B 186",
         "sections": [
             {
                 "grades": "",
-                "instructor": "Shimojo, S / Perona, P /",
-                "locations": "130 CNRB\nMeister, M / Rutishauser, U",
+                "instructor": "Staff",
+                "locations": "",
                 "number": 1,
-                "times": "TR 10:30 - 11:55"
+                "times": "A\nA"
             }
         ],
-        "comment": "",
+        "comment": " class cancelled",
         "units": [
             4,
             4,
@@ -12662,6 +12760,13 @@
                 "locations": "",
                 "number": 20,
                 "times": "A\nA"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Gkioxari, G",
+                "locations": "",
+                "number": 21,
+                "times": "A\nA"
             }
         ],
         "comment": "",
@@ -12676,15 +12781,15 @@
         "true_units": "",
         "link": ""
     },
-    "85": {
-        "id": 85,
+    "62": {
+        "id": 62,
         "name": "Machine Learning Data Mining",
         "number": "CMS/CS/CNS/EE 155",
         "sections": [
             {
                 "grades": "",
-                "instructor": "Staff",
-                "locations": "134\n(Auditorium)\nBCK",
+                "instructor": "Lee, J / Rebbapragada, U /",
+                "locations": "134\nMandrake, L\n(Auditorium)\nBCK",
                 "number": 1,
                 "times": "TR 14:30 - 15:55"
             }
@@ -12969,8 +13074,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80425&department_id=127&offering_id=88476&track_id=88476-Default"
     },
-    "86": {
-        "id": 86,
+    "63": {
+        "id": 63,
         "name": "Network Control Systems",
         "number": "CDS 141",
         "sections": [
@@ -12982,7 +13087,7 @@
                 "times": "TR 13:00 - 14:25"
             }
         ],
-        "comment": "",
+        "comment": " taught concurrently with CDS270",
         "units": [
             3,
             2,
@@ -13068,6 +13173,31 @@
         "rating": "4.92 +/- 0.27",
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80425&department_id=143&offering_id=88374&track_id=88374-Default"
+    },
+    "64": {
+        "id": 64,
+        "name": "Advanced Topics in Systems and Control",
+        "number": "CDS 270",
+        "sections": [
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Doyle, J",
+                "locations": "314 ANB",
+                "number": 1,
+                "times": "TR 13:00 - 14:25"
+            }
+        ],
+        "comment": " taught concurrently with CDS141",
+        "units": [
+            0,
+            0,
+            0
+        ],
+        "description": "Topics dependent on class interests and instructor. May be repeated for credit.",
+        "prerequisites": "",
+        "rating": "4.84 +/- 0.50",
+        "true_units": "3",
+        "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80425&department_id=127&offering_id=84892&track_id=84892-Default"
     },
     "13840": {
         "id": 13840,
@@ -13193,9 +13323,9 @@
             {
                 "grades": "",
                 "instructor": "Rangel, A",
-                "locations": "",
+                "locations": "Lecture Hall\nBAX",
                 "number": 1,
-                "times": "TR 13:00 - 14:25\nA"
+                "times": "TR 13:00 - 14:25"
             }
         ],
         "comment": "",
@@ -13220,6 +13350,13 @@
                 "instructor": "Pomatto, L",
                 "locations": "",
                 "number": 1,
+                "times": "A\nA"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Nielsen, K",
+                "locations": "",
+                "number": 2,
                 "times": "A\nA"
             }
         ],
@@ -13260,17 +13397,42 @@
         "true_units": "",
         "link": ""
     },
-    "87": {
-        "id": 87,
+    "65": {
+        "id": 65,
+        "name": "Selected Topics in Economics",
+        "number": "Ec 101",
+        "sections": [
+            {
+                "grades": "",
+                "instructor": "Rosenthal, J",
+                "locations": "137 BAX",
+                "number": 1,
+                "times": "OM,W 15:30 - 16:25"
+            }
+        ],
+        "comment": " open to declared Econ seniors only",
+        "units": [
+            3,
+            0,
+            6
+        ],
+        "description": "Topics to be determined by instructor.",
+        "prerequisites": "",
+        "rating": "3.42 +/- 1.18",
+        "true_units": "3",
+        "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=34&term_id=516&division_id=80427&department_id=128&offering_id=77694&track_id=77694-Default"
+    },
+    "66": {
+        "id": 66,
         "name": "Firms, Competition, and Industrial Organization",
         "number": "Ec 105",
         "sections": [
             {
                 "grades": "LETTER",
                 "instructor": "Shum, M",
-                "locations": "",
+                "locations": "128 BAX",
                 "number": 1,
-                "times": "F 13:00 - 15:55\nA"
+                "times": "F 13:00 - 15:55"
             }
         ],
         "comment": " Designated as Writing Intensive Course",
@@ -13285,17 +13447,17 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=41&term_id=526&division_id=80427&department_id=128&offering_id=82264&track_id=82264-Default"
     },
-    "88": {
-        "id": 88,
+    "67": {
+        "id": 67,
         "name": "Foundations of Behavioral Economics",
         "number": "Ec 108",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Sprenger, C",
-                "locations": "",
+                "locations": "B125 BAX",
                 "number": 1,
-                "times": "TR 09:00 - 10:25\nA"
+                "times": "TR 09:00 - 10:25"
             }
         ],
         "comment": "",
@@ -13318,9 +13480,9 @@
             {
                 "grades": "",
                 "instructor": "Nielsen, K",
-                "locations": "",
+                "locations": "B133 BAX",
                 "number": 1,
-                "times": "MWF 13:00 - 13:55\nA"
+                "times": "MWF 13:00 - 13:55"
             }
         ],
         "comment": "",
@@ -13343,9 +13505,9 @@
             {
                 "grades": "LETTER",
                 "instructor": "Saito, K",
-                "locations": "",
+                "locations": "115 DAB",
                 "number": 1,
-                "times": "TR 13:00 - 14:25\nA"
+                "times": "TR 13:00 - 14:25"
             }
         ],
         "comment": "",
@@ -13360,17 +13522,17 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=128&offering_id=85960&track_id=85960-Default"
     },
-    "89": {
-        "id": 89,
+    "68": {
+        "id": 68,
         "name": "Identification Problems in the Social Sciences",
         "number": "Ec/PS 124",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Sherman, R",
-                "locations": "",
+                "locations": "228 BAX",
                 "number": 1,
-                "times": "TR 13:00 - 14:25\nA"
+                "times": "TR 13:00 - 14:25"
             }
         ],
         "comment": "",
@@ -13410,8 +13572,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80425&department_id=129&offering_id=83126&track_id=83126-Default"
     },
-    "90": {
-        "id": 90,
+    "69": {
+        "id": 69,
         "name": "Physics of Electrical Engineering",
         "number": "EE/APh 40",
         "sections": [
@@ -13547,7 +13709,7 @@
                 "instructor": "Kalantar Ohanian, R",
                 "locations": "B270 MRE",
                 "number": 1,
-                "times": "F 10:00 - 11:55"
+                "times": "F 09:00 - 10:55"
             }
         ],
         "comment": "",
@@ -13720,8 +13882,8 @@
         "true_units": "5",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=18&term_id=419&division_id=80425&department_id=129&offering_id=64508&track_id=64508-Section 1"
     },
-    "91": {
-        "id": 91,
+    "70": {
+        "id": 70,
         "name": "Electrical Engineering Entrepreneurial and Research Seminar",
         "number": "EE 102",
         "sections": [
@@ -13758,7 +13920,7 @@
                 "times": "A\nA"
             }
         ],
-        "comment": "",
+        "comment": " class cancelled - offered as EE 102 winter term",
         "units": [
             1,
             0,
@@ -13770,8 +13932,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80425&department_id=129&offering_id=85972&track_id=85972-Default"
     },
-    "92": {
-        "id": 92,
+    "71": {
+        "id": 71,
         "name": "Feedback and Control Circuits",
         "number": "EE 113",
         "sections": [
@@ -13795,8 +13957,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=129&offering_id=86994&track_id=86994-Default"
     },
-    "93": {
-        "id": 93,
+    "72": {
+        "id": 72,
         "name": "Analog Circuit Design",
         "number": "EE/MedE 114 a",
         "sections": [
@@ -13820,15 +13982,15 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80425&department_id=129&offering_id=84377&track_id=84377-Default"
     },
-    "94": {
-        "id": 94,
+    "73": {
+        "id": 73,
         "name": "Physics of Measurement",
         "number": "Ph/APh/EE/BE 118 a",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Roukes, M",
-                "locations": "107 DWN",
+                "locations": "387 LINDE",
                 "number": 1,
                 "times": "TR 14:30 - 15:55"
             }
@@ -13845,8 +14007,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80428&department_id=147&offering_id=84392&track_id=84392-Default"
     },
-    "95": {
-        "id": 95,
+    "74": {
+        "id": 74,
         "name": "Advanced Digital Systems Design",
         "number": "EE/CS 119 b",
         "sections": [
@@ -13870,8 +14032,8 @@
         "true_units": "5",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=41&term_id=526&division_id=80425&department_id=129&offering_id=82711&track_id=82711-Default"
     },
-    "96": {
-        "id": 96,
+    "75": {
+        "id": 75,
         "name": "Microwave Circuits and Antennas",
         "number": "EE 153",
         "sections": [
@@ -13895,15 +14057,15 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80425&department_id=129&offering_id=83404&track_id=83404-Default"
     },
-    "97": {
-        "id": 97,
+    "76": {
+        "id": 76,
         "name": "Machine Learning Data Mining",
         "number": "CMS/CS/CNS/EE 155",
         "sections": [
             {
                 "grades": "",
-                "instructor": "Staff",
-                "locations": "134\n(Auditorium)\nBCK",
+                "instructor": "Lee, J / Rebbapragada, U /",
+                "locations": "134\nMandrake, L\n(Auditorium)\nBCK",
                 "number": 1,
                 "times": "TR 14:30 - 15:55"
             }
@@ -13920,17 +14082,17 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80425&department_id=595&offering_id=86808&track_id=86808-Default"
     },
-    "98": {
-        "id": 98,
+    "77": {
+        "id": 77,
         "name": "Introduction to the Physics of Remote Sensing",
         "number": "EE/Ae 157 b",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Rosen, P",
-                "locations": "",
+                "locations": "105 ANB",
                 "number": 1,
-                "times": "TR 14:30 - 15:55\nA"
+                "times": "TR 14:30 - 15:55"
             }
         ],
         "comment": "",
@@ -13945,8 +14107,33 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80425&department_id=129&offering_id=88687&track_id=88687-Default"
     },
-    "99": {
-        "id": 99,
+    "78": {
+        "id": 78,
+        "name": "Stochastic and Adaptive Signal Processing",
+        "number": "EE 164",
+        "sections": [
+            {
+                "grades": "",
+                "instructor": "Hassibi, B",
+                "locations": "B280 MRE",
+                "number": 1,
+                "times": "TR 09:00 - 10:25"
+            }
+        ],
+        "comment": "",
+        "units": [
+            3,
+            0,
+            6
+        ],
+        "description": "Fundamentals of linear estimation theory are studied, with applications to stochastic and adaptive signal processing. Topics include deterministic and stochastic least-squares estimation, the innovations process, Wiener filtering and spectral factorization, state-space structure and Kalman filters, array and fast array algorithms, displacement structure and fast algorithms, robust estimation theory and LMS and RLS adaptive fields. Given in alternate years; offered 2022-23.",
+        "prerequisites": "ACM/EE/IDS 116 or equivalent.",
+        "rating": "4.96 +/- 0.21",
+        "true_units": "3",
+        "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80425&department_id=129&offering_id=84379&track_id=84379-Default"
+    },
+    "79": {
+        "id": 79,
         "name": "Biomedical Optics: Principles and Imaging",
         "number": "MedE/EE/BE 168 c",
         "sections": [
@@ -13970,8 +14157,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80425&department_id=555&offering_id=88287&track_id=88287-Default"
     },
-    "100": {
-        "id": 100,
+    "80": {
+        "id": 80,
         "name": "Micro/Nano Technology for Semiconductor and Medical Device",
         "number": "EE/BE/MedE 185",
         "sections": [
@@ -13995,20 +14182,20 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=15&term_id=399&division_id=80425&department_id=129&offering_id=63310&track_id=63310-Default"
     },
-    "101": {
-        "id": 101,
+    "81": {
+        "id": 81,
         "name": "Vision: From Computational Theory to Neuronal Mechanisms",
         "number": "CNS/Bi/EE/CS/N B 186",
         "sections": [
             {
                 "grades": "",
-                "instructor": "Shimojo, S / Perona, P /",
-                "locations": "130 CNRB\nMeister, M / Rutishauser, U",
+                "instructor": "Staff",
+                "locations": "",
                 "number": 1,
-                "times": "TR 10:30 - 11:55"
+                "times": "A\nA"
             }
         ],
-        "comment": "",
+        "comment": " class cancelled",
         "units": [
             4,
             4,
@@ -14020,8 +14207,8 @@
         "true_units": "",
         "link": ""
     },
-    "102": {
-        "id": 102,
+    "82": {
+        "id": 82,
         "name": "Quantum Electronics",
         "number": "APh/EE 190 a",
         "sections": [
@@ -14406,17 +14593,17 @@
         "true_units": "",
         "link": ""
     },
-    "103": {
-        "id": 103,
+    "83": {
+        "id": 83,
         "name": "Careers in STEAM",
         "number": "VC/E 81",
         "sections": [
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Mushkin, H",
-                "locations": "",
+                "locations": "103 DWN",
                 "number": 1,
-                "times": "R 12:00 - 12:55\nA"
+                "times": "R 12:00 - 12:55"
             }
         ],
         "comment": "",
@@ -14431,20 +14618,20 @@
         "true_units": "",
         "link": ""
     },
-    "104": {
-        "id": 104,
+    "84": {
+        "id": 84,
         "name": "Special Topics in Engineering & Applied Science",
         "number": "E 100",
         "sections": [
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Hunt, M / Blank, A",
-                "locations": "115 GTL",
+                "locations": "121 ANB",
                 "number": 1,
                 "times": "F 12:00 - 12:55"
             }
         ],
-        "comment": " only open to students who participated in the Freshman Summer Research Institute // 1 unit",
+        "comment": " only open to students who participated in the Freshman Summer Research Institute // 1 unit /// meets in tent next to Bechtel Residence",
         "units": [
             0,
             0,
@@ -14464,9 +14651,9 @@
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Dabiri, M",
-                "locations": "",
+                "locations": "100 PWL/BTH",
                 "number": 1,
-                "times": "W 13:00 - 14:55\nA"
+                "times": "W 13:00 - 14:55"
             }
         ],
         "comment": " maximum enrollment: 20 students",
@@ -14481,17 +14668,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=275&offering_id=87261&track_id=87261-Default"
     },
-    "105": {
-        "id": 105,
+    "85": {
+        "id": 85,
         "name": "Monsters and Marvels",
         "number": "Hum/En 21",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Jahner, J",
-                "locations": "",
+                "locations": "127 BAX",
                 "number": 1,
-                "times": "TR 09:00 - 10:25\nA"
+                "times": "TR 09:00 - 10:25"
             }
         ],
         "comment": " Attendance at the first class meeting is required. // maximum enrollment: 15 students",
@@ -14506,20 +14693,20 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=136&offering_id=86181&track_id=86181-Default"
     },
-    "106": {
-        "id": 106,
+    "86": {
+        "id": 86,
         "name": "Introduction to Black Literature and Culture in the United States",
         "number": "Hum/En 31",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Murphy, D",
-                "locations": "",
+                "locations": "B119 BAX",
                 "number": 1,
-                "times": "TR 09:00 - 10:25\nA"
+                "times": "TR 09:00 - 10:25"
             }
         ],
-        "comment": " Attendance at the first class meeting is required. // maximum enrollment: 15 students",
+        "comment": " Attendance at the first class meeting is required. // maximum enrollment: 10 students // class closed, see instructor for waitlist",
         "units": [
             3,
             0,
@@ -14531,17 +14718,17 @@
         "true_units": "",
         "link": ""
     },
-    "107": {
-        "id": 107,
+    "87": {
+        "id": 87,
         "name": "Beginning with Poems",
         "number": "Hum/En 35",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Pigman, G",
-                "locations": "",
+                "locations": "127 BAX",
                 "number": 1,
-                "times": "TR 14:30 - 15:55\nA"
+                "times": "TR 14:30 - 15:55"
             }
         ],
         "comment": " Attendance at the first class meeting is required. // maximum enrollment: 15 students",
@@ -14556,17 +14743,17 @@
         "true_units": "",
         "link": ""
     },
-    "108": {
-        "id": 108,
+    "88": {
+        "id": 88,
         "name": "American Literature and Culture",
         "number": "Hum/En 36",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Weinstein, C",
-                "locations": "",
+                "locations": "125 BAX",
                 "number": 1,
-                "times": "TR 14:30 - 15:55\nA"
+                "times": "TR 14:30 - 15:55"
             }
         ],
         "comment": " Attendance at the first class meeting is required. // maximum enrollment: 15 students",
@@ -14589,9 +14776,9 @@
             {
                 "grades": "",
                 "instructor": "Lepucki, E",
-                "locations": "",
+                "locations": "TR DAB",
                 "number": 1,
-                "times": "R 19:00 - 21:55\nA"
+                "times": "R 19:00 - 21:55"
             }
         ],
         "comment": " Maximum enrollment: 14 students",
@@ -14613,7 +14800,7 @@
         "sections": [
             {
                 "grades": "LETTER",
-                "instructor": "Staff",
+                "instructor": "Jahner, J",
                 "locations": "",
                 "number": 1,
                 "times": "A\nA"
@@ -14689,12 +14876,12 @@
             {
                 "grades": "",
                 "instructor": "Holland, J",
-                "locations": "",
+                "locations": "127 BAX",
                 "number": 1,
-                "times": "TR 10:30 - 11:55\nA"
+                "times": "TR 10:30 - 11:55"
             }
         ],
-        "comment": " maximum enrollment: 15 students",
+        "comment": " maximum enrollment: 15 students // class full, see instructor for waitlist",
         "units": [
             3,
             0,
@@ -14706,17 +14893,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80427&department_id=131&offering_id=88380&track_id=88380-Default"
     },
-    "109": {
-        "id": 109,
+    "89": {
+        "id": 89,
         "name": "The Women of Ancient Epic",
         "number": "En 115",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Jahner, J / Pigman, G",
-                "locations": "",
+                "locations": "127 BAX",
                 "number": 1,
-                "times": "TR 13:00 - 14:25\nA"
+                "times": "TR 13:00 - 14:25"
             }
         ],
         "comment": " maximum enrollment: 15 students",
@@ -14731,8 +14918,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=18&term_id=419&division_id=80427&department_id=131&offering_id=65435&track_id=65435-Default"
     },
-    "110": {
-        "id": 110,
+    "90": {
+        "id": 90,
         "name": "Classical Mythology",
         "number": "En 118",
         "sections": [
@@ -14741,10 +14928,10 @@
                 "instructor": "Haugen, K",
                 "locations": "",
                 "number": 1,
-                "times": "TR 09:00 - 10:25\nA"
+                "times": "A\nA"
             }
         ],
-        "comment": " maximum enrollment: 25 students",
+        "comment": " class cancelled",
         "units": [
             3,
             0,
@@ -14764,9 +14951,9 @@
             {
                 "grades": "LETTER",
                 "instructor": "Weinstein, C",
-                "locations": "",
+                "locations": "125 BAX",
                 "number": 1,
-                "times": "TR 13:00 - 14:25\nA"
+                "times": "TR 13:00 - 14:25"
             }
         ],
         "comment": " maximum enrollment: 15 students",
@@ -14789,12 +14976,12 @@
             {
                 "grades": "",
                 "instructor": "Murphy, D",
-                "locations": "",
+                "locations": "B119 BAX",
                 "number": 1,
-                "times": "TR 10:30 - 11:55\nA"
+                "times": "TR 10:30 - 11:55"
             }
         ],
-        "comment": " maximum enrollment: 15 students",
+        "comment": " maximum enrollment: 10 students // class closed, see instructor for waitlist",
         "units": [
             3,
             0,
@@ -14806,6 +14993,31 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80427&department_id=131&offering_id=88384&track_id=88384-Default"
     },
+    "91": {
+        "id": 91,
+        "name": "Special Topics in English: Cold War American Modernism",
+        "number": "En 180",
+        "sections": [
+            {
+                "grades": "",
+                "instructor": "Sherazi, M",
+                "locations": "115 BCK",
+                "number": 1,
+                "times": "TR 14:30 - 15:55"
+            }
+        ],
+        "comment": " maximum enrollment: 15 students",
+        "units": [
+            3,
+            0,
+            6
+        ],
+        "description": "This is an advanced humanities course on a specialized topic in English. It is usually taught by new or visiting faculty. The course may be re-taken for credit except as noted in the course announcement. Limited to 15 students. See registrar's announcement for details.",
+        "prerequisites": "",
+        "rating": "3.26 +/- 1.53",
+        "true_units": "5",
+        "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=38&term_id=520&division_id=80427&department_id=131&offering_id=80987&track_id=80987-Default"
+    },
     "13875": {
         "id": 13875,
         "name": "Cervantes, Truth or Dare: Don Quixote in an Age of Empire",
@@ -14814,12 +15026,12 @@
             {
                 "grades": "LETTER",
                 "instructor": "Wey-Gomez, N",
-                "locations": "",
+                "locations": "128 BAX",
                 "number": 1,
-                "times": "TR 13:00 - 14:25\nA"
+                "times": "TR 13:00 - 14:25"
             }
         ],
-        "comment": " maximum enrollment: 15 students",
+        "comment": " maximum enrollment: 15 students // class full, see instructor for waitlist",
         "units": [
             3,
             0,
@@ -15053,8 +15265,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=1&term_id=342&division_id=80426&department_id=495&offering_id=52590&track_id=52590-Default"
     },
-    "111": {
-        "id": 111,
+    "92": {
+        "id": 92,
         "name": "Earth's Oceans",
         "number": "ESE 102",
         "sections": [
@@ -15261,8 +15473,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=38&term_id=520&division_id=80426&department_id=495&offering_id=78924&track_id=78924-Default"
     },
-    "112": {
-        "id": 112,
+    "93": {
+        "id": 93,
         "name": "Remote Sensing of the Atmosphere and Biosphere",
         "number": "ESE 156",
         "sections": [
@@ -15271,7 +15483,7 @@
                 "instructor": "Frankenberg, C",
                 "locations": "135 LLB",
                 "number": 1,
-                "times": "TR 15:00 - 16:25"
+                "times": "TR 14:30 - 15:55"
             }
         ],
         "comment": "",
@@ -15286,8 +15498,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=41&term_id=526&division_id=80426&department_id=495&offering_id=82257&track_id=82257-Default"
     },
-    "113": {
-        "id": 113,
+    "94": {
+        "id": 94,
         "name": "Microbial Metabolic Diversity",
         "number": "ESE/Bi 168",
         "sections": [
@@ -15311,8 +15523,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80426&department_id=495&offering_id=84247&track_id=84247-Default"
     },
-    "114": {
-        "id": 114,
+    "95": {
+        "id": 95,
         "name": "Atmospheric Chemistry I",
         "number": "ESE/Ge/Ch 171",
         "sections": [
@@ -15336,17 +15548,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80426&department_id=495&offering_id=87109&track_id=87109-Default"
     },
-    "115": {
-        "id": 115,
+    "96": {
+        "id": 96,
         "name": "Microbial Ecology",
         "number": "Ge/ESE/Bi 178",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Orphan, V",
-                "locations": "",
+                "locations": "162 SMD",
                 "number": 1,
-                "times": "A\nA"
+                "times": "TR 13:00 - 14:25"
             }
         ],
         "comment": "",
@@ -15361,8 +15573,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80426&department_id=182&offering_id=84508&track_id=84508-Default"
     },
-    "116": {
-        "id": 116,
+    "97": {
+        "id": 97,
         "name": "Mentoring and Outreach",
         "number": "Ge/ESE 298",
         "sections": [
@@ -15402,7 +15614,7 @@
                 "times": "A\nA"
             }
         ],
-        "comment": " meets Mondays from 11-12:30 in 212 NMD",
+        "comment": " meets Wednesdays from 11-12:30 in 212 NMD",
         "units": [
             0,
             0,
@@ -15573,12 +15785,12 @@
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Bruck, J",
-                "locations": "239 MRE",
+                "locations": "",
                 "number": 1,
-                "times": "R 16:00 - 17:25"
+                "times": "A\nA"
             }
         ],
-        "comment": " Artificial maximum enrollment: 10 students",
+        "comment": " Artificial class cancelled",
         "units": [
             2,
             0,
@@ -15640,8 +15852,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80426&department_id=182&offering_id=86515&track_id=86515-Default"
     },
-    "117": {
-        "id": 117,
+    "98": {
+        "id": 98,
         "name": "Introduction to Earth and Planetary Sciences: Earth and the Biosphere",
         "number": "Ge 11 b",
         "sections": [
@@ -15650,7 +15862,7 @@
                 "instructor": "Kirschvink, J / Fischer, W",
                 "locations": "251 ARM\n251 ARM",
                 "number": 1,
-                "times": "W 19:00 - 20:55\nMWF 14:00 - 14:55"
+                "times": "W 19:00 - 21:55\nMWF 14:00 - 14:55"
             }
         ],
         "comment": " taught concurrently with Ge 104",
@@ -15760,7 +15972,7 @@
             },
             {
                 "grades": "PASS-FAIL",
-                "instructor": "Sturhahn, J",
+                "instructor": "Jackson, J",
                 "locations": "",
                 "number": 10,
                 "times": "A\nA"
@@ -15989,8 +16201,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80426&department_id=182&offering_id=86436&track_id=86436-Default"
     },
-    "118": {
-        "id": 118,
+    "99": {
+        "id": 99,
         "name": "Introduction to Geobiology",
         "number": "Ge 104",
         "sections": [
@@ -16021,13 +16233,13 @@
         "sections": [
             {
                 "grades": "",
-                "instructor": "Avouac, J",
-                "locations": "215 NMD",
+                "instructor": "Nourse, J",
+                "locations": "251 ARM\n251 ARM",
                 "number": 1,
-                "times": "TWR 15:00 - 15:55"
+                "times": "T 16:30 - 19:25\nR 17:00 - 19:55"
             }
         ],
-        "comment": "",
+        "comment": " Field trips dates: 1/14/23; 2/18/23-2/20/23",
         "units": [
             3,
             0,
@@ -16046,10 +16258,10 @@
         "sections": [
             {
                 "grades": "PASS-FAIL",
-                "instructor": "Sturhahn, J",
+                "instructor": "Jackson, J",
                 "locations": "254 SMD",
                 "number": 1,
-                "times": "R 12:00 - 12:55"
+                "times": "T 12:00 - 12:55"
             },
             {
                 "grades": "PASS-FAIL",
@@ -16095,7 +16307,7 @@
                 "instructor": "Clayton, R / Simons, M",
                 "locations": "162 SMD",
                 "number": 1,
-                "times": "TR 09:00 - 09:55"
+                "times": "MW 10:00 - 10:55"
             }
         ],
         "comment": "",
@@ -16117,7 +16329,7 @@
         "sections": [
             {
                 "grades": "LETTER",
-                "instructor": "Sturhahn, J / Asimow, P /",
+                "instructor": "Jackson, J / Asimow, P /",
                 "locations": "251 ARM\nEhlmann, B",
                 "number": 1,
                 "times": "T 11:00 - 11:55"
@@ -16143,7 +16355,7 @@
             {
                 "grades": "LETTER",
                 "instructor": "Present, T",
-                "locations": "267 ARM",
+                "locations": "251 ARM",
                 "number": 1,
                 "times": "OM,W 11:00 - 11:55"
             }
@@ -16160,8 +16372,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80426&department_id=182&offering_id=85979&track_id=85979-Default"
     },
-    "119": {
-        "id": 119,
+    "100": {
+        "id": 100,
         "name": "Field Geology Seminar",
         "number": "Ge 122 b",
         "sections": [
@@ -16170,7 +16382,7 @@
                 "instructor": "Stock, J",
                 "locations": "215 NMD",
                 "number": 1,
-                "times": "OM,W 14:00 - 14:55"
+                "times": "OM,W 13:00 - 13:55"
             }
         ],
         "comment": "",
@@ -16218,9 +16430,9 @@
             {
                 "grades": "",
                 "instructor": "Lamb, M",
-                "locations": "251 ARM",
+                "locations": "267 ARM",
                 "number": 1,
-                "times": "T 15:00 - 17:55"
+                "times": "W 14:00 - 15:55"
             }
         ],
         "comment": "",
@@ -16235,15 +16447,15 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80426&department_id=182&offering_id=86721&track_id=86721-Default"
     },
-    "120": {
-        "id": 120,
+    "101": {
+        "id": 101,
         "name": "Atomic and Molecular Processes in Astronomy and Planetary Sciences",
         "number": "Ge/Ay 132",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Blake, G",
-                "locations": "176 SMD",
+                "locations": "162 SMD",
                 "number": 1,
                 "times": "TR 14:30 - 15:55"
             }
@@ -16270,7 +16482,7 @@
                 "instructor": "Kirschvink, J",
                 "locations": "REMOTE",
                 "number": 1,
-                "times": "OM,M 15:00 - 15:55"
+                "times": "OM,W 15:00 - 15:55"
             }
         ],
         "comment": "",
@@ -16285,8 +16497,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80426&department_id=182&offering_id=85955&track_id=85955-Default"
     },
-    "121": {
-        "id": 121,
+    "102": {
+        "id": 102,
         "name": "Stable Isotope Geochemistry",
         "number": "Ge 140 a",
         "sections": [
@@ -16317,10 +16529,10 @@
         "sections": [
             {
                 "grades": "LETTER",
-                "instructor": "Sturhahn, J",
-                "locations": "254 SMD",
+                "instructor": "Jackson, J",
+                "locations": "162 SMD",
                 "number": 1,
-                "times": "TR 22:30 - 23:55"
+                "times": "TR 10:30 - 11:55"
             }
         ],
         "comment": "",
@@ -16343,9 +16555,9 @@
             {
                 "grades": "LETTER",
                 "instructor": "Simons, M",
-                "locations": "",
+                "locations": "162 SMD",
                 "number": 1,
-                "times": "A\nA"
+                "times": "TR 09:00 - 10:25"
             }
         ],
         "comment": "",
@@ -16360,8 +16572,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=40&term_id=522&division_id=80426&department_id=182&offering_id=81487&track_id=81487-Default"
     },
-    "122": {
-        "id": 122,
+    "103": {
+        "id": 103,
         "name": "Atmospheric Chemistry I",
         "number": "ESE/Ge/Ch 171",
         "sections": [
@@ -16385,17 +16597,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80426&department_id=495&offering_id=87109&track_id=87109-Default"
     },
-    "123": {
-        "id": 123,
+    "104": {
+        "id": 104,
         "name": "Microbial Ecology",
         "number": "Ge/ESE/Bi 178",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Orphan, V",
-                "locations": "",
+                "locations": "162 SMD",
                 "number": 1,
-                "times": "A\nA"
+                "times": "TR 13:00 - 14:25"
             }
         ],
         "comment": "",
@@ -16410,8 +16622,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80426&department_id=182&offering_id=84508&track_id=84508-Default"
     },
-    "124": {
-        "id": 124,
+    "105": {
+        "id": 105,
         "name": "Fracture and Frictional Faulting",
         "number": "ME/Ge/Ae 266 a",
         "sections": [
@@ -16558,7 +16770,7 @@
             },
             {
                 "grades": "PASS-FAIL",
-                "instructor": "Sturhahn, J",
+                "instructor": "Jackson, J",
                 "locations": "",
                 "number": 15,
                 "times": "A\nA"
@@ -16800,8 +17012,8 @@
         "true_units": "",
         "link": ""
     },
-    "125": {
-        "id": 125,
+    "106": {
+        "id": 106,
         "name": "Mentoring and Outreach",
         "number": "Ge/ESE 298",
         "sections": [
@@ -16841,7 +17053,7 @@
                 "times": "A\nA"
             }
         ],
-        "comment": " meets Mondays from 11-12:30 in 212 NMD",
+        "comment": " meets Wednesdays from 11-12:30 in 212 NMD",
         "units": [
             0,
             0,
@@ -17112,7 +17324,7 @@
             },
             {
                 "grades": "PASS-FAIL",
-                "instructor": "Sturhahn, J",
+                "instructor": "Jackson, J",
                 "locations": "",
                 "number": 38,
                 "times": "A\nA"
@@ -17172,17 +17384,17 @@
         "true_units": "",
         "link": ""
     },
-    "126": {
-        "id": 126,
+    "107": {
+        "id": 107,
         "name": "The Classical and Medieval Worlds",
         "number": "Hum/H 1",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Brown, W",
-                "locations": "",
+                "locations": "128 BAX",
                 "number": 1,
-                "times": "TR 14:30 - 15:55\nA"
+                "times": "TR 14:30 - 15:55"
             }
         ],
         "comment": " Attendance at the first class meeting is required. // maximum enrollment: 15 students",
@@ -17197,17 +17409,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=38&term_id=520&division_id=80427&department_id=136&offering_id=79088&track_id=79088-Section 1"
     },
-    "127": {
-        "id": 127,
+    "108": {
+        "id": 108,
         "name": "Civilization, Science, and Archaeology: Before Greece: The Origins of",
         "number": "Hum/H 8",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Buchwald, J",
-                "locations": "",
+                "locations": "TR DAB",
                 "number": 1,
-                "times": "TR 14:30 - 15:55\nA"
+                "times": "TR 14:30 - 15:55"
             }
         ],
         "comment": " Civilization in Mesopotamia Attendance at the first class meeting is required. // maximum enrollment: 15 students",
@@ -17230,12 +17442,12 @@
             {
                 "grades": "",
                 "instructor": "Wey-Gomez, N",
-                "locations": "",
+                "locations": "128 BAX",
                 "number": 1,
-                "times": "TR 09:00 - 10:25\nA"
+                "times": "TR 09:00 - 10:25"
             }
         ],
-        "comment": " Attendance at the first class meeting is required. // maximum enrollment: 15 students",
+        "comment": " Attendance at the first class meeting is required. // maximum enrollment: 15 students // class full, see instructor for waitlist",
         "units": [
             3,
             0,
@@ -17247,17 +17459,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=136&offering_id=87455&track_id=87455-Default"
     },
-    "128": {
-        "id": 128,
+    "109": {
+        "id": 109,
         "name": "Race, Science, and Medicine in U.S. History",
         "number": "Hum/H/HPS 14",
         "sections": [
             {
                 "grades": "",
                 "instructor": "LeBlanc, H",
-                "locations": "",
+                "locations": "125 BAX",
                 "number": 1,
-                "times": "TR 09:00 - 10:25\nA"
+                "times": "TR 09:00 - 10:25"
             }
         ],
         "comment": " Attendance at the first class meeting is required. // maximum enrollment: 15 students",
@@ -17280,9 +17492,9 @@
             {
                 "grades": "",
                 "instructor": "Rand, L",
-                "locations": "",
+                "locations": "TR DAB",
                 "number": 1,
-                "times": "W 19:00 - 21:55\nA"
+                "times": "W 19:00 - 21:55"
             }
         ],
         "comment": " Attendance at the first class meeting is required. // maximum enrollment: 15 students",
@@ -17305,9 +17517,9 @@
             {
                 "grades": "",
                 "instructor": "Feingold, M",
-                "locations": "",
+                "locations": "TR DAB",
                 "number": 1,
-                "times": "M 19:00 - 21:55\nA"
+                "times": "M 19:00 - 21:55"
             }
         ],
         "comment": " Attendance at the first class meeting is required. // maximum enrollment: 15 students",
@@ -17372,17 +17584,17 @@
         "true_units": "",
         "link": ""
     },
-    "129": {
-        "id": 129,
+    "110": {
+        "id": 110,
         "name": "The Early Middle Ages",
         "number": "H 107",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Brown, W",
-                "locations": "",
+                "locations": "125 BAX",
                 "number": 1,
-                "times": "MWF 13:00 - 13:55\nA"
+                "times": "MWF 13:00 - 13:55"
             }
         ],
         "comment": " maximum enrollment: 25 students",
@@ -17397,17 +17609,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=21&term_id=464&division_id=80427&department_id=131&offering_id=67739&track_id=67739-Default"
     },
-    "130": {
-        "id": 130,
+    "111": {
+        "id": 111,
         "name": "Technology and Environment in America",
         "number": "H/HPS 130",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Rand, L",
-                "locations": "",
+                "locations": "200 BRD",
                 "number": 1,
-                "times": "TR 13:00 - 14:25\nA"
+                "times": "TR 13:00 - 14:25"
             }
         ],
         "comment": " maximum enrollment: 15 students",
@@ -17422,17 +17634,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=135&offering_id=88820&track_id=88820-Default"
     },
-    "131": {
-        "id": 131,
+    "112": {
+        "id": 112,
         "name": "Birds, Evolution, Speciation and Society",
         "number": "H 134",
         "sections": [
             {
                 "grades": "LETTER",
                 "instructor": "Lewis, D",
-                "locations": "",
+                "locations": "125 BAX",
                 "number": 1,
-                "times": "T 19:00 - 21:55\nA"
+                "times": "T 19:00 - 21:55"
             }
         ],
         "comment": " maximum enrollment: 15 students",
@@ -17455,9 +17667,9 @@
             {
                 "grades": "",
                 "instructor": "LeBlanc, H",
-                "locations": "",
+                "locations": "125 BAX",
                 "number": 1,
-                "times": "TR 10:30 - 11:55\nA"
+                "times": "TR 10:30 - 11:55"
             }
         ],
         "comment": " maximum enrollment: 15 students",
@@ -17472,17 +17684,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80427&department_id=135&offering_id=88388&track_id=88388-Default"
     },
-    "132": {
-        "id": 132,
+    "113": {
+        "id": 113,
         "name": "Selected Topics in History: The Southern Civil Rights Movement in the",
         "number": "H 161",
         "sections": [
             {
                 "grades": "",
-                "instructor": "Thabet Waldman, A",
-                "locations": "",
+                "instructor": "Thabet, A",
+                "locations": "117 DAB",
                 "number": 1,
-                "times": "TR 10:30 - 11:55\nA"
+                "times": "TR 10:30 - 11:55"
             }
         ],
         "comment": " Twentieth Century maximum enrollment: 15 students",
@@ -17505,9 +17717,9 @@
             {
                 "grades": "",
                 "instructor": "Feingold, M",
-                "locations": "",
+                "locations": "TR DAB",
                 "number": 1,
-                "times": "T 19:00 - 21:55\nA"
+                "times": "T 19:00 - 21:55"
             }
         ],
         "comment": " maximum enrollment: 15 students",
@@ -17522,17 +17734,17 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80427&department_id=150&offering_id=83157&track_id=83157-Default"
     },
-    "133": {
-        "id": 133,
+    "114": {
+        "id": 114,
         "name": "History of Electromagnetism and Heat Science",
         "number": "HPS/H 168",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Buchwald, J",
-                "locations": "",
+                "locations": "TR DAB",
                 "number": 1,
-                "times": "TR 10:30 - 11:55\nA"
+                "times": "TR 10:30 - 11:55"
             }
         ],
         "comment": " maximum enrollment: 15 students",
@@ -17547,20 +17759,20 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80427&department_id=150&offering_id=84200&track_id=84200-Default"
     },
-    "134": {
-        "id": 134,
+    "115": {
+        "id": 115,
         "name": "History of Biotechnology",
         "number": "HPS/H 174",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Kollmer, C",
-                "locations": "",
+                "locations": "314 ANB",
                 "number": 1,
-                "times": "TR 14:30 - 15:55\nA"
+                "times": "TR 14:30 - 15:55"
             }
         ],
-        "comment": " maximum enrollment: 15 students",
+        "comment": " maximum enrollment: 15 students // class full, see instructor for waitlist",
         "units": [
             3,
             0,
@@ -17572,17 +17784,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=150&offering_id=87209&track_id=87209-Default"
     },
-    "135": {
-        "id": 135,
+    "116": {
+        "id": 116,
         "name": "The Occult Origins of Modern Science: Alchemy, Astrology, and Magic",
         "number": "HPS/H 176",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Gaida, M",
-                "locations": "",
+                "locations": "100 PWL/BTH",
                 "number": 1,
-                "times": "TR 10:30 - 11:55\nA"
+                "times": "TR 10:30 - 11:55"
             }
         ],
         "comment": " maximum enrollment: 18 students",
@@ -17597,17 +17809,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=150&offering_id=86180&track_id=86180-Default"
     },
-    "136": {
-        "id": 136,
+    "117": {
+        "id": 117,
         "name": "Race, Science, and Medicine in U.S. History",
         "number": "Hum/H/HPS 14",
         "sections": [
             {
                 "grades": "",
                 "instructor": "LeBlanc, H",
-                "locations": "",
+                "locations": "125 BAX",
                 "number": 1,
-                "times": "TR 09:00 - 10:25\nA"
+                "times": "TR 09:00 - 10:25"
             }
         ],
         "comment": " Attendance at the first class meeting is required. // maximum enrollment: 15 students",
@@ -17672,20 +17884,20 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=21&term_id=464&division_id=80427&department_id=150&offering_id=66667&track_id=66667-Default"
     },
-    "137": {
-        "id": 137,
+    "118": {
+        "id": 118,
         "name": "Causation and Explanation",
         "number": "HPS/Pl/CS 110",
         "sections": [
             {
                 "grades": "LETTER",
                 "instructor": "Eberhardt, F",
-                "locations": "",
+                "locations": "TR DAB",
                 "number": 1,
-                "times": "TR 13:00 - 14:25\nA"
+                "times": "TR 13:00 - 14:25"
             }
         ],
-        "comment": " maximum enrollment: 15 students",
+        "comment": " class full, see instructor for waitlist // maximum enrollment: 15 students",
         "units": [
             3,
             0,
@@ -17697,17 +17909,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80427&department_id=150&offering_id=84173&track_id=84173-Default"
     },
-    "138": {
-        "id": 138,
+    "119": {
+        "id": 119,
         "name": "Philosophy of Space and Time",
         "number": "HPS/Pl 124",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Hitchcock, C",
-                "locations": "",
+                "locations": "128 BAX",
                 "number": 1,
-                "times": "TR 10:30 - 11:55\nA"
+                "times": "TR 10:30 - 11:55"
             }
         ],
         "comment": " maximum enrollment: 15 students",
@@ -17722,17 +17934,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=39&term_id=521&division_id=80427&department_id=150&offering_id=81386&track_id=81386-Default"
     },
-    "139": {
-        "id": 139,
+    "120": {
+        "id": 120,
         "name": "Technology and Environment in America",
         "number": "H/HPS 130",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Rand, L",
-                "locations": "",
+                "locations": "200 BRD",
                 "number": 1,
-                "times": "TR 13:00 - 14:25\nA"
+                "times": "TR 13:00 - 14:25"
             }
         ],
         "comment": " maximum enrollment: 15 students",
@@ -17747,17 +17959,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=135&offering_id=88820&track_id=88820-Default"
     },
-    "140": {
-        "id": 140,
+    "121": {
+        "id": 121,
         "name": "Human Nature, Welfare, and Sustainability",
         "number": "HPS/Pl 139",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Quartz, S",
-                "locations": "",
+                "locations": "B119 BAX",
                 "number": 1,
-                "times": "TR 14:30 - 15:55\nA"
+                "times": "TR 14:30 - 15:55"
             }
         ],
         "comment": " open by lottery only; see link on the REGIS home page to enter by Nov 16th // maximum enrollment: 15 students",
@@ -17772,17 +17984,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=150&offering_id=87387&track_id=87387-Default"
     },
-    "141": {
-        "id": 141,
+    "122": {
+        "id": 122,
         "name": "History of Electromagnetism and Heat Science",
         "number": "HPS/H 168",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Buchwald, J",
-                "locations": "",
+                "locations": "TR DAB",
                 "number": 1,
-                "times": "TR 10:30 - 11:55\nA"
+                "times": "TR 10:30 - 11:55"
             }
         ],
         "comment": " maximum enrollment: 15 students",
@@ -17797,20 +18009,20 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80427&department_id=150&offering_id=84200&track_id=84200-Default"
     },
-    "142": {
-        "id": 142,
+    "123": {
+        "id": 123,
         "name": "History of Biotechnology",
         "number": "HPS/H 174",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Kollmer, C",
-                "locations": "",
+                "locations": "314 ANB",
                 "number": 1,
-                "times": "TR 14:30 - 15:55\nA"
+                "times": "TR 14:30 - 15:55"
             }
         ],
-        "comment": " maximum enrollment: 15 students",
+        "comment": " maximum enrollment: 15 students // class full, see instructor for waitlist",
         "units": [
             3,
             0,
@@ -17822,17 +18034,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=150&offering_id=87209&track_id=87209-Default"
     },
-    "143": {
-        "id": 143,
+    "124": {
+        "id": 124,
         "name": "The Occult Origins of Modern Science: Alchemy, Astrology, and Magic",
         "number": "HPS/H 176",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Gaida, M",
-                "locations": "",
+                "locations": "100 PWL/BTH",
                 "number": 1,
-                "times": "TR 10:30 - 11:55\nA"
+                "times": "TR 10:30 - 11:55"
             }
         ],
         "comment": " maximum enrollment: 18 students",
@@ -17847,17 +18059,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=150&offering_id=86180&track_id=86180-Default"
     },
-    "144": {
-        "id": 144,
+    "125": {
+        "id": 125,
         "name": "The Classical and Medieval Worlds",
         "number": "Hum/H 1",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Brown, W",
-                "locations": "",
+                "locations": "128 BAX",
                 "number": 1,
-                "times": "TR 14:30 - 15:55\nA"
+                "times": "TR 14:30 - 15:55"
             }
         ],
         "comment": " Attendance at the first class meeting is required. // maximum enrollment: 15 students",
@@ -17872,17 +18084,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=38&term_id=520&division_id=80427&department_id=136&offering_id=79088&track_id=79088-Section 1"
     },
-    "145": {
-        "id": 145,
+    "126": {
+        "id": 126,
         "name": "Civilization, Science, and Archaeology: Before Greece: The Origins of",
         "number": "Hum/H 8",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Buchwald, J",
-                "locations": "",
+                "locations": "TR DAB",
                 "number": 1,
-                "times": "TR 14:30 - 15:55\nA"
+                "times": "TR 14:30 - 15:55"
             }
         ],
         "comment": " Civilization in Mesopotamia Attendance at the first class meeting is required. // maximum enrollment: 15 students",
@@ -17897,17 +18109,17 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80427&department_id=136&offering_id=84207&track_id=84207-Default"
     },
-    "146": {
-        "id": 146,
+    "127": {
+        "id": 127,
         "name": "Race, Science, and Medicine in U.S. History",
         "number": "Hum/H/HPS 14",
         "sections": [
             {
                 "grades": "",
                 "instructor": "LeBlanc, H",
-                "locations": "",
+                "locations": "125 BAX",
                 "number": 1,
-                "times": "TR 09:00 - 10:25\nA"
+                "times": "TR 09:00 - 10:25"
             }
         ],
         "comment": " Attendance at the first class meeting is required. // maximum enrollment: 15 students",
@@ -17922,17 +18134,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=136&offering_id=87456&track_id=87456-Default"
     },
-    "147": {
-        "id": 147,
+    "128": {
+        "id": 128,
         "name": "Monsters and Marvels",
         "number": "Hum/En 21",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Jahner, J",
-                "locations": "",
+                "locations": "127 BAX",
                 "number": 1,
-                "times": "TR 09:00 - 10:25\nA"
+                "times": "TR 09:00 - 10:25"
             }
         ],
         "comment": " Attendance at the first class meeting is required. // maximum enrollment: 15 students",
@@ -17947,20 +18159,20 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=136&offering_id=86181&track_id=86181-Default"
     },
-    "148": {
-        "id": 148,
+    "129": {
+        "id": 129,
         "name": "Introduction to Black Literature and Culture in the United States",
         "number": "Hum/En 31",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Murphy, D",
-                "locations": "",
+                "locations": "B119 BAX",
                 "number": 1,
-                "times": "TR 09:00 - 10:25\nA"
+                "times": "TR 09:00 - 10:25"
             }
         ],
-        "comment": " Attendance at the first class meeting is required. // maximum enrollment: 15 students",
+        "comment": " Attendance at the first class meeting is required. // maximum enrollment: 10 students // class closed, see instructor for waitlist",
         "units": [
             3,
             0,
@@ -17972,17 +18184,17 @@
         "true_units": "",
         "link": ""
     },
-    "149": {
-        "id": 149,
+    "130": {
+        "id": 130,
         "name": "Beginning with Poems",
         "number": "Hum/En 35",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Pigman, G",
-                "locations": "",
+                "locations": "127 BAX",
                 "number": 1,
-                "times": "TR 14:30 - 15:55\nA"
+                "times": "TR 14:30 - 15:55"
             }
         ],
         "comment": " Attendance at the first class meeting is required. // maximum enrollment: 15 students",
@@ -17997,17 +18209,17 @@
         "true_units": "",
         "link": ""
     },
-    "150": {
-        "id": 150,
+    "131": {
+        "id": 131,
         "name": "American Literature and Culture",
         "number": "Hum/En 36",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Weinstein, C",
-                "locations": "",
+                "locations": "125 BAX",
                 "number": 1,
-                "times": "TR 14:30 - 15:55\nA"
+                "times": "TR 14:30 - 15:55"
             }
         ],
         "comment": " Attendance at the first class meeting is required. // maximum enrollment: 15 students",
@@ -18030,9 +18242,9 @@
             {
                 "grades": "",
                 "instructor": "Quartz, S",
-                "locations": "",
+                "locations": "B119 BAX",
                 "number": 1,
-                "times": "TR 13:00 - 14:25\nA"
+                "times": "TR 13:00 - 14:25"
             }
         ],
         "comment": " Attendance at the first class meeting is required. // maximum enrollment: 15 students",
@@ -18047,17 +18259,17 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80427&department_id=136&offering_id=88422&track_id=88422-Section 1"
     },
-    "151": {
-        "id": 151,
+    "132": {
+        "id": 132,
         "name": "Selected Topics in Humanities: Early 20th Century Analytic Philosophy",
         "number": "Hum 75",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Eisenthal, J",
-                "locations": "",
+                "locations": "121 BCK",
                 "number": 1,
-                "times": "TR 14:30 - 15:55\nA"
+                "times": "TR 14:30 - 15:55"
             }
         ],
         "comment": " This course counts as a Freshman Humanities course in the Philosophy discipline. // Attendance at the first class meeting is required. // maximum enrollment: 15 students",
@@ -18072,17 +18284,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=41&term_id=526&division_id=80427&department_id=136&offering_id=84687&track_id=84687-Default"
     },
-    "152": {
-        "id": 152,
+    "133": {
+        "id": 133,
         "name": "Hispanic Cultures in Film and Literature",
         "number": "Hum 115 b",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Garcia, D",
-                "locations": "",
+                "locations": "127 BAX",
                 "number": 1,
-                "times": "OM,W 17:00 -\nA 17:55"
+                "times": "MF 16:00 - 17:25"
             }
         ],
         "comment": " maximum enrollment: 15 students // taught concurrently with L 115B",
@@ -18097,17 +18309,17 @@
         "true_units": "",
         "link": ""
     },
-    "153": {
-        "id": 153,
+    "134": {
+        "id": 134,
         "name": "Topics in French Culture",
         "number": "Hum 116",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Orcel, C",
-                "locations": "",
+                "locations": "115 DAB\n115 DAB",
                 "number": 1,
-                "times": "OM,W 14:00 -\nA 14:55"
+                "times": "TW 19:00 - 19:55\nF 17:00 - 17:55"
             }
         ],
         "comment": " maximum entollment: 15 students // taught concurrently with L 116",
@@ -18122,8 +18334,8 @@
         "true_units": "",
         "link": ""
     },
-    "154": {
-        "id": 154,
+    "135": {
+        "id": 135,
         "name": "Data, Algorithms and Society",
         "number": "CS/IDS 162",
         "sections": [
@@ -18135,7 +18347,7 @@
                 "times": "TR 14:30 - 15:55"
             }
         ],
-        "comment": " Taught concurrently with VC 072 //maximum enrollment: 15 students between VC 72 and CS/IDS 162 // instructor permission required to add",
+        "comment": " Taught concurrently with VC 072 //maximum enrollment: 15 students between VC 72 and CS/IDS 162 // instructor permission required to add // apply at https://forms.gle/HxCECWgsUaujvT5d8",
         "units": [
             3,
             0,
@@ -18200,13 +18412,6 @@
             },
             {
                 "grades": "PASS-FAIL",
-                "instructor": "Abu-Mostafa, Y",
-                "locations": "",
-                "number": 4,
-                "times": "A\nA"
-            },
-            {
-                "grades": "PASS-FAIL",
                 "instructor": "Chandrasekaran, V",
                 "locations": "",
                 "number": 5,
@@ -18265,9 +18470,9 @@
             {
                 "grades": "",
                 "instructor": "Orcel, C",
-                "locations": "",
+                "locations": "115 DAB",
                 "number": 1,
-                "times": "OM,W 13:00 -\nA 13:55"
+                "times": "MTR 17:00 - 17:55"
             }
         ],
         "comment": " maximum enrollment: 15 students",
@@ -18290,9 +18495,9 @@
             {
                 "grades": "",
                 "instructor": "Merrill, T",
-                "locations": "",
+                "locations": "115 DAB",
                 "number": 1,
-                "times": "OM,W 14:00 -\nA 14:55"
+                "times": "MWF 12:00 - 12:55"
             }
         ],
         "comment": " maximum enrollment: 15 students",
@@ -18315,16 +18520,16 @@
             {
                 "grades": "",
                 "instructor": "Fujio, M",
-                "locations": "",
+                "locations": "228 BAX",
                 "number": 1,
-                "times": "MTWR 15:00 -\nA 15:55"
+                "times": "MTWR 15:00 - 15:55"
             },
             {
                 "grades": "",
                 "instructor": "Fujio, M",
-                "locations": "",
+                "locations": "228 BAX",
                 "number": 2,
-                "times": "MTWR 16:00 -\nA 16:55"
+                "times": "MTWR 16:00 - 16:55"
             }
         ],
         "comment": " maximum enrollment: 20 students",
@@ -18347,9 +18552,9 @@
             {
                 "grades": "",
                 "instructor": "Toner, R",
-                "locations": "",
+                "locations": "117 DAB",
                 "number": 1,
-                "times": "MW 16:00 - 17:25\nA"
+                "times": "MW 16:00 - 17:25"
             }
         ],
         "comment": " maximum enrollment: 12 students // Taught by Dr. Hirai",
@@ -18372,9 +18577,9 @@
             {
                 "grades": "",
                 "instructor": "Toner, R",
-                "locations": "",
+                "locations": "117 DAB",
                 "number": 1,
-                "times": "TR 16:00 - 17:25\nA"
+                "times": "TR 16:00 - 17:25"
             }
         ],
         "comment": " maximum enrollment: 12 students // Taught by Dr. Hirai",
@@ -18397,16 +18602,16 @@
             {
                 "grades": "",
                 "instructor": "Arjona, G",
-                "locations": "",
+                "locations": "127 BAX",
                 "number": 1,
-                "times": "OM,W 17:00 -\nA 17:55"
+                "times": "MW 19:00 - 20:25"
             },
             {
                 "grades": "",
                 "instructor": "Garcia, D",
-                "locations": "",
+                "locations": "128 BAX",
                 "number": 2,
-                "times": "MWR 12:00 - 12:55\nA"
+                "times": "MWR 12:00 - 12:55"
             }
         ],
         "comment": " maximum enrollment: 20 students in section 1, 15 students in section 2",
@@ -18429,9 +18634,9 @@
             {
                 "grades": "",
                 "instructor": "Arjona, G",
-                "locations": "",
+                "locations": "127 BAX",
                 "number": 1,
-                "times": "OM,W 19:00 -\nA 19:55"
+                "times": "MW 13:00 - 14:25"
             }
         ],
         "comment": " maximum enrollment: 20 students",
@@ -18446,17 +18651,17 @@
         "true_units": "5",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=139&offering_id=85870&track_id=85870-Default"
     },
-    "155": {
-        "id": 155,
+    "136": {
+        "id": 136,
         "name": "Hispanic Cultures in Film and Literature",
         "number": "L 115 b",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Garcia, D",
-                "locations": "",
+                "locations": "127 BAX",
                 "number": 1,
-                "times": "OM,W 17:00 -\nA 17:55"
+                "times": "MF 16:00 - 17:25"
             }
         ],
         "comment": " maximum enrollment: 15 students // taught concurrently with Hum115B",
@@ -18471,17 +18676,17 @@
         "true_units": "",
         "link": ""
     },
-    "156": {
-        "id": 156,
+    "137": {
+        "id": 137,
         "name": "Topics in French Culture",
         "number": "L 116",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Orcel, C",
-                "locations": "",
+                "locations": "115 DAB\n115 DAB",
                 "number": 1,
-                "times": "OM,W 14:00 -\nA 14:55"
+                "times": "TW 19:00 - 19:55\nF 17:00 - 17:55"
             }
         ],
         "comment": " maximum enrollment: 15 students // taught concurrently with Hum116",
@@ -18504,9 +18709,9 @@
             {
                 "grades": "",
                 "instructor": "Aebi, A",
-                "locations": "",
+                "locations": "117 DAB",
                 "number": 1,
-                "times": "MWR 13:00 - 13:55\nA"
+                "times": "MWR 13:00 - 13:55"
             }
         ],
         "comment": "",
@@ -18529,9 +18734,9 @@
             {
                 "grades": "",
                 "instructor": "Aebi, A",
-                "locations": "",
+                "locations": "117 DAB",
                 "number": 1,
-                "times": "MWR 12:00 - 12:55\nA"
+                "times": "MWR 12:00 - 12:55"
             }
         ],
         "comment": "",
@@ -18554,9 +18759,9 @@
             {
                 "grades": "",
                 "instructor": "Wang, P",
-                "locations": "",
+                "locations": "125 BAX",
                 "number": 1,
-                "times": "MWF 12:00 - 12:55\nA"
+                "times": "MWF 12:00 - 12:55"
             }
         ],
         "comment": " maximum enrollment: 20 students",
@@ -18579,9 +18784,9 @@
             {
                 "grades": "",
                 "instructor": "Zhu, J",
-                "locations": "",
+                "locations": "B119 BAX",
                 "number": 1,
-                "times": "OM,W 09:00 -\nA 09:55"
+                "times": "WF 09:00 - 10:25"
             }
         ],
         "comment": " maximum enrollment: 20 students",
@@ -18604,9 +18809,9 @@
             {
                 "grades": "",
                 "instructor": "Zhu, J",
-                "locations": "",
+                "locations": "B119 BAX",
                 "number": 1,
-                "times": "OM,W 10:30 -\nA 11:25"
+                "times": "WF 10:30 - 11:55"
             }
         ],
         "comment": " maximum enrollment: 20 students",
@@ -18629,9 +18834,9 @@
             {
                 "grades": "",
                 "instructor": "Wang, P",
-                "locations": "",
+                "locations": "128 BAX",
                 "number": 1,
-                "times": "OM,W 10:00 -\nA 10:55"
+                "times": "TR 16:00 - 17:25"
             }
         ],
         "comment": " maximum enrollment: 20 students",
@@ -18911,8 +19116,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80425&department_id=141&offering_id=86658&track_id=86658-Default"
     },
-    "157": {
-        "id": 157,
+    "138": {
+        "id": 138,
         "name": "Diffraction, Imaging, and Structure",
         "number": "MS/APh 122",
         "sections": [
@@ -19264,65 +19469,72 @@
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Mantovan, E",
-                "locations": "119 KRK\n107 DWN",
+                "locations": "310 LINDE\n107 DWN",
                 "number": 1,
                 "times": "MWF 10:00 - 10:55\nR 09:00 - 09:55"
             },
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Mantovan, E",
-                "locations": "119 KRK\n269 LAU",
+                "locations": "310 LINDE\n269 LAU",
                 "number": 2,
                 "times": "MWF 10:00 - 10:55\nR 10:00 - 10:55"
             },
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Mantovan, E",
-                "locations": "119 KRK",
+                "locations": "310 LINDE\n255 LINDE",
                 "number": 3,
-                "times": "MWF 10:00 - 10:55\nR 13:00 - 13:55\nA"
+                "times": "MWF 10:00 - 10:55\nR 13:00 - 13:55"
             },
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Mantovan, E",
-                "locations": "119 KRK\n102 STL",
+                "locations": "310 LINDE\n102 STL",
                 "number": 4,
                 "times": "MWF 10:00 - 10:55\nR 14:00 - 14:55"
             },
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Mantovan, E",
-                "locations": "119 KRK\n103 DWN",
+                "locations": "310 LINDE\n103 DWN",
                 "number": 5,
                 "times": "MWF 10:00 - 10:55\nR 10:00 - 10:55"
             },
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Graber, T",
-                "locations": "310 LINDE",
+                "locations": "Hameetman\nAud CHL\n310 LINDE",
                 "number": 6,
-                "times": "MWF 10:00 - 10:55\nR 13:00 - 13:55\nA"
+                "times": "MWF 10:00 - 10:55\nR 13:00 - 13:55"
             },
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Graber, T",
-                "locations": "310 LINDE\nB111 DWN",
+                "locations": "Hameetman\nAud CHL\nB111 DWN",
                 "number": 7,
                 "times": "MWF 10:00 - 10:55\nR 14:00 - 14:55"
             },
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Graber, T",
-                "locations": "310 LINDE",
+                "locations": "Hameetman\nAud CHL\n310 LINDE",
                 "number": 8,
-                "times": "MWF 10:00 - 10:55\nR 10:00 - 10:55\nA"
+                "times": "MWF 10:00 - 10:55\nR 10:00 - 10:55"
             },
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Graber, T",
-                "locations": "310 LINDE\nB111 DWN",
+                "locations": "Hameetman\nAud CHL\nB111 DWN",
                 "number": 9,
                 "times": "MWF 10:00 - 10:55\nR 16:00 - 16:55"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Graber, T",
+                "locations": "Hameetman\nAud CHL\nHameetman\nAud CHL",
+                "number": 10,
+                "times": "MWF 10:00 - 10:55\nR 10:00 - 10:55"
             }
         ],
         "comment": " Sections 1-5 Practical Track -- Sections 6-9 Analytical Track // maximum enrollment: 45 students per section",
@@ -19412,16 +19624,16 @@
             {
                 "grades": "LETTER",
                 "instructor": "Cvitanic, J",
-                "locations": "Lecture Hall\nBAX",
+                "locations": "Lecture Hall\nBAX\n289 LINDE",
                 "number": 7,
-                "times": "MWF 10:00 - 10:55\nR 13:00 - 13:55\nA"
+                "times": "MWF 10:00 - 10:55\nR 13:00 - 13:55"
             },
             {
                 "grades": "LETTER",
                 "instructor": "Cvitanic, J",
-                "locations": "103 DWN\nLecture Hall\nBAX",
+                "locations": "Lecture Hall\nBAX\n103 DWN",
                 "number": 8,
-                "times": "R 14:30 - 15:25\nMWF 10:00 - 10:55"
+                "times": "MWF 10:00 - 10:55\nR 14:30 - 15:25"
             }
         ],
         "comment": " taught concurrently with Ma 103 // maximum enrollment: 50 students per section",
@@ -19528,7 +19740,7 @@
             },
             {
                 "grades": "PASS-FAIL",
-                "instructor": "Yu, Y",
+                "instructor": "Yu, T",
                 "locations": "",
                 "number": 6,
                 "times": "A\nA"
@@ -19784,8 +19996,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=142&offering_id=85880&track_id=85880-Default"
     },
-    "158": {
-        "id": 158,
+    "139": {
+        "id": 139,
         "name": "Computability Theory",
         "number": "Ma/CS 117 b",
         "sections": [
@@ -19834,8 +20046,8 @@
         "true_units": "5",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=142&offering_id=85881&track_id=85881-Default"
     },
-    "159": {
-        "id": 159,
+    "140": {
+        "id": 140,
         "name": "Combinatorial Analysis",
         "number": "Ma 121 b",
         "sections": [
@@ -19884,8 +20096,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=142&offering_id=85953&track_id=85953-Default"
     },
-    "160": {
-        "id": 160,
+    "141": {
+        "id": 141,
         "name": "Topics in Mathematical Physics",
         "number": "Ma 148 b",
         "sections": [
@@ -19894,7 +20106,7 @@
                 "instructor": "Marcolli, M",
                 "locations": "187 LINDE",
                 "number": 1,
-                "times": "MWF 11:00 - 11:55"
+                "times": "TR 09:00 - 10:25"
             }
         ],
         "comment": "",
@@ -19959,8 +20171,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80428&department_id=142&offering_id=86802&track_id=86802-Default"
     },
-    "161": {
-        "id": 161,
+    "142": {
+        "id": 142,
         "name": "Number Theory",
         "number": "Ma 160 b",
         "sections": [
@@ -19999,12 +20211,19 @@
             {
                 "grades": "",
                 "instructor": "Makarov, N",
-                "locations": "289 LINDE",
+                "locations": "187 LINDE",
                 "number": 2,
+                "times": "MW 13:30 - 14:55"
+            },
+            {
+                "grades": "",
+                "instructor": "Wu, S",
+                "locations": "187 LINDE",
+                "number": 3,
                 "times": "TR 13:00 - 14:25"
             }
         ],
-        "comment": " Section 1: TBA // Section 2: TBA",
+        "comment": " Section 1: Topics in minimal surface theory // Section 2: Gaussian Free Field // Section 3: Three-dimensional Kakeya problems",
         "units": [
             3,
             0,
@@ -20121,7 +20340,7 @@
             },
             {
                 "grades": "PASS-FAIL",
-                "instructor": "Yu, Y",
+                "instructor": "Yu, T",
                 "locations": "",
                 "number": 16,
                 "times": "A\nA"
@@ -20307,7 +20526,7 @@
             },
             {
                 "grades": "PASS-FAIL",
-                "instructor": "Yu, Y",
+                "instructor": "Yu, T",
                 "locations": "",
                 "number": 16,
                 "times": "A\nA"
@@ -20458,7 +20677,7 @@
                 "times": "OM,W 15:00 - 15:55"
             }
         ],
-        "comment": " Max enrollment: 36 students between ME13 and 113. // Students must submit a questionnaire at https://registrar.caltech.edu/ME13- 113WI2023 // Students will be notified of accceptance on Nov 29",
+        "comment": " Students must submit a questionnaire at https://registrar.caltech.edu/ME13-113WI2023 // Students will be notified of accceptance on Nov 29 // Max enrollment: 36 students between ME13 and 113.",
         "units": [
             0,
             4,
@@ -20480,7 +20699,7 @@
                 "instructor": "Mello, M",
                 "locations": "135 GTL",
                 "number": 1,
-                "times": "MW 10:30 - 11:55"
+                "times": "MWF 11:00 - 11:55"
             }
         ],
         "comment": "",
@@ -20748,7 +20967,7 @@
                 "times": "OM,W 15:00 - 15:55"
             }
         ],
-        "comment": " Max enrollment: 36 students between ME13 and 113. // Students must submit a questionnaire at https://registrar.caltech.edu/ME13- 113WI2023 // Students will be notified of accceptance on Nov 29",
+        "comment": " Students must submit a questionnaire at https://registrar.caltech.edu/ME13-113WI2023 // Students will be notified of accceptance on Nov 29 // Max enrollment: 36 students between ME13 and 113.",
         "units": [
             0,
             4,
@@ -20806,8 +21025,8 @@
         "true_units": "",
         "link": ""
     },
-    "162": {
-        "id": 162,
+    "143": {
+        "id": 143,
         "name": "Fracture and Frictional Faulting",
         "number": "ME/Ge/Ae 266 a",
         "sections": [
@@ -21235,8 +21454,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80425&department_id=555&offering_id=86051&track_id=86051-Default"
     },
-    "163": {
-        "id": 163,
+    "144": {
+        "id": 144,
         "name": "Analog Circuit Design",
         "number": "EE/MedE 114 a",
         "sections": [
@@ -21260,8 +21479,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80425&department_id=129&offering_id=84377&track_id=84377-Default"
     },
-    "164": {
-        "id": 164,
+    "145": {
+        "id": 145,
         "name": "Biomedical Optics: Principles and Imaging",
         "number": "MedE/EE/BE 168 c",
         "sections": [
@@ -21285,8 +21504,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80425&department_id=555&offering_id=88287&track_id=88287-Default"
     },
-    "165": {
-        "id": 165,
+    "146": {
+        "id": 146,
         "name": "Micro/Nano Technology for Semiconductor and Medical Device",
         "number": "EE/BE/MedE 185",
         "sections": [
@@ -21310,8 +21529,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=15&term_id=399&division_id=80425&department_id=129&offering_id=63310&track_id=63310-Default"
     },
-    "166": {
-        "id": 166,
+    "147": {
+        "id": 147,
         "name": "Molecular Imaging",
         "number": "ChE/BE/MedE 188",
         "sections": [
@@ -21335,8 +21554,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80424&department_id=116&offering_id=84349&track_id=84349-Default"
     },
-    "167": {
-        "id": 167,
+    "148": {
+        "id": 148,
         "name": "Special Topics in Medical Engineering: Medical Polymers",
         "number": "MedE 199",
         "sections": [
@@ -21360,8 +21579,8 @@
         "true_units": "",
         "link": ""
     },
-    "168": {
-        "id": 168,
+    "149": {
+        "id": 149,
         "name": "Introduction to Medical Devices",
         "number": "MedE 201",
         "sections": [
@@ -21410,8 +21629,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80425&department_id=555&offering_id=86673&track_id=86673-Default"
     },
-    "169": {
-        "id": 169,
+    "150": {
+        "id": 150,
         "name": "Principles and Designs of Medical Neuromodulation Devices",
         "number": "MedE 204",
         "sections": [
@@ -21593,17 +21812,17 @@
         "true_units": "",
         "link": ""
     },
-    "170": {
-        "id": 170,
+    "151": {
+        "id": 151,
         "name": "Listening to Music",
         "number": "Mu 53",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Lu, B",
-                "locations": "",
+                "locations": "B133 BAX",
                 "number": 1,
-                "times": "MW 11:00 - 12:25\nA"
+                "times": "MW 11:00 - 12:25"
             }
         ],
         "comment": " maximum enrollment: 15 students",
@@ -21618,17 +21837,17 @@
         "true_units": "",
         "link": ""
     },
-    "171": {
-        "id": 171,
+    "152": {
+        "id": 152,
         "name": "Themes in Western Music History and Historiography: 1800-Present",
         "number": "Mu 139",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Lu, B",
-                "locations": "",
+                "locations": "B133 BAX",
                 "number": 1,
-                "times": "MW 14:00 - 15:25\nA"
+                "times": "MW 14:00 - 15:25"
             }
         ],
         "comment": " maximum enrollment: 15 students",
@@ -21643,8 +21862,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=144&offering_id=87023&track_id=87023-Default"
     },
-    "172": {
-        "id": 172,
+    "153": {
+        "id": 153,
         "name": "Neuropharmacology",
         "number": "NB/Bi/BE 155",
         "sections": [
@@ -21668,17 +21887,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80423&department_id=153&offering_id=84447&track_id=84447-Default"
     },
-    "173": {
-        "id": 173,
+    "154": {
+        "id": 154,
         "name": "Consciousness",
         "number": "Pl/CNS/NB/Bi/Ps y 167",
         "sections": [
             {
                 "grades": "LETTER",
                 "instructor": "Eberhardt, F / Adolphs, R",
-                "locations": "",
+                "locations": "130 CNRB",
                 "number": 1,
-                "times": "TR 10:30 - 11:55\nA"
+                "times": "TR 10:30 - 11:55"
             }
         ],
         "comment": " open by application only, apply at http://registrar.caltech.edu/PL167 by Nov 16th // maximum enrollment: 20 students",
@@ -21693,20 +21912,20 @@
         "true_units": "",
         "link": ""
     },
-    "174": {
-        "id": 174,
+    "155": {
+        "id": 155,
         "name": "Vision: From Computational Theory to Neuronal Mechanisms",
         "number": "CNS/Bi/EE/CS/N B 186",
         "sections": [
             {
                 "grades": "",
-                "instructor": "Shimojo, S / Perona, P /",
-                "locations": "130 CNRB\nMeister, M / Rutishauser, U",
+                "instructor": "Staff",
+                "locations": "",
                 "number": 1,
-                "times": "TR 10:30 - 11:55"
+                "times": "A\nA"
             }
         ],
-        "comment": "",
+        "comment": " class cancelled",
         "units": [
             4,
             4,
@@ -21718,8 +21937,8 @@
         "true_units": "",
         "link": ""
     },
-    "175": {
-        "id": 175,
+    "156": {
+        "id": 156,
         "name": "Genetic Dissection of Neural Circuit Function",
         "number": "NB/Bi/CNS 220",
         "sections": [
@@ -21743,8 +21962,8 @@
         "true_units": "5",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80423&department_id=535&offering_id=88873&track_id=88873-Default"
     },
-    "176": {
-        "id": 176,
+    "157": {
+        "id": 157,
         "name": "Cerebral Cortex",
         "number": "CNS/Bi/NB 247",
         "sections": [
@@ -21939,6 +22158,20 @@
                 "instructor": "Yue, Y",
                 "locations": "",
                 "number": 24,
+                "times": "A\nA"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Elowitz, M",
+                "locations": "",
+                "number": 25,
+                "times": "A\nA"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Mazmanian, S",
+                "locations": "",
+                "number": 26,
                 "times": "A\nA"
             }
         ],
@@ -22289,8 +22522,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80439&department_id=597&offering_id=86089&track_id=86089-Default"
     },
-    "177": {
-        "id": 177,
+    "158": {
+        "id": 158,
         "name": "Ceramics",
         "number": "PVA 63 b",
         "sections": [
@@ -22371,7 +22604,7 @@
         "sections": [
             {
                 "grades": "PASS-FAIL",
-                "instructor": "Staff",
+                "instructor": "Hitchcock, C",
                 "locations": "",
                 "number": 1,
                 "times": "A\nA"
@@ -22389,20 +22622,20 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=171&offering_id=87165&track_id=87165-Default"
     },
-    "178": {
-        "id": 178,
+    "159": {
+        "id": 159,
         "name": "Free Will",
         "number": "Pl 100",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Hitchcock, C",
-                "locations": "",
+                "locations": "130 CNRB",
                 "number": 1,
-                "times": "TR 14:30 - 15:55\nA"
+                "times": "TR 14:30 - 15:55"
             }
         ],
-        "comment": " maximum enrollment: 15 students",
+        "comment": " maximum enrollment: 15 students // class will meet in CNRB 240A on 1/17/23",
         "units": [
             3,
             0,
@@ -22414,20 +22647,20 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=32&term_id=514&division_id=80427&department_id=171&offering_id=75438&track_id=75438-Default"
     },
-    "179": {
-        "id": 179,
+    "160": {
+        "id": 160,
         "name": "Causation and Explanation",
         "number": "HPS/Pl/CS 110",
         "sections": [
             {
                 "grades": "LETTER",
                 "instructor": "Eberhardt, F",
-                "locations": "",
+                "locations": "TR DAB",
                 "number": 1,
-                "times": "TR 13:00 - 14:25\nA"
+                "times": "TR 13:00 - 14:25"
             }
         ],
-        "comment": " maximum enrollment: 15 students",
+        "comment": " class full, see instructor for waitlist // maximum enrollment: 15 students",
         "units": [
             3,
             0,
@@ -22439,17 +22672,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80427&department_id=150&offering_id=84173&track_id=84173-Default"
     },
-    "180": {
-        "id": 180,
+    "161": {
+        "id": 161,
         "name": "Philosophy of Space and Time",
         "number": "HPS/Pl 124",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Hitchcock, C",
-                "locations": "",
+                "locations": "128 BAX",
                 "number": 1,
-                "times": "TR 10:30 - 11:55\nA"
+                "times": "TR 10:30 - 11:55"
             }
         ],
         "comment": " maximum enrollment: 15 students",
@@ -22464,17 +22697,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=39&term_id=521&division_id=80427&department_id=150&offering_id=81386&track_id=81386-Default"
     },
-    "181": {
-        "id": 181,
+    "162": {
+        "id": 162,
         "name": "Human Nature, Welfare, and Sustainability",
         "number": "HPS/Pl 139",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Quartz, S",
-                "locations": "",
+                "locations": "B119 BAX",
                 "number": 1,
-                "times": "TR 14:30 - 15:55\nA"
+                "times": "TR 14:30 - 15:55"
             }
         ],
         "comment": " open by lottery only; see link on the REGIS home page to enter by Nov 16th // maximum enrollment: 15 students",
@@ -22489,17 +22722,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=150&offering_id=87387&track_id=87387-Default"
     },
-    "182": {
-        "id": 182,
+    "163": {
+        "id": 163,
         "name": "Consciousness",
         "number": "Pl/CNS/NB/Bi/Ps y 167",
         "sections": [
             {
                 "grades": "LETTER",
                 "instructor": "Eberhardt, F / Adolphs, R",
-                "locations": "",
+                "locations": "130 CNRB",
                 "number": 1,
-                "times": "TR 10:30 - 11:55\nA"
+                "times": "TR 10:30 - 11:55"
             }
         ],
         "comment": " open by application only, apply at http://registrar.caltech.edu/PL167 by Nov 16th // maximum enrollment: 20 students",
@@ -22546,13 +22779,13 @@
         "sections": [
             {
                 "grades": "PASS-FAIL",
-                "instructor": "Gillis, D",
+                "instructor": "Gillis, D / Herbison, J",
                 "locations": "BAC",
                 "number": 1,
                 "times": "F 09:00 - 12:55"
             }
         ],
-        "comment": " may only be taken once // maximum enrollment: 14 students",
+        "comment": " may only be taken once // maximum enrollment: 20 students",
         "units": [
             3,
             0,
@@ -22564,8 +22797,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80440&department_id=146&offering_id=86030&track_id=86030-Default"
     },
-    "183": {
-        "id": 183,
+    "164": {
+        "id": 164,
         "name": "Introduction to Power Walking",
         "number": "PE 4",
         "sections": [
@@ -22821,8 +23054,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80440&department_id=146&offering_id=88361&track_id=88361-Default"
     },
-    "184": {
-        "id": 184,
+    "165": {
+        "id": 165,
         "name": "Weight Training, Beginning",
         "number": "PE 70",
         "sections": [
@@ -22871,8 +23104,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80440&department_id=146&offering_id=88362&track_id=88362-Default"
     },
-    "185": {
-        "id": 185,
+    "166": {
+        "id": 166,
         "name": "Bouldering",
         "number": "PE 81",
         "sections": [
@@ -22896,8 +23129,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=38&term_id=520&division_id=80440&department_id=146&offering_id=78968&track_id=78968-Default"
     },
-    "186": {
-        "id": 186,
+    "167": {
+        "id": 167,
         "name": "Rock Climbing, Beginning and Intermediate",
         "number": "PE 82",
         "sections": [
@@ -23003,7 +23236,7 @@
         "sections": [
             {
                 "grades": "PASS-FAIL",
-                "instructor": "Reyes, B / Eslinger, O",
+                "instructor": "Tarakchian, A / Eslinger, O",
                 "locations": "MTWRFS 16:00 -\nBAC",
                 "number": 1,
                 "times": "17:55"
@@ -23053,7 +23286,7 @@
         "sections": [
             {
                 "grades": "PASS-FAIL",
-                "instructor": "Gamble, M / Brisotti, M",
+                "instructor": "Weintraub, B / Brisotti, M",
                 "locations": "MTWRFS 16:00 -\nBAC",
                 "number": 1,
                 "times": "17:55"
@@ -23114,9 +23347,9 @@
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Hsieh, D",
-                "locations": "201 BRG",
+                "locations": "201 BRG\n310 LINDE",
                 "number": 6,
-                "times": "WF 11:00 - 11:55\nMR 15:00 - 15:55\nA"
+                "times": "WF 11:00 - 11:55\nMR 15:00 - 15:55"
             },
             {
                 "grades": "PASS-FAIL",
@@ -23128,23 +23361,23 @@
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Hsieh, D",
-                "locations": "201 BRG",
+                "locations": "201 BRG\n273 CHL",
                 "number": 8,
-                "times": "WF 11:00 - 11:55\nMR 13:00 - 13:55\nA"
+                "times": "WF 11:00 - 11:55\nMR 13:00 - 13:55"
             },
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Hsieh, D",
-                "locations": "201 BRG",
+                "locations": "201 BRG\n469 LAU",
                 "number": 9,
-                "times": "WF 11:00 - 11:55\nMR 13:00 - 13:55\nA"
+                "times": "WF 11:00 - 11:55\nMR 13:00 - 13:55"
             },
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Hsieh, D",
-                "locations": "201 BRG",
+                "locations": "201 BRG\n107 DWN",
                 "number": 10,
-                "times": "WF 11:00 - 11:55\nMR 15:00 - 15:55\nA"
+                "times": "WF 11:00 - 11:55\nMR 15:00 - 15:55"
             }
         ],
         "comment": " Practical Track- Sections 1-5 // Analytical Track - Sections 6- 10//Maximum Enrollment: 35 students per section",
@@ -23167,23 +23400,23 @@
             {
                 "grades": "LETTER",
                 "instructor": "Cheung, C",
-                "locations": "201 BRG\n107 DWN\n269 LAU",
+                "locations": "107 DWN\n269 LAU",
                 "number": 1,
-                "times": "T 11:00 - 11:55\nWF 11:00 - 11:55\nR 11:00 - 11:55"
+                "times": "WF 11:00 - 11:55\nTR 11:00 - 11:55"
             },
             {
                 "grades": "LETTER",
                 "instructor": "Cheung, C",
-                "locations": "201 BRG\n102 STL\n269 LAU",
+                "locations": "102 STL\n269 LAU",
                 "number": 2,
-                "times": "T 11:00 - 11:55\nWF 13:00 - 13:55\nR 11:00 - 11:55"
+                "times": "WF 13:00 - 13:55\nTR 11:00 - 11:55"
             },
             {
                 "grades": "LETTER",
                 "instructor": "Cheung, C",
-                "locations": "201 BRG\n102 STL\n269 LAU",
+                "locations": "102 STL\n269 LAU",
                 "number": 3,
-                "times": "T 11:00 - 11:55\nWF 15:00 - 15:55\nR 11:00 - 11:55"
+                "times": "WF 09:00 - 09:55\nTR 11:00 - 11:55"
             }
         ],
         "comment": " Maximum enrollment: 35 students per section",
@@ -23223,20 +23456,6 @@
                 "locations": "308 BRG",
                 "number": 3,
                 "times": "F 13:00 - 15:55"
-            },
-            {
-                "grades": "",
-                "instructor": "Black, E / Libbrecht, K",
-                "locations": "308 BRG",
-                "number": 4,
-                "times": "M 13:00 - 15:55"
-            },
-            {
-                "grades": "",
-                "instructor": "Black, E / Libbrecht, K",
-                "locations": "308 BRG",
-                "number": 5,
-                "times": "T 13:00 - 15:55"
             }
         ],
         "comment": " Maximum enrollment: 24 students per section",
@@ -23308,10 +23527,10 @@
         "sections": [
             {
                 "grades": "LETTER",
-                "instructor": "Filippone, B",
-                "locations": "269 LAU\n201 BRG",
+                "instructor": "McCuller, L",
+                "locations": "201 BRG",
                 "number": 1,
-                "times": "T 10:30 - 11:55\nR 10:30 - 11:55"
+                "times": "TR 10:30 - 11:55"
             }
         ],
         "comment": "",
@@ -23334,7 +23553,7 @@
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Mach, C / Weinstein, A",
-                "locations": "255 LINDE",
+                "locations": "187 LINDE",
                 "number": 1,
                 "times": "OM,W 15:00 - 15:55"
             }
@@ -23359,7 +23578,7 @@
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Mach, C / Weinstein, A",
-                "locations": "255 LINDE",
+                "locations": "187 LINDE",
                 "number": 1,
                 "times": "OM,W 15:00 - 15:55"
             }
@@ -23411,7 +23630,7 @@
                 "instructor": "Black, E / Libbrecht, K",
                 "locations": "210 BRG",
                 "number": 1,
-                "times": "OM,A"
+                "times": "OM,W 15:00 - 15:55"
             }
         ],
         "comment": "",
@@ -23426,8 +23645,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=147&offering_id=85901&track_id=85901-Default"
     },
-    "187": {
-        "id": 187,
+    "168": {
+        "id": 168,
         "name": "Advanced Physics Laboratory",
         "number": "Ph 77 b",
         "sections": [
@@ -23436,7 +23655,7 @@
                 "instructor": "Black, E / Libbrecht, K",
                 "locations": "210 BRG",
                 "number": 1,
-                "times": "OM,A"
+                "times": "OM,W 15:00 - 15:55"
             }
         ],
         "comment": "",
@@ -23451,8 +23670,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=147&offering_id=85901&track_id=85901-Default"
     },
-    "188": {
-        "id": 188,
+    "169": {
+        "id": 169,
         "name": "Advanced Physics Laboratory",
         "number": "Ph 77 c",
         "sections": [
@@ -23461,7 +23680,7 @@
                 "instructor": "Black, E / Libbrecht, K",
                 "locations": "210 BRG",
                 "number": 1,
-                "times": "OM,A"
+                "times": "OM,W 15:00 - 15:55"
             }
         ],
         "comment": "",
@@ -23551,15 +23770,15 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=147&offering_id=85903&track_id=85903-Default"
     },
-    "189": {
-        "id": 189,
+    "170": {
+        "id": 170,
         "name": "Physics of Measurement",
         "number": "Ph/APh/EE/BE 118 a",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Roukes, M",
-                "locations": "107 DWN",
+                "locations": "387 LINDE",
                 "number": 1,
                 "times": "TR 14:30 - 15:55"
             }
@@ -23584,9 +23803,9 @@
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Simmons-Duffin, D",
-                "locations": "304 BRG",
+                "locations": "370 CHL",
                 "number": 1,
-                "times": "TR 14:30 - 15:55"
+                "times": "TR 14:30 - 15:25"
             }
         ],
         "comment": "",
@@ -23659,7 +23878,7 @@
             {
                 "grades": "",
                 "instructor": "Chatziioannou, K",
-                "locations": "107 DWN",
+                "locations": "121 BCK",
                 "number": 1,
                 "times": "MW 14:30 - 15:55"
             }
@@ -23676,8 +23895,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=147&offering_id=85905&track_id=85905-Default"
     },
-    "190": {
-        "id": 190,
+    "171": {
+        "id": 171,
         "name": "Applications of Classical Physics",
         "number": "Ph 136 b",
         "sections": [
@@ -24142,6 +24361,13 @@
                 "instructor": "McCuller, L",
                 "locations": "",
                 "number": 59,
+                "times": "A\nA"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Ghaffari, A",
+                "locations": "",
+                "number": 60,
                 "times": "A\nA"
             }
         ],
@@ -24616,6 +24842,13 @@
                 "locations": "",
                 "number": 68,
                 "times": "A\nA"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Wang, L",
+                "locations": "",
+                "number": 69,
+                "times": "A\nA"
             }
         ],
         "comment": "",
@@ -24661,7 +24894,7 @@
         "number": "Ph 205 b",
         "sections": [
             {
-                "grades": "",
+                "grades": "PASS-FAIL",
                 "instructor": "Wise, M",
                 "locations": "103 DWN",
                 "number": 1,
@@ -24680,15 +24913,15 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=147&offering_id=85908&track_id=85908-Default"
     },
-    "191": {
-        "id": 191,
+    "172": {
+        "id": 172,
         "name": "Advanced Mathematical Methods of Physics",
         "number": "Ph 229 a",
         "sections": [
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Kapustin, A",
-                "locations": "469 LAU",
+                "locations": "219 CHL",
                 "number": 1,
                 "times": "TR 10:30 - 11:55"
             }
@@ -24705,17 +24938,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=147&offering_id=87431&track_id=87431-Default"
     },
-    "192": {
-        "id": 192,
+    "173": {
+        "id": 173,
         "name": "Elementary Particle Theory",
         "number": "Ph 230 b",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Oguri, H",
-                "locations": "",
+                "locations": "469 LAU",
                 "number": 1,
-                "times": "MW 09:00 - 10:25\nA"
+                "times": "MW 09:00 - 10:25"
             }
         ],
         "comment": "",
@@ -24730,8 +24963,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=147&offering_id=87256&track_id=87256-Default"
     },
-    "193": {
-        "id": 193,
+    "174": {
+        "id": 174,
         "name": "Theoretical Cosmology and Astroparticle Physics",
         "number": "Ph 235 b",
         "sections": [
@@ -24740,7 +24973,7 @@
                 "instructor": "Zurek, K",
                 "locations": "469 LAU",
                 "number": 1,
-                "times": "TR 12:00 - 13:25"
+                "times": "W 12:00 - 13:25"
             }
         ],
         "comment": "",
@@ -24763,9 +24996,9 @@
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Patterson, R",
-                "locations": "",
+                "locations": "269 LAU",
                 "number": 1,
-                "times": "A\nA"
+                "times": "F 11:00 - 11:55"
             }
         ],
         "comment": "",
@@ -25219,9 +25452,9 @@
             {
                 "grades": "LETTER",
                 "instructor": "Ordeshook, P",
-                "locations": "",
+                "locations": "B125 BAX",
                 "number": 1,
-                "times": "MR 14:30 - 15:55\nA"
+                "times": "MR 14:30 - 15:55"
             }
         ],
         "comment": " maximum enrollment: 15 students",
@@ -25326,9 +25559,9 @@
             {
                 "grades": "LETTER",
                 "instructor": "Kiewiet, D",
-                "locations": "",
+                "locations": "B125 BAX",
                 "number": 1,
-                "times": "W 19:30 - 21:30\nA"
+                "times": "W 19:30 - 21:30"
             }
         ],
         "comment": " designated as Writing Intensive course // maximum enrollment: 35 students",
@@ -25343,17 +25576,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80427&department_id=148&offering_id=86588&track_id=86588-Default"
     },
-    "194": {
-        "id": 194,
+    "175": {
+        "id": 175,
         "name": "Identification Problems in the Social Sciences",
         "number": "Ec/PS 124",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Sherman, R",
-                "locations": "",
+                "locations": "228 BAX",
                 "number": 1,
-                "times": "TR 13:00 - 14:25\nA"
+                "times": "TR 13:00 - 14:25"
             }
         ],
         "comment": "",
@@ -25376,9 +25609,9 @@
             {
                 "grades": "",
                 "instructor": "Gibilisco, M",
-                "locations": "",
+                "locations": "B133 BAX",
                 "number": 1,
-                "times": "TR 10:30 - 11:55\nA"
+                "times": "TR 10:30 - 11:55"
             }
         ],
         "comment": "",
@@ -25401,9 +25634,9 @@
             {
                 "grades": "",
                 "instructor": "Hirsch, A",
-                "locations": "",
+                "locations": "125 BAX",
                 "number": 1,
-                "times": "MW 10:30 - 11:55\nA"
+                "times": "MW 10:30 - 11:55"
             }
         ],
         "comment": "",
@@ -25426,9 +25659,9 @@
             {
                 "grades": "LETTER",
                 "instructor": "Kiewiet, D",
-                "locations": "",
+                "locations": "B125 BAX",
                 "number": 1,
-                "times": "T 14:30 - 16:30\nA"
+                "times": "T 14:30 - 16:30"
             }
         ],
         "comment": " designated as Writing Intensive course // maximum enrollment: 75 students",
@@ -25443,17 +25676,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80427&department_id=148&offering_id=86617&track_id=86617-Default"
     },
-    "195": {
-        "id": 195,
+    "176": {
+        "id": 176,
         "name": "Selected Topics in Psychology: The Life Cycle of Behaviors",
         "number": "Psy 101",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Kim, N",
-                "locations": "",
+                "locations": "121 BCK",
                 "number": 1,
-                "times": "TR 13:00 - 14:30\nA"
+                "times": "TR 13:00 - 14:25"
             }
         ],
         "comment": " maximum enrollment: 20 students",
@@ -25476,9 +25709,9 @@
             {
                 "grades": "",
                 "instructor": "Mobbs, D",
-                "locations": "",
+                "locations": "228 BAX",
                 "number": 1,
-                "times": "F 10:30 - 13:25\nA"
+                "times": "F 10:30 - 13:25"
             }
         ],
         "comment": " maximum enrollment: 14 students",
@@ -25493,17 +25726,17 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80427&department_id=149&offering_id=88450&track_id=88450-Default"
     },
-    "196": {
-        "id": 196,
+    "177": {
+        "id": 177,
         "name": "Consciousness",
         "number": "Pl/CNS/NB/Bi/Ps y 167",
         "sections": [
             {
                 "grades": "LETTER",
                 "instructor": "Eberhardt, F / Adolphs, R",
-                "locations": "",
+                "locations": "130 CNRB",
                 "number": 1,
-                "times": "TR 10:30 - 11:55\nA"
+                "times": "TR 10:30 - 11:55"
             }
         ],
         "comment": " open by application only, apply at http://registrar.caltech.edu/PL167 by Nov 16th // maximum enrollment: 20 students",
@@ -25526,9 +25759,9 @@
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Rangel, A",
-                "locations": "",
+                "locations": "B119 BAX",
                 "number": 1,
-                "times": "F 13:00 - 14:25\nA"
+                "times": "F 13:00 - 14:25"
             }
         ],
         "comment": " this course is only open to graduate students in the Social and Decision Neuroscience, Computational and Neural Systems and Social Science PhD programs",
@@ -25551,26 +25784,26 @@
             {
                 "grades": "LETTER",
                 "instructor": "Javier, R",
-                "locations": "",
+                "locations": "100 PWL/BTH",
                 "number": 1,
-                "times": "MWF 09:00 - 09:55\nA"
+                "times": "MWF 09:00 - 09:55"
             },
             {
                 "grades": "LETTER",
                 "instructor": "Javier, R",
-                "locations": "",
+                "locations": "100 PWL/BTH",
                 "number": 2,
-                "times": "MWF 10:00 - 10:55\nA"
+                "times": "MWF 10:00 - 10:55"
             },
             {
                 "grades": "LETTER",
                 "instructor": "Dabiri, M",
-                "locations": "",
+                "locations": "100 PWL/BTH",
                 "number": 3,
-                "times": "MWF 11:00 - 11:55\nA"
+                "times": "MWF 11:00 - 11:55"
             }
         ],
-        "comment": " maximum enrollment: 18 students per section // http://registrar.caltech.edu/SEC10WaitlistForm",
+        "comment": " class full, see waitlist form at http://registrar.caltech.edu/SEC10WaitlistForm //maximum enrollment: 18 students per section",
         "units": [
             3,
             0,
@@ -25589,10 +25822,10 @@
         "sections": [
             {
                 "grades": "LETTER",
-                "instructor": "Burkett, E",
-                "locations": "104 WAT",
+                "instructor": "Meyer, V",
+                "locations": "142 KCK",
                 "number": 1,
-                "times": "W 11:00 - 11:55"
+                "times": "F 10:00 - 10:55"
             }
         ],
         "comment": " Limited to seniors in E&AS only // maximum enrollment: 20 students // go to http://registrar.caltech.edu/SEC11-12-13WaitlistForm to be added to waitlist when class is full",
@@ -25620,7 +25853,7 @@
                 "times": "W 13:00 - 13:55"
             }
         ],
-        "comment": " Limited to seniors in E&AS only // maximum enrollment: 20 students // go to http://registrar.caltech.edu/SEC11-12-13WaitlistForm to be added to waitlist when class is full",
+        "comment": " Class Full // Limited to seniors in E&AS only // maximum enrollment: 20 students // go to http://registrar.caltech.edu/SEC11- 12-13WaitlistForm to be added to waitlist when class is full",
         "units": [
             1,
             0,
@@ -25632,6 +25865,56 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80425&department_id=676&offering_id=87488&track_id=87488-Default"
     },
+    "14103": {
+        "id": 14103,
+        "name": "Written Communication about Engineering and Applied Sciences to Non- Specialists",
+        "number": "SEC 13",
+        "sections": [
+            {
+                "grades": "LETTER",
+                "instructor": "Burkett, E",
+                "locations": "104 WAT",
+                "number": 1,
+                "times": "W 11:00 - 11:55"
+            }
+        ],
+        "comment": " Limited to seniors in E&AS only // maximum enrollment: 20 students // go to http://registrar.caltech.edu/SEC11-12-13WaitlistForm to be added to waitlist when class is full",
+        "units": [
+            1,
+            0,
+            2
+        ],
+        "description": "Engineers and applied scientists often work on highly technical, specialized projects. However, their work is often of interest to readers with varied areas and levels of technical expertise, including investors, community stakeholders, government regulators, consumers, voters, students, and enthusiasts. This course introduces students to diverse types of writing about technical engineering and applied science topics intended for these \"non-specialist\" readers who lack some or all of the technical knowledge the author has. Students will compose multiple texts written for different purposes and to different types of audiences outside of their area of expertise. This course is recommended for students who may plan entrepreneurial, non-profit, or government careers, where communication to non-specialists is crucial to success. It may also interest students who enjoy public advocacy or creative writing about technical topics. Fulfills the Institute scientific writing requirement. Enrollment is limited to students in E&AS options and priority is given to seniors. Other students may join the wait list and will be added to the class as space permits.",
+        "prerequisites": "",
+        "rating": "4.60 +/- 0.66",
+        "true_units": "3",
+        "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80425&department_id=676&offering_id=87489&track_id=87489-Default"
+    },
+    "178": {
+        "id": 178,
+        "name": "Advancing Inclusion in College Teaching",
+        "number": "SEC 201",
+        "sections": [
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Imamura, J",
+                "locations": "360 CSS",
+                "number": 1,
+                "times": "W 15:00 - 15:55"
+            }
+        ],
+        "comment": " maximum enrollment: 12 students // meets in the CTLO Workshop Space",
+        "units": [
+            1,
+            0,
+            0
+        ],
+        "description": "In this weekly, discussion-based course, participants will explore concrete practices to advance inclusion and anti-racism as college-level STEM instructors, and discuss how they might implement these steps in their own teaching practice both at Caltech and beyond. Topics for discussion include establishing an inclusive learning environment, designing equity into syllabi and student assessments, and building anti-racist curricular materials, with additional topics to be guided by participant interests. This course aims to bring together an active community of teaching and learning practitioners for ongoing work and dialogue. There is a cap of 12 students for this course.",
+        "prerequisites": "",
+        "rating": "",
+        "true_units": "",
+        "link": ""
+    },
     "14104": {
         "id": 14104,
         "name": "Analytical Foundations of Social Science",
@@ -25640,9 +25923,9 @@
             {
                 "grades": "LETTER",
                 "instructor": "Saito, K",
-                "locations": "",
+                "locations": "B125 BAX",
                 "number": 1,
-                "times": "TR 10:30 - 11:55\nA"
+                "times": "TR 10:30 - 11:55"
             }
         ],
         "comment": " Open to Social Science graduate students only",
@@ -25665,9 +25948,9 @@
             {
                 "grades": "LETTER",
                 "instructor": "Katz, J",
-                "locations": "",
+                "locations": "B125 BAX",
                 "number": 1,
-                "times": "F 13:00 - 15:55\nA"
+                "times": "F 13:00 - 15:55"
             }
         ],
         "comment": " Open to Social Science graduate students only",
@@ -25690,9 +25973,9 @@
             {
                 "grades": "LETTER",
                 "instructor": "Pomatto, L",
-                "locations": "",
+                "locations": "127 BAX",
                 "number": 1,
-                "times": "MW 14:30 - 15:55\nA"
+                "times": "MW 14:30 - 15:55"
             }
         ],
         "comment": " Open to Social Science graduate students only.",
@@ -25715,9 +25998,9 @@
             {
                 "grades": "LETTER",
                 "instructor": "Gibilisco, M",
-                "locations": "",
+                "locations": "B125 BAX",
                 "number": 1,
-                "times": "MW 13:00 - 14:25\nA"
+                "times": "MW 13:00 - 14:25"
             }
         ],
         "comment": "",
@@ -25740,9 +26023,9 @@
             {
                 "grades": "",
                 "instructor": "Sprenger, C",
-                "locations": "",
+                "locations": "228 BAX",
                 "number": 1,
-                "times": "TR 10:30 - 11:55\nA"
+                "times": "TR 10:30 - 11:55"
             }
         ],
         "comment": "",
@@ -25765,9 +26048,9 @@
             {
                 "grades": "LETTER",
                 "instructor": "Xin, Y",
-                "locations": "",
+                "locations": "B125 BAX",
                 "number": 1,
-                "times": "TR 13:00 - 14:25\nA"
+                "times": "TR 13:00 - 14:25"
             }
         ],
         "comment": "",
@@ -25790,9 +26073,9 @@
             {
                 "grades": "LETTER",
                 "instructor": "Rosenthal, J",
-                "locations": "",
+                "locations": "128 BAX",
                 "number": 1,
-                "times": "MWF 11:00 - 11:55\nA"
+                "times": "MWF 11:00 - 11:55"
             }
         ],
         "comment": "",
@@ -25815,9 +26098,9 @@
             {
                 "grades": "LETTER",
                 "instructor": "Alvarez, R",
-                "locations": "",
+                "locations": "237 BAX",
                 "number": 1,
-                "times": "T 13:00 - 15:55\nA"
+                "times": "T 13:00 - 15:55"
             }
         ],
         "comment": "",
@@ -25840,9 +26123,9 @@
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Nielsen, K",
-                "locations": "",
+                "locations": "125 BAX",
                 "number": 1,
-                "times": "M 14:30 - 15:55\nA"
+                "times": "M 14:30 - 15:55"
             }
         ],
         "comment": "",
@@ -26085,7 +26368,7 @@
                 "instructor": "Ralph, C / Wierman, A",
                 "locations": "106 ANB",
                 "number": 1,
-                "times": "F 10:00 - 12:55"
+                "times": "F 10:00 - 10:55"
             }
         ],
         "comment": " enrollment by application instructor permission required to add",
@@ -26232,17 +26515,17 @@
         "true_units": "",
         "link": ""
     },
-    "197": {
-        "id": 197,
+    "179": {
+        "id": 179,
         "name": "Worldbuilding for the Multiverse",
         "number": "VC 56",
         "sections": [
             {
                 "grades": "",
-                "instructor": "Staff",
-                "locations": "",
+                "instructor": "Berrigan, C",
+                "locations": "115 DAB",
                 "number": 1,
-                "times": "TR 14:30 - 15:55\nA"
+                "times": "TR 14:30 - 15:55"
             }
         ],
         "comment": " maximum enrollment: 15 students",
@@ -26257,8 +26540,8 @@
         "true_units": "",
         "link": ""
     },
-    "198": {
-        "id": 198,
+    "180": {
+        "id": 180,
         "name": "Data, Algorithms and Society",
         "number": "VC 72",
         "sections": [
@@ -26270,7 +26553,7 @@
                 "times": "TR 14:30 - 15:55"
             }
         ],
-        "comment": " taught concurrently with CS/IDS 162 // maximum enrollment: 15 students between VC 72 and CS/IDS 162 // instructor permission required to add",
+        "comment": " taught concurrently with CS/IDS 162 // maximum enrollment: 15 students between VC 72 and CS/IDS 162 // instructor permission required to add // apply at https://forms.gle/HxCECWgsUaujvT5d8",
         "units": [
             3,
             0,
@@ -26282,17 +26565,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=40&term_id=522&division_id=80427&department_id=656&offering_id=81730&track_id=81730-Default"
     },
-    "199": {
-        "id": 199,
+    "181": {
+        "id": 181,
         "name": "Careers in STEAM",
         "number": "VC/E 81",
         "sections": [
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Mushkin, H",
-                "locations": "",
+                "locations": "103 DWN",
                 "number": 1,
-                "times": "R 12:00 - 12:55\nA"
+                "times": "R 12:00 - 12:55"
             }
         ],
         "comment": "",
@@ -26307,6 +26590,38 @@
         "true_units": "",
         "link": ""
     },
+    "182": {
+        "id": 182,
+        "name": "Reading in Visual Culture",
+        "number": "VC 90",
+        "sections": [
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Jurca, C",
+                "locations": "",
+                "number": 1,
+                "times": "A\nA"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Jacobson, B",
+                "locations": "",
+                "number": 2,
+                "times": "A\nA"
+            }
+        ],
+        "comment": " instructor permission required to enroll",
+        "units": [
+            0,
+            0,
+            0
+        ],
+        "description": "An individual program of directed reading in Visual Culture, in areas not covered by regular courses. VC 90 is intended primarily for Visual Culture minors. Interested students should confer with a Visual Culture faculty member and agree upon a topic before registering for the course.",
+        "prerequisites": "Instructor's permission.",
+        "rating": "",
+        "true_units": "",
+        "link": ""
+    },
     "14131": {
         "id": 14131,
         "name": "Principles and Practices of Academic Writing",
@@ -26315,9 +26630,9 @@
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Hall, S",
-                "locations": "",
+                "locations": "127 BAX",
                 "number": 1,
-                "times": "OM,T 12:00 -\nA 12:55"
+                "times": "T 12:00 - 12:55"
             }
         ],
         "comment": " instructor permission required before enrolling",
