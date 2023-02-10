@@ -261,7 +261,7 @@ const useReactPath = () => {
 function App() {
   // really basic routing
   let pathname = useReactPath();
-  const realPath = pathname == "/" ? CURRENT_TERM : pathname
+  const realPath = pathname === "/" ? CURRENT_TERM : pathname
   const data = courseDataSources[realPath]
   const [indexedCourses, setIndexedCourses] = useState({})
 
