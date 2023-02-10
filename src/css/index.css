@@ -54,3 +54,8 @@ body {
   border: none;
   border-radius: 100px;
 }
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
