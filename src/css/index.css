@@ -28,9 +28,16 @@ body {
 
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  row-gap: 10px;
   padding-top: 30px;
   padding-bottom: 30px;
+  margin: auto;
+}
+
+.footer p {
+  text-align: center;
 }
 
 .sticky-help {

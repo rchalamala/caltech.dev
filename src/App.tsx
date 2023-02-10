@@ -698,6 +698,7 @@ function App() {
             Zack
           </a>
         </p>
+        <p>Current term: {realPath.substring(1)}</p>
       </footer>
     </AppState.Provider>
     </AllCourses.Provider>
