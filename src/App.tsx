@@ -13,12 +13,14 @@ import { motion } from "framer-motion";
 
 const DATA_FA2022 = require("./data/IndexedTotalFA2022-23.json")
 const DATA_WI2022 = require("./data/IndexedTotalWI2022-23.json")
+const DATA_SP2023 = require("./data/IndexedTotalSP2022-23.json")
 
-const CURRENT_TERM = "/wi2022"
+const CURRENT_TERM = "/sp2023"
 
 const courseDataSources: Record<string, CourseData> = {
   "/fa2022": DATA_FA2022,
   "/wi2022": DATA_WI2022,
+  "/sp2023": DATA_SP2023,
 }
 
 export const AllCourses = createContext<CourseIndex>({})
@@ -258,8 +260,9 @@ const useReactPath = () => {
 /** Main wrapper */
 function App() {
   // really basic routing
-  let pathname = useReactPath()
-  const data = courseDataSources[pathname] || courseDataSources[CURRENT_TERM]
+  let pathname = useReactPath();
+  const realPath = pathname == "/" ? CURRENT_TERM : pathname
+  const data = courseDataSources[realPath]
   const [indexedCourses, setIndexedCourses] = useState({})
 
   // load course data from a json url
@@ -272,7 +275,7 @@ function App() {
   }, [data])
 
   // 5 blank workspaces by default bc I'm too lazy to implement dynamic tabs and stuff
-  const localWorkspaces = localStorage.getItem("workspaces" + pathname);
+  const localWorkspaces = localStorage.getItem("workspaces" + realPath);
   const [workspaces, setWorkspaces] = useState<Workspace[]>(
     localWorkspaces
       ? JSON.parse(localWorkspaces)
@@ -284,7 +287,7 @@ function App() {
           emptyWorkspace(),
         ],
   );
-  const localWorkspaceIdx = localStorage.getItem("workspaceIdx" + pathname);
+  const localWorkspaceIdx = localStorage.getItem("workspaceIdx" + realPath);
   const [workspaceIdx, setWorkspaceIdx] = useState<number>(
     localWorkspaceIdx ? JSON.parse(localWorkspaceIdx) : 0,
   );
@@ -302,9 +305,9 @@ function App() {
 
   // Save state to local storage
   useEffect(() => {
-    localStorage.setItem("workspaces" + pathname, JSON.stringify(workspaces));
-    localStorage.setItem("workspaceIdx" + pathname, JSON.stringify(workspaceIdx));
-  }, [workspaces, workspaceIdx, pathname]);
+    localStorage.setItem("workspaces" + realPath, JSON.stringify(workspaces));
+    localStorage.setItem("workspaceIdx" + realPath, JSON.stringify(workspaceIdx));
+  }, [workspaces, workspaceIdx, realPath]);
 
   /** Helper functions to be sent sent through Context */
   const addCourse = (newCourse: CourseStorage) => {
