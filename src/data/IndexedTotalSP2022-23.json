@@ -876,9 +876,9 @@
             {
                 "grades": "",
                 "instructor": "Webber, R / Tropp, J",
-                "locations": "213 ANB",
+                "locations": "106 ANB",
                 "number": 1,
-                "times": "TR 10:30 - 11:55"
+                "times": "TR 13:00 - 14:25"
             }
         ],
         "comment": " computing",
@@ -1626,9 +1626,9 @@
             {
                 "grades": "PASS-FAIL",
                 "instructor": "Faraon, A / Endres, M /",
-                "locations": "107 DWN\nNad Perge, S",
+                "locations": "142 KCK\nNad Perge, S / McCuller, L",
                 "number": 1,
-                "times": "TR 09:00 - 10:25"
+                "times": "TR 14:30 - 15:55"
             }
         ],
         "comment": "",
@@ -2597,7 +2597,7 @@
                 "times": "R 14:30 - 15:55\nR 19:00 - 20:55"
             }
         ],
-        "comment": " Field Trip: May 5-7",
+        "comment": " Field Trip: May 5-7 // maximum enrollment; 12 students",
         "units": [
             1,
             1,
@@ -2647,7 +2647,7 @@
                 "times": "OM,A\nA\nA"
             }
         ],
-        "comment": " class cancelled",
+        "comment": "",
         "units": [
             3,
             0,
@@ -4950,7 +4950,7 @@
                 "times": "W 13:00 - 15:55\nR 13:00 - 15:55"
             }
         ],
-        "comment": " open by lottery only, see REGIS home page to enter before 8am February 22nd // maximum enrollment: 24 students // May be taken pass/fail if taken in a first-year student's first year.",
+        "comment": " open by application only, see REGIS home page to enter before February 19th // maximum enrollment: 24 students // May be taken pass/fail if taken in a first-year student's first year.",
         "units": [
             0,
             6,
@@ -5780,19 +5780,12 @@
             {
                 "grades": "",
                 "instructor": "Meyerowitz, E",
-                "locations": "101 KRK\n347 KRK",
+                "locations": "B167 BRD\nB140G BRD",
                 "number": 1,
-                "times": "MW 14:00 - 14:55\nF 14:00 - 15:25"
-            },
-            {
-                "grades": "",
-                "instructor": "Meyerowitz, E",
-                "locations": "101 KRK\n130 CNRB",
-                "number": 2,
                 "times": "MW 14:00 - 14:55\nF 14:00 - 15:25"
             }
         ],
-        "comment": " maximum enrollment: 8 students per section",
+        "comment": " maximum enrollment: 16 students",
         "units": [
             2,
             2,
@@ -6566,7 +6559,7 @@
                 "times": "TR 13:00 - 14:25\nA"
             }
         ],
-        "comment": "",
+        "comment": " http://schedules.caltech.edu/syllabli/BEM104_SP2223.pdf",
         "units": [
             3,
             0,
@@ -6750,9 +6743,9 @@
         ],
         "comment": " Open to students in all options, by application only. Apply before Feb 20 at https://tinyurl.com/yckdr7uf // maximum enrollment: 12 students (seniors and juniors graduating Fall 2023 or later)",
         "units": [
+            1.5,
             0,
-            0,
-            0
+            1.5
         ],
         "description": "Special problems or courses arranged to meet the emerging needs of undergraduate students. Topics have included AIChE's annual Chem-E-Car Competition. May be repeated for credit, as content may vary. Grading scheme at instructor's discretion.",
         "prerequisites": "instructor's permission.",
@@ -7317,13 +7310,13 @@
         "sections": [
             {
                 "grades": "",
-                "instructor": "Lewis, N",
-                "locations": "115 BCK",
+                "instructor": "Staff",
+                "locations": "",
                 "number": 1,
-                "times": "TR 13:00 - 14:25"
+                "times": "A\nA"
             }
         ],
-        "comment": "",
+        "comment": " class cancelled",
         "units": [
             3,
             0,
@@ -7779,9 +7772,16 @@
                 "locations": "B122 GCL\nB157 CRL",
                 "number": 4,
                 "times": "F 09:00 - 09:55\nR 08:00 - 10:55"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Mendez, J",
+                "locations": "B122 GCL\nB157 CRL",
+                "number": 5,
+                "times": "F 09:00 - 09:55\nT 19:00 - 21:55"
             }
         ],
-        "comment": " Max enroll: 22 students per sec // Students entering 2020 and before must take Ch 3 in their first 9 terms of residence in order to be graded pass/fail. Frosh entering 2021 must take Ch 3 in their first six terms of residence in order to be graded pass/fail",
+        "comment": " Open by lottery only, see REGIS home page to enter before 8am, Feb 22 // Max enroll: 22 students per sec // Students entering 2020 and before must take Ch 3 in their 1st 9 terms in order to be graded p/f. Frosh entering 2021 must take Ch 3 in their 1st 6 terms in order to be graded p/f",
         "units": [
             1,
             3,
@@ -7826,9 +7826,9 @@
             {
                 "grades": "",
                 "instructor": "Okumura, M",
-                "locations": "151 CRL",
+                "locations": "B133 NYS",
                 "number": 1,
-                "times": "A\nA\nOM,M 11:00 - 11:55"
+                "times": "A\nA\nOM,M 15:00 - 15:55"
             }
         ],
         "comment": " Students are expected to attend one lab a week (4 hours sequential) tbd. Ch 21b is required.",
@@ -7895,6 +7895,31 @@
     },
     "144": {
         "id": 144,
+        "name": "Chemical Equilibrium and Analysis",
+        "number": "Ch 14",
+        "sections": [
+            {
+                "grades": "",
+                "instructor": "Rees, D",
+                "locations": "147 NYS",
+                "number": 1,
+                "times": "TR 09:00 - 10:25"
+            }
+        ],
+        "comment": "",
+        "units": [
+            3,
+            0,
+            6
+        ],
+        "description": "Develops the basic principles of chemical equilibrium in aqueous solutions, emphasizing acid-base chemistry, complex ion formation, chelation, solubility, oxidation-reduction reactions, and partitioning equilibria for separations.",
+        "prerequisites": "",
+        "rating": "4.78 +/- 0.42",
+        "true_units": "3",
+        "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80424&department_id=114&offering_id=86679&track_id=86679-Default"
+    },
+    "145": {
+        "id": 145,
         "name": "Chemical Equilibrium and Analysis Laboratory",
         "number": "Ch 15",
         "sections": [
@@ -7918,17 +7943,17 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80424&department_id=114&offering_id=88870&track_id=88870-Default"
     },
-    "145": {
-        "id": 145,
+    "146": {
+        "id": 146,
         "name": "Physical Chemistry",
         "number": "Ch 21 c",
         "sections": [
             {
                 "grades": "LETTER",
                 "instructor": "Okumura, M / Blake, G",
-                "locations": "147 NYS",
+                "locations": "101 SCH",
                 "number": 1,
-                "times": "MWF 13:00 - 13:55"
+                "times": "TR 10:30 - 11:55"
             }
         ],
         "comment": "",
@@ -7943,8 +7968,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80424&department_id=114&offering_id=85838&track_id=85838-Default"
     },
-    "146": {
-        "id": 146,
+    "147": {
+        "id": 147,
         "name": "Organic Chemistry",
         "number": "Ch 41 c",
         "sections": [
@@ -7982,8 +8007,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80424&department_id=114&offering_id=85839&track_id=85839-Default"
     },
-    "147": {
-        "id": 147,
+    "148": {
+        "id": 148,
         "name": "Chemical Research",
         "number": "Ch 80",
         "sections": [
@@ -8315,8 +8340,8 @@
         "true_units": "",
         "link": ""
     },
-    "148": {
-        "id": 148,
+    "149": {
+        "id": 149,
         "name": "Independent Reading in Chemistry",
         "number": "Ch 81",
         "sections": [
@@ -8382,8 +8407,8 @@
         "true_units": "",
         "link": ""
     },
-    "149": {
-        "id": 149,
+    "150": {
+        "id": 150,
         "name": "Senior Thesis Research",
         "number": "Ch 82",
         "sections": [
@@ -8554,8 +8579,8 @@
         "true_units": "",
         "link": ""
     },
-    "151": {
-        "id": 151,
+    "152": {
+        "id": 152,
         "name": "Chemistry Tutorials",
         "number": "Ch 101",
         "sections": [
@@ -8579,8 +8604,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80424&department_id=114&offering_id=87091&track_id=87091-Section 1"
     },
-    "152": {
-        "id": 152,
+    "153": {
+        "id": 153,
         "name": "Introduction to Inorganic Chemistry",
         "number": "Ch 102",
         "sections": [
@@ -8604,8 +8629,8 @@
         "true_units": "5",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80424&department_id=114&offering_id=86972&track_id=86972-Default"
     },
-    "154": {
-        "id": 154,
+    "155": {
+        "id": 155,
         "name": "Nature of the Chemical Bond",
         "number": "Ch 120 b",
         "sections": [
@@ -8629,8 +8654,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=36&term_id=518&division_id=80424&department_id=114&offering_id=78550&track_id=78550-Default"
     },
-    "155": {
-        "id": 155,
+    "156": {
+        "id": 156,
         "name": "Atomic-Level Simulations of Materials and Molecules",
         "number": "Ch 121 a",
         "sections": [
@@ -8654,8 +8679,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80424&department_id=114&offering_id=87248&track_id=87248-Default"
     },
-    "156": {
-        "id": 156,
+    "157": {
+        "id": 157,
         "name": "Nuclear Chemistry",
         "number": "Ge/Ch 127",
         "sections": [
@@ -8679,8 +8704,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80426&department_id=182&offering_id=84261&track_id=84261-Default"
     },
-    "159": {
-        "id": 159,
+    "160": {
+        "id": 160,
         "name": "Advanced Inorganic Chemistry",
         "number": "Ch 153 b",
         "sections": [
@@ -8704,8 +8729,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80424&department_id=114&offering_id=86560&track_id=86560-Default"
     },
-    "160": {
-        "id": 160,
+    "161": {
+        "id": 161,
         "name": "Chemical Research",
         "number": "Ch 180",
         "sections": [
@@ -8729,8 +8754,8 @@
         "true_units": "",
         "link": ""
     },
-    "162": {
-        "id": 162,
+    "163": {
+        "id": 163,
         "name": "Advanced Ligand Field Theory",
         "number": "Ch 213 c",
         "sections": [
@@ -8754,8 +8779,8 @@
         "true_units": "5",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=34&term_id=516&division_id=80424&department_id=114&offering_id=76005&track_id=76005-Default"
     },
-    "163": {
-        "id": 163,
+    "164": {
+        "id": 164,
         "name": "Optical and Nonlinear Spectroscopy",
         "number": "Ch 226",
         "sections": [
@@ -8779,8 +8804,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80424&department_id=114&offering_id=87186&track_id=87186-Default"
     },
-    "165": {
-        "id": 165,
+    "166": {
+        "id": 166,
         "name": "Advanced Topics in Chemistry",
         "number": "Ch 250",
         "sections": [
@@ -8804,8 +8829,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=24&term_id=466&division_id=80424&department_id=114&offering_id=70361&track_id=70361-Default"
     },
-    "166": {
-        "id": 166,
+    "167": {
+        "id": 167,
         "name": "Rotations in Chemistry",
         "number": "Ch 279",
         "sections": [
@@ -9151,8 +9176,8 @@
         "true_units": "",
         "link": ""
     },
-    "167": {
-        "id": 167,
+    "168": {
+        "id": 168,
         "name": "Chemical Research",
         "number": "Ch 280",
         "sections": [
@@ -9659,8 +9684,8 @@
         "true_units": "",
         "link": ""
     },
-    "171": {
-        "id": 171,
+    "172": {
+        "id": 172,
         "name": "Advanced Work in Civil Engineering",
         "number": "CE 200",
         "sections": [
@@ -9684,8 +9709,8 @@
         "true_units": "",
         "link": ""
     },
-    "172": {
-        "id": 172,
+    "173": {
+        "id": 173,
         "name": "Research in Civil Engineering",
         "number": "CE 300",
         "sections": [
@@ -9744,8 +9769,8 @@
         "true_units": "",
         "link": ""
     },
-    "174": {
-        "id": 174,
+    "175": {
+        "id": 175,
         "name": "Selected Topics in Computational Vision",
         "number": "EE/CNS/CS 148",
         "sections": [
@@ -9769,8 +9794,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=129&offering_id=87172&track_id=87172-Default"
     },
-    "176": {
-        "id": 176,
+    "177": {
+        "id": 177,
         "name": "Learning Systems",
         "number": "CS/CNS/EE 156 b",
         "sections": [
@@ -9794,8 +9819,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80425&department_id=117&offering_id=86119&track_id=86119-Default"
     },
-    "178": {
-        "id": 178,
+    "179": {
+        "id": 179,
         "name": "Advanced Topics in Machine Learning",
         "number": "CS/CNS/EE/IDS 159",
         "sections": [
@@ -9819,8 +9844,8 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=117&offering_id=87300&track_id=87300-Default"
     },
-    "179": {
-        "id": 179,
+    "180": {
+        "id": 180,
         "name": "Research in Computation and Neural Systems",
         "number": "CNS 180",
         "sections": [
@@ -10089,8 +10114,8 @@
         "true_units": "",
         "link": ""
     },
-    "186": {
-        "id": 186,
+    "187": {
+        "id": 187,
         "name": "Research in Computation and Neural Systems",
         "number": "CNS 280",
         "sections": [
@@ -10338,8 +10363,8 @@
         "true_units": "",
         "link": ""
     },
-    "187": {
-        "id": 187,
+    "188": {
+        "id": 188,
         "name": "Introduction to Computer Programming",
         "number": "CS 1",
         "sections": [
@@ -10363,8 +10388,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80425&department_id=117&offering_id=85931&track_id=85931-Default"
     },
-    "188": {
-        "id": 188,
+    "189": {
+        "id": 189,
         "name": "Introduction to Software Design",
         "number": "CS 3",
         "sections": [
@@ -10388,8 +10413,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=117&offering_id=87151&track_id=87151-Default"
     },
-    "189": {
-        "id": 189,
+    "190": {
+        "id": 190,
         "name": "Introduction to Discrete Mathematics",
         "number": "Ma/CS 6 c",
         "sections": [
@@ -10413,8 +10438,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=142&offering_id=85808&track_id=85808-Default"
     },
-    "190": {
-        "id": 190,
+    "191": {
+        "id": 191,
         "name": "Introduction to Digital Logic and Embedded Systems",
         "number": "EE/CS 10 b",
         "sections": [
@@ -10438,20 +10463,27 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80425&department_id=129&offering_id=86664&track_id=86664-Default"
     },
-    "191": {
-        "id": 191,
+    "192": {
+        "id": 192,
         "name": "Student-Taught Topics in Computing",
         "number": "CS 12",
         "sections": [
             {
                 "grades": "PASS-FAIL",
-                "instructor": "Staff",
+                "instructor": "Vanier, M",
                 "locations": "",
                 "number": 1,
                 "times": "A\nA"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Blank, A",
+                "locations": "",
+                "number": 8,
+                "times": "A\nA"
             }
         ],
-        "comment": " TBA",
+        "comment": " Section 1: TensorFlow // Section 2: Introduction to Network Science",
         "units": [
             0,
             0,
@@ -10463,8 +10495,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80425&department_id=117&offering_id=87908&track_id=87908-Section 1"
     },
-    "192": {
-        "id": 192,
+    "193": {
+        "id": 193,
         "name": "Algorithms",
         "number": "CS 38",
         "sections": [
@@ -10488,8 +10520,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=117&offering_id=86963&track_id=86963-Default"
     },
-    "193": {
-        "id": 193,
+    "194": {
+        "id": 194,
         "name": "Computer Science Education in K-14 Settings",
         "number": "CS 42",
         "sections": [
@@ -10513,8 +10545,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80425&department_id=117&offering_id=86708&track_id=86708-Default"
     },
-    "194": {
-        "id": 194,
+    "195": {
+        "id": 195,
         "name": "Undergraduate Thesis",
         "number": "CS 80 c",
         "sections": [
@@ -10650,8 +10682,8 @@
         "true_units": "",
         "link": ""
     },
-    "195": {
-        "id": 195,
+    "196": {
+        "id": 196,
         "name": "Undergraduate Projects in Computer Science",
         "number": "CS 81 c",
         "sections": [
@@ -10969,8 +11001,8 @@
         "true_units": "",
         "link": ""
     },
-    "196": {
-        "id": 196,
+    "197": {
+        "id": 197,
         "name": "Undergraduate Reading in Computer Science",
         "number": "CS 90",
         "sections": [
@@ -11113,6 +11145,13 @@
                 "locations": "",
                 "number": 21,
                 "times": "A\nA"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Gkioxari, G",
+                "locations": "",
+                "number": 22,
+                "times": "A\nA"
             }
         ],
         "comment": "",
@@ -11127,8 +11166,8 @@
         "true_units": "",
         "link": ""
     },
-    "197": {
-        "id": 197,
+    "198": {
+        "id": 198,
         "name": "Special Topics in Computer Science: Mathematical Foundations of CS",
         "number": "CS 101",
         "sections": [
@@ -11152,8 +11191,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80425&department_id=117&offering_id=86235&track_id=86235-Section 1"
     },
-    "198": {
-        "id": 198,
+    "199": {
+        "id": 199,
         "name": "Seminar in Computer Science",
         "number": "CS 102 c",
         "sections": [
@@ -11177,8 +11216,8 @@
         "true_units": "",
         "link": ""
     },
-    "199": {
-        "id": 199,
+    "200": {
+        "id": 200,
         "name": "Reading in Computer Science",
         "number": "CS 103 c",
         "sections": [
@@ -11202,8 +11241,8 @@
         "true_units": "",
         "link": ""
     },
-    "200": {
-        "id": 200,
+    "201": {
+        "id": 201,
         "name": "Introduction to Discrete Mathematics",
         "number": "Ma/CS 106 c",
         "sections": [
@@ -11227,8 +11266,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=18&term_id=419&division_id=80428&department_id=142&offering_id=65528&track_id=65528-Default"
     },
-    "201": {
-        "id": 201,
+    "202": {
+        "id": 202,
         "name": "Functional Programming",
         "number": "CS 115",
         "sections": [
@@ -11252,8 +11291,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=117&offering_id=87094&track_id=87094-Default"
     },
-    "202": {
-        "id": 202,
+    "203": {
+        "id": 203,
         "name": "Computability Theory",
         "number": "Ma/CS 117 c",
         "sections": [
@@ -11277,8 +11316,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=41&term_id=526&division_id=80428&department_id=142&offering_id=83787&track_id=83787-Default"
     },
-    "203": {
-        "id": 203,
+    "204": {
+        "id": 204,
         "name": "Advanced Digital Systems Design",
         "number": "EE/CS 119 c",
         "sections": [
@@ -11302,8 +11341,8 @@
         "true_units": "5",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=41&term_id=526&division_id=80425&department_id=129&offering_id=82711&track_id=82711-Default"
     },
-    "204": {
-        "id": 204,
+    "205": {
+        "id": 205,
         "name": "Operating Systems",
         "number": "CS 124",
         "sections": [
@@ -11327,8 +11366,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=117&offering_id=87179&track_id=87179-Default"
     },
-    "205": {
-        "id": 205,
+    "206": {
+        "id": 206,
         "name": "Digital Circuit Design with FPGAs and VHDL",
         "number": "EE/CS/MedE 125",
         "sections": [
@@ -11340,7 +11379,7 @@
                 "times": "OM,T 16:00 - 16:55\nA"
             }
         ],
-        "comment": "",
+        "comment": " OM will be held on Tuesday, April 11th at 4pm",
         "units": [
             3,
             6,
@@ -11352,8 +11391,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=129&offering_id=87127&track_id=87127-Default"
     },
-    "206": {
-        "id": 206,
+    "207": {
+        "id": 207,
         "name": "Experimental Robotics",
         "number": "ME/CS/EE 129",
         "sections": [
@@ -11377,8 +11416,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=143&offering_id=87302&track_id=87302-Default"
     },
-    "207": {
-        "id": 207,
+    "208": {
+        "id": 208,
         "name": "Programming Languages",
         "number": "CS 131",
         "sections": [
@@ -11402,8 +11441,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=117&offering_id=87121&track_id=87121-Default"
     },
-    "208": {
-        "id": 208,
+    "209": {
+        "id": 209,
         "name": "Web Development",
         "number": "CS 132",
         "sections": [
@@ -11427,8 +11466,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=117&offering_id=88914&track_id=88914-Default"
     },
-    "209": {
-        "id": 209,
+    "210": {
+        "id": 210,
         "name": "Topics in Information Theory",
         "number": "EE/Ma/CS/IDS 136",
         "sections": [
@@ -11452,8 +11491,8 @@
         "true_units": "",
         "link": ""
     },
-    "210": {
-        "id": 210,
+    "211": {
+        "id": 211,
         "name": "Computer Algorithms",
         "number": "CS 138",
         "sections": [
@@ -11477,8 +11516,8 @@
         "true_units": "5",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=36&term_id=518&division_id=80425&department_id=117&offering_id=77133&track_id=77133-Default"
     },
-    "211": {
-        "id": 211,
+    "212": {
+        "id": 212,
         "name": "Projects in Networking",
         "number": "CS/EE 145",
         "sections": [
@@ -11502,8 +11541,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=117&offering_id=87007&track_id=87007-Default"
     },
-    "213": {
-        "id": 213,
+    "214": {
+        "id": 214,
         "name": "Algorithmic Economics",
         "number": "CS/Ec 149",
         "sections": [
@@ -11527,8 +11566,8 @@
         "true_units": "1",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=117&offering_id=88792&track_id=88792-Default"
     },
-    "214": {
-        "id": 214,
+    "215": {
+        "id": 215,
         "name": "Probability and Algorithms",
         "number": "CS/IDS 150 b",
         "sections": [
@@ -11552,8 +11591,8 @@
         "true_units": "5",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80425&department_id=117&offering_id=86204&track_id=86204-Default"
     },
-    "215": {
-        "id": 215,
+    "216": {
+        "id": 216,
         "name": "Complexity Theory",
         "number": "CS 151",
         "sections": [
@@ -11577,8 +11616,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80425&department_id=117&offering_id=84162&track_id=84162-Default"
     },
-    "216": {
-        "id": 216,
+    "217": {
+        "id": 217,
         "name": "Current Topics in Theoretical Computer Science",
         "number": "CS/IDS 153",
         "sections": [
@@ -11602,8 +11641,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=117&offering_id=88897&track_id=88897-Section 1"
     },
-    "220": {
-        "id": 220,
+    "221": {
+        "id": 221,
         "name": "Mobile Robots",
         "number": "ME/CS/EE 169",
         "sections": [
@@ -11627,20 +11666,20 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=143&offering_id=88848&track_id=88848-Default"
     },
-    "221": {
-        "id": 221,
+    "222": {
+        "id": 222,
         "name": "Advanced Topics in Digital Design with FPGAs and VHDL",
         "number": "EE/CS/MedE 175",
         "sections": [
             {
                 "grades": "LETTER",
                 "instructor": "Pedroni, V",
-                "locations": "B270 MRE",
+                "locations": "",
                 "number": 1,
-                "times": "OM,T 17:00 - 17:55"
+                "times": "A\nA"
             }
         ],
-        "comment": "",
+        "comment": " class cancelled",
         "units": [
             3,
             6,
@@ -11652,8 +11691,8 @@
         "true_units": "",
         "link": ""
     },
-    "222": {
-        "id": 222,
+    "223": {
+        "id": 223,
         "name": "GPU Programming",
         "number": "CS 179",
         "sections": [
@@ -11677,8 +11716,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=117&offering_id=87041&track_id=87041-Default"
     },
-    "223": {
-        "id": 223,
+    "224": {
+        "id": 224,
         "name": "Master's Thesis Research",
         "number": "CS 180",
         "sections": [
@@ -11793,8 +11832,8 @@
         "true_units": "",
         "link": ""
     },
-    "227": {
-        "id": 227,
+    "228": {
+        "id": 228,
         "name": "Quantum Computation",
         "number": "Ph/CS 219 c",
         "sections": [
@@ -11818,8 +11857,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=147&offering_id=86056&track_id=86056-Default"
     },
-    "228": {
-        "id": 228,
+    "229": {
+        "id": 229,
         "name": "Research in Computer Science",
         "number": "CS 280",
         "sections": [
@@ -11969,8 +12008,8 @@
         "true_units": "",
         "link": ""
     },
-    "229": {
-        "id": 229,
+    "230": {
+        "id": 230,
         "name": "Computing and Mathematical Sciences Colloquium",
         "number": "CMS 290 c",
         "sections": [
@@ -11994,8 +12033,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=22&term_id=506&division_id=80425&department_id=595&offering_id=68297&track_id=68297-Default"
     },
-    "230": {
-        "id": 230,
+    "231": {
+        "id": 231,
         "name": "Research in Computing and Mathematical Sciences",
         "number": "CMS 300",
         "sections": [
@@ -12187,8 +12226,8 @@
         "true_units": "5",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=22&term_id=506&division_id=80425&department_id=595&offering_id=69440&track_id=69440-Default"
     },
-    "231": {
-        "id": 231,
+    "232": {
+        "id": 232,
         "name": "Senior Thesis in Control & Dynamical Systems",
         "number": "CDS 90 c",
         "sections": [
@@ -12212,8 +12251,8 @@
         "true_units": "",
         "link": ""
     },
-    "232": {
-        "id": 232,
+    "233": {
+        "id": 233,
         "name": "Introduction to Feedback Control Systems",
         "number": "CDS 110",
         "sections": [
@@ -12237,8 +12276,8 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=127&offering_id=87273&track_id=87273-Default"
     },
-    "233": {
-        "id": 233,
+    "234": {
+        "id": 234,
         "name": "Independent Work in Control and Dynamical Systems",
         "number": "CDS 190",
         "sections": [
@@ -12262,8 +12301,8 @@
         "true_units": "",
         "link": ""
     },
-    "234": {
-        "id": 234,
+    "235": {
+        "id": 235,
         "name": "Robust Control Theory",
         "number": "CDS 231",
         "sections": [
@@ -12287,8 +12326,8 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=39&term_id=521&division_id=80425&department_id=127&offering_id=81467&track_id=81467-Default"
     },
-    "235": {
-        "id": 235,
+    "236": {
+        "id": 236,
         "name": "Nonlinear Control",
         "number": "CDS 233",
         "sections": [
@@ -12312,8 +12351,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=127&offering_id=87120&track_id=87120-Default"
     },
-    "236": {
-        "id": 236,
+    "237": {
+        "id": 237,
         "name": "Advanced Robotics: Planning",
         "number": "ME/CDS/EE 234 b",
         "sections": [
@@ -12337,8 +12376,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80425&department_id=143&offering_id=88374&track_id=88374-Default"
     },
-    "237": {
-        "id": 237,
+    "238": {
+        "id": 238,
         "name": "Adaptive Control",
         "number": "CDS 243",
         "sections": [
@@ -12362,8 +12401,8 @@
         "true_units": "5",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=32&term_id=514&division_id=80425&department_id=127&offering_id=75815&track_id=75815-Default"
     },
-    "238": {
-        "id": 238,
+    "239": {
+        "id": 239,
         "name": "Data-driven Control",
         "number": "CDS 245",
         "sections": [
@@ -12387,8 +12426,8 @@
         "true_units": "",
         "link": ""
     },
-    "239": {
-        "id": 239,
+    "240": {
+        "id": 240,
         "name": "Research in Control and Dynamical Systems",
         "number": "CDS 300 c",
         "sections": [
@@ -12510,8 +12549,8 @@
         "true_units": "",
         "link": ""
     },
-    "240": {
-        "id": 240,
+    "241": {
+        "id": 241,
         "name": "Undergraduate Research",
         "number": "Ec 97",
         "sections": [
@@ -12535,8 +12574,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=38&term_id=520&division_id=80427&department_id=128&offering_id=78973&track_id=78973-Default"
     },
-    "241": {
-        "id": 241,
+    "242": {
+        "id": 242,
         "name": "Senior Research and Thesis",
         "number": "Ec 98 c",
         "sections": [
@@ -12560,8 +12599,8 @@
         "true_units": "",
         "link": ""
     },
-    "242": {
-        "id": 242,
+    "243": {
+        "id": 243,
         "name": "Selected Topics in Economics",
         "number": "Ec 101",
         "sections": [
@@ -12585,8 +12624,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=34&term_id=516&division_id=80427&department_id=128&offering_id=77694&track_id=77694-Default"
     },
-    "243": {
-        "id": 243,
+    "244": {
+        "id": 244,
         "name": "Matching Markets",
         "number": "Ec 117",
         "sections": [
@@ -12610,8 +12649,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=128&offering_id=87111&track_id=87111-Default"
     },
-    "246": {
-        "id": 246,
+    "247": {
+        "id": 247,
         "name": "Game Theory",
         "number": "PS/Ec 172",
         "sections": [
@@ -12635,8 +12674,8 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=148&offering_id=87169&track_id=87169-Default"
     },
-    "247": {
-        "id": 247,
+    "248": {
+        "id": 248,
         "name": "The Science of Data, Signals, and Information",
         "number": "EE 1",
         "sections": [
@@ -12660,8 +12699,8 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80425&department_id=129&offering_id=83610&track_id=83610-Default"
     },
-    "248": {
-        "id": 248,
+    "249": {
+        "id": 249,
         "name": "Freshman Seminar: Introduction to Waves",
         "number": "FS/EE 5",
         "sections": [
@@ -12685,8 +12724,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=143798&department_id=475&offering_id=84727&track_id=84727-Default"
     },
-    "251": {
-        "id": 251,
+    "252": {
+        "id": 252,
         "name": "Electronics Systems and Laboratory",
         "number": "EE 45",
         "sections": [
@@ -12710,8 +12749,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=129&offering_id=87270&track_id=87270-Default"
     },
-    "252": {
-        "id": 252,
+    "253": {
+        "id": 253,
         "name": "Senior Thesis",
         "number": "EE 80 c",
         "sections": [
@@ -12826,8 +12865,8 @@
         "true_units": "",
         "link": ""
     },
-    "253": {
-        "id": 253,
+    "254": {
+        "id": 254,
         "name": "Analog Electronics Project Laboratory",
         "number": "EE 90",
         "sections": [
@@ -12851,8 +12890,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=129&offering_id=86888&track_id=86888-Default"
     },
-    "254": {
-        "id": 254,
+    "255": {
+        "id": 255,
         "name": "Advanced Work in Electrical Engineering",
         "number": "EE 99",
         "sections": [
@@ -13016,8 +13055,8 @@
         "true_units": "5",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=18&term_id=419&division_id=80425&department_id=129&offering_id=64508&track_id=64508-Section 1"
     },
-    "255": {
-        "id": 255,
+    "256": {
+        "id": 256,
         "name": "Electrical Engineering Seminar",
         "number": "EE 105 c",
         "sections": [
@@ -13041,8 +13080,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80425&department_id=129&offering_id=85972&track_id=85972-Default"
     },
-    "257": {
-        "id": 257,
+    "258": {
+        "id": 258,
         "name": "Analog Circuit Design",
         "number": "EE/MedE 114 b",
         "sections": [
@@ -13066,8 +13105,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80425&department_id=129&offering_id=84377&track_id=84377-Default"
     },
-    "265": {
-        "id": 265,
+    "266": {
+        "id": 266,
         "name": "Topics in Electrical Engineering: Digital Logic Testing and Simulation",
         "number": "EE 150",
         "sections": [
@@ -13091,8 +13130,8 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=129&offering_id=89832&track_id=89832-Default"
     },
-    "266": {
-        "id": 266,
+    "267": {
+        "id": 267,
         "name": "Electromagnetic Engineering",
         "number": "EE 151",
         "sections": [
@@ -13116,8 +13155,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=129&offering_id=87054&track_id=87054-Default"
     },
-    "268": {
-        "id": 268,
+    "269": {
+        "id": 269,
         "name": "Remote Sensing for Environmental and Geological Applications",
         "number": "Ge/EE/ESE 157 c",
         "sections": [
@@ -13141,8 +13180,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80425&department_id=129&offering_id=88687&track_id=88687-Default"
     },
-    "277": {
-        "id": 277,
+    "278": {
+        "id": 278,
         "name": "Advanced Work in Electrical Engineering",
         "number": "EE 291",
         "sections": [
@@ -13537,8 +13576,8 @@
         "true_units": "",
         "link": ""
     },
-    "278": {
-        "id": 278,
+    "279": {
+        "id": 279,
         "name": "Scientific and Technology Entrepreneurship",
         "number": "E/SEC 102",
         "sections": [
@@ -13562,8 +13601,8 @@
         "true_units": "5",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=275&offering_id=88969&track_id=88969-Default"
     },
-    "279": {
-        "id": 279,
+    "280": {
+        "id": 280,
         "name": "Management of Technology",
         "number": "E/SEC 103",
         "sections": [
@@ -13575,7 +13614,7 @@
                 "times": "MW 13:30 - 14:55\nA"
             }
         ],
-        "comment": " not open to first-year undergraduate students",
+        "comment": " Open by application only, use this link to request enrollment https://forms.gle/Qd2qR9GRYBSohY826 // (requires being logged into Google under Caltech account)",
         "units": [
             3,
             0,
@@ -13587,8 +13626,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=40&term_id=522&division_id=80425&department_id=275&offering_id=82468&track_id=82468-Default"
     },
-    "280": {
-        "id": 280,
+    "281": {
+        "id": 281,
         "name": "Principles of University Teaching and Learning in STEM",
         "number": "E 110",
         "sections": [
@@ -13612,8 +13651,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=275&offering_id=87261&track_id=87261-Default"
     },
-    "281": {
-        "id": 281,
+    "282": {
+        "id": 282,
         "name": "Monsters and Marvels",
         "number": "Hum/En 21",
         "sections": [
@@ -13637,8 +13676,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=136&offering_id=86181&track_id=86181-Default"
     },
-    "282": {
-        "id": 282,
+    "283": {
+        "id": 283,
         "name": "Inequality",
         "number": "Hum/En 22",
         "sections": [
@@ -13647,17 +13686,17 @@
                 "instructor": "Haugen, K",
                 "locations": "",
                 "number": 1,
-                "times": "TR 09:00 - 10:25\nA"
+                "times": "A\nA"
             },
             {
                 "grades": "",
                 "instructor": "Haugen, K",
                 "locations": "",
                 "number": 2,
-                "times": "TR 14:30 - 15:55\nA"
+                "times": "A\nA"
             }
         ],
-        "comment": " Attendance at first class meeting is required. // Maximum enrollment: 15 students per section",
+        "comment": " class cancelled",
         "units": [
             3,
             0,
@@ -13669,8 +13708,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80427&department_id=136&offering_id=88416&track_id=88416-Section 2"
     },
-    "283": {
-        "id": 283,
+    "284": {
+        "id": 284,
         "name": "Human Animal",
         "number": "Hum/En 25",
         "sections": [
@@ -13694,8 +13733,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=39&term_id=521&division_id=80427&department_id=136&offering_id=81389&track_id=81389-Default"
     },
-    "284": {
-        "id": 284,
+    "285": {
+        "id": 285,
         "name": "Introduction to Black Feminist Poetics",
         "number": "Hum/En 32",
         "sections": [
@@ -13719,8 +13758,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=12&term_id=385&division_id=80427&department_id=395&offering_id=61036&track_id=61036-Default"
     },
-    "285": {
-        "id": 285,
+    "286": {
+        "id": 286,
         "name": "Communicating Science to Non-Experts",
         "number": "En/Wr 84",
         "sections": [
@@ -13744,8 +13783,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=131&offering_id=87052&track_id=87052-Default"
     },
-    "286": {
-        "id": 286,
+    "287": {
+        "id": 287,
         "name": "Poetry Writing",
         "number": "En 85",
         "sections": [
@@ -13769,8 +13808,8 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=131&offering_id=87141&track_id=87141-Default"
     },
-    "287": {
-        "id": 287,
+    "288": {
+        "id": 288,
         "name": "Journalism and Storytelling",
         "number": "En 89",
         "sections": [
@@ -13794,8 +13833,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=131&offering_id=87053&track_id=87053-Default"
     },
-    "288": {
-        "id": 288,
+    "289": {
+        "id": 289,
         "name": "Reading in English",
         "number": "En 98",
         "sections": [
@@ -13819,8 +13858,8 @@
         "true_units": "",
         "link": ""
     },
-    "289": {
-        "id": 289,
+    "290": {
+        "id": 290,
         "name": "Senior Tutorial for English Majors",
         "number": "En 99 b",
         "sections": [
@@ -13844,8 +13883,8 @@
         "true_units": "",
         "link": ""
     },
-    "290": {
-        "id": 290,
+    "291": {
+        "id": 291,
         "name": "Artificial Life: Literary Automata",
         "number": "En 100",
         "sections": [
@@ -13869,8 +13908,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=131&offering_id=87450&track_id=87450-Default"
     },
-    "291": {
-        "id": 291,
+    "292": {
+        "id": 292,
         "name": "Nineteenth-Century American Poetry",
         "number": "En 112",
         "sections": [
@@ -13894,8 +13933,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=131&offering_id=88810&track_id=88810-Default"
     },
-    "292": {
-        "id": 292,
+    "293": {
+        "id": 293,
         "name": "Classical Hollywood Cinema",
         "number": "En/VC 160 a",
         "sections": [
@@ -13919,8 +13958,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=41&term_id=526&division_id=80427&department_id=131&offering_id=82674&track_id=82674-Default"
     },
-    "293": {
-        "id": 293,
+    "294": {
+        "id": 294,
         "name": "Octavia E. Butler and the Literature of Black Futures",
         "number": "En 163",
         "sections": [
@@ -13944,8 +13983,8 @@
         "true_units": "",
         "link": ""
     },
-    "294": {
-        "id": 294,
+    "295": {
+        "id": 295,
         "name": "Fundamentals of Scientific Writing",
         "number": "ESL/Wr 107",
         "sections": [
@@ -13969,8 +14008,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=132&offering_id=87152&track_id=87152-Default"
     },
-    "295": {
-        "id": 295,
+    "296": {
+        "id": 296,
         "name": "Earth's Climate",
         "number": "ESE 1",
         "sections": [
@@ -13994,8 +14033,8 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80426&department_id=495&offering_id=86996&track_id=86996-Default"
     },
-    "296": {
-        "id": 296,
+    "297": {
+        "id": 297,
         "name": "Undergraduate Laboratory Research in Environmental Science and",
         "number": "ESE 90",
         "sections": [
@@ -14082,8 +14121,8 @@
         "true_units": "",
         "link": ""
     },
-    "297": {
-        "id": 297,
+    "298": {
+        "id": 298,
         "name": "Special Problems in Environmental Science and Engineering",
         "number": "ESE 100",
         "sections": [
@@ -14205,8 +14244,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=1&term_id=342&division_id=80426&department_id=495&offering_id=52590&track_id=52590-Default"
     },
-    "298": {
-        "id": 298,
+    "299": {
+        "id": 299,
         "name": "Research in Environmental Science and Engineering",
         "number": "ESE 106",
         "sections": [
@@ -14363,8 +14402,8 @@
         "true_units": "",
         "link": ""
     },
-    "299": {
-        "id": 299,
+    "300": {
+        "id": 300,
         "name": "Seminar in Environmental Science and Engineering",
         "number": "ESE 110 c",
         "sections": [
@@ -14388,8 +14427,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=38&term_id=520&division_id=80426&department_id=495&offering_id=78924&track_id=78924-Default"
     },
-    "300": {
-        "id": 300,
+    "301": {
+        "id": 301,
         "name": "Introduction to Atmosphere and Ocean Dynamics",
         "number": "ESE 130",
         "sections": [
@@ -14413,8 +14452,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80426&department_id=495&offering_id=86722&track_id=86722-Default"
     },
-    "301": {
-        "id": 301,
+    "302": {
+        "id": 302,
         "name": "Climate Models",
         "number": "ESE 136",
         "sections": [
@@ -14438,8 +14477,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=36&term_id=518&division_id=80426&department_id=495&offering_id=78355&track_id=78355-Default"
     },
-    "302": {
-        "id": 302,
+    "303": {
+        "id": 303,
         "name": "Organic Geochemistry",
         "number": "Ge/ESE 143",
         "sections": [
@@ -14463,8 +14502,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80426&department_id=182&offering_id=84259&track_id=84259-Default"
     },
-    "303": {
-        "id": 303,
+    "304": {
+        "id": 304,
         "name": "Planetary Atmospheres",
         "number": "Ge/ESE 150",
         "sections": [
@@ -14488,8 +14527,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80426&department_id=182&offering_id=87237&track_id=87237-Default"
     },
-    "305": {
-        "id": 305,
+    "306": {
+        "id": 306,
         "name": "Thesis Research",
         "number": "ESE 300",
         "sections": [
@@ -14618,8 +14657,8 @@
         "true_units": "",
         "link": ""
     },
-    "308": {
-        "id": 308,
+    "309": {
+        "id": 309,
         "name": "First-Year Seminar: Beyond Physics",
         "number": "FS/Ph 11 c",
         "sections": [
@@ -14643,8 +14682,8 @@
         "true_units": "1",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=143798&department_id=475&offering_id=86567&track_id=86567-Default"
     },
-    "309": {
-        "id": 309,
+    "310": {
+        "id": 310,
         "name": "Earth and Environment",
         "number": "Ge 1",
         "sections": [
@@ -14668,8 +14707,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80426&department_id=182&offering_id=86890&track_id=86890-Default"
     },
-    "311": {
-        "id": 311,
+    "312": {
+        "id": 312,
         "name": "Special Problems for Undergraduates",
         "number": "Ge 40",
         "sections": [
@@ -14805,8 +14844,8 @@
         "true_units": "",
         "link": ""
     },
-    "312": {
-        "id": 312,
+    "313": {
+        "id": 313,
         "name": "Undergraduate Research and Bachelor's Thesis",
         "number": "Ge 41 c",
         "sections": [
@@ -14956,8 +14995,8 @@
         "true_units": "",
         "link": ""
     },
-    "313": {
-        "id": 313,
+    "314": {
+        "id": 314,
         "name": "Introduction to the Solar System",
         "number": "Ge 103",
         "sections": [
@@ -14981,8 +15020,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80426&department_id=182&offering_id=86985&track_id=86985-Default"
     },
-    "315": {
-        "id": 315,
+    "316": {
+        "id": 316,
         "name": "Oral Presentation",
         "number": "Ge 109",
         "sections": [
@@ -15027,8 +15066,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80426&department_id=182&offering_id=86698&track_id=86698-Default"
     },
-    "316": {
-        "id": 316,
+    "317": {
+        "id": 317,
         "name": "Applied Geophysics Seminar and Field Course",
         "number": "Ge 111 b",
         "sections": [
@@ -15052,8 +15091,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80426&department_id=182&offering_id=86549&track_id=86549-Default"
     },
-    "317": {
-        "id": 317,
+    "318": {
+        "id": 318,
         "name": "Introduction to Field Geology",
         "number": "Ge 120 a",
         "sections": [
@@ -15077,8 +15116,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=32&term_id=514&division_id=80426&department_id=182&offering_id=74394&track_id=74394-Default"
     },
-    "318": {
-        "id": 318,
+    "319": {
+        "id": 319,
         "name": "Advanced Field Geology",
         "number": "Ge 121 c",
         "sections": [
@@ -15102,8 +15141,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80426&department_id=182&offering_id=85979&track_id=85979-Default"
     },
-    "320": {
-        "id": 320,
+    "321": {
+        "id": 321,
         "name": "Planetary Structure and Evolution",
         "number": "Ge 131",
         "sections": [
@@ -15127,8 +15166,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80426&department_id=182&offering_id=87010&track_id=87010-Default"
     },
-    "321": {
-        "id": 321,
+    "322": {
+        "id": 322,
         "name": "Regional Field Geology of the Southwestern United States",
         "number": "Ge 136 c",
         "sections": [
@@ -15152,8 +15191,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80426&department_id=182&offering_id=85955&track_id=85955-Default"
     },
-    "325": {
-        "id": 325,
+    "326": {
+        "id": 326,
         "name": "Geodynamics",
         "number": "Ge 163",
         "sections": [
@@ -15177,8 +15216,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80426&department_id=182&offering_id=86981&track_id=86981-Default"
     },
-    "327": {
-        "id": 327,
+    "328": {
+        "id": 328,
         "name": "Spectroscopy of Minerals",
         "number": "Ge 214",
         "sections": [
@@ -15202,8 +15241,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80426&department_id=182&offering_id=84260&track_id=84260-Default"
     },
-    "328": {
-        "id": 328,
+    "329": {
+        "id": 329,
         "name": "Non-traditional Isotopes Seminar",
         "number": "Ge 219",
         "sections": [
@@ -15227,8 +15266,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80426&department_id=182&offering_id=83600&track_id=83600-Default"
     },
-    "329": {
-        "id": 329,
+    "330": {
+        "id": 330,
         "name": "Machine Learning in Geophysics",
         "number": "Ge 264",
         "sections": [
@@ -15252,8 +15291,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80426&department_id=182&offering_id=87174&track_id=87174-Default"
     },
-    "331": {
-        "id": 331,
+    "332": {
+        "id": 332,
         "name": "Continental Tectonics",
         "number": "Ge 270",
         "sections": [
@@ -15277,8 +15316,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=18&term_id=419&division_id=80426&department_id=182&offering_id=65497&track_id=65497-Default"
     },
-    "332": {
-        "id": 332,
+    "333": {
+        "id": 333,
         "name": "Advanced Study",
         "number": "Ge 297",
         "sections": [
@@ -15603,8 +15642,8 @@
         "true_units": "",
         "link": ""
     },
-    "333": {
-        "id": 333,
+    "334": {
+        "id": 334,
         "name": "Mentoring and Outreach",
         "number": "Ge/ESE 298",
         "sections": [
@@ -15663,8 +15702,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80426&department_id=182&offering_id=87867&track_id=87867-Section 3"
     },
-    "334": {
-        "id": 334,
+    "335": {
+        "id": 335,
         "name": "Thesis Research",
         "number": "Ge 299",
         "sections": [
@@ -15975,8 +16014,8 @@
         "true_units": "",
         "link": ""
     },
-    "335": {
-        "id": 335,
+    "336": {
+        "id": 336,
         "name": "The United States in the Twentieth Century",
         "number": "Hum/H 3",
         "sections": [
@@ -16000,8 +16039,8 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=38&term_id=520&division_id=80427&department_id=136&offering_id=80304&track_id=80304-Default"
     },
-    "336": {
-        "id": 336,
+    "337": {
+        "id": 337,
         "name": "Civilization, Science, and Archaeology: Before Greece: The Origins of",
         "number": "Hum/H 8",
         "sections": [
@@ -16025,8 +16064,8 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80427&department_id=136&offering_id=84207&track_id=84207-Default"
     },
-    "337": {
-        "id": 337,
+    "338": {
+        "id": 338,
         "name": "Waste in the World",
         "number": "Hum/H/HPS 15",
         "sections": [
@@ -16050,8 +16089,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80427&department_id=136&offering_id=88421&track_id=88421-Default"
     },
-    "338": {
-        "id": 338,
+    "339": {
+        "id": 339,
         "name": "Materials, Methods, and the Molecularization of Life",
         "number": "Hum/H/HPS 17",
         "sections": [
@@ -16075,8 +16114,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=41&term_id=526&division_id=80427&department_id=136&offering_id=82683&track_id=82683-Default"
     },
-    "339": {
-        "id": 339,
+    "340": {
+        "id": 340,
         "name": "Introduction to the History of Science",
         "number": "Hum/H/HPS 18",
         "sections": [
@@ -16100,8 +16139,8 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80427&department_id=136&offering_id=86687&track_id=86687-Default"
     },
-    "340": {
-        "id": 340,
+    "341": {
+        "id": 341,
         "name": "Reading in History",
         "number": "H 98",
         "sections": [
@@ -16125,8 +16164,8 @@
         "true_units": "",
         "link": ""
     },
-    "341": {
-        "id": 341,
+    "342": {
+        "id": 342,
         "name": "Research Tutorial",
         "number": "H 99 c",
         "sections": [
@@ -16150,8 +16189,8 @@
         "true_units": "",
         "link": ""
     },
-    "342": {
-        "id": 342,
+    "343": {
+        "id": 343,
         "name": "The High Middle Ages",
         "number": "H 108",
         "sections": [
@@ -16175,8 +16214,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80427&department_id=135&offering_id=84170&track_id=84170-Default"
     },
-    "343": {
-        "id": 343,
+    "344": {
+        "id": 344,
         "name": "Models and Theory in Ancient Astronomy: From the Babylonians to the",
         "number": "HPS/H 157",
         "sections": [
@@ -16200,8 +16239,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=150&offering_id=87452&track_id=87452-Default"
     },
-    "344": {
-        "id": 344,
+    "345": {
+        "id": 345,
         "name": "Social Studies of Science",
         "number": "HPS/H 162",
         "sections": [
@@ -16225,8 +16264,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=150&offering_id=87143&track_id=87143-Default"
     },
-    "345": {
-        "id": 345,
+    "346": {
+        "id": 346,
         "name": "Selected Topics in the History of Science and Technology: Air, Wind, Fire,",
         "number": "HPS/H 169",
         "sections": [
@@ -16250,8 +16289,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=31&term_id=513&division_id=80427&department_id=150&offering_id=75320&track_id=75320-Default"
     },
-    "349": {
-        "id": 349,
+    "350": {
+        "id": 350,
         "name": "Reading in History and Philosophy of Science",
         "number": "HPS 98",
         "sections": [
@@ -16275,8 +16314,8 @@
         "true_units": "",
         "link": ""
     },
-    "362": {
-        "id": 362,
+    "363": {
+        "id": 363,
         "name": "Knowledge and Reality",
         "number": "Hum/Pl 41",
         "sections": [
@@ -16307,8 +16346,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=136&offering_id=86132&track_id=86132-Section 1"
     },
-    "363": {
-        "id": 363,
+    "364": {
+        "id": 364,
         "name": "Introduction to Film",
         "number": "Hum/VC 50",
         "sections": [
@@ -16332,8 +16371,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=136&offering_id=86186&track_id=86186-Default"
     },
-    "364": {
-        "id": 364,
+    "365": {
+        "id": 365,
         "name": "The Legacy of the Mexican School",
         "number": "Hum/VC 52",
         "sections": [
@@ -16357,8 +16396,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=136&offering_id=87457&track_id=87457-Default"
     },
-    "365": {
-        "id": 365,
+    "366": {
+        "id": 366,
         "name": "Hispanic Cultures in Film and Literature",
         "number": "Hum 115 c",
         "sections": [
@@ -16382,8 +16421,8 @@
         "true_units": "",
         "link": ""
     },
-    "366": {
-        "id": 366,
+    "367": {
+        "id": 367,
         "name": "Japanese Literature in Translation from Medieval to Pre-modern",
         "number": "L/Hum 151",
         "sections": [
@@ -16407,8 +16446,8 @@
         "true_units": "",
         "link": ""
     },
-    "367": {
-        "id": 367,
+    "368": {
+        "id": 368,
         "name": "The Modern French Novel in Translation",
         "number": "L/Hum 154",
         "sections": [
@@ -16432,8 +16471,8 @@
         "true_units": "",
         "link": ""
     },
-    "368": {
-        "id": 368,
+    "369": {
+        "id": 369,
         "name": "Topics in Masterpieces of Chinese Writing",
         "number": "Hum 174",
         "sections": [
@@ -16457,8 +16496,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=136&offering_id=87080&track_id=87080-Default"
     },
-    "377": {
-        "id": 377,
+    "378": {
+        "id": 378,
         "name": "Undergraduate Reading in the Information and Data Sciences",
         "number": "IDS 197",
         "sections": [
@@ -16482,8 +16521,8 @@
         "true_units": "",
         "link": ""
     },
-    "378": {
-        "id": 378,
+    "379": {
+        "id": 379,
         "name": "Undergraduate Projects in Information and Data Sciences",
         "number": "IDS 198",
         "sections": [
@@ -16528,8 +16567,8 @@
         "true_units": "",
         "link": ""
     },
-    "379": {
-        "id": 379,
+    "380": {
+        "id": 380,
         "name": "Undergraduate Thesis in the Information and Data Sciences",
         "number": "IDS 199",
         "sections": [
@@ -16553,8 +16592,8 @@
         "true_units": "",
         "link": ""
     },
-    "380": {
-        "id": 380,
+    "381": {
+        "id": 381,
         "name": "Elementary French",
         "number": "L 102 c",
         "sections": [
@@ -16566,7 +16605,7 @@
                 "times": "OM,M 13:00 -\nA 13:55"
             }
         ],
-        "comment": "",
+        "comment": " http://schedules.caltech.edu/syllabi/L102C_SP2223.pdf",
         "units": [
             3,
             0,
@@ -16578,8 +16617,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=139&offering_id=85864&track_id=85864-Default"
     },
-    "381": {
-        "id": 381,
+    "382": {
+        "id": 382,
         "name": "Intermediate French",
         "number": "L 103 c",
         "sections": [
@@ -16591,7 +16630,7 @@
                 "times": "OM,M 14:00 -\nA 14:55"
             }
         ],
-        "comment": "",
+        "comment": " http://schedules.caltech.edu/syllabi/L103C_SP2223.pdf",
         "units": [
             3,
             0,
@@ -16603,8 +16642,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=139&offering_id=85865&track_id=85865-Default"
     },
-    "382": {
-        "id": 382,
+    "383": {
+        "id": 383,
         "name": "Elementary Japanese",
         "number": "L 106 c",
         "sections": [
@@ -16635,8 +16674,8 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=139&offering_id=85866&track_id=85866-Section 1"
     },
-    "383": {
-        "id": 383,
+    "384": {
+        "id": 384,
         "name": "Intermediate Japanese",
         "number": "L 107 c",
         "sections": [
@@ -16660,8 +16699,8 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=139&offering_id=85867&track_id=85867-Default"
     },
-    "384": {
-        "id": 384,
+    "385": {
+        "id": 385,
         "name": "Elementary Spanish",
         "number": "L 110 c",
         "sections": [
@@ -16692,8 +16731,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=139&offering_id=85869&track_id=85869-Section 1"
     },
-    "385": {
-        "id": 385,
+    "386": {
+        "id": 386,
         "name": "Intermediate Spanish",
         "number": "L 112 c",
         "sections": [
@@ -16717,8 +16756,8 @@
         "true_units": "5",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=139&offering_id=85870&track_id=85870-Default"
     },
-    "386": {
-        "id": 386,
+    "387": {
+        "id": 387,
         "name": "Hispanic Cultures in Film and Literature",
         "number": "L 115 c",
         "sections": [
@@ -16742,8 +16781,8 @@
         "true_units": "",
         "link": ""
     },
-    "387": {
-        "id": 387,
+    "388": {
+        "id": 388,
         "name": "Elementary German",
         "number": "L 130 c",
         "sections": [
@@ -16767,8 +16806,8 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=139&offering_id=85871&track_id=85871-Default"
     },
-    "388": {
-        "id": 388,
+    "389": {
+        "id": 389,
         "name": "Intermediate German",
         "number": "L 132 c",
         "sections": [
@@ -16792,8 +16831,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=139&offering_id=85872&track_id=85872-Default"
     },
-    "391": {
-        "id": 391,
+    "392": {
+        "id": 392,
         "name": "Latin Literature",
         "number": "L 167",
         "sections": [
@@ -16817,8 +16856,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=139&offering_id=87219&track_id=87219-Default"
     },
-    "392": {
-        "id": 392,
+    "393": {
+        "id": 393,
         "name": "Introduction to Chinese",
         "number": "L 170 c",
         "sections": [
@@ -16842,8 +16881,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=139&offering_id=85986&track_id=85986-Default"
     },
-    "393": {
-        "id": 393,
+    "394": {
+        "id": 394,
         "name": "Intermediate Chinese",
         "number": "L 172 c",
         "sections": [
@@ -16867,8 +16906,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=139&offering_id=85987&track_id=85987-Default"
     },
-    "394": {
-        "id": 394,
+    "395": {
+        "id": 395,
         "name": "Topics in Masterpieces of Chinese Writing",
         "number": "L 174",
         "sections": [
@@ -16892,8 +16931,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=139&offering_id=86971&track_id=86971-Default"
     },
-    "395": {
-        "id": 395,
+    "396": {
+        "id": 396,
         "name": "French Conversation",
         "number": "L 175",
         "sections": [
@@ -16905,7 +16944,7 @@
                 "times": "OM,M 12:00 -\nA 12:55"
             }
         ],
-        "comment": "",
+        "comment": " http://schedules.caltech.edu/syllabi/L175_SP2223.pdf",
         "units": [
             3,
             0,
@@ -16917,8 +16956,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=28&term_id=486&division_id=80427&department_id=139&offering_id=71703&track_id=71703-Default"
     },
-    "396": {
-        "id": 396,
+    "397": {
+        "id": 397,
         "name": "Chinese Conversation",
         "number": "L 176",
         "sections": [
@@ -16942,8 +16981,8 @@
         "true_units": "",
         "link": ""
     },
-    "397": {
-        "id": 397,
+    "398": {
+        "id": 398,
         "name": "Senior Thesis",
         "number": "MS 78 c",
         "sections": [
@@ -17051,8 +17090,8 @@
         "true_units": "",
         "link": ""
     },
-    "398": {
-        "id": 398,
+    "399": {
+        "id": 399,
         "name": "Materials Science Laboratory",
         "number": "MS 90",
         "sections": [
@@ -17076,8 +17115,8 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=141&offering_id=87016&track_id=87016-Default"
     },
-    "399": {
-        "id": 399,
+    "400": {
+        "id": 400,
         "name": "Advanced Work in Materials Science",
         "number": "MS 100",
         "sections": [
@@ -17171,8 +17210,8 @@
         "true_units": "",
         "link": ""
     },
-    "401": {
-        "id": 401,
+    "402": {
+        "id": 402,
         "name": "Materials Research Lectures",
         "number": "MS 110 c",
         "sections": [
@@ -17196,8 +17235,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80425&department_id=141&offering_id=85968&track_id=85968-Default"
     },
-    "402": {
-        "id": 402,
+    "403": {
+        "id": 403,
         "name": "Kinetic Processes in Materials",
         "number": "MS 133",
         "sections": [
@@ -17221,8 +17260,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=141&offering_id=86920&track_id=86920-Default"
     },
-    "404": {
-        "id": 404,
+    "405": {
+        "id": 405,
         "name": "Imperfections in Crystals",
         "number": "MS/ME 161",
         "sections": [
@@ -17246,8 +17285,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80425&department_id=141&offering_id=85488&track_id=85488-Default"
     },
-    "405": {
-        "id": 405,
+    "406": {
+        "id": 406,
         "name": "Advanced Work in Materials Science",
         "number": "MS 200",
         "sections": [
@@ -17411,6 +17450,13 @@
                 "locations": "",
                 "number": 23,
                 "times": "A\nA"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Manthiram, K",
+                "locations": "",
+                "number": 24,
+                "times": "A\nA"
             }
         ],
         "comment": "",
@@ -17425,8 +17471,8 @@
         "true_units": "",
         "link": ""
     },
-    "407": {
-        "id": 407,
+    "408": {
+        "id": 408,
         "name": "Thesis Research",
         "number": "MS 300",
         "sections": [
@@ -17555,6 +17601,13 @@
                 "locations": "",
                 "number": 19,
                 "times": "A\nA"
+            },
+            {
+                "grades": "PASS-FAIL",
+                "instructor": "Manthiram, K",
+                "locations": "",
+                "number": 20,
+                "times": "A\nA"
             }
         ],
         "comment": "",
@@ -17569,8 +17622,8 @@
         "true_units": "",
         "link": ""
     },
-    "408": {
-        "id": 408,
+    "409": {
+        "id": 409,
         "name": "Calculus of One and Several Variables and Linear Algebra",
         "number": "Ma 1 c",
         "sections": [
@@ -17633,7 +17686,7 @@
             {
                 "grades": "LETTER",
                 "instructor": "Yu, T",
-                "locations": "310 LINDE\n310 LINDE",
+                "locations": "310 LINDE\n187 LINDE",
                 "number": 9,
                 "times": "MWF 10:00 - 10:55\nR 15:00 - 15:55"
             }
@@ -17650,8 +17703,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=142&offering_id=85873&track_id=85873-Default"
     },
-    "409": {
-        "id": 409,
+    "410": {
+        "id": 410,
         "name": "Introduction to Mathematical Chaos",
         "number": "Ma 4",
         "sections": [
@@ -17675,8 +17728,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=142&offering_id=86903&track_id=86903-Default"
     },
-    "410": {
-        "id": 410,
+    "411": {
+        "id": 411,
         "name": "Introduction to Abstract Algebra",
         "number": "Ma 5 c",
         "sections": [
@@ -17700,8 +17753,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=142&offering_id=85874&track_id=85874-Default"
     },
-    "412": {
-        "id": 412,
+    "413": {
+        "id": 413,
         "name": "Number Theory for Beginners",
         "number": "Ma 7",
         "sections": [
@@ -17725,8 +17778,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80428&department_id=142&offering_id=83471&track_id=83471-Default"
     },
-    "413": {
-        "id": 413,
+    "414": {
+        "id": 414,
         "name": "Mathematical Writing",
         "number": "Ma 11",
         "sections": [
@@ -17750,8 +17803,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=142&offering_id=86976&track_id=86976-Default"
     },
-    "414": {
-        "id": 414,
+    "415": {
+        "id": 415,
         "name": "Senior Thesis",
         "number": "Ma 92 c",
         "sections": [
@@ -17838,8 +17891,8 @@
         "true_units": "",
         "link": ""
     },
-    "415": {
-        "id": 415,
+    "416": {
+        "id": 416,
         "name": "Research in Mathematics",
         "number": "Ma 97",
         "sections": [
@@ -17905,8 +17958,8 @@
         "true_units": "",
         "link": ""
     },
-    "416": {
-        "id": 416,
+    "417": {
+        "id": 417,
         "name": "Independent Reading",
         "number": "Ma 98",
         "sections": [
@@ -17965,8 +18018,8 @@
         "true_units": "",
         "link": ""
     },
-    "417": {
-        "id": 417,
+    "418": {
+        "id": 418,
         "name": "Introduction to Mathematical Chaos",
         "number": "Ma 104",
         "sections": [
@@ -17990,8 +18043,8 @@
         "true_units": "",
         "link": ""
     },
-    "418": {
-        "id": 418,
+    "419": {
+        "id": 419,
         "name": "Introduction to Abstract Algebra",
         "number": "Ma 105 c",
         "sections": [
@@ -18015,8 +18068,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=41&term_id=526&division_id=80428&department_id=142&offering_id=82145&track_id=82145-Default"
     },
-    "420": {
-        "id": 420,
+    "421": {
+        "id": 421,
         "name": "Number Theory for Beginners",
         "number": "Ma 107",
         "sections": [
@@ -18040,8 +18093,8 @@
         "true_units": "",
         "link": ""
     },
-    "421": {
-        "id": 421,
+    "422": {
+        "id": 422,
         "name": "Classical Analysis",
         "number": "Ma 108 c",
         "sections": [
@@ -18065,8 +18118,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=142&offering_id=85878&track_id=85878-Default"
     },
-    "422": {
-        "id": 422,
+    "423": {
+        "id": 423,
         "name": "Introduction to Geometry and Topology",
         "number": "Ma 109 c",
         "sections": [
@@ -18090,8 +18143,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=142&offering_id=85879&track_id=85879-Default"
     },
-    "423": {
-        "id": 423,
+    "424": {
+        "id": 424,
         "name": "Analysis, I",
         "number": "Ma 110 c",
         "sections": [
@@ -18115,8 +18168,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=142&offering_id=85880&track_id=85880-Default"
     },
-    "424": {
-        "id": 424,
+    "425": {
+        "id": 425,
         "name": "Topics in Analysis",
         "number": "Ma 111 c",
         "sections": [
@@ -18140,8 +18193,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=41&term_id=526&division_id=80428&department_id=142&offering_id=82337&track_id=82337-Default"
     },
-    "426": {
-        "id": 426,
+    "427": {
+        "id": 427,
         "name": "Abstract Algebra",
         "number": "Ma 120 c",
         "sections": [
@@ -18165,17 +18218,17 @@
         "true_units": "5",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=142&offering_id=85881&track_id=85881-Default"
     },
-    "427": {
-        "id": 427,
+    "428": {
+        "id": 428,
         "name": "Algebraic Curves",
         "number": "Ma 125",
         "sections": [
             {
                 "grades": "",
                 "instructor": "Buelles, T",
-                "locations": "",
+                "locations": "183 LINDE",
                 "number": 1,
-                "times": "A\nA"
+                "times": "TR 10:30 - 11:55"
             }
         ],
         "comment": "",
@@ -18190,8 +18243,8 @@
         "true_units": "",
         "link": ""
     },
-    "428": {
-        "id": 428,
+    "429": {
+        "id": 429,
         "name": "Homological Algebra",
         "number": "Ma 128",
         "sections": [
@@ -18215,8 +18268,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80428&department_id=142&offering_id=83150&track_id=83150-Default"
     },
-    "429": {
-        "id": 429,
+    "430": {
+        "id": 430,
         "name": "Algebraic Geometry",
         "number": "Ma 130 c",
         "sections": [
@@ -18240,8 +18293,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=142&offering_id=85953&track_id=85953-Default"
     },
-    "432": {
-        "id": 432,
+    "433": {
+        "id": 433,
         "name": "Algebraic and Differential Topology",
         "number": "Ma 151 c",
         "sections": [
@@ -18265,8 +18318,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=142&offering_id=85882&track_id=85882-Default"
     },
-    "433": {
-        "id": 433,
+    "434": {
+        "id": 434,
         "name": "Riemannian Geometry",
         "number": "Ma 157 b",
         "sections": [
@@ -18290,8 +18343,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80428&department_id=142&offering_id=86802&track_id=86802-Default"
     },
-    "434": {
-        "id": 434,
+    "435": {
+        "id": 435,
         "name": "Topics in Number Theory",
         "number": "Ma 162 a",
         "sections": [
@@ -18315,8 +18368,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=38&term_id=520&division_id=80428&department_id=142&offering_id=81087&track_id=81087-Default"
     },
-    "435": {
-        "id": 435,
+    "436": {
+        "id": 436,
         "name": "Selected Topics in Mathematics",
         "number": "Ma 191 c",
         "sections": [
@@ -18347,8 +18400,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=142&offering_id=85920&track_id=85920-Section 2"
     },
-    "436": {
-        "id": 436,
+    "437": {
+        "id": 437,
         "name": "Reading",
         "number": "Ma 290",
         "sections": [
@@ -18533,8 +18586,8 @@
         "true_units": "",
         "link": ""
     },
-    "437": {
-        "id": 437,
+    "438": {
+        "id": 438,
         "name": "Research",
         "number": "Ma 390",
         "sections": [
@@ -18719,8 +18772,8 @@
         "true_units": "",
         "link": ""
     },
-    "438": {
-        "id": 438,
+    "439": {
+        "id": 439,
         "name": "Thermal Science",
         "number": "ME 11 c",
         "sections": [
@@ -18744,8 +18797,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80425&department_id=143&offering_id=86044&track_id=86044-Default"
     },
-    "439": {
-        "id": 439,
+    "440": {
+        "id": 440,
         "name": "Mechanics",
         "number": "ME 12 c",
         "sections": [
@@ -18769,8 +18822,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80425&department_id=143&offering_id=86045&track_id=86045-Default"
     },
-    "440": {
-        "id": 440,
+    "441": {
+        "id": 441,
         "name": "Design and Fabrication",
         "number": "ME 14",
         "sections": [
@@ -18794,8 +18847,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=143&offering_id=87044&track_id=87044-Default"
     },
-    "441": {
-        "id": 441,
+    "442": {
+        "id": 442,
         "name": "CNC Machining",
         "number": "ME 23",
         "sections": [
@@ -18819,8 +18872,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=143&offering_id=88846&track_id=88846-Default"
     },
-    "442": {
-        "id": 442,
+    "443": {
+        "id": 443,
         "name": "Experiments and Modeling in Mechanical Engineering",
         "number": "ME 50 b",
         "sections": [
@@ -18844,8 +18897,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80425&department_id=143&offering_id=86618&track_id=86618-Default"
     },
-    "443": {
-        "id": 443,
+    "444": {
+        "id": 444,
         "name": "Senior Thesis, Experimental",
         "number": "ME 90 c",
         "sections": [
@@ -18869,8 +18922,8 @@
         "true_units": "",
         "link": ""
     },
-    "444": {
-        "id": 444,
+    "445": {
+        "id": 445,
         "name": "Independent Studies in Mechanical Engineering",
         "number": "ME 100",
         "sections": [
@@ -18999,8 +19052,8 @@
         "true_units": "",
         "link": ""
     },
-    "447": {
-        "id": 447,
+    "448": {
+        "id": 448,
         "name": "Special Laboratory Work in Mechanical Engineering",
         "number": "ME 110",
         "sections": [
@@ -19059,8 +19112,8 @@
         "true_units": "",
         "link": ""
     },
-    "449": {
-        "id": 449,
+    "450": {
+        "id": 450,
         "name": "CNC Machining",
         "number": "ME 123",
         "sections": [
@@ -19084,8 +19137,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=32&term_id=514&division_id=80425&department_id=143&offering_id=75769&track_id=75769-Default"
     },
-    "454": {
-        "id": 454,
+    "455": {
+        "id": 455,
         "name": "Advanced Work in Mechanical Engineering",
         "number": "ME 200",
         "sections": [
@@ -19130,8 +19183,8 @@
         "true_units": "",
         "link": ""
     },
-    "458": {
-        "id": 458,
+    "459": {
+        "id": 459,
         "name": "Research in Mechanical Engineering",
         "number": "ME 300",
         "sections": [
@@ -19428,8 +19481,8 @@
         "true_units": "",
         "link": ""
     },
-    "459": {
-        "id": 459,
+    "460": {
+        "id": 460,
         "name": "Undergraduate Research in Medical Engineering",
         "number": "MedE 99",
         "sections": [
@@ -19467,8 +19520,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=31&term_id=513&division_id=80425&department_id=555&offering_id=74077&track_id=74077-Default"
     },
-    "460": {
-        "id": 460,
+    "461": {
+        "id": 461,
         "name": "Medical Engineering Seminar",
         "number": "MedE 100 c",
         "sections": [
@@ -19492,8 +19545,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80425&department_id=555&offering_id=86051&track_id=86051-Default"
     },
-    "466": {
-        "id": 466,
+    "467": {
+        "id": 467,
         "name": "New Frontiers in Medical Technologies",
         "number": "MedE 205",
         "sections": [
@@ -19517,8 +19570,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=555&offering_id=87078&track_id=87078-Default"
     },
-    "467": {
-        "id": 467,
+    "468": {
+        "id": 468,
         "name": "Research in Medical Engineering",
         "number": "MedE 291",
         "sections": [
@@ -19682,8 +19735,8 @@
         "true_units": "",
         "link": ""
     },
-    "468": {
-        "id": 468,
+    "469": {
+        "id": 469,
         "name": "Themes in Western Music History and Historiography: Pre-1600",
         "number": "Mu 137",
         "sections": [
@@ -19707,8 +19760,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=144&offering_id=87788&track_id=87788-Default"
     },
-    "469": {
-        "id": 469,
+    "470": {
+        "id": 470,
         "name": "Special Topics in Music: The End of Opera?",
         "number": "Mu 150",
         "sections": [
@@ -19732,8 +19785,8 @@
         "true_units": "",
         "link": ""
     },
-    "475": {
-        "id": 475,
+    "476": {
+        "id": 476,
         "name": "Graduate Research",
         "number": "NB 299",
         "sections": [
@@ -19932,8 +19985,8 @@
         "true_units": "",
         "link": ""
     },
-    "476": {
-        "id": 476,
+    "477": {
+        "id": 477,
         "name": "Guitar",
         "number": "PVA 30 c",
         "sections": [
@@ -19971,8 +20024,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80439&department_id=597&offering_id=86080&track_id=86080-Default"
     },
-    "477": {
-        "id": 477,
+    "478": {
+        "id": 478,
         "name": "Chamber Music",
         "number": "PVA 31 c",
         "sections": [
@@ -20010,8 +20063,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80439&department_id=597&offering_id=86081&track_id=86081-Mixed Ensembles"
     },
-    "478": {
-        "id": 478,
+    "479": {
+        "id": 479,
         "name": "Symphony Orchestra",
         "number": "PVA 32 c",
         "sections": [
@@ -20035,8 +20088,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80439&department_id=597&offering_id=86082&track_id=86082-Default"
     },
-    "479": {
-        "id": 479,
+    "480": {
+        "id": 480,
         "name": "Wind Orchestra",
         "number": "PVA 33 c",
         "sections": [
@@ -20060,8 +20113,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80439&department_id=597&offering_id=86083&track_id=86083-Default"
     },
-    "480": {
-        "id": 480,
+    "481": {
+        "id": 481,
         "name": "Jazz Band/Jazz Improvisation",
         "number": "PVA 34 c",
         "sections": [
@@ -20085,8 +20138,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80439&department_id=597&offering_id=86084&track_id=86084-Default"
     },
-    "481": {
-        "id": 481,
+    "482": {
+        "id": 482,
         "name": "Glee Club",
         "number": "PVA 35 c",
         "sections": [
@@ -20110,8 +20163,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80439&department_id=597&offering_id=86085&track_id=86085-Default"
     },
-    "482": {
-        "id": 482,
+    "483": {
+        "id": 483,
         "name": "Chamber Singers",
         "number": "PVA 37 c",
         "sections": [
@@ -20135,8 +20188,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80439&department_id=597&offering_id=86646&track_id=86646-Default"
     },
-    "483": {
-        "id": 483,
+    "484": {
+        "id": 484,
         "name": "Theater Arts Production",
         "number": "PVA 40 c",
         "sections": [
@@ -20160,8 +20213,8 @@
         "true_units": "5",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=34&term_id=516&division_id=80439&department_id=597&offering_id=76361&track_id=76361-Default"
     },
-    "484": {
-        "id": 484,
+    "485": {
+        "id": 485,
         "name": "Storytelling for Scientists",
         "number": "PVA 41 c",
         "sections": [
@@ -20185,8 +20238,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=36&term_id=518&division_id=80439&department_id=597&offering_id=77554&track_id=77554-Default"
     },
-    "485": {
-        "id": 485,
+    "486": {
+        "id": 486,
         "name": "Improvisation for Scientists",
         "number": "PVA 42 c",
         "sections": [
@@ -20210,8 +20263,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=34&term_id=516&division_id=80439&department_id=597&offering_id=77551&track_id=77551-Default"
     },
-    "486": {
-        "id": 486,
+    "487": {
+        "id": 487,
         "name": "Silkscreen and Silk Painting",
         "number": "PVA 61 c",
         "sections": [
@@ -20235,8 +20288,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80439&department_id=597&offering_id=86088&track_id=86088-Default"
     },
-    "487": {
-        "id": 487,
+    "488": {
+        "id": 488,
         "name": "Drawing and Painting",
         "number": "PVA 62 c",
         "sections": [
@@ -20267,8 +20320,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80439&department_id=597&offering_id=86089&track_id=86089-Default"
     },
-    "488": {
-        "id": 488,
+    "489": {
+        "id": 489,
         "name": "Ceramics",
         "number": "PVA 63 c",
         "sections": [
@@ -20292,8 +20345,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80439&department_id=597&offering_id=87927&track_id=87927-Default"
     },
-    "490": {
-        "id": 490,
+    "491": {
+        "id": 491,
         "name": "Senior Thesis",
         "number": "Pl 90 b",
         "sections": [
@@ -20317,8 +20370,8 @@
         "true_units": "",
         "link": ""
     },
-    "491": {
-        "id": 491,
+    "492": {
+        "id": 492,
         "name": "Reading in Philosophy",
         "number": "Pl 98",
         "sections": [
@@ -20342,8 +20395,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=171&offering_id=87165&track_id=87165-Default"
     },
-    "492": {
-        "id": 492,
+    "493": {
+        "id": 493,
         "name": "Wellness",
         "number": "PE 1",
         "sections": [
@@ -20367,8 +20420,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80440&department_id=146&offering_id=87289&track_id=87289-Default"
     },
-    "493": {
-        "id": 493,
+    "494": {
+        "id": 494,
         "name": "Student Designed Fitness",
         "number": "PE 2",
         "sections": [
@@ -20392,8 +20445,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80440&department_id=146&offering_id=86218&track_id=86218-Default"
     },
-    "494": {
-        "id": 494,
+    "495": {
+        "id": 495,
         "name": "Hiking",
         "number": "PE 3",
         "sections": [
@@ -20417,8 +20470,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80440&department_id=146&offering_id=86030&track_id=86030-Default"
     },
-    "495": {
-        "id": 495,
+    "496": {
+        "id": 496,
         "name": "Core Training, Beginning/Intermediate",
         "number": "PE 6",
         "sections": [
@@ -20442,8 +20495,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80440&department_id=146&offering_id=86220&track_id=86220-Default"
     },
-    "496": {
-        "id": 496,
+    "497": {
+        "id": 497,
         "name": "Aerobic Dance",
         "number": "PE 10",
         "sections": [
@@ -20467,8 +20520,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80440&department_id=146&offering_id=88354&track_id=88354-Default"
     },
-    "497": {
-        "id": 497,
+    "498": {
+        "id": 498,
         "name": "Basketball Skills, Beginning/Intermediate",
         "number": "PE 14",
         "sections": [
@@ -20492,8 +20545,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=36&term_id=518&division_id=80440&department_id=146&offering_id=77094&track_id=77094-Default"
     },
-    "498": {
-        "id": 498,
+    "499": {
+        "id": 499,
         "name": "Yoga, Beginning",
         "number": "PE 24",
         "sections": [
@@ -20524,8 +20577,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80440&department_id=146&offering_id=86011&track_id=86011-Section 1"
     },
-    "499": {
-        "id": 499,
+    "500": {
+        "id": 500,
         "name": "Ultimate Frisbee",
         "number": "PE 27",
         "sections": [
@@ -20549,8 +20602,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80440&department_id=146&offering_id=88355&track_id=88355-Default"
     },
-    "500": {
-        "id": 500,
+    "501": {
+        "id": 501,
         "name": "Outdoor Lawn Games",
         "number": "PE 29",
         "sections": [
@@ -20574,8 +20627,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80440&department_id=146&offering_id=88891&track_id=88891-Default"
     },
-    "501": {
-        "id": 501,
+    "502": {
+        "id": 502,
         "name": "Beginning Triathlon Training",
         "number": "PE 33",
         "sections": [
@@ -20599,8 +20652,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=34&term_id=516&division_id=80440&department_id=146&offering_id=77468&track_id=77468-Default"
     },
-    "502": {
-        "id": 502,
+    "503": {
+        "id": 503,
         "name": "Swimming, Beginning/Intermediate",
         "number": "PE 36",
         "sections": [
@@ -20624,8 +20677,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80440&department_id=146&offering_id=86012&track_id=86012-Default"
     },
-    "503": {
-        "id": 503,
+    "504": {
+        "id": 504,
         "name": "Tennis, Beginning and Intermediate",
         "number": "PE 60",
         "sections": [
@@ -20649,8 +20702,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80440&department_id=146&offering_id=88361&track_id=88361-Default"
     },
-    "504": {
-        "id": 504,
+    "505": {
+        "id": 505,
         "name": "Weight Training, Beginning/Intermediate",
         "number": "PE 70",
         "sections": [
@@ -20674,8 +20727,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80440&department_id=146&offering_id=86016&track_id=86016-Section 1"
     },
-    "505": {
-        "id": 505,
+    "506": {
+        "id": 506,
         "name": "Bouldering",
         "number": "PE 81",
         "sections": [
@@ -20699,8 +20752,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=38&term_id=520&division_id=80440&department_id=146&offering_id=78968&track_id=78968-Default"
     },
-    "506": {
-        "id": 506,
+    "507": {
+        "id": 507,
         "name": "Rock Climbing, Beginning and Intermediate",
         "number": "PE 82",
         "sections": [
@@ -20724,8 +20777,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=38&term_id=520&division_id=80440&department_id=146&offering_id=78980&track_id=78980-Section 1"
     },
-    "507": {
-        "id": 507,
+    "508": {
+        "id": 508,
         "name": "Table Tennis, Beginning, Intermediate, and Advanced",
         "number": "PE 84",
         "sections": [
@@ -20749,8 +20802,8 @@
         "true_units": "1",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80440&department_id=146&offering_id=88896&track_id=88896-Default"
     },
-    "508": {
-        "id": 508,
+    "509": {
+        "id": 509,
         "name": "Intercollegiate Track and Field Teams",
         "number": "PE 85 b",
         "sections": [
@@ -20774,8 +20827,8 @@
         "true_units": "5",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80440&department_id=146&offering_id=86838&track_id=86838-Default"
     },
-    "509": {
-        "id": 509,
+    "510": {
+        "id": 510,
         "name": "Intercollegiate Water Polo Teams",
         "number": "PE 90 c",
         "sections": [
@@ -20799,8 +20852,8 @@
         "true_units": "5",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80440&department_id=146&offering_id=85893&track_id=85893-Default"
     },
-    "510": {
-        "id": 510,
+    "511": {
+        "id": 511,
         "name": "Intercollegiate Baseball Team",
         "number": "PE 93 b",
         "sections": [
@@ -20824,8 +20877,8 @@
         "true_units": "5",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80440&department_id=146&offering_id=86578&track_id=86578-Default"
     },
-    "511": {
-        "id": 511,
+    "512": {
+        "id": 512,
         "name": "Intercollegiate Tennis Teams",
         "number": "PE 95 b",
         "sections": [
@@ -20849,8 +20902,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80440&department_id=146&offering_id=86579&track_id=86579-Default"
     },
-    "512": {
-        "id": 512,
+    "513": {
+        "id": 513,
         "name": "Classical Mechanics and Electromagnetism",
         "number": "Ph 1 c",
         "sections": [
@@ -20899,16 +20952,16 @@
             {
                 "grades": "",
                 "instructor": "Hsieh, D",
-                "locations": "201 BRG",
+                "locations": "201 BRG\n119 KRK",
                 "number": 7,
-                "times": "WF 11:00 - 11:55\nMR 11:00 - 11:55\nA"
+                "times": "WF 11:00 - 11:55\nMR 11:00 - 11:55"
             },
             {
                 "grades": "",
                 "instructor": "Hsieh, D",
-                "locations": "201 BRG",
+                "locations": "201 BRG\n310 LINDE",
                 "number": 8,
-                "times": "WF 11:00 - 11:55\nMR 15:00 - 15:55\nA"
+                "times": "WF 11:00 - 11:55\nMR 15:00 - 15:55"
             },
             {
                 "grades": "",
@@ -20937,8 +20990,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=147&offering_id=85895&track_id=85895-Default"
     },
-    "513": {
-        "id": 513,
+    "514": {
+        "id": 514,
         "name": "Waves, Quantum Mechanics, and Statistical Physics",
         "number": "Ph 2 c",
         "sections": [
@@ -20976,8 +21029,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=147&offering_id=85896&track_id=85896-Default"
     },
-    "514": {
-        "id": 514,
+    "515": {
+        "id": 515,
         "name": "Introductory Physics Laboratory",
         "number": "Ph 3",
         "sections": [
@@ -21015,8 +21068,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=147&offering_id=85897&track_id=85897-Default"
     },
-    "515": {
-        "id": 515,
+    "516": {
+        "id": 516,
         "name": "Physics Laboratory",
         "number": "Ph 7",
         "sections": [
@@ -21040,8 +21093,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=147&offering_id=88883&track_id=88883-Default"
     },
-    "516": {
-        "id": 516,
+    "517": {
+        "id": 517,
         "name": "Experiments in Electromagnetism",
         "number": "Ph 8 c",
         "sections": [
@@ -21065,8 +21118,8 @@
         "true_units": "5",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80428&department_id=147&offering_id=86547&track_id=86547-Default"
     },
-    "518": {
-        "id": 518,
+    "519": {
+        "id": 519,
         "name": "Waves, Quantum Physics, and Statistical Mechanics",
         "number": "Ph 12 c",
         "sections": [
@@ -21090,8 +21143,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=147&offering_id=85899&track_id=85899-Default"
     },
-    "519": {
-        "id": 519,
+    "520": {
+        "id": 520,
         "name": "Computational Physics Laboratory II",
         "number": "Ph 21",
         "sections": [
@@ -21115,8 +21168,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80428&department_id=147&offering_id=86471&track_id=86471-Default"
     },
-    "520": {
-        "id": 520,
+    "521": {
+        "id": 521,
         "name": "Computational Physics Laboratory III",
         "number": "Ph 22",
         "sections": [
@@ -21140,35 +21193,10 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80428&department_id=147&offering_id=83362&track_id=83362-Default"
     },
-    "521": {
-        "id": 521,
-        "name": "Advanced Physics Laboratory",
-        "number": "Ph 77 a",
-        "sections": [
-            {
-                "grades": "",
-                "instructor": "Black, E / Libbrecht, K",
-                "locations": "210 BRG",
-                "number": 1,
-                "times": "OM,M 15:00 - 15:55"
-            }
-        ],
-        "comment": "",
-        "units": [
-            0,
-            5,
-            4
-        ],
-        "description": "Advanced preparation for laboratory research. Dual emphasis on practical skills used in modern research groups and historic experiments that illuminate important theoretical concepts. Topics include advanced signal acquisition, conditioning, and data processing, introductions to widely-used optical devices and techniques, laser-frequency stabilization, and classic experiments such as magnetic resonance, optical pumping, and doppler-free spectroscopy. Fundamentals of vacuum engineering, thin-film sample growth, and cryogenics are occasionally offered. Special topics and student-led projects are available on request.",
-        "prerequisites": "Ph 7 or instructor's permission.",
-        "rating": "4.55 +/- 0.52",
-        "true_units": "3",
-        "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=147&offering_id=85901&track_id=85901-Default"
-    },
     "522": {
         "id": 522,
         "name": "Advanced Physics Laboratory",
-        "number": "Ph 77 b",
+        "number": "Ph 77 a",
         "sections": [
             {
                 "grades": "",
@@ -21193,7 +21221,7 @@
     "523": {
         "id": 523,
         "name": "Advanced Physics Laboratory",
-        "number": "Ph 77 c",
+        "number": "Ph 77 b",
         "sections": [
             {
                 "grades": "",
@@ -21217,6 +21245,31 @@
     },
     "524": {
         "id": 524,
+        "name": "Advanced Physics Laboratory",
+        "number": "Ph 77 c",
+        "sections": [
+            {
+                "grades": "",
+                "instructor": "Black, E / Libbrecht, K",
+                "locations": "210 BRG",
+                "number": 1,
+                "times": "OM,M 15:00 - 15:55"
+            }
+        ],
+        "comment": "",
+        "units": [
+            0,
+            5,
+            4
+        ],
+        "description": "Advanced preparation for laboratory research. Dual emphasis on practical skills used in modern research groups and historic experiments that illuminate important theoretical concepts. Topics include advanced signal acquisition, conditioning, and data processing, introductions to widely-used optical devices and techniques, laser-frequency stabilization, and classic experiments such as magnetic resonance, optical pumping, and doppler-free spectroscopy. Fundamentals of vacuum engineering, thin-film sample growth, and cryogenics are occasionally offered. Special topics and student-led projects are available on request.",
+        "prerequisites": "Ph 7 or instructor's permission.",
+        "rating": "4.55 +/- 0.52",
+        "true_units": "3",
+        "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=147&offering_id=85901&track_id=85901-Default"
+    },
+    "525": {
+        "id": 525,
         "name": "Senior Thesis (Experiment)",
         "number": "Ph 78 c",
         "sections": [
@@ -21240,8 +21293,8 @@
         "true_units": "",
         "link": ""
     },
-    "525": {
-        "id": 525,
+    "526": {
+        "id": 526,
         "name": "Senior Thesis (Theory)",
         "number": "Ph 79 c",
         "sections": [
@@ -21265,8 +21318,8 @@
         "true_units": "",
         "link": ""
     },
-    "526": {
-        "id": 526,
+    "527": {
+        "id": 527,
         "name": "Order-of-Magnitude Physics",
         "number": "Ph 101",
         "sections": [
@@ -21290,8 +21343,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80428&department_id=147&offering_id=84398&track_id=84398-Default"
     },
-    "527": {
-        "id": 527,
+    "528": {
+        "id": 528,
         "name": "Topics in Classical Physics",
         "number": "Ph 106 c",
         "sections": [
@@ -21315,8 +21368,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=147&offering_id=85903&track_id=85903-Default"
     },
-    "530": {
-        "id": 530,
+    "531": {
+        "id": 531,
         "name": "Computational Physics Lab",
         "number": "Ph 121 c",
         "sections": [
@@ -21340,8 +21393,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=147&offering_id=86076&track_id=86076-Default"
     },
-    "531": {
-        "id": 531,
+    "532": {
+        "id": 532,
         "name": "Quantum Mechanics",
         "number": "Ph 125 c",
         "sections": [
@@ -21365,8 +21418,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=147&offering_id=85904&track_id=85904-Default"
     },
-    "532": {
-        "id": 532,
+    "533": {
+        "id": 533,
         "name": "Applications of Classical Physics",
         "number": "Ph 136 c",
         "sections": [
@@ -21390,8 +21443,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=41&term_id=526&division_id=80428&department_id=147&offering_id=83791&track_id=83791-Default"
     },
-    "534": {
-        "id": 534,
+    "535": {
+        "id": 535,
         "name": "Reading and Independent Study",
         "number": "Ph 171",
         "sections": [
@@ -21814,8 +21867,8 @@
         "true_units": "",
         "link": ""
     },
-    "535": {
-        "id": 535,
+    "536": {
+        "id": 536,
         "name": "Research in Physics",
         "number": "Ph 172",
         "sections": [
@@ -22259,8 +22312,8 @@
         "true_units": "",
         "link": ""
     },
-    "536": {
-        "id": 536,
+    "537": {
+        "id": 537,
         "name": "Advanced Experimental Physics",
         "number": "Ph 177",
         "sections": [
@@ -22284,8 +22337,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80428&department_id=147&offering_id=86685&track_id=86685-Default"
     },
-    "538": {
-        "id": 538,
+    "539": {
+        "id": 539,
         "name": "Candidacy Physics Fitness",
         "number": "Ph 201",
         "sections": [
@@ -22309,8 +22362,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80428&department_id=147&offering_id=83547&track_id=83547-Default"
     },
-    "539": {
-        "id": 539,
+    "540": {
+        "id": 540,
         "name": "Relativistic Quantum Field Theory",
         "number": "Ph 205 c",
         "sections": [
@@ -22334,8 +22387,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=147&offering_id=85908&track_id=85908-Default"
     },
-    "542": {
-        "id": 542,
+    "543": {
+        "id": 543,
         "name": "Advanced Mathematical Methods of Physics",
         "number": "Ph 229 b",
         "sections": [
@@ -22359,8 +22412,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=147&offering_id=87431&track_id=87431-Default"
     },
-    "543": {
-        "id": 543,
+    "544": {
+        "id": 544,
         "name": "Gravitational Waves",
         "number": "Ph 237",
         "sections": [
@@ -22384,8 +22437,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=147&offering_id=88886&track_id=88886-Default"
     },
-    "544": {
-        "id": 544,
+    "545": {
+        "id": 545,
         "name": "Thesis Research",
         "number": "Ph 300",
         "sections": [
@@ -22822,8 +22875,8 @@
         "true_units": "",
         "link": ""
     },
-    "545": {
-        "id": 545,
+    "546": {
+        "id": 546,
         "name": "Introduction to Political Science",
         "number": "PS 12",
         "sections": [
@@ -22847,8 +22900,8 @@
         "true_units": "1",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=148&offering_id=85975&track_id=85975-Default"
     },
-    "546": {
-        "id": 546,
+    "547": {
+        "id": 547,
         "name": "Undergraduate Research",
         "number": "PS 97",
         "sections": [
@@ -22872,8 +22925,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=16&term_id=459&division_id=80427&department_id=148&offering_id=65128&track_id=65128-Default"
     },
-    "547": {
-        "id": 547,
+    "548": {
+        "id": 548,
         "name": "Political Science Research Seminar",
         "number": "PS 99 b",
         "sections": [
@@ -22897,8 +22950,8 @@
         "true_units": "",
         "link": ""
     },
-    "548": {
-        "id": 548,
+    "549": {
+        "id": 549,
         "name": "American Electoral Behavior and Party Strategy",
         "number": "PS 120",
         "sections": [
@@ -22922,8 +22975,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80427&department_id=148&offering_id=83620&track_id=83620-Default"
     },
-    "549": {
-        "id": 549,
+    "550": {
+        "id": 550,
         "name": "Political Representation",
         "number": "PS 122",
         "sections": [
@@ -22947,8 +23000,8 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=148&offering_id=88794&track_id=88794-Default"
     },
-    "550": {
-        "id": 550,
+    "551": {
+        "id": 551,
         "name": "Comparative Politics",
         "number": "PS 139",
         "sections": [
@@ -22972,8 +23025,8 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80427&department_id=148&offering_id=84220&track_id=84220-Default"
     },
-    "551": {
-        "id": 551,
+    "552": {
+        "id": 552,
         "name": "A History of Budgetary Politics in the United States",
         "number": "PS 141 b",
         "sections": [
@@ -22997,8 +23050,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80427&department_id=148&offering_id=86617&track_id=86617-Default"
     },
-    "553": {
-        "id": 553,
+    "554": {
+        "id": 554,
         "name": "Introduction to Cognitive Neuroscience",
         "number": "Psy 13",
         "sections": [
@@ -23022,8 +23075,8 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=149&offering_id=87088&track_id=87088-Default"
     },
-    "556": {
-        "id": 556,
+    "557": {
+        "id": 557,
         "name": "Graduate Proseminar in Social and Decision Neuroscience",
         "number": "Psy 283 c",
         "sections": [
@@ -23047,8 +23100,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=149&offering_id=86159&track_id=86159-Default"
     },
-    "557": {
-        "id": 557,
+    "558": {
+        "id": 558,
         "name": "Technical Seminar Presentations",
         "number": "SEC 10",
         "sections": [
@@ -23086,8 +23139,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80425&department_id=676&offering_id=86155&track_id=86155-Default"
     },
-    "558": {
-        "id": 558,
+    "559": {
+        "id": 559,
         "name": "Written Professional Communication in Engineering and Applied Science",
         "number": "SEC 12",
         "sections": [
@@ -23111,8 +23164,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80425&department_id=676&offering_id=87488&track_id=87488-Default"
     },
-    "559": {
-        "id": 559,
+    "560": {
+        "id": 560,
         "name": "Written Communication about Engineering and Applied Science to Non- Specialists",
         "number": "SEC 13",
         "sections": [
@@ -23136,8 +23189,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80425&department_id=676&offering_id=87489&track_id=87489-Default"
     },
-    "562": {
-        "id": 562,
+    "563": {
+        "id": 563,
         "name": "Effective Communication Strategies for Engineers and Scientists",
         "number": "SEC 111",
         "sections": [
@@ -23161,8 +23214,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=41&term_id=526&division_id=80425&department_id=676&offering_id=82671&track_id=82671-Default"
     },
-    "563": {
-        "id": 563,
+    "564": {
+        "id": 564,
         "name": "Analytical Foundations of Social Science",
         "number": "SS 201 c",
         "sections": [
@@ -23186,8 +23239,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=151&offering_id=85911&track_id=85911-Default"
     },
-    "564": {
-        "id": 564,
+    "565": {
+        "id": 565,
         "name": "Political Theory",
         "number": "SS 202 c",
         "sections": [
@@ -23211,8 +23264,8 @@
         "true_units": "4",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=151&offering_id=85912&track_id=85912-Default"
     },
-    "565": {
-        "id": 565,
+    "566": {
+        "id": 566,
         "name": "Foundations of Economics",
         "number": "SS 205 c",
         "sections": [
@@ -23236,8 +23289,8 @@
         "true_units": "5",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=151&offering_id=85913&track_id=85913-Default"
     },
-    "566": {
-        "id": 566,
+    "567": {
+        "id": 567,
         "name": "Advanced Economic Theory",
         "number": "SS 211 c",
         "sections": [
@@ -23261,8 +23314,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80427&department_id=151&offering_id=86699&track_id=86699-Default"
     },
-    "567": {
-        "id": 567,
+    "568": {
+        "id": 568,
         "name": "Experimental Economics",
         "number": "SS 212 c",
         "sections": [
@@ -23286,8 +23339,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=151&offering_id=86214&track_id=86214-Default"
     },
-    "568": {
-        "id": 568,
+    "569": {
+        "id": 569,
         "name": "Econometrics",
         "number": "SS 222 c",
         "sections": [
@@ -23311,8 +23364,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=151&offering_id=86065&track_id=86065-Default"
     },
-    "569": {
-        "id": 569,
+    "570": {
+        "id": 570,
         "name": "Topics in Theoretical and Applied Econometrics",
         "number": "SS 223 c",
         "sections": [
@@ -23336,8 +23389,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80427&department_id=151&offering_id=86696&track_id=86696-Default"
     },
-    "570": {
-        "id": 570,
+    "571": {
+        "id": 571,
         "name": "Theoretical and Quantitative Dimensions of Historical Development",
         "number": "SS 229 b",
         "sections": [
@@ -23361,8 +23414,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80427&department_id=151&offering_id=86841&track_id=86841-Default"
     },
-    "571": {
-        "id": 571,
+    "572": {
+        "id": 572,
         "name": "Graduate Proseminar in Social Science",
         "number": "SS 282 c",
         "sections": [
@@ -23386,8 +23439,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=151&offering_id=86000&track_id=86000-Default"
     },
-    "572": {
-        "id": 572,
+    "573": {
+        "id": 573,
         "name": "Research in Social Science",
         "number": "SS 300",
         "sections": [
@@ -23586,8 +23639,8 @@
         "true_units": "",
         "link": ""
     },
-    "573": {
-        "id": 573,
+    "574": {
+        "id": 574,
         "name": "Cooking Basics",
         "number": "SA 16 c",
         "sections": [
@@ -23611,8 +23664,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=41&term_id=526&division_id=143798&department_id=596&offering_id=82231&track_id=82231-Default"
     },
-    "574": {
-        "id": 574,
+    "575": {
+        "id": 575,
         "name": "Computer Science Education in K-14 Settings Practicum",
         "number": "SA 42",
         "sections": [
@@ -23636,8 +23689,8 @@
         "true_units": "",
         "link": ""
     },
-    "575": {
-        "id": 575,
+    "576": {
+        "id": 576,
         "name": "Health Advocates",
         "number": "SA 80 c",
         "sections": [
@@ -23668,8 +23721,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=143798&department_id=596&offering_id=86078&track_id=86078-Default"
     },
-    "576": {
-        "id": 576,
+    "577": {
+        "id": 577,
         "name": "Peer Advocates",
         "number": "SA 81",
         "sections": [
@@ -23693,8 +23746,8 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=143798&department_id=596&offering_id=87108&track_id=87108-Default"
     },
-    "577": {
-        "id": 577,
+    "578": {
+        "id": 578,
         "name": "Cambridge Scholars Program",
         "number": "CAM 100",
         "sections": [
@@ -23718,8 +23771,8 @@
         "true_units": "",
         "link": ""
     },
-    "578": {
-        "id": 578,
+    "579": {
+        "id": 579,
         "name": "Copenhagen Scholars Program",
         "number": "CPH 100",
         "sections": [
@@ -23743,14 +23796,14 @@
         "true_units": "",
         "link": ""
     },
-    "581": {
-        "id": 581,
+    "582": {
+        "id": 582,
         "name": "Environmental Media in Practice",
         "number": "VC 55",
         "sections": [
             {
                 "grades": "PASS-FAIL",
-                "instructor": "Staff",
+                "instructor": "Livio, M",
                 "locations": "",
                 "number": 1,
                 "times": "TR 13:00 - 14:25\nA"
@@ -23768,8 +23821,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80427&department_id=656&offering_id=84467&track_id=84467-Default"
     },
-    "582": {
-        "id": 582,
+    "583": {
+        "id": 583,
         "name": "Los Angeles as Artwork: Dia de los Muertos",
         "number": "VC 159",
         "sections": [
@@ -23793,8 +23846,8 @@
         "true_units": "3",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80427&department_id=656&offering_id=88428&track_id=88428-Default"
     },
-    "584": {
-        "id": 584,
+    "585": {
+        "id": 585,
         "name": "The Arts of Dynastic China",
         "number": "VC 169",
         "sections": [
@@ -23818,8 +23871,8 @@
         "true_units": "2",
         "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=40&term_id=522&division_id=80427&department_id=656&offering_id=81731&track_id=81731-Default"
     },
-    "585": {
-        "id": 585,
+    "586": {
+        "id": 586,
         "name": "Tutorial in Writing",
         "number": "Wr 50",
         "sections": [
