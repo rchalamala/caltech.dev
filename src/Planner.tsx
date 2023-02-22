@@ -92,12 +92,11 @@ function Planner() {
 
   /** Hashes id to proper color and styling for calendar items */
   const eventStyleGetter = (event: DateData) => {
-    const hue = ((event.id * 1.42) % 1.0) * 360;
-    const sat = ((event.id * 1.69) % 1.0) * 100;
+    const hue = ((event.id * 1.4269) % 1.0) * 360;
 
     return {
       style: {
-        backgroundColor: `hsl(${hue}, ${sat}%, 50%)`,
+        backgroundColor: `hsl(${hue}, 70%, 70%)`,
         cursor: "pointer",
         borderStyle: "none",
         borderRadius: "4px",
