@@ -13,15 +13,15 @@ import { motion } from "framer-motion";
 
 const DATA_FA2022 = require("./data/IndexedTotalFA2022-23.json")
 const DATA_WI2022 = require("./data/IndexedTotalWI2022-23.json")
-const DATA_SP2023 = require("./data/IndexedTotalSP2022-23.json")
+const DATA_SP2022 = require("./data/IndexedTotalSP2022-23.json")
 const DATA_FA2023 = require("./data/IndexedTotalFA2023-24.json")
 
-const CURRENT_TERM = "/sp2023"
+const CURRENT_TERM = "/fa2023"
 
 const courseDataSources: Record<string, CourseData> = {
   "/fa2022": DATA_FA2022,
   "/wi2022": DATA_WI2022,
-  "/sp2023": DATA_SP2023,
+  "/sp2022": DATA_SP2022,
   "/fa2023": DATA_FA2023,
 }
 
