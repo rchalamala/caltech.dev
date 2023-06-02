@@ -5,6 +5,7 @@ import Workspace from "./Workspace";
 import Modal from "./Modal";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import { motion } from "framer-motion";
+import {Helmet} from "react-helmet";
 
 // const indexedCourses: Record<
 //   string,
@@ -707,6 +708,13 @@ function App() {
         </p>
         <p>Current term: {realPath.substring(1)}</p>
       </footer>
+        
+      <Helmet>
+        <script data-goatcounter="https://beavered.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+      </Helmet>
+
+
     </AppState.Provider>
     </AllCourses.Provider>
   );
