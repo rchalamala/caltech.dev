@@ -16,8 +16,6 @@ import "react-toggle/style.css";
 import "./css/workspace.css";
 import { IconButton, Switch } from "@mui/material";
 
-// const courses: CourseData[] = require("./data/TotalFall2022-23.json");
-
 /** Fetches courses */
 function getCourse(
   identifier: number | string,
@@ -408,7 +406,7 @@ export default function Workspace() {
 
   const setDefaultSchedule = () => {
     state.setCourses(
-      ["Ma 1 b", "Ph 1 b", "Ch 1 b"].map((name) => {
+      ["Ma 1 a", "Ph 1 a", "Ch 1 a"].map((name) => {
         return getCourse(name, indexedCourses)
       }).map((course) => {
         return { ...course!, enabled: true, locked: true };
