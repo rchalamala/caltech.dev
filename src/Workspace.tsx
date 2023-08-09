@@ -152,82 +152,83 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
 
   const [infoModalOpen, setInfoModalOpen] = useState(false);
   return (
-    <Draggable draggableId={`${course.courseData.id}`} index={props.index}>
-      {(provided) => (
-        <div
-          className={`${className} bg-white shadow-lg border-0 ${
-            course.locked && "bg-neutral-100"
-          }`}
-          ref={provided.innerRef}
-          {...provided.draggableProps}
-          {...provided.dragHandleProps}
-        >
-          <div className="workspace-entry-buttons">
-            <Switch
-              color="warning"
-              checked={course.enabled}
-              onChange={() => {
-                state.toggleCourse(course);
-              }}
-            />
-
-            {course.locked ? (
-              <IconButton
+    <div>
+      <Draggable draggableId={`${course.courseData.id}`} index={props.index}>
+        {(provided) => (
+          <div
+            className={`${className} bg-white shadow-lg border-0 ${
+              course.locked && "bg-neutral-100"
+            }`}
+            ref={provided.innerRef}
+            {...provided.draggableProps}
+            {...provided.dragHandleProps}
+          >
+            <div className="workspace-entry-buttons">
+              <Switch
                 color="warning"
-                onClick={() => state.toggleSectionLock(course)}
+                checked={course.enabled}
+                onChange={() => {
+                  state.toggleCourse(course);
+                }}
+              />
+
+              {course.locked ? (
+                <IconButton
+                  color="warning"
+                  onClick={() => state.toggleSectionLock(course)}
+                >
+                  <Lock className="" />
+                </IconButton>
+              ) : (
+                <IconButton onClick={() => state.toggleSectionLock(course)}>
+                  <LockOpen />
+                </IconButton>
+              )}
+              <IconButton
+                color="error"
+                className="workspace-entry-controls-remove"
+                onClick={() => {
+                  state.removeCourse(course);
+                }}
               >
-                <Lock className="" />
+                <Delete />
               </IconButton>
-            ) : (
-              <IconButton onClick={() => state.toggleSectionLock(course)}>
-                <LockOpen />
-              </IconButton>
-            )}
-            <IconButton
-              color="error"
-              className="workspace-entry-controls-remove"
-              onClick={() => {
-                state.removeCourse(course);
-              }}
-            >
-              <Delete />
-            </IconButton>
-          </div>
-          <div className="workspace-entry-content">
-            <div className="workspace-entry-info">
-              <p>
-                <b>{course.courseData.number}</b>
-                {": "}
-                <b>{course.courseData.name}</b>{" "}
-                {`(${course.courseData.units[0]}-${course.courseData.units[1]}-${course.courseData.units[2]})`}
-              </p>
-              <p>
-                {id !== null ? sections[id].instructor : "No Section Selected"}
-              </p>
-              <p>{id !== null ? sections[id].locations : "Location"}</p>
-              <p>{id !== null ? sections[id].times : "Times"}</p>
             </div>
-            <div className="workspace-entry-controls">
-              <motion.button
-                whileHover={{ scale: 0.95 }}
-                whileTap={{ scale: 0.9 }}
-                className="py-1 font-bold text-white bg-orange-500 rounded-md workspace-entry-controls-info"
-                onClick={() => setInfoModalOpen(true)}
-              >
-                More Info
-              </motion.button>
-              <Modal
-                isOpen={infoModalOpen}
-                onClose={() => setInfoModalOpen(false)}
-              >
-                <AdvancedCourseInfo course={props.course} />
-              </Modal>
-              <SectionDropdown course={course} />
+            <div className="workspace-entry-content">
+              <div className="workspace-entry-info">
+                <p>
+                  <b>{course.courseData.number}</b>
+                  {": "}
+                  <b>{course.courseData.name}</b>{" "}
+                  {`(${course.courseData.units[0]}-${course.courseData.units[1]}-${course.courseData.units[2]})`}
+                </p>
+                <p>
+                  {id !== null
+                    ? sections[id].instructor
+                    : "No Section Selected"}
+                </p>
+                <p>{id !== null ? sections[id].locations : "Location"}</p>
+                <p>{id !== null ? sections[id].times : "Times"}</p>
+              </div>
+              <div className="workspace-entry-controls">
+                <motion.button
+                  whileHover={{ scale: 0.95 }}
+                  whileTap={{ scale: 0.9 }}
+                  className="py-1 font-bold text-white bg-orange-500 rounded-md workspace-entry-controls-info"
+                  onClick={() => setInfoModalOpen(true)}
+                >
+                  More Info
+                </motion.button>
+                <SectionDropdown course={course} />
+              </div>
             </div>
           </div>
-        </div>
-      )}
-    </Draggable>
+        )}
+      </Draggable>
+      <Modal isOpen={infoModalOpen} onClose={() => setInfoModalOpen(false)}>
+        <AdvancedCourseInfo course={props.course} />
+      </Modal>
+    </div>
   );
 }
 

@@ -681,7 +681,7 @@ function App() {
               Pro tip: you can use data from previous terms by changing the url!
               For example, if you would like to revisit <b>Fa</b>ll of{" "}
               <b>2022</b> (for whatever reason), simply navigate to
-              https://beave.red/<b>fa2022</b>.
+              https://caltech.dev/<b>fa2022</b>.
             </p>
           </Modal>
         </div>
