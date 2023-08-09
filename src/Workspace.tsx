@@ -19,7 +19,7 @@ import { IconButton, Switch } from "@mui/material";
 /** Fetches courses */
 function getCourse(
   identifier: number | string,
-  indexedCourses: CourseIndex
+  indexedCourses: CourseIndex,
 ): Maybe<CourseStorage> {
   let foundCourse: Maybe<CourseData> = null;
 
@@ -27,9 +27,13 @@ function getCourse(
     foundCourse = indexedCourses[`${identifier}`] || null;
   } else {
     foundCourse =
-      Object.values(indexedCourses).find((course) => course.number === identifier) ||
-        Object.values(indexedCourses).find((course) => course.name === identifier) ||
-        null;
+      Object.values(indexedCourses).find(
+        (course) => course.number === identifier,
+      ) ||
+      Object.values(indexedCourses).find(
+        (course) => course.name === identifier,
+      ) ||
+      null;
   }
 
   if (foundCourse !== null) {
@@ -229,8 +233,8 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
 
 function WorkspaceSearch() {
   const state = useContext(AppState);
-  const indexedCourses = useContext(AllCourses)
-  const courses = Object.values(indexedCourses) 
+  const indexedCourses = useContext(AllCourses);
+  const courses = Object.values(indexedCourses);
 
   // For some reason, options = [] on the second render, even though
   // courses = [...] by then and options should equal courses.
@@ -346,7 +350,7 @@ From the workspace, you can enable/disable courses in addition to switching the 
 // TODO: import/export classes in plaintext or a human-readable format
 export default function Workspace() {
   const state = useContext(AppState);
-  const indexedCourses = useContext(AllCourses)
+  const indexedCourses = useContext(AllCourses);
 
   const workspaceEntries = (provided: any) =>
     state.courses.map((course: CourseStorage, index: number) => (
@@ -406,11 +410,13 @@ export default function Workspace() {
 
   const setDefaultSchedule = () => {
     state.setCourses(
-      ["Ma 1 a", "Ph 1 a", "Ch 1 a"].map((name) => {
-        return getCourse(name, indexedCourses)
-      }).map((course) => {
-        return { ...course!, enabled: true, locked: true };
-      })
+      ["Ma 1 a", "Ph 1 a", "Ch 1 a"]
+        .map((name) => {
+          return getCourse(name, indexedCourses);
+        })
+        .map((course) => {
+          return { ...course!, enabled: true, locked: true };
+        }),
     );
   };
 

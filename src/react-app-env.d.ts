@@ -53,4 +53,4 @@ interface Workspace {
   availableTimes: AvailableTimes;
 }
 
-type CourseIndex = Record<string, CourseData>
+type CourseIndex = Record<string, CourseData>;
