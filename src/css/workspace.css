@@ -134,13 +134,8 @@ li {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+  /* position: relative; */
   /* top: -12px; */
-  width: 100%;
-}
-
-.workspace-entry-buttons-collapsed {
-  @apply flex grow-0 justify-end
 }
 
 .workspace-entry-toggle .react-toggle-track {

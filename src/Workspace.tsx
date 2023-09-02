@@ -145,7 +145,8 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
   const state = useContext(AppState);
 
   const [ expanded, setExpanded ] = useState(true);
-  const [ animParent, _ ] = useAutoAnimate();
+  const [ animTitleText, _ ] = useAutoAnimate();
+  const [ animEntryTools, __ ] = useAutoAnimate();
 
   let className = "workspace-entry";
   className += course.locked
@@ -168,15 +169,15 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
             {...provided.draggableProps}
             {...provided.dragHandleProps}
           >
-          <div className={`relative flex w-full justify-between`} ref={animParent} >
-            {expanded ? <div /> : <></>}
-            <div className="flex left-0 grow flex-initial" >
+          <div className={`relative w-full whitespace-nowrap`} ref={animEntryTools} >
+            <div className="left-0 w-min inline-block" >
               <IconButton  onClick={() => { setExpanded(!expanded); }}>
                 { expanded ? <UnfoldLess /> : <UnfoldMore /> }
               </IconButton>
-              { expanded ? <></> : <div className="font-bold flex items-center overflow-clip w-0 flex-grow whitespace-nowrap">{course.courseData.number}: {course.courseData.name}</div> }
             </div>
-            <div className={`workspace-entry-buttons${expanded ? '' : '-collapsed'} right-0`} >
+            { expanded ? <></> : <div className="font-bold inline-block max-w-[calc(100%-11rem)] items-center overflow-clip w-auto whitespace-nowrap">{course.courseData.number}: {course.courseData.name}</div> }
+            <div className={`${expanded ? 'w-[calc(100%-2.5rem)]' : 'w-min'} inline-block top-auto bottom-0 right-0 left-auto`} >
+              <div className="workspace-entry-buttons">
 
               <Switch
                 color="warning"
@@ -207,6 +208,7 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
               >
                 <Delete />
               </IconButton>
+            </div>
             </div>
           </div>
           <Collapse in={expanded}>
