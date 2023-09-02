@@ -141,6 +141,10 @@ li {
   width: 100%;
 }
 
+.workspace-entry-buttons-collapsed {
+  @apply flex grow-0 justify-end
+}
+
 .workspace-entry-toggle .react-toggle-track {
   border-radius: 20px;
 }

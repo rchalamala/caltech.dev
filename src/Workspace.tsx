@@ -14,7 +14,9 @@ import { motion } from "framer-motion";
 
 import "react-toggle/style.css";
 import "./css/workspace.css";
-import { IconButton, Switch } from "@mui/material";
+import { Collapse, IconButton, Switch } from "@mui/material";
+import { UnfoldLess, UnfoldMore } from "@mui/icons-material";
+import { useAutoAnimate } from "@formkit/auto-animate/react";
 
 /** Fetches courses */
 function getCourse(
@@ -142,6 +144,9 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
 
   const state = useContext(AppState);
 
+  const [ expanded, setExpanded ] = useState(true);
+  const [ animParent, _ ] = useAutoAnimate();
+
   let className = "workspace-entry";
   className += course.locked
     ? " workspace-entry-locked"
@@ -163,7 +168,16 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
             {...provided.draggableProps}
             {...provided.dragHandleProps}
           >
-            <div className="workspace-entry-buttons">
+          <div className={`relative flex w-full justify-between`} ref={animParent} >
+            {expanded ? <div /> : <></>}
+            <div className="flex left-0 grow flex-initial" >
+              <IconButton  onClick={() => { setExpanded(!expanded); }}>
+                { expanded ? <UnfoldLess /> : <UnfoldMore /> }
+              </IconButton>
+              { expanded ? <></> : <div className="font-bold flex items-center overflow-clip w-0 flex-grow whitespace-nowrap">{course.courseData.number}: {course.courseData.name}</div> }
+            </div>
+            <div className={`workspace-entry-buttons${expanded ? '' : '-collapsed'} right-0`} >
+
               <Switch
                 color="warning"
                 checked={course.enabled}
@@ -194,6 +208,8 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
                 <Delete />
               </IconButton>
             </div>
+          </div>
+          <Collapse in={expanded}>
             <div className="workspace-entry-content">
               <div className="workspace-entry-info">
                 <p>
@@ -222,7 +238,9 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
                 <SectionDropdown course={course} />
               </div>
             </div>
-          </div>
+          </Collapse>
+        </div>
+
         )}
       </Draggable>
       <Modal isOpen={infoModalOpen} onClose={() => setInfoModalOpen(false)}>
