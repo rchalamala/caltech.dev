@@ -106,13 +106,11 @@ li {
 .workspace-entry {
   display: flex;
   flex-direction: column;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 16px;
   align-items: center;
   border: 1px solid lightgrey;
   border-radius: 4px;
   margin-bottom: 2em;
+  @apply p-2;
 }
 
 .workspace-entry-enabled {
@@ -160,6 +158,7 @@ li {
   column-gap: 1.5em;
   align-items: center;
   width: 100%;
+  @apply p-2 pt-0;
 }
 
 .workspace-entry-info > p {
