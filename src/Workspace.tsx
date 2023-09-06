@@ -145,8 +145,7 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
   const state = useContext(AppState);
 
   const [ expanded, setExpanded ] = useState(true);
-  const [ animTitleText, _ ] = useAutoAnimate();
-  const [ animEntryTools, __ ] = useAutoAnimate();
+  const [ collapseAnimation, __ ] = useAutoAnimate();
 
   let className = "workspace-entry";
   className += course.locked
@@ -169,7 +168,7 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
             {...provided.draggableProps}
             {...provided.dragHandleProps}
           >
-          <div className={`relative w-full whitespace-nowrap`} ref={animEntryTools} >
+          <div className={`relative w-full whitespace-nowrap`} ref={collapseAnimation} >
             <div className="left-0 w-min align-middle inline-block" >
               <IconButton  onClick={() => { setExpanded(!expanded); }}>
                 { expanded ? <UnfoldLess /> : <UnfoldMore /> }
