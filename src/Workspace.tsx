@@ -175,7 +175,7 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
                 { expanded ? <UnfoldLess /> : <UnfoldMore /> }
               </IconButton>
             </div>
-            { expanded ? <></> : <div className="align-middle inline-block max-w-[calc(100%-11rem)] items-center overflow-clip w-auto whitespace-nowrap">{course.courseData.number}: {course.courseData.name}</div> }
+            { expanded ? <></> : <div className="align-middle inline-block max-w-[calc(100%-11rem)] items-center overflow-clip w-auto whitespace-nowrap"><span className="font-bold">{course.courseData.number}</span> {course.courseData.name}</div> }
             <div className={`${expanded ? 'w-[calc(100%-2.5rem)]' : 'w-min'} inline-block top-auto bottom-0 right-0 left-auto align-middle`} >
               <div className="workspace-entry-buttons">
 
