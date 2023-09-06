@@ -145,7 +145,7 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
   const state = useContext(AppState);
 
   const [ expanded, setExpanded ] = useState(true);
-  const [ collapseAnimation, __ ] = useAutoAnimate();
+  const [ animEntryTools, __ ] = useAutoAnimate();
 
   let className = "workspace-entry";
   className += course.locked
@@ -168,13 +168,13 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
             {...provided.draggableProps}
             {...provided.dragHandleProps}
           >
-          <div className={`relative w-full whitespace-nowrap`} ref={collapseAnimation} >
+          <div className={`relative w-full whitespace-nowrap`} ref={animEntryTools} >
             <div className="left-0 w-min align-middle inline-block" >
               <IconButton  onClick={() => { setExpanded(!expanded); }}>
                 { expanded ? <UnfoldLess /> : <UnfoldMore /> }
               </IconButton>
             </div>
-            { expanded ? <></> : <div className="align-middle inline-block max-w-[calc(100%-11rem)] items-center overflow-clip w-auto whitespace-nowrap"><span className="font-bold">{course.courseData.number}</span> {course.courseData.name}</div> }
+            { expanded ? <></> : <div className="align-middle inline-block max-w-[calc(100%-11rem)] items-center overflow-clip w-full whitespace-nowrap"><span className="font-bold">{course.courseData.number}</span> {course.courseData.name}</div> }
             <div className={`${expanded ? 'w-[calc(100%-2.5rem)]' : 'w-min'} inline-block top-auto bottom-0 right-0 left-auto align-middle`} >
               <div className="workspace-entry-buttons">
 
@@ -210,7 +210,7 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
             </div>
             </div>
           </div>
-          <Collapse in={expanded}>
+          <Collapse in={expanded} className="w-full">
             <div className="workspace-entry-content">
               <div className="workspace-entry-info">
                 <p>
