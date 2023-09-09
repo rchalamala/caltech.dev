@@ -5,6 +5,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
+    "@formkit/auto-animate": "^0.7.0",
     "@mui/icons-material": "^5.10.3",
     "@mui/material": "^5.10.4",
     "@vercel/analytics": "^1.0.1",
