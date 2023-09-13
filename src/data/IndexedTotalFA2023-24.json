@@ -90,7 +90,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Staff",
+        "instructor": "Campagnola, S",
         "locations": "133 GUG",
         "number": 1,
         "times": "TR 14:30 - 15:55"
@@ -468,7 +468,7 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Dabiri, J",
+        "instructor": "Meiron, D",
         "locations": "133 GUG",
         "number": 1,
         "times": "F 15:00 - 15:55"
@@ -490,18 +490,39 @@
       {
         "grades": "",
         "instructor": "Pellegrino, S",
-        "locations": "",
+        "locations": "384 FIR",
         "number": 1,
-        "times": "A\nA"
+        "times": "OM,M 14:00 - 14:55"
       }
     ],
-    "comment": "",
+    "comment": " OM will be held on Monday, 10/2/23",
     "units": [3, 0, 6],
     "description": "This course examines the links between form, geometric shape, and structural performance. It deals with different ways of breaking up a continuum, and how this affects global structural properties; structural concepts and preliminary design methods that are used in tension structures and deployable structures. Geometric foundations, polyhedra and tessellations, surfaces; space frames, examples of space frames, stiffness and structural efficiency of frames with different repeating units; sandwich plates; cable and membrane structures, form-finding, wrinkle-free pneumatic domes, balloons, tension-stabilized struts, tensegrity domes; deployable and adaptive structures, coiled rods and their applications, flexible shells, membranes, structural mechanisms, actuators, concepts for adaptive trusses and manipulators. Not offered 2022-23.",
     "prerequisites": "",
     "rating": "4.71 +/- 0.61",
     "true_units": "4",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80425&department_id=120&offering_id=87331&track_id=87331-Default"
+  },
+  "91570938": {
+    "id": 91570938,
+    "name": "Computational Fluid Dynamics",
+    "number": "Ae/ACM/ME 232 a",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Meiron, D",
+        "locations": "232 GUG",
+        "number": 1,
+        "times": "MWF 11:00 - 11:55"
+      }
+    ],
+    "comment": "",
+    "units": [3, 0, 6],
+    "description": "Development and analysis of algorithms used in the solution of fluid mechanics problems. Numerical analysis of discretization schemes for partial differential equations including interpolation, integration, spatial discretization, systems of ordinary differential equations; stability, accuracy, aliasing, Gibbs and Runge phenomena, numerical dissipation and dispersion; boundary conditions. Survey of finite difference, finite element, finite volume and spectral approximations for the numerical solution of the incompressible and compressible Euler and Navier-Stokes equations, including shock-capturing methods.",
+    "prerequisites": "Ae/APh/CE/ME 101 abc or equivalent; ACM 100 ab or equivalent; ACM 104.",
+    "rating": "4.37 +/- 1.01",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=48&term_id=550&division_id=80425&department_id=120&offering_id=89411&track_id=89411-Default"
   },
   "492367595": {
     "id": 492367595,
@@ -698,7 +719,7 @@
         "times": "TR 09:00 - 10:25"
       }
     ],
-    "comment": " pending faculty board approval",
+    "comment": "",
     "units": [3, 0, 9],
     "description": "Covers the basic algebraic, geometric, and topological properties of normed linear spaces, inner-product spaces, and linear maps. Emphasis is placed both on rigorous mathematical development and on applications to control theory, data analysis and partial differential equations.",
     "prerequisites": "ACM/IDS 104 or equivalent, Ma 1 b or equivalent.",
@@ -740,7 +761,7 @@
         "times": "MW 14:00 - 15:55"
       }
     ],
-    "comment": " course title and unit breakdown pending faculty board approval",
+    "comment": "",
     "units": [3, 0, 9],
     "description": "This course offers a rigorous introduction to probability and stochastic processes. Emphasis is placed on the interaction between inequalities and limit theorems, as well as contemporary applications in computing and mathematical sciences. Topics include probability measures, random variables and expectation, independence, concentration inequalities, distances between probability measures, modes of convergence, laws of large numbers and central limit theorem, Gaussian and Poisson approximation, conditional expectation and conditional distributions, filtrations, and discrete-time martingales.",
     "prerequisites": "ACM/IDS 104, ACM/EE/IDS 116 or instructor's permission.",
@@ -804,6 +825,13 @@
       },
       {
         "grades": "PASS-FAIL",
+        "instructor": "Hoffmann, F",
+        "locations": "",
+        "number": 6,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
         "instructor": "Bruno, O",
         "locations": "",
         "number": 7,
@@ -835,17 +863,17 @@
         "instructor": "Lanthaler, S",
         "locations": "104 ANB",
         "number": 1,
-        "times": "TR 14:30 - 16:25"
+        "times": "TR 14:30 - 15:55"
       },
       {
         "grades": "",
-        "instructor": "Staff",
+        "instructor": "Babecki, C",
         "locations": "314 ANB",
         "number": 2,
         "times": "MWF 11:00 - 11:55"
       }
     ],
-    "comment": " Sec 1: Approximation Theory and Neural Networks (3-0-9) // Sec 2: Spectral Graph Theory, units TBD",
+    "comment": " Sec 1: Approximation Theory and Neural Networks (3-0-9) // Sec 2: Spectral Graph Theory (3-0-9)",
     "units": [0, 0, 0],
     "description": "Advanced topics in applied and computational mathematics that will vary according to student and instructor interest. May be repeated for credit.",
     "prerequisites": "",
@@ -919,6 +947,13 @@
         "instructor": "Tropp, J",
         "locations": "",
         "number": 10,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Hoffmann, F",
+        "locations": "",
+        "number": 11,
         "times": "A\nA"
       },
       {
@@ -1349,7 +1384,7 @@
         "times": "TR 14:30 - 15:55"
       }
     ],
-    "comment": " pending faculty board approval",
+    "comment": "",
     "units": [3, 0, 6],
     "description": "Thermodynamics and statistical mechanics, with emphasis on gases, liquids, materials, and condensed matter. Effects of heat, pressure, and fields on states of matter are presented with both classical thermodynamics and with statistical mechanics. Conditions of equilibrium in systems with multiple degrees of freedom. Applications include ordered states of matter and phase transitions. The three terms cover, approximately, thermodynamics, statistical mechanics, and phase transitions.",
     "prerequisites": "APh 17 abc or equivalent.",
@@ -1367,7 +1402,7 @@
         "instructor": "Ghaffari, A",
         "locations": "104 WAT",
         "number": 1,
-        "times": "M 19:00 - 19:55"
+        "times": "OM,W 16:00 - 16:55"
       }
     ],
     "comment": "",
@@ -1475,7 +1510,7 @@
         "times": "TR 13:00 - 14:25"
       }
     ],
-    "comment": " course title update pending faculty board approval",
+    "comment": "",
     "units": [3, 0, 6],
     "description": "Electromagnetic fields in vacuum: microscopic Maxwell's equations. Monochromatic fields: Rayleigh diffraction formulae, Huyghens principle, Rayleigh-Sommerfeld formula. The Fresnel-Fraunhofer approximation. Electromagnetic field in the presence of matter, spatial averages, macroscopic Maxwell equations. Helmholtz's equation. Group-velocity and group-velocity dispersion. Confined propagation, optical resonators, optical waveguides. Single mode and multimode waveguides. Nonlinear optics. Nonlinear propagation. Second harmonic generation. Parametric amplification.",
     "prerequisites": "",
@@ -1851,6 +1886,20 @@
         "locations": "",
         "number": 47,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Burdick, J",
+        "locations": "",
+        "number": 48,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Golwala, S",
+        "locations": "",
+        "number": 49,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -2054,6 +2103,27 @@
         "locations": "",
         "number": 31,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Falson, J",
+        "locations": "",
+        "number": 32,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Burdick, J",
+        "locations": "",
+        "number": 33,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Endres, M",
+        "locations": "",
+        "number": 34,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -2193,6 +2263,13 @@
         "instructor": "Kasliwal, M",
         "locations": "",
         "number": 9,
+        "times": "A\nA"
+      },
+      {
+        "grades": "",
+        "instructor": "El-Badry, K",
+        "locations": "",
+        "number": 10,
         "times": "A\nA"
       },
       {
@@ -2593,6 +2670,13 @@
         "locations": "",
         "number": 25,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "El-Badry, K",
+        "locations": "",
+        "number": 26,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -2669,6 +2753,13 @@
         "instructor": "Kasliwal, M",
         "locations": "",
         "number": 9,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "El-Badry, K",
+        "locations": "",
+        "number": 10,
         "times": "A\nA"
       },
       {
@@ -2981,13 +3072,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Wei, L",
-        "locations": "151 CRL",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "M 13:00 - 14:55"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " class cancelled",
     "units": [3, 0, 6],
     "description": "This course will cover basic optics and introduce modern optical spectroscopy principles and microscopy techniques. Topics include molecular spectroscopy, linear and nonlinear florescence microscopy, Raman spectroscopy, coherent microscopy, single-molecule spectroscopy, and super-resolution imaging.",
     "prerequisites": "Ch 21 abc and Ch 125 recommended.",
@@ -3531,6 +3622,13 @@
         "locations": "",
         "number": 69,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Nelson, H",
+        "locations": "",
+        "number": 70,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -3549,9 +3647,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Bois, J",
-        "locations": "100 CNRB",
+        "locations": "119 KRK",
         "number": 1,
-        "times": "F 09:00 - 09:55"
+        "times": "F 12:00 - 12:55"
       }
     ],
     "comment": "",
@@ -3943,21 +4041,7 @@
         "instructor": "Bois, J",
         "locations": "130 CNRB\n100 CNRB",
         "number": 2,
-        "times": "M 13:00 - 15:55\nW 10:00 - 10:55"
-      },
-      {
-        "grades": "",
-        "instructor": "Bois, J",
-        "locations": "130 CNRB\n100 CNRB",
-        "number": 3,
         "times": "M 09:00 - 11:55\nW 09:00 - 09:55"
-      },
-      {
-        "grades": "",
-        "instructor": "Bois, J",
-        "locations": "130 CNRB\n100 CNRB",
-        "number": 4,
-        "times": "M 09:00 - 11:55\nW 10:00 - 10:55"
       }
     ],
     "comment": "",
@@ -4426,6 +4510,13 @@
         "instructor": "Emami, A",
         "locations": "",
         "number": 57,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Wold, B",
+        "locations": "",
+        "number": 58,
         "times": "A\nA"
       }
     ],
@@ -4966,6 +5057,20 @@
         "locations": "Wilson, L",
         "number": 16,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Kennedy, M / Guttman, M",
+        "locations": "",
+        "number": 17,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Kennedy, M / Clemons, W",
+        "locations": "",
+        "number": 18,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -5011,7 +5116,7 @@
     "sections": [
       {
         "grades": "LETTER",
-        "instructor": "Clemons, W",
+        "instructor": "Clemons, W / Rees, D",
         "locations": "147 NYS\n147 NYS",
         "number": 1,
         "times": "MWF 11:00 - 11:55\nW 15:00 - 15:55"
@@ -5074,19 +5179,40 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Oka, Y",
-        "locations": "B101 BBB",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "T 09:00 - 10:55"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " class cancelled",
     "units": [2, 0, 4],
     "description": "An advanced course of lectures, readings, and student presentations focusing on neural basis of innate body functions such as appetite, sleep, temperature, and osmolality regulation. This course will also cover the gut-to-brain interactions focusing on homeostatic functions. These include genetics, neural manipulation, and viral tracing tools with particular emphasis on data interpretation and limitation of available neuroscience tools. Given in alternate years; offered 2022-23.",
     "prerequisites": "Graduate standing or NB/Bi/CNS 150, or equivalent.",
     "rating": "5.00 +/- 0.00",
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=48&term_id=550&division_id=80423&department_id=535&offering_id=91376&track_id=91376-Default"
+  },
+  "468153299": {
+    "id": 468153299,
+    "name": "Principles of Neuroscience",
+    "number": "NB/Bi/CNS 154",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Staff",
+        "locations": "",
+        "number": 1,
+        "times": "A\nA"
+      }
+    ],
+    "comment": " class cancelled - to be offered in the spring",
+    "units": [3, 0, 6],
+    "description": "This course aims to distill the fundamental tenets of brain science, unlike the voluminous textbook with a similar title. What are the essential facts and ways of understanding in this discipline? How does neuroscience connect to other parts of life science, physics, and mathematics? Lectures and guided reading will touch on a broad range of phenomena from evolution, development, biophysics, computation, behavior, and psychology. Students will benefit from prior exposure to at least some of these domains. Given in alternate years; not offered 2022-23.",
+    "prerequisites": "NB/Bi/CNS 150 or equivalent.",
+    "rating": "4.30 +/- 1.10",
+    "true_units": "4",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=41&term_id=526&division_id=80423&department_id=153&offering_id=82729&track_id=82729-Default"
   },
   "470324765": {
     "id": 470324765,
@@ -5095,10 +5221,10 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Staff",
+        "instructor": "Hong, E / Wagenaar, D",
         "locations": "B160 CHR",
         "number": 1,
-        "times": "R 13:00 - 16:25"
+        "times": "M 13:00 - 16:25"
       }
     ],
     "comment": " maximum enrollment: 15 students",
@@ -5117,9 +5243,9 @@
       {
         "grades": "",
         "instructor": "Meister, M / Rutishauser, U",
-        "locations": "",
+        "locations": "B101 BBB",
         "number": 1,
-        "times": "TR 13:00 - 14:25\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -5180,12 +5306,12 @@
       {
         "grades": "LETTER",
         "instructor": "Allman, J",
-        "locations": "",
+        "locations": "BBE Tent\nCaltech Hall",
         "number": 1,
-        "times": "A\nA"
+        "times": "WF 14:00 - 15:55"
       }
     ],
-    "comment": "",
+    "comment": " class will meet in KRK B136 in cases of inclement weather",
     "units": [2, 0, 4],
     "description": "A course of lectures, readings, and discussions focused on the genetic, physiological, and ecological bases of behavior in mammals. A basic knowledge of neuroanatomy and neurophysiology is desirable. Given in alternate years; not offered 2022-23.",
     "prerequisites": "",
@@ -5224,7 +5350,7 @@
         "instructor": "Voorhees, R",
         "locations": "152 BRN",
         "number": 1,
-        "times": "TR 14:30 - 15:55"
+        "times": "TR 14:00 - 15:25"
       }
     ],
     "comment": "",
@@ -5248,7 +5374,7 @@
         "times": "M 14:00 - 15:55"
       }
     ],
-    "comment": "",
+    "comment": " class will meet in 100 Broad on October 23rd",
     "units": [2, 0, 2],
     "description": "This lecture and discussion course covers relevant aspects of the responsible conduct of biomedical and biological research. Topics include guidelines and regulations, ethical and moral issues, research misconduct, data management and analysis, research with animal or human subjects, publication, conflicts of interest, mentoring, and professional advancement. Undergraduate students with junior and senior standing may enroll. Graded pass/fail.",
     "prerequisites": "",
@@ -5264,9 +5390,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Mazmanian, S / McFall-",
-        "locations": "Ngai, M / Parker, J",
+        "locations": "240A CNRB\nNgai, M / Parker, J",
         "number": 1,
-        "times": "A\nA"
+        "times": "T 13:00 - 15:25"
       }
     ],
     "comment": " 3 units (2-0-1) // maximum enrollment: 18 students",
@@ -5785,6 +5911,34 @@
         "locations": "",
         "number": 80,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Demirer, G",
+        "locations": "",
+        "number": 81,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Glover, D",
+        "locations": "",
+        "number": 82,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "McFall-Ngai, M",
+        "locations": "",
+        "number": 83,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Karthikeyan, S",
+        "locations": "",
+        "number": 84,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -5829,7 +5983,7 @@
         "times": "TR 10:30 - 11:55\nA"
       }
     ],
-    "comment": " BEM102 does not count toward the 108 unit HSS requirement // maximum enrollment: 20 students",
+    "comment": " BEM102 does not count toward the 108 unit HSS requirement // maximum enrollment: 31 students",
     "units": [3, 0, 6],
     "description": "This course combines accounting and finance in a dynamic, user-oriented approach. The goal is to enable students to understand what financial statements are (sources of information about a company), what they are not (facts devoid of interpretation or management influence), and how to critically understand and analyze them. The course will utilize actual SEC filings for several companies, across a variety of industries, through which the students will be exposed to important accounting concepts.",
     "prerequisites": "",
@@ -5886,7 +6040,7 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Vicic, M",
+        "instructor": "Shapiro, M",
         "locations": "102 SPL",
         "number": 1,
         "times": "T 12:00 - 12:55"
@@ -5908,7 +6062,7 @@
       {
         "grades": "",
         "instructor": "Flagan, R",
-        "locations": "106 SPL",
+        "locations": "102 SPL",
         "number": 1,
         "times": "MWF 14:00 - 14:55"
       }
@@ -6184,10 +6338,38 @@
         "locations": "",
         "number": 16,
         "times": "A\nA"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "See, K",
+        "locations": "",
+        "number": 17,
+        "times": "A\nA"
       }
     ],
     "comment": "",
     "units": [0, 0, 0],
+    "description": "A research project carried out under the mentorship of an approved faculty member. Before the beginning of the first term of the thesis, students must submit a proposal - with project details and significant design component clearly defined - for review and approval by the thesis mentor and chemical engineering senior thesis coordinator (Option Rep). In addition, students must submit the following to the thesis mentor and chemical engineering senior thesis coordinator: a midterm progress report in each term; end-of-term progress reports at the end of the first two terms; and a thesis draft in the third term. A grade will not be assigned prior to completion of the thesis, which normally takes three terms. A P grade will be given for the first two terms and then changed to the appropriate letter grade at the end of the course.",
+    "prerequisites": "",
+    "rating": "",
+    "true_units": "",
+    "link": ""
+  },
+  "232408569": {
+    "id": 232408569,
+    "name": "Undergraduate Thesis",
+    "number": "ChE 90 b",
+    "sections": [
+      {
+        "grades": "LETTER",
+        "instructor": "Shapiro, M",
+        "locations": "",
+        "number": 1,
+        "times": "A\nA"
+      }
+    ],
+    "comment": "",
+    "units": [0, 4, 5],
     "description": "A research project carried out under the mentorship of an approved faculty member. Before the beginning of the first term of the thesis, students must submit a proposal - with project details and significant design component clearly defined - for review and approval by the thesis mentor and chemical engineering senior thesis coordinator (Option Rep). In addition, students must submit the following to the thesis mentor and chemical engineering senior thesis coordinator: a midterm progress report in each term; end-of-term progress reports at the end of the first two terms; and a thesis draft in the third term. A grade will not be assigned prior to completion of the thesis, which normally takes three terms. A P grade will be given for the first two terms and then changed to the appropriate letter grade at the end of the course.",
     "prerequisites": "",
     "rating": "",
@@ -6200,7 +6382,7 @@
     "number": "ChE 90 c",
     "sections": [
       {
-        "grades": "",
+        "grades": "LETTER",
         "instructor": "Tirrell, D",
         "locations": "",
         "number": 1,
@@ -6590,6 +6772,27 @@
         "locations": "",
         "number": 48,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Demirer, G",
+        "locations": "",
+        "number": 49,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Schneider, T",
+        "locations": "",
+        "number": 50,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Peters, J",
+        "locations": "",
+        "number": 51,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -6608,86 +6811,86 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "See, K",
-        "locations": "Lecture Hall\nBAX",
+        "locations": "Lecture Hall\nBAX\n151 CRL",
         "number": 1,
-        "times": "TR 11:00 - 11:55\nA\nA"
+        "times": "TR 11:00 - 11:55\nM 11:00 - 11:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "See, K",
-        "locations": "Lecture Hall\nBAX",
+        "locations": "Lecture Hall\nBAX\n153 NYS",
         "number": 2,
-        "times": "TR 11:00 - 11:55\nA\nA"
+        "times": "TR 11:00 - 11:55\nM 11:00 - 11:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "See, K",
-        "locations": "Lecture Hall\nBAX",
+        "locations": "Lecture Hall\nBAX\nB122 GCL",
         "number": 3,
-        "times": "TR 11:00 - 11:55\nA\nA"
+        "times": "TR 11:00 - 11:55\nM 11:00 - 11:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "See, K",
-        "locations": "Lecture Hall\nBAX",
+        "locations": "Lecture Hall\nBAX\n102 SPL",
         "number": 4,
-        "times": "TR 11:00 - 11:55\nA\nA"
+        "times": "TR 11:00 - 11:55\nM 11:00 - 11:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "See, K",
-        "locations": "Lecture Hall\nBAX",
+        "locations": "Lecture Hall\nBAX\n106 SPL",
         "number": 5,
-        "times": "TR 11:00 - 11:55\nA\nA"
+        "times": "TR 11:00 - 11:55\nM 11:00 - 11:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "See, K",
-        "locations": "Lecture Hall\nBAX",
+        "locations": "Lecture Hall\nBAX\n151 CRL",
         "number": 6,
-        "times": "TR 11:00 - 11:55\nA\nA"
+        "times": "TR 11:00 - 11:55\nR 14:00 - 14:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "See, K",
-        "locations": "Lecture Hall\nBAX",
+        "locations": "Lecture Hall\nBAX\n153 NYS",
         "number": 7,
-        "times": "TR 11:00 - 11:55\nA\nA"
+        "times": "TR 11:00 - 11:55\nR 14:00 - 14:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "See, K",
-        "locations": "Lecture Hall\nBAX",
+        "locations": "Lecture Hall\nBAX\n151 CRL",
         "number": 8,
-        "times": "TR 11:00 - 11:55\nA\nA"
+        "times": "TR 11:00 - 11:55\nR 15:00 - 15:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "See, K",
-        "locations": "Lecture Hall\nBAX",
+        "locations": "Lecture Hall\nBAX\n147 NYS",
         "number": 9,
-        "times": "TR 11:00 - 11:55\nA\nA"
+        "times": "TR 11:00 - 11:55\nR 15:00 - 15:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "See, K",
-        "locations": "Lecture Hall\nBAX",
+        "locations": "Lecture Hall\nBAX\n151 CRL",
         "number": 10,
-        "times": "TR 11:00 - 11:55\nA\nA"
+        "times": "TR 11:00 - 11:55\nW 09:00 - 09:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "See, K",
-        "locations": "Lecture Hall\nBAX",
+        "locations": "Lecture Hall\nBAX\n151 CRL",
         "number": 11,
-        "times": "TR 11:00 - 11:55\nA\nA"
+        "times": "TR 11:00 - 11:55\nW 14:00 - 14:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "See, K",
-        "locations": "Lecture Hall\nBAX",
+        "locations": "Lecture Hall\nBAX\n151 CRL",
         "number": 12,
-        "times": "TR 11:00 - 11:55\nA\nA"
+        "times": "TR 11:00 - 11:55\nW 15:00 - 15:55"
       }
     ],
     "comment": "",
@@ -6888,28 +7091,28 @@
       {
         "grades": "",
         "instructor": "Robb, M",
-        "locations": "153 NYS\n151 CRL",
+        "locations": "153 NYS\n101 SCH",
         "number": 1,
         "times": "MWF 09:00 - 09:55\nW 15:00 - 15:55"
       },
       {
         "grades": "",
         "instructor": "Robb, M",
-        "locations": "153 NYS\n151 CRL",
+        "locations": "153 NYS\n153 NYS",
         "number": 2,
         "times": "MWF 09:00 - 09:55\nW 20:00 - 20:55"
       },
       {
         "grades": "",
         "instructor": "Robb, M",
-        "locations": "153 NYS\n151 CRL",
+        "locations": "153 NYS\n153 NYS",
         "number": 3,
         "times": "MWF 09:00 - 09:55\nR 15:00 - 15:55"
       },
       {
         "grades": "",
         "instructor": "Robb, M",
-        "locations": "153 NYS\n151 CRL",
+        "locations": "153 NYS\n153 NYS",
         "number": 4,
         "times": "MWF 09:00 - 09:55\nR 20:00 - 20:55"
       }
@@ -7101,6 +7304,13 @@
         "locations": "",
         "number": 27,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Chandrasekaran, V",
+        "locations": "",
+        "number": 28,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -7160,6 +7370,13 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
+        "instructor": "Fu, G / Okumura, M",
+        "locations": "",
+        "number": 1,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
         "instructor": "Hoelz, A / Okumura, M",
         "locations": "",
         "number": 2,
@@ -7210,9 +7427,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Dougherty, D / Okumura,",
-        "locations": "M",
+        "locations": "M\n1\nFu, G",
         "number": 9,
-        "times": "A\nA"
+        "times": "A\nA\nA\nA"
       },
       {
         "grades": "PASS-FAIL",
@@ -7450,6 +7667,13 @@
         "instructor": "Goddard, W",
         "locations": "",
         "number": 2,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Eiler, J",
+        "locations": "",
+        "number": 3,
         "times": "A\nA"
       },
       {
@@ -7864,6 +8088,13 @@
         "locations": "",
         "number": 54,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Nelson, H",
+        "locations": "",
+        "number": 55,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -7996,6 +8227,13 @@
         "instructor": "Blanquart, G",
         "locations": "",
         "number": 17,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Demirer, G",
+        "locations": "",
+        "number": 18,
         "times": "A\nA"
       },
       {
@@ -9019,6 +9257,20 @@
         "locations": "",
         "number": 33,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Van Valen, D",
+        "locations": "",
+        "number": 34,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Rutishauser, U",
+        "locations": "",
+        "number": 35,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -9036,13 +9288,13 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Adolphs, R",
+        "instructor": "Staff",
         "locations": "",
         "number": 1,
-        "times": "M 19:00 - 20:25\nA"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " class cancelled, will be offered winter term",
     "units": [1.5, 0, 1.5],
     "description": "The goal of this course is to introduce graduate students to current research questions in cognitive sciences, political science, and economics. Select faculty will present their research background, methods, and a sampling of current studies. Background readings and pdf of presentation will be provided.",
     "prerequisites": "",
@@ -9157,25 +9409,11 @@
         "grades": "",
         "instructor": "Yu, T",
         "locations": "310 LINDE\n187 LINDE",
-        "number": 2,
-        "times": "MWF 13:00 - 13:55\nR 10:00 - 10:55"
-      },
-      {
-        "grades": "",
-        "instructor": "Yu, T",
-        "locations": "310 LINDE\n187 LINDE",
         "number": 3,
         "times": "MWF 13:00 - 13:55\nR 13:00 - 13:55"
-      },
-      {
-        "grades": "",
-        "instructor": "Yu, T",
-        "locations": "310 LINDE\n187 LINDE",
-        "number": 4,
-        "times": "MWF 13:00 - 13:55\nR 19:00 - 19:55"
       }
     ],
-    "comment": " taught concurrently with Ma/CS 106a",
+    "comment": " taught concurrently with Ma/CS 106a / sections 2 and 4 cancelled",
     "units": [3, 0, 6],
     "description": "First term: a survey emphasizing graph theory, algorithms, and applications of algebraic structures. Graphs: paths, trees, circuits, breadth-first and depth-first searches, colorings, matchings. Enumeration techniques; formal power series; combinatorial interpretations. Topics from coding and cryptography, including Hamming codes and RSA. Second term: directed graphs; networks; combinatorial optimization; linear programming. Permutation groups; counting nonisomorphic structures. Topics from extremal graph and set theory, and partially ordered sets. Third term: elements of computability theory and computational complexity. Discussion of the P=NP problem, syntax and semantics of propositional and first-order logic. Introduction to the G\u00f6del completeness and incompleteness theorems.",
     "prerequisites": "for Ma/CS 6 c, Ma/CS 6 a or Ma 5 a or instructor's permission.",
@@ -9259,7 +9497,7 @@
         "times": "MWF 13:00 - 13:55"
       }
     ],
-    "comment": " pending faculty board approval",
+    "comment": "",
     "units": [3, 0, 6],
     "description": "",
     "prerequisites": "",
@@ -9908,6 +10146,13 @@
         "locations": "",
         "number": 20,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Reisman, S",
+        "locations": "",
+        "number": 21,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -9997,25 +10242,11 @@
         "grades": "",
         "instructor": "Yu, T",
         "locations": "310 LINDE\n187 LINDE",
-        "number": 2,
-        "times": "MWF 13:00 - 13:55\nR 10:00 - 10:55"
-      },
-      {
-        "grades": "",
-        "instructor": "Yu, T",
-        "locations": "310 LINDE\n187 LINDE",
         "number": 3,
         "times": "MWF 13:00 - 13:55\nR 13:00 - 13:55"
-      },
-      {
-        "grades": "",
-        "instructor": "Yu, T",
-        "locations": "310 LINDE\n187 LINDE",
-        "number": 4,
-        "times": "MWF 13:00 - 13:55\nR 19:00 - 19:55"
       }
     ],
-    "comment": " taught concurrently with Ma/CS 6a",
+    "comment": " taught concurrently with Ma/CS 6a // sectoins 2 and 4 cancelled",
     "units": [3, 0, 6],
     "description": "First term: a survey emphasizing graph theory, algorithms, and applications of algebraic structures. Graphs: paths, trees, circuits, breadth-first and depth-first searches, colorings, matchings. Enumeration techniques; formal power series; combinatorial interpretations. Topics from coding and cryptography, including Hamming codes and RSA. Second term: directed graphs; networks; combinatorial optimization; linear programming. Permutation groups; counting nonisomorphic structures. Topics from extremal graph and set theory, and partially ordered sets. Third term: elements of computability theory and computational complexity. Discussion of the P=NP problem, syntax and semantics of propositional and first-order logic. Introduction to the G\u00f6del completeness and incompleteness theorems.",
     "prerequisites": "for Ma/CS 6 c, Ma/CS 6 a or Ma 5 a or instructor's permission.",
@@ -10141,7 +10372,7 @@
         "times": "MWF 10:00 - 10:55"
       }
     ],
-    "comment": "",
+    "comment": " Topic: Markov Chain Monte Carlo Algorithms",
     "units": [3, 0, 6],
     "description": "May be repeated for credit, with permission of the instructor. Students in this course will study an area of current interest in theoretical computer science. The lectures will cover relevant background material at an advanced level and present results from selected recent papers within that year's chosen theme. Students will be expected to read and present a research paper.",
     "prerequisites": "CS 21 and CS 38, or instructor's permission.",
@@ -10397,6 +10628,13 @@
         "instructor": "Schulman, L",
         "locations": "",
         "number": 19,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Gkioxari, G",
+        "locations": "",
+        "number": 20,
         "times": "A\nA"
       },
       {
@@ -10890,7 +11128,7 @@
         "times": "TR 10:30 - 11:55\nA"
       }
     ],
-    "comment": " maximum enrollment: 15 students",
+    "comment": "",
     "units": [3, 0, 6],
     "description": "In this course we will examine game theories that are explicitly meant to describe behavior of humans and other species. Prominent models are those with level-k hierarchies, quantal response equilibrium (QRE) and cursed equilibrium. Most of the data is experimental evidence from a wide variety of games. We will also learn about field evidence, mostly about mixed strategies and application of level-k hierarchies to firms' decisions. Data include biological measures such as response times, eye-tracking, fMRI and evidence from psychiatric disorders. Students are expected to replicate an existing experiment (individual students) or work in small teams to create and run a new experiment.",
     "prerequisites": "PS/Ec 172.",
@@ -10932,7 +11170,7 @@
         "times": "WF 14:30 - 15:55\nA"
       }
     ],
-    "comment": " maximum enrollment: 35 students",
+    "comment": " maximum enrollment: 60 students",
     "units": [3, 0, 6],
     "description": "The application of statistical techniques to the analysis of economic data.",
     "prerequisites": "Ma 3.",
@@ -11055,10 +11293,10 @@
         "instructor": "Kostina, V",
         "locations": "B280 MRE",
         "number": 1,
-        "times": "MW 10:00 - 11:55"
+        "times": "MW 13:00 - 14:55"
       }
     ],
-    "comment": " make-up classes held on Fridays 1-3pm in TBA",
+    "comment": "",
     "units": [4, 0, 8],
     "description": "Linear algebra and probability are fundamental to many areas of study in electrical engineering. This class provides the mathematical foundations of these topics with a view to their utility to electrical engineers. Topics include vector spaces, matrices and linear transformations, the singular value decomposition, elementary probability and random variables, common distributions that arise in electrical engineering, and data-fitting. Connections to signal processing, systems, communications, optimization, and machine learning are highlighted.",
     "prerequisites": "Ma 1 abc.",
@@ -11147,6 +11385,27 @@
         "locations": "",
         "number": 14,
         "times": "A\nA"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "Chandrasekaran, V",
+        "locations": "",
+        "number": 15,
+        "times": "A\nA"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "Low, S",
+        "locations": "",
+        "number": 16,
+        "times": "A\nA"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "Perona, P",
+        "locations": "",
+        "number": 17,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -11170,7 +11429,7 @@
         "times": "OM,W 19:00 - 19:55"
       }
     ],
-    "comment": " pending faculty board approval",
+    "comment": "",
     "units": [1, 8, 0],
     "description": "An opportunity to do advanced original projects in analog or digital electronics and electronic circuits. Selection of significant projects, the engineering approach, modern electronic techniques, demonstration and review of a finished product. DSP/microprocessor development support and analog/digital CAD facilities available.",
     "prerequisites": "EE 85 or EE 90; Recommended: EE/CS 10 ab, and EE/MedE 114 ab (may be taken concurrently). Open to seniors; others only with instructor's permission.",
@@ -11287,6 +11546,13 @@
         "locations": "",
         "number": 15,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Marandi, A",
+        "locations": "",
+        "number": 16,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -11352,7 +11618,7 @@
         "times": "TR 13:00 - 14:25"
       }
     ],
-    "comment": "",
+    "comment": " max enrollment: 93 students",
     "units": [3, 0, 6],
     "description": "An introduction to continuous and discrete time signals and systems with emphasis on digital signal processing systems. Study of the Fourier transform, Fourier series, z-transforms, and the fast Fourier transform as applied in electrical engineering. Sampling theorems for continuous to discrete-time conversion. Difference equations for digital signal processing systems, digital system realizations with block diagrams, analysis of transient and steady state responses, and connections to other areas in science and engineering.",
     "prerequisites": "Ma 1.",
@@ -11389,12 +11655,12 @@
       {
         "grades": "",
         "instructor": "Chandrasekaran, V",
-        "locations": "104 ANB",
+        "locations": "314 ANB",
         "number": 1,
         "times": "MWF 13:00 - 14:25"
       }
     ],
-    "comment": " pending faculty board approval",
+    "comment": "",
     "units": [3, 0, 6],
     "description": "The role of computation in the acquisition, representation, and processing of signals. The course develops methodology based on linear algebra and optimization, with an emphasis on the interplay between structure, algorithms, and accuracy in the design and analysis of the methods. Specific topics covered include deterministic and stochastic signal models, statistical signal processing, inverse problems, and regularization. Problems arising in contemporary applications in the sciences and engineering are discussed, although the focus is on the common abstractions and methodological frameworks that are employed in the solution of these problems. Not offered 2022-23.",
     "prerequisites": "EE 111, ACM/EE/IDS 116, ACM/IDS 104.",
@@ -11752,7 +12018,7 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Javier, R",
+        "instructor": "Staff",
         "locations": "",
         "number": 1,
         "times": "W 12:00 - 12:55\nA"
@@ -11773,10 +12039,10 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Hunt, M / Blank, A",
-        "locations": "121 ANB",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "F 12:00 - 12:55"
+        "times": "A\nA"
       },
       {
         "grades": "",
@@ -11784,15 +12050,43 @@
         "locations": "",
         "number": 2,
         "times": "A\nA"
+      },
+      {
+        "grades": "",
+        "instructor": "Dabiri, M",
+        "locations": "104 WAT",
+        "number": 3,
+        "times": "T 12:00 - 12:55"
       }
     ],
-    "comment": " Section 1: open to first-year students who participated the FSRI program during summer 2022 - 1 unit // Section 2: LATTICE, 6 units",
+    "comment": " Sec 1: cancelled // Sec 2: LATTICE, 6 units // Section 3: Designing Your Caltech Experience (2-1-0), open to freshman and sophomores from all options, max 24 students",
     "units": [0, 0, 0],
     "description": "Content may vary from year to year, at a level suitable for advanced undergraduate or graduate students. Topics will be chosen to meet the emerging needs of students.",
     "prerequisites": "",
     "rating": "4.57 +/- 0.87",
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=48&term_id=550&division_id=80425&department_id=275&offering_id=91678&track_id=91678-Section 1"
+  },
+  "903341326": {
+    "id": 903341326,
+    "name": "Scientific and Technology Entrepreneurship",
+    "number": "E/SEC 102",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Staff",
+        "locations": "135 GTL",
+        "number": 1,
+        "times": "TR 15:00 - 15:55"
+      }
+    ],
+    "comment": "",
+    "units": [3, 0, 6],
+    "description": "This course introduces students to the conceptual frameworks, the analytical approaches, the personal understanding and skills, and the actions required to launch a successful technology-based company. Specifically, it addresses the challenges of evaluating new technologies and original business ideas for commercialization, determining how best to implement those ideas in a startup venture, attracting the resources needed for a new venture (e.g., key people, corporate partners, and funding), organizing and operating a new enterprise, structuring and negotiating important business relationships, and leading early stage companies toward \"launch velocity\".",
+    "prerequisites": "",
+    "rating": "3.00 +/- 0.00",
+    "true_units": "5",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=275&offering_id=88969&track_id=88969-Default"
   },
   "565816994": {
     "id": 565816994,
@@ -11807,7 +12101,7 @@
         "times": "TR 13:00 - 14:25\nA"
       }
     ],
-    "comment": " pending faculty board approval // attendance at first class is required // maximum enrollment: 15 students // class closed to continuing students until term start",
+    "comment": " attendance at first class is required // maximum enrollment: 18 students // class closed to continuing students until term start",
     "units": [3, 0, 6],
     "description": "On January 30, 1649, the king of England, Charles I, was executed in front of his royal palace following nearly a decade of civil war. The killing of the king was the most traumatic of a series of political crises in England, from the divorce of Henry VIII to the Glorious Revolution, from fabricated 'popish' plots to conflicts over succession, from wars of religion to the emergence of political parties. In this course, we will study England's response to these moments of political trauma, asking questions and developing tools that might also equip us as we seek to understand and respond to similar crises in our own age. How did the death of a king change political structures and ideas about revolution, freedom, and toleration? What role did acts of public mourning and forgiveness play in healing the nation? How were these traumatic events imagined, remembered, and appropriated in literary texts, diaries, sermons, paintings, and monuments? As we study this age of revolution, we will read some of the most important works of English literature by writers such as Shakespeare and Spenser, Milton and Marvell, Hutchinson and Behn.",
     "prerequisites": "",
@@ -11828,7 +12122,7 @@
         "times": "TR 09:00 - 10:25\nA"
       }
     ],
-    "comment": " attendance at first class is required // maximum enrollment: 15 students // class closed to continuing students until term start",
+    "comment": " attendance at first class is required // maximum enrollment: 18 students // class closed to continuing students until term start",
     "units": [3, 0, 6],
     "description": "Dream narratives reveal as much about cultural beliefs and superstitions as they do about techniques of narration and interpretation. This course investigates key developments in the literature on dreams and dream interpretations with examples drawn from the Renaissance through the beginning of the nineteenth century. Selected readings from Boccaccio, Descartes, Calder\u00f3n, Shakespeare, and Diderot, among others. Not offered 2022-23.",
     "prerequisites": "",
@@ -11849,7 +12143,7 @@
         "times": "TR 14:30 - 15:55\nA"
       }
     ],
-    "comment": " attendance at first class is required // maximum enrollment: 15 students // class closed to continuing students until term start",
+    "comment": " attendance at first class is required // maximum enrollment: 18 students // class closed to continuing students until term start",
     "units": [3, 0, 6],
     "description": "Why begin the study of literature with poems? Written words are the building blocks of literature, and poetry, in Coleridge's famous equation, is \"the best words in the best order.\" To be understood and appreciated, poetry requires a close attention to words and their ordering as they are read and reread. All good literature requires such attention, but practically speaking, poetry provides the best way to acquire the art of rereading because of its shorter forms. More importantly, poetry can be the most emotionally intense and satisfying of literary forms. We will read a small number of poems written in English from the sixteenth to the twentieth centuries from several genres - sonnet, ode, elegy, verse epistle, satire, villanelle - and on several subjects - love, death, and politics. Poets will include William Shakespeare, Emily Dickinson, and William Butler Yeats.",
     "prerequisites": "",
@@ -11954,7 +12248,7 @@
         "times": "TR 10:30 - 11:55\nA"
       }
     ],
-    "comment": " pending faculty board approval // max enrollment: 15 students",
+    "comment": " max enrollment: 15 students // class closed, see instructor for waitlist",
     "units": [3, 0, 6],
     "description": "This course will engage works of contemporary African American literature, including Ishmael Reed's experimental novel Mumbo Jumbo (1972) and Octavia Butler's time-travel novel Kindred (1979) and selected Afrofuturist short stories. We will read critical essays about temporality and consider these authors' use of temporal strategies, including anachronisms, non-linear narration, historiography, and the creation of speculative worlds. How does the artistic project of narrating the racialized past create possibilities for imagining alternative futures? The course will analyze the role of slavery, trauma, and collective memory in our readings, and it will set these literary texts in conversation with Afrofuturist music and visual culture from the 1970s to the present. Students will have the opportunity to examine archival materials from the Huntington Library related to Octavia Butler's published fiction.  Not offered 2019-20.",
     "prerequisites": "",
@@ -11982,6 +12276,27 @@
     "rating": "4.97 +/- 0.22",
     "true_units": "3",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=41&term_id=526&division_id=80427&department_id=131&offering_id=82674&track_id=82674-Default"
+  },
+  "492569175": {
+    "id": 492569175,
+    "name": "Special Topics in English: Contemporary American Fiction",
+    "number": "En 180",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Sherazi, M",
+        "locations": "",
+        "number": 1,
+        "times": "MW 14:30 - 15:55\nA"
+      }
+    ],
+    "comment": " maximum enrollment: 15 students",
+    "units": [3, 0, 6],
+    "description": "This is an advanced humanities course on a specialized topic in English. It is usually taught by new or visiting faculty. The course may be re-taken for credit except as noted in the course announcement. Limited to 15 students. See registrar's announcement for details.",
+    "prerequisites": "",
+    "rating": "3.50 +/- 0.76",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=49&term_id=551&division_id=80427&department_id=131&offering_id=92336&track_id=92336-Default"
   },
   "82834048": {
     "id": 82834048,
@@ -12193,13 +12508,13 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Frankenberg, C",
-        "locations": "162 SMD",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "R 12:00 - 12:55"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " class cancelled, to be offered winter term",
     "units": [1, 0, 0],
     "description": "Discussion of current research by ESE graduate students, faculty, and staff.",
     "prerequisites": "",
@@ -12593,12 +12908,12 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Weinstein, A",
-        "locations": "",
+        "locations": "289 LINDE",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
-    "comment": " pending faculty board approval",
+    "comment": " maximum enrollment: 12 students",
     "units": [2, 0, 4],
     "description": "Astrophysics and cosmology are in the midst of a golden age of science-rich observations from incredibly powerful telescopes of various kinds. The data from these instruments are often freely available on the web. Anyone can do things like study x-rays from pulsars in our galaxy or gamma rays from distant galaxies using data from Swift and Fermi; discover planets eclipsing nearby stars using data from Kepler; measure the expansion of the universe using supernovae data; study the cosmic microwave background with data from Planck; find gravitational waves from binary black hole mergers using data from LIGO; and study the clustering of galaxies using Hubble data. We will explore some of these data sets and the science than can be extracted from them. A primary goal of this class is to develop skills in scientific computing and visualization-bring your laptop! Not offered 2021-22.",
     "prerequisites": "",
@@ -12677,9 +12992,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Brown, M",
-        "locations": "",
+        "locations": "176 SMD",
         "number": 1,
-        "times": "MW 13:00 - 13:55\nA"
+        "times": "MW 13:00 - 13:55"
       }
     ],
     "comment": " open to first-year (undergraduates) only // maximum enrollment: 12 students",
@@ -13020,12 +13335,12 @@
       {
         "grades": "",
         "instructor": "Rossman, G",
-        "locations": "",
+        "locations": "251 ARM",
         "number": 1,
-        "times": "A\nA"
+        "times": "MTR 15:00 - 15:55"
       }
     ],
-    "comment": " pending faculty board approval",
+    "comment": "",
     "units": [3, 0, 3],
     "description": "Atomic structure, composition, physical properties, occurrence, and identifying characteristics of the major mineral groups. The laboratory work involves the characterization and identification of important minerals by their physical properties.",
     "prerequisites": "",
@@ -13041,12 +13356,12 @@
       {
         "grades": "",
         "instructor": "Rossman, G",
-        "locations": "",
+        "locations": "251 ARM",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 16:00 - 17:55"
       }
     ],
-    "comment": " pending faculty board approval",
+    "comment": "",
     "units": [0, 3, 0],
     "description": "Atomic structure, composition, physical properties, occurrence, and identifying characteristics of the major mineral groups. The laboratory work involves the characterization and identification of important minerals by their physical properties.",
     "prerequisites": "",
@@ -13062,9 +13377,9 @@
       {
         "grades": "",
         "instructor": "Lamb, M",
-        "locations": "215 NMD",
+        "locations": "267 ARM\n267 ARM",
         "number": 1,
-        "times": "OM,T 11:00 - 11:55"
+        "times": "OM,T 11:00 - 11:55\nM 14:00 - 15:55"
       }
     ],
     "comment": "",
@@ -13083,9 +13398,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Kirschvink, J",
-        "locations": "REMOTE",
+        "locations": "",
         "number": 1,
-        "times": "OM,T 17:00 - 17:55"
+        "times": "OM,T 16:00 - 16:55\nA"
       }
     ],
     "comment": "",
@@ -13103,19 +13418,40 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Tissot, F",
-        "locations": "215 NMD",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "TR 09:00 - 10:25"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " class cancelled",
     "units": [3, 0, 6],
     "description": "An introduction to the study of the origin, abundances and distribution of the elements and their isotopes in the Universe, with emphasis on the isotopic constraints into the conditions, events and processes that shaped our Solar System. Topics to be covered include: cosmology and the age of the Universe, the age of the Milky Way and the duration of nucleosynthesis, the fundamentals of isotopic fractionations, the key roles of isotopic anomalies in understanding Solar System dynamics, early Solar System chronology from short- and long-lived nuclei, chondritic meteorite components as clues to solar nebula and asteroid evolution, as well as planetary formation and chronology (e.g., Moon, Mars, Earth).",
     "prerequisites": "Instructor's permission.",
     "rating": "3.93 +/- 1.18",
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=48&term_id=550&division_id=80426&department_id=182&offering_id=91238&track_id=91238-Default"
+  },
+  "501737037": {
+    "id": 501737037,
+    "name": "Isotope-Ratio Mass Spectrometry",
+    "number": "Ge 145",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Sessions, A",
+        "locations": "215 NMD\nB167 SMD",
+        "number": 1,
+        "times": "R 10:30 - 11:55\nR 13:00 - 15:55"
+      }
+    ],
+    "comment": " maximum enrollment: 6 students",
+    "units": [1, 4, 4],
+    "description": "This class provides a hands-on introduction to the construction and operating principles of instrumentation used for isotope-ratio mass spectrometry. The class is structured as a 1-hour lecture plus 4-hour lab each week examining the major subsystems of an IRMS, including vacuum systems, ionization source, mass analyzer, and detector. Laboratories involve hands-on deconstruction and re-assembly of a retired IRMS instrument to examine its components. Course is limited to 6 students at the discretion of the instructor, with preference given to graduate students using this instrumentation in their research. Taught in odd years; not offered 2022-23.",
+    "prerequisites": "",
+    "rating": "4.50 +/- 0.69",
+    "true_units": "2",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80426&department_id=182&offering_id=87372&track_id=87372-Default"
   },
   "494291046": {
     "id": 494291046,
@@ -13886,7 +14222,7 @@
         "times": "TR 14:30 - 15:55\nA"
       }
     ],
-    "comment": " attendance at first class is required // maximum enrollment: 15 students // class closed to continuing students until term start",
+    "comment": " attendance at first class is required // maximum enrollment: 18 students // class closed to continuing students until term start",
     "units": [3, 0, 6],
     "description": "This course will survey the evolution of Mediterranean and European civilization from antiquity through the end of the Middle Ages. It will emphasize the reading and discussion of primary sources, especially but not exclusively literary works, against the backdrop of the broad historical narrative of the periods. The readings will present students with the essential characteristics of various ancient and medieval societies and give students access to those societies' cultural assumptions and perceptions of change.",
     "prerequisites": "",
@@ -13901,13 +14237,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "LeBlanc, H",
+        "instructor": "Staff",
         "locations": "",
         "number": 1,
-        "times": "T 19:00 - 21:55\nA"
+        "times": "A\nA"
       }
     ],
-    "comment": " attendance at first class is required // maximum enrollment: 15 students // class closed to continuing students until term start",
+    "comment": " class cancelled",
     "units": [3, 0, 6],
     "description": "This course will explore how natural philosophers and scientists have defined, used, and sometimes challenged ideas about race from the eighteenth century to today. Using a range of primary and secondary sources, we will examine how scientific ideas about race developed in concert with European imperial expansion and slavery; how these ideas were employed in legal cases, medical practice, and eugenics policies; and how activists and scholars have challenged racist practices and ideas. Finally, we will turn to the recent resurgence of racial thinking in biology and medicine in the light of the history of race and science.",
     "prerequisites": "",
@@ -13935,7 +14271,7 @@
         "times": "T 19:00 - 21:55\nA"
       }
     ],
-    "comment": " attendance at first class is required // maximum enrollment: 15 students per section// class closed to continuing students until term start",
+    "comment": " attendance at first class is required // maximum enrollment: 18 students per section// class closed to continuing students until term start",
     "units": [3, 0, 6],
     "description": "Major topics include the following: What are the origins of modern Western science, when did it emerge as distinct from philosophy and other cultural and intellectual productions, and what are its distinguishing features? When and how did observation, experiment, quantification, and precision enter the practice of science? What were some of the major turning points in the history of science? What is the changing role of science and technology? Using primary and secondary sources, students will take up significant topics in the history of science, from ancient Greek science to the 20th-century revolution in physics, biology, and technology. Hum/H/HPS 10 may be taken for credit toward the additional 36-unit HSS requirement by HPS majors and minors who have already fulfilled their first-year humanities requirement and counts as a history course in satisfying the first-year humanities breadth requirement.",
     "prerequisites": "",
@@ -14160,13 +14496,13 @@
     "sections": [
       {
         "grades": "LETTER",
-        "instructor": "Staff",
+        "instructor": "Gurcan, O",
         "locations": "",
         "number": 1,
         "times": "TR 10:30 - 11:55\nA"
       }
     ],
-    "comment": " pending faculty board approval // max enrollment: 15 students",
+    "comment": " max enrollment: 15 students",
     "units": [3, 0, 6],
     "description": "A survey of issues in bioethics. Topics may include: abortion and reproductive rights; euthanasia; cloning; genetic modification of organisms (including humans); moral status of chimeras; stem-cell research; organ transplantation, distribution and sale; cure vs. enhancement; use of human subjects in research; the concept of informed consent; research on non-human animals.  Not offered 2018-19.",
     "prerequisites": "",
@@ -14187,7 +14523,7 @@
         "times": "TR 14:30 - 15:55\nA"
       }
     ],
-    "comment": " attendance at first class is required // maximum enrollment: 15 students // class closed to continuing students until term start",
+    "comment": " attendance at first class is required // maximum enrollment: 18 students // class closed to continuing students until term start",
     "units": [3, 0, 6],
     "description": "This course addresses questions such as: Where do our moral ideas come from? What justifies them? How should they guide our conduct, as individuals and as a society? What kind of person should one aspire to be? Topics the course may deal with include meta-ethical issues (e.g., What makes an action right or wrong? When is one morally responsible for one's actions? How should society be organized?) and normative questions (e.g., Is eating meat morally acceptable? What should we tolerate and why? What are society's obligations toward the poor?). In addition, the psychological and neural substrates of moral judgment and decision making may be explored. The course draws on a variety of sources, including selections from the great works of moral and political philosophy (e.g., Aristotle's Nichomachean Ethics, Hobbes's Leviathan, Kant's Groundings for a Metaphysics of Morals, and Rawls's A Theory of Justice), contemporary discussions of particular moral issues, and the science of moral thought.",
     "prerequisites": "",
@@ -14215,7 +14551,7 @@
         "times": "TR 14:30 - 15:55\nA"
       }
     ],
-    "comment": " attendance at first class is required // maximum enrollment: 15 students per section // class closed to continuing students until term start",
+    "comment": " attendance at first class is required // maximum enrollment: 18 students per section // class closed to continuing students until term start",
     "units": [3, 0, 6],
     "description": "How do we reconcile the possibilities of modern machine learning with ethical and moral demands of fairness, accountability and transparency? This course will take a case study-based approach to the challenges at the interface of algorithms and human values. By exploring existing debates on algorithmic bias, explainable AI and data ownership, students will be exposed to the relevance of ethical systems of thought to modern social questions.",
     "prerequisites": "",
@@ -14230,19 +14566,40 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Jacobson, B",
+        "instructor": "Staff",
         "locations": "",
         "number": 1,
-        "times": "TR 14:30 - 15:55\nA"
+        "times": "A\nA"
       }
     ],
-    "comment": " attendance at first class is required // maximum enrollment: 15 students // class closed to continuing students until term start",
+    "comment": " class cancelled",
     "units": [3, 0, 6],
     "description": "\"The knowledge of photography is just as important as that of the alphabet,\" wrote artist L\u00e1szl\u00f3 Moholy-Nagy in 1928. \"The illiterate of the future,\" he warned, \"will be the person ignorant of the use of the camera as well as the pen.\" Almost a century later, this pronouncement rings as true as ever in a world so profoundly shaped not just by photography but also films, advertisements, and video games, cartoons and comics, molecular graphics and visual models. In this course we will explore how visual culture shapes our lives and daily experiences, and we will learn to find wonder in its rich details. In doing so, we will develop the visual literacy that Moholy-Nagy envisioned: essential skills in reading, analyzing, discussing, and writing about visual materials and their circulation through the physical and virtual networks that structure our world. Not offered 2022-23.",
     "prerequisites": "",
     "rating": "4.94 +/- 0.24",
     "true_units": "3",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=136&offering_id=87390&track_id=87390-Default"
+  },
+  "250476620": {
+    "id": 250476620,
+    "name": "Seeing Race",
+    "number": "Hum/VC 49",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Stielau, A",
+        "locations": "",
+        "number": 1,
+        "times": "TR 14:30 - 15:55\nA"
+      }
+    ],
+    "comment": " attendance at first class is required // maximum enrollment: 18 students // class closed to continuing students until term start",
+    "units": [3, 0, 6],
+    "description": "Proliferating communication and entertainment media technologies in 19th-century England vexed the imagined boundaries between humans and machines while catalyzing social anxieties about aesthetics, attention, and distraction. We will explore both \"old\" (novels, paintings, sculptures) and \"new\" forms of 19th-century media (telegraphs, magic lanterns, and photography) as we analyze overly stimulating Gothic print media in Jane Austen's Northanger Abbey, Wordsworth's contempt for popular entertainments in The Prelude, and the inversion of imperial consumption in Bram Stoker's Dracula, a novel mediated through characters' telegrams, diary entries, and phonographic recordings. Authors studied also may include: Dickens, Christina Rossetti, Doyle, Kipling, and Vernon Lee.",
+    "prerequisites": "",
+    "rating": "5.00 +/- 0.00",
+    "true_units": "3",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=136&offering_id=86133&track_id=86133-Default"
   },
   "228283103": {
     "id": 228283103,
@@ -14257,13 +14614,34 @@
         "times": "TR 13:00 - 14:25\nA"
       }
     ],
-    "comment": " attendance at first class is required // maximum enrollment: 15 students // class closed - see instructor for waitlist",
+    "comment": " attendance at first class is required // maximum enrollment: 18 students // class closed - see instructor for waitlist",
     "units": [3, 0, 6],
     "description": "This course examines the historical development of film as a popular art and entertainment medium from the 1880s to the present, with a focus on the American and European contexts. Students will learn how to watch a film - how to pay attention to significant visual details and to the ways films construct meaning from the language of images - and will develop the skills to write fluently about what they see. The course covers some of the most influential genres and movements from the earliest actuality films, through the French New Wave, to the Disney/Marvel Universe. Films covered may include short comedies from Charlie Chaplin and Buster Keaton, M , It Happened One Night , The Seven Samurai , The Battle of Algiers , and Black Panther .",
     "prerequisites": "",
     "rating": "4.99 +/- 0.12",
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=48&term_id=550&division_id=80427&department_id=136&offering_id=89372&track_id=89372-Default"
+  },
+  "509378019": {
+    "id": 509378019,
+    "name": "Special Topics in Humanities: Vast Early America",
+    "number": "Hum 59",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Jones, E",
+        "locations": "",
+        "number": 1,
+        "times": "TR 09:00 - 10:25\nA"
+      }
+    ],
+    "comment": " attendance at first class is required // maximum enrollment: 18 students // class closed to continuing students until term start // counts towards first-year humanities requirement under the history discipline",
+    "units": [3, 0, 6],
+    "description": "This course will count as a first-year humanities course in either English, history, philosophy, or visual culture, as announced. It is usually taught by new or visiting faculty. The course may be re-taken once if the second class is offered in a different discipline (from among English, history, philosophy, and visual culture). Limited to 15 students. See registrar's announcement for details.",
+    "prerequisites": "",
+    "rating": "",
+    "true_units": "",
+    "link": ""
   },
   "494435384": {
     "id": 494435384,
@@ -14460,7 +14838,7 @@
         "times": "MTWR 16:00 -\nA 16:55"
       }
     ],
-    "comment": " maximum enrollment: 20 students per section",
+    "comment": " maximum enrollment: 20 students per section // class closed, see instructor for waitlist",
     "units": [4, 0, 5],
     "description": "Emphasis on oral-aural skills, and understanding of basic grammar. Immediate introduction of the native script-hiragana, katakana-and gradual introduction to 300 to 500 characters.",
     "prerequisites": "Section a is required for sections b and c.",
@@ -14632,10 +15010,10 @@
         "instructor": "Aebi, A",
         "locations": "",
         "number": 1,
-        "times": "OM,T 11:00 - 11:55\nA"
+        "times": "MWR 11:00 - 11:55\nA"
       }
     ],
-    "comment": " NOTE: Will be scheduled MWTH 12-12:55p after OM",
+    "comment": "",
     "units": [3, 0, 6],
     "description": "Reading of short stories and plays, grammar review, aural and oral drills and exercises, expansion of vocabulary, and practice in reading, writing, and conversational skills. Second and third terms will emphasize written expression, technical/ scientific translation, and literary readings. Students who have studied German elsewhere must consult with the instructor before registering.",
     "prerequisites": "L 130 abc or equivalent.",
@@ -14719,7 +15097,7 @@
         "times": "OM,W 10:00 -\nA 10:55"
       }
     ],
-    "comment": " pending faculty board approval // max enrollment: 20 students",
+    "comment": " max enrollment: 20 students",
     "units": [3, 0, 6],
     "description": "A course designed as a bridge between language and content courses. It provides the opportunity to further develop overall language proficiency through reading essays on Chinese culture, stories, and news editorials. Multimedia is included. By the end of L 173 ab, students should have acquired the basic skills to read and research about Chinese culture and society. Classes are conducted primarily in Chinese.",
     "prerequisites": "L 171 abc, L 172 abc or equivalent.",
@@ -14814,6 +15192,13 @@
         "instructor": "Gao, W",
         "locations": "",
         "number": 12,
+        "times": "A\nA"
+      },
+      {
+        "grades": "",
+        "instructor": "Lewis, N",
+        "locations": "",
+        "number": 13,
         "times": "A\nA"
       }
     ],
@@ -14951,13 +15336,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Staff",
-        "locations": "115 GTL",
+        "instructor": "Roberts, S",
+        "locations": "142 KCK",
         "number": 1,
         "times": "MWF 09:00 - 09:55"
       }
     ],
-    "comment": " Class will meet in Steele 125 on 10/21/22",
+    "comment": "",
     "units": [3, 0, 6],
     "description": "An introduction to the structure and properties of materials and the processing routes utilized to optimize properties. All major classes of materials are covered, including metals, ceramics, electronic materials, composites, and polymers. The relationships between chemical bonding, crystal structure, defects, thermodynamics, phase equilibria, microstructure, and properties are described.",
     "prerequisites": "Ph 2.",
@@ -15270,6 +15655,20 @@
         "locations": "",
         "number": 18,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Gao, W",
+        "locations": "",
+        "number": 19,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Yeh, N",
+        "locations": "",
+        "number": 20,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -15287,7 +15686,7 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Staff",
+        "instructor": "Gherman, M",
         "locations": "Hameetman\nAud CHL\nHameetman\nAud CHL",
         "number": 1,
         "times": "MTWF 10:00 - 10:55\nR 19:30 - 20:55"
@@ -15337,9 +15736,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Conlon, D",
-        "locations": "Lecture Hall\nBAX",
+        "locations": "Lecture Hall\nBAX\n151 CRL",
         "number": 8,
-        "times": "MWF 10:00 - 10:55\nR 13:00 - 13:55\nA"
+        "times": "MWF 10:00 - 10:55\nR 13:00 - 13:55"
       },
       {
         "grades": "PASS-FAIL",
@@ -15448,7 +15847,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Staff",
+        "instructor": "Gherman, M",
         "locations": "310 LINDE",
         "number": 1,
         "times": "MWF 09:00 - 09:55"
@@ -15511,7 +15910,7 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Staff",
+        "instructor": "Graber, T",
         "locations": "Hameetman\nAud CHL",
         "number": 1,
         "times": "T 19:00 - 20:55"
@@ -15633,6 +16032,20 @@
         "instructor": "Szumowicz, A",
         "locations": "",
         "number": 3,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Flach, M",
+        "locations": "",
+        "number": 4,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ervin, G",
+        "locations": "",
+        "number": 5,
         "times": "A\nA"
       }
     ],
@@ -15770,7 +16183,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Staff",
+        "instructor": "Gherman, M",
         "locations": "310 LINDE",
         "number": 1,
         "times": "MWF 09:00 - 09:55"
@@ -15791,7 +16204,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Staff",
+        "instructor": "Caniato, R",
         "locations": "310 LINDE",
         "number": 1,
         "times": "MWF 11:00 - 11:55"
@@ -15836,7 +16249,7 @@
         "instructor": "Tamuz, O",
         "locations": "187 LINDE",
         "number": 1,
-        "times": "MWF 13:00 - 13:55"
+        "times": "MWF 11:00 - 11:55"
       }
     ],
     "comment": "",
@@ -15875,7 +16288,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Staff",
+        "instructor": "Fu, Y",
         "locations": "387 LINDE",
         "number": 1,
         "times": "MWF 09:00 - 09:55"
@@ -15897,7 +16310,7 @@
       {
         "grades": "",
         "instructor": "Schuelke, B",
-        "locations": "310 LINDE",
+        "locations": "255 LINDE",
         "number": 1,
         "times": "MWF 14:00 - 14:55"
       }
@@ -15917,7 +16330,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Staff",
+        "instructor": "Yu, S",
         "locations": "289 LINDE",
         "number": 1,
         "times": "MWF 13:00 - 13:55"
@@ -15937,14 +16350,14 @@
     "number": "Ma 146 a",
     "sections": [
       {
-        "grades": "PASS-FAIL",
+        "grades": "",
         "instructor": "Gukov, S",
-        "locations": "289 LINDE",
+        "locations": "255 LINDE",
         "number": 1,
-        "times": "A"
+        "times": "TR 10:30 - 11:55"
       }
     ],
-    "comment": " pending faculty board approval",
+    "comment": "",
     "units": [3, 0, 6],
     "description": "",
     "prerequisites": "",
@@ -15980,7 +16393,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Staff",
+        "instructor": "Chen, D",
         "locations": "255 LINDE",
         "number": 1,
         "times": "MWF 10:00 - 10:55"
@@ -16002,12 +16415,12 @@
       {
         "grades": "",
         "instructor": "Staff",
-        "locations": "187 LINDE",
+        "locations": "",
         "number": 1,
-        "times": "MWF 14:00 - 14:55"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " class cancelled",
     "units": [3, 0, 6],
     "description": "In this course, the basic structures and results of algebraic number theory will be systematically introduced. Topics covered will include the theory of ideals/divisors in Dedekind domains, Dirichlet unit theorem and the class group, p-adic fields, ramification, Abelian extensions of local and global fields. Part c not offered 2022-23.",
     "prerequisites": "Ma 5.",
@@ -16035,7 +16448,7 @@
         "times": "A\nA"
       }
     ],
-    "comment": " sec 1: Linear Orders, pass-fail only // sec 2: TBA",
+    "comment": " sec 1: Geometric Relativity, pass-fail only // sec 2: cancelled",
     "units": [3, 0, 6],
     "description": "Each term we expect to give between 0 and 6 (most often 2-3) topics courses in advanced mathematics covering an area of current research interest. These courses will be given as sections of 191. Students may register for this course multiple times even for multiple sections in a single term. The topics and instructors for each term and course descriptions will be listed on the math option website each term prior to the start of registration for that term.",
     "prerequisites": "",
@@ -16056,7 +16469,7 @@
         "times": "TR 17:00 - 18:25\nA"
       }
     ],
-    "comment": " pending faculty board approval",
+    "comment": "",
     "units": [3, 0, 6],
     "description": "A course on pricing financial derivatives, risk management, and optimal portfolio selection using mathematical models. Students will be introduced to methods of Stochastic, Ito Calculus for models driven by Brownian motion. Models with jumps will also be discussed.",
     "prerequisites": "Good knowledge of probability theory and differential equations. Some familiarity with analysis and measure theory is helpful.",
@@ -16394,9 +16807,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Niemeyer, G",
-        "locations": "",
+        "locations": "B122 GCL",
         "number": 1,
-        "times": "W 13:00 - 13:55\nA"
+        "times": "W 13:00 - 13:55"
       }
     ],
     "comment": "",
@@ -16520,12 +16933,12 @@
       {
         "grades": "LETTER",
         "instructor": "Mello, M / Stovall, P",
-        "locations": "135 GTL",
+        "locations": "115 GTL",
         "number": 1,
         "times": "TR 15:00 - 16:25"
       }
     ],
-    "comment": " unit change pending faculty board approval",
+    "comment": "",
     "units": [2, 8, 2],
     "description": "Enrollment is limited. A project-based course in which teams of students are challenged to design, test, analyze, and fabricate a robotic device to compete against devices designed by other student teams. The class lectures and team projects stress the integration of mechanical design, electronics, mechatronics, engineering analysis, and computation to solve problems in engineering system design. Critical feedback is provided through a series of formal design reviews scheduled throughout the ME 72 ab course sequence. The laboratory units of ME 72 can be used to fulfill a portion of the laboratory requirement for the EAS option. Not offered on a pass/fail basis.",
     "prerequisites": "ME 14.",
@@ -16683,6 +17096,13 @@
         "instructor": "Mello, M",
         "locations": "",
         "number": 17,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Greer, J",
+        "locations": "",
+        "number": 18,
         "times": "A\nA"
       }
     ],
@@ -17261,6 +17681,48 @@
     "true_units": "",
     "link": ""
   },
+  "40692981": {
+    "id": 40692981,
+    "name": "Fundamentals of Music Theory and Elementary Ear Training",
+    "number": "Mu 57",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Nelson, J",
+        "locations": "",
+        "number": 1,
+        "times": "TR 10:30 - 11:55\nA"
+      }
+    ],
+    "comment": " maximum enrollment: 15 students",
+    "units": [3, 0, 6],
+    "description": "Basic vocabulary and concepts of music theory (rhythm and pitch notation, intervals, scales, function of key signatures, etc.); development of aural perception via elementary rhythmic and melodic dictation, and sight-singing exercises. Not offered 2022-23.",
+    "prerequisites": "",
+    "rating": "4.37 +/- 0.64",
+    "true_units": "3",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=144&offering_id=87787&track_id=87787-Default"
+  },
+  "507309465": {
+    "id": 507309465,
+    "name": "Themes in Western Music History and Historiography: 1600-1800",
+    "number": "Mu 138",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Baker, N",
+        "locations": "133 BAX",
+        "number": 1,
+        "times": "MW 14:00 - 15:25"
+      }
+    ],
+    "comment": " maximum enrollment: 15 students",
+    "units": [3, 0, 6],
+    "description": "This course surveys the music and musical institutions of Europe during the Baroque and Enlightenment eras. Two hundred years of musical developments, needless to say, cannot be adequately covered in ten weeks; the course thus aims to build literacy in music from these periods by contextualizing musical works and their creators against broader themes, including music in the European courts, music and religion, words and music, music and gender, music and Enlightenment ideals, and the rise of instrumental music. At the same time, we will interrogate the central historical narratives of Western music that we have inherited and grapple with how historiography - the writing of history - shapes the way we understand the musical past and present.",
+    "prerequisites": "",
+    "rating": "3.99 +/- 0.87",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=48&term_id=550&division_id=80427&department_id=144&offering_id=91337&track_id=91337-Default"
+  },
   "494037677": {
     "id": 494037677,
     "name": "Survey of Neurobiology Research at Caltech",
@@ -17269,7 +17731,7 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Lester, H",
-        "locations": "130 CNRB",
+        "locations": "240A CNRB",
         "number": 1,
         "times": "F 09:00 - 09:55"
       }
@@ -17453,6 +17915,13 @@
         "instructor": "Mobbs, D",
         "locations": "",
         "number": 25,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Mazmanian, S",
+        "locations": "",
+        "number": 26,
         "times": "A\nA"
       }
     ],
@@ -17953,7 +18422,7 @@
         "times": "T 14:30 - 15:25"
       }
     ],
-    "comment": " pending faculty board approval // maximum enrollment: 20 students",
+    "comment": " maximum enrollment: 20 students",
     "units": [1, 0, 0],
     "description": "",
     "prerequisites": "",
@@ -17974,7 +18443,7 @@
         "times": "TR 13:00 - 14:25"
       }
     ],
-    "comment": " pending faculty board approval // maximum enrollment: 18 students",
+    "comment": " maximum enrollment: 18 students",
     "units": [3, 0, 0],
     "description": "",
     "prerequisites": "",
@@ -18374,28 +18843,28 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Preskill, J",
+        "instructor": "Hildebrandt, S",
         "locations": "201 BRG\nB111 DWN\n269 LAU",
         "number": 1,
         "times": "T 11:00 - 11:55\nWF 11:00 - 11:55\nR 11:00 - 11:55"
       },
       {
         "grades": "",
-        "instructor": "Preskill, J",
+        "instructor": "Hildebrandt, S",
         "locations": "201 BRG\n107 DWN\n269 LAU",
         "number": 2,
         "times": "T 11:00 - 11:55\nWF 13:00 - 13:55\nR 11:00 - 11:55"
       },
       {
         "grades": "",
-        "instructor": "Preskill, J",
+        "instructor": "Hildebrandt, S",
         "locations": "201 BRG\n107 DWN\n269 LAU",
         "number": 3,
         "times": "T 11:00 - 11:55\nWF 15:00 - 15:55\nR 11:00 - 11:55"
       },
       {
         "grades": "",
-        "instructor": "Preskill, J",
+        "instructor": "Hildebrandt, S",
         "locations": "201 BRG\n269 LAU\n269 LAU",
         "number": 4,
         "times": "T 11:00 - 11:55\nWF 11:00 - 11:55\nR 11:00 - 11:55"
@@ -18787,7 +19256,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Staff",
+        "instructor": "Ye, L",
         "locations": "201 BRG",
         "number": 1,
         "times": "TR 13:00 - 14:25"
@@ -18808,13 +19277,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Sahakian, V",
-        "locations": "269 LAU",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "TR 13:00 - 14:25"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " class cancelled",
     "units": [3, 0, 6],
     "description": "Applications of classical physics to topics of interest in contemporary \"macroscopic'' physics. Continuum physics and classical field theory; elasticity and hydrodynamics; plasma physics; magnetohydrodynamics; thermodynamics and statistical mechanics; gravitation theory, including general relativity and cosmology; modern optics. Content will vary from year to year, depending on the instructor. An attempt will be made to organize the material so that the terms may be taken independently. Ph 136 a will focus on thermodynamics, statistical mechanics, random processes, and optics. Ph 136 b will focus on fluid dynamics, MHD, turbulence, and plasma physics. Ph 136 c will cover an introduction to general relativity. Given in alternate years.",
     "prerequisites": "Ph 106 ab or equivalent.",
@@ -19805,7 +20274,7 @@
         "instructor": "Zurek, K",
         "locations": "469 LAU",
         "number": 1,
-        "times": "W 12:00 - 13:25"
+        "times": "MW 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -19844,8 +20313,8 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Patterson, R",
-        "locations": "B157 BRG",
+        "instructor": "Libbrecht, K",
+        "locations": "B160 BRG",
         "number": 1,
         "times": "F 12:00 - 13:55"
       }
@@ -20261,6 +20730,20 @@
         "locations": "",
         "number": 58,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Zurek, K",
+        "locations": "",
+        "number": 59,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Most, E",
+        "locations": "",
+        "number": 60,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -20299,16 +20782,9 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Ordeshook, P",
-        "locations": "",
-        "number": 1,
-        "times": "A\nA"
-      },
-      {
-        "grades": "",
         "instructor": "Alvarez, R",
         "locations": "",
-        "number": 2,
+        "number": 1,
         "times": "A\nA"
       }
     ],
@@ -20390,14 +20866,14 @@
     "sections": [
       {
         "grades": "LETTER",
-        "instructor": "Javier, R",
+        "instructor": "Staff",
         "locations": "",
         "number": 1,
         "times": "MWF 09:00 - 09:55\nA"
       },
       {
         "grades": "LETTER",
-        "instructor": "Javier, R",
+        "instructor": "Staff",
         "locations": "",
         "number": 2,
         "times": "MWF 10:00 - 10:55\nA"
@@ -20410,7 +20886,7 @@
         "times": "MWF 11:00 - 11:55\nA"
       }
     ],
-    "comment": " maximum enrollment: 18 students per section // to be added to the waitlist after class fills, go to http://registrar.caltech.edu/SEC10WaitlistForm",
+    "comment": " maximum enrollment: 18 students per section / class closed -to be added to the waitlist, go to http://registrar.caltech.edu/SEC10WaitlistForm",
     "units": [3, 0, 0],
     "description": "(Seniors required to take this course are given priority in registration.) The purpose of this course is to equip students with the skills, knowledge, and experience necessary to give effective oral presentations. The course will include a mix of formal instruction, group discussions, practice presentations, and individual feedback. Limited enrollment. May not be repeated for credit.",
     "prerequisites": "",
@@ -20488,7 +20964,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Javier, R",
+        "instructor": "Staff",
         "locations": "",
         "number": 1,
         "times": "A\nA"
@@ -20509,7 +20985,7 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Javier, R",
+        "instructor": "Staff",
         "locations": "",
         "number": 1,
         "times": "TR 09:00 - 10:25\nA"
@@ -20738,13 +21214,6 @@
     "name": "Research in Social Science",
     "number": "SS 300",
     "sections": [
-      {
-        "grades": "PASS-FAIL",
-        "instructor": "Ewens, M",
-        "locations": "",
-        "number": 1,
-        "times": "A\nA"
-      },
       {
         "grades": "PASS-FAIL",
         "instructor": "Plott, C",
@@ -21111,19 +21580,40 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Jacobson, B",
+        "instructor": "Staff",
         "locations": "",
         "number": 1,
-        "times": "TR 10:30 - 11:55\nA"
+        "times": "A\nA"
       }
     ],
-    "comment": " max enrollment: 15 students",
+    "comment": " class cancelled",
     "units": [3, 0, 6],
     "description": "This course examines surveillance, one of the defining features of twenty-first-century life, with wide-ranging implications (from intelligence gathering and biometrics to social media and contemporary art), and a key point of intersection between modern technology and visual culture. Though it applies more broadly, the concept of \"surveillance,\" from the Latin vigilare (\"to watch\") and the French surveiller (\"to watch over\"), originated in practices of looking and observation that still define many of its most significant practices today. Building on these etymological roots, we will treat surveillance as, first and foremost, a visual practice and survey the longer history of surveillance (and counter-surveillance) techniques as well as the theories that have emerged to describe its social effects, moral and ethical stakes, and changing legal status. Not offered 2022-23.",
     "prerequisites": "",
     "rating": "4.95 +/- 0.26",
     "true_units": "2",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80427&department_id=656&offering_id=87458&track_id=87458-Default"
+  },
+  "494392293": {
+    "id": 494392293,
+    "name": "Arts of Buddhism",
+    "number": "VC 171",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Wolfgram, J",
+        "locations": "",
+        "number": 1,
+        "times": "TR 10:30 - 11:55\nA"
+      }
+    ],
+    "comment": " maximum enrollment: 15 students",
+    "units": [3, 0, 6],
+    "description": "An examination of the impact of Buddhism on the arts and cultures of India, Southeast Asia, China, Korea, and Japan from its earliest imagery in the 4th century B.C.E. India through various doctrinal transformations to the Zen revival of 18th-century Japan. Select monuments of Buddhist art, including architecture, painting, sculpture, and ritual objects, will serve as focal points for discussions on their aesthetic principles and for explorations into the religious, social, and cultural contexts that underlie their creation. Not offered 2022-23.",
+    "prerequisites": "",
+    "rating": "3.06 +/- 1.55",
+    "true_units": "4",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=656&offering_id=88841&track_id=88841-Default"
   },
   "460554982": {
     "id": 460554982,
@@ -21132,10 +21622,52 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Hall, S",
+        "instructor": "Schneiderman, J",
         "locations": "",
         "number": 1,
+        "times": "TR 09:00 - 10:25\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Hall, S",
+        "locations": "",
+        "number": 2,
+        "times": "TR 09:00 - 10:25\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Schneiderman, J",
+        "locations": "",
+        "number": 3,
+        "times": "TR 13:00 - 14:25\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Sherazi, M",
+        "locations": "",
+        "number": 4,
         "times": "TR 14:30 - 15:55\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Manoukian, N",
+        "locations": "",
+        "number": 5,
+        "times": "TR 14:30 - 15:55\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Gaida, M",
+        "locations": "",
+        "number": 6,
+        "times": "TR 14:30 - 15:55\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Gaida, M",
+        "locations": "",
+        "number": 7,
+        "times": "TR 13:00 - 14:25\nA"
       }
     ],
     "comment": " open to undergraduate students only // max enrollment: 12 students per section",
