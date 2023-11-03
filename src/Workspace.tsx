@@ -430,7 +430,7 @@ export default function Workspace() {
 
   const setDefaultSchedule = () => {
     state.setCourses(
-      ["Ma 1 a", "Ph 1 a", "Ch 1 a"]
+      ["Ma 1 b", "Ph 1 b", "Ch 1 b"]
         .map((name) => {
           return getCourse(name, indexedCourses);
         })
