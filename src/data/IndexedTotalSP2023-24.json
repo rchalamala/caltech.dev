@@ -20,9 +20,9 @@
     ],
     "description": "Fundamentals of fluid mechanics. Microscopic and macroscopic properties of liquids and gases; the continuum hypothesis; review of thermodynamics; general equations of motion; kinematics; stresses; constitutive relations; vorticity, circulation; Bernoulli's equation; potential flow; thin-airfoil theory; surface gravity waves; buoyancy-driven flows; rotating flows; viscous creeping flow; viscous boundary layers; introduction to stability and turbulence; quasi one-dimensional compressible flow; shock waves; unsteady compressible flow; and acoustics.",
     "prerequisites": "APh 17 or ME 11 abc, and ME 12 or equivalent, ACM 95/100 or equivalent (may be taken concurrently).",
-    "rating": "3.73 +/- 1.13",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=120&offering_id=86943&track_id=86943-Default"
+    "rating": "4.19 +/- 1.25",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=120&offering_id=90776&track_id=90776-Default"
   },
   "584769308": {
     "id": 584769308,
@@ -45,9 +45,9 @@
     ],
     "description": "Introduction to continuum mechanics: kinematics, balance laws, constitutive laws with an emphasis on solids. Static and dynamic stress analysis. Two- and three-dimensional theory of stressed elastic solids. Wave propagation. Analysis of rods, plates and shells with applications in a variety of fields. Variational theorems and approximate solutions. Elastic stability.",
     "prerequisites": "ME 12 abc.",
-    "rating": "2.84 +/- 1.32",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=120&offering_id=86956&track_id=86956-Default"
+    "rating": "3.98 +/- 1.23",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=120&offering_id=90787&track_id=90787-Default"
   },
   "685871752": {
     "id": 685871752,
@@ -70,9 +70,9 @@
     ],
     "description": "Lectures on experiment design and implementation. Measurement methods, transducer fundamentals, instrumentation, optical systems, signal processing, noise theory, analog and digital electronic fundamentals, with data acquisition and processing systems. Experiments (second and third terms) in solid and fluid mechanics with emphasis on current research methods.",
     "prerequisites": "ACM 95/100 ab or equivalent (may be taken concurrently), Ae/APh/CE/ME 101 abc or equivalent (may be taken concurrently).",
-    "rating": "4.78 +/- 0.48",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=120&offering_id=88567&track_id=88567-Default"
+    "rating": "5.00 +/- 0.00",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=120&offering_id=90397&track_id=90397-Default"
   },
   "643172400": {
     "id": 643172400,
@@ -95,9 +95,9 @@
     ],
     "description": "Part a: Design of space missions based on astrodynamics. Topics include conic orbits with perturbations (J2, drag, and solar radiation pressure), Lambert's Theorem, periodic orbits and ground tracks, invariant manifolds, and the variational equation with mission applications to planetary flybys, constellation, formation flying, and low energy planetary capture and landing. Part b: Introduction to spacecraft systems and subsystems, mission design, rocket mechanics, launch vehicles, and space environments; spacecraft mechanical, structural, and thermal design; communication and power systems; preliminary discussion and setup for team project leading to system requirements review. Part c: Team project leading to preliminary design review and critical design review.",
     "prerequisites": "ME 11 abc and ME 12 abc or equivalent.",
-    "rating": "4.06 +/- 1.12",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=120&offering_id=86992&track_id=86992-Default"
+    "rating": "4.66 +/- 0.65",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=120&offering_id=90528&track_id=90528-Default"
   },
   "635777062": {
     "id": 635777062,
@@ -120,9 +120,9 @@
     ],
     "description": "Ae 121 is designed to introduce the fundamentals of chemical, electric and advanced propulsion technologies.  The course focuses on the thermochemistry and aerodynamics of chemical and electrothermal propulsion systems, the physics of ionized gases and electrostatic and electromagnetic processes in electric thrusters.  These analyses provide the opportunity to introduce the basic concepts of non-equilibrium gas dynamics and kinetic theory. Specific technologies such as launch vehicle rocket engines, monopropellant engines, arcjets, ion thrusters, magnetoplasmadynamic engines and Hall thrusters will be discussed.  Ae 121 also provides an introduction to advanced propulsion concepts such as solar sails and antimatter rockets.",
     "prerequisites": "Open to all graduate students and to seniors with instructor's permission.",
-    "rating": "5.00 +/- 0.00",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=120&offering_id=86988&track_id=86988-Default"
+    "rating": "4.50 +/- 0.98",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=120&offering_id=90524&track_id=90524-Default"
   },
   "634054860": {
     "id": 634054860,
@@ -145,9 +145,9 @@
     ],
     "description": "Speakers from campus and outside research and manufacturing organizations discuss current problems and advances in aerospace engineering. Graded pass/fail.",
     "prerequisites": "",
-    "rating": "4.45 +/- 0.78",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=120&offering_id=86855&track_id=86855-Default"
+    "rating": "4.68 +/- 0.54",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=120&offering_id=90814&track_id=90814-Default"
   },
   "470120853": {
     "id": 470120853,
@@ -472,9 +472,9 @@
     ],
     "description": "A seminar course in fluid, solid, space, and bio mechanics. Weekly lectures on current developments are presented by staff members, graduate students, and visiting scientists and engineers. Graded pass/fail.",
     "prerequisites": "",
-    "rating": "4.72 +/- 0.51",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=120&offering_id=86968&track_id=86968-Default"
+    "rating": "3.77 +/- 1.04",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=120&offering_id=90798&track_id=90798-Default"
   },
   "502763653": {
     "id": 502763653,
@@ -572,9 +572,9 @@
     ],
     "description": "This course is intended to serve as a practical introduction to the methods of computational science and engineering for students in all majors. The goal is to provide students exposure to and hands-on experience with commonly-used computational methods in science and engineering, with theoretical considerations confined to a level appropriate for first-year undergraduate students. Topics covered include computational simulation by discretization in space and time, numerical solution of linear and nonlinear equations, optimization, uncertainty quantification, and function approximation via interpolation and regression. Emphasis is on understanding trade-offs between computational effort and accuracy, and on developing working knowledge of how these tools can be used to solve a wide range of problems arising in applied math, science, and engineering. Assignments and in-class activities use MATLAB. No prior experience with MATLAB expected.",
     "prerequisites": "Ma 1 ab, Co-requisite Ma 1 c. CS 1 or prior programming experience recommended.",
-    "rating": "4.81 +/- 0.59",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=214&offering_id=87042&track_id=87042-Default"
+    "rating": "4.78 +/- 0.53",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=214&offering_id=90577&track_id=90577-Default"
   },
   "634299837": {
     "id": 634299837,
@@ -703,9 +703,9 @@
     ],
     "description": "Complex analysis: analyticity, Laurent series, contour integration, residue calculus. Ordinary differential equations: linear initial value problems, linear boundary value problems, Sturm-Liouville theory, eigenfunction expansions, transform methods, Green's functions. Linear partial differential equations: heat equation, separation of variables, Laplace equation, transform methods, wave equation, method of characteristics, Green's functions.",
     "prerequisites": "Ma 1 abc, Ma 2 or equivalents.",
-    "rating": "3.62 +/- 1.30",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=214&offering_id=87128&track_id=87128-Default"
+    "rating": "3.97 +/- 1.15",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=214&offering_id=90659&track_id=90659-Default"
   },
   "884943510": {
     "id": 884943510,
@@ -728,9 +728,9 @@
     ],
     "description": "Complex analysis: analyticity, Laurent series, contour integration, residue calculus. Ordinary differential equations: linear initial value problems, linear boundary value problems, Sturm-Liouville theory, eigenfunction expansions, transform methods, Green's functions. Linear partial differential equations: heat equation, separation of variables, Laplace equation, transform methods, wave equation, method of characteristics, Green's functions.",
     "prerequisites": "Ma 1 abc, Ma 2 or equivalents.",
-    "rating": "4.33 +/- 1.07",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=214&offering_id=87129&track_id=87129-Default"
+    "rating": "3.95 +/- 1.11",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=214&offering_id=90660&track_id=90660-Default"
   },
   "544950280": {
     "id": 544950280,
@@ -803,9 +803,9 @@
     ],
     "description": "Statistical Inference is a branch of mathematical engineering that studies ways of extracting reliable information from limited data for learning, prediction, and decision making in the presence of uncertainty. This is an introductory course on statistical inference. The main goals are: develop statistical thinking and intuitive feel for the subject; introduce the most fundamental ideas, concepts, and methods of statistical inference; and explain how and why they work, and when they don't. Topics covered include summarizing data, fundamentals of survey sampling, statistical functionals, jackknife, bootstrap, methods of moments and maximum likelihood, hypothesis testing, p-values, the Wald, Student's t-, permutation, and likelihood ratio tests, multiple testing, scatterplots, simple linear regression, ordinary least squares, interval estimation, prediction, graphical residual analysis.",
     "prerequisites": "ACM/EE/IDS 116, Ma 3.",
-    "rating": "4.86 +/- 0.50",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=616&offering_id=87200&track_id=87200-Default"
+    "rating": "4.85 +/- 0.42",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=616&offering_id=90726&track_id=90726-Default"
   },
   "559519288": {
     "id": 559519288,
@@ -910,9 +910,9 @@
     ],
     "description": "Advanced topics in applied and computational mathematics that will vary according to student and instructor interest. May be repeated for credit.",
     "prerequisites": "",
-    "rating": "4.92 +/- 0.27",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=214&offering_id=87291&track_id=87291-Default"
+    "rating": "5.00 +/- 0.00",
+    "true_units": "Somewhat Low",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=214&offering_id=90506&track_id=90506-Default"
   },
   "542753145": {
     "id": 542753145,
@@ -1478,9 +1478,9 @@
     ],
     "description": "Thermodynamics and statistical mechanics, with emphasis on gases, liquids, materials, and condensed matter. Effects of heat, pressure, and fields on states of matter are presented with both classical thermodynamics and with statistical mechanics. Conditions of equilibrium in systems with multiple degrees of freedom. Applications include ordered states of matter and phase transitions. The three terms cover, approximately, thermodynamics, statistical mechanics, and phase transitions.",
     "prerequisites": "APh 17 abc or equivalent.",
-    "rating": "3.93 +/- 0.86",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=124&offering_id=87030&track_id=87030-Default"
+    "rating": "4.59 +/- 0.68",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=124&offering_id=90565&track_id=90565-Default"
   },
   "262367775": {
     "id": 262367775,
@@ -1528,9 +1528,9 @@
     ],
     "description": "Introductory lecture and problem course dealing with experimental and theoretical problems in solid-state physics. Topics include crystal structure, symmetries in solids, lattice vibrations, electronic states in solids, transport phenomena, semiconductors, superconductivity, magnetism, ferroelectricity, defects, and optical phenomena in solids.",
     "prerequisites": "Ph 125 abc or equivalent.",
-    "rating": "4.65 +/- 0.59",
-    "true_units": "2",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=124&offering_id=87018&track_id=87018-Default"
+    "rating": "4.72 +/- 0.53",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=124&offering_id=90553&track_id=90553-Default"
   },
   "727312957": {
     "id": 727312957,
@@ -1578,9 +1578,9 @@
     ],
     "description": "This laboratory/lecture course will enable students to become proficient in micro- and nanofabrication and get trained on most of the instruments in Caltech\u2019s Kavli Nanoscience Institute cleanroom. Students will learn the capabilities and limitations of nanofabrication equipment, followed by training on these nanofabrication instruments in the KNI cleanroom facility.",
     "prerequisites": "students are encouraged to take APh/EE 9 or APh/EE 109 ahead of this class, but these are not required.",
-    "rating": "",
-    "true_units": "",
-    "link": ""
+    "rating": "4.63 +/- 0.94",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=124&offering_id=92484&track_id=92484-Default"
   },
   "631143705": {
     "id": 631143705,
@@ -1628,9 +1628,9 @@
     ],
     "description": "An introduction to the principles of plasma physics. A multitiered theoretical infrastructure will be developed consisting of the Hamilton-Lagrangian theory of charged particle motion in combined electric and magnetic fields, the Vlasov kinetic theory of plasma as a gas of interacting charged particles, the two-fluid model of plasma as interacting electron and ion fluids, and the magnetohydrodynamic model of plasma as an electrically conducting fluid subject to combined magnetic and hydrodynamic forces. This infrastructure will be used to examine waves, transport processes, equilibrium, stability, and topological self-organization. Examples relevant to plasmas in both laboratory (fusion, industrial) and space (magneto-sphere, solar) will be discussed.",
     "prerequisites": "Ph 106 abc or equivalent.",
-    "rating": "3.13 +/- 1.28",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=24&term_id=466&division_id=80425&department_id=124&offering_id=69092&track_id=69092-Default"
+    "rating": "3.28 +/- 0.65",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=124&offering_id=90651&track_id=90651-Default"
   },
   "196921190": {
     "id": 196921190,
@@ -1653,9 +1653,9 @@
     ],
     "description": "Principles of semiconductor electronic structure, carrier transport properties, and optoelectronic properties relevant to semiconductor device physics. Fundamental performance aspects of basic and advanced semiconductor electronic and optoelectronic devices. Topics include energy band theory, carrier generation and recombination mechanisms, quasi-Fermi levels, carrier drift and diffusion transport, quantum transport.",
     "prerequisites": "",
-    "rating": "4.59 +/- 0.69",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=124&offering_id=87060&track_id=87060-Default"
+    "rating": "4.53 +/- 0.64",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=124&offering_id=90593&track_id=90593-Default"
   },
   "542696128": {
     "id": 542696128,
@@ -2004,9 +2004,9 @@
     ],
     "description": "Advanced topics in condensed-matter physics, with emphasis on the effects of interactions, symmetry, and topology in many-body systems. Ph/APh 223 a covers second quantization, Hartree-Fock theory of the electron gas, Mott insulators and quantum magnetism, spin liquids, bosonization, and the integer and fractional quantum Hall effect. Ph/APh 223 b will continue with BCS theory of superconductivity, Ginzburg-Landau theory, elements of unconventional and topological superconductors, theory of superfluidity, Bose-Hubbard model and bosonic Mott insulators, and some aspects of quantum systems with randomness.",
     "prerequisites": "Ph 135 or equivalent, or instructor's permission.",
-    "rating": "4.86 +/- 0.38",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=147&offering_id=87068&track_id=87068-Default"
+    "rating": "4.77 +/- 0.51",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=147&offering_id=90601&track_id=90601-Default"
   },
   "542746781": {
     "id": 542746781,
@@ -2257,9 +2257,9 @@
     ],
     "description": "Introduction to modern astronomy that will illustrate the accomplishments, techniques, and scientific methodology of contemporary astronomy. The course will be organized around a set of basic questions, showing how our answers have changed in response to fresh observational discoveries. Topics to be discussed will include telescopes, stars, planets, the search for life elsewhere in the universe, supernovae, pulsars, black holes, galaxies and their active nuclei, and Big Bang cosmology. A field trip to Palomar Observatory will be organized. Not offered on a pass/fail basis.",
     "prerequisites": "",
-    "rating": "3.92 +/- 1.28",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=137&offering_id=86965&track_id=86965-Default"
+    "rating": "4.35 +/- 1.08",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=137&offering_id=90796&track_id=90796-Default"
   },
   "889333402": {
     "id": 889333402,
@@ -2307,9 +2307,9 @@
     ],
     "description": "A broad introduction to the present state and early history of the solar system, including terrestrial planets, giant planets, moons, asteroids, comets, and rings. Earth-based observations, observations by planetary spacecraft, study of meteorites, and observations of extrasolar planets are used to constrain models of the dynamical and chemical processes of planetary systems. Although Ge 11 abcd is designed as a sequence, any one term may be taken as a standalone course. Physicists and astronomers are particularly welcome.",
     "prerequisites": "Ma 1 ab, Ph 1 ab.",
-    "rating": "4.12 +/- 0.94",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80426&department_id=182&offering_id=83393&track_id=83393-Default"
+    "rating": "3.91 +/- 1.22",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80426&department_id=182&offering_id=90788&track_id=90788-Default"
   },
   "990520516": {
     "id": 990520516,
@@ -2508,9 +2508,9 @@
     ],
     "description": "An opportunity for astronomy and physics undergraduates (juniors and seniors) to gain firsthand experience with the basic instrumentation tools of modern optical and infrared astronomy. The 10 weekly lab experiments include radiometry measurements, geometrical optics, polarization, optical aberrations, spectroscopy, CCD characterization, vacuum and cryogenic technology, infrared detector technology, adaptive optics (wavefront sensors, deformable mirrors, closed loop control) and a coronography tutorial.",
     "prerequisites": "Ay 20.",
-    "rating": "3.93 +/- 0.86",
-    "true_units": "5",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=137&offering_id=87086&track_id=87086-Default"
+    "rating": "3.05 +/- 1.04",
+    "true_units": "Noticeably High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=137&offering_id=90619&track_id=90619-Default"
   },
   "37803762": {
     "id": 37803762,
@@ -2533,9 +2533,9 @@
     ],
     "description": "This hands-on, project-based course covers the design, proposal, and execution of astronomical observations, the basics of data reduction and analysis, and interacting with astronomical survey catalogs. In the first module, students will learn to use small, portable telescopes and find and image objects of interest using finder charts. In the second module, students will use Palomar Observatory to propose and execute their own research projects focused on astrophysical or planetary topics. In the third module, students will query and work with data from on-line archives and catalogs. The scope of the course includes imaging and spectroscopic observational techniques at optical and infrared wavelengths. The format centers on projects and practical skills but also includes a lecture and problem set component to establish the theoretical underpinnings of the practical work. The course meets once a week in the evening, and there are 1-2 required field trips to Palomar Observatory.",
     "prerequisites": "CS 1 or equivalent coding experience recommended.",
-    "rating": "4.89 +/- 0.32",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80428&department_id=137&offering_id=86230&track_id=86230-Default"
+    "rating": "4.70 +/- 0.49",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=137&offering_id=92421&track_id=92421-Default"
   },
   "896449681": {
     "id": 896449681,
@@ -2608,9 +2608,9 @@
     ],
     "description": "High-energy astrophysics, the final stages of stellar evolution; supernovae, binary stars, accretion disks, pulsars; extragalactic radio sources; active galactic nuclei; black holes.",
     "prerequisites": "Ph 106 and Ph 125 or equivalent (undergraduates).",
-    "rating": "2.45 +/- 1.23",
-    "true_units": "5",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=137&offering_id=86984&track_id=86984-Default"
+    "rating": "4.78 +/- 0.41",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=137&offering_id=90520&track_id=90520-Default"
   },
   "635879108": {
     "id": 635879108,
@@ -2633,9 +2633,9 @@
     ],
     "description": "Oral reports on current research in astronomy, providing students an opportunity for practice in the organization and presentation of technical material. A minimum of two presentations will be expected from each student each year. In addition, students are encouraged to participate in a public-level representation of the same material for posting to an outreach website. This course fulfills the option communication requirement and is required of all astronomy graduate students who have passed their preliminary exams. It is also recommended for astronomy seniors. Graded pass/fail.",
     "prerequisites": "",
-    "rating": "3.43 +/- 0.90",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=137&offering_id=86863&track_id=86863-Default"
+    "rating": "3.22 +/- 0.41",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=137&offering_id=90822&track_id=90822-Default"
   },
   "883482513": {
     "id": 883482513,
@@ -3202,9 +3202,9 @@
     ],
     "description": "Topic for 2022-23 is Extrasolar Planets. Thousands of planets have been identified in orbit around other stars. Astronomers are now embarking on understanding the statistics of extrasolar planet populations and characterizing individual systems in detail, namely star-planet, planet-planet and planet-disk dynamical interactions, physical parameters of planets and their composition, weather phenomena, etc. Direct and indirect detection techniques are now completing the big picture of extra-solar planetary systems in all of their natural diversity. The seminar-style course will review the state of the art in exoplanet science, take up case studies, detail current and future instrument needs, and anticipate findings.",
     "prerequisites": "",
-    "rating": "4.62 +/- 0.63",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80428&department_id=137&offering_id=83575&track_id=83575-Default"
+    "rating": "4.76 +/- 0.73",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=137&offering_id=90648&track_id=90648-Default"
   },
   "552175585": {
     "id": 552175585,
@@ -3252,9 +3252,9 @@
     ],
     "description": "The course covers the mechanisms by which eukaryotic cells control their duplication in a properly regulated manner. A large emphasis will be placed on the controls that cells employ to replicate and segregate their chromosomes with the necessary precision. In addition, the course will examine the mechanisms by which cells detect and rectify damaged DNA throughout the cell cycle. These various processes, collectively known as checkpoint-regulatory mechanisms, lie at the heart of how organisms maintain genomic integrity throughout their lifetimes. These pathways are essential for the prevention of cancer, birth defects, and other maladies. As part of the course, students will give presentations on key publications in the field, including both classic papers and newer papers that employ cutting-edge technologies.",
     "prerequisites": "Bi 8 and Bi 9.",
-    "rating": "4.79 +/- 0.41",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80423&department_id=153&offering_id=88855&track_id=88855-Default"
+    "rating": "4.68 +/- 0.55",
+    "true_units": "Somewhat Low",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80423&department_id=153&offering_id=90425&track_id=90425-Default"
   },
   "890806330": {
     "id": 890806330,
@@ -3277,9 +3277,9 @@
     ],
     "description": "The course focuses on a seminar on selected topics from outside faculty on recent advances in biochemistry. Components for each faculty visit include participation in a recitation, a formal discussion section with visiting faculty, and attendance of the Biochemistry seminar. Biochemistry Seminars take place 1-2 times per month (usually 4pm on Thursdays).",
     "prerequisites": "",
-    "rating": "4.85 +/- 0.46",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80424&department_id=234&offering_id=87014&track_id=87014-Default"
+    "rating": "5.00 +/- 0.00",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80424&department_id=234&offering_id=90549&track_id=90549-Default"
   },
   "747597910": {
     "id": 747597910,
@@ -3302,9 +3302,9 @@
     ],
     "description": "The cytosol, and fluid spaces within the nucleus, were once envisioned as a concentrated soup of proteins, RNA, and small molecules, all diffusing, mixing freely, and interacting randomly. We now know that proteins in the cytosol frequently undergo only restricted diffusion and become concentrated in specialized portions of the cytosol to carry out particular cellular functions. This course consists of lectures, reading, student presentations, and discussion about newly recognized biochemical mechanisms that confer local structure and reaction specificity within the cytosol, including protein scaffolds and \"liquid-liquid phase separations\" that form \"membraneless compartments\".",
     "prerequisites": "Bi 9, Ch/Bi 110-111 or graduate standing in a biological discipline.",
-    "rating": "4.77 +/- 0.48",
-    "true_units": "2",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80423&department_id=153&offering_id=87747&track_id=87747-Default"
+    "rating": "4.90 +/- 0.40",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80423&department_id=153&offering_id=90471&track_id=90471-Default"
   },
   "776823396": {
     "id": 776823396,
@@ -3327,9 +3327,9 @@
     ],
     "description": "Presentations and discussion of research at Caltech in biology and chemistry. Discussions of responsible conduct of research are included.",
     "prerequisites": "graduate standing.",
-    "rating": "4.45 +/- 1.13",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80423&department_id=153&offering_id=88857&track_id=88857-Default"
+    "rating": "4.96 +/- 0.25",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80423&department_id=153&offering_id=90431&track_id=90431-Default"
   },
   "183650857": {
     "id": 183650857,
@@ -3762,9 +3762,9 @@
     ],
     "description": "This course offers instruction and practice in writing and speaking relevant to professional biological scientists and engineers working in research, teaching, and/or medical careers. Students will write a paper for a scientific or engineering journal, either based on their previous research or written as a review paper of current work in their field. A Caltech faculty member, a postdoctoral scholar, or a technical staff member serves as a technical mentor for each student, to provide feedback on the content and style of the paper. Oral presentations will be based on selected scientific topics, with feedback from instructors and peers. Fulfills the Institute scientific writing requirement.",
     "prerequisites": "",
-    "rating": "4.62 +/- 0.56",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80423&department_id=153&offering_id=88027&track_id=88027-Default"
+    "rating": "4.00 +/- 1.24",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80423&department_id=153&offering_id=90473&track_id=90473-Default"
   },
   "105271946": {
     "id": 105271946,
@@ -4219,9 +4219,9 @@
     ],
     "description": "Quantitative studies of cellular and developmental systems in biology, including the architecture of specific circuits controlling microbial behaviors and multicellular development in model organisms. Specific topics include chemotaxis, multistability and differentiation, biological oscillations, stochastic effects in circuit operation, as well as higher-level circuit properties, such as robustness. The course will also consider the organization of transcriptional and protein-protein interaction networks at the genomic scale. Topics are approached from experimental, theoretical, and computational perspectives.",
     "prerequisites": "Bi 1, Bi 8, or equivalent; Ma 2, Bi/CNS/NB 195, or equivalent; or instructor's permission.",
-    "rating": "4.45 +/- 0.82",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80423&department_id=575&offering_id=87057&track_id=87057-Default"
+    "rating": "4.69 +/- 0.57",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80423&department_id=575&offering_id=90590&track_id=90590-Default"
   },
   "885406588": {
     "id": 885406588,
@@ -4244,9 +4244,9 @@
     ],
     "description": "This course will explore the process of creating and validating theoretical models in systems biology and physiology. It will examine several macroscopic physiological systems in detail, including examples from immunology, endocrinology, cardiovascular physiology, and others. Emphasis will be placed on understanding how macroscopic behavior emerges from the interaction of individual components.",
     "prerequisites": "Bi 8, Bi 9, or equivalent.",
-    "rating": "4.81 +/- 0.42",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80423&department_id=575&offering_id=87114&track_id=87114-Default"
+    "rating": "4.79 +/- 0.41",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80423&department_id=575&offering_id=90646&track_id=90646-Default"
   },
   "368157534": {
     "id": 368157534,
@@ -4789,9 +4789,9 @@
     ],
     "description": "Maximum enrollment: 12. Applications of spatial genomics technology to various biological samples. Projects will be selected to represent problems in neurobiology, developmental biology and translational medicine. Emphasis will be placed on generating experimental data and analysis of data with machine learning algorithms for segmentation and clustering cells with single cell genomics tools, and preparation for publication.",
     "prerequisites": "Instructor's permission.",
-    "rating": "",
-    "true_units": "",
-    "link": ""
+    "rating": "4.97 +/- 0.16",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80423&department_id=153&offering_id=90426&track_id=90426-Default"
   },
   "489324163": {
     "id": 489324163,
@@ -4856,9 +4856,9 @@
     ],
     "description": "Biological processes take place at length scales ranging from that of individual protein molecules all the way to the algal blooms or rainforests that can be seen from space and over a dizzying nearly 30 orders of magnitude in time scales.  This course will start by examining the biology of processes such as how plants and animals colonize oceanic islands and the physics of how animals such as wildebeest form giant herds during their year-long migration.  With these wonders of the living world revealed, we will then seek to understand biological phenomena by thinking about genes and cells. May be taken pass/fail if taken in a first-year student's first year.",
     "prerequisites": "",
-    "rating": "4.37 +/- 0.86",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80423&department_id=153&offering_id=86978&track_id=86978-Default"
+    "rating": "3.29 +/- 1.64",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80423&department_id=153&offering_id=90514&track_id=90514-Default"
   },
   "107793792": {
     "id": 107793792,
@@ -4931,9 +4931,9 @@
     ],
     "description": "Continues coverage of biology at the cellular level, begun in Bi 8. Topics: cytoplasmic structure, membrane structure and function, cell motility, and cell-cell recognition. Emphasis on both the ultrastructural and biochemical approaches to these topics.",
     "prerequisites": "Bi 8.",
-    "rating": "4.11 +/- 0.93",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80423&department_id=153&offering_id=86866&track_id=86866-Default"
+    "rating": "3.75 +/- 1.21",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80423&department_id=153&offering_id=90825&track_id=90825-Default"
   },
   "104855918": {
     "id": 104855918,
@@ -4963,9 +4963,9 @@
     ],
     "description": "An introduction to molecular, cellular, and biochemical techniques that are commonly used in studies of biological systems at the molecular level.",
     "prerequisites": "Bi 8; designed to be taken concurrently with Bi 9.",
-    "rating": "4.51 +/- 0.56",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=40&term_id=522&division_id=80423&department_id=153&offering_id=79798&track_id=79798-Default"
+    "rating": "4.87 +/- 0.33",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80423&department_id=153&offering_id=92498&track_id=92498-Default"
   },
   "104907940": {
     "id": 104907940,
@@ -5602,9 +5602,9 @@
     ],
     "description": "Lectures and recitation on the molecular basis of biological structure and function. Emphasizes the storage, transmission, and expression of genetic information in cells. Specific topics include DNA replication, recombination, repair and mutagenesis, transcription, RNA processing, and chromatin structure.",
     "prerequisites": "Ch/Bi 110 ab; Bi 8 and Bi 122 recommended.",
-    "rating": "3.96 +/- 0.90",
-    "true_units": "2",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80424&department_id=114&offering_id=86737&track_id=86737-Default"
+    "rating": "4.43 +/- 0.75",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80424&department_id=114&offering_id=91777&track_id=91777-Default"
   },
   "465506755": {
     "id": 465506755,
@@ -5648,9 +5648,9 @@
     ],
     "description": "General principles of the function and organization of nervous systems, providing both an overview of the subject and a foundation for advanced courses. Topics include the physical and chemical bases for action potentials, synaptic transmission, and sensory transduction; anatomy; development; sensory and motor pathways; memory and learning at the molecular, cellular, and systems level; and the neuroscience of brain diseases. Letter grades only.",
     "prerequisites": "Bi 8, 9, or instructor's permission.",
-    "rating": "4.20 +/- 0.94",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80423&department_id=535&offering_id=88028&track_id=88028-Default"
+    "rating": "4.27 +/- 0.87",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80423&department_id=535&offering_id=90809&track_id=90809-Default"
   },
   "420008440": {
     "id": 420008440,
@@ -5748,9 +5748,9 @@
     ],
     "description": "Lectures and literature-based discussions covering research methods, scientific concepts and logic, research strategies and general principles of modern biology. Students will learn to critique papers in a wide range of fields, including molecular biology, developmental biology, genetics and neuroscience. Graded pass/fail.",
     "prerequisites": "graduate standing.",
-    "rating": "4.80 +/- 0.54",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=40&term_id=522&division_id=80423&department_id=153&offering_id=80018&track_id=80018-Default"
+    "rating": "4.77 +/- 0.45",
+    "true_units": "Noticeably High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80423&department_id=153&offering_id=90589&track_id=90589-Default"
   },
   "421163067": {
     "id": 421163067,
@@ -5773,9 +5773,9 @@
     ],
     "description": "Lectures and literature-based discussions covering research methods, scientific concepts and logic, research strategies and general principles of modern biology. Students will learn to critique papers in a wide range of fields, including molecular biology, developmental biology, genetics and neuroscience. Graded pass/fail.",
     "prerequisites": "graduate standing.",
-    "rating": "5.00 +/- 0.00",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80423&department_id=535&offering_id=88874&track_id=88874-Default"
+    "rating": "4.92 +/- 0.26",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80423&department_id=535&offering_id=90437&track_id=90437-Default"
   },
   "348906787": {
     "id": 348906787,
@@ -5798,9 +5798,9 @@
     ],
     "description": "Emotions are at the forefront of most human endeavors. Emotions aid us in decision-making (gut feelings), help us remember, torment us, yet have ultimately helped us to survive. Over the past few decades, we have begun to characterize the neural systems that extend from primitive affective response such as fight or flight to the complex emotions experienced by humans including guilt, envy, empathy and social pain. This course will begin with an in-depth examination of the neurobiological systems that underlie negative and positive emotions and move onto weekly discussions, based on assigned journal articles that highlight both rudimentary and complex emotions. The final weeks will be devoted to exploring how the neurobiological systems are disrupted in affective disorders including anxiety, aggression and psychopathy. In addition to these discussions and readings, each student will be required to write a review paper or produce a short movie on a topic related to one of the emotions discussed in these seminars and its underlying neural mechanisms.",
     "prerequisites": "NB/Bi/CNS 150 or instructor's permission.",
-    "rating": "4.78 +/- 0.58",
-    "true_units": "2",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=149&offering_id=87158&track_id=87158-Default"
+    "rating": "4.92 +/- 0.28",
+    "true_units": "Somewhat Low",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=149&offering_id=90692&track_id=90692-Default"
   },
   "896855683": {
     "id": 896855683,
@@ -6451,9 +6451,9 @@
     ],
     "description": "Examines the theory of financial decision making and statistical techniques useful in analyzing financial data. Topics include portfolio selection, equilibrium security pricing, empirical analysis of equity securities, fixed-income markets, market efficiency, and risk management.",
     "prerequisites": "Ec 11, BEM 103, some familiarity with statistics.",
-    "rating": "4.37 +/- 0.76",
-    "true_units": "2",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=165&offering_id=87147&track_id=87147-Default"
+    "rating": "3.99 +/- 1.30",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=165&offering_id=90678&track_id=90678-Default"
   },
   "958715656": {
     "id": 958715656,
@@ -6476,9 +6476,9 @@
     ],
     "description": "This course introduces students to data science for financial applications using the Python programming language and its ecosystem of packages. Students will learn how to use Python to extract numerical and text data from websites, evaluate fundamental risk-reward trade-offs using real-world financial data, and combine quantitative and qualitative factors into a persuasive argument. Time permitting, we will cover topics in machine learning, algorithmic trading, and cryptocurrencies.  Each student is expected to complete individual problem sets and a final project. Some programming experience is helpful though knowledge of Python is not assumed.",
     "prerequisites": "BEM 103.",
-    "rating": "4.23 +/- 0.91",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=25&term_id=508&division_id=80427&department_id=165&offering_id=72381&track_id=72381-Default"
+    "rating": "4.68 +/- 0.58",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=165&offering_id=92442&track_id=92442-Default"
   },
   "821901903": {
     "id": 821901903,
@@ -6501,9 +6501,9 @@
     ],
     "description": "This course is an in-depth study of the hedge fund industry. We will study hedge fund trading strategies, the business model of hedge funds, hedge fund investors, as well as the institutional and regulatory framework in which hedge funds operate. The course will evaluate and analyze popular hedge fund trading strategies, including equity strategies (activist, market-neutral, long/short, event-driven, etc.), arbitrage strategies (derivatives, convertible, fixed-income, currency and global macro, etc.), and fund of hedge funds. The course will also analyze the hedge fund business model, including: performance evaluation and risk management; fund compensation and contractual features; transaction costs and market impact; as well as fund raising and marketing. In addition, the course will study the institutional relationships hedge funds have with service providers (prime brokers, custodian banks, etc.) and with regulators. We will also discuss public policy implications and the value of hedge funds in society. This course is designed to provide students with the skills necessary to evaluate hedge fund strategies, and to develop, manage, and successfully grow a hedge fund business.",
     "prerequisites": "BEM 103.",
-    "rating": "4.40 +/- 1.03",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=28&term_id=486&division_id=80427&department_id=165&offering_id=71865&track_id=71865-Default"
+    "rating": "4.83 +/- 0.59",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=165&offering_id=92444&track_id=92444-Default"
   },
   "141487126": {
     "id": 141487126,
@@ -6551,9 +6551,9 @@
     ],
     "description": "Instruction in synthesis, separation, purification, and physical and spectroscopic characterization procedures of model organic and organometallic compounds. Specific emphasis will be focused on following the scientific method in the study of model organic and inorganic materials. Enrollment priority given to chemical engineering majors.",
     "prerequisites": "Ch 1 ab and Ch 3 a or Ch 3 x. Previous or concurrent enrollment in Ch 41 is strongly recommended.",
-    "rating": "4.15 +/- 1.04",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80424&department_id=114&offering_id=87026&track_id=87026-Default"
+    "rating": "4.31 +/- 1.22",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80424&department_id=114&offering_id=90561&track_id=90561-Default"
   },
   "883665332": {
     "id": 883665332,
@@ -6601,9 +6601,9 @@
     ],
     "description": "Special problems or courses arranged to meet the emerging needs of undergraduate students. Topics have included AIChE's annual Chem-E-Car Competition. May be repeated for credit, as content may vary. Grading scheme at instructor's discretion.",
     "prerequisites": "instructor's permission.",
-    "rating": "0.00 +/- 0.00",
-    "true_units": "Noticeably High",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=49&term_id=551&division_id=80424&department_id=116&offering_id=90277&track_id=90277-Default"
+    "rating": "5.00 +/- 0.00",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80424&department_id=116&offering_id=92497&track_id=92497-Default"
   },
   "880018316": {
     "id": 880018316,
@@ -7108,9 +7108,9 @@
     ],
     "description": "A rigorous development of the basic differential equations of conservation of momentum, energy, and mass in fluid systems. Solution of problems involving fluid flow, heat transfer, and mass transfer.",
     "prerequisites": "ACM 95/100 ab or concurrent registration; ChE 101 required for ChE 103 c or instructor's permission.",
-    "rating": "4.61 +/- 0.81",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80424&department_id=116&offering_id=87033&track_id=87033-Default"
+    "rating": "4.53 +/- 0.97",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80424&department_id=116&offering_id=90568&track_id=90568-Default"
   },
   "889360859": {
     "id": 889360859,
@@ -7133,9 +7133,9 @@
     ],
     "description": "Analysis of linear dynamic systems. Feedback control. Stability of closed-loop control systems. Root locus, Frequency response, and Nyquist analysis. Feedforward, cascade, and multivariable control systems.",
     "prerequisites": "ACM 95 ab or concurrent registration, or instructor's permission.",
-    "rating": "4.55 +/- 0.99",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80424&department_id=116&offering_id=86982&track_id=86982-Default"
+    "rating": "3.72 +/- 0.95",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80424&department_id=116&offering_id=90518&track_id=90518-Default"
   },
   "546389396": {
     "id": 546389396,
@@ -7716,9 +7716,9 @@
     ],
     "description": "Prerequisites may be waived with instructor's permission. Preference will be given to students who have taken Ch 5 a or Bi 10. This advanced laboratory course will provide experience in powerful contemporary methods used in chemical biology, including polypeptide synthesis and the selective labeling and imaging of glycoproteins in cells. Experiments will address amino acid protecting group strategies, biopolymer assembly and isolation, and product characterization. A strong emphasis will be placed on understanding the chemical basis underlying the successful utilization of these procedures. In addition, experiments to demonstrate the application of commercially available enzymes for useful synthetic organic transformations will be illustrated. Students need only attend two lab sections per week.",
     "prerequisites": "Ch 41 abc, Ch/Bi 110 ab, and Ch 4 ab.",
-    "rating": "4.45 +/- 0.73",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80424&department_id=114&offering_id=88869&track_id=88869-Default"
+    "rating": "5.00 +/- 0.00",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80424&department_id=114&offering_id=90432&track_id=90432-Default"
   },
   "990106451": {
     "id": 990106451,
@@ -7741,9 +7741,9 @@
     ],
     "description": "Ch 10 ab is a weekly seminar by a member of the chemistry department on a topic of current research; the topic will be presented at an informal, introductory level. Ch 10 c is a research-oriented laboratory course, which will be supervised by a chemistry faculty member. Weekly class meetings will provide a forum for participants to discuss their research projects. Graded pass/fail.",
     "prerequisites": "Open for credit to first-year students and sophomores. Ch 10 c prerequisites are Ch 10 ab, Ch 3 a or Ch 3 x, and either Ch 1 ab, Ch 41 ab, or Ch 21 ab, and instructor\u2019s permission.",
-    "rating": "4.71 +/- 0.49",
-    "true_units": "2",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80424&department_id=114&offering_id=86872&track_id=86872-Default"
+    "rating": "4.91 +/- 0.29",
+    "true_units": "Somewhat Low",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80424&department_id=114&offering_id=90831&track_id=90831-Default"
   },
   "105058494": {
     "id": 105058494,
@@ -7766,9 +7766,9 @@
     ],
     "description": "Develops the basic principles of chemical equilibrium in aqueous solutions, emphasizing acid-base chemistry, complex ion formation, chelation, solubility, oxidation-reduction reactions, and partitioning equilibria for separations.",
     "prerequisites": "",
-    "rating": "4.78 +/- 0.42",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80424&department_id=114&offering_id=86679&track_id=86679-Default"
+    "rating": "4.74 +/- 0.57",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80424&department_id=114&offering_id=92516&track_id=92516-Default"
   },
   "990158473": {
     "id": 990158473,
@@ -7791,9 +7791,9 @@
     ],
     "description": "Atomic and molecular quantum mechanics, spectroscopy, chemical dynamics, statistical mechanics, and thermodynamics.",
     "prerequisites": "Ch 1 ab, Ph 2 a or Ph 12 a, Ma 2; Ma 3 is recommended. (Ph 2 a or 12 a and Ma 2 can be taken concurrently.).",
-    "rating": "3.35 +/- 1.66",
-    "true_units": "5",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80424&department_id=114&offering_id=86873&track_id=86873-Default"
+    "rating": "3.82 +/- 1.25",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80424&department_id=114&offering_id=90832&track_id=90832-Default"
   },
   "990161211": {
     "id": 990161211,
@@ -7830,9 +7830,9 @@
     ],
     "description": "The synthesis, structure, and reaction mechanisms of organic compounds.",
     "prerequisites": "Ch 1 ab or instructor's permission.",
-    "rating": "4.71 +/- 0.63",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80424&department_id=114&offering_id=86874&track_id=86874-Default"
+    "rating": "4.57 +/- 0.77",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80424&department_id=114&offering_id=90833&track_id=90833-Default"
   },
   "104865465": {
     "id": 104865465,
@@ -8494,9 +8494,9 @@
     ],
     "description": "Structure and bonding of inorganic species with special emphasis on symmetry, spectroscopy, oxidation-reduction reactions, organometallic, and solid-state chemistry.",
     "prerequisites": "Ch 41 ab.",
-    "rating": "3.15 +/- 1.32",
-    "true_units": "5",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80424&department_id=114&offering_id=86972&track_id=86972-Default"
+    "rating": "4.06 +/- 0.95",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80424&department_id=114&offering_id=90802&track_id=90802-Default"
   },
   "564559057": {
     "id": 564559057,
@@ -8519,9 +8519,9 @@
     ],
     "description": "Modern ideas of chemical bonding, with an emphasis on qualitative concepts useful for predictions of structures, energetics, excited states, and properties. Part a: The quantum mechanical basis for understanding bonding, structures, energetics, and properties of materials (polymers, ceramics, metals alloys, semiconductors, and surfaces), including transition metal and organometallic systems with a focus on chemical reactivity. The emphasis is on explaining chemical, mechanical, electrical, and thermal properties of materials in terms of atomistic concepts. Part b: The student does an individual research project using modern quantum chemistry computer programs to calculate wavefunctions, structures, and properties of real molecules.",
     "prerequisites": "general exposure to quantum mechanics (e.g., Ch 21 a).",
-    "rating": "",
-    "true_units": "",
-    "link": ""
+    "rating": "5.00 +/- 0.00",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80424&department_id=114&offering_id=90475&track_id=90475-Default"
   },
   "497089261": {
     "id": 497089261,
@@ -8544,9 +8544,9 @@
     ],
     "description": "Application of Atomistic-based methods [Quantum Mechanics (QM) and Molecular Dynamics (MD)] for predicting the structures and properties of molecules and solids and simulating the dynamical properties. This course emphasizes hands-on use of modern commercial software (such as Jaguar for QM, VASP for periodic QM, and LAMMPS for MD) for practical applications and is aimed at experimentalists and theorists interested in understanding structures, properties, and dynamics in such areas as biological systems (proteins, DNA, carbohydrates, lipids); polymers (crystals, amorphous systems, co-polymers); semiconductors (group IV, III-V, surfaces, defects); inorganic systems (ceramics, zeolites, superconductors, and metals); organo-metallics, and catalysis (heterogeneous, homogeneous, and electrocatalysis). Ch 121 a covers the basic methods with hands-on applications to systems of interest using modern software. The homework for the first 5 weeks emphasizes computer-based solutions. For the second 5 weeks of the homework each student proposes a short research project and uses atomistic simulations to solve it. Ch 121 b each student selects a more extensive research project and uses atomistic simulations to solve it.",
     "prerequisites": "Ch 21 a or Ch 125 a.",
-    "rating": "4.60 +/- 0.67",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80424&department_id=114&offering_id=87248&track_id=87248-Default"
+    "rating": "4.39 +/- 0.97",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80424&department_id=114&offering_id=90476&track_id=90476-Default"
   },
   "889053716": {
     "id": 889053716,
@@ -8708,9 +8708,9 @@
     ],
     "description": "Quantum mechanical foundations of optical spectroscopy as applied to chemical and material systems. Topics include optical properties of materials, nonlinear and quantum optics, and multidimensional spectroscopy.",
     "prerequisites": "Ch 125 ab, or equivalent instruction in quantum mechanics.",
-    "rating": "4.40 +/- 1.01",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80424&department_id=114&offering_id=87186&track_id=87186-Default"
+    "rating": "4.83 +/- 0.44",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80424&department_id=114&offering_id=90719&track_id=90719-Default"
   },
   "896754341": {
     "id": 896754341,
@@ -9719,9 +9719,9 @@
     ],
     "description": "The class will focus on an advanced topic in computational vision: recognition, vision-based navigation, 3-D reconstruction. The class will include a tutorial introduction to the topic, an exploration of relevant recent literature, and a project involving the design, implementation, and testing of a vision system.",
     "prerequisites": "undergraduate calculus, linear algebra, geometry, statistics, computer programming.",
-    "rating": "4.45 +/- 1.07",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=129&offering_id=87172&track_id=87172-Default"
+    "rating": "3.76 +/- 1.51",
+    "true_units": "Noticeably High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=129&offering_id=90705&track_id=90705-Default"
   },
   "77875541": {
     "id": 77875541,
@@ -9744,9 +9744,9 @@
     ],
     "description": "Introduction to the theory, algorithms, and applications of automated learning. How much information is needed to learn a task, how much computation is involved, and how it can be accomplished. Special emphasis will be given to unifying the different approaches to the subject coming from statistics, function approximation, optimization, pattern recognition, and neural networks.",
     "prerequisites": "Ma 2 and CS 2, or equivalent.",
-    "rating": "4.55 +/- 0.89",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=117&offering_id=87092&track_id=87092-Default"
+    "rating": "4.68 +/- 0.80",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=117&offering_id=90625&track_id=90625-Default"
   },
   "428765319": {
     "id": 428765319,
@@ -9769,9 +9769,9 @@
     ],
     "description": "This course focuses on current topics in machine learning research. This is a paper reading course, and students are expected to understand material directly from research articles. Students are also expected to present in class, and to do a final project.",
     "prerequisites": "CS 155; strong background in statistics, probability theory, algorithms, and linear algebra; background in optimization is a plus as well.",
-    "rating": "4.46 +/- 0.98",
-    "true_units": "2",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=117&offering_id=87300&track_id=87300-Default"
+    "rating": "4.77 +/- 0.53",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=117&offering_id=90509&track_id=90509-Default"
   },
   "557653750": {
     "id": 557653750,
@@ -10366,9 +10366,9 @@
     ],
     "description": "CS 3 is a practical introduction to designing large programs in a low-level language. Heavy emphasis is placed on documentation, testing, and software architecture. Students will work in teams in two 5-week long projects. In the first half of the course, teams will focus on testing and extensibility. In the second half of the course, teams will use POSIX APIs, as well as their own code from the first five weeks, to develop a large software deliverable. Software engineering topics covered include code reviews, testing and testability, code readability, API design, refactoring, and documentation.",
     "prerequisites": "CS 2 or equivalent.",
-    "rating": "4.48 +/- 0.80",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=117&offering_id=87151&track_id=87151-Default"
+    "rating": "4.52 +/- 0.90",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=117&offering_id=90682&track_id=90682-Default"
   },
   "648924802": {
     "id": 648924802,
@@ -10391,9 +10391,9 @@
     ],
     "description": "First term: a survey emphasizing graph theory, algorithms, and applications of algebraic structures. Graphs: paths, trees, circuits, breadth-first and depth-first searches, colorings, matchings. Enumeration techniques; formal power series; combinatorial interpretations. Topics from coding and cryptography, including Hamming codes and RSA. Second term: directed graphs; networks; combinatorial optimization; linear programming. Permutation groups; counting nonisomorphic structures. Topics from extremal graph and set theory, and partially ordered sets. Third term: elements of computability theory and computational complexity. Discussion of the P=NP problem, syntax and semantics of propositional and first-order logic. Introduction to the G\u00f6del completeness and incompleteness theorems.",
     "prerequisites": "for Ma/CS 6 c, Ma/CS 6 a or Ma 5 a or instructor's permission.",
-    "rating": "4.91 +/- 0.28",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=142&offering_id=86853&track_id=86853-Default"
+    "rating": "4.60 +/- 0.73",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=142&offering_id=90812&track_id=90812-Default"
   },
   "890552381": {
     "id": 890552381,
@@ -10416,9 +10416,9 @@
     ],
     "description": "This course is intended to give the student a basic understanding of the major hardware and software principles involved in the specification and design of embedded systems. The course will cover basic digital logic, programmable logic devices, CPU and embedded system architecture, and embedded systems programming principles (interfacing to hardware, events, user interfaces, and multi-tasking).",
     "prerequisites": "",
-    "rating": "4.56 +/- 0.78",
-    "true_units": "5",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=129&offering_id=87126&track_id=87126-Default"
+    "rating": "3.57 +/- 1.84",
+    "true_units": "Noticeably High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=129&offering_id=90657&track_id=90657-Default"
   },
   "104906942": {
     "id": 104906942,
@@ -10491,9 +10491,9 @@
     ],
     "description": "This course introduces techniques for the design and analysis of efficient algorithms. Major design techniques (the greedy approach, divide and conquer, dynamic programming, linear programming) will be introduced through a variety of algebraic, graph, and optimization problems. Methods for identifying intractability (via NP-completeness) will be discussed.",
     "prerequisites": "CS 2; Ma/CS 6 a or Ma 121 a; and CS 21.",
-    "rating": "3.83 +/- 1.34",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=117&offering_id=86963&track_id=86963-Default"
+    "rating": "3.83 +/- 1.43",
+    "true_units": "Noticeably High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=117&offering_id=90794&track_id=90794-Default"
   },
   "747289733": {
     "id": 747289733,
@@ -11308,9 +11308,9 @@
     ],
     "description": "This course is a both a theoretical and practical introduction to functional programming, a paradigm which allows programmers to work at an extremely high level of abstraction while simultaneously avoiding large classes of bugs that plague more conventional imperative and object-oriented languages. The course will introduce and use the lazy functional language Haskell exclusively. Topics include: recursion, first-class functions, higher-order functions, algebraic data types, polymorphic types, function composition, point-free style, proving functions correct, lazy evaluation, pattern matching, lexical scoping, type classes, and modules. Some advanced topics such as monad transformers, parser combinators, dynamic typing, and existential types are also covered.",
     "prerequisites": "CS 1 and CS 4.",
-    "rating": "4.72 +/- 0.55",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=117&offering_id=87094&track_id=87094-Default"
+    "rating": "4.69 +/- 0.60",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=117&offering_id=90627&track_id=90627-Default"
   },
   "887129309": {
     "id": 887129309,
@@ -11333,9 +11333,9 @@
     ],
     "description": "This course explores the major themes and components of modern operating systems, such as kernel architectures, the process abstraction and process scheduling, system calls, concurrency within the OS, virtual memory management, and file systems. Students must work in groups to complete a series of challenging programming projects, implementing major components of an instructional operating system. Most programming is in C, although some IA32 assembly language programming is also necessary. Familiarity with the material in CS 24 is strongly advised before attempting this course.",
     "prerequisites": "CS 24.",
-    "rating": "4.71 +/- 0.48",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=117&offering_id=87179&track_id=87179-Default"
+    "rating": "4.51 +/- 0.92",
+    "true_units": "Noticeably High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=117&offering_id=90712&track_id=90712-Default"
   },
   "571899754": {
     "id": 571899754,
@@ -11358,9 +11358,9 @@
     ],
     "description": "This course covers the foundations of experimental realization on robotic systems. This includes software infrastructure to operate physical hardware, integrate various sensor modalities, and create robust autonomous behaviors. Using the Python programming language, assignments will explore techniques from simple polling to interrupt driven and multi-threaded architectures, ultimately utilizing the Robotic Operating System (ROS). Developments will be integrated on mobile robotic systems and demonstrated in the context of class projects.",
     "prerequisites": "",
-    "rating": "3.97 +/- 1.38",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=143&offering_id=87302&track_id=87302-Default"
+    "rating": "4.69 +/- 0.70",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=143&offering_id=90510&track_id=90510-Default"
   },
   "881557479": {
     "id": 881557479,
@@ -11383,9 +11383,9 @@
     ],
     "description": "CS 131 is a course on programming languages and their implementation. It teaches students how to program in a number of simplified languages representing the major programming paradigms in use today (imperative, object-oriented, and functional). It will also teach students how to build and modify the implementations of these languages. Emphasis will not be on syntax or parsing but on the essential differences in these languages and their implementations. Both dynamically-typed and statically-typed languages will be implemented. Relevant theory will be covered as needed. Implementations will mostly be interpreters, but some features of compilers will be covered if time permits. Enrollment limited to 30 students.",
     "prerequisites": "CS 4.",
-    "rating": "4.68 +/- 0.72",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=117&offering_id=87121&track_id=87121-Default"
+    "rating": "4.89 +/- 0.35",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=117&offering_id=90653&track_id=90653-Default"
   },
   "883431640": {
     "id": 883431640,
@@ -11408,9 +11408,9 @@
     ],
     "description": "Covers full-stack web development with HTML5, CSS, client-side JS (ES6) and server-side JS (Node.js/Express) for web API development. Concepts including separation of concerns, the client-server relationship, user experience, accessibility, and security will also be emphasized throughout the course. Assignments will alternate between formal and semi-structured student-driven projects, providing students various opportunities to apply material to their individual interests. No prior web development background is required, though students who have prior experience may still benefit from learning best practices and HTML5/ES6 standards.",
     "prerequisites": "CS 1 or equivalent.",
-    "rating": "4.77 +/- 0.73",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=117&offering_id=88914&track_id=88914-Default"
+    "rating": "4.58 +/- 0.89",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=117&offering_id=90738&track_id=90738-Default"
   },
   "892802445": {
     "id": 892802445,
@@ -11458,9 +11458,9 @@
     ],
     "description": "This course is identical to CS 38. Only graduate students for whom this is the first algorithms course are allowed to register for CS 138. See the CS 38 entry for prerequisites and course description.",
     "prerequisites": "",
-    "rating": "4.08 +/- 1.27",
-    "true_units": "5",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=36&term_id=518&division_id=80425&department_id=117&offering_id=77133&track_id=77133-Default"
+    "rating": "3.50 +/- 1.50",
+    "true_units": "Noticeably High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=117&offering_id=90597&track_id=90597-Default"
   },
   "519568226": {
     "id": 519568226,
@@ -11508,9 +11508,9 @@
     ],
     "description": "Students are expected to execute a substantial project in networking, write up a report describing their work, and make a presentation.",
     "prerequisites": "Either CMS/CS/EE/IDS 144 or CS/IDS 142 in the preceding term, or instructor permission.",
-    "rating": "5.00 +/- 0.00",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=117&offering_id=87007&track_id=87007-Default"
+    "rating": "4.75 +/- 0.43",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=117&offering_id=90543&track_id=90543-Default"
   },
   "749450250": {
     "id": 749450250,
@@ -11558,9 +11558,9 @@
     ],
     "description": "This course will equip students to engage with active research at the intersection of social and information sciences, including: algorithmic game theory and mechanism design; auctions; matching markets; and learning in games.",
     "prerequisites": "",
-    "rating": "4.69 +/- 0.51",
-    "true_units": "1",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=117&offering_id=88792&track_id=88792-Default"
+    "rating": "4.94 +/- 0.27",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=117&offering_id=90448&track_id=90448-Default"
   },
   "525931118": {
     "id": 525931118,
@@ -11590,9 +11590,9 @@
     ],
     "description": "May be repeated for credit, with permission of the instructor. Students in this course will study an area of current interest in theoretical computer science. The lectures will cover relevant background material at an advanced level and present results from selected recent papers within that year's chosen theme. Students will be expected to read and present a research paper.",
     "prerequisites": "CS 21 and CS 38, or instructor's permission.",
-    "rating": "4.89 +/- 0.31",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=117&offering_id=88897&track_id=88897-Section 1"
+    "rating": "5.00 +/- 0.00",
+    "true_units": "Somewhat Low",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=117&offering_id=90733&track_id=90733-Default"
   },
   "694289109": {
     "id": 694289109,
@@ -11640,9 +11640,9 @@
     ],
     "description": "Mobile robots need to perceive their environment and localize themselves with respect to maps thereof. They further require planners to move along collision-free paths. This course builds up mobile robots in team-based projects. Teams will write all necessary software from low-level hardware I/O to high level algorithms, using the robotic operating system (ROS). The final systems will autonomously maneuver to reach their goals or track various objectives.",
     "prerequisites": "ME/CS/EE 133 b, or with permission of instructor.",
-    "rating": "4.27 +/- 1.20",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=143&offering_id=88848&track_id=88848-Default"
+    "rating": "4.89 +/- 0.41",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=143&offering_id=90418&track_id=90418-Default"
   },
   "896753379": {
     "id": 896753379,
@@ -11665,9 +11665,9 @@
     ],
     "description": "Some experience with computer graphics algorithms preferred. The use of Graphics Processing Units for computer graphics rendering is well known, but their power for general parallel computation is only recently being explored. Parallel algorithms running on GPUs can often achieve up to 100x speedup over similar CPU algorithms. This course covers programming techniques for the Graphics processing unit, focusing on visualization and simulation of various systems. Labs will cover specific applications in graphics, mechanics, and signal processing. The course will use nVidia's parallel computing architecture, CUDA. Labwork requires extensive programming.",
     "prerequisites": "Good working knowledge of C/C++.",
-    "rating": "3.66 +/- 1.34",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=117&offering_id=87041&track_id=87041-Default"
+    "rating": "4.04 +/- 1.19",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=117&offering_id=90576&track_id=90576-Default"
   },
   "879936583": {
     "id": 879936583,
@@ -11792,9 +11792,9 @@
     ],
     "description": "The theory of quantum information and quantum computation. Overview of classical information theory, compression of quantum information, transmission of quantum information through noisy channels, quantum error-correcting codes, quantum cryptography and teleportation. Overview of classical complexity theory, quantum complexity, efficient quantum algorithms, fault-tolerant quantum computation, physical implementations of quantum computation.",
     "prerequisites": "Ph 125 ab or equivalent.",
-    "rating": "4.90 +/- 0.36",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=147&offering_id=88885&track_id=88885-Default"
+    "rating": "4.90 +/- 0.44",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=147&offering_id=90481&track_id=90481-Default"
   },
   "879937952": {
     "id": 879937952,
@@ -12341,9 +12341,9 @@
     ],
     "description": "An introduction to analysis and design of feedback control systems, including classical control theory in the time and frequency domain. Input/output modeling of dynamical systems using differential equations and transfer functions. Stability and performance of interconnected systems, including use of block diagrams, Bode plots, the Nyquist criterion, and Lyapunov functions. Design of feedback controllers in state space and frequency domain based on stability, performance and robustness specifications.",
     "prerequisites": "Ma 1 abc and Ma 2/102 or equivalents.",
-    "rating": "4.44 +/- 0.90",
-    "true_units": "2",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=127&offering_id=87273&track_id=87273-Default"
+    "rating": "3.94 +/- 0.95",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=127&offering_id=90500&track_id=90500-Default"
   },
   "559527541": {
     "id": 559527541,
@@ -12416,9 +12416,9 @@
     ],
     "description": "This course studies nonlinear control systems from Lyapunov perspective. Beginning with feedback linearization and the stabilization of feedback linearizable system, these concepts are related to control Lyapunov functions, and corresponding stabilization results in the context of optimization based controllers. Advanced topics that build upon these core results will be discussed including: stability of periodic orbits, controller synthesis through virtual constraints, safety-critical controllers, and the role of physical constraints and actuator limits. The control of robotic systems will be used as a motivating example.",
     "prerequisites": "CDS 231 and CDS 232.",
-    "rating": "4.30 +/- 0.85",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=127&offering_id=87120&track_id=87120-Default"
+    "rating": "4.82 +/- 0.46",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=127&offering_id=90652&track_id=90652-Default"
   },
   "924859523": {
     "id": 924859523,
@@ -12696,9 +12696,9 @@
     ],
     "description": "We will tackle the fundamental question of how to allocate resources and organize exchange in the absence of prices. Examples includes finding a partner, allocating students to schools, and matching donors to patients in the context of organ transplantations. While the main focus will be on formal models, we will also reason about the practical implications of the theory.",
     "prerequisites": "",
-    "rating": "4.89 +/- 0.34",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=128&offering_id=87111&track_id=87111-Default"
+    "rating": "4.63 +/- 0.55",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=128&offering_id=90644&track_id=90644-Default"
   },
   "742113816": {
     "id": 742113816,
@@ -12746,9 +12746,9 @@
     ],
     "description": "Fundamentals of electronic circuits and systems. Lectures on diodes, transistors, small-signal analysis, frequency- domain analysis, application of Laplace transform, gain stages, differential signaling, operational amplifiers, introduction to radio and analog communication systems. Laboratory sessions on transient response, steady-state sinusoidal response and phasors, diodes, transistors, amplifiers.",
     "prerequisites": "EE 44.",
-    "rating": "4.67 +/- 0.81",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=129&offering_id=87270&track_id=87270-Default"
+    "rating": "4.81 +/- 0.45",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=129&offering_id=90499&track_id=90499-Default"
   },
   "990115925": {
     "id": 990115925,
@@ -12915,9 +12915,9 @@
     ],
     "description": "A structured laboratory course that gives the student the opportunity to design and build a simple analog electronics project. The goal is to gain familiarity with circuit design and construction, component selection, CAD support, and debugging techniques.",
     "prerequisites": "EE 45 or EE 85.",
-    "rating": "3.76 +/- 1.22",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=129&offering_id=86888&track_id=86888-Default"
+    "rating": "3.17 +/- 1.51",
+    "true_units": "Noticeably High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=129&offering_id=90847&track_id=90847-Default"
   },
   "105322602": {
     "id": 105322602,
@@ -13112,9 +13112,9 @@
     ],
     "description": "All candidates for the M.S. degree in electrical engineering are required to attend any graduate seminar in any division each week of each term. Graded pass/fail.",
     "prerequisites": "",
-    "rating": "3.97 +/- 1.00",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=129&offering_id=86998&track_id=86998-Default"
+    "rating": "4.96 +/- 0.19",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=129&offering_id=90534&track_id=90534-Default"
   },
   "633852252": {
     "id": 633852252,
@@ -13187,9 +13187,9 @@
     ],
     "description": "Foundations of circuit theory-electric fields, magnetic fields, transmission lines, and Maxwell's equations, with engineering applications.",
     "prerequisites": "EE 45.",
-    "rating": "4.96 +/- 0.21",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=129&offering_id=87054&track_id=87054-Default"
+    "rating": "4.92 +/- 0.33",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=129&offering_id=90588&track_id=90588-Default"
   },
   "572207551": {
     "id": 572207551,
@@ -13237,9 +13237,9 @@
     ],
     "description": "An overview of the physics behind space remote sensing instruments. Topics include the interaction of electromagnetic waves with natural surfaces, including scattering of microwaves, microwave and thermal emission from atmospheres and surfaces, and spectral reflection from natural surfaces and atmospheres in the near-infrared and visible regions of the spectrum. The class also discusses the design of modern space sensors and associated technology, including sensor design, new observation techniques, ongoing developments, and data interpretation. Examples of applications and instrumentation in geology, planetology, oceanography, astronomy, and atmospheric research.",
     "prerequisites": "Ph 2 or equivalent.",
-    "rating": "4.61 +/- 0.69",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80426&department_id=182&offering_id=87230&track_id=87230-Default"
+    "rating": "4.48 +/- 0.96",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80426&department_id=182&offering_id=90742&track_id=90742-Default"
   },
   "881862250": {
     "id": 881862250,
@@ -13655,9 +13655,9 @@
     ],
     "description": "This graduate course examines the research on university-level STEM (science, technology, engineering, and mathematics) teaching and learning, which has been used to inform a well-established body of evidence-based teaching practices. Weekly interactive meetings will provide focused overviews and guided application of key pedagogical research, such as prior knowledge and misconceptions, novice-expert differences, and cognitive development as applied to university teaching. We will explore the roles of active learning, student engagement, and inclusive teaching practices in designing classes where all students have an equal opportunity to be successful and feel a sense of belonging, both in the course and as scientists. Readings will inform in-class work and students will apply principles to a project of their choice.",
     "prerequisites": "",
-    "rating": "4.39 +/- 1.40",
+    "rating": "4.93 +/- 0.25",
     "true_units": "About Right",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=49&term_id=551&division_id=80425&department_id=275&offering_id=89930&track_id=89930-Default"
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=275&offering_id=90488&track_id=90488-Default"
   },
   "477184930": {
     "id": 477184930,
@@ -13680,9 +13680,9 @@
     ],
     "description": "Throughout the history of Europe, America, and beyond, poets and philosophers have asked hard questions about unequal relationships, whether between kings and subjects, gods and humans, men and women, rich and poor, or machines and people. Our authors take no single point of view; our goal is to analyze sophisticated and often surprising arguments and to enter new cultural worlds. Readings may include Ovid, Milton, Sei Shonagon, Machiavelli, Rousseau, and Alexievich.",
     "prerequisites": "",
-    "rating": "5.00 +/- 0.00",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80427&department_id=136&offering_id=88416&track_id=88416-Section 2"
+    "rating": "4.90 +/- 0.29",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=136&offering_id=92382&track_id=92382-Section 1"
   },
   "608637703": {
     "id": 608637703,
@@ -13830,9 +13830,9 @@
     ],
     "description": "When William Blake wrote \"to see a World in a Grain of Sand,\" he tapped into poetry's power to model the universe. For instance, once we set up a simile between \"world\" and \"grain of sand\", we can test this hypothesis of sameness. How is sand like the world? Where will the model fail? And what might that tell us? Imagery, sensory language, arguments, ideas, and verse form itself can lead poetry toward power and discovery. This pursuit can reach from the page into one's own life. We will work hard together on poems, our own and one another's.",
     "prerequisites": "",
-    "rating": "5.00 +/- 0.00",
-    "true_units": "2",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=131&offering_id=87141&track_id=87141-Default"
+    "rating": "4.93 +/- 0.39",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=131&offering_id=90672&track_id=90672-Default"
   },
   "105321566": {
     "id": 105321566,
@@ -13855,9 +13855,9 @@
     ],
     "description": "Today's political and social turmoil have cast a sometimes harsh light on news media and the journalistic writing approach. Is the media fulfilling its role in our democracy? What should it be? And what approach should journalists take in their reporting and writing? This course will ponder these questions as it explores how to construct interesting, relevant, journalistic storytelling, including the use of new media tools. It will emphasize the foundations of the craft, such as close attention to fact, accuracy, clarity and precision, and examine its critical components, such as story form, reporting and interviewing, theme and scene, and character development. It will offer opportunities to construct a long-form journalistic piece. Students will produce numerous stories and other writing during the class, including profiles, issues, analysis and reviews. Several of these will be offered for publication in The California Tech. There will be class visits by professional journalists and a possible off-campus excursion.",
     "prerequisites": "",
-    "rating": "4.92 +/- 0.28",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=131&offering_id=87053&track_id=87053-Default"
+    "rating": "4.32 +/- 1.02",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=131&offering_id=90587&track_id=90587-Default"
   },
   "105272282": {
     "id": 105272282,
@@ -13930,9 +13930,9 @@
     ],
     "description": "In the 1855 edition of Leaves of Grass, Walt Whitman claimed that \"the United States themselves are essentially the greatest poem.\" We might ask any number of questions in response to Whitman. If the United States are a poem, then who wrote it? What is this poem about? What genre is it? Is anyone reading it? Is it actually any good? Though we might approach Whitman's statement with some apprehension from our historical moment, this course will take seriously American life lived within poetry and the lives poems lived across the country. Together, we will track the development of American poetry as it engages with enslavement, abolition, genocide, war, beauty, nature, racialization, constructions of gender, sexuality, and affect. Ultimately, we will ask what reading nineteenth-century American poetry, or nineteenth-century America as a poem, might mean for our understanding of the country today. Readings may include Bryant, Poe, Longfellow, Schoolcraft (Bamewawagezhikaquay), Whitman, Dickinson, Harper, Dunbar, and Noguchi.",
     "prerequisites": "",
-    "rating": "4.97 +/- 0.16",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=131&offering_id=88810&track_id=88810-Default"
+    "rating": "3.63 +/- 1.33",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=131&offering_id=90452&track_id=90452-Default"
   },
   "896449278": {
     "id": 896449278,
@@ -14005,9 +14005,9 @@
     ],
     "description": "We will begin this course by reading a selection of Octavia E. Butler's (1947-2006) novels and short stories, including her 1993 novel Parable of the Sower, which became a New York Times bestseller in 2020. Born here in Pasadena, California in 1947, Butler's writing explored issues such as chattel slavery, climate change, genetic engineering, pandemics, nuclear apocalypse, and post-apocalyptic life. She was also attentive to Black and indigenous modes of care, healing, social justice, and organizing. We will pay special attention to Butler's critical and theoretical contributions to the fields of Afrofuturism, Black studies, feminisms, gender and sexuality studies, and the environmental humanities by reading her works in conjunction with select works of criticism and theory. In the second half of the course, we will explore connections between Butler and the works of other Afrofuturists and Black science fiction writers today, such as Tomi Adeyemi, Akwaeke Emezi, Nalo Hopkinson, N. K. Jemision, Nnedi Okorafor, and others, in order to explore our own ideas for extending Butler's literature of Black futures. Course requirements will likely include class attendance and participation in discussion, weekly reflections on the readings, a midterm project proposal, and a final project and essay.",
     "prerequisites": "",
-    "rating": "",
-    "true_units": "",
-    "link": ""
+    "rating": "4.67 +/- 0.72",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=131&offering_id=92379&track_id=92379-Default"
   },
   "694498359": {
     "id": 694498359,
@@ -14105,9 +14105,9 @@
     ],
     "description": "This course provides guided instruction in academic writing in STEM fields. More specifically, it teaches graduate students about composing texts in scientific English for expert audiences. It helps familiarize writers with academic STEM discourse, and it teaches writers about the style and genres of U.S. academic STEM writing, helping them learn to locate, read, and write about the work of others in their field. From here, students learn to review the literature in their fields and situate their own research goals within that context. Students are encouraged to take ESL/Wr 107 in the first or second year of graduate school. This course is designed for non-native speakers of English, but it covers topics that are relevant to native English speakers. Open to international graduate students only.",
     "prerequisites": "",
-    "rating": "4.96 +/- 0.19",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=132&offering_id=87152&track_id=87152-Default"
+    "rating": "4.82 +/- 0.42",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=132&offering_id=90683&track_id=90683-Default"
   },
   "104989084": {
     "id": 104989084,
@@ -14130,9 +14130,9 @@
     ],
     "description": "An introduction to climate on Earth. How Earth's climate has changed in the past and its evolving response to the rapid increase in carbon dioxide and methane happening today. Model projections of future climate and associated risks. Development of climate policies in face of uncertainty in these projections and risks. Enrollment is limited. Satisfies the menu requirement of the Caltech core curriculum. Juniors and Seniors who have satisfied their menu course requirement should enroll in ESE 101.",
     "prerequisites": "",
-    "rating": "4.72 +/- 0.64",
-    "true_units": "2",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80426&department_id=495&offering_id=86996&track_id=86996-Default"
+    "rating": "4.65 +/- 0.64",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80426&department_id=495&offering_id=90532&track_id=90532-Default"
   },
   "880069378": {
     "id": 880069378,
@@ -14538,9 +14538,9 @@
     ],
     "description": "Required attendance by first year graduate students at the weekly ESE seminar, Wednesdays 4pm. Graded pass/fail.",
     "prerequisites": "",
-    "rating": "3.95 +/- 0.22",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=40&term_id=522&division_id=80426&department_id=495&offering_id=80037&track_id=80037-Default"
+    "rating": "4.00 +/- 0.00",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80426&department_id=495&offering_id=90603&track_id=90603-Default"
   },
   "617607923": {
     "id": 617607923,
@@ -14713,9 +14713,9 @@
     ],
     "description": "A broad survey of the formation, evolution, and present-day properties of planetary atmospheres, drawing examples from both the solar system and extrasolar planet literature. We will cover topics including energy balance, radiative transfer, chemistry, cloud formation, dynamics, and escape. The goal of this class is to provide an overview of key concepts relevant to planetary atmospheres that can serve as a foundation for future coursework or research in this area.",
     "prerequisites": "Ch 1, Ma 2, Ph 2, or equivalents.",
-    "rating": "4.01 +/- 1.16",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80426&department_id=182&offering_id=87237&track_id=87237-Default"
+    "rating": "3.99 +/- 0.82",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80426&department_id=182&offering_id=90743&track_id=90743-Default"
   },
   "968076030": {
     "id": 968076030,
@@ -14978,9 +14978,9 @@
     ],
     "description": "First-year students are offered the opportunity to enroll in this class by submitting potential solutions to problems posed in the fall term. A small number of solutions will be selected as winners, granting those students permission to register. This course demonstrates how research ideas arise, are evaluated, and tested and how the ideas that survive are developed. Weekly group discussions and one-on-one meetings with faculty allow students to delve into cutting edge scientific research. Ideas from physics are used to think about a huge swath of problems ranging from how to detect life on extrasolar planets to exploring the scientific underpinnings of science fiction in Hollywood films to considering the efficiency of molecular machines. Support for summer research at Caltech between an undergraduate's first and sophomore years will be automatic for students making satisfactory progress. Graded pass/fail. First-year (undergraduates) only; limited enrollment.",
     "prerequisites": "",
-    "rating": "5.00 +/- 0.00",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=143798&department_id=475&offering_id=83461&track_id=83461-Default"
+    "rating": "4.93 +/- 0.34",
+    "true_units": "Noticeably Low",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=143798&department_id=475&offering_id=90556&track_id=90556-Default"
   },
   "489324020": {
     "id": 489324020,
@@ -15003,9 +15003,9 @@
     ],
     "description": "An introduction to the ideas and approaches of earth and planetary sciences, including both the special challenges and viewpoints of these kinds of science as well as the ways in which basic physics, chemistry, and biology relate to them. In addition to a wide-ranging lecture-oriented component, there will be a required field trip component. The lectures and topics cover such issues as solid Earth structure and evolution, plate tectonics, oceans and atmospheres, climate change, and the relationship between geological and biological evolution. Not offered on a pass/fail basis.  Satisfies the menu requirement of the Caltech core curriculum.",
     "prerequisites": "",
-    "rating": "4.55 +/- 0.82",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80426&department_id=182&offering_id=86890&track_id=86890-Default"
+    "rating": "4.70 +/- 0.80",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80426&department_id=182&offering_id=90849&track_id=90849-Default"
   },
   "104859882": {
     "id": 104859882,
@@ -15344,9 +15344,9 @@
     ],
     "description": "Formation and evolution of the solar system. Interiors, surfaces, and atmospheres. Orbital dynamics, chaos, and tidal friction. Cratering. Comets and asteroids. Extrasolar planetary systems.",
     "prerequisites": "instructor's permission.",
-    "rating": "4.20 +/- 0.97",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80426&department_id=182&offering_id=86985&track_id=86985-Default"
+    "rating": "3.95 +/- 0.87",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80426&department_id=182&offering_id=90521&track_id=90521-Default"
   },
   "896398294": {
     "id": 896398294,
@@ -15383,9 +15383,9 @@
     ],
     "description": "Practice in the effective organization and the delivery of oral presentation of scientific results before groups. Units and scheduling are done by the individual options. Graded pass/fail.",
     "prerequisites": "",
-    "rating": "4.93 +/- 0.49",
+    "rating": "4.77 +/- 0.48",
     "true_units": "About Right",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=49&term_id=551&division_id=80426&department_id=182&offering_id=90260&track_id=90260-Default"
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80426&department_id=182&offering_id=90684&track_id=90684-Section 1"
   },
   "566382458": {
     "id": 566382458,
@@ -15408,9 +15408,9 @@
     ],
     "description": "An introduction to the theory and application of basic geophysical field techniques consisting of a comprehensive survey of a particular field area using a variety of methods (e.g., gravity, magnetic, electrical, GPS, seismic studies, and satellite remote sensing). The course will consist of a seminar that will discuss the scientific background for the chosen field area, along with the theoretical basis and implementation of the various measurement techniques. The 4-5-day field component will be held in spring break, and the data analysis component is covered in Ge 111 b. May be repeated for credit with an instructor\u2019s permission.",
     "prerequisites": "",
-    "rating": "4.79 +/- 0.51",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80426&department_id=182&offering_id=87001&track_id=87001-Default"
+    "rating": "4.71 +/- 0.47",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80426&department_id=182&offering_id=90537&track_id=90537-Default"
   },
   "573879102": {
     "id": 573879102,
@@ -15458,9 +15458,9 @@
     ],
     "description": "A comprehensive introduction to methods of geological field mapping in preparation for summer field camp. Laboratory exercises introduce geometrical and graphical techniques in the analysis of geologic maps. Field trips introduce methods of geological mapping.",
     "prerequisites": "Ge 11 ab, Ge 106 (may be taken concurrently with Ge 106).",
-    "rating": "3.39 +/- 1.26",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=32&term_id=514&division_id=80426&department_id=182&offering_id=74394&track_id=74394-Default"
+    "rating": "5.00 +/- 0.00",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80426&department_id=182&offering_id=90610&track_id=90610-Default"
   },
   "497089154": {
     "id": 497089154,
@@ -15508,9 +15508,9 @@
     ],
     "description": "Field mapping and supporting laboratory studies in topical problems related to the geology of the southwestern United States. Course provides a breadth of experience in igneous, metamorphic, or sedimentary rocks or geomorphology. Multiple terms of 121 may be taken more than once for credit if taught by different instructors.",
     "prerequisites": "Ge 120 or equivalent, or instructor's permission.",
-    "rating": "4.58 +/- 0.66",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80426&department_id=182&offering_id=87015&track_id=87015-Default"
+    "rating": "4.73 +/- 0.52",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80426&department_id=182&offering_id=90550&track_id=90550-Default"
   },
   "885254634": {
     "id": 885254634,
@@ -15558,9 +15558,9 @@
     ],
     "description": "A critical assessment of the physical and chemical processes that influence the initial condition, evolution, and current state of planets, including our planet and planetary satellites. Topics to be covered include a short survey of condensed-matter physics as it applies to planetary interiors, remote sensing of planetary interiors, planetary modeling, core formation, physics of ongoing differentiation, the role of mantle convection in thermal evolution, and generation of planetary magnetic fields.",
     "prerequisites": "instructor's permission.",
-    "rating": "4.32 +/- 0.90",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80426&department_id=182&offering_id=87010&track_id=87010-Default"
+    "rating": "4.25 +/- 0.94",
+    "true_units": "Noticeably High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80426&department_id=182&offering_id=90545&track_id=90545-Default"
   },
   "645198526": {
     "id": 645198526,
@@ -15583,9 +15583,9 @@
     ],
     "description": "Includes approximately three days of weekend field trips into areas displaying highly varied geology. Each student is assigned the major responsibility of being the resident expert on a pertinent subject for each trip. Graded pass/fail.",
     "prerequisites": "Ge 11 ab or Ge 101, or instructor's permission.",
-    "rating": "4.62 +/- 0.84",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80426&department_id=182&offering_id=87011&track_id=87011-Default"
+    "rating": "4.70 +/- 0.55",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80426&department_id=182&offering_id=90546&track_id=90546-Default"
   },
   "885457246": {
     "id": 885457246,
@@ -15608,9 +15608,9 @@
     ],
     "description": "Quantitative introduction to the dynamics of the earth, including core, mantle, lithosphere, and crust. Mechanical models are developed for each of these regions and compared to a variety of data sets. Potential theory applied to the gravitational and geomagnetic fields. Special attention is given to the dynamics of plate tectonics and the earthquake cycle.",
     "prerequisites": "Ae/Ge/ME 160 ab.",
-    "rating": "4.98 +/- 0.15",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80426&department_id=182&offering_id=86981&track_id=86981-Default"
+    "rating": "5.00 +/- 0.00",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80426&department_id=182&offering_id=90517&track_id=90517-Default"
   },
   "893004543": {
     "id": 893004543,
@@ -17121,9 +17121,9 @@
     ],
     "description": "The course uses a multimedia program, and emphasizes the acquisition of fundamental skills: oral ability, comprehension, writing, and reading. Students are evaluated on the basis of quizzes and compositions (1/3), midterm and final (1/3), and class participation (1/3). The course is mainly designed for students with no previous knowledge of French. Students who have had French in secondary school or college must consult with the instructor before registering.",
     "prerequisites": "",
-    "rating": "4.61 +/- 0.49",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=139&offering_id=86895&track_id=86895-Default"
+    "rating": "4.75 +/- 0.43",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=139&offering_id=90854&track_id=90854-Default"
   },
   "990254719": {
     "id": 990254719,
@@ -17178,9 +17178,9 @@
     ],
     "description": "Emphasis on oral-aural skills, and understanding of basic grammar. Immediate introduction of the native script-hiragana, katakana-and gradual introduction to 300 to 500 characters.",
     "prerequisites": "Section a is required for sections b and c.",
-    "rating": "4.97 +/- 0.16",
-    "true_units": "2",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=139&offering_id=86897&track_id=86897-Section 1"
+    "rating": "5.00 +/- 0.00",
+    "true_units": "Somewhat Low",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=139&offering_id=90856&track_id=90856-Section 1"
   },
   "990457331": {
     "id": 990457331,
@@ -17203,9 +17203,9 @@
     ],
     "description": "Continued instruction and practice in conversation, building up vocabulary, and understanding complex sentence patterns. The emphasis, however, will be on developing reading skills. Recognition of approximately 1,000 characters.",
     "prerequisites": "L 106 abc or equivalent.",
-    "rating": "5.00 +/- 0.00",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=139&offering_id=86898&track_id=86898-Default"
+    "rating": "4.75 +/- 0.44",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=139&offering_id=90857&track_id=90857-Default"
   },
   "990104129": {
     "id": 990104129,
@@ -17236,8 +17236,8 @@
     "description": "Grammar fundamentals and their use in understanding, speaking, reading, and writing Spanish. Exclusively for students with no previous knowledge of Spanish.",
     "prerequisites": "",
     "rating": "5.00 +/- 0.00",
-    "true_units": "2",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=139&offering_id=86960&track_id=86960-Section 1"
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=139&offering_id=90791&track_id=90791-Section 1"
   },
   "990306741": {
     "id": 990306741,
@@ -17336,8 +17336,8 @@
     "description": "Major works of Latin literature, usually one per term. No work will be studied more than once in four years and students may repeat the course for credit.",
     "prerequisites": "Three years of high-school Latin.",
     "rating": "5.00 +/- 0.00",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=139&offering_id=87219&track_id=87219-Default"
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=139&offering_id=90731&track_id=90731-Default"
   },
   "105316282": {
     "id": 105316282,
@@ -17385,9 +17385,9 @@
     ],
     "description": "An introductory course in standard Chinese (Mandarin) designed for students with no previous knowledge of the language. The course introduces the fundamentals of Chinese, including pronunciation, grammar, and Chinese characters, emphasizing the four basic language skills: listening, speaking, reading, and writing. By the end of the three-term sequence, students will have acquired knowledge of basic rules of grammar and the ability to converse, read, and write on simple topics of daily life, and will have command of more than 800 Chinese compounds and 700 characters.",
     "prerequisites": "",
-    "rating": "4.76 +/- 0.51",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80427&department_id=139&offering_id=83386&track_id=83386-Default"
+    "rating": "4.98 +/- 0.13",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=139&offering_id=90783&track_id=90783-Default"
   },
   "990213649": {
     "id": 990213649,
@@ -17410,9 +17410,9 @@
     ],
     "description": "A course designed to meet the personal interests and future professional goals of students who have had one year of elementary modern Chinese. Students will learn new vocabulary, sentence patterns, idiomatic expressions, and proverbs, as well as insights into Chinese society, culture, and customs.",
     "prerequisites": "L 170 abc or L 171 abc or equivalent.",
-    "rating": "4.39 +/- 0.76",
-    "true_units": "1",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=139&offering_id=86953&track_id=86953-Default"
+    "rating": "4.94 +/- 0.23",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=139&offering_id=90784&track_id=90784-Default"
   },
   "105115039": {
     "id": 105115039,
@@ -17460,9 +17460,9 @@
     ],
     "description": "Training in oral expression, pronunciation, vocabulary, listening comprehension and fluency. The class is designed for students who have learned one year of Chinese and plan to incorporate it into their future professional or social lives. News, guest talks and discussion forums will be included. Can be repeated for credit as content changes every year.",
     "prerequisites": "L 170 abc or L 171 abc or equivalent.",
-    "rating": "",
-    "true_units": "",
-    "link": ""
+    "rating": "4.94 +/- 0.23",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=139&offering_id=90404&track_id=90404-Default"
   },
   "990520306": {
     "id": 990520306,
@@ -17601,9 +17601,9 @@
     ],
     "description": "An introductory laboratory in relationships between the structure and properties of materials. Experiments involve materials processing and characterization by X-ray diffraction, scanning electron microscopy, and optical microscopy. Students will learn techniques for measuring mechanical and electrical properties of materials, as well as how to optimize these properties through microstructural and chemical control. Independent projects may be performed depending on the student's interests and abilities.",
     "prerequisites": "MS 115 recommended.",
-    "rating": "4.80 +/- 0.54",
-    "true_units": "2",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=141&offering_id=87016&track_id=87016-Default"
+    "rating": "4.41 +/- 1.00",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=141&offering_id=90551&track_id=90551-Default"
   },
   "879531369": {
     "id": 879531369,
@@ -17760,9 +17760,9 @@
     ],
     "description": "Kinetic master equation, uncorrelated and correlated random walk, diffusion. Mechanisms of diffusion and atom transport in solids, liquids, and gases. Coarsening of microstructures. Nonequilibrium processing of materials.",
     "prerequisites": "APh 105 b or ChE/Ch 164, or instructor's permission.",
-    "rating": "4.56 +/- 0.88",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=141&offering_id=86920&track_id=86920-Default"
+    "rating": "3.90 +/- 0.97",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=141&offering_id=90753&track_id=90753-Default"
   },
   "879532738": {
     "id": 879532738,
@@ -18178,9 +18178,9 @@
     ],
     "description": "Special section of Ma 1 a, 12 units (5-0-7). Review of calculus. Complex numbers, Taylor polynomials, infinite series. Comprehensive presentation of linear algebra. Derivatives of vector functions, multiple integrals, line and path integrals, theorems of Green and Stokes. Ma 1 b, c is divided into two tracks: analytic and practical. Students will be given information helping them to choose a track at the end of the fall term. There will be a special section or sections of Ma 1 a for those students who, because of their background, require more calculus than is provided in the regular Ma 1 a sequence. These students will not learn series in Ma 1 a and will be required to take Ma 1 d.",
     "prerequisites": "high-school algebra, trigonometry, and calculus.",
-    "rating": "3.66 +/- 1.39",
-    "true_units": "5",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=142&offering_id=86961&track_id=86961-Analytical"
+    "rating": "4.36 +/- 0.83",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=142&offering_id=90792&track_id=90792-Analytical"
   },
   "489327985": {
     "id": 489327985,
@@ -18203,9 +18203,9 @@
     ],
     "description": "An introduction to the mathematics of \"chaos.\" Period doubling universality, and related topics; interval maps, symbolic itineraries, stable/unstable manifold theorem, strange attractors, iteration of complex analytic maps, applications to multidimensional dynamics systems and real-world problems. Possibly some additional topics, such as Sarkovski's theorem, absolutely continuous invariant measures, sensitivity to initial conditions, and the horseshoe map.",
     "prerequisites": "",
-    "rating": "4.91 +/- 0.29",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=142&offering_id=86903&track_id=86903-Default"
+    "rating": "4.06 +/- 1.04",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=142&offering_id=90861&track_id=90861-Default"
   },
   "107849636": {
     "id": 107849636,
@@ -18228,9 +18228,9 @@
     ],
     "description": "Introduction to groups, rings, fields, and modules. The first term is devoted to groups and includes treatments of semidirect products and Sylow's theorem. The second term discusses rings and modules and includes a proof that principal ideal domains have unique factorization and the classification of finitely generated modules over principal ideal domains. The third term covers field theory and Galois theory, plus some special topics if time permits.",
     "prerequisites": "",
-    "rating": "3.61 +/- 1.34",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=142&offering_id=86904&track_id=86904-Default"
+    "rating": "3.53 +/- 1.39",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=142&offering_id=90862&track_id=90862-Default"
   },
   "489332092": {
     "id": 489332092,
@@ -18278,9 +18278,9 @@
     ],
     "description": "Students will work with the instructor and a mentor to write and revise a self-contained paper dealing with a topic in mathematics. In the first week, an introduction to some matters of style and format will be given in a classroom setting. Some help with typesetting in TeX may be available. Students are encouraged to take advantage of the Hixon Writing Center\u2019s facilities. The mentor and the topic are to be selected in consultation with the instructor. It is expected that in most cases the paper will be in the style of a textbook or journal article, at the level of the student\u2019s peers (mathematics students at Caltech). Fulfills the Institute scientific writing requirement. Not offered on a pass/fail basis.",
     "prerequisites": "First-year students must have instructor\u2019s permission to enroll.",
-    "rating": "4.94 +/- 0.24",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=142&offering_id=86976&track_id=86976-Default"
+    "rating": "4.57 +/- 1.01",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=142&offering_id=90806&track_id=90806-Default"
   },
   "990218460": {
     "id": 990218460,
@@ -18649,9 +18649,9 @@
     ],
     "description": "First term: structure of the real numbers, topology of metric spaces, a rigorous approach to differentiation in R^n. Second term: brief introduction to ordinary differential equations; Lebesgue integration and an introduction to Fourier analysis. Third term: the theory of functions of one complex variable.",
     "prerequisites": "Ma 1 or equivalent, or instructor\u2019s permission. May be taken concurrently with Ma 109.",
-    "rating": "4.89 +/- 0.42",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=142&offering_id=86906&track_id=86906-Default"
+    "rating": "4.27 +/- 0.74",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=142&offering_id=90864&track_id=90864-Default"
   },
   "650668908": {
     "id": 650668908,
@@ -18674,9 +18674,9 @@
     ],
     "description": "First term: aspects of point set topology, and an introduction to geometric and algebraic methods in topology. Second term: the differential geometry of curves and surfaces in two- and three-dimensional Euclidean space. Third term: an introduction to differentiable manifolds. Transversality, differential forms, and further related topics.",
     "prerequisites": "Ma 2 or equivalent, and Ma 108 must be taken previously or concurrently.",
-    "rating": "4.38 +/- 0.86",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=142&offering_id=86907&track_id=86907-Default"
+    "rating": "3.85 +/- 1.34",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=142&offering_id=90865&track_id=90865-Default"
   },
   "633852112": {
     "id": 633852112,
@@ -18699,9 +18699,9 @@
     ],
     "description": "First term: integration theory and basic real analysis: topological spaces, Hilbert space basics, Fejer's theorem, measure theory, measures as functionals, product measures, L^p -spaces, Baire category, Hahn- Banach theorem, Alaoglu's theorem, Krein-Millman theorem, countably normed spaces, tempered distributions and the Fourier transform. Second term: basic complex analysis: analytic functions, conformal maps and fractional linear transformations, idea of Riemann surfaces, elementary and some special functions, infinite sums and products, entire and meromorphic functions, elliptic functions. Third term: harmonic analysis; operator theory. Harmonic analysis: maximal functions and the Hardy-Littlewood maximal theorem, the maximal and Birkoff ergodic theorems, harmonic and subharmonic functions, theory of H^p -spaces and boundary values of analytic functions. Operator theory: compact operators, trace and determinant on a Hilbert space, orthogonal polynomials, the spectral theorem for bounded operators. If time allows, the theory of commutative Banach algebras.",
     "prerequisites": "Ma 108 or previous exposure to metric space topology, Lebesgue measure.",
-    "rating": "4.11 +/- 1.27",
-    "true_units": "5",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=142&offering_id=86908&track_id=86908-Default"
+    "rating": "4.32 +/- 0.53",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=142&offering_id=90866&track_id=90866-Default"
   },
   "645097078": {
     "id": 645097078,
@@ -18749,9 +18749,9 @@
     ],
     "description": "This course will discuss advanced topics in algebra. Among them: an introduction to commutative algebra and homological algebra, infinite Galois theory, Kummer theory, Brauer groups, semisimiple algebras, Weddburn theorems, Jacobson radicals, representation theory of finite groups.",
     "prerequisites": "Ma 5 or equivalent or instructor's permission.",
-    "rating": "3.65 +/- 1.18",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=142&offering_id=86909&track_id=86909-Default"
+    "rating": "3.52 +/- 1.02",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=142&offering_id=90867&track_id=90867-Default"
   },
   "633953418": {
     "id": 633953418,
@@ -18824,9 +18824,9 @@
     ],
     "description": "Part a: Homology Theory. Homology and calculation of homology groups, exact sequences, cohomology rings, Poincar\u00e9 duality. Part b: Homotopy Theory and K-theory. Fibrations, higher homotopy groups, and exact sequences of fibrations. Fiber bundles, Eilenberg-MacLane spaces, classifying spaces. K-theory, generalized cohomology theory, Bott periodicity. Part c: Characteristic classes. Stiefel-Whitney classes, Chern classes, Pontryagin classes, cobordism theory, Chern-Weil theory.",
     "prerequisites": "Ma 109 abc or equivalent.",
-    "rating": "3.93 +/- 1.32",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=142&offering_id=86910&track_id=86910-Default"
+    "rating": "4.99 +/- 0.12",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=142&offering_id=90868&track_id=90868-Default"
   },
   "577829894": {
     "id": 577829894,
@@ -18913,9 +18913,9 @@
     ],
     "description": "Each term we expect to give between 0 and 6 (most often 2-3) topics courses in advanced mathematics covering an area of current research interest. These courses will be given as sections of 191. Students may register for this course multiple times even for multiple sections in a single term. The topics and instructors for each term and course descriptions will be listed on the math option website each term prior to the start of registration for that term.",
     "prerequisites": "",
-    "rating": "4.67 +/- 0.59",
-    "true_units": "2",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=142&offering_id=87025&track_id=87025-Section 2"
+    "rating": "4.97 +/- 0.17",
+    "true_units": "Somewhat Low",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=142&offering_id=90560&track_id=90560-Section 1"
   },
   "879987949": {
     "id": 879987949,
@@ -19296,9 +19296,9 @@
     ],
     "description": "An introduction to classical thermodynamics and transport with engineering applications. First and second laws; closed and open systems; properties of a pure substance; availability and irreversibility; generalized thermodynamic relations; gas and vapor power cycles; propulsion; mixtures; combustion and thermochemistry; chemical equilibrium; momentum and heat transfer including boundary layers with applications to internal and external flows. Not offered on a pass/fail basis.",
     "prerequisites": "Sophomore standing required; ME 12 abc, may be taken concurrently.",
-    "rating": "3.71 +/- 1.22",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=143&offering_id=87065&track_id=87065-Default"
+    "rating": "4.01 +/- 1.12",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=143&offering_id=90598&track_id=90598-Default"
   },
   "990207656": {
     "id": 990207656,
@@ -19321,9 +19321,9 @@
     ],
     "description": "An introduction to statics and dynamics of rigid bodies, deformable bodies, and fluids. Equilibrium of force systems, principle of virtual work, distributed force systems, friction, static analysis of rigid and deformable structures, hydrostatics, kinematics, particle dynamics, rigid-body dynamics, Euler's equations, ideal flow, vorticity, viscous stresses in fluids, dynamics of deformable systems, waves in fluids and solids. Not offered on a pass/fail basis.",
     "prerequisites": "Sophomore standing required; ME 11 abc, may be taken concurrently.",
-    "rating": "4.61 +/- 0.62",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=143&offering_id=87066&track_id=87066-Default"
+    "rating": "3.38 +/- 1.39",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=143&offering_id=90599&track_id=90599-Default"
   },
   "105058393": {
     "id": 105058393,
@@ -19346,9 +19346,9 @@
     ],
     "description": "Enrollment is limited and is based on responses to a questionnaire available in the Registrar's office. Introduction to mechanical engineering design, fabrication, and visual communication. Principles of mechanical engineering design are taught through a series of lectures and short group-based design projects with an emphasis on formal design reviews and team competitions. Course lectures address the strength properties of engineering materials, statistical descriptions of stress and strength, design safety factors, static and variable loading design criteria, engineering case studies, and the design of mechanical elements. Group-based projects include formal design reviews and involve substantial use of the machine shop and maker-space facilities, for the construction of working prototypes. Not offered on a pass/fail basis.",
     "prerequisites": "ME 12 ab, ME 13.",
-    "rating": "4.50 +/- 0.88",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=143&offering_id=87044&track_id=87044-Default"
+    "rating": "4.58 +/- 0.95",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=143&offering_id=90579&track_id=90579-Default"
   },
   "105009109": {
     "id": 105009109,
@@ -19371,9 +19371,9 @@
     ],
     "description": "Enrollment is limited and is based on responses to a questionnaire available in the Registrar's office. Introduction to computer numerical control machining. Students will learn to create Gcode and Mcode using Computer-Aided Manufacturing (CAM) software; they will be instructed on how to safely prepare and operate the machine's functions; and will be taught how to implement programmed data into several different types of CNC equipment. The class will cover the parts and terminology of the equipment, fixturing materials, setting workpiece, and tool offsets. Weekly assignments will include the use of CAM software, machine operation demonstrations, and machining projects.",
     "prerequisites": "ME 13/113.",
-    "rating": "4.96 +/- 0.23",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=143&offering_id=88846&track_id=88846-Default"
+    "rating": "4.92 +/- 0.31",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=143&offering_id=90416&track_id=90416-Default"
   },
   "988237665": {
     "id": 988237665,
@@ -19396,9 +19396,9 @@
     ],
     "description": "Two-quarter course sequence covers the general theory and methods of computational fluid dynamics (CFD) and finite element analysis (FEA) with experimental laboratory methods applied to complementary engineering problems in solid, structural, and fluid mechanics. Computational procedures are discussed and applied to the analysis of steady-state, transient, and dynamic problems using a commercial software. CFD and FEA topics covered include meshing, types of elements, steady and unsteady solvers, inviscid and viscous flow, internal and external flow, drag and lift, static and dynamic mechanical loading, elastic and plastic behavior, and vibrational (modal) analysis. Fluid mechanics laboratory experiments introduce students to the operation of a water tunnel combined with laser particle image velocimetry (PIV) for quantified flow field visualization of velocity and vorticity. Solid mechanics experiments introduce students to the operation of a mechanical (axial/torsional) load frame combined with digital image correlation (DIC) and strain gage transducers for quantification and full field visualization of displacement and strain. Technical writing skills are emphasized through the generation of detailed full-length lab reports using a scientific journal format.",
     "prerequisites": "ME 11 abc, ME 12 abc, ME 13, ME 14, and programming skills at the level of ACM 11.",
-    "rating": "4.45 +/- 1.03",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=143&offering_id=87082&track_id=87082-Default"
+    "rating": "4.61 +/- 0.90",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=143&offering_id=90615&track_id=90615-Default"
   },
   "990117302": {
     "id": 990117302,
@@ -20101,9 +20101,9 @@
     ],
     "description": "All PhD degree candidates in Medical Engineering are required to attend all MedE seminars. If there is no MedE seminar during a week, then the students should go to any other graduate-level seminar that week. Students should broaden their knowledge of the engineering principles and sciences of medical engineering. Students are expected to learn the forefronts of the research and development of medical materials, technologies, devices and systems from the seminars. Graded pass/fail.",
     "prerequisites": "",
-    "rating": "4.80 +/- 0.40",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=555&offering_id=87062&track_id=87062-Default"
+    "rating": "5.00 +/- 0.00",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=555&offering_id=90595&track_id=90595-Default"
   },
   "269410382": {
     "id": 269410382,
@@ -20562,9 +20562,9 @@
     ],
     "description": "Offered on three levels: beginning (no previous experience required), intermediate, and advanced. Instruction emphasizes a strong classical technique, including an exploration of various styles of guitar-classical, flamenco, folk, and popular.",
     "prerequisites": "",
-    "rating": "4.69 +/- 0.46",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80439&department_id=597&offering_id=87097&track_id=87097-Default"
+    "rating": "3.76 +/- 1.02",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80439&department_id=597&offering_id=90630&track_id=90630-Default"
   },
   "635905023": {
     "id": 635905023,
@@ -20601,9 +20601,9 @@
     ],
     "description": "Study and performance of music for instrumental ensembles of two to eight members, and for piano four-hands. Literature ranges from the 16th to 21st centuries. Open to students who play string, woodwind, brass instruments, guitar, or piano. After auditioning, pianists will be placed in sections by the instructors. Section 1: Mixed ensembles. Section 2: Piano four-hands. Section 3: Guitar ensemble.",
     "prerequisites": "",
-    "rating": "0.00 +/- 0.00",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80439&department_id=597&offering_id=87098&track_id=87098-Mixed Ensembles"
+    "rating": "5.00 +/- 0.00",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80439&department_id=597&offering_id=90631&track_id=90631-Mixed Ensembles"
   },
   "637779184": {
     "id": 637779184,
@@ -20626,9 +20626,9 @@
     ],
     "description": "Study and performance of music written for full symphony orchestra and chamber orchestra. The orchestra performs both the standard symphonic repertoire and contemporary music. Two and a half hours of rehearsal per week.",
     "prerequisites": "",
-    "rating": "4.53 +/- 0.90",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80439&department_id=597&offering_id=87099&track_id=87099-Default"
+    "rating": "2.56 +/- 0.68",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80439&department_id=597&offering_id=90632&track_id=90632-Default"
   },
   "639653345": {
     "id": 639653345,
@@ -20651,9 +20651,9 @@
     ],
     "description": "The Caltech Wind Orchestra is comprised of students, faculty, staff, and alumni. The ensemble rehearses Thursday nights from 7:30-9:45 pm. and performs three programs per year (one per term) at Ramo Auditorium and other Los Angeles venues. Repertoire consists of traditional and contemporary music encompassing a wide variety of styles, and regularly features renowned guest artists. Open to students of all levels of previous experience.",
     "prerequisites": "",
-    "rating": "4.94 +/- 0.25",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80439&department_id=597&offering_id=87100&track_id=87100-Default"
+    "rating": "5.00 +/- 0.00",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80439&department_id=597&offering_id=90633&track_id=90633-Default"
   },
   "641527506": {
     "id": 641527506,
@@ -20701,9 +20701,9 @@
     ],
     "description": "Preparation and performance of choral repertoire spanning a range of historical periods and musical styles. Includes occasional collaborative performances with the orchestra. No previous experience required. Three hours a week.",
     "prerequisites": "",
-    "rating": "4.79 +/- 0.41",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80439&department_id=597&offering_id=87102&track_id=87102-Default"
+    "rating": "4.72 +/- 0.45",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80439&department_id=597&offering_id=90635&track_id=90635-Default"
   },
   "647149989": {
     "id": 647149989,
@@ -20726,9 +20726,9 @@
     ],
     "description": "Advanced study and performance of SATB choral music. Emphasis is placed on more difficult choral repertoire, both a capella and accompanied. Includes performances with the Glee Clubs as well as at other on-campus events. Audition required. Participation in Glee Clubs required.",
     "prerequisites": "",
-    "rating": "4.90 +/- 0.30",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=36&term_id=518&division_id=80439&department_id=597&offering_id=77211&track_id=77211-Default"
+    "rating": "5.00 +/- 0.00",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80439&department_id=597&offering_id=90636&track_id=90636-Default"
   },
   "634081515": {
     "id": 634081515,
@@ -20801,9 +20801,9 @@
     ],
     "description": "This class is taught sequentially over the academic year and begins with rudimentary improvisation and continues in the winter/spring with professional improvisation guidance, long form improvisation, musical improv, and advanced techniques with public performances.",
     "prerequisites": "",
-    "rating": "",
-    "true_units": "",
-    "link": ""
+    "rating": "4.90 +/- 0.30",
+    "true_units": "Somewhat Low",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80439&department_id=597&offering_id=90656&track_id=90656-Default"
   },
   "636056982": {
     "id": 636056982,
@@ -20826,9 +20826,9 @@
     ],
     "description": "Instruction in silkscreening techniques, primarily for T-shirts. Progressive development of silk painting skills for fine art.",
     "prerequisites": "",
-    "rating": "5.00 +/- 0.00",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80439&department_id=597&offering_id=87105&track_id=87105-Default"
+    "rating": "0.00 +/- 0.00",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80439&department_id=597&offering_id=90638&track_id=90638-Default"
   },
   "637931143": {
     "id": 637931143,
@@ -20859,8 +20859,8 @@
     "description": "Instruction in techniques of painting in acrylics and watercolor and life drawing of models. Emphasis on student-chosen subject with a large reference library.",
     "prerequisites": "",
     "rating": "5.00 +/- 0.00",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80439&department_id=597&offering_id=87106&track_id=87106-Default"
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80439&department_id=597&offering_id=90639&track_id=90639-Default"
   },
   "639805304": {
     "id": 639805304,
@@ -20883,9 +20883,9 @@
     ],
     "description": "Instruction in the techniques of creating ceramics, including the slab roller and potter's wheel, and glazing methods.",
     "prerequisites": "",
-    "rating": "4.89 +/- 0.31",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80439&department_id=597&offering_id=87107&track_id=87107-Default"
+    "rating": "5.00 +/- 0.00",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80439&department_id=597&offering_id=90640&track_id=90640-Default"
   },
   "988243403": {
     "id": 988243403,
@@ -21108,9 +21108,9 @@
     ],
     "description": "Features fundamental instruction on shooting, dribbling, passing, defensive positioning, and running an offense. Course includes competitive play and free-throw shooting.",
     "prerequisites": "",
-    "rating": "4.47 +/- 0.81",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=36&term_id=518&division_id=80440&department_id=146&offering_id=77094&track_id=77094-Default"
+    "rating": "4.97 +/- 0.17",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80440&department_id=146&offering_id=92489&track_id=92489-Default"
   },
   "105009112": {
     "id": 105009112,
@@ -21190,9 +21190,9 @@
     ],
     "description": "This course will center on developing students' knowledge of techniques, rules, strategy, etiquette, and safety regulations of the game. Students will develop the ability to perform all the skills necessary to play ultimate Frisbee confidently on a recreational basis.",
     "prerequisites": "",
-    "rating": "4.93 +/- 0.25",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80440&department_id=146&offering_id=88355&track_id=88355-Default"
+    "rating": "3.94 +/- 0.87",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80440&department_id=146&offering_id=92490&track_id=92490-Default"
   },
   "105313030": {
     "id": 105313030,
@@ -21216,8 +21216,8 @@
     "description": "Students will participate in 5 specifically chosen strategic games (Inner Tube Water Polo, Dodgeball, Bocce, Corn Hole, Flag Football, Pickleball) and learn basic strategy and rules, fitness and health components as well as learning how to compete in cooperative team games. Course requirements include great attitude, attendance and effort of having fun and trying something new while working on your coordination and general fitness.",
     "prerequisites": "",
     "rating": "5.00 +/- 0.00",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80440&department_id=146&offering_id=88891&track_id=88891-Default"
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80440&department_id=146&offering_id=90491&track_id=90491-Default"
   },
   "104858522": {
     "id": 104858522,
@@ -21628,9 +21628,9 @@
     ],
     "description": "The first year of a two-year course in introductory classical and modern physics. Topics: Newtonian mechanics in Ph 1 a; electricity and magnetism, and special relativity, in Ph 1 b, c. Emphasis on physical insight and problem solving. Ph 1 b, c is divided into two tracks: the Practical Track emphasizing practical electricity, and the Analytic Track, which teaches and uses methods of multivariable calculus. Students enrolled in the Practical Track are encouraged to take Ph 8 bc concurrently. Students will be given information helping them to choose a track at the end of fall term.",
     "prerequisites": "",
-    "rating": "4.39 +/- 1.03",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=147&offering_id=86923&track_id=86923-Analytical"
+    "rating": "4.66 +/- 0.78",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=147&offering_id=90756&track_id=90756-Analytical"
   },
   "107845791": {
     "id": 107845791,
@@ -21667,9 +21667,9 @@
     ],
     "description": "An introduction to several areas of physics including applications in modern science and engineering. Topics include discrete and continuous oscillatory systems, wave mechanics, applications in telecommunications and other areas (first term); foundational quantum concepts, the quantum harmonic oscillator, the Hydrogen atom, applications in optical and semiconductor systems (second term); ensembles and statistical systems, thermodynamic laws, applications in energy technology and other areas (third term). Although best taken in sequence, the three terms can be taken independently.",
     "prerequisites": "Ph 1 abc, Ma 1 abc.",
-    "rating": "4.00 +/- 1.04",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=147&offering_id=87067&track_id=87067-Default"
+    "rating": "4.23 +/- 1.02",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=147&offering_id=90600&track_id=90600-Default"
   },
   "489326878": {
     "id": 489326878,
@@ -21731,9 +21731,9 @@
     ],
     "description": "A laboratory course continuing the study of experimental physics introduced in Physics 6. The course introduces some of the equipment and techniques used in quantum, condensed matter, nuclear, and particle physics. The menu of experiments includes some classics which informed the development of the modern quantum theory, including electron diffraction, the Stern-Gerlach experiment, Compton scattering, and the M\u00f6ssbauer Effect. The course format follows that of Physics 6: students work individually and choose which experiments to conduct, and each week includes a 30 minute individual recitation and a 3 hour laboratory.",
     "prerequisites": "Ph 6, Ph 2 b or Ph 12 b, Ph 2 c or Ph 12 c taken concurrently.",
-    "rating": "4.78 +/- 0.44",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=147&offering_id=88883&track_id=88883-Default"
+    "rating": "4.85 +/- 0.43",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=147&offering_id=90479&track_id=90479-Default"
   },
   "107854005": {
     "id": 107854005,
@@ -21756,9 +21756,9 @@
     ],
     "description": "A two-term sequence of experiments that parallel the material of Ph 1 bc. It includes measuring the force between wires with a homemade analytical balance, measuring properties of a 1,000-volt spark, and building and studying a radio-wave transmitter and receiver. The take-home experiments are constructed from a kit of tools and electronic parts. Measurements are compared to theoretical expectations.",
     "prerequisites": "Ph 1 a.",
-    "rating": "3.09 +/- 1.21",
-    "true_units": "5",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=147&offering_id=87000&track_id=87000-Default"
+    "rating": "2.55 +/- 0.99",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=147&offering_id=90536&track_id=90536-Default"
   },
   "990207770": {
     "id": 990207770,
@@ -21781,9 +21781,9 @@
     ],
     "description": "A one-year course primarily for students intending further work in the physics option. Topics include classical waves; wave mechanics, interpretation of the quantum wave-function, one-dimensional bound states, scattering, and tunneling; thermodynamics, introductory kinetic theory, and quantum statistics.",
     "prerequisites": "Ph 1 abc, Ma 1 abc, or equivalents.",
-    "rating": "4.74 +/- 0.52",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=147&offering_id=86925&track_id=86925-Default"
+    "rating": "4.90 +/- 0.32",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=147&offering_id=90758&track_id=90758-Default"
   },
   "104907917": {
     "id": 104907917,
@@ -21806,9 +21806,9 @@
     ],
     "description": "Computational tools for data analysis. Use of python for accessing scientific data from the web. Bayesian techniques. Fourier techniques. Image manipulation with python.",
     "prerequisites": "Ph 20 or equivalent experience with programming.",
-    "rating": "4.15 +/- 1.06",
+    "rating": "4.58 +/- 0.61",
     "true_units": "About Right",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=49&term_id=551&division_id=80428&department_id=147&offering_id=90068&track_id=90068-Default"
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=147&offering_id=90760&track_id=90760-Default"
   },
   "104958570": {
     "id": 104958570,
@@ -21831,9 +21831,9 @@
     ],
     "description": "Computational tools and numerical techniques. Applications to problems in classical mechanics. Numerical solution of 3-body and N-body systems. Monte Carlo integration.",
     "prerequisites": "Ph 20 or equivalent experience with programming and numerical techniques.",
-    "rating": "4.42 +/- 0.49",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80428&department_id=147&offering_id=83362&track_id=83362-Default"
+    "rating": "4.95 +/- 0.21",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=147&offering_id=90761&track_id=90761-Default"
   },
   "104864109": {
     "id": 104864109,
@@ -21906,9 +21906,9 @@
     ],
     "description": "Advanced preparation for laboratory research. Dual emphasis on practical skills used in modern research groups and historic experiments that illuminate important theoretical concepts. Topics include advanced signal acquisition, conditioning, and data processing, introductions to widely-used optical devices and techniques, laser-frequency stabilization, and classic experiments such as magnetic resonance, optical pumping, and doppler-free spectroscopy. Fundamentals of vacuum engineering, thin-film sample growth, and cryogenics are occasionally offered. Special topics and student-led projects are available on request.",
     "prerequisites": "Ph 7 or instructor's permission.",
-    "rating": "4.94 +/- 0.33",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80428&department_id=147&offering_id=86472&track_id=86472-Default"
+    "rating": "4.62 +/- 1.18",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=147&offering_id=90763&track_id=90763-Default"
   },
   "990469249": {
     "id": 990469249,
@@ -22006,9 +22006,9 @@
     ],
     "description": "An intermediate course in the application of basic principles of classical physics to a wide variety of subjects. Ph 106 a will be devoted to mechanics, including Lagrangian and Hamiltonian formulations of mechanics, small oscillations and normal modes, central forces, and rigid-body motion. Ph 106 b will be devoted to fundamentals of electrostatics, magnetostatics, and electrodynamics, including boundary-value problems, multipole expansions, electromagnetic waves, and radiation. It will also cover special relativity. Ph 106 c will cover advanced topics in electromagnetism and an introduction to classical optics.",
     "prerequisites": "Ph 2 ab or Ph 12 abc, Ma 2.",
-    "rating": "3.72 +/- 1.37",
-    "true_units": "5",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=147&offering_id=86932&track_id=86932-Default"
+    "rating": "4.62 +/- 0.68",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=147&offering_id=90765&track_id=90765-Default"
   },
   "892650092": {
     "id": 892650092,
@@ -22056,9 +22056,9 @@
     ],
     "description": "Many of the recent advances in physics are attributed to progress in computational power. In the advanced computational lab, students will hone their computational skills by working through projects inspired by junior level classes (such as classical mechanics and E, statistical mechanics, quantum mechanics and quantum many-body physics). This course will primarily be in Python and Mathematica. This course is offered pass/fail. Part a not offered 2022-23.",
     "prerequisites": "",
-    "rating": "4.96 +/- 0.19",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=147&offering_id=87113&track_id=87113-Default"
+    "rating": "5.00 +/- 0.00",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=147&offering_id=90645&track_id=90645-Default"
   },
   "643273832": {
     "id": 643273832,
@@ -22081,9 +22081,9 @@
     ],
     "description": "A one-year course in quantum mechanics and its applications, for students who have completed Ph 12 or Ph 2. Wave mechanics in 3-D, scattering theory, Hilbert spaces, matrix mechanics, angular momentum, symmetries, spin-1/2 systems, approximation methods, identical particles, and selected topics in atomic, solid-state, nuclear, and particle physics.",
     "prerequisites": "Ma 2 ab, Ph 12 abc or Ph 2 ab, or equivalents.",
-    "rating": "3.60 +/- 1.75",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=147&offering_id=86933&track_id=86933-Default"
+    "rating": "4.78 +/- 0.53",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=147&offering_id=90766&track_id=90766-Default"
   },
   "881759697": {
     "id": 881759697,
@@ -22996,9 +22996,9 @@
     ],
     "description": "A one-term laboratory course which will require students to design, assemble, calibrate, and use an apparatus to conduct a nontrivial experiment involving quantum optics or other current research area of physics. Students will work as part of a small team to reproduce the results of a published research paper. Each team will be guided by an instructor who will meet weekly with the students; the students are each expected to spend an average of 4 hours/week in the laboratory and the remainder for study and design. Enrollment is limited. Permission of the instructors required.",
     "prerequisites": "Ph 6, Ph 106 a, Ph 125 a or equivalents.",
-    "rating": "5.00 +/- 0.00",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80428&department_id=147&offering_id=86685&track_id=86685-Default"
+    "rating": "4.97 +/- 0.17",
+    "true_units": "Somewhat Low",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=147&offering_id=90480&track_id=90480-Default"
   },
   "881406495": {
     "id": 881406495,
@@ -23021,9 +23021,9 @@
     ],
     "description": "The course will review problem solving techniques and physics applications from the undergraduate physics college curriculum. In particular, we will touch on the main topics covered in the written candidacy exam: classical mechanics, electromagnetism, statistical mechanics and quantum physics, optics, basic mathematical methods of physics, and the physical origin of everyday phenomena.",
     "prerequisites": "",
-    "rating": "4.84 +/- 0.49",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80428&department_id=147&offering_id=83547&track_id=83547-Default"
+    "rating": "4.90 +/- 0.34",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=147&offering_id=90626&track_id=90626-Default"
   },
   "885154817": {
     "id": 885154817,
@@ -23071,9 +23071,9 @@
     ],
     "description": "Topics: the Dirac equation, second quantization, quantum electrodynamics, scattering theory, Feynman diagrams, non-Abelian gauge theories, Higgs symmetry-breaking, the Weinberg-Salam model, and renormalization.",
     "prerequisites": "Ph 125.",
-    "rating": "4.15 +/- 0.36",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=147&offering_id=86936&track_id=86936-Default"
+    "rating": "4.36 +/- 0.86",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=147&offering_id=90769&track_id=90769-Default"
   },
   "581427888": {
     "id": 581427888,
@@ -23096,9 +23096,9 @@
     ],
     "description": "Advanced topics in geometry and topology that are widely used in modern theoretical physics. Emphasis will be on understanding and applications more than on rigor and proofs. First term will cover basic concepts in topology and manifold theory. Second term will include Riemannian geometry, fiber bundles, characteristic classes, and index theorems. Third term will include anomalies in gauge-field theories and the theory of Riemann surfaces, with emphasis on applications to string theory. Part c will not be offered in 2022-23.",
     "prerequisites": "Ph 129 abc or equivalent.",
-    "rating": "5.00 +/- 0.00",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=32&term_id=514&division_id=80428&department_id=147&offering_id=75448&track_id=75448-Default"
+    "rating": "4.77 +/- 0.49",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=147&offering_id=90808&track_id=90808-Default"
   },
   "892803420": {
     "id": 892803420,
@@ -23121,9 +23121,9 @@
     ],
     "description": "Special topics in Gravitational-wave Detection. Physics of interferometers, limits of measurement, coherent quantum feedback, noise, data analysis.",
     "prerequisites": "Ph 106 b, Ph 12 b or equivalents.",
-    "rating": "4.31 +/- 1.17",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80428&department_id=147&offering_id=88886&track_id=88886-Default"
+    "rating": "4.53 +/- 0.65",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=147&offering_id=90482&track_id=90482-Default"
   },
   "879533703": {
     "id": 879533703,
@@ -23659,9 +23659,9 @@
     ],
     "description": "A consideration of existing literature on the voting behavior of the citizen, and an examination of theoretical and empirical views of the strategies followed by the parties. Two substantial papers are expected of students.",
     "prerequisites": "",
-    "rating": "4.98 +/- 0.14",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80427&department_id=148&offering_id=83620&track_id=83620-Default"
+    "rating": "5.00 +/- 0.00",
+    "true_units": "Somewhat Low",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=148&offering_id=90679&track_id=90679-Default"
   },
   "885255161": {
     "id": 885255161,
@@ -23735,8 +23735,8 @@
     "description": "This class will examine budgetary conflict at key junctures in U.S. history. Topics include the struggle to establish a viable fiscal system in the early days of the Republic, the ante bellum tariff, the \"pension politics\" of the post-Civil War era, the growth of the American welfare state, and the battle over tax and entitlement reform in the 1980s and 1990s.",
     "prerequisites": "",
     "rating": "5.00 +/- 0.00",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=148&offering_id=87117&track_id=87117-Default"
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=148&offering_id=90649&track_id=90649-Default"
   },
   "885314028": {
     "id": 885314028,
@@ -23759,9 +23759,9 @@
     ],
     "description": "This course will provide an introduction to what we know about the fascinating link between the brain, the mind, and behavior. We will start with a basic review of the brain as a biological organ, its evolution, development, and its basic operations including visual and others' senses. Next, we will discuss how the brain gives rise to a wide variety of complex behaviors, memory, social and emotional behaviors. The course will finally introduce students to the wider neurophilosophical questions concerning freewill, death and morality.",
     "prerequisites": "",
-    "rating": "4.24 +/- 1.11",
-    "true_units": "2",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=149&offering_id=87088&track_id=87088-Default"
+    "rating": "4.35 +/- 0.83",
+    "true_units": "Somewhat Low",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=149&offering_id=90623&track_id=90623-Default"
   },
   "673762739": {
     "id": 673762739,
@@ -23785,8 +23785,8 @@
     "description": "The course involves student presentations of their research, reading and discussion of recent research in social and decision neuroscience, and development of professional skill such as scientific writing and speaking, research ethics, writing grants and peer review. This course is only open to graduate students in the Social and Decision Neuroscience, Computational and Neural Systems and Social Science PhD programs.",
     "prerequisites": "",
     "rating": "5.00 +/- 0.00",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=149&offering_id=87164&track_id=87164-Default"
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=149&offering_id=90698&track_id=90698-Default"
   },
   "879660912": {
     "id": 879660912,
@@ -23898,9 +23898,9 @@
     ],
     "description": "This course covers the fundamentals of utility theory, game theory, and social choice theory. These basic theories are developed and illustrated with applications to electoral politics, market trading, bargaining, auctions, mechanism design and implementation, legislative and parliamentary voting and organization, public economics, industrial organization, and other topics in economics and political science. Open to Social Science graduate students only.",
     "prerequisites": "",
-    "rating": "5.00 +/- 0.00",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=151&offering_id=86938&track_id=86938-Default"
+    "rating": "4.98 +/- 0.13",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=151&offering_id=90771&track_id=90771-Default"
   },
   "637551822": {
     "id": 637551822,
@@ -23923,9 +23923,9 @@
     ],
     "description": "Course will introduce the student to the central problems of political theory and analysis, beginning with the essential components of the democratic state and proceeding through a variety of empirical topics. These topics will include the analysis of electoral and legislative institutions, legislative agenda processes, voting behavior, comparative political economy, and cooperation and conflict in international politics. The student will be sensitized to the primary empirical problems of the discipline and trained in the most general applications of game theoretic reasoning to political science. Open to Social Science graduate students only.",
     "prerequisites": "",
-    "rating": "3.96 +/- 0.98",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=151&offering_id=86939&track_id=86939-Default"
+    "rating": "4.84 +/- 0.56",
+    "true_units": "Noticeably High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=151&offering_id=90772&track_id=90772-Default"
   },
   "643174305": {
     "id": 643174305,
@@ -23948,9 +23948,9 @@
     ],
     "description": "This is a graduate course in the fundamentals of economics. Topics include comparative statics and maximization techniques, the neo-classical theory of consumption and production, general equilibrium theory and welfare economics, public goods and externalities, the economic consequences of asymmetric information and incomplete markets, and recursive methods with applications to labor eco-nomics and financial economics. Open to Social Science graduate students only.",
     "prerequisites": "",
-    "rating": "3.95 +/- 1.27",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=151&offering_id=86940&track_id=86940-Default"
+    "rating": "4.32 +/- 1.14",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=151&offering_id=90773&track_id=90773-Default"
   },
   "633854153": {
     "id": 633854153,
@@ -24023,9 +24023,9 @@
     ],
     "description": "This three-quarter sequence is designed for advanced Social Science Ph.D. students with the aim of introducing students to the methodology of modern experimental economics and to provide an in-depth overview of the contributions of experimental methods to a wide variety of fields. The specific topics covered, which will vary from year to year, include but are not limited to individual decision making, preference and belief elicitation, game theory, social learning, bargaining, labor economics, public finance, auctions, voting and elections, competitive markets, networks, matching, mechanism design, coordination/communication, and information aggregation. The focus will be on theory-based experiments and how the dialog between theoretical analysis and laboratory data feeds each other, thereby leading to new avenues of theoretical and experimental research.",
     "prerequisites": "SS 201 abc, SS 202 abc, SS 205 abc, SS 222 abc or with permission of the instructor.",
-    "rating": "4.88 +/- 0.32",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80427&department_id=151&offering_id=84222&track_id=84222-Default"
+    "rating": "5.00 +/- 0.00",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=151&offering_id=90740&track_id=90740-Default"
   },
   "637653128": {
     "id": 637653128,
@@ -24048,9 +24048,9 @@
     ],
     "description": "Introduction to the use of multivariate and nonlinear methods in the social sciences. Open to Social Science graduate students only.",
     "prerequisites": "",
-    "rating": "4.92 +/- 0.36",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=151&offering_id=86941&track_id=86941-Default"
+    "rating": "4.58 +/- 0.59",
+    "true_units": "Noticeably High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=151&offering_id=90774&track_id=90774-Default"
   },
   "639527289": {
     "id": 639527289,
@@ -24074,8 +24074,8 @@
     "description": "The courses in this sequence cover advanced methods and tools in econometrics, as well as their applications to a variety of topics in economics, including industrial organization, dynamic choice, information economics, political economy, market design, and behavioral economics. Offered first and third terms.",
     "prerequisites": "SS 222 abc; may be repeated for credit.",
     "rating": "5.00 +/- 0.00",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=151&offering_id=87118&track_id=87118-Default"
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=151&offering_id=90650&track_id=90650-Default"
   },
   "648898094": {
     "id": 648898094,
@@ -24148,9 +24148,9 @@
     ],
     "description": "Course for graduate students in social sciences. Students present their research and lead discussion of material relevant to their research program. Open to Social Science Graduate Students only.",
     "prerequisites": "",
-    "rating": "4.00 +/- 1.00",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80427&department_id=151&offering_id=87032&track_id=87032-Default"
+    "rating": "5.00 +/- 0.00",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=151&offering_id=90567&track_id=90567-Default"
   },
   "879534113": {
     "id": 879534113,
@@ -24359,9 +24359,9 @@
     ],
     "description": "The class will survey different cooking styles, techniques, and cuisines from around the world. Topics covered may include knives and tools; tastes and flavors; sauces and reductions; legumes, grains, and beans; meat; dessert. The emphasis will be on presentation and creativity.",
     "prerequisites": "",
-    "rating": "4.65 +/- 0.53",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=143798&department_id=596&offering_id=83550&track_id=83550-Default"
+    "rating": "4.76 +/- 0.50",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=143798&department_id=596&offering_id=90629&track_id=90629-Default"
   },
   "990115791": {
     "id": 990115791,
@@ -24391,9 +24391,9 @@
     ],
     "description": "A course designed to involve students with health care and education, develop familiarity with common college health problems, and provide peer health services on and off campus. The training involves American Red Cross Emergency Medical Response certification, routine illnesses and injuries and peer counseling. All training is cumulative from the prior term. Opportunities to volunteer at community first aid stations are provided.",
     "prerequisites": "",
-    "rating": "4.74 +/- 0.53",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=143798&department_id=596&offering_id=87095&track_id=87095-Default"
+    "rating": "4.91 +/- 0.35",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=143798&department_id=596&offering_id=90628&track_id=90628-Default"
   },
   "104915875": {
     "id": 104915875,
@@ -24416,9 +24416,9 @@
     ],
     "description": "A course designed to involve students with appropriate peer support and education, develop familiarity with common college mental health problems, and provide peer mental health support to students on and off campus. Active listening skills, identifying students in distress, suicide prevention, lectures and discussions on substance abuse, dating violence, sexual assault, depression, and other relevant mental health topics, as well as ongoing consultation about practical experience. Enrolled with permission only.",
     "prerequisites": "",
-    "rating": "",
-    "true_units": "",
-    "link": ""
+    "rating": "4.65 +/- 0.65",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=143798&department_id=596&offering_id=91283&track_id=91283-Default"
   },
   "542651767": {
     "id": 542651767,
@@ -24566,8 +24566,8 @@
     ],
     "description": "By permission only. Individualized tutorial instruction in writing and communication for students who benefit from weekly discussions about their work as writers. Not available for credit toward the humanities-social science requirement.",
     "prerequisites": "",
-    "rating": "4.73 +/- 1.00",
+    "rating": "4.81 +/- 0.39",
     "true_units": "About Right",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=49&term_id=551&division_id=80427&department_id=515&offering_id=90179&track_id=90179-Default"
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=515&offering_id=90592&track_id=90592-Default"
   }
 }
