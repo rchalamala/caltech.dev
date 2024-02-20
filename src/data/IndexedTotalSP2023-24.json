@@ -451,6 +451,31 @@
     "true_units": "",
     "link": ""
   },
+  "502611694": {
+    "id": 502611694,
+    "name": "Technical Fluid Mechanics",
+    "number": "Ae 204 a",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Gharib, M",
+        "locations": "",
+        "number": 1,
+        "times": "A\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "External and internal flow problems encountered in engineering, for which only empirical methods exist. Turbulent shear flow, separation, transition, three-dimensional and nonsteady effects. Basis of engineering practice in the design of devices such as mixers, ejectors, diffusers, and control valves. Studies of flow-induced oscillations, wind effects on structures, vehicle aerodynamics. Not offered 2022-23.",
+    "prerequisites": "Ae/APh/CE/ME 101 abc or equivalent.",
+    "rating": "4.23 +/- 0.90",
+    "true_units": "3",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80425&department_id=120&offering_id=84338&track_id=84338-Default"
+  },
   "648796252": {
     "id": 648796252,
     "name": "GALCIT Colloquium",
@@ -500,6 +525,31 @@
     "rating": "4.93 +/- 0.25",
     "true_units": "2",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=42&term_id=527&division_id=80425&department_id=120&offering_id=84339&track_id=84339-Default"
+  },
+  "512134458": {
+    "id": 512134458,
+    "name": "Turbulence",
+    "number": "Ae 239 a",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Bae, H",
+        "locations": "384 FIR",
+        "number": 1,
+        "times": "TR 14:30 - 15:55"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "Reynolds-averaged equations and the problem of closure. Statistical description of turbulence. Homogeneous isotropic turbulence and structure of fine scales. Turbulent shear flows. Physical and spectral models. Subgridscale modeling. Turbulent mixing. Structure of low and high Reynolds number wall turbulence.",
+    "prerequisites": "Ae/APh/CE/ME 101 abc; AM 125 abc or ACM/IDS 101.",
+    "rating": "4.78 +/- 0.51",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=49&term_id=551&division_id=80425&department_id=120&offering_id=92116&track_id=92116-Default"
   },
   "879734820": {
     "id": 879734820,
@@ -667,6 +717,13 @@
         "instructor": "Tropp, J",
         "locations": "",
         "number": 8,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Chung, S",
+        "locations": "",
+        "number": 9,
         "times": "A\nA"
       }
     ],
@@ -846,13 +903,13 @@
     "sections": [
       {
         "grades": "LETTER",
-        "instructor": "Yang, X",
-        "locations": "213 ANB",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "TR 10:30 - 11:55"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " class cancelled",
     "units": [
       4,
       0,
@@ -871,13 +928,13 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Tropp, J / Garza Vargas, J",
-        "locations": "213 ANB",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "MW 10:00 - 11:25"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " class cancelled - to be offered as ACM270 this term",
     "units": [
       3,
       0,
@@ -891,7 +948,7 @@
   },
   "555821619": {
     "id": 555821619,
-    "name": "Advanced Topics in Applied and Computational Math: Machine Learning In",
+    "name": "Advanced Topics in Applied and Computational Math",
     "number": "ACM 270",
     "sections": [
       {
@@ -900,9 +957,23 @@
         "locations": "213 ANB",
         "number": 1,
         "times": "TR 09:00 - 10:25"
+      },
+      {
+        "grades": "",
+        "instructor": "Tropp, J / Garza Vargas, J",
+        "locations": "213 ANB",
+        "number": 2,
+        "times": "MW 10:00 - 11:25"
+      },
+      {
+        "grades": "",
+        "instructor": "Yang, X",
+        "locations": "213 ANB",
+        "number": 3,
+        "times": "TR 10:30 - 11:55"
       }
     ],
-    "comment": " Inverse Problems and Data Assimilation",
+    "comment": " Sec 1: Machine Learning In Inverse Problems and Data Assimilation // Sec 2: Free Probability (Pass-Fail only) // Sec 3: Computational Mean Field Games, Optimal Transport, and Machine Learning (Letter grades only)",
     "units": [
       3,
       0,
@@ -1154,10 +1225,10 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Matsko, A",
-        "locations": "",
+        "instructor": "Vahala, K",
+        "locations": "133 STL",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 09:00 - 10:25"
       }
     ],
     "comment": "",
@@ -1467,7 +1538,7 @@
         "instructor": "Falson, J",
         "locations": "104 WAT",
         "number": 1,
-        "times": "TR 09:00 - 10:25"
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": "",
@@ -2520,9 +2591,9 @@
       {
         "grades": "",
         "instructor": "Hillenbrand, L / de Kleer, K",
-        "locations": "",
+        "locations": "251 ARM\nRoof CHL",
         "number": 1,
-        "times": "A\nA"
+        "times": "WF 11:00 - 11:55\nTR 19:00 - 21:55"
       }
     ],
     "comment": " Field Trip: tba // maximum enrollment: 22 students",
@@ -4173,6 +4244,31 @@
     "true_units": "",
     "link": ""
   },
+  "881455654": {
+    "id": 881455654,
+    "name": "Making Life: Genome Synthesis from Elements",
+    "number": "BE 111",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Wang, K",
+        "locations": "",
+        "number": 1,
+        "times": "A\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "",
+    "prerequisites": "",
+    "rating": "",
+    "true_units": "",
+    "link": ""
+  },
   "15160696": {
     "id": 15160696,
     "name": "Challenges and Opportunities in Quantitative Ecology",
@@ -4943,16 +5039,16 @@
       {
         "grades": "",
         "instructor": "Goentoro, L",
-        "locations": "152 BRN\n347 KRK",
+        "locations": "101 KRK\n347 KRK",
         "number": 1,
-        "times": "M 09:00 - 09:55\nT 13:00 - 15:55"
+        "times": "M 11:00 - 11:55\nT 13:00 - 15:55"
       },
       {
         "grades": "",
         "instructor": "Goentoro, L",
-        "locations": "152 BRN\n347 KRK",
+        "locations": "101 KRK\n347 KRK",
         "number": 2,
-        "times": "M 09:00 - 09:55\nR 13:00 - 15:55"
+        "times": "M 11:00 - 11:55\nR 13:00 - 15:55"
       }
     ],
     "comment": " maximum enrollment: 10 students per section",
@@ -5662,7 +5758,7 @@
         "instructor": "Meister, M",
         "locations": "B101 BBB",
         "number": 1,
-        "times": "TR 10:30 - 11:55"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -5801,6 +5897,31 @@
     "rating": "4.92 +/- 0.28",
     "true_units": "Somewhat Low",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=149&offering_id=90692&track_id=90692-Default"
+  },
+  "222701100": {
+    "id": 222701100,
+    "name": "Brain-machine Interfaces",
+    "number": "CNS/Bi/NB 256",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Andersen, R",
+        "locations": "330 BBB",
+        "number": 1,
+        "times": "TR 13:00 - 13:55"
+      }
+    ],
+    "comment": "",
+    "units": [
+      2,
+      0,
+      4
+    ],
+    "description": "This special topics course will examine the neural mechanisms of reward, decision making, and reward-based learning. The course covers the anatomy and physiology of reward and action systems. Special emphasis will be placed on the representation of reward expectation; the interplay between reward, motivation, and attention; and the selection of actions. Links between concepts in economics and the neural mechanisms of decision making will be explored. Data from animal and human studies collected using behavioral, neurophysiological, and functional magnetic resonance techniques will be reviewed. Given in alternate years; not offered 2022-23.",
+    "prerequisites": "",
+    "rating": "4.72 +/- 0.59",
+    "true_units": "3",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=40&term_id=522&division_id=80423&department_id=177&offering_id=82507&track_id=82507-Default"
   },
   "896855683": {
     "id": 896855683,
@@ -7118,7 +7239,7 @@
     "number": "ChE 105",
     "sections": [
       {
-        "grades": "LETTER",
+        "grades": "",
         "instructor": "Murray, R",
         "locations": "106 SPL",
         "number": 1,
@@ -7778,12 +7899,12 @@
       {
         "grades": "LETTER",
         "instructor": "Okumura, M / Blake, G",
-        "locations": "101 SCH",
+        "locations": "B204 NYS",
         "number": 1,
-        "times": "TR 10:30 - 11:55"
+        "times": "MWF 11:00 - 11:55"
       }
     ],
-    "comment": "",
+    "comment": " class will meet in 151 Crellin on 4/22",
     "units": [
       3,
       0,
@@ -8450,18 +8571,18 @@
   },
   "881405113": {
     "id": 881405113,
-    "name": "Chemistry Tutorials",
+    "name": "Chemistry Tutorials: Historical and Novel Applications of Electrochemical",
     "number": "Ch 101",
     "sections": [
       {
         "grades": "",
         "instructor": "Stoltz, B / See, K",
-        "locations": "B157 CRL",
+        "locations": "151 CRL\nB157 CRL",
         "number": 1,
-        "times": "R 13:00 - 15:55"
+        "times": "R 13:00 - 13:55\nR 13:00 - 15:55"
       }
     ],
-    "comment": " class meets in 151 CRL on 4/4, 5/16, 5/23, and 5/30",
+    "comment": " Technologies Lecture classes meet in Crellin 151 on 4/4, 5/2, 5/16, 5/23, and 5/30 // Lab meet in Crellin B157 on 4/11, 4/15, 5/9 // max enroll: 12 students",
     "units": [
       1,
       0,
@@ -8555,13 +8676,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Okumura, M",
-        "locations": "101 SCH",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "TR 13:00 - 14:25"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " class cancelled",
     "units": [
       3,
       0,
@@ -8695,7 +8816,7 @@
       {
         "grades": "",
         "instructor": "Blake, G / Cushing, S",
-        "locations": "320 BRN",
+        "locations": "101 SCH",
         "number": 1,
         "times": "TR 13:00 - 14:25"
       }
@@ -9711,7 +9832,7 @@
         "times": "TR 10:30 - 11:55"
       }
     ],
-    "comment": "",
+    "comment": " Students expected to have completed CMS 155 prior to term start.",
     "units": [
       3,
       0,
@@ -10353,12 +10474,61 @@
       {
         "grades": "LETTER",
         "instructor": "Blank, A",
-        "locations": "105 ANB",
+        "locations": "105 ANB\n106 ANB",
         "number": 1,
-        "times": "MW 13:00 - 13:55"
+        "times": "MW 13:00 - 13:55\nT 10:00 - 10:55"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "Blank, A",
+        "locations": "105 ANB\n106 ANB",
+        "number": 2,
+        "times": "MW 13:00 - 13:55\nT 11:00 - 11:55"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "Blank, A",
+        "locations": "105 ANB\n106 ANB",
+        "number": 3,
+        "times": "MW 13:00 - 13:55\nT 12:00 - 12:55"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "Blank, A",
+        "locations": "105 ANB\n106 ANB",
+        "number": 4,
+        "times": "MW 13:00 - 13:55\nT 13:00 - 13:55"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "Blank, A",
+        "locations": "105 ANB\n106 ANB",
+        "number": 5,
+        "times": "MW 13:00 - 13:55\nT 14:00 - 14:55"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "Blank, A",
+        "locations": "105 ANB\n106 ANB",
+        "number": 6,
+        "times": "MW 13:00 - 13:55\nT 15:00 - 15:55"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "Blank, A",
+        "locations": "105 ANB\n106 ANB",
+        "number": 7,
+        "times": "MW 13:00 - 13:55\nT 16:00 - 16:55"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "Blank, A",
+        "locations": "105 ANB\n106 ANB",
+        "number": 8,
+        "times": "MW 13:00 - 13:55\nT 17:00 - 17:55"
       }
     ],
-    "comment": "",
+    "comment": " maximum enrollment: 15 students per section",
     "units": [
       2,
       6,
@@ -11169,10 +11339,10 @@
     "sections": [
       {
         "grades": "LETTER",
-        "instructor": "Blank, A",
+        "instructor": "Blank, A / Bryant, J",
         "locations": "106 ANB",
         "number": 1,
-        "times": "OM,M 19:00 - 19:55"
+        "times": "OM,T 19:00 - 19:55"
       }
     ],
     "comment": " 3 units (1-0-2) // enrollment by instructor permission only // maximum enrollment: 20 students",
@@ -11425,7 +11595,7 @@
         "times": "OM,M 20:00 - 20:55"
       }
     ],
-    "comment": "",
+    "comment": " maximum enrollment: 30 students",
     "units": [
       0,
       3,
@@ -12326,7 +12496,7 @@
     "number": "CDS 110",
     "sections": [
       {
-        "grades": "LETTER",
+        "grades": "",
         "instructor": "Murray, R",
         "locations": "106 SPL",
         "number": 1,
@@ -13642,9 +13812,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Dabiri, M",
-        "locations": "",
+        "locations": "100 PWB",
         "number": 1,
-        "times": "R 13:00 - 14:25\nA"
+        "times": "R 13:00 - 14:25"
       }
     ],
     "comment": " maximum enrollment: 20 students // open to upperclass undergrads and graduate students only",
@@ -16728,7 +16898,7 @@
     "number": "Pl/HPS 183",
     "sections": [
       {
-        "grades": "LETTER",
+        "grades": "",
         "instructor": "Helou, A",
         "locations": "",
         "number": 1,
@@ -22066,7 +22236,7 @@
     "number": "Ph 125 c",
     "sections": [
       {
-        "grades": "PASS-FAIL",
+        "grades": "",
         "instructor": "Cheung, C",
         "locations": "107 DWN",
         "number": 1,
@@ -23549,6 +23719,13 @@
         "locations": "",
         "number": 61,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Most, E",
+        "locations": "",
+        "number": 62,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -24483,7 +24660,7 @@
         "times": "TR 10:30 - 11:55\nA"
       }
     ],
-    "comment": " maximum enrollment: 12 students",
+    "comment": " closed to online enrollment, see instructor for enrollment // maximum enrollment: 12 students",
     "units": [
       3,
       2,
