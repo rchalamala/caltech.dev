@@ -12,22 +12,24 @@ import { motion } from "framer-motion";
 //   CourseData
 // > = require("./data/IndexedTotalFall2022-23.json");
 
-const DATA_FA2022 = require("./data/IndexedTotalFA2022-23.json");
-const DATA_WI2022 = require("./data/IndexedTotalWI2022-23.json");
-const DATA_SP2022 = require("./data/IndexedTotalSP2022-23.json");
-const DATA_FA2023 = require("./data/IndexedTotalFA2023-24.json");
-const DATA_WI2023 = require("./data/IndexedTotalWI2023-24.json");
-const DATA_SP2023 = require("./data/IndexedTotalSP2023-24.json");
+const DATA_FA2023 = require("./data/IndexedTotalFA2022-23.json");
+const DATA_WI2023 = require("./data/IndexedTotalWI2022-23.json");
+const DATA_SP2023 = require("./data/IndexedTotalSP2022-23.json");
+const DATA_FA2024 = require("./data/IndexedTotalFA2023-24.json");
+const DATA_WI2024 = require("./data/IndexedTotalWI2023-24.json");
+const DATA_SP2024 = require("./data/IndexedTotalSP2023-24.json");
+const DATA_FA2025 = require("./data/IndexedTotalFA2024-25.json");
 
-const CURRENT_TERM = "/sp2023";
+const CURRENT_TERM = "/fa2025";
 
 const courseDataSources: Record<string, CourseData> = {
-  "/fa2022": DATA_FA2022,
-  "/wi2022": DATA_WI2022,
-  "/sp2022": DATA_SP2022,
   "/fa2023": DATA_FA2023,
   "/wi2023": DATA_WI2023,
   "/sp2023": DATA_SP2023,
+  "/fa2024": DATA_FA2024,
+  "/wi2024": DATA_WI2024,
+  "/sp2024": DATA_SP2024,
+  "/fa2025": DATA_FA2025,
 };
 
 export const AllCourses = createContext<CourseIndex>({});
@@ -684,8 +686,8 @@ function App() {
             <p>
               Pro tip: you can use data from previous terms by changing the url!
               For example, if you would like to revisit <b>Fa</b>ll of{" "}
-              <b>2022</b> (for whatever reason), simply navigate to
-              https://caltech.dev/<b>fa2022</b>.
+              <b>2022-2023</b> (for whatever reason), simply navigate to
+              https://caltech.dev/<b>fa2023</b>.
             </p>
           </Modal>
         </div>
