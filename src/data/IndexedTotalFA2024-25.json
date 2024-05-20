@@ -11070,9 +11070,9 @@
       {
         "grades": "",
         "instructor": "Ervin, G",
-        "locations": "",
+        "locations": "310 LINDE",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 13:00 - 14:25\nA"
       }
     ],
     "comment": "",
@@ -12045,7 +12045,7 @@
         "instructor": "Staff",
         "locations": "",
         "number": 1,
-        "times": "TR 22:30 - 23:55\nA"
+        "times": "TR 10:30 - 11:55\nA"
       }
     ],
     "comment": " maximum enrollment: 70 students",
