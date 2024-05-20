@@ -159,7 +159,7 @@
         "instructor": "Minnich, A",
         "locations": "",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 14:30 - 15:55\nA"
       }
     ],
     "comment": "",
@@ -257,9 +257,9 @@
       {
         "grades": "",
         "instructor": "Pellegrino, S",
-        "locations": "",
+        "locations": "384 FIR",
         "number": 1,
-        "times": "A\nA"
+        "times": "OM,M 16:00 - 16:55"
       }
     ],
     "comment": "",
@@ -559,12 +559,12 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Dimotakis, P",
-        "locations": "",
+        "locations": "232 GUG",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
-    "comment": "",
+    "comment": " Students without the listed prerequisites will not be permitted to enroll in Ae 200-level classes without explicit prior approval from the instructor",
     "units": [
       3,
       0,
@@ -951,9 +951,9 @@
       {
         "grades": "",
         "instructor": "Looi, S",
-        "locations": "",
+        "locations": "255 LINDE",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 09:00 - 10:25"
       }
     ],
     "comment": "",
@@ -3183,6 +3183,13 @@
       },
       {
         "grades": "PASS-FAIL",
+        "instructor": "Ehlmann, B",
+        "locations": "",
+        "number": 5,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
         "instructor": "Djorgovski, S",
         "locations": "",
         "number": 6,
@@ -4342,6 +4349,13 @@
         "locations": "",
         "number": 8,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Arnold, F",
+        "locations": "",
+        "number": 9,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -4932,7 +4946,7 @@
         "times": "A\nA"
       }
     ],
-    "comment": " pending faculty board approval",
+    "comment": " open by application only, apply by May 21 at 9am at http://registrar.caltech.edu/Bi1_FA2024 // pending faculty board approval // max enrollment: 24 students",
     "units": [
       3,
       0,
@@ -4952,12 +4966,12 @@
       {
         "grades": "LETTER",
         "instructor": "Bois, J",
-        "locations": "",
+        "locations": "B126 KRK",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 13:00 - 15:55"
       }
     ],
-    "comment": "",
+    "comment": " open by application only, apply by May 21 at 9am at http://registrar.caltech.edu/Bi1_FA2024",
     "units": [
       0,
       6,
@@ -5764,7 +5778,7 @@
       {
         "grades": "",
         "instructor": "Meyerowitz, E",
-        "locations": "101 KRK\n342 KRK",
+        "locations": "101 KRK\n347 KRK",
         "number": 1,
         "times": "MW 14:00 - 14:55\nF 14:00 - 15:25"
       }
@@ -8179,9 +8193,9 @@
       {
         "grades": "",
         "instructor": "Agapie, T",
-        "locations": "",
+        "locations": "210 RSC",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -10297,7 +10311,7 @@
         "times": "MWF 14:00 - 14:55"
       }
     ],
-    "comment": " class closed, see instructor for permission to enroll",
+    "comment": "",
     "units": [
       3,
       3,
@@ -11072,7 +11086,7 @@
         "instructor": "Ervin, G",
         "locations": "310 LINDE",
         "number": 1,
-        "times": "TR 13:00 - 14:25\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -11325,7 +11339,7 @@
         "times": "MWF 11:00 - 11:55"
       }
     ],
-    "comment": " maximum enrollment: 20 students",
+    "comment": " maximum enrollment: 32 students",
     "units": [
       3,
       0,
@@ -12370,7 +12384,7 @@
         "instructor": "Chandrasekaran, V",
         "locations": "B280 MRE",
         "number": 1,
-        "times": "MW 13:00 - 14:55"
+        "times": "MWF 13:00 - 14:55"
       }
     ],
     "comment": "",
@@ -12423,6 +12437,13 @@
         "instructor": "George, G",
         "locations": "",
         "number": 6,
+        "times": "A\nA"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "Wang, L",
+        "locations": "",
+        "number": 7,
         "times": "A\nA"
       },
       {
@@ -12494,9 +12515,16 @@
         "locations": "",
         "number": 18,
         "times": "A\nA"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "Preskill, J",
+        "locations": "",
+        "number": 19,
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Mandatory information session on Fri. 10/4 @ 3pm in B270 MRE",
     "units": [
       0,
       0,
@@ -12719,7 +12747,7 @@
     "number": "ME/EE/EST 117",
     "sections": [
       {
-        "grades": "",
+        "grades": "LETTER",
         "instructor": "Blanquart, G",
         "locations": "135 GTL",
         "number": 1,
@@ -12737,6 +12765,31 @@
     "rating": "4.78 +/- 0.43",
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=48&term_id=550&division_id=80425&department_id=143&offering_id=89147&track_id=89147-Default"
+  },
+  "224003169": {
+    "id": 224003169,
+    "name": "Mixed-mode Integrated Circuits",
+    "number": "EE/MedE 124",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Emami, A",
+        "locations": "B280 MRE",
+        "number": 1,
+        "times": "TR 10:30 - 11:55"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "Introduction to selected topics in mixed-signal circuits and systems in highly scaled CMOS technologies. Design challenges and limitations in current and future technologies will be discussed through topics such as clocking (PLLs and DLLs), clock distribution networks, sampling circuits, high-speed transceivers, timing recovery techniques, equalization, monitor circuits, power delivery, and converters (A/D and D/A). A design project is an integral part of the course.",
+    "prerequisites": "EE 45 a or equivalent.",
+    "rating": "4.62 +/- 0.67",
+    "true_units": "3",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=30&term_id=512&division_id=80425&department_id=129&offering_id=74607&track_id=74607-Default"
   },
   "418773556": {
     "id": 418773556,
@@ -13230,7 +13283,7 @@
     "number": "En 87",
     "sections": [
       {
-        "grades": "LETTER",
+        "grades": "",
         "instructor": "Lepucki, E",
         "locations": "",
         "number": 1,
@@ -17935,9 +17988,9 @@
       {
         "grades": "",
         "instructor": "Jang, H",
-        "locations": "",
+        "locations": "255 LINDE",
         "number": 1,
-        "times": "A\nA"
+        "times": "MWF 13:00 - 13:55"
       }
     ],
     "comment": " course title change pending faculty board approval",
@@ -19917,6 +19970,31 @@
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=48&term_id=550&division_id=80439&department_id=597&offering_id=89157&track_id=89157-Default"
   },
+  "957625325": {
+    "id": 957625325,
+    "name": "Applied Ethics (Ethics Bowl)",
+    "number": "Pl 89",
+    "sections": [
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Gurcan, O",
+        "locations": "",
+        "number": 1,
+        "times": "R 16:00 - 18:55\nA"
+      }
+    ],
+    "comment": " max enrollment: 12 students",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "",
+    "prerequisites": "",
+    "rating": "",
+    "true_units": "",
+    "link": ""
+  },
   "521610368": {
     "id": 521610368,
     "name": "Senior Thesis",
@@ -19977,7 +20055,7 @@
         "instructor": "Morgan, H",
         "locations": "BAC",
         "number": 1,
-        "times": "TR 14:30 - 15:55"
+        "times": "MW 14:30 - 15:55"
       }
     ],
     "comment": " maximum enrollment: 20 students per section // Graduate students may not enroll until Add Day",
@@ -20052,7 +20130,7 @@
         "instructor": "Weintraub, B",
         "locations": "BAC",
         "number": 1,
-        "times": "MW 09:00 - 22:25"
+        "times": "TR 09:00 - 22:25"
       }
     ],
     "comment": " maximum enrollment: 16 students // Graduate students may not enroll until Add Day",
@@ -20259,7 +20337,7 @@
         "instructor": "Clark, A",
         "locations": "BAC",
         "number": 1,
-        "times": "MW 10:00 - 11:25"
+        "times": "MW 09:00 - 10:25"
       }
     ],
     "comment": " maximum enrollment: 16 students // Graduate students may not enroll until Add Day",
@@ -22167,7 +22245,7 @@
         "instructor": "Zurek, K",
         "locations": "469 LAU",
         "number": 1,
-        "times": "MW 09:00 - 10:25"
+        "times": "WF 09:00 - 10:25"
       }
     ],
     "comment": "",
@@ -23032,6 +23110,20 @@
     "name": "Research in Social Science",
     "number": "SS 300",
     "sections": [
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Druckenmiller, H",
+        "locations": "",
+        "number": 1,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Druckenmiller, H",
+        "locations": "",
+        "number": 2,
+        "times": "A\nA"
+      },
       {
         "grades": "PASS-FAIL",
         "instructor": "Camerer, C",
