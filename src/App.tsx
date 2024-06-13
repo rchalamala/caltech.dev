@@ -71,7 +71,6 @@ interface AppStateProps {
 }
 
 /** Allows to easily add/remove courses to `state` */
-// TODO: rename context (maybe to something like AppState or something)
 export const AppState = createContext<AppStateProps>({
   workspaces: [emptyWorkspace()],
   workspaceIdx: 0,
@@ -674,13 +673,10 @@ function App() {
             <p>
               We hope that this course schuduler makes your life easier! You can
               find the source code{" "}
-              <a
+              <Hyperlink
                 href="https://github.com/rchalamala/caltech.dev"
-                target="_blank"
-                rel="noreferrer"
-              >
-                here
-              </a>
+                text="here"
+              />
               .
             </p>
             <p>
@@ -691,52 +687,41 @@ function App() {
             </p>
           </Modal>
         </div>
-        <main className="py-5">
-          <div className="mx-2 antialiased scroll-smooth selection:bg-orange-400 selection:text-black">
-            <div id="column-container">
-              <div className="column planner-column">
-                <Planner />
-              </div>
-              <Workspace />
+
+        <main className="py-5 mx-2 antialiased scroll-smooth selection:bg-orange-400 selection:text-black">
+          <div id="column-container">
+            <div className="column planner-column">
+              <Planner />
             </div>
+            <Workspace />
           </div>
         </main>
 
         <footer className="footer">
           <p>
             Made with ❤️ by{" "}
-            <a
-              className="font-mono font-bold text-orange-500 hover:underline"
-              href="https://github.com/rchalamala"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Rahul
-            </a>
-            ,{" "}
-            <a
-              className="font-mono font-bold text-orange-500 hover:underline"
-              href="https://github.com/ericlovesmath"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Eric
-            </a>
-            , &{" "}
-            <a
-              className="font-mono font-bold text-orange-500 hover:underline"
-              href="https://github.com/zack466"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Zack
-            </a>
+            <Hyperlink href="https://github.com/rchalamala" text="Rahul" />,{" "}
+            <Hyperlink href="https://github.com/ericlovesmath" text="Eric" />, &{" "}
+            <Hyperlink href="https://github.com/zack466" text="Zack" />
           </p>
           <p>Current term: {realPath.substring(1)}</p>
         </footer>
       </AppState.Provider>
       <Analytics />
     </AllCourses.Provider>
+  );
+}
+
+function Hyperlink(props: { href: string; text: string }) {
+  return (
+    <a
+      className="font-mono font-bold text-orange-500 hover:underline"
+      href={props.href}
+      target="_blank"
+      rel="noreferrer"
+    >
+      {props.text}
+    </a>
   );
 }
 

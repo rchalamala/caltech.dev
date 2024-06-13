@@ -144,8 +144,8 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
 
   const state = useContext(AppState);
 
-  const [ expanded, setExpanded ] = useState(true);
-  const [ animEntryTools, __ ] = useAutoAnimate();
+  const [expanded, setExpanded] = useState(true);
+  const [animParent] = useAutoAnimate();
 
   let className = "workspace-entry";
   className += course.locked
@@ -168,80 +168,94 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
             {...provided.draggableProps}
             {...provided.dragHandleProps}
           >
-          <div className={`relative w-full whitespace-nowrap`} ref={animEntryTools} >
-            <div className="left-0 w-min align-middle inline-block" >
-              <IconButton  onClick={() => { setExpanded(!expanded); }}>
-                { expanded ? <UnfoldLess /> : <UnfoldMore /> }
-              </IconButton>
-            </div>
-            { expanded ? <></> : <div className="align-middle inline-block max-w-[calc(100%-11rem)] items-center overflow-clip w-full whitespace-nowrap"><span className="font-bold">{course.courseData.number}</span> {course.courseData.name}</div> }
-            <div className={`${expanded ? 'w-[calc(100%-2.5rem)]' : 'w-min'} inline-block top-auto bottom-0 right-0 left-auto align-middle`} >
-              <div className="workspace-entry-buttons">
-
-              <Switch
-                color="warning"
-                checked={course.enabled}
-                onChange={() => {
-                  state.toggleCourse(course);
-                }}
-              />
-
-              {course.locked ? (
+            <div
+              className={`relative w-full whitespace-nowrap`}
+              ref={animParent}
+            >
+              <div className="left-0 w-min align-middle inline-block">
                 <IconButton
-                  color="warning"
-                  onClick={() => state.toggleSectionLock(course)}
+                  onClick={() => {
+                    setExpanded(!expanded);
+                  }}
                 >
-                  <Lock className="" />
+                  {expanded ? <UnfoldLess /> : <UnfoldMore />}
                 </IconButton>
+              </div>
+              {expanded ? (
+                <></>
               ) : (
-                <IconButton onClick={() => state.toggleSectionLock(course)}>
-                  <LockOpen />
-                </IconButton>
+                <div className="align-middle inline-block max-w-[calc(100%-11rem)] items-center overflow-clip w-full whitespace-nowrap">
+                  <span className="font-bold">{course.courseData.number}</span>{" "}
+                  {course.courseData.name}
+                </div>
               )}
-              <IconButton
-                color="error"
-                className="workspace-entry-controls-remove"
-                onClick={() => {
-                  state.removeCourse(course);
-                }}
+              <div
+                className={`${expanded ? "w-[calc(100%-2.5rem)]" : "w-min"} inline-block top-auto bottom-0 right-0 left-auto align-middle`}
               >
-                <Delete />
-              </IconButton>
-            </div>
-            </div>
-          </div>
-          <Collapse in={expanded} className="w-full">
-            <div className="workspace-entry-content">
-              <div className="workspace-entry-info">
-                <p>
-                  <b>{course.courseData.number}</b>
-                  {": "}
-                  <b>{course.courseData.name}</b>{" "}
-                  {`(${course.courseData.units[0]}-${course.courseData.units[1]}-${course.courseData.units[2]})`}
-                </p>
-                <p>
-                  {id !== null
-                    ? sections[id].instructor
-                    : "No Section Selected"}
-                </p>
-                <p>{id !== null ? sections[id].locations : "Location"}</p>
-                <p>{id !== null ? sections[id].times : "Times"}</p>
-              </div>
-              <div className="workspace-entry-controls">
-                <motion.button
-                  whileHover={{ scale: 0.95 }}
-                  whileTap={{ scale: 0.9 }}
-                  className="py-1 font-bold text-white bg-orange-500 rounded-md workspace-entry-controls-info"
-                  onClick={() => setInfoModalOpen(true)}
-                >
-                  More Info
-                </motion.button>
-                <SectionDropdown course={course} />
-              </div>
-            </div>
-          </Collapse>
-        </div>
+                <div className="workspace-entry-buttons">
+                  <Switch
+                    color="warning"
+                    checked={course.enabled}
+                    onChange={() => {
+                      state.toggleCourse(course);
+                    }}
+                  />
 
+                  {course.locked ? (
+                    <IconButton
+                      color="warning"
+                      onClick={() => state.toggleSectionLock(course)}
+                    >
+                      <Lock className="" />
+                    </IconButton>
+                  ) : (
+                    <IconButton onClick={() => state.toggleSectionLock(course)}>
+                      <LockOpen />
+                    </IconButton>
+                  )}
+                  <IconButton
+                    color="error"
+                    className="workspace-entry-controls-remove"
+                    onClick={() => {
+                      state.removeCourse(course);
+                    }}
+                  >
+                    <Delete />
+                  </IconButton>
+                </div>
+              </div>
+            </div>
+            <Collapse in={expanded} className="w-full">
+              <div className="workspace-entry-content">
+                <div className="workspace-entry-info">
+                  <p>
+                    <b>{course.courseData.number}</b>
+                    {": "}
+                    <b>{course.courseData.name}</b>{" "}
+                    {`(${course.courseData.units[0]}-${course.courseData.units[1]}-${course.courseData.units[2]})`}
+                  </p>
+                  <p>
+                    {id !== null
+                      ? sections[id].instructor
+                      : "No Section Selected"}
+                  </p>
+                  <p>{id !== null ? sections[id].locations : "Location"}</p>
+                  <p>{id !== null ? sections[id].times : "Times"}</p>
+                </div>
+                <div className="workspace-entry-controls">
+                  <motion.button
+                    whileHover={{ scale: 0.95 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="py-1 font-bold text-white bg-orange-500 rounded-md workspace-entry-controls-info"
+                    onClick={() => setInfoModalOpen(true)}
+                  >
+                    More Info
+                  </motion.button>
+                  <SectionDropdown course={course} />
+                </div>
+              </div>
+            </Collapse>
+          </div>
         )}
       </Draggable>
       <Modal isOpen={infoModalOpen} onClose={() => setInfoModalOpen(false)}>
@@ -293,6 +307,7 @@ function WorkspaceSearch() {
   return (
     <Select
       isClearable
+      className="my-3"
       placeholder="Add a course..."
       options={options}
       value={selectedCourse}
@@ -392,54 +407,6 @@ export default function Workspace() {
     }
   }
 
-  const removeAllClasses = () => {
-    state.setCourses([]);
-  };
-
-  const unlockAllSections = () => {
-    state.setCourses(
-      state.courses.map((course) => {
-        return { ...course, locked: false };
-      }),
-    );
-  };
-
-  const lockAllSections = () => {
-    state.setCourses(
-      state.courses.map((course) => {
-        return { ...course, locked: true };
-      }),
-    );
-  };
-
-  const disableAllClasses = () => {
-    state.setCourses(
-      state.courses.map((course) => {
-        return { ...course, enabled: false };
-      }),
-    );
-  };
-
-  const enableAllClasses = () => {
-    state.setCourses(
-      state.courses.map((course) => {
-        return { ...course, enabled: true };
-      }),
-    );
-  };
-
-  const setDefaultSchedule = () => {
-    state.setCourses(
-      ["Ma 1 b", "Ph 1 b", "Ch 1 b"]
-        .map((name) => {
-          return getCourse(name, indexedCourses);
-        })
-        .map((course) => {
-          return { ...course!, enabled: true, locked: true };
-        }),
-    );
-  };
-
   const [openExportModal, exportModal] = useModal((props) => {
     const shortened = shortenCourses(state.courses)
       .map((c) => [c.courseId, c.enabled, c.locked, c.sectionId])
@@ -505,21 +472,16 @@ export default function Workspace() {
   };
 
   function onDragEnd(result: any) {
-    if (!result.destination) {
+    if (
+      !result.destination ||
+      result.destination.index === result.source.index
+    ) {
       return;
     }
 
-    if (result.destination.index === result.source.index) {
-      return;
-    }
-
-    const reorderedCourses = reorder(
-      state.courses,
-      result.source.index,
-      result.destination.index,
+    state.setCourses(
+      reorder(state.courses, result.source.index, result.destination.index),
     );
-
-    state.setCourses(reorderedCourses);
   }
 
   return (
@@ -540,90 +502,62 @@ export default function Workspace() {
         })}
       </div>
       <WorkspaceScheduler />
-      <div className="workspace-search">
-        <WorkspaceSearch />
-      </div>
+      <WorkspaceSearch />
       <div className="workspace-controls">
-        <motion.button
-          className="px-2 py-1 font-bold transition-colors duration-300 bg-white border-2 rounded-md border-neutral-500 text-neutral-500 hover:border-orange-500 active:border-orange-700 hover:text-orange-500 active:text-orange-700"
-          whileHover={{ scale: 0.95 }}
-          whileTap={{ scale: 0.9 }}
-          onClick={unlockAllSections}
-        >
-          Unlock All
-        </motion.button>
-        <motion.button
-          className="px-2 py-1 font-bold transition-colors duration-300 bg-white border-2 rounded-md border-neutral-500 text-neutral-500 hover:border-orange-500 active:border-orange-700 hover:text-orange-500 active:text-orange-700"
-          whileHover={{ scale: 0.95 }}
-          whileTap={{ scale: 0.9 }}
-          onClick={lockAllSections}
-        >
-          Lock All
-        </motion.button>
-        <motion.button
-          className="px-2 py-1 font-bold transition-colors duration-300 bg-white border-2 rounded-md border-neutral-500 text-neutral-500 hover:border-orange-500 active:border-orange-700 hover:text-orange-500 active:text-orange-700"
-          whileHover={{ scale: 0.95 }}
-          whileTap={{ scale: 0.9 }}
-          onClick={enableAllClasses}
-        >
-          Enable All
-        </motion.button>
-        <motion.button
-          className="px-2 py-1 font-bold transition-colors duration-300 bg-white border-2 rounded-md border-neutral-500 text-neutral-500 hover:border-orange-500 active:border-orange-700 hover:text-orange-500 active:text-orange-700"
-          whileHover={{ scale: 0.95 }}
-          whileTap={{ scale: 0.9 }}
-          onClick={disableAllClasses}
-        >
-          Disable All
-        </motion.button>
-        <motion.button
-          className="px-2 py-1 font-bold transition-colors duration-300 bg-white border-2 rounded-md border-neutral-500 text-neutral-500 hover:border-orange-500 active:border-orange-700 hover:text-orange-500 active:text-orange-700"
-          whileHover={{ scale: 0.95 }}
-          whileTap={{ scale: 0.9 }}
-          onClick={setDefaultSchedule}
-        >
-          Default Schedule
-        </motion.button>
-        <motion.button
-          className="px-2 py-1 font-bold transition-colors duration-300 bg-white border-2 rounded-md border-neutral-500 text-neutral-500 hover:border-orange-500 active:border-orange-700 hover:text-orange-500 active:text-orange-700"
-          whileHover={{ scale: 0.95 }}
-          whileTap={{ scale: 0.9 }}
-          onClick={importWorkspace}
-        >
-          Import Workspace
-        </motion.button>
-        <motion.button
-          className="px-2 py-1 font-bold transition-colors duration-300 bg-white border-2 rounded-md border-neutral-500 text-neutral-500 hover:border-orange-500 active:border-orange-700 hover:text-orange-500 active:text-orange-700"
-          whileHover={{ scale: 0.95 }}
-          whileTap={{ scale: 0.9 }}
-          onClick={openExportModal}
-        >
-          Export Workspace
-        </motion.button>
-        <motion.button
-          className="px-2 py-1 font-bold transition-colors duration-300 bg-white border-2 rounded-md border-neutral-500 text-neutral-500 hover:border-orange-500 active:border-orange-700 hover:text-orange-500 active:text-orange-700"
-          whileHover={{ scale: 0.95 }}
-          whileTap={{ scale: 0.9 }}
-          onClick={removeAllClasses}
-        >
-          Remove All
-        </motion.button>
+        <ControlButton
+          text="Unlock All"
+          onClick={() => {
+            state.setCourses(
+              state.courses.map((c) => ({ ...c, locked: false })),
+            );
+          }}
+        />
+        <ControlButton
+          text="Lock All"
+          onClick={() => {
+            state.setCourses(
+              state.courses.map((course) => ({ ...course, locked: true })),
+            );
+          }}
+        />
+        <ControlButton
+          text="Enable All"
+          onClick={() => {
+            state.setCourses(
+              state.courses.map((course) => ({ ...course, enabled: true })),
+            );
+          }}
+        />
+        <ControlButton
+          text="Disable All"
+          onClick={() => {
+            state.setCourses(
+              state.courses.map((course) => ({ ...course, enabled: false })),
+            );
+          }}
+        />
+        <ControlButton
+          text="Default Schedule"
+          onClick={() => {
+            state.setCourses(
+              ["Ma 1 a", "Ph 1 a", "Ch 1 a"].map((name) => ({
+                ...getCourse(name, indexedCourses)!,
+                enabled: true,
+                locked: true,
+              })),
+            );
+          }}
+        />
+        <ControlButton text="Import Workspace" onClick={importWorkspace} />
+        <ControlButton text="Export Workspace" onClick={openExportModal} />
+        <ControlButton text="Remove All" onClick={() => state.setCourses([])} />
       </div>
-      <b className="workspace-units">
-        {units[0] +
-          units[1] +
-          units[2] +
-          " units (" +
-          units[0] +
-          "-" +
-          units[1] +
-          "-" +
-          units[2] +
-          ")"}
+      <b className="py-3">
+        {`${units[0] + units[1] + units[2]} units (${units[0]}-${units[1]}-${units[2]})`}
       </b>
       <div className="workspace-entries">
         {state.courses.length === 0 ? (
-          <p style={{ margin: "auto" }}>
+          <p className="m-auto">
             No courses added. Add some using the search bar above!
           </p>
         ) : (
@@ -640,5 +574,18 @@ export default function Workspace() {
         )}
       </div>
     </div>
+  );
+}
+
+function ControlButton(props: { text: string; onClick: () => void }) {
+  return (
+    <motion.button
+      className="px-2 py-1 font-bold transition-colors duration-300 bg-white border-2 rounded-md border-neutral-500 text-neutral-500 hover:border-orange-500 active:border-orange-700 hover:text-orange-500 active:text-orange-700"
+      whileHover={{ scale: 0.95 }}
+      whileTap={{ scale: 0.9 }}
+      onClick={props.onClick}
+    >
+      {props.text}
+    </motion.button>
   );
 }
