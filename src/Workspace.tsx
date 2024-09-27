@@ -18,6 +18,8 @@ import { Collapse, IconButton, Switch } from "@mui/material";
 import { UnfoldLess, UnfoldMore } from "@mui/icons-material";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 
+const TERM_START_DATES = require("./data/term_start_dates.json");
+
 /** Fetches courses */
 function getCourse(
   identifier: number | string,
@@ -49,6 +51,101 @@ function getCourse(
 
   return null;
 }
+
+
+function exportICS(term: string, courses: CourseStorage[]): string {
+  const termStartDate = new Date(TERM_START_DATES[term]);
+
+  // Map weekdays to indices for easy comparison
+  const dayMap = "MTWRFSU";
+
+  // Helper function to get the first occurrence of a day after the term start date
+  function getFirstOccurrence(startDate: Date, dayOfWeek: string, timeString: string): Date {
+    const date = new Date(startDate);
+    const targetDay = dayMap.indexOf(dayOfWeek); // Updated targetDay calculation
+    const currentDay = date.getDay();
+
+    // Move the date to the first occurrence of the target weekday
+    const dayOffset = (targetDay - currentDay + 7) % 7;
+    date.setDate(date.getDate() + dayOffset); // Ensure we don't return the start date if it's the same day
+
+    // Parse time (e.g., "09:00")
+    const [hours, minutes] = timeString.split(':').map(Number);
+    date.setHours(hours, minutes);
+
+    return date;
+  }
+
+  // Flatten the courses and parse times with start and end times
+  const parsedEvents = courses
+    .filter(course => course.enabled)
+    .flatMap(course => {
+      return course.courseData.sections
+      .filter(section => section.number === course.sectionId)
+      .flatMap(section => {
+        const times = section.times.split('\n'); // Handle multiple meeting times
+        return times.flatMap(time => {
+          const [days, startTime, _, endTime] = time.split(' '); // Separate days and time range
+          
+          return days.split('').map(day => ({
+            name: course.courseData.number,
+            location: section.locations,
+            startTime: getFirstOccurrence(termStartDate, day, startTime),
+            endTime: getFirstOccurrence(termStartDate, day, endTime) // Parse the end time
+          }));
+        });
+      });
+    });
+
+  // Create a basic ICS header
+  let icsContent = `BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//YourApp//Course Planner//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:US/Los_Angeles
+X-LIC-LOCATION:US/Los_Angeles
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=11
+END:STANDARD
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYDAY=2SU;BYMONTH=3
+END:DAYLIGHT
+END:VTIMEZONE
+`;
+
+  // Generate the events in ICS format
+  parsedEvents.forEach(event => {
+    const dtStart = event.startTime.toISOString().replace(/-|:|\.\d+/g, "").replace("Z", ""); // Convert to ICS compatible date format
+    const dtEnd = event.endTime.toISOString().replace(/-|:|\.\d+/g, "").replace("Z", ""); // Properly handle the end time
+
+    // Add each event to the ICS content
+    icsContent += `BEGIN:VEVENT
+SUMMARY:${event.name}
+LOCATION:${event.location}
+DTSTART;TZID=US/Los_Angeles:${dtStart}
+DTEND;TZID=US/Los_Angeles:${dtEnd}
+RRULE:FREQ=WEEKLY;COUNT=10
+UID:${Date.now() + Math.random()}@caltech.dev
+END:VEVENT
+`;
+  });
+
+  // Close the calendar
+  icsContent += `END:VCALENDAR`;
+
+  return icsContent;
+}
+
 
 function SectionDropdown(props: { course: CourseStorage }) {
   const course = props.course;
@@ -383,7 +480,7 @@ A fuzzy searcher will show you a limited selection of courses
 Clicking on the course will add it to the workspace and enable it (there will also be a button to show more info)
 From the workspace, you can enable/disable courses in addition to switching the section number */
 // TODO: import/export classes in plaintext or a human-readable format
-export default function Workspace() {
+export default function Workspace({ term }: { term: string }) {
   const state = useContext(AppState);
   const indexedCourses = useContext(AllCourses);
 
@@ -536,6 +633,7 @@ export default function Workspace() {
             );
           }}
         />
+        <ControlButton text="Remove All" onClick={() => state.setCourses([])} />
         <ControlButton
           text="Default Schedule"
           onClick={() => {
@@ -550,7 +648,22 @@ export default function Workspace() {
         />
         <ControlButton text="Import Workspace" onClick={importWorkspace} />
         <ControlButton text="Export Workspace" onClick={openExportModal} />
-        <ControlButton text="Remove All" onClick={() => state.setCourses([])} />
+        <ControlButton text="Export .ics" onClick={() => {
+          console.log("exporting..")
+          const icsContent = exportICS(term, state.courses);
+          console.log(icsContent);
+
+          const blob = new Blob([icsContent], { type: 'text/calendar' });
+
+          const link = document.createElement('a');
+          link.href = URL.createObjectURL(blob);
+          link.download = `schedule_${term}.ics`;
+
+          document.body.appendChild(link);
+          link.click();
+          URL.revokeObjectURL(link.href);
+          document.body.removeChild(link);
+        }} />
       </div>
       <b className="py-3">
         {`${units[0] + units[1] + units[2]} units (${units[0]}-${units[1]}-${units[2]})`}
