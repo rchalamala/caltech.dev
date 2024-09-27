@@ -61,7 +61,7 @@ function exportICS(term: string, courses: CourseStorage[]): string {
   // Helper function to get the first occurrence of a day after the term start date
   function getFirstOccurrence(startDate: Date, dayOfWeek: string, timeString: string): Date {
     const date = new Date(startDate); // Copy the term start date
-    const targetDay = dayMap.indexOf(dayOfWeek); // Get index for the weekday
+    const targetDay = dayMap.indexOf(dayOfWeek) + 1; // Get index for the weekday
     const currentDay = date.getDay();
 
     // Move the date to the first occurrence of the target weekday
