@@ -52,7 +52,6 @@ function getCourse(
   return null;
 }
 
-
 function exportICS(term: string, courses: CourseStorage[]): string {
   const termStartDate = new Date(TERM_START_DATES[term]);
 
@@ -61,43 +60,52 @@ function exportICS(term: string, courses: CourseStorage[]): string {
 
   // Helper function to get the first occurrence of a day after the term start date
   function getFirstOccurrence(startDate: Date, dayOfWeek: string, timeString: string): Date {
-    const date = new Date(startDate);
-    const targetDay = dayMap.indexOf(dayOfWeek); // Updated targetDay calculation
+    const dayMap = "MTWRFSU";
+    const targetDay = dayMap.indexOf(dayOfWeek); // Get index for the weekday
+    const date = new Date(startDate); // Copy the term start date
     const currentDay = date.getDay();
-
+  
     // Move the date to the first occurrence of the target weekday
     const dayOffset = (targetDay - currentDay + 7) % 7;
     date.setDate(date.getDate() + dayOffset); // Ensure we don't return the start date if it's the same day
-
-    // Parse time (e.g., "09:00")
+  
+    // Parse time (e.g., "09:00") and set the time explicitly using local time
     const [hours, minutes] = timeString.split(':').map(Number);
-    date.setHours(hours, minutes);
-
+    date.setHours(hours, minutes, 0, 0); // Set hours and minutes in the local timezone
+    
+    // Force the date to US/Los_Angeles timezone (hardcoded, assuming system uses local timezone)
+    // Optionally log it to confirm correct behavior
+    console.log("Converted date (Los Angeles):", date.toLocaleString('en-US', { timeZone: 'America/Los_Angeles' }));
+  
     return date;
   }
 
-  // Flatten the courses and parse times with start and end times
+  // Flatten the courses and parse times with start and end times, matching locations
   const parsedEvents = courses
     .filter(course => course.enabled)
     .flatMap(course => {
       return course.courseData.sections
-      .filter(section => section.number === course.sectionId)
-      .flatMap(section => {
-        const times = section.times.split('\n'); // Handle multiple meeting times
-        return times.flatMap(time => {
-          const [days, startTime, _, endTime] = time.split(' '); // Separate days and time range
-          
-          return days.split('').map(day => ({
-            name: course.courseData.number,
-            location: section.locations,
-            startTime: getFirstOccurrence(termStartDate, day, startTime),
-            endTime: getFirstOccurrence(termStartDate, day, endTime) // Parse the end time
-          }));
+        .filter(section => section.number === course.sectionId) // Filter by selected section
+        .flatMap(section => {
+          const times = section.times.split('\n'); // Split multiple times on newline
+          const locations = section.locations.split('\n'); // Split multiple locations on newline
+
+          // Zip times and locations together
+          return times.flatMap((time, index) => {
+            const location = locations[index] || ''; // Match time with corresponding location
+            const [days, startTime, _, endTime] = time.split(' '); // Separate days and time range
+            
+            return days.split('').map(day => ({
+              name: course.courseData.number, // Use course number for the title
+              location, // Set the matched location for this time
+              startTime: getFirstOccurrence(termStartDate, day, startTime),
+              endTime: getFirstOccurrence(termStartDate, day, endTime) // Parse the end time
+            }));
+          });
         });
-      });
     });
 
-  // Create a basic ICS header
+  // Create a basic ICS header with timezone information
   let icsContent = `BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//YourApp//Course Planner//EN
@@ -125,8 +133,8 @@ END:VTIMEZONE
 
   // Generate the events in ICS format
   parsedEvents.forEach(event => {
-    const dtStart = event.startTime.toISOString().replace(/-|:|\.\d+/g, "").replace("Z", ""); // Convert to ICS compatible date format
-    const dtEnd = event.endTime.toISOString().replace(/-|:|\.\d+/g, "").replace("Z", ""); // Properly handle the end time
+    const dtStart = event.startTime.toISOString().replace(/-|:|\.\d+/g, "").replace("Z", ""); // Remove Z to avoid UTC formatting
+    const dtEnd = event.endTime.toISOString().replace(/-|:|\.\d+/g, "").replace("Z", ""); // Same here for end time
 
     // Add each event to the ICS content
     icsContent += `BEGIN:VEVENT
