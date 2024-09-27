@@ -60,23 +60,18 @@ function exportICS(term: string, courses: CourseStorage[]): string {
 
   // Helper function to get the first occurrence of a day after the term start date
   function getFirstOccurrence(startDate: Date, dayOfWeek: string, timeString: string): Date {
-    const dayMap = "MTWRFSU";
-    const targetDay = dayMap.indexOf(dayOfWeek); // Get index for the weekday
     const date = new Date(startDate); // Copy the term start date
+    const targetDay = dayMap.indexOf(dayOfWeek); // Get index for the weekday
     const currentDay = date.getDay();
-  
+
     // Move the date to the first occurrence of the target weekday
     const dayOffset = (targetDay - currentDay + 7) % 7;
     date.setDate(date.getDate() + dayOffset); // Ensure we don't return the start date if it's the same day
-  
+
     // Parse time (e.g., "09:00") and set the time explicitly using local time
     const [hours, minutes] = timeString.split(':').map(Number);
     date.setHours(hours, minutes, 0, 0); // Set hours and minutes in the local timezone
     
-    // Force the date to US/Los_Angeles timezone (hardcoded, assuming system uses local timezone)
-    // Optionally log it to confirm correct behavior
-    console.log("Converted date (Los Angeles):", date.toLocaleString('en-US', { timeZone: 'America/Los_Angeles' }));
-  
     return date;
   }
 
@@ -85,15 +80,16 @@ function exportICS(term: string, courses: CourseStorage[]): string {
     .filter(course => course.enabled)
     .flatMap(course => {
       return course.courseData.sections
-        .filter(section => section.number === course.sectionId) // Filter by selected section
+        .filter(section => section.number - 1 === course.sectionId) // Filter by selected section
         .flatMap(section => {
           const times = section.times.split('\n'); // Split multiple times on newline
           const locations = section.locations.split('\n'); // Split multiple locations on newline
 
           // Zip times and locations together
           return times.flatMap((time, index) => {
-            const location = locations[index] || ''; // Match time with corresponding location
+            const location = locations[index] || 'Unknown'; // Match time with corresponding location
             const [days, startTime, _, endTime] = time.split(' '); // Separate days and time range
+            if (days === 'A') return []; // skip to-be-announced times
             
             return days.split('').map(day => ({
               name: course.courseData.number, // Use course number for the title
@@ -105,43 +101,25 @@ function exportICS(term: string, courses: CourseStorage[]): string {
         });
     });
 
-  // Create a basic ICS header with timezone information
+  // Create a basic ICS header (no timezone needed as we rely on UTC conversion)
   let icsContent = `BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//YourApp//Course Planner//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-BEGIN:VTIMEZONE
-TZID:US/Los_Angeles
-X-LIC-LOCATION:US/Los_Angeles
-BEGIN:STANDARD
-TZOFFSETFROM:-0700
-TZOFFSETTO:-0800
-TZNAME:PST
-DTSTART:19701101T020000
-RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=11
-END:STANDARD
-BEGIN:DAYLIGHT
-TZOFFSETFROM:-0800
-TZOFFSETTO:-0700
-TZNAME:PDT
-DTSTART:19700308T020000
-RRULE:FREQ=YEARLY;BYDAY=2SU;BYMONTH=3
-END:DAYLIGHT
-END:VTIMEZONE
 `;
 
   // Generate the events in ICS format
   parsedEvents.forEach(event => {
-    const dtStart = event.startTime.toISOString().replace(/-|:|\.\d+/g, "").replace("Z", ""); // Remove Z to avoid UTC formatting
-    const dtEnd = event.endTime.toISOString().replace(/-|:|\.\d+/g, "").replace("Z", ""); // Same here for end time
+    const dtStart = event.startTime.toISOString().replace(/-|:|\.\d+/g, ""); // Convert to UTC in .ics format
+    const dtEnd = event.endTime.toISOString().replace(/-|:|\.\d+/g, ""); // Convert to UTC in .ics format
 
     // Add each event to the ICS content
     icsContent += `BEGIN:VEVENT
 SUMMARY:${event.name}
 LOCATION:${event.location}
-DTSTART;TZID=US/Los_Angeles:${dtStart}
-DTEND;TZID=US/Los_Angeles:${dtEnd}
+DTSTART:${dtStart}
+DTEND:${dtEnd}
 RRULE:FREQ=WEEKLY;COUNT=10
 UID:${Date.now() + Math.random()}@caltech.dev
 END:VEVENT
@@ -657,9 +635,7 @@ export default function Workspace({ term }: { term: string }) {
         <ControlButton text="Import Workspace" onClick={importWorkspace} />
         <ControlButton text="Export Workspace" onClick={openExportModal} />
         <ControlButton text="Export .ics" onClick={() => {
-          console.log("exporting..")
           const icsContent = exportICS(term, state.courses);
-          console.log(icsContent);
 
           const blob = new Blob([icsContent], { type: 'text/calendar' });
 
