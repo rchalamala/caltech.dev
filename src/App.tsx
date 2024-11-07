@@ -695,7 +695,7 @@ function App() {
             <div className="column planner-column">
               <Planner />
             </div>
-            <Workspace />
+            <Workspace term={realPath.substring(1)} />
           </div>
         </main>
 
