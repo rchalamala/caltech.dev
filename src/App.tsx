@@ -7,11 +7,6 @@ import Modal from "./Modal";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import { motion } from "framer-motion";
 
-// const indexedCourses: Record<
-//   string,
-//   CourseData
-// > = require("./data/IndexedTotalFall2022-23.json");
-
 const DATA_FA2023 = require("./data/IndexedTotalFA2022-23.json");
 const DATA_WI2023 = require("./data/IndexedTotalWI2022-23.json");
 const DATA_SP2023 = require("./data/IndexedTotalSP2022-23.json");
