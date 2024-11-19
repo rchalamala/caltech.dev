@@ -10,7 +10,7 @@
     "@mui/material": "^5.10.4",
     "@vercel/analytics": "^1.0.1",
     "flatpickr": "^4.6.13",
-    "framer-motion": "^11.2.11",
+    "framer-motion": "^11.11.17",
     "fzf": "^0.5.1",
     "moment": "^2.29.4",
     "react": "^18.2.0",
