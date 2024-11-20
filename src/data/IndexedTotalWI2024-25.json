@@ -134,7 +134,7 @@
         "instructor": "Ramarathinam, N",
         "locations": "390 FIR",
         "number": 1,
-        "times": "MWF 11:00 - 11:55"
+        "times": "MWR 11:00 - 11:55"
       }
     ],
     "comment": "",
@@ -559,9 +559,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Bae, H",
-        "locations": "",
+        "locations": "384 FIR",
         "number": 1,
-        "times": "TR 14:30 - 15:55\nA"
+        "times": "TR 14:30 - 15:55"
       }
     ],
     "comment": "",
@@ -636,7 +636,7 @@
         "instructor": "Lapusta, N",
         "locations": "115 GTL",
         "number": 1,
-        "times": "A"
+        "times": "MW 14:30 - 15:55"
       }
     ],
     "comment": "",
@@ -804,9 +804,9 @@
       {
         "grades": "",
         "instructor": "Zuev, K",
-        "locations": "125 KRK\n134\n(Auditorium)\nBCK",
+        "locations": "125 KRK",
         "number": 1,
-        "times": "MF 11:00 - 12:15\nW 11:00 - 12:15"
+        "times": "MWF 11:00 - 12:15"
       }
     ],
     "comment": "",
@@ -829,9 +829,9 @@
       {
         "grades": "",
         "instructor": "Zuev, K",
-        "locations": "125 KRK\n134\n(Auditorium)\nBCK",
+        "locations": "125 KRK",
         "number": 1,
-        "times": "MF 11:00 - 12:15\nW 11:00 - 12:15"
+        "times": "MWF 11:00 - 12:15"
       }
     ],
     "comment": "",
@@ -977,11 +977,11 @@
     "number": "ACM/IDS 154",
     "sections": [
       {
-        "grades": "LETTER",
+        "grades": "",
         "instructor": "Carlson, E",
-        "locations": "121 ANB",
+        "locations": "213 ANB",
         "number": 1,
-        "times": "TR 13:00 - 14:25"
+        "times": "TR 10:30 - 23:55"
       }
     ],
     "comment": "",
@@ -1641,7 +1641,7 @@
         "times": "MW 13:00 - 14:25"
       }
     ],
-    "comment": "",
+    "comment": " makeup sessions held Fridays 1:00pm-2:30pm in Watson 104",
     "units": [
       3,
       0,
@@ -1810,7 +1810,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Phillips, R",
+        "instructor": "Bois, J",
         "locations": "100 - Rock\nAuditorium\nBRD",
         "number": 1,
         "times": "MW 14:30 - 15:55"
@@ -1861,9 +1861,9 @@
       {
         "grades": "",
         "instructor": "Vahala, K",
-        "locations": "104 WAT",
+        "locations": "142 KCK",
         "number": 1,
-        "times": "TR 09:00 - 10:25"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -4268,6 +4268,20 @@
         "locations": "",
         "number": 51,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Staff",
+        "locations": "",
+        "number": 52,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Nolan, T",
+        "locations": "",
+        "number": 53,
+        "times": "A\nA"
       }
     ],
     "comment": " If your research advisor does not appear below, please contact the Office of the Registrar.",
@@ -4342,6 +4356,13 @@
         "locations": "",
         "number": 8,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Nolan, T",
+        "locations": "",
+        "number": 9,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -4364,30 +4385,9 @@
       {
         "grades": "",
         "instructor": "Bois, J",
-        "locations": "100 - Rock\nAuditorium\nBRD\n200 BRD",
+        "locations": "100 - Rock\nAuditorium\nBRD\n100 CNRB",
         "number": 1,
         "times": "M 09:00 - 09:55\nW 09:00 - 11:55"
-      },
-      {
-        "grades": "",
-        "instructor": "Bois, J",
-        "locations": "100 - Rock\nAuditorium\nBRD\n200 BRD",
-        "number": 2,
-        "times": "M 09:00 - 09:55\nW 13:00 - 15:55"
-      },
-      {
-        "grades": "",
-        "instructor": "Bois, J",
-        "locations": "100 - Rock\nAuditorium\nBRD\n200 BRD",
-        "number": 3,
-        "times": "M 10:00 - 10:55\nW 09:00 - 11:55"
-      },
-      {
-        "grades": "",
-        "instructor": "Bois, J",
-        "locations": "100 - Rock\nAuditorium\nBRD\n200 BRD",
-        "number": 4,
-        "times": "M 10:00 - 10:55\nW 13:00 - 15:55"
       }
     ],
     "comment": "",
@@ -4451,6 +4451,56 @@
     "rating": "",
     "true_units": "",
     "link": ""
+  },
+  "685250330": {
+    "id": 685250330,
+    "name": "Neuropharmacology",
+    "number": "NB/Bi/BE 155",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Staff",
+        "locations": "",
+        "number": 1,
+        "times": "A\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      3
+    ],
+    "description": "The neuroscience of drugs for therapy, for prevention, and for recreation. Students learn the prospects for new generations of medications in neurology, psychiatry, aging, and treatment of substance abuse. Topics: Types of drug molecules, Drug receptors, Electrophysiology, Drugs activate ion channels, Drugs block ion channels, Drugs activate and block G protein pathways, Drugs block neurotransmitter transporters, Pharmacokinetics, Recreational drugs, Nicotine Addiction, Opiate Addiction, Drugs for neurodegenerative diseases: Alzheimer's disease, Parkinson's disease, Drugs for epilepsy and migraine, and Psychiatric diseases: Nosology and drugs. The course is taught at the research level. Given in alternate years; offered 2022-23.",
+    "prerequisites": "NB/Bi/CNS 150.",
+    "rating": "4.64 +/- 0.57",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=49&term_id=551&division_id=80423&department_id=535&offering_id=91797&track_id=91797-Default"
+  },
+  "215187173": {
+    "id": 215187173,
+    "name": "Biomedical Optics: Principles and Imaging",
+    "number": "MedE/EE/BE 168 a",
+    "sections": [
+      {
+        "grades": "LETTER",
+        "instructor": "Wang, L",
+        "locations": "",
+        "number": 1,
+        "times": "TR 14:30 - 16:15\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      4,
+      0,
+      5
+    ],
+    "description": "Part a covers the principles of optical photon transport in biological tissue. Topics include a brief introduction to biomedical optics, single-scatterer theories, Monte Carlo modeling of photon transport, convolution for broad-beam responses, radiative transfer equation and diffusion theory, hybrid Monte Carlo method and diffusion theory, and sensing of optical properties and spectroscopy, (absorption, elastic scattering, Raman scattering, and fluorescence). Part b covers established optical imaging technologies. Topics include ballistic imaging (confocal microscopy, two-photon microscopy, super-resolution microscopy, etc.), optical coherence tomography, Mueller optical coherence tomography, and diffuse optical tomography. Part c covers emerging optical imaging technologies. Topics include photoacoustic tomography, ultrasound-modulated optical tomography, optical time reversal (wavefront shaping/engineering), and ultrafast imaging.  MedE/EE/BE 168 ab not offered 2022-23. MedE/EE/BE 168 c offered 2022-23.",
+    "prerequisites": "instructor's permission.",
+    "rating": "4.82 +/- 0.52",
+    "true_units": "3",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80425&department_id=555&offering_id=88287&track_id=88287-Default"
   },
   "945586455": {
     "id": 945586455,
@@ -4540,7 +4590,7 @@
         "times": "TR 13:00 - 13:55\nTR 14:00 - 15:55"
       }
     ],
-    "comment": " maximum enrollment: 16 students // class will meet in KRK 101 week of 2/5/24 and 2/12/24",
+    "comment": " maximum enrollment: 16 students",
     "units": [
       2,
       4,
@@ -4986,7 +5036,7 @@
         "times": "TWF 13:00 - 13:55\nMT 19:00 - 19:55"
       }
     ],
-    "comment": " Open by application. Limited enrollment.",
+    "comment": " open by application only, apply by Nov 14 at https://registrar.caltech.edu/Bi1_WI2025 // maximum enrollment: 20 students // pass/fail for all first-year students and graded only for all non-first-year students",
     "units": [
       3,
       0,
@@ -5011,7 +5061,7 @@
         "times": "TR 13:00 - 14:25"
       }
     ],
-    "comment": " open by application only, apply by Nov 10 at https://registrar.caltech.edu/Bi1_WI2024 // maximum enrollment: 20 students // pass/fail for all first-year students and graded only for all non-first-year students",
+    "comment": " open by application only, apply by Nov 14 at https://registrar.caltech.edu/Bi1_WI2025 // maximum enrollment: 20 students // pass/fail for all first-year students and graded only for all non-first-year students",
     "units": [
       3,
       0,
@@ -5097,13 +5147,6 @@
         "instructor": "Chan, D",
         "locations": "",
         "number": 1,
-        "times": "A\nA"
-      },
-      {
-        "grades": "PASS-FAIL",
-        "instructor": "Quartz, S",
-        "locations": "",
-        "number": 2,
         "times": "A\nA"
       },
       {
@@ -5546,6 +5589,13 @@
         "locations": "",
         "number": 67,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Nolan, T",
+        "locations": "",
+        "number": 68,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -5585,9 +5635,16 @@
         "locations": "340A CNRB",
         "number": 3,
         "times": "OM,M 16:00 - 16:55"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Prober, D",
+        "locations": "322 CNRB",
+        "number": 4,
+        "times": "W 16:00 - 16:55"
       }
     ],
-    "comment": " Sec 1: Learning Across Species: Foundations and Frontiers in the Ethology of Learning // Sec 2: Brain Organoids 101 // Sec 3: Neurobiology of Sleep: Understanding the Science of Rest // Sec 2 OM via Zoom",
+    "comment": " Sec 1: Learning Across Species: Foundations and Frontiers in the Ethology of Learning // Sec 2: Brain Organoids 101 // Sec 3: Neurobiology of Sleep: Understanding the Science of Rest // Sec 4: Topics in Memory //Sec 2 OM via Zoom",
     "units": [
       1,
       0,
@@ -5609,6 +5666,13 @@
         "instructor": "Allman, J",
         "locations": "",
         "number": 1,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Nolan, T",
+        "locations": "",
+        "number": 2,
         "times": "A\nA"
       }
     ],
@@ -5824,30 +5888,30 @@
     "true_units": "2",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=32&term_id=514&division_id=80423&department_id=153&offering_id=75452&track_id=75452-Default"
   },
-  "896150347": {
-    "id": 896150347,
-    "name": "Genetic Dissection of Neural Circuit Function",
-    "number": "NB/Bi/CNS 220",
+  "126979123": {
+    "id": 126979123,
+    "name": "Stem Cells and Hematopoiesis",
+    "number": "Bi 214",
     "sections": [
       {
         "grades": "",
-        "instructor": "Anderson, D",
-        "locations": "",
+        "instructor": "Rothenberg, E",
+        "locations": "152 BRN\n152 BRN",
         "number": 1,
-        "times": "A\nA"
+        "times": "T 19:00 - 20:55\nF 14:00 - 15:55"
       }
     ],
     "comment": "",
     "units": [
-      2,
+      3,
       0,
-      4
+      6
     ],
-    "description": "This advanced course will discuss the emerging science of neural \"circuit breaking\" through the application of molecular genetic tools. These include optogenetic and pharmacogenetic manipulations of neuronal activity, genetically based tracing of neuronal connectivity, and genetically based indicators of neuronal activity. Both viral and transgenic approaches will be covered, and examples will be drawn from both the invertebrate and vertebrate literature. Interested CNS or other graduate students who have little or no familiarity with molecular biology will be supplied with the necessary background information. Lectures and student presentations from the current literature.",
-    "prerequisites": "NB/Bi/CNS 150 or equivalent. Open to advanced (junior or senior) undergraduates only and with instructor permission.",
-    "rating": "4.87 +/- 0.39",
-    "true_units": "About Right",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=49&term_id=551&division_id=80423&department_id=535&offering_id=91476&track_id=91476-Default"
+    "description": "An advanced course with classes based on active discussion, lectures, and seminar presentations. Development from embryos and development from stem cells are distinct paradigms for understanding and manipulating the emergence of ordered biological complexity from simplicity. This course focuses on the distinguishing features of stem-cell based systems, ranging from the natural physiological stem cells that are responsible for life-long hematopoiesis in vertebrates (hematopoietic stem cells) to the artificial stem cells, ES and iPS cells, that have now been created for experimental manipulation. Key questions will be how the stem cells encode multipotency, how they can enter long-term self-renewal by separating themselves from the developmental clock that controls development of the rest of the organism, and how the self-renewal programs of different stem cell types can be dismantled again to allow differentiation. Does \"stem-ness\" have common elements in different systems? The course will also cover the lineage relationships among diverse differentiated cell types emerging from common stem cells, the role of cytokines and cytokine receptors in shaping differentiation output, apoptosis and lineage-specific proliferation, and how differentiation works at the level of gene regulation and regulatory networks.",
+    "prerequisites": "Graduate standing, or at least one of Bi 114, Bi 117, Bi/Be 182, plus molecular biology.",
+    "rating": "4.67 +/- 0.56",
+    "true_units": "3",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80423&department_id=153&offering_id=88351&track_id=88351-Default"
   },
   "579680940": {
     "id": 579680940,
@@ -6555,7 +6619,7 @@
         "times": "A\nA"
       }
     ],
-    "comment": " class cancelled, to be offered spring term",
+    "comment": "",
     "units": [
       3,
       0,
@@ -7193,10 +7257,10 @@
     "true_units": "",
     "link": ""
   },
-  "977366485": {
-    "id": 977366485,
+  "497944172": {
+    "id": 497944172,
     "name": "Principles and Applications of Semiconductor Photoelectrochemistry",
-    "number": "Ch/ChE 140 b",
+    "number": "Ch/ChE 140 a",
     "sections": [
       {
         "grades": "",
@@ -7214,9 +7278,9 @@
     ],
     "description": "The properties and photoelectrochemistry of semiconductors and semiconductor/liquid junction solar cells will be discussed. Topics include optical and electronic properties of semiconductors; electronic properties of semiconductor junctions with metals, liquids, and other semiconductors, in the dark and under illumination, with emphasis on semiconductor/liquid junctions in aqueous and nonaqueous media. Problems currently facing semiconductor/liquid junctions and practical applications of these systems will be highlighted. Part b not offered 2022-23.",
     "prerequisites": "APh/EE 9 ab or instructor's permission.",
-    "rating": "4.28 +/- 0.56",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80424&department_id=114&offering_id=88871&track_id=88871-Default"
+    "rating": "4.67 +/- 0.75",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=49&term_id=551&division_id=80424&department_id=114&offering_id=92017&track_id=92017-Default"
   },
   "820303546": {
     "id": 820303546,
@@ -7275,8 +7339,8 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Wennberg, P",
-        "locations": "210 RSC",
+        "instructor": "Wennberg, P /",
+        "locations": "210 RSC\nDruckenmiller, H",
         "number": 1,
         "times": "W 11:00 - 12:55"
       }
@@ -7619,6 +7683,31 @@
     "true_units": "",
     "link": ""
   },
+  "324233268": {
+    "id": 324233268,
+    "name": "Chemical Engineering Seminar Course",
+    "number": "ChE 290 b",
+    "sections": [
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Vicic, M",
+        "locations": "",
+        "number": 1,
+        "times": "A\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      1,
+      0,
+      0
+    ],
+    "description": "",
+    "prerequisites": "",
+    "rating": "",
+    "true_units": "",
+    "link": ""
+  },
   "546709962": {
     "id": 546709962,
     "name": "General Chemistry",
@@ -7686,20 +7775,6 @@
         "locations": "Lecture Hall\nBAX",
         "number": 9,
         "times": "MWF 11:00 - 11:55\nA\nA"
-      },
-      {
-        "grades": "PASS-FAIL",
-        "instructor": "Nelson, H",
-        "locations": "Lecture Hall\nBAX",
-        "number": 10,
-        "times": "MWF 11:00 - 11:55\nA\nA"
-      },
-      {
-        "grades": "PASS-FAIL",
-        "instructor": "Nelson, H",
-        "locations": "Lecture Hall\nBAX",
-        "number": 11,
-        "times": "MWF 11:00 - 11:55\nA\nA"
       }
     ],
     "comment": " Maximum Enrollment: 25 students per section",
@@ -7755,7 +7830,7 @@
         "times": "F 13:00 - 13:55\nR 08:00 - 10:55"
       }
     ],
-    "comment": " open by lottery to Ch and ChE only; see REGIS to enter by Nov 15th // students must take Ch3 in their first six terms of residence in order to be graded pass/fail",
+    "comment": " open by lottery; see REGIS to enter by Nov 20th // Max enroll: 16 students per sec // students must take Ch3 in their first six terms of residence in order to be graded pass/fail // Sec 3 is First-Years only",
     "units": [
       1,
       3,
@@ -7808,7 +7883,7 @@
         "times": "F 09:00 - 09:55\nR 08:00 - 10:55"
       }
     ],
-    "comment": " open by lottery only; see link on the REGIS home page to enter by Nov 15th // Max enroll: 24 students per sec // students must take Ch 3 in their first six terms of residence in order to be graded pass/fail",
+    "comment": " open by lottery only; see link on the REGIS home page to enter by Nov 20th // Max enroll: 12 students per sec // students must take Ch 3 in their first six terms of residence in order to be graded pass/fail // Sec 3 is First-Years only",
     "units": [
       1,
       3,
@@ -7833,7 +7908,7 @@
         "times": "F 11:00 - 11:55\nT 08:00 - 10:55\nR 08:00 - 10:55"
       }
     ],
-    "comment": " open by lottery only; see link on the REGIS home page to enter by Nov 15th // maximum enrollment: 10 students",
+    "comment": " open by lottery only; see link on the REGIS home page to enter by Nov 20th // maximum enrollment: 10 students",
     "units": [
       1,
       6,
@@ -7855,10 +7930,10 @@
         "instructor": "Nelson, H",
         "locations": "222 RSC",
         "number": 1,
-        "times": "MWF 08:00 - 16:55"
+        "times": "A"
       }
     ],
-    "comment": "",
+    "comment": " Lab Hours are Monday, Wednesday, & Friday from 8:00am - 5:00pm",
     "units": [
       1,
       9,
@@ -8755,7 +8830,7 @@
         "times": "A\nA"
       }
     ],
-    "comment": " class cancelled, to be offered spring term",
+    "comment": "",
     "units": [
       3,
       0,
@@ -10166,13 +10241,6 @@
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Quartz, S",
-        "locations": "",
-        "number": 27,
-        "times": "A\nA"
-      },
-      {
-        "grades": "PASS-FAIL",
         "instructor": "O'Doherty, J",
         "locations": "",
         "number": 28,
@@ -10341,13 +10409,6 @@
         "instructor": "Siapas, A",
         "locations": "",
         "number": 6,
-        "times": "A\nA"
-      },
-      {
-        "grades": "PASS-FAIL",
-        "instructor": "Quartz, S",
-        "locations": "",
-        "number": 7,
         "times": "A\nA"
       },
       {
@@ -10677,7 +10738,7 @@
       {
         "grades": "",
         "instructor": "Babecki, C",
-        "locations": "387 LINDE",
+        "locations": "210 RSC",
         "number": 1,
         "times": "MWF 13:00 - 13:55"
       }
@@ -11523,7 +11584,7 @@
         "times": "TR 13:00 - 14:25"
       }
     ],
-    "comment": "",
+    "comment": " units (3-3-3)",
     "units": [
       0,
       0,
@@ -11624,7 +11685,7 @@
       },
       {
         "grades": "LETTER",
-        "instructor": "Gavalas, G",
+        "instructor": "Eberhardt, F",
         "locations": "",
         "number": 2,
         "times": "TR 14:30 - 15:55\nA"
@@ -11702,7 +11763,7 @@
         "instructor": "George, G",
         "locations": "B270 MRE",
         "number": 1,
-        "times": "MW 14:30 - 15:55"
+        "times": "MF 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -11880,7 +11941,7 @@
         "times": "TR 10:30 - 11:55"
       }
     ],
-    "comment": " class cancelled - to be offered spring term",
+    "comment": "",
     "units": [
       3,
       3,
@@ -12559,7 +12620,7 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Chung, S",
+        "instructor": "Staff",
         "locations": "",
         "number": 1,
         "times": "A\nA"
@@ -12892,7 +12953,7 @@
         "instructor": "Saito, K",
         "locations": "",
         "number": 1,
-        "times": "MW 13:00 - 14:25\nA"
+        "times": "MW 10:30 - 11:55\nA"
       }
     ],
     "comment": "",
@@ -12967,7 +13028,7 @@
         "instructor": "Saito, K",
         "locations": "",
         "number": 1,
-        "times": "MW 10:30 - 11:55\nA"
+        "times": "MW 13:00 - 14:30\nA"
       }
     ],
     "comment": "",
@@ -13401,7 +13462,7 @@
         "instructor": "Emami, A",
         "locations": "B270 MRE",
         "number": 1,
-        "times": "MW 10:00 - 11:55"
+        "times": "MW 10:30 - 11:55"
       }
     ],
     "comment": "",
@@ -13684,13 +13745,6 @@
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Quartz, S",
-        "locations": "",
-        "number": 24,
-        "times": "A\nA"
-      },
-      {
-        "grades": "PASS-FAIL",
         "instructor": "Spiropulu, M",
         "locations": "",
         "number": 25,
@@ -13872,7 +13926,7 @@
   },
   "543768390": {
     "id": 543768390,
-    "name": "Special Topics in Engineering & Applied Science",
+    "name": "Special Topics in Engineering & Applied Science: Design Your Life After",
     "number": "E 100",
     "sections": [
       {
@@ -13883,7 +13937,7 @@
         "times": "M 15:00 - 16:25\nA"
       }
     ],
-    "comment": " Sec 1: Cancelled - Designing Your Caltech Experience, 3 units (1-0- 2), open to first-years and sophomores from all options, max 24 students // Sec 2: Design Your Life After Caltech, open to juniors and seniors by application at http://registrar.caltech.edu/E100_sec2",
+    "comment": " Caltech Open to juniors and seniors by application at http://registrar.caltech.edu/E100_sec1",
     "units": [
       0,
       0,
@@ -13894,6 +13948,56 @@
     "rating": "4.57 +/- 0.87",
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=48&term_id=550&division_id=80425&department_id=275&offering_id=91678&track_id=91678-Section 1"
+  },
+  "197176384": {
+    "id": 197176384,
+    "name": "Management of Technology",
+    "number": "E/SEC 103",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Murray, R",
+        "locations": "",
+        "number": 1,
+        "times": "MW 13:30 - 14:55\nA"
+      }
+    ],
+    "comment": " Enrollment by application only // No auditors will be allowed // Apply at https://murray.cds.caltech.edu/E/SEC_103,_Winter_2025",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "A course intended for students interested in learning how rapidly evolving technologies are harnessed to produce useful products or fertile new area for research. Students will work through Harvard Business School case studies, supplemented by lectures to elucidate the key issues. There will be a term project where students predict the future evolution of an exciting technology. The course is team-based and designed for students considering choosing an exciting research area, working in companies (any size, including start-ups) or eventually going to business school. Topics include technology as a growth agent, financial fundamentals, integration into other business processes, product development pipeline and portfolio management, learning curves, risk assessment, technology trend methodologies (scenarios, projections), motivation, rewards and recognition. Industries considered will include electronics (hardware and software), aerospace, medical, biotech, etc. Students will perform both primary and secondary research and through analysis present defensible projections. E/SEC 102 and E/ME/MedE 105 are useful but not required precursors.",
+    "prerequisites": "",
+    "rating": "4.71 +/- 0.68",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=275&offering_id=90428&track_id=90428-Default"
+  },
+  "543769759": {
+    "id": 543769759,
+    "name": "Principles of University Teaching and Learning in STEM",
+    "number": "E 110",
+    "sections": [
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Dabiri, M",
+        "locations": "360 CSS",
+        "number": 1,
+        "times": "W 13:00 - 14:55"
+      }
+    ],
+    "comment": " maximum enrollment: 20 students // open to upperclass undergrads and graduate students only",
+    "units": [
+      2,
+      0,
+      1
+    ],
+    "description": "This graduate course examines the research on university-level STEM (science, technology, engineering, and mathematics) teaching and learning, which has been used to inform a well-established body of evidence-based teaching practices. Weekly interactive meetings will provide focused overviews and guided application of key pedagogical research, such as prior knowledge and misconceptions, novice-expert differences, and cognitive development as applied to university teaching. We will explore the roles of active learning, student engagement, and inclusive teaching practices in designing classes where all students have an equal opportunity to be successful and feel a sense of belonging, both in the course and as scientists. Readings will inform in-class work and students will apply principles to a project of their choice.",
+    "prerequisites": "",
+    "rating": "4.93 +/- 0.25",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=275&offering_id=90488&track_id=90488-Default"
   },
   "899567360": {
     "id": 899567360,
@@ -14920,7 +15024,7 @@
         "times": "A\nA"
       }
     ],
-    "comment": " Artificial class cancelled",
+    "comment": " Artificial",
     "units": [
       2,
       0,
@@ -15430,7 +15534,7 @@
         "instructor": "Jackson, J / Asimow, P /",
         "locations": "251 ARM\nEhlmann, B",
         "number": 1,
-        "times": "T 11:00 - 11:55"
+        "times": "T 14:00 - 14:55"
       }
     ],
     "comment": " Lab- 4 hours per week, scheduling will vary over the quarter",
@@ -15494,31 +15598,6 @@
     "rating": "4.52 +/- 0.58",
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=49&term_id=551&division_id=80426&department_id=182&offering_id=92128&track_id=92128-Default"
-  },
-  "130776586": {
-    "id": 130776586,
-    "name": "Topics in Earth Surface Processes",
-    "number": "Ge 126",
-    "sections": [
-      {
-        "grades": "PASS-FAIL",
-        "instructor": "Lamb, M",
-        "locations": "267 ARM",
-        "number": 1,
-        "times": "F 09:00 - 10:55"
-      }
-    ],
-    "comment": "",
-    "units": [
-      2,
-      0,
-      4
-    ],
-    "description": "A seminar-style course focusing on a specific theme within geomorphology and sedimentology depending on student interest. Potential themes could include river response to climate change, bedrock erosion in tectonically active mountain belts, or delta evolution on Earth and Mars. The course will consist of student-led discussions centered on readings from peer-reviewed literature.",
-    "prerequisites": "",
-    "rating": "5.00 +/- 0.00",
-    "true_units": "About Right",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=49&term_id=551&division_id=80426&department_id=182&offering_id=90282&track_id=90282-Default"
   },
   "452135174": {
     "id": 452135174,
@@ -15608,7 +15687,7 @@
         "times": "MWF 10:00 - 10:55"
       }
     ],
-    "comment": " class cancelled - postponed to spring term",
+    "comment": "",
     "units": [
       3,
       0,
@@ -16562,30 +16641,30 @@
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=49&term_id=551&division_id=80427&department_id=150&offering_id=92031&track_id=92031-Default"
   },
-  "380200382": {
-    "id": 380200382,
-    "name": "Angels and Monsters: Cosmology, Anthropology, and the Ends of the World",
-    "number": "H/HPS/VC 185",
+  "134981193": {
+    "id": 134981193,
+    "name": "Reading in History and Philosophy of Science",
+    "number": "HPS 98",
     "sections": [
       {
-        "grades": "",
-        "instructor": "Wey-Gomez, N",
-        "locations": "TR DAB",
+        "grades": "PASS-FAIL",
+        "instructor": "Lewis, D",
+        "locations": "",
         "number": 1,
-        "times": "TR 13:00 - 14:25"
+        "times": "A\nA"
       }
     ],
-    "comment": " maximum enrollment: 15 students // class full, see instructor for waitlist",
+    "comment": "",
     "units": [
-      3,
       0,
-      6
+      0,
+      0
     ],
-    "description": "This course explores late medieval European understandings of the origins, structure, and workings of the cosmos in the realms of theology, physics, astronomy, astrology, magic, and medicine. Attention is given to the position of humans as cultural creatures at the intersection of nature and spirit; as well as to the place of Christian Europeans in relation to non-Christians and other categories of outsiders within and beyond Europe. We will examine the knowledge system that anticipated racializing theories in the West. Not offered 2022-23.",
-    "prerequisites": "",
-    "rating": "4.42 +/- 0.76",
-    "true_units": "3",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=30&term_id=512&division_id=80427&department_id=135&offering_id=74628&track_id=74628-Default"
+    "description": "An individual program of directed reading in history and philosophy of science, in areas not covered by regular courses.",
+    "prerequisites": "instructor's permission.",
+    "rating": "",
+    "true_units": "",
+    "link": ""
   },
   "446022547": {
     "id": 446022547,
@@ -17991,35 +18070,35 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Mantovan, E",
-        "locations": "119 KRK\n310 LINDE",
+        "locations": "125 KRK\n310 LINDE",
         "number": 6,
         "times": "MWF 10:00 - 10:55\nR 13:00 - 13:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Mantovan, E",
-        "locations": "119 KRK\nB111 DWN",
+        "locations": "125 KRK\nHameetman\nAud CHL",
         "number": 7,
         "times": "MWF 10:00 - 10:55\nR 14:00 - 14:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Mantovan, E",
-        "locations": "119 KRK\n310 LINDE",
+        "locations": "125 KRK\n310 LINDE",
         "number": 8,
         "times": "MWF 10:00 - 10:55\nR 10:00 - 10:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Mantovan, E",
-        "locations": "119 KRK\nB111 DWN",
+        "locations": "125 KRK\n255 LINDE",
         "number": 9,
         "times": "MWF 10:00 - 10:55\nR 16:00 - 16:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Mantovan, E",
-        "locations": "119 KRK\nHameetman\nAud CHL",
+        "locations": "125 KRK\nHameetman\nAud CHL",
         "number": 10,
         "times": "MWF 10:00 - 10:55\nR 10:00 - 10:55"
       }
@@ -18104,7 +18183,7 @@
       {
         "grades": "LETTER",
         "instructor": "Hallgrimsdottir, I / Pachter,",
-        "locations": "Lecture Hall\nL\nBAX\nB111 DWN",
+        "locations": "Lecture Hall\nL\nBAX\n187 LINDE",
         "number": 6,
         "times": "MWF 10:00 - 10:55\nR 10:30 - 11:25"
       },
@@ -18778,12 +18857,12 @@
       {
         "grades": "",
         "instructor": "Aluffi, P",
-        "locations": "",
+        "locations": "255 LINDE",
         "number": 3,
-        "times": "A\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
-    "comment": "",
+    "comment": " Sec 1: TBA // Sec 2: TBA // Sec 3: Intersection Theory and related topics",
     "units": [
       3,
       0,
@@ -19216,7 +19295,7 @@
         "times": "A"
       }
     ],
-    "comment": " Students must submit a questionnaire at TBA // Students will be notified of accceptance // Max enrollment: 36 students between ME13 and 113. // Information for the course will be provided on the first day of the term.",
+    "comment": " Students must submit a questionnaire at https://registrar.caltech.edu/ME13-113WI2025 // Students will be notified of accceptance // Max enrollment: 36 students between ME13 and 113. // Information for the course will be provided on the first day of the term.",
     "units": [
       0,
       4,
@@ -19559,7 +19638,7 @@
         "times": "A"
       }
     ],
-    "comment": " Students must submit a questionnaire at TBA // Students will be notified of accceptance // Max enrollment: 36 students between ME13 and 113. // Information for the course will be provided on the first day of the term.",
+    "comment": " Students must submit a questionnaire at https://registrar.caltech.edu/ME13-113WI2025 // Students will be notified of accceptance // Max enrollment: 36 students between ME13 and 113. // Information for the course will be provided on the first day of the term.",
     "units": [
       0,
       4,
@@ -20239,7 +20318,7 @@
         "instructor": "Ballance, S",
         "locations": "",
         "number": 1,
-        "times": "WF 11:00 - 12:25\nA"
+        "times": "WF 10:30 - 12:55\nA"
       }
     ],
     "comment": " maximum enrollment: 15 students",
@@ -21564,7 +21643,7 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Patterson, R",
-        "locations": "201 BRG\nB111 DWN",
+        "locations": "201 BRG\n469 LAU",
         "number": 7,
         "times": "WF 11:00 - 11:55\nMR 13:00 - 13:55"
       },
@@ -21610,21 +21689,21 @@
       {
         "grades": "LETTER",
         "instructor": "Filippone, B",
-        "locations": "119 KRK\n102 STL",
+        "locations": "201 BRG\n102 STL",
         "number": 1,
         "times": "TR 11:00 - 11:55\nWF 16:00 - 16:55"
       },
       {
         "grades": "LETTER",
         "instructor": "Filippone, B",
-        "locations": "119 KRK\n102 STL",
+        "locations": "201 BRG\n102 STL",
         "number": 2,
         "times": "TR 11:00 - 11:55\nWF 13:00 - 13:55"
       },
       {
         "grades": "LETTER",
         "instructor": "Filippone, B",
-        "locations": "119 KRK\n102 STL",
+        "locations": "201 BRG\n102 STL",
         "number": 3,
         "times": "TR 11:00 - 11:55\nWF 09:00 - 09:55"
       }
@@ -23760,7 +23839,7 @@
         "times": "W 19:30 - 21:25\nA"
       }
     ],
-    "comment": "",
+    "comment": " Designated as Writing Intensive Course",
     "units": [
       3,
       0,
@@ -23810,7 +23889,7 @@
         "times": "T 14:30 - 16:25\nA"
       }
     ],
-    "comment": " designated as Writing Intensive course // maximum enrollment: 75 students",
+    "comment": " Designated as Writing Intensive course // maximum enrollment: 75 students",
     "units": [
       3,
       0,
@@ -23874,7 +23953,7 @@
         "times": "MWF 11:00 - 11:55"
       }
     ],
-    "comment": " if class is full, see waitlist form at https://forms.office.com/r/Stt4CC7mSR // class meets in LAU 269 on 1/3/24 and 1/5/24 /// maximum enrollment: 18 students per section",
+    "comment": " if class is full, see waitlist form at https://forms.office.com/r/SEVCpEpvbM // class meets in LAU 269 on 1/3/24 and 1/5/24 /// maximum enrollment: 18 students per section",
     "units": [
       3,
       0,
@@ -23896,7 +23975,7 @@
         "instructor": "George, N",
         "locations": "104 WAT",
         "number": 1,
-        "times": "W 13:00 - 13:55"
+        "times": "W 10:00 - 10:55"
       }
     ],
     "comment": " Priority given to seniors in E&AS and GPS // maximum enrollment: 20 students // go to https://forms.office.com/r/KABh4Epxap to be added to waitlist when class is full",
@@ -24043,7 +24122,7 @@
     "sections": [
       {
         "grades": "LETTER",
-        "instructor": "Niemeyer, A",
+        "instructor": "Pomatto, L",
         "locations": "",
         "number": 1,
         "times": "TR 13:00 - 14:25\nA"
