@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": false,
   "dependencies": {
-    "@emotion/react": "^11.10.4",
+    "@emotion/react": "^11.13.5",
     "@emotion/styled": "^11.13.5",
     "@formkit/auto-animate": "^0.8.2",
     "@mui/icons-material": "^5.10.3",
