@@ -4,7 +4,7 @@
   "private": false,
   "dependencies": {
     "@emotion/react": "^11.13.5",
-    "@emotion/styled": "^11.13.5",
+    "@emotion/styled": "^11.14.0",
     "@formkit/auto-animate": "^0.8.2",
     "@mui/icons-material": "^5.10.3",
     "@mui/material": "^5.10.4",
