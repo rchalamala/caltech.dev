@@ -130,11 +130,11 @@
     "number": "CE/Ae/AM 108 b",
     "sections": [
       {
-        "grades": "",
+        "grades": "PASS-FAIL",
         "instructor": "Ramarathinam, N",
         "locations": "390 FIR",
         "number": 1,
-        "times": "MWR 11:00 - 11:55"
+        "times": "MTR 11:00 - 11:55"
       }
     ],
     "comment": "",
@@ -507,11 +507,11 @@
     "number": "Ae 201 b",
     "sections": [
       {
-        "grades": "",
+        "grades": "PASS-FAIL",
         "instructor": "Pullin, D",
         "locations": "133 GUG",
         "number": 1,
-        "times": "A"
+        "times": "MWF 08:00 - 08:55"
       }
     ],
     "comment": "",
@@ -586,7 +586,7 @@
         "instructor": "Austin, J",
         "locations": "",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 13:00 - 14:30\nA"
       }
     ],
     "comment": "",
@@ -904,9 +904,9 @@
       {
         "grades": "",
         "instructor": "Rangel, A",
-        "locations": "",
+        "locations": "B122 GTS",
         "number": 1,
-        "times": "TR 10:30 - 11:55\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": "",
@@ -954,9 +954,9 @@
       {
         "grades": "",
         "instructor": "Staff",
-        "locations": "",
+        "locations": "187 LINDE",
         "number": 1,
-        "times": "A\nA"
+        "times": "MWF 14:00 - 14:55"
       }
     ],
     "comment": "",
@@ -1322,7 +1322,7 @@
       {
         "grades": "",
         "instructor": "Matsko, A",
-        "locations": "142 KCK",
+        "locations": "125 STL",
         "number": 1,
         "times": "TR 09:00 - 10:25"
       }
@@ -1352,7 +1352,7 @@
         "times": "MW 13:00 - 14:25"
       }
     ],
-    "comment": "",
+    "comment": " First class will be held on Wednesday (January 8th)",
     "units": [
       3,
       0,
@@ -1498,13 +1498,6 @@
         "locations": "",
         "number": 2,
         "times": "A\nA"
-      },
-      {
-        "grades": "LETTER",
-        "instructor": "Kimble, H",
-        "locations": "",
-        "number": 3,
-        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -1592,13 +1585,6 @@
         "instructor": "Minnich, A",
         "locations": "",
         "number": 12,
-        "times": "A\nA"
-      },
-      {
-        "grades": "PASS-FAIL",
-        "instructor": "Kimble, H",
-        "locations": "",
-        "number": 13,
         "times": "A\nA"
       },
       {
@@ -2028,13 +2014,6 @@
         "instructor": "Bernardi, M",
         "locations": "",
         "number": 21,
-        "times": "A\nA"
-      },
-      {
-        "grades": "PASS-FAIL",
-        "instructor": "Kimble, H",
-        "locations": "",
-        "number": 22,
         "times": "A\nA"
       },
       {
@@ -3843,6 +3822,13 @@
         "locations": "",
         "number": 67,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Gradinaru, V",
+        "locations": "",
+        "number": 68,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -4271,13 +4257,6 @@
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Staff",
-        "locations": "",
-        "number": 52,
-        "times": "A\nA"
-      },
-      {
-        "grades": "PASS-FAIL",
         "instructor": "Nolan, T",
         "locations": "",
         "number": 53,
@@ -4362,6 +4341,13 @@
         "instructor": "Nolan, T",
         "locations": "",
         "number": 9,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Arnold, F",
+        "locations": "",
+        "number": 10,
         "times": "A\nA"
       }
     ],
@@ -4459,7 +4445,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Staff",
+        "instructor": "Lester, H",
         "locations": "",
         "number": 1,
         "times": "A\nA"
@@ -4485,9 +4471,9 @@
       {
         "grades": "LETTER",
         "instructor": "Wang, L",
-        "locations": "",
+        "locations": "142 KCK",
         "number": 1,
-        "times": "TR 14:30 - 16:15\nA"
+        "times": "TR 14:30 - 16:15"
       }
     ],
     "comment": "",
@@ -4585,9 +4571,9 @@
       {
         "grades": "",
         "instructor": "Qian, L",
-        "locations": "B136 KRK\nB127 KRK",
+        "locations": "125 KRK\n125 KRK\nB127 KRK",
         "number": 1,
-        "times": "TR 13:00 - 13:55\nTR 14:00 - 15:55"
+        "times": "TR 13:00 - 13:55\nT 14:00 - 15:55\nR 14:00 - 15:55"
       }
     ],
     "comment": " maximum enrollment: 16 students",
@@ -5056,7 +5042,7 @@
       {
         "grades": "",
         "instructor": "Pachter, L",
-        "locations": "340A CNRB",
+        "locations": "B101 BBB",
         "number": 1,
         "times": "TR 13:00 - 14:25"
       }
@@ -5631,7 +5617,7 @@
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Staff",
+        "instructor": "Xu, J / Tran, H",
         "locations": "340A CNRB",
         "number": 3,
         "times": "OM,M 16:00 - 16:55"
@@ -5641,7 +5627,7 @@
         "instructor": "Prober, D",
         "locations": "322 CNRB",
         "number": 4,
-        "times": "W 16:00 - 16:55"
+        "times": "OM,W 16:00 - 16:55"
       }
     ],
     "comment": " Sec 1: Learning Across Species: Foundations and Frontiers in the Ethology of Learning // Sec 2: Brain Organoids 101 // Sec 3: Neurobiology of Sleep: Understanding the Science of Rest // Sec 4: Topics in Memory //Sec 2 OM via Zoom",
@@ -5848,7 +5834,7 @@
         "instructor": "Orphan, V",
         "locations": "162 SMD",
         "number": 1,
-        "times": "TR 13:00 - 13:55"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -5871,9 +5857,9 @@
       {
         "grades": "",
         "instructor": "Karthikeyan, S",
-        "locations": "",
+        "locations": "135 LLB",
         "number": 1,
-        "times": "TR 10:30 - 11:55\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": " maximum enrollment: TBD",
@@ -5912,6 +5898,31 @@
     "rating": "4.67 +/- 0.56",
     "true_units": "3",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80423&department_id=153&offering_id=88351&track_id=88351-Default"
+  },
+  "418938450": {
+    "id": 418938450,
+    "name": "Cerebral Cortex",
+    "number": "CNS/Bi/NB 247",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Andersen, R",
+        "locations": "333 BCK",
+        "number": 1,
+        "times": "TR 13:00 - 13:55"
+      }
+    ],
+    "comment": " Course Cancelled",
+    "units": [
+      2,
+      0,
+      4
+    ],
+    "description": "A general survey of the structure and function of the cerebral cortex. Topics include cortical anatomy, functional localization, and newer computational approaches to understanding cortical processing operations. Motor cortex, sensory cortex (visual, auditory, and somatosensory cortex), association cortex, and limbic cortex. Emphasis is on using animal models to understand human cortical function and includes correlations between animal studies and human neuropsychological and functional imaging literature. Given in alternate years; offered 2022-23.",
+    "prerequisites": "NB/Bi/CNS 150 or equivalent.",
+    "rating": "5.00 +/- 0.00",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=49&term_id=551&division_id=80423&department_id=177&offering_id=91796&track_id=91796-Default"
   },
   "579680940": {
     "id": 579680940,
@@ -6467,6 +6478,13 @@
         "locations": "",
         "number": 81,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Wang, L",
+        "locations": "",
+        "number": 82,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -6514,9 +6532,9 @@
       {
         "grades": "LETTER",
         "instructor": "Rosenthal, J",
-        "locations": "",
+        "locations": "B125 BAX",
         "number": 1,
-        "times": "MWF 09:00 - 09:55\nA"
+        "times": "MWF 09:00 - 09:55"
       }
     ],
     "comment": "",
@@ -6539,9 +6557,9 @@
       {
         "grades": "",
         "instructor": "Winston, K",
-        "locations": "",
+        "locations": "228 BAX",
         "number": 1,
-        "times": "TR 19:00 - 20:25\nA"
+        "times": "TR 19:00 - 20:25"
       }
     ],
     "comment": "",
@@ -6564,9 +6582,9 @@
       {
         "grades": "",
         "instructor": "McAniff, P",
-        "locations": "",
+        "locations": "B125 BAX",
         "number": 1,
-        "times": "TR 10:30 - 11:55\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": " maximum enrollment: 40 students",
@@ -6803,6 +6821,13 @@
         "instructor": "Hadt, R",
         "locations": "",
         "number": 39,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Manthiram, K",
+        "locations": "",
+        "number": 40,
         "times": "A\nA"
       }
     ],
@@ -7165,7 +7190,7 @@
       {
         "grades": "",
         "instructor": "Kornfield, J",
-        "locations": "153 NYS",
+        "locations": "147 NYS",
         "number": 1,
         "times": "TR 11:30 - 12:55"
       }
@@ -7242,7 +7267,7 @@
         "instructor": "Vicic, M",
         "locations": "102 SPL",
         "number": 1,
-        "times": "TR 10:30 - 11:55"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": " Max enrollment is 15 students; Priority given to ChE undergrads",
@@ -7340,7 +7365,7 @@
       {
         "grades": "",
         "instructor": "Wennberg, P /",
-        "locations": "210 RSC\nDruckenmiller, H",
+        "locations": "210 RSC\nDruckenmiller, H / Fromer,\nN",
         "number": 1,
         "times": "W 11:00 - 12:55"
       }
@@ -7669,6 +7694,13 @@
         "locations": "",
         "number": 60,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Peters, J",
+        "locations": "",
+        "number": 61,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -7716,68 +7748,54 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Nelson, H",
-        "locations": "Lecture Hall\nBAX",
+        "locations": "Lecture Hall\nBAX\n210 RSC",
         "number": 1,
-        "times": "MWF 11:00 - 11:55\nA\nA"
+        "times": "MTR 11:00 - 11:55\nW 19:00 - 19:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Nelson, H",
-        "locations": "Lecture Hall\nBAX",
+        "locations": "Lecture Hall\nBAX\n275 RSC",
         "number": 2,
-        "times": "MWF 11:00 - 11:55\nA\nA"
+        "times": "MTR 11:00 - 11:55\nW 11:00 - 11:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Nelson, H",
-        "locations": "Lecture Hall\nBAX",
+        "locations": "Lecture Hall\nBAX\n275 RSC",
         "number": 3,
-        "times": "MWF 11:00 - 11:55\nA\nA"
+        "times": "MTR 11:00 - 11:55\nW 13:00 - 13:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Nelson, H",
-        "locations": "Lecture Hall\nBAX",
+        "locations": "Lecture Hall\nBAX\n275 RSC",
         "number": 4,
-        "times": "MWF 11:00 - 11:55\nA\nA"
+        "times": "MTR 11:00 - 11:55\nW 15:00 - 15:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Nelson, H",
-        "locations": "Lecture Hall\nBAX",
+        "locations": "Lecture Hall\nBAX\n275 RSC",
         "number": 5,
-        "times": "MWF 11:00 - 11:55\nA\nA"
+        "times": "MTR 11:00 - 11:55\nW 19:00 - 19:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Nelson, H",
-        "locations": "Lecture Hall\nBAX",
+        "locations": "Lecture Hall\nBAX\nB122 GTS",
         "number": 6,
-        "times": "MWF 11:00 - 11:55\nA\nA"
+        "times": "MTR 11:00 - 11:55\nW 19:00 - 19:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Nelson, H",
-        "locations": "Lecture Hall\nBAX",
+        "locations": "Lecture Hall\nBAX\n252 RSC",
         "number": 7,
-        "times": "MWF 11:00 - 11:55\nA\nA"
-      },
-      {
-        "grades": "PASS-FAIL",
-        "instructor": "Nelson, H",
-        "locations": "Lecture Hall\nBAX",
-        "number": 8,
-        "times": "MWF 11:00 - 11:55\nA\nA"
-      },
-      {
-        "grades": "PASS-FAIL",
-        "instructor": "Nelson, H",
-        "locations": "Lecture Hall\nBAX",
-        "number": 9,
-        "times": "MWF 11:00 - 11:55\nA\nA"
+        "times": "MTR 11:00 - 11:55\nW 19:00 - 19:55"
       }
     ],
-    "comment": " Maximum Enrollment: 25 students per section",
+    "comment": " Fundamentals (Sec 1) // Regular (Sec 2-6) // Advanced (Sec 7)",
     "units": [
       4,
       0,
@@ -7905,10 +7923,10 @@
         "instructor": "Mendez, J",
         "locations": "B122 GCL\n130 CHR\n130 CHR",
         "number": 1,
-        "times": "F 11:00 - 11:55\nT 08:00 - 10:55\nR 08:00 - 10:55"
+        "times": "F 12:00 - 12:55\nT 08:00 - 10:55\nR 08:00 - 10:55"
       }
     ],
-    "comment": " open by lottery only; see link on the REGIS home page to enter by Nov 20th // maximum enrollment: 10 students",
+    "comment": " open by lottery only; see link on the REGIS home page to enter by Nov 20th // maximum enrollment: 14 students",
     "units": [
       1,
       6,
@@ -7933,7 +7951,7 @@
         "times": "A"
       }
     ],
-    "comment": " Lab Hours are Monday, Wednesday, & Friday from 8:00am - 5:00pm",
+    "comment": " Course Cancelled",
     "units": [
       1,
       9,
@@ -7953,7 +7971,7 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Hoelz, A",
-        "locations": "147 NYS",
+        "locations": "151 CRL",
         "number": 1,
         "times": "R 12:00 - 12:55"
       }
@@ -7980,7 +7998,7 @@
         "instructor": "Hoelz, A / Chong, S",
         "locations": "252 RSC\n252 RSC",
         "number": 1,
-        "times": "R 13:00 - 16:55\nF 13:00 - 15:55"
+        "times": "R 13:00 - 15:55\nF 13:00 - 15:55"
       }
     ],
     "comment": "",
@@ -8603,6 +8621,13 @@
         "locations": "",
         "number": 26,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Mayo, S / Okumura, M",
+        "locations": "",
+        "number": 27,
+        "times": "A\nA"
       }
     ],
     "comment": " 9 units per term",
@@ -8705,7 +8730,7 @@
         "times": "MWF 13:00 - 13:55"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       3,
       0,
@@ -8750,12 +8775,12 @@
       {
         "grades": "",
         "instructor": "Okumura, M",
-        "locations": "101 SCH",
+        "locations": "275 RSC",
         "number": 1,
-        "times": "TR 10:30 - 11:55"
+        "times": "TR 14:30 - 15:55"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       3,
       0,
@@ -8825,9 +8850,9 @@
       {
         "grades": "",
         "instructor": "Wennberg, P",
-        "locations": "",
+        "locations": "136 LLB",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -8852,7 +8877,7 @@
         "instructor": "Diallo, M",
         "locations": "135 LLB",
         "number": 1,
-        "times": "TR 14:00 - 15:55"
+        "times": "TR 14:30 - 15:55"
       }
     ],
     "comment": "",
@@ -9835,6 +9860,20 @@
         "locations": "",
         "number": 79,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Thomson, M",
+        "locations": "",
+        "number": 80,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Wang, K",
+        "locations": "",
+        "number": 81,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -9974,9 +10013,9 @@
       {
         "grades": "",
         "instructor": "O'Doherty, J",
-        "locations": "",
+        "locations": "115 DAB",
         "number": 1,
-        "times": "T 14:30 - 15:55\nA"
+        "times": "T 14:30 - 15:55"
       }
     ],
     "comment": "",
@@ -9999,9 +10038,9 @@
       {
         "grades": "",
         "instructor": "O'Doherty, J",
-        "locations": "",
+        "locations": "128 BAX",
         "number": 1,
-        "times": "MW 14:30 - 15:55\nA"
+        "times": "MW 14:30 - 15:55"
       }
     ],
     "comment": " Systems",
@@ -10592,6 +10631,20 @@
         "locations": "",
         "number": 36,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Yue, Y",
+        "locations": "",
+        "number": 37,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ames, A",
+        "locations": "",
+        "number": 38,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -10614,9 +10667,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Pomatto, L",
-        "locations": "",
+        "locations": "125 BAX",
         "number": 1,
-        "times": "M 17:00 - 18:25\nA"
+        "times": "M 17:00 - 18:25"
       }
     ],
     "comment": "",
@@ -10691,6 +10744,13 @@
         "locations": "134\n(Auditorium)\nBCK\n106 ANB",
         "number": 8,
         "times": "MWF 14:00 - 14:55\nT 17:00 - 17:55"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Blank, A",
+        "locations": "134\n(Auditorium)\nBCK\n106 ANB",
+        "number": 9,
+        "times": "MWF 14:00 - 14:55\nT 09:00 - 09:55"
       }
     ],
     "comment": " maximum enrollment: 16 students per section",
@@ -11679,16 +11739,16 @@
       {
         "grades": "LETTER",
         "instructor": "Eberhardt, F",
-        "locations": "",
+        "locations": "B119 BAX",
         "number": 1,
-        "times": "TR 13:00 - 14:25\nA"
+        "times": "TR 13:00 - 14:25"
       },
       {
         "grades": "LETTER",
         "instructor": "Eberhardt, F",
-        "locations": "",
+        "locations": "B119 BAX",
         "number": 2,
-        "times": "TR 14:30 - 15:55\nA"
+        "times": "TR 14:30 - 15:55"
       }
     ],
     "comment": " maximum enrollment: 15 students per section",
@@ -12011,7 +12071,7 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Chandy, K",
-        "locations": "121 ANB",
+        "locations": "105 ANB",
         "number": 1,
         "times": "TR 13:00 - 14:25"
       }
@@ -12830,9 +12890,9 @@
       {
         "grades": "",
         "instructor": "Rangel, A",
-        "locations": "",
+        "locations": "Lecture Hall\nBAX",
         "number": 1,
-        "times": "TR 13:00 - 14:25\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -12926,12 +12986,12 @@
       {
         "grades": "LETTER",
         "instructor": "Rosenthal, J",
-        "locations": "",
+        "locations": "125 BAX",
         "number": 1,
-        "times": "MWF 14:00 - 14:55\nA"
+        "times": "MWF 14:00 - 14:55"
       }
     ],
-    "comment": " maximum enrollment: 15 undergraduate students",
+    "comment": " maximum enrollment: 20 undergraduate students",
     "units": [
       3,
       0,
@@ -12951,12 +13011,12 @@
       {
         "grades": "LETTER",
         "instructor": "Saito, K",
-        "locations": "",
+        "locations": "127 BAX",
         "number": 1,
-        "times": "MW 10:30 - 11:55\nA"
+        "times": "MW 10:30 - 11:55"
       }
     ],
-    "comment": "",
+    "comment": " For February 24 (Monday), CBIC seminar, class will be in Baxter B125",
     "units": [
       3,
       0,
@@ -12976,9 +13036,9 @@
       {
         "grades": "",
         "instructor": "Sherman, R",
-        "locations": "",
+        "locations": "B125 BAX",
         "number": 1,
-        "times": "TR 14:30 - 16:00\nA"
+        "times": "TR 14:30 - 16:00"
       }
     ],
     "comment": "",
@@ -13001,12 +13061,12 @@
       {
         "grades": "",
         "instructor": "Janas, P",
-        "locations": "",
+        "locations": "B125 BAX",
         "number": 1,
-        "times": "TR 13:00 - 14:25\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
-    "comment": " Designated as Writing Intensive Course",
+    "comment": " No longer designated as Writing Intensive Course",
     "units": [
       3,
       0,
@@ -13026,12 +13086,12 @@
       {
         "grades": "LETTER",
         "instructor": "Saito, K",
-        "locations": "",
+        "locations": "127 BAX",
         "number": 1,
-        "times": "MW 13:00 - 14:30\nA"
+        "times": "MW 13:00 - 14:25"
       }
     ],
-    "comment": "",
+    "comment": " For February 24 (Monday), CBIC seminar, class will be in Baxter B125",
     "units": [
       3,
       0,
@@ -13131,20 +13191,6 @@
       },
       {
         "grades": "LETTER",
-        "instructor": "Yue, Y",
-        "locations": "",
-        "number": 9,
-        "times": "A\nA"
-      },
-      {
-        "grades": "LETTER",
-        "instructor": "Van Valen, D",
-        "locations": "",
-        "number": 10,
-        "times": "A\nA"
-      },
-      {
-        "grades": "LETTER",
         "instructor": "Scherer, A",
         "locations": "",
         "number": 11,
@@ -13166,7 +13212,7 @@
       },
       {
         "grades": "LETTER",
-        "instructor": "Perona, P / Chung, S",
+        "instructor": "Perona, P",
         "locations": "",
         "number": 14,
         "times": "A\nA"
@@ -13183,20 +13229,6 @@
         "instructor": "Mirhosseini, M",
         "locations": "",
         "number": 16,
-        "times": "A\nA"
-      },
-      {
-        "grades": "LETTER",
-        "instructor": "Hallinan, G",
-        "locations": "",
-        "number": 17,
-        "times": "A\nA"
-      },
-      {
-        "grades": "LETTER",
-        "instructor": "Preskill, J",
-        "locations": "",
-        "number": 18,
         "times": "A\nA"
       }
     ],
@@ -13415,7 +13447,7 @@
         "times": "TR 13:00 - 14:25"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       3,
       0,
@@ -13932,12 +13964,12 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Resnick, A",
-        "locations": "",
+        "locations": "328 SFL",
         "number": 1,
-        "times": "M 15:00 - 16:25\nA"
+        "times": "F 14:00 - 15:25"
       }
     ],
-    "comment": " Caltech Open to juniors and seniors by application at http://registrar.caltech.edu/E100_sec1",
+    "comment": " Caltech",
     "units": [
       0,
       0,
@@ -14007,16 +14039,16 @@
       {
         "grades": "",
         "instructor": "Haugen, K",
-        "locations": "",
+        "locations": "128 BAX",
         "number": 1,
-        "times": "TR 09:00 - 10:25\nA"
+        "times": "TR 09:00 - 10:25"
       },
       {
         "grades": "",
         "instructor": "Haugen, K",
-        "locations": "",
+        "locations": "128 BAX",
         "number": 2,
-        "times": "TR 14:30 - 15:55\nA"
+        "times": "TR 14:30 - 15:55"
       }
     ],
     "comment": " Attendance at the first class meeting is required. // maximum enrollment: 15 students per section",
@@ -14039,9 +14071,9 @@
       {
         "grades": "",
         "instructor": "Weinstein, C",
-        "locations": "",
+        "locations": "125 BAX",
         "number": 1,
-        "times": "TR 13:00 - 14:25\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": " Attendance at the first class meeting is required. // maximum enrollment: 15 students",
@@ -14064,9 +14096,9 @@
       {
         "grades": "",
         "instructor": "Lepucki, E",
-        "locations": "",
+        "locations": "128 BAX",
         "number": 1,
-        "times": "W 19:00 - 21:55\nA"
+        "times": "W 19:00 - 21:55"
       }
     ],
     "comment": " maximum enrollment: 14 students",
@@ -14164,9 +14196,9 @@
       {
         "grades": "LETTER",
         "instructor": "Holland, J",
-        "locations": "",
+        "locations": "128 BAX",
         "number": 1,
-        "times": "TR 10:30 - 11:55\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": " maximum enrollment: 20 students",
@@ -14189,12 +14221,12 @@
       {
         "grades": "LETTER",
         "instructor": "Sullivan, A",
-        "locations": "",
+        "locations": "127 BAX",
         "number": 1,
-        "times": "W 19:00 - 21:55\nA"
+        "times": "W 19:00 - 21:55"
       }
     ],
-    "comment": " maximum enrollment: 15 students",
+    "comment": " maximum enrollment: 15 students // Course Closed - Please see instructor for waitlist",
     "units": [
       3,
       0,
@@ -14214,9 +14246,9 @@
       {
         "grades": "LETTER",
         "instructor": "Schneiderman, J",
-        "locations": "",
+        "locations": "125 BAX",
         "number": 1,
-        "times": "TR 10:30 - 11:55\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": " maximum enrollment: 15 students",
@@ -14239,9 +14271,16 @@
       {
         "grades": "LETTER",
         "instructor": "Weinstein, C",
-        "locations": "",
+        "locations": "TR DAB",
         "number": 1,
-        "times": "TR 14:30 - 15:55\nA"
+        "times": "TR 14:30 - 15:55"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "Weinstein, C",
+        "locations": "TR DAB",
+        "number": 2,
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": " maximum enrollment: 15 students",
@@ -14264,16 +14303,16 @@
       {
         "grades": "LETTER",
         "instructor": "Mundell Perkins, E",
-        "locations": "",
+        "locations": "121 BCK",
         "number": 1,
-        "times": "TR 14:30 - 15:55\nA"
+        "times": "TR 14:30 - 15:55"
       },
       {
         "grades": "LETTER",
         "instructor": "Sherazi, M",
-        "locations": "",
+        "locations": "128 BAX",
         "number": 2,
-        "times": "TR 13:00 - 14:25\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": " maximum enrollment: 15 students per section // Sec 1: Autobiography and the Novel // Sec 2: Cold War American Modernism",
@@ -14296,9 +14335,9 @@
       {
         "grades": "",
         "instructor": "Wey-Gomez, N",
-        "locations": "",
+        "locations": "TR DAB",
         "number": 1,
-        "times": "TR 13:00 - 14:25\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": " maximum enrollment: 15 students",
@@ -15074,7 +15113,7 @@
         "times": "A\nA"
       }
     ],
-    "comment": " Moved to Spring Term // taught concurrently with Ge 104",
+    "comment": " Course Cancelled and moved to Spring Term // taught concurrently with Ge 104",
     "units": [
       3,
       3,
@@ -15385,6 +15424,13 @@
         "locations": "",
         "number": 19,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Newman, D",
+        "locations": "",
+        "number": 20,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -15462,7 +15508,7 @@
         "times": "A\nA"
       }
     ],
-    "comment": " Moved to Spring Term // taught concurrently with Ge 11b",
+    "comment": " Course Cancelled and moved to Spring Term // taught concurrently with Ge 11b",
     "units": [
       3,
       0,
@@ -15482,9 +15528,9 @@
       {
         "grades": "",
         "instructor": "Avouac, J",
-        "locations": "212 NMD\n212 NMD\n212 NMD",
+        "locations": "",
         "number": 1,
-        "times": "M 14:30 - 15:55\nT 13:00 - 13:55\nR 14:00 - 14:25"
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -15609,7 +15655,7 @@
         "instructor": "Kirschvink, J",
         "locations": "251 ARM",
         "number": 1,
-        "times": "OM,M 16:00 - 16:55"
+        "times": "OM,M 17:00 - 17:55"
       }
     ],
     "comment": "",
@@ -15707,9 +15753,9 @@
       {
         "grades": "",
         "instructor": "Ross, Z",
-        "locations": "",
+        "locations": "256 SMD",
         "number": 1,
-        "times": "TR 13:00 - 14:25\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -15726,15 +15772,15 @@
   },
   "125508674": {
     "id": 125508674,
-    "name": "Special Topics in Geophysics",
+    "name": "Special Topics in Geophysics: Fault dynamics",
     "number": "Ge 193",
     "sections": [
       {
-        "grades": "",
+        "grades": "PASS-FAIL",
         "instructor": "Staff",
-        "locations": "",
+        "locations": "251 ARM",
         "number": 1,
-        "times": "A\nA"
+        "times": "F 09:00 - 11:25"
       }
     ],
     "comment": "",
@@ -16374,9 +16420,9 @@
       {
         "grades": "",
         "instructor": "Brown, W",
-        "locations": "",
+        "locations": "125 BAX",
         "number": 1,
-        "times": "TR 14:30 - 15:55\nA"
+        "times": "TR 14:30 - 15:55"
       }
     ],
     "comment": " Attendance at the first class meeting is required. // maximum enrollment: 15 students",
@@ -16399,7 +16445,7 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Wiggins, D",
-        "locations": "125 BAX",
+        "locations": "127 BAX",
         "number": 1,
         "times": "T 19:00 - 21:55"
       }
@@ -16424,9 +16470,9 @@
       {
         "grades": "",
         "instructor": "Buchwald, J",
-        "locations": "",
+        "locations": "117 DAB",
         "number": 1,
-        "times": "TR 14:30 - 15:55\nA"
+        "times": "TR 14:30 - 15:55"
       }
     ],
     "comment": " Civilization in Mesopotamia maximum enrollment: 15 students",
@@ -16474,9 +16520,9 @@
       {
         "grades": "",
         "instructor": "Feingold, M",
-        "locations": "",
+        "locations": "TR DAB",
         "number": 1,
-        "times": "M 19:00 - 21:55\nA"
+        "times": "M 19:00 - 21:55"
       }
     ],
     "comment": " maximum enrollment: 15 students",
@@ -16549,9 +16595,9 @@
       {
         "grades": "",
         "instructor": "Brown, W",
-        "locations": "",
+        "locations": "125 BAX",
         "number": 1,
-        "times": "MWF 13:00 - 13:55\nA"
+        "times": "MWF 13:00 - 13:55"
       }
     ],
     "comment": " maximum enrollment: 25 students",
@@ -16574,9 +16620,9 @@
       {
         "grades": "LETTER",
         "instructor": "Wiggins, D",
-        "locations": "",
+        "locations": "127 BAX",
         "number": 1,
-        "times": "R 19:00 - 21:55\nA"
+        "times": "R 19:00 - 21:55"
       }
     ],
     "comment": " maximum enrollment: 18 students",
@@ -16599,9 +16645,9 @@
       {
         "grades": "LETTER",
         "instructor": "Feingold, M",
-        "locations": "",
+        "locations": "TR DAB",
         "number": 1,
-        "times": "T 19:00 - 21:55\nA"
+        "times": "T 19:00 - 21:55"
       }
     ],
     "comment": " maximum enrollment: 15 students",
@@ -16624,9 +16670,9 @@
       {
         "grades": "",
         "instructor": "Buchwald, J",
-        "locations": "",
+        "locations": "117 DAB",
         "number": 1,
-        "times": "TR 10:30 - 11:55\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": " maximum enrollment: 15 students",
@@ -16699,9 +16745,9 @@
       {
         "grades": "",
         "instructor": "Sebens, C",
-        "locations": "",
+        "locations": "127 BAX",
         "number": 1,
-        "times": "TR 14:30 - 15:55\nA"
+        "times": "TR 14:30 - 15:55"
       }
     ],
     "comment": " maximum enrollment: 15 students",
@@ -16724,9 +16770,9 @@
       {
         "grades": "",
         "instructor": "Sebens, C",
-        "locations": "",
+        "locations": "127 BAX",
         "number": 1,
-        "times": "TR 13:00 - 14:25\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": " maximum enrollment: 20 students",
@@ -16749,9 +16795,9 @@
       {
         "grades": "",
         "instructor": "Helou, A",
-        "locations": "",
+        "locations": "127 BAX",
         "number": 1,
-        "times": "TR 10:30 - 11:55\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": " maximum enrollment: 15 students",
@@ -16774,16 +16820,16 @@
       {
         "grades": "",
         "instructor": "Hitchcock, C",
-        "locations": "",
+        "locations": "117 DAB",
         "number": 1,
-        "times": "TR 09:00 - 10:25\nA"
+        "times": "TR 09:00 - 10:25"
       },
       {
         "grades": "",
         "instructor": "Hitchcock, C",
-        "locations": "",
+        "locations": "117 DAB",
         "number": 2,
-        "times": "TR 13:00 - 14:25\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": " Attendance at the first class meeting is required. // maximum enrollment: 15 students per section",
@@ -16806,9 +16852,9 @@
       {
         "grades": "",
         "instructor": "Li, P",
-        "locations": "",
+        "locations": "117 DAB",
         "number": 1,
-        "times": "T 19:00 - 21:55\nA"
+        "times": "T 19:00 - 21:55"
       }
     ],
     "comment": " maximum enrollment: 15 students",
@@ -16831,9 +16877,9 @@
       {
         "grades": "",
         "instructor": "Garcia, D",
-        "locations": "",
+        "locations": "125 BAX",
         "number": 1,
-        "times": "M 19:00 - 19:55\nA"
+        "times": "M 19:00 - 19:55"
       }
     ],
     "comment": " maximum enrollment: 13 students // taught concurrently with L 115B",
@@ -16856,9 +16902,9 @@
       {
         "grades": "",
         "instructor": "Orcel, C",
-        "locations": "",
+        "locations": "115 DAB",
         "number": 1,
-        "times": "OM,M 15:00 -\nA 15:55"
+        "times": "OM,M 15:00 - 15:55"
       }
     ],
     "comment": "",
@@ -16881,9 +16927,9 @@
       {
         "grades": "",
         "instructor": "Wang, P",
-        "locations": "",
+        "locations": "128 BAX",
         "number": 1,
-        "times": "R 19:00 - 21:55\nA"
+        "times": "R 19:00 - 21:55"
       }
     ],
     "comment": " maximum enrollment: 7 students // taught concurrently with L 169",
@@ -17009,9 +17055,9 @@
       {
         "grades": "",
         "instructor": "Orcel, C",
-        "locations": "",
+        "locations": "115 DAB",
         "number": 1,
-        "times": "OM,M 14:00 -\nA 14:55"
+        "times": "OM,M 14:00 - 14:55"
       }
     ],
     "comment": " maximum enrollment: 15 students",
@@ -17034,9 +17080,9 @@
       {
         "grades": "",
         "instructor": "Cribben Merrill, T",
-        "locations": "",
+        "locations": "228 BAX",
         "number": 1,
-        "times": "OM,M 14:00 -\nA 14:55"
+        "times": "OM,M 14:00 - 14:55"
       }
     ],
     "comment": " maximum enrollment: 15 students",
@@ -17059,16 +17105,16 @@
       {
         "grades": "",
         "instructor": "Fujio, M",
-        "locations": "",
+        "locations": "228 BAX",
         "number": 1,
-        "times": "MTWR 15:00 -\nA 15:55"
+        "times": "MTWR 15:00 - 15:55"
       },
       {
         "grades": "",
         "instructor": "Fujio, M",
-        "locations": "",
+        "locations": "228 BAX",
         "number": 2,
-        "times": "MTWR 16:00 -\nA 16:55"
+        "times": "MTWR 16:00 - 16:55"
       }
     ],
     "comment": " maximum enrollment: 20 students per section // Prerequisite: L106a or equivalent",
@@ -17141,16 +17187,16 @@
       {
         "grades": "",
         "instructor": "Arjona, G",
-        "locations": "",
+        "locations": "B133 BAX",
         "number": 1,
-        "times": "OM,T 19:00 - 19:55\nA"
+        "times": "OM,M 19:00 - 19:55"
       },
       {
         "grades": "",
         "instructor": "Garcia, D",
-        "locations": "",
+        "locations": "125 BAX",
         "number": 2,
-        "times": "MWR 12:00 - 12:55\nA"
+        "times": "MWR 12:00 - 12:55"
       }
     ],
     "comment": " Sec 1: max 20 students // Sec 2: max 15 students",
@@ -17173,9 +17219,9 @@
       {
         "grades": "",
         "instructor": "Arjona, G",
-        "locations": "",
+        "locations": "B133 BAX",
         "number": 1,
-        "times": "OM,T 17:00 - 17:55\nA"
+        "times": "OM,M 17:00 - 17:55"
       }
     ],
     "comment": " maximum enrollment: 20 students",
@@ -17223,9 +17269,9 @@
       {
         "grades": "",
         "instructor": "Aebi, A",
-        "locations": "",
+        "locations": "115 DAB",
         "number": 1,
-        "times": "MTR 13:00 - 13:55\nA"
+        "times": "MTR 13:00 - 13:55"
       }
     ],
     "comment": "",
@@ -17248,9 +17294,9 @@
       {
         "grades": "",
         "instructor": "Aebi, A",
-        "locations": "",
+        "locations": "115 DAB",
         "number": 1,
-        "times": "MWR 12:00 - 12:55\nA"
+        "times": "MWR 12:00 - 12:55"
       }
     ],
     "comment": "",
@@ -17298,9 +17344,9 @@
       {
         "grades": "",
         "instructor": "Wang, P",
-        "locations": "",
+        "locations": "128 BAX",
         "number": 1,
-        "times": "MWR 12:00 - 12:55\nA"
+        "times": "MWR 12:00 - 12:55"
       }
     ],
     "comment": " maximum enrollment: 20 students",
@@ -17323,9 +17369,9 @@
       {
         "grades": "",
         "instructor": "Zhu, J",
-        "locations": "",
+        "locations": "B119 BAX",
         "number": 1,
-        "times": "MW 10:30 - 11:55\nA"
+        "times": "MW 10:30 - 11:55"
       }
     ],
     "comment": " maximum enrollment: 20 students",
@@ -17348,9 +17394,9 @@
       {
         "grades": "",
         "instructor": "Zhu, J",
-        "locations": "",
+        "locations": "B119 BAX",
         "number": 1,
-        "times": "MW 09:00 - 10:25\nA"
+        "times": "MW 09:00 - 10:25"
       }
     ],
     "comment": " maximum enrollment: 20 students",
@@ -18169,7 +18215,7 @@
       {
         "grades": "LETTER",
         "instructor": "Hallgrimsdottir, I / Pachter,",
-        "locations": "Lecture Hall\nL\nBAX\n142 KCK",
+        "locations": "Lecture Hall\nL\nBAX\n125 KRK",
         "number": 4,
         "times": "MWF 10:00 - 10:55\nR 14:30 - 15:25"
       },
@@ -18429,13 +18475,6 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Katz, N",
-        "locations": "",
-        "number": 1,
-        "times": "A\nA"
-      },
-      {
-        "grades": "PASS-FAIL",
         "instructor": "Ervin, G",
         "locations": "",
         "number": 2,
@@ -18495,6 +18534,13 @@
         "instructor": "Marcolli, M",
         "locations": "",
         "number": 10,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Jang, H",
+        "locations": "",
+        "number": 11,
         "times": "A\nA"
       }
     ],
@@ -18698,7 +18744,7 @@
         "times": "TR 13:00 - 14:25"
       }
     ],
-    "comment": "",
+    "comment": " Cancelled and postponed to Spring term",
     "units": [
       3,
       0,
@@ -18785,10 +18831,10 @@
     "true_units": "Somewhat High",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=49&term_id=551&division_id=80428&department_id=142&offering_id=90052&track_id=90052-Default"
   },
-  "384766542": {
-    "id": 384766542,
-    "name": "Riemannian Geometry",
-    "number": "Ma 157 a",
+  "454110499": {
+    "id": 454110499,
+    "name": "Topics in Geometry and Topology",
+    "number": "Ma 157 b",
     "sections": [
       {
         "grades": "",
@@ -18806,9 +18852,9 @@
     ],
     "description": "Part a: basic Riemannian geometry: geometry of Riemannian manifolds, connections, curvature, Bianchi identities, completeness, geodesics, exponential map, Gauss's lemma, Jacobi fields, Lie groups, principal bundles, and characteristic classes. Part b: basic topics may vary from year to year and may include elements of Morse theory and the calculus of variations, locally symmetric spaces, special geometry, comparison theorems, relation between curvature and topology, metric functionals and flows, geometry in low dimensions. Part c not offered 2022-23.",
     "prerequisites": "Ma 151 or equivalent, or instructor's permission.",
-    "rating": "4.26 +/- 0.77",
-    "true_units": "About Right",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=49&term_id=551&division_id=80428&department_id=142&offering_id=92399&track_id=92399-Default"
+    "rating": "5.00 +/- 0.00",
+    "true_units": "3",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80428&department_id=142&offering_id=86802&track_id=86802-Default"
   },
   "371698068": {
     "id": 371698068,
@@ -18818,7 +18864,32 @@
       {
         "grades": "",
         "instructor": "Flach, M",
-        "locations": "187 LINDE",
+        "locations": "289 LINDE",
+        "number": 1,
+        "times": "MWF 14:00 - 14:55"
+      }
+    ],
+    "comment": " Course Cancelled (Replaced with Ma 160B)",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "In this course, the basic structures and results of algebraic number theory will be systematically introduced. Topics covered will include the theory of ideals/divisors in Dedekind domains, Dirichlet unit theorem and the class group, p-adic fields, ramification, Abelian extensions of local and global fields. Part c not offered 2022-23.",
+    "prerequisites": "Ma 5.",
+    "rating": "4.43 +/- 0.60",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=48&term_id=550&division_id=80428&department_id=142&offering_id=89290&track_id=89290-Default"
+  },
+  "441042025": {
+    "id": 441042025,
+    "name": "Number Theory",
+    "number": "Ma 160 b",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Flach, M",
+        "locations": "289 LINDE",
         "number": 1,
         "times": "MWF 14:00 - 14:55"
       }
@@ -18831,9 +18902,9 @@
     ],
     "description": "In this course, the basic structures and results of algebraic number theory will be systematically introduced. Topics covered will include the theory of ideals/divisors in Dedekind domains, Dirichlet unit theorem and the class group, p-adic fields, ramification, Abelian extensions of local and global fields. Part c not offered 2022-23.",
     "prerequisites": "Ma 5.",
-    "rating": "4.43 +/- 0.60",
-    "true_units": "Somewhat High",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=48&term_id=550&division_id=80428&department_id=142&offering_id=89290&track_id=89290-Default"
+    "rating": "3.44 +/- 0.70",
+    "true_units": "Noticeably Low",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=49&term_id=551&division_id=80428&department_id=142&offering_id=90165&track_id=90165-Default"
   },
   "443068145": {
     "id": 443068145,
@@ -18843,26 +18914,26 @@
       {
         "grades": "",
         "instructor": "Chen, D",
-        "locations": "",
+        "locations": "289 LINDE",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 13:00 - 14:25"
       },
       {
         "grades": "",
         "instructor": "Caniato, R",
-        "locations": "",
+        "locations": "255 LINDE",
         "number": 2,
-        "times": "A\nA"
+        "times": "TR 10:30 - 11:55"
       },
       {
         "grades": "",
         "instructor": "Aluffi, P",
-        "locations": "255 LINDE",
+        "locations": "183 LINDE",
         "number": 3,
-        "times": "TR 10:30 - 11:55"
+        "times": "TR 13:00 - 14:25"
       }
     ],
-    "comment": " Sec 1: TBA // Sec 2: TBA // Sec 3: Intersection Theory and related topics",
+    "comment": " Sec 1: Morse theory and Hamiltonian Floer homology // Sec 2: Analysis Aspects of the Yang-Mills Lagrangian // Sec 3: Intersection Theory and related topics",
     "units": [
       3,
       0,
@@ -19987,6 +20058,13 @@
         "locations": "",
         "number": 44,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Meiron, D",
+        "locations": "",
+        "number": 45,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -20316,9 +20394,9 @@
       {
         "grades": "",
         "instructor": "Ballance, S",
-        "locations": "",
+        "locations": "B133 BAX",
         "number": 1,
-        "times": "WF 10:30 - 12:55\nA"
+        "times": "WF 10:30 - 11:55"
       }
     ],
     "comment": " maximum enrollment: 15 students",
@@ -20341,9 +20419,9 @@
       {
         "grades": "",
         "instructor": "Ballance, S",
-        "locations": "",
+        "locations": "B133 BAX",
         "number": 1,
-        "times": "TR 13:00 - 14:25\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": " maximum enrollment: 15 students",
@@ -20925,7 +21003,7 @@
     "sections": [
       {
         "grades": "LETTER",
-        "instructor": "Staff",
+        "instructor": "Eberhardt, F",
         "locations": "",
         "number": 1,
         "times": "A\nA"
@@ -20950,7 +21028,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Staff",
+        "instructor": "Eberhardt, F",
         "locations": "",
         "number": 1,
         "times": "A\nA"
@@ -21150,10 +21228,10 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Staff",
+        "instructor": "Morgan, H",
         "locations": "BAC",
         "number": 1,
-        "times": "A"
+        "times": "T 10:30 - 11:25"
       }
     ],
     "comment": " maximum enrollment: 18 students // Graduate students may not enroll until Add Day",
@@ -21575,7 +21653,7 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Weintraub, B",
+        "instructor": "Peele, N / Clark, A",
         "locations": "MTWRFS 16:00 -\nBAC",
         "number": 1,
         "times": "17:55"
@@ -21615,7 +21693,7 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Chen, X",
-        "locations": "201 BRG\n119 KRK",
+        "locations": "201 BRG\n125 KRK",
         "number": 3,
         "times": "WF 15:00 - 15:55\nMR 15:00 - 15:55"
       },
@@ -21657,7 +21735,7 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Patterson, R",
-        "locations": "201 BRG\n119 KRK",
+        "locations": "201 BRG\n125 KRK",
         "number": 9,
         "times": "WF 11:00 - 11:55\nMR 13:00 - 13:55"
       },
@@ -22092,9 +22170,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Chen, Y",
-        "locations": "",
+        "locations": "183 LINDE",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": "",
@@ -22167,12 +22245,12 @@
       {
         "grades": "",
         "instructor": "Chatziioannou, K",
-        "locations": "121 BCK",
+        "locations": "142 KCK",
         "number": 1,
         "times": "MW 14:30 - 15:55"
       }
     ],
-    "comment": " PDE's",
+    "comment": " Complex Analysis and Differential Equations",
     "units": [
       4,
       0,
@@ -22384,13 +22462,6 @@
         "instructor": "Kapustin, A",
         "locations": "",
         "number": 22,
-        "times": "A\nA"
-      },
-      {
-        "grades": "PASS-FAIL",
-        "instructor": "Kimble, H",
-        "locations": "",
-        "number": 23,
         "times": "A\nA"
       },
       {
@@ -22759,13 +22830,6 @@
         "instructor": "Hutzler, N",
         "locations": "",
         "number": 12,
-        "times": "A\nA"
-      },
-      {
-        "grades": "PASS-FAIL",
-        "instructor": "Kimble, H",
-        "locations": "",
-        "number": 13,
         "times": "A\nA"
       },
       {
@@ -23235,9 +23299,9 @@
       {
         "grades": "",
         "instructor": "Kapustin, A",
-        "locations": "",
+        "locations": "219 CHL",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -23285,9 +23349,9 @@
       {
         "grades": "",
         "instructor": "Oguri, H",
-        "locations": "255 LINDE",
+        "locations": "187 LINDE",
         "number": 1,
-        "times": "TR 14:30 - 15:55"
+        "times": "MW 09:00 - 10:25"
       }
     ],
     "comment": "",
@@ -23452,13 +23516,6 @@
         "instructor": "Kapustin, A",
         "locations": "",
         "number": 22,
-        "times": "A\nA"
-      },
-      {
-        "grades": "PASS-FAIL",
-        "instructor": "Kimble, H",
-        "locations": "",
-        "number": 23,
         "times": "A\nA"
       },
       {
@@ -23712,6 +23769,20 @@
         "locations": "",
         "number": 60,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "McCuller, L",
+        "locations": "",
+        "number": 62,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Most, E",
+        "locations": "",
+        "number": 63,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -23734,9 +23805,9 @@
       {
         "grades": "",
         "instructor": "Hirsch, A",
-        "locations": "",
+        "locations": "153 NYS",
         "number": 1,
-        "times": "TR 10:30 - 11:55\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": " maximum enrollment: 100 students",
@@ -23834,9 +23905,9 @@
       {
         "grades": "LETTER",
         "instructor": "Kiewiet, D",
-        "locations": "",
+        "locations": "B125 BAX",
         "number": 1,
-        "times": "W 19:30 - 21:25\nA"
+        "times": "W 19:30 - 21:25"
       }
     ],
     "comment": " Designated as Writing Intensive Course",
@@ -23859,9 +23930,9 @@
       {
         "grades": "LETTER",
         "instructor": "Lopez-Moctezuma Jassan,",
-        "locations": "G",
+        "locations": "128 BAX\nG",
         "number": 1,
-        "times": "M 19:00 - 21:55\nA"
+        "times": "M 19:00 - 21:55"
       }
     ],
     "comment": "",
@@ -23884,12 +23955,12 @@
       {
         "grades": "LETTER",
         "instructor": "Kiewiet, D",
-        "locations": "",
+        "locations": "B133 BAX",
         "number": 1,
-        "times": "T 14:30 - 16:25\nA"
+        "times": "T 14:30 - 16:25"
       }
     ],
-    "comment": " Designated as Writing Intensive course // maximum enrollment: 75 students",
+    "comment": " Designated as Writing Intensive course // maximum enrollment: 26 students",
     "units": [
       3,
       0,
@@ -23909,9 +23980,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Rangel, A",
-        "locations": "",
+        "locations": "B119 BAX",
         "number": 1,
-        "times": "F 13:00 - 14:25\nA"
+        "times": "F 13:00 - 14:25"
       }
     ],
     "comment": " this course is only open to graduate students in the Social and Decision Neuroscience, Computational and Neural Systems and Social Science PhD programs",
@@ -24048,9 +24119,9 @@
       {
         "grades": "LETTER",
         "instructor": "Hirsch, A",
-        "locations": "",
+        "locations": "B119 BAX",
         "number": 1,
-        "times": "MW 14:30 - 15:55\nA"
+        "times": "MW 14:30 - 15:55"
       }
     ],
     "comment": " Open to Social Science graduate students only",
@@ -24073,9 +24144,9 @@
       {
         "grades": "LETTER",
         "instructor": "Pomatto, L",
-        "locations": "",
+        "locations": "B119 BAX",
         "number": 1,
-        "times": "MW 13:00 - 14:25\nA"
+        "times": "MW 13:00 - 14:25"
       }
     ],
     "comment": " Open to Social Science graduate students only.",
@@ -24098,9 +24169,9 @@
       {
         "grades": "LETTER",
         "instructor": "Gibilisco, M",
-        "locations": "",
+        "locations": "117 DAB",
         "number": 1,
-        "times": "MW 14:30 - 15:55\nA"
+        "times": "MW 14:30 - 15:55"
       }
     ],
     "comment": "",
@@ -24123,9 +24194,9 @@
       {
         "grades": "LETTER",
         "instructor": "Pomatto, L",
-        "locations": "",
+        "locations": "228 BAX",
         "number": 1,
-        "times": "TR 13:00 - 14:25\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -24148,9 +24219,9 @@
       {
         "grades": "LETTER",
         "instructor": "Nielsen, K",
-        "locations": "",
+        "locations": "125 BAX",
         "number": 1,
-        "times": "MW 10:30 - 11:55\nA"
+        "times": "MW 10:30 - 11:55"
       }
     ],
     "comment": "",
@@ -24173,9 +24244,9 @@
       {
         "grades": "LETTER",
         "instructor": "Xin, Y",
-        "locations": "",
+        "locations": "239 BAX",
         "number": 1,
-        "times": "TR 13:00 - 14:25\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": " Open to Social Science graduate students only",
@@ -24198,9 +24269,9 @@
       {
         "grades": "LETTER",
         "instructor": "Rosenthal, J",
-        "locations": "",
+        "locations": "117 DAB",
         "number": 1,
-        "times": "MWF 11:00 - 11:55\nA"
+        "times": "MWF 11:00 - 11:55"
       }
     ],
     "comment": "",
@@ -24223,9 +24294,9 @@
       {
         "grades": "LETTER",
         "instructor": "Katz, J",
-        "locations": "",
+        "locations": "115 DAB",
         "number": 1,
-        "times": "F 13:00 - 15:55\nA"
+        "times": "F 13:00 - 15:55"
       }
     ],
     "comment": "",
@@ -24248,9 +24319,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Gibilisco, M",
-        "locations": "",
+        "locations": "128 BAX",
         "number": 1,
-        "times": "MWF 11:00 - 11:55\nA"
+        "times": "MWF 11:00 - 11:55"
       }
     ],
     "comment": "",
@@ -24273,9 +24344,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Nielsen, K / Janas, P",
-        "locations": "",
+        "locations": "127 BAX",
         "number": 1,
-        "times": "M 14:30 - 15:55\nA"
+        "times": "M 14:30 - 15:55"
       }
     ],
     "comment": "",
@@ -24298,9 +24369,9 @@
       {
         "grades": "LETTER",
         "instructor": "Sherazi, M",
-        "locations": "",
+        "locations": "115 DAB",
         "number": 1,
-        "times": "TR 10:30 - 11:55\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": "",
@@ -24409,6 +24480,13 @@
         "instructor": "Cvitanic, J",
         "locations": "",
         "number": 14,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Gibilisco, M",
+        "locations": "",
+        "number": 15,
         "times": "A\nA"
       },
       {
@@ -24721,7 +24799,7 @@
         "times": "TR 14:30 - 15:55"
       }
     ],
-    "comment": " taught concurrently with CS/IDS 162 // maximum enrollment: 15 students between VC 162 and CS/IDS 162 // instructor permission required to add // instructor permission required to add // application required https://forms.gle/HxCECWgsUaujvT5d8",
+    "comment": " taught concurrently with CS/IDS 162 // maximum enrollment: 15 students between VC 162 and CS/IDS 162 // instructor permission required to add // application required https://forms.gle/HxCECWgsUaujvT5d8",
     "units": [
       3,
       0,
@@ -24741,9 +24819,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Hall, S",
-        "locations": "",
+        "locations": "115 DAB",
         "number": 1,
-        "times": "W 09:00 - 09:55\nA"
+        "times": "W 09:00 - 09:55"
       }
     ],
     "comment": " maximum enrollment: 12 students // instructor permission required before enrolling",
