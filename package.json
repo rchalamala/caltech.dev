@@ -7,7 +7,7 @@
     "@emotion/styled": "^11.14.0",
     "@formkit/auto-animate": "^0.8.2",
     "@mui/icons-material": "^5.16.12",
-    "@mui/material": "^5.16.11",
+    "@mui/material": "^5.16.12",
     "@vercel/analytics": "^1.4.1",
     "flatpickr": "^4.6.13",
     "framer-motion": "^11.15.0",
