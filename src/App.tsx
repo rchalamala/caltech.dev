@@ -65,6 +65,11 @@ interface AppStateProps {
 
   availableTimes: Date[][];
   updateAvailableTimes: (dayIdx: number, isStart: boolean, day: Date) => void;
+
+  maxWeeklyHours: number;
+  setMaxWeeklyHours: (hours: number) => void;
+  maxConflicts: number;
+  setMaxConflicts: (conflicts: number) => void;
 }
 
 /** Allows to easily add/remove courses to `state` */
@@ -266,10 +271,11 @@ function setField(obj: any, field: string, value: any) {
 function calculateScheduledHours(courses: CourseStorage[]): number {
   let totalHours = 0;
   for (const c of courses) {
-    if (!c.enabled || c.sectionId === null) continue;
+    if (!c?.enabled || !c?.courseData?.sections || c.sectionId === null) continue;
     const section = c.courseData.sections[c.sectionId];
-    if (section.times === "A") continue;
+    if (!section || section.times === "A") continue;
     const intervals = parseTimes(section.times); // returns intervals by day
+    if (!intervals) continue;
     for (let day = 0; day < intervals.length; day++) {
       for (const interval of intervals[day]) {
         if (!interval) continue;
@@ -286,7 +292,9 @@ function countConflicts(courses: CourseStorage[]): number {
   let conflicts = 0;
   // Check all pairs of courses
   for (let i = 0; i < courses.length; i++) {
+    if (!courses[i]?.courseData?.sections) continue;
     for (let j = i + 1; j < courses.length; j++) {
+      if (!courses[j]?.courseData?.sections) continue;
       if (sectionsIntersect(courses[i], courses[j])) {
         conflicts++;
       }
