@@ -586,6 +586,33 @@ export default function Workspace({ term }: { term: string }) {
       </div>
       <WorkspaceScheduler />
       <WorkspaceSearch />
+      <div className="settings-panel p-4 bg-gray-50 rounded-lg mb-4">
+        <h3 className="text-lg font-semibold mb-3">Schedule Limits</h3>
+        <div className="flex flex-row gap-6">
+          <div className="flex items-center gap-2">
+            <label className="text-sm font-medium">Max Weekly Hours:</label>
+            <input
+              type="number"
+              min="1"
+              max="168"
+              className="w-16 px-2 py-1 border rounded"
+              value={state.maxWeeklyHours}
+              onChange={(e) => state.setMaxWeeklyHours(Number(e.target.value))}
+            />
+          </div>
+          <div className="flex items-center gap-2">
+            <label className="text-sm font-medium">Max Conflicts:</label>
+            <input
+              type="number"
+              min="0"
+              max="50"
+              className="w-16 px-2 py-1 border rounded"
+              value={state.maxConflicts}
+              onChange={(e) => state.setMaxConflicts(Number(e.target.value))}
+            />
+          </div>
+        </div>
+      </div>
       <div className="workspace-controls">
         <ControlButton
           text="Unlock All"
