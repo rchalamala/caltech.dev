@@ -87,6 +87,11 @@ export const AppState = createContext<AppStateProps>({
 
   availableTimes: [],
   updateAvailableTimes: () => null,
+  
+  maxWeeklyHours: 15,
+  setMaxWeeklyHours: () => null,
+  maxConflicts: 2,
+  setMaxConflicts: () => null,
 });
 
 function sectionsIntersect(a: CourseStorage, b: CourseStorage): boolean {
@@ -154,6 +159,8 @@ export function lengthenCourses(
 function generateCourseSections(
   requests: CourseStorage[],
   availableTimes: Date[][],
+  maxWeeklyHours: number = 15,
+  maxConflicts: number = 2
 ): CourseStorageShort[][] {
   if (requests.length === 0) {
     return [];
@@ -163,6 +170,16 @@ function generateCourseSections(
 
   const verify = (arr: CourseStorage[]) => {
     let valid = true;
+    
+    // Check weekly hours limit
+    if (calculateScheduledHours(arr) > maxWeeklyHours) {
+      valid = false;
+    }
+
+    // Check conflicts limit
+    if (countConflicts(arr) > maxConflicts) {
+      valid = false;
+    }
 
     for (let i = 0; i < arr.length; i++) {
       for (let j = i + 1; j < arr.length; j++) {
@@ -246,6 +263,38 @@ function setField(obj: any, field: string, value: any) {
   };
 }
 
+function calculateScheduledHours(courses: CourseStorage[]): number {
+  let totalHours = 0;
+  for (const c of courses) {
+    if (!c.enabled || c.sectionId === null) continue;
+    const section = c.courseData.sections[c.sectionId];
+    if (section.times === "A") continue;
+    const intervals = parseTimes(section.times); // returns intervals by day
+    for (let day = 0; day < intervals.length; day++) {
+      for (const interval of intervals[day]) {
+        if (!interval) continue;
+        // difference in hours
+        const diff = (interval.end.getTime() - interval.start.getTime()) / (1000 * 60 * 60);
+        totalHours += diff;
+      }
+    }
+  }
+  return totalHours;
+}
+
+function countConflicts(courses: CourseStorage[]): number {
+  let conflicts = 0;
+  // Check all pairs of courses
+  for (let i = 0; i < courses.length; i++) {
+    for (let j = i + 1; j < courses.length; j++) {
+      if (sectionsIntersect(courses[i], courses[j])) {
+        conflicts++;
+      }
+    }
+  }
+  return conflicts;
+}
+
 // credit to https://stackoverflow.com/a/58443076
 const useReactPath = () => {
   const [path, setPath] = useState(window.location.pathname);
@@ -269,6 +318,14 @@ function App() {
   const realPath = pathname === "/" ? CURRENT_TERM : pathname;
   const data = courseDataSources[realPath];
   const [indexedCourses, setIndexedCourses] = useState({});
+  const localMaxWeeklyHours = localStorage.getItem("maxWeeklyHours" + realPath);
+  const [maxWeeklyHours, setMaxWeeklyHours] = useState<number>(
+    localMaxWeeklyHours ? JSON.parse(localMaxWeeklyHours) : 15
+  );
+  const localMaxConflicts = localStorage.getItem("maxConflicts" + realPath);
+  const [maxConflicts, setMaxConflicts] = useState<number>(
+    localMaxConflicts ? JSON.parse(localMaxConflicts) : 2
+  );
 
   // load course data from a json url
   useEffect(() => {
@@ -315,6 +372,14 @@ function App() {
       "workspaceIdx" + realPath,
       JSON.stringify(workspaceIdx),
     );
+    localStorage.setItem(
+      "maxWeeklyHours" + realPath,
+      JSON.stringify(maxWeeklyHours),
+    );
+    localStorage.setItem(
+      "maxConflicts" + realPath,
+      JSON.stringify(maxConflicts),
+    );
   }, [workspaces, workspaceIdx, realPath]);
 
   /** Helper functions to be sent sent through Context */
@@ -332,9 +397,12 @@ function App() {
     } else {
       newCourses = [...courses, newCourse];
     }
-    const newArrangements = generateCourseSections(newCourses, availableTimes);
+    const newArrangements = generateCourseSections(newCourses, availableTimes, maxWeeklyHours, maxConflicts);
     let newArrangementIdx = null;
     if (newArrangements.length === 0) {
+      if (newCourses.some(c => c.enabled)) {
+        alert("No valid arrangements found. Try adjusting course selections or increasing limits.");
+      }
       newCourses = newCourses.map((course) => {
         if (!course.locked) {
           return setField(course, "sectionId", null);
@@ -362,9 +430,12 @@ function App() {
 
   const removeCourse = (course: CourseStorage) => {
     let newCourses = courses.filter((currCourse) => currCourse !== course);
-    const newArrangements = generateCourseSections(newCourses, availableTimes);
+    const newArrangements = generateCourseSections(newCourses, availableTimes, maxWeeklyHours, maxConflicts);
     let newArrangementIdx = null;
     if (newArrangements.length === 0) {
+      if (newCourses.some(c => c.enabled)) {
+        alert("No valid arrangements found. Try adjusting course selections or increasing limits.");
+      }
       newCourses = newCourses.map((course) => {
         if (!course.locked) {
           return setField(course, "sectionId", null);
@@ -398,7 +469,7 @@ function App() {
         return course;
       }
     });
-    const newArrangements = generateCourseSections(newCourses, availableTimes);
+    const newArrangements = generateCourseSections(newCourses, availableTimes, maxWeeklyHours, maxConflicts);
     let newArrangementIdx = arrangementIdx;
     if (newArrangements.length === 0) {
       newCourses = newCourses.map((course) => {
@@ -439,7 +510,7 @@ function App() {
         return course;
       }
     });
-    const newArrangements = generateCourseSections(newCourses, availableTimes);
+    const newArrangements = generateCourseSections(newCourses, availableTimes, maxWeeklyHours, maxConflicts);
     let newArrangementIdx = arrangementIdx;
     if (newArrangements.length === 0) {
       newCourses = newCourses.map((course) => {
@@ -568,6 +639,8 @@ function App() {
     const newArrangements = generateCourseSections(
       newCourses,
       newAvailableTimes,
+      maxWeeklyHours,
+      maxConflicts
     );
     let newArrangementIdx = arrangementIdx;
     if (newArrangements.length === 0) {
@@ -626,6 +699,10 @@ function App() {
           updateAvailableTimes,
           setWorkspace,
           toggleSectionLock,
+          maxWeeklyHours,
+          setMaxWeeklyHours,
+          maxConflicts,
+          setMaxConflicts,
         }}
       >
         <div className="sticky-help">
