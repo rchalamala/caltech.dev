@@ -106,7 +106,7 @@ function Planner() {
   };
 
   return (
-    <div>
+    <div className="planner-wrapper">
       <div className="time-controls">
         {[0, 1, 2, 3, 4].map((idx) => {
           return (

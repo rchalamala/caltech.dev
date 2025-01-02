@@ -11,10 +11,12 @@
   flex-direction: column;
   row-gap: 8px;
   max-width: 4rem;
+  margin: 0 auto; /* Center in grid cell */
 }
 
 .time-picker > input {
   text-align: center;
+  width: 100%;
 }
 
 .flatpickr-input {
@@ -22,12 +24,35 @@
   border-radius: 4px;
 }
 
-.time-controls {
+.planner-wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-left: 65px;
-  margin-right: 20px;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+/* Use CSS variable for time gutter width to make it easier to maintain */
+:root {
+  --time-gutter-width: 65px;
+}
+
+.time-controls {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   padding-top: 5px;
   padding-bottom: 5px;
+  margin-left: var(--time-gutter-width);
+  width: calc(100% - var(--time-gutter-width));
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  :root {
+    --time-gutter-width: 50px; /* Smaller gutter on mobile */
+  }
+  
+  .time-picker {
+    max-width: 3.5rem;
+  }
 }
