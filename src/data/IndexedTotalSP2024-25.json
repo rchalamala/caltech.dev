@@ -168,7 +168,7 @@
       0,
       6
     ],
-    "description": "An overview of the physics behind space remote sensing instruments. Topics include the interaction of electromagnetic waves with natural surfaces, including scattering of microwaves, microwave and thermal emission from atmospheres and surfaces, and spectral reflection from natural surfaces and atmospheres in the near-infrared and visible regions of the spectrum. The class also discusses the design of modern space sensors and associated technology, including sensor design, new observation techniques, ongoing developments, and data interpretation. Examples of applications and instrumentation in geology, planetology, oceanography, astronomy, and atmospheric research.",
+    "description": "An overview of the physics behind space remote sensing instruments. Topics include the interaction of electromagnetic waves with natural surfaces, including scattering of microwaves, microwave and thermal emission from atmospheres and surfaces, and spectral reflection from natural surfaces and atmospheres in the near-infrared and visible regions of the spectrum. The class also discusses the design of modern space sensors and associated technology, including sensor design, new observation techniques, ongoing developments, and data interpretation. Examples of applications and instrumentation in geology, planetology, oceanography, astronomy, and atmospheric research.\n Part a offered spring term; Part b not offered 2024-25",
     "prerequisites": "Ph 2 or equivalent.",
     "rating": "4.16 +/- 1.00",
     "true_units": "About Right",
@@ -470,7 +470,7 @@
       0,
       6
     ],
-    "description": "External and internal flow problems encountered in engineering, for which only empirical methods exist. Turbulent shear flow, separation, transition, three-dimensional and nonsteady effects. Basis of engineering practice in the design of devices such as mixers, ejectors, diffusers, and control valves. Studies of flow-induced oscillations, wind effects on structures, vehicle aerodynamics. Not offered 2022-23.",
+    "description": "External and internal flow problems encountered in engineering, for which only empirical methods exist. Turbulent shear flow, separation, transition, three-dimensional and nonsteady effects. Basis of engineering practice in the design of devices such as mixers, ejectors, diffusers, and control valves. Studies of flow-induced oscillations, wind effects on structures, vehicle aerodynamics.\n Not offered 2024-25.",
     "prerequisites": "Ae/APh/CE/ME 101 abc or equivalent.",
     "rating": "4.23 +/- 0.90",
     "true_units": "3",
@@ -545,8 +545,8 @@
       0,
       6
     ],
-    "description": "Part a: dynamics of shock waves, expansion waves, and related discontinuities in gases. Adiabatic phase-transformation waves. Interaction of waves in one- and two-dimensional flows. Boundary layers and shock structure. Applications and shock tube techniques. Part b: shock and detonation waves in solids and liquids. Equations of state for hydrodynamic computations in solids, liquids, and explosive reaction products. CJ and ZND models of detonation in solids and liquids. Propagation of shock waves and initiation of reaction in explosives. Interactions of detonation waves with water and metals. Not offered 2022-23.",
-    "prerequisites": "",
+    "description": "Part a: dynamics of shock waves, expansion waves, and related discontinuities in gases. Adiabatic phase-transformation waves. Interaction of waves in one- and two-dimensional flows. Boundary layers and shock structure. Applications and shock tube techniques. Part b: shock and detonation waves in solids and liquids. Equations of state for hydrodynamic computations in solids, liquids, and explosive reaction products. CJ and ZND models of detonation in solids and liquids. Propagation of shock waves and initiation of reaction in explosives. Interactions of detonation waves with water and metals.",
+    "prerequisites": "Ae/APh/CE/ME 101 abc, ACM100ab or ACM101ab, or instructor's permission.",
     "rating": "5.00 +/- 0.00",
     "true_units": "2",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80425&department_id=120&offering_id=88949&track_id=88949-Default"
@@ -570,8 +570,8 @@
       0,
       6
     ],
-    "description": "Reynolds-averaged equations and the problem of closure. Statistical description of turbulence. Homogeneous isotropic turbulence and structure of fine scales. Turbulent shear flows. Physical and spectral models. Subgridscale modeling. Turbulent mixing. Structure of low and high Reynolds number wall turbulence.",
-    "prerequisites": "Ae/APh/CE/ME 101 abc; AM 125 abc or ACM/IDS 101.",
+    "description": "Reynolds number, transition from steady to unsteady, chaotic, and turbulent flow. Reynolds-averaged equations. Statistical description of turbulence. Physical and spectral models. Homogeneous isotropic turbulence, intermediate and small scales. Large-scale structure, and turbulent free and wall-bounded shear flows. Turbulent mixing.\n Part b not offered in 2024-25.",
+    "prerequisites": "Ae/APh/CE/ME 101abc, or equivalent; ACM 95/100ab. Recommended: ACM/IDS 101 (may be taken concurrently); Ae233.",
     "rating": "4.78 +/- 0.51",
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=49&term_id=551&division_id=80425&department_id=120&offering_id=92116&track_id=92116-Default"
@@ -645,7 +645,7 @@
       0,
       0
     ],
-    "description": "This course offers advanced undergraduates the opportunity to pursue research in Anthropology individually or in a small group. Graded pass/fail.",
+    "description": "This course offers advanced undergraduates the opportunity to pursue research in Anthropology individually or in a small group. Graded pass/fail.\n Not offered 2024-25.",
     "prerequisites": "advanced Anthropology and instructor's permission.",
     "rating": "",
     "true_units": "",
@@ -858,7 +858,7 @@
       0,
       6
     ],
-    "description": "Overview of measure theory. Random walks and the Strong law of large numbers via the theory of martingales and Markov chains. Characteristic functions and the central limit theorem. Poisson process and Brownian motion. Topics in statistics.",
+    "description": "This course begins with an overview of measure theory, followed by topics that include random walks, the strong law of large numbers, the central limit theorem, martingales, Markov chains, characteristic functions, Poisson processes, and Brownian motion. Towards the end, some further topics may be covered, such as stochastic calculus, stochastic differential equations, Gaussian processes, random graphs, Markov chain mixing, random matrix theory, and interacting particle systems.",
     "prerequisites": "For 140 a, Ma 108 b is strongly recommended.",
     "rating": "",
     "true_units": "",
@@ -954,8 +954,8 @@
       0,
       6
     ],
-    "description": "Topic varies by year. 2022-23: Matrix Analysis. This class develops some foundational results about matrices that have wide application in computational mathematics, statistics, engineering, and related fields. Tools from analysis (real, complex, functional, convex) play a key role. Topics may include multilinear algebra, majorization and doubly stochastic matrices, variational principles for eigenvalues, eigenvalue localization regions, unitarily invariant norms, operator monotonicity and convexity, convexity of matrix functions, matrix means, matrix inequalities, perturbation theory, tensor products and linear matrix equations, Hadamard products, nonnegative matrices, positive and completely positive linear maps, positive-definite functions. Not offered 2022-23.",
-    "prerequisites": "CMS/ACM 107 or instructor's permission.",
+    "description": "The content of this course varies from year to year among advanced subjects in linear algebra, convex analysis, and related fields. Specific topics for the class include matrix analysis, operator theory, convex geometry, or convex algebraic geometry. Lectures and homework will require the ability to understand and produce mathematical proofs.\n Offered 2024-25.",
+    "prerequisites": "CMS 107a and CMS/ACM 122; or instructor's permission.",
     "rating": "4.81 +/- 0.46",
     "true_units": "3",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80425&department_id=214&offering_id=88475&track_id=88475-Default"
@@ -1237,8 +1237,8 @@
       0,
       6
     ],
-    "description": "Laboratory experiments to acquaint students with the contemporary aspects of optics and photonics research and technology. Experiments encompass many of the topics and concepts covered in APh 23.",
-    "prerequisites": "APh 23.",
+    "description": "Laboratory experiments to acquaint students with the basic aspects of Optics and Photonics Research and Technology. This course offers hands-on experience and teaches students how to handle major optical and electronic equipment and conduct experiments. It is useful for those who are thinking about a career utilizing both optical and electronic tools. Experiments encompass some of the topics and concepts covered in APh 23.",
+    "prerequisites": "Ph 1 abc is required; APh 23 and a class on waves (Ph2a or Ph12a) are strongly encouraged but not required.",
     "rating": "4.52 +/- 0.81",
     "true_units": "3",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=36&term_id=518&division_id=80425&department_id=124&offering_id=76985&track_id=76985-Default"
@@ -1583,7 +1583,7 @@
       0,
       6
     ],
-    "description": "The presence of noise in experimental systems is often regarded as a nuisance since it diminishes the signal to noise ratio thereby obfuscating weak signals or patterns. From a theoretical perspective, noise is also problematic since its influence cannot be elicited from deterministic equations but requires stochastic-based modeling which incorporates various types of noise and correlation functions. In general, extraction of embedded information requires that a threshold be overcome in order to outweigh concealment by noise. However, even below threshold, it has been demonstrated in numerous systems that external forcing coupled with noise can actually boost very weak signatures beyond threshold by a phenomenon known as stochastic resonance. Although it was originally demonstrated in nonlinear systems, more recent studies have revealed this phenomenon can occur in linear systems subject, for example, to color-based noise. Techniques for optimizing stochastic resonance are now revolutionizing modeling and measurement theory in many fields ranging from nonlinear optics and electrical systems to condensed matter physics, neurophysiology, hydrodynamics, climate research and even finance. This course will be conducted in survey and seminar style and is expected to appeal to theorists and experimentalists alike. Review of the current literature will be complimented by background readings and lectures on statistical physics and stochastic processes as needed.",
+    "description": "Noise is often regarded as a nuisance. In experimental systems, it diminishes signal to noise ratio and obfuscates patterns and weak signals. In theoretical systems, it requires modelling by stochastic differential equations, whose solutions can be analytically intractable except for the simplest of Gaussian processes. Research on classical and quantum systems has revealed, however, that noise is essential when boosting hidden signatures by the phenomenon known as stochastic resonance. Many different methods proposed for inducing stochastic resonance are now revolutionizing measurement and modeling in fields as wide ranging as nonlinear optics and photonics, quantum communication, SQUID devices, neurophysiology, hydrodynamics, climate research and finance. This course, designed to appeal to theorists and experimentalists alike, is conducted in survey and seminar style. Review of the current literature will be complimented by lectures and readings focused on statistical physics and stochastic processes.",
     "prerequisites": "Ph 12 abc, ACM 95/100 ab and Ph 106 abc, equivalent background, or instructor's permission.",
     "rating": "",
     "true_units": "",
@@ -1633,7 +1633,7 @@
       0,
       6
     ],
-    "description": "This course explores the fundamental underpinnings of experimental measurements from the perspectives of coupling, responsivity, noise, backaction, and information. Its overarching goal is to enable students to develop intuition about, and to critically evaluate, a diversity of real measurement systems - and to provide a framework for estimating the ultimate and practical limits to information that can be extracted from them. Topics will include physical signal transduction and responsivity, fundamental noise processes, modulation, frequency conversion, synchronous detection, signal-sampling techniques, digitization, signal transforms, spectral analyses, and correlation methods. The first term will cover the essential fundamental underpinnings, while topics in second term will focus their application to high frequency, microwave, and fast time-domain measurements where distributed approaches become imperative. The second term (in alternate years) may focus on topics that include either measurements at the quantum limit, biosensing and biological interfaces, of functional brain imaging.",
+    "description": "This course explores the fundamental underpinnings of experimental measurements from the perspectives of information, noise, coupling, responsivity, and backaction. Its overarching goal is to enable students to develop intuition about a diversity of real measurement systems and the means to critically evaluate them. This involves developing a standard framework for estimating the ultimate and practical limits to information that can be extracted from a real measurement system. Topics will include the fundamental nature of information and signals, physical signal transduction and responsivity, the physical origin of noise processes, modulation, frequency conversion, synchronous detection, signal-sampling techniques, digitization, signal transforms, spectral analyses, and correlation methods. The first term will cover the essential underpinnings, while second-term topics will vary year-by-year according to interest. Among possible Ph 118 b topics are: high frequency, microwave, and fast time-domain measurements; biological interfaces and biosensing; the physics of functional brain imaging; and quantum measurement.\n Part b not offered 2024-25.",
     "prerequisites": "Ph 127, APh 105, or equivalent, or permission from instructor.",
     "rating": "",
     "true_units": "",
@@ -1708,7 +1708,7 @@
       0,
       6
     ],
-    "description": "A broad introduction to scientific computing using the Python language. Introduction to Python and its packages Matplotlib, Numpy and SciPy. Numerical precision and sources of error. Root-finding and optimization. Numerical differentiation and integration. Introduction to numerical methods for linear systems and eigenvalue problems. Numerical methods for ordinary differential equations. Finite-difference methods for partial differential equations. Discrete Fourier transforms. Introduction to data-driven and machine learning methods. Singular value decomposition. Deep learning with PyTorch and Keras. Students will develop numerical calculations in the homework and in a final project.",
+    "description": "A broad introduction to scientific computing using Python. Introduction to Python and its packages Numpy, SciPy, and Matplotlib. Numerical precision and sources of error. Root-finding and optimization. Numerical differentiation and integration. Introduction to numerical methods for linear systems and eigenvalue problems. Numerical methods for ordinary differential equations. Finite-difference methods for partial differential equations. Discrete Fourier transform. Introduction to data-driven and machine learning methods, including deep learning using Keras and Tensorflow. Introduction to quantum computing using Qiskit and IBM-Q. Students develop numerical calculations in the homework and in midterm and final projects.",
     "prerequisites": "graduate standing or instructor's permission.",
     "rating": "4.36 +/- 0.78",
     "true_units": "About Right",
@@ -1758,7 +1758,7 @@
       0,
       6
     ],
-    "description": "Review of Patterson function and memory function for space or time correlations. Van Hove function for correlated dynamics in space and time, especially for materials with thermal energy. Dynamical structure factors for coherent scattering from solids and liquids. Measurements of energy and momentum of dispersive excitations in crystals using neutrons, x-rays, and electrons. Additional topics to be selected from the following list: incoherent inelastic scattering and the thermodynamic partition function, transport of thermal energy, fluctuation-dissipation theorem, quasielastic scattering, sideband information in coherent inelastic scattering, transition from quantum to classical scattering.",
+    "description": "Review of Patterson function and memory function for space or time correlations. Van Hove function for correlated dynamics in space and time. Dynamical structure factors of solids and liquids. Measurements of energy and momentum of dispersive excitations in crystals using neutrons, x-rays, and electrons. Topics in inelastic scattering of high-energy electrons and x-rays, such as core spectroscopy with high-energy electrons, resonant and non-resonant x-ray spectroscopies. Free electron laser methodology and ultrafast pump-probe measurements. The final project will be a proposal for an experiment.",
     "prerequisites": "EE/APh 131 or MS 132 or equivalent.",
     "rating": "4.54 +/- 0.50",
     "true_units": "2",
@@ -1808,7 +1808,7 @@
       0,
       6
     ],
-    "description": "Generation, manipulations, propagation, and applications of coherent radiation. The basic theory of the interaction of electromagnetic radiation with resonant atomic transitions. Laser oscillation, important laser media, Gaussian beam modes, the electro-optic effect, nonlinear-optics theory, second harmonic generation, parametric oscillation, stimulated Brillouin and Raman scattering. Other topics include light modulation, diffraction of light by sound, integrated optics, phase conjugate optics, and quantum noise theory. APh/EE 190 ab offered second and third terms. APh/EE 190 c not offered 2022-23.",
+    "description": "Generation, manipulations, propagation, and applications of coherent radiation. The basic theory of the interaction of electromagnetic radiation with resonant atomic transitions. Laser oscillation, important laser media, Gaussian beam modes, the electro-optic effect, nonlinear-optics theory, second harmonic generation, parametric oscillation, stimulated Brillouin and Raman scattering. Other topics include light modulation, diffraction of light by sound, integrated optics, phase conjugate optics, and quantum noise theory.\n Part c not offered 2024-25.",
     "prerequisites": "Ph 125 or equivalent.",
     "rating": "4.75 +/- 0.53",
     "true_units": "About Right",
@@ -2152,7 +2152,7 @@
       0,
       6
     ],
-    "description": "Advanced topics in condensed-matter physics, with emphasis on the effects of interactions, symmetry, and topology in many-body systems. Ph/APh 223 a covers second quantization, Hartree-Fock theory of the electron gas, Mott insulators and quantum magnetism, spin liquids, bosonization, and the integer and fractional quantum Hall effect. Ph/APh 223 b will continue with BCS theory of superconductivity, Ginzburg-Landau theory, elements of unconventional and topological superconductors, theory of superfluidity, Bose-Hubbard model and bosonic Mott insulators, and some aspects of quantum systems with randomness.",
+    "description": "Advanced topics in condensed-matter physics, with emphasis on the effects of interactions, symmetry, and topology in many-body systems. Ph/APh 223 a covers second quantization, Hartree-Fock theory of the electron gas, Mott insulators and quantum magnetism, spin liquids, bosonization, and the integer and fractional quantum Hall effect. Ph/APh 223 b continues with superfluidity and superconductivity; topics include the Bose-Hubbard model, Ginzburg-Landau theory, BCS theory, tunneling signatures of superconductivity, Josephson junctions, superconducting qubits, and topological superconductivity.",
     "prerequisites": "Ph 135 or equivalent, or instructor's permission.",
     "rating": "4.77 +/- 0.51",
     "true_units": "About Right",
@@ -2387,7 +2387,7 @@
       0,
       0
     ],
-    "description": "APh 300 is elected in place of APh 200 when the student has progressed to the point where his or her research leads directly toward a thesis for the degree of Doctor of Philosophy. Approval of the student's research supervisor and department adviser or registration representative must be obtained before registering. Graded pass/fail.",
+    "description": "APh 300 is elected in place of APh 200 when the student has progressed to the point where their research leads directly toward a thesis for the degree of Doctor of Philosophy. Approval of the student's research supervisor and department adviser or registration representative must be obtained before registering. Graded pass/fail.",
     "prerequisites": "",
     "rating": "",
     "true_units": "",
@@ -2613,7 +2613,7 @@
       2,
       8
     ],
-    "description": "This hands-on, project-based course covers the design, proposal, and execution of astronomical observations, the basics of data reduction and analysis, and interacting with astronomical survey catalogs. In the first module, students will learn to use small, portable telescopes and find and image objects of interest using finder charts. In the second module, students will use Palomar Observatory to propose and execute their own research projects focused on astrophysical or planetary topics. In the third module, students will query and work with data from on-line archives and catalogs. The scope of the course includes imaging and spectroscopic observational techniques at optical and infrared wavelengths. The format centers on projects and practical skills but also includes a lecture and problem set component to establish the theoretical underpinnings of the practical work. The course meets once a week in the evening, and there are 1-2 required field trips to Palomar Observatory.",
+    "description": "This hands-on, project-based course covers the design, proposal, and execution of astronomical observations, the basics of data reduction and analysis, and interacting with astronomical survey catalogs. The scope of the course includes imaging and spectroscopic observational techniques at optical and infrared wavelengths. The format centers on projects and practical skills but also includes a lecture and problem set component to establish the theoretical underpinnings of the practical work. Specific course components include: (a) Students will learn to use small, portable telescopes and find and image objects of interest using finder charts; (b) Students will build basic data reduction pipelines for imaging and spectroscopy data to understand how these types of data are used to derive scientific results; (c) Students will use Palomar Observatory to propose and execute their own research projects focused on astrophysical or planetary topics; (d) Students will query and work with data from on-line archives and catalogs. The class meets twice a week during the daytime plus one weekly evening telescope session, and has a required field trip to Palomar Observatory. Students interested in enrolling should review the logistical information on this page and ensure their schedule allows attendance of all course components prior to registering: https://dekleer.caltech.edu/ayge107. Enrollment is limited.",
     "prerequisites": "CS 1 or equivalent coding experience recommended.",
     "rating": "4.70 +/- 0.49",
     "true_units": "Somewhat High",
@@ -2638,7 +2638,7 @@
       0,
       3
     ],
-    "description": "This class is an introduction to the data science skills from the applied computer science, statistics, and information technology, that are needed for a modern research in any data-intensive field, but with a special focus on the astronomical applications. Open to graduate and upper-division on undergraduate students in all options. The topics covered include design of data systems, regression techniques, supervised and unsupervised machine learning, databases, Bayesian statistics, high performance computing, software carpentry, deep learning, and visualization. The class will feature real-world examples from cutting-edge projects in which the instructors are involved.",
+    "description": "This class is an introduction to the data science skills from the applied computer science, statistics, and information technology, that are needed for a modern research in any data-intensive field, but with a special focus on the astronomical applications. Open to graduate and upper-division on undergraduate students in all options. The topics covered include best programming practices, supervised and unsupervised machine learning, feature selection, dimensionality reduction, databases, Bayesian statistics, time series analysis, deep learning, data visualization, and possibly other topics. The class will feature real-world examples from cutting-edge projects in which the instructors are involved.",
     "prerequisites": "",
     "rating": "1.06 +/- 0.29",
     "true_units": "4",
@@ -2713,7 +2713,7 @@
       0,
       1
     ],
-    "description": "Oral reports on current research in astronomy, providing students an opportunity for practice in the organization and presentation of technical material. A minimum of two presentations will be expected from each student each year. In addition, students are encouraged to participate in a public-level representation of the same material for posting to an outreach website. This course fulfills the option communication requirement and is required of all astronomy graduate students who have passed their preliminary exams. It is also recommended for astronomy seniors. Graded pass/fail.",
+    "description": "Oral reports on current research in astronomy, providing students an opportunity for practice in the organization and presentation of technical material. A minimum of two presentations will be expected from each student each year. In addition, students are encouraged to participate in a public-level representation of the same material for posting to an outreach website. This course fulfills the option communication requirement and is required of all astronomy graduate students who have passed their qualifying exam. It is also recommended for astronomy seniors; non-seniors can attend but cannot take the course for credit. Graded pass/fail.",
     "prerequisites": "",
     "rating": "3.22 +/- 0.41",
     "true_units": "About Right",
@@ -3296,7 +3296,7 @@
       0,
       6
     ],
-    "description": "Introduction to essential numerical analysis and computational methods in astrophysics and astrophysical data analysis. Basic numerical methods and techniques; N-body simulations; fluid dynamics (SPH/grid-based); MHD; radiation transport; reaction networks; data analysis methods; numerical relativity. Not offered 2022-23.",
+    "description": "Introduction to essential numerical analysis and computational methods in astrophysics and astrophysical data analysis. Basic numerical methods and techniques; N-body simulations; fluid dynamics (SPH/grid-based); MHD; radiation transport; reaction networks; data analysis methods; numerical relativity.",
     "prerequisites": "Ph 20-22 (undergraduates).",
     "rating": "4.33 +/- 0.91",
     "true_units": "3",
@@ -3321,7 +3321,7 @@
       0,
       4
     ],
-    "description": "Topic for 2022-23 is Extrasolar Planets. Thousands of planets have been identified in orbit around other stars. Astronomers are now embarking on understanding the statistics of extrasolar planet populations and characterizing individual systems in detail, namely star-planet, planet-planet and planet-disk dynamical interactions, physical parameters of planets and their composition, weather phenomena, etc. Direct and indirect detection techniques are now completing the big picture of extra-solar planetary systems in all of their natural diversity. The seminar-style course will review the state of the art in exoplanet science, take up case studies, detail current and future instrument needs, and anticipate findings.",
+    "description": "Topic for 2024-25 is Extrasolar Planets. Thousands of planets have been identified in orbit around other stars. Astronomers are now embarking on understanding the statistics of extrasolar planet populations and characterizing individual systems in detail, namely star-planet, planet-planet and planet-disk dynamical interactions, physical parameters of planets and their composition, weather phenomena, etc. Direct and indirect detection techniques are now completing the big picture of extra-solar planetary systems in all of their natural diversity. The seminar-style course will review the state of the art in exoplanet science, take up case studies, detail current and future instrument needs, and anticipate findings.",
     "prerequisites": "",
     "rating": "4.76 +/- 0.73",
     "true_units": "About Right",
@@ -3396,7 +3396,7 @@
       0,
       0
     ],
-    "description": "Presentations and discussion of research at Caltech in biology and chemistry. Discussions of responsible conduct of research are included.",
+    "description": "Presentations and discussion of research in biology and biological engineering. Presented by second and fourth year graduate students, postdocs, and faculty.",
     "prerequisites": "graduate standing.",
     "rating": "4.96 +/- 0.25",
     "true_units": "About Right",
@@ -3852,7 +3852,7 @@
       0,
       3
     ],
-    "description": "This course offers instruction and practice in writing and speaking relevant to professional biological scientists and engineers working in research, teaching, and/or medical careers. Students will write a paper for a scientific or engineering journal, either based on their previous research or written as a review paper of current work in their field. A Caltech faculty member, a postdoctoral scholar, or a technical staff member serves as a technical mentor for each student, to provide feedback on the content and style of the paper. Oral presentations will be based on selected scientific topics, with feedback from instructors and peers. Fulfills the Institute scientific writing requirement.",
+    "description": "The goal of this class is to improve your ability, as scientific researchers, to communicate your research to fellow scientists both in and outside your field, as well as to the general public. Students will practice technical scientific writing in journal paper format, presentation of research to scientific communities, oral communication of research to scientists and non-scientists, and peer review of scientific communications. Fulfills the Institute scientific writing requirement.",
     "prerequisites": "",
     "rating": "4.00 +/- 1.24",
     "true_units": "About Right",
@@ -4393,8 +4393,8 @@
       0,
       6
     ],
-    "description": "",
-    "prerequisites": "",
+    "description": "Advances in life science research and biotechnology require manipulation and synthesis of DNA and DNA genomes. This course focuses on how to create DNA of increasing lengths, both synthesized in vitro and integrated in vivo. Starting from 5 natural elements (C, H, O, P, N), the course will cover technologies to make DNA from a single nucleotide to 200-nucleotide short oligos, to 1-kb individual genes, to 10-kb gene clusters, to 100-kb genomic fragments, to multi-megabase bacterial genomes, and further beyond to 50-mb mammalian chromosomes and ultimately multi-gigabase mammalian genomes. The course will also cover technologies required to amplify, sequence, and deliver these assembled DNAs ranging from the single gene to the whole genome scale. Topics are approached from experimental, theoretical, and industrial perspective.",
+    "prerequisites": "Bi 1, Bi 8, or equivalent; or instructor's permission.",
     "rating": "",
     "true_units": "",
     "link": ""
@@ -4418,7 +4418,7 @@
       6,
       3
     ],
-    "description": "Design, construction, and characterization of engineered biological systems. Students will propose and execute research projects in biomolecular engineering and synthetic biology. Emphasis will be on projects that apply rational or library-based design strategies to the control of system behavior.",
+    "description": "Design, construction, and characterization of engineered biological systems. Students propose and execute research projects in biomolecular engineering, synthetic biology, and genetic engineering fields. Projects will cover a broad range of molecular and cell biology, and genetics and genomics lab techniques.",
     "prerequisites": "BE/ChE 163 or instructor's permission.",
     "rating": "4.86 +/- 0.35",
     "true_units": "2",
@@ -5897,7 +5897,7 @@
       0,
       6
     ],
-    "description": "Introduction to the computations made by the brain during economic and social decision making and their neural substrates. Part a: Reinforcement learning. Unconscious and conscious processing. Emotion. Behavioral economics. Goal-directed and habit learning. Facial processing in social neuroscience. Part b: History and mechanisms of reinforcement. Associative learning. Mentalizing and strategic thinking. Neural basis of prosociality. Exploration-exploitation tradeoff. Functions of basal ganglia.",
+    "description": "Introduction to the computations made by the brain during economic and social decision making and their neural substrates. Part a: Introduction to social and decision neuroscience. Neural substrates of reward and reinforcement learning. Unconscious and conscious processing. The neural basis of emotion. Goal-directed and habit learning. The neural substrates of facial processing.\n Not offered 2024-25.",
     "prerequisites": "NB/Bi/CNS 150 and CNS/Bi/Ph/CS/NB 187, or instructor's permission.",
     "rating": "4.69 +/- 0.77",
     "true_units": "Somewhat Low",
@@ -5968,7 +5968,7 @@
       0,
       6
     ],
-    "description": "An integrative approach to the study of vertebrate evolution combining comparative anatomical, behavioral, embryological, genetic, paleontological, and physiological findings. Special emphasis will be given to: (1) the modification of developmental programs in evolution; (2) homeostatic systems for temperature regulation; (3) changes in the life cycle governing longevity and death; (4) the evolution of brain and behavior. Letter grades only. Given in alternate years; offered 2022-23.",
+    "description": "An integrative approach to the study of vertebrate evolution combining comparative anatomical, behavioral, embryological, genetic, paleontological, and physiological findings. Special emphasis will be given to: (1) the modification of developmental programs in evolution; (2) homeostatic systems for temperature regulation; (3) changes in the life cycle governing longevity and death; (4) the evolution of brain and behavior. Letter grades only.\n Given in alternate years; offered 2024-25.",
     "prerequisites": "Bi 1, Bi 8, or instructor's permission.",
     "rating": "4.77 +/- 0.60",
     "true_units": "Somewhat Low",
@@ -5993,7 +5993,7 @@
       0,
       5
     ],
-    "description": "The cornerstone of current progress in understanding the mind, the brain, and the relationship between the two is the study of human and animal cognition. This course will provide an in-depth survey and analysis of behavioral observations, theoretical accounts, computational models, patient data, electrophysiological studies, and brain-imaging results on mental capacities such as attention, memory, emotion, object representation, language, and cognitive development. Given in alternate years; offered 2022-23.",
+    "description": "The cornerstone of current progress in understanding the mind, the brain, and the relationship between the two is the study of human and animal cognition. This course will provide an in-depth survey and analysis of behavioral observations, theoretical accounts, computational models, patient data, electrophysiological studies, and brain-imaging results on mental capacities such as attention, memory, emotion, object representation, language, and cognitive development.\n Given in alternate years; offered 2024-25.",
     "prerequisites": "",
     "rating": "4.72 +/- 0.65",
     "true_units": "About Right",
@@ -6043,7 +6043,7 @@
       0,
       6
     ],
-    "description": "Lectures and literature-based discussions covering research methods, scientific concepts and logic, research strategies and general principles of modern biology. Students will learn to critique papers in a wide range of fields, including molecular biology, developmental biology, genetics and neuroscience. Graded pass/fail.",
+    "description": "This course will cover 4-5 major discoveries in modern molecular biology, with the goal of analyzing the methods, scientific concepts and logic, research strategies, and scientists that underlie these advances. Students will learn to critique papers in a wide range of fields, including molecular biology, developmental biology, genetics, and neuroscience. As an opportunity to hone their communication and teaching skills, students will develop and implement a hands-on demonstration of a molecular biology concept to local elementary students in the PUSD school system.",
     "prerequisites": "graduate standing.",
     "rating": "4.77 +/- 0.45",
     "true_units": "Noticeably High",
@@ -6068,7 +6068,7 @@
       0,
       6
     ],
-    "description": "Lectures and literature-based discussions covering research methods, scientific concepts and logic, research strategies and general principles of modern biology. Students will learn to critique papers in a wide range of fields, including molecular biology, developmental biology, genetics and neuroscience. Graded pass/fail.",
+    "description": "This course will cover 4-5 major discoveries in modern molecular biology, with the goal of analyzing the methods, scientific concepts and logic, research strategies, and scientists that underlie these advances. Students will learn to critique papers in a wide range of fields, including molecular biology, developmental biology, genetics, and neuroscience. As an opportunity to hone their communication and teaching skills, students will develop and implement a hands-on demonstration of a molecular biology concept to local elementary students in the PUSD school system.",
     "prerequisites": "graduate standing.",
     "rating": "4.92 +/- 0.26",
     "true_units": "About Right",
@@ -6749,8 +6749,8 @@
       0,
       6
     ],
-    "description": "This course introduces students to data science for financial applications using the Python programming language and its ecosystem of packages. Students will learn how to use Python to extract numerical and text data from websites, evaluate fundamental risk-reward trade-offs using real-world financial data, and combine quantitative and qualitative factors into a persuasive argument. Time permitting, we will cover topics in machine learning, algorithmic trading, and cryptocurrencies.  Each student is expected to complete individual problem sets and a final project. Some programming experience is helpful though knowledge of Python is not assumed.",
-    "prerequisites": "BEM 103.",
+    "description": "This course revolves around qualitative topics and quantitative methods in data science for finance and economics. We discuss linear models and inference, sources of bias, databases and data validation, scraping, clustering, and text analysis. A special emphasis is placed on developing a robust understanding of the strengths and weaknesses of social science research methods. The class also introduces students to the Python programming language and its ecosystem of packages.",
+    "prerequisites": "",
     "rating": "4.68 +/- 0.58",
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=165&offering_id=92442&track_id=92442-Default"
@@ -6824,7 +6824,7 @@
       0,
       6
     ],
-    "description": "This course provides a survey from the perspective of economics of public policy issues regarding the management of natural resources and the protection of environmental quality. The course covers both conceptual topics and recent and current applications. Included are principles of environmental and resource economics, management of nonrenewable and renewable resources, and environmental policy with the focus on air pollution problems, both local problems (smog) and global problems (climate change). Not offered 2022-23.",
+    "description": "This course provides a survey from the perspective of economics of public policy issues regarding the management of natural resources and the protection of environmental quality. The course covers both conceptual topics and recent and current applications. Included are principles of environmental and resource economics, management of nonrenewable and renewable resources, and environmental policy with the focus on air pollution problems, both local problems (smog) and global problems (climate change).",
     "prerequisites": "Ec 11 or equivalent.",
     "rating": "4.41 +/- 0.93",
     "true_units": "2",
@@ -6881,7 +6881,7 @@
       6,
       2
     ],
-    "description": "Instruction in synthesis, separation, purification, and physical and spectroscopic characterization procedures of model organic and organometallic compounds. Specific emphasis will be focused on following the scientific method in the study of model organic and inorganic materials. Enrollment priority given to chemical engineering majors.",
+    "description": "Instruction in synthesis, separation, purification, and physical and spectroscopic characterization procedures of model organic compounds. Specifically looking into dye synthesis, methods of isomer identification, and properties of biodiesel. Enrollment priority given to chemical engineering majors.",
     "prerequisites": "Ch 1 ab and Ch 3 a or Ch 3 x. Previous or concurrent enrollment in Ch 41 is strongly recommended.",
     "rating": "4.31 +/- 1.22",
     "true_units": "Somewhat High",
@@ -6906,7 +6906,7 @@
       0,
       6
     ],
-    "description": "Equilibrium staged separations. Membrane separations. Absorption. Distillation. Liquid-liquid extraction. Introduction to mass transfer.",
+    "description": "Fundamentals of chemical engineering material balances and separation process. First half: analysis of single and multi-unit processes with reactive and non-reactive components. Second half: liquid-liquid extraction, flash and column distillation, membrane separation, and additional separation process of student choice.",
     "prerequisites": "ChE 15 and Ma 2.",
     "rating": "3.40 +/- 1.24",
     "true_units": "3",
@@ -7135,7 +7135,7 @@
       0,
       0
     ],
-    "description": "A research project carried out under the mentorship of an approved faculty member. Before the beginning of the first term of the thesis, students must submit a proposal - with project details and significant design component clearly defined - for review and approval by the thesis mentor and chemical engineering senior thesis coordinator (Option Rep). In addition, students must submit the following to the thesis mentor and chemical engineering senior thesis coordinator: a midterm progress report in each term; end-of-term progress reports at the end of the first two terms; and a thesis draft in the third term. A grade will not be assigned prior to completion of the thesis, which normally takes three terms. A P grade will be given for the first two terms and then changed to the appropriate letter grade at the end of the course.",
+    "description": "A research project carried out under the mentorship of an approved faculty member. Before the beginning of the first term of the thesis, students must submit a proposal - with project details and significant design component clearly defined - for review and approval by the thesis mentor and chemical engineering Undergrad Option Rep. In addition, students must submit the following to the thesis mentor and chemical engineering senior thesis coordinator: a midterm progress report in each term; end-of-term progress reports at the end of the first two terms; and a thesis draft in the third term. A grade will not be assigned prior to completion of the thesis, which normally takes three terms. A P grade will be given for the first two terms and then changed to the appropriate letter grade at the end of the course.",
     "prerequisites": "",
     "rating": "",
     "true_units": "",
@@ -7279,7 +7279,7 @@
       4,
       5
     ],
-    "description": "A research project carried out under the mentorship of an approved faculty member. Before the beginning of the first term of the thesis, students must submit a proposal - with project details and significant design component clearly defined - for review and approval by the thesis mentor and chemical engineering senior thesis coordinator (Option Rep). In addition, students must submit the following to the thesis mentor and chemical engineering senior thesis coordinator: a midterm progress report in each term; end-of-term progress reports at the end of the first two terms; and a thesis draft in the third term. A grade will not be assigned prior to completion of the thesis, which normally takes three terms. A P grade will be given for the first two terms and then changed to the appropriate letter grade at the end of the course.",
+    "description": "A research project carried out under the mentorship of an approved faculty member. Before the beginning of the first term of the thesis, students must submit a proposal - with project details and significant design component clearly defined - for review and approval by the thesis mentor and chemical engineering Undergrad Option Rep. In addition, students must submit the following to the thesis mentor and chemical engineering senior thesis coordinator: a midterm progress report in each term; end-of-term progress reports at the end of the first two terms; and a thesis draft in the third term. A grade will not be assigned prior to completion of the thesis, which normally takes three terms. A P grade will be given for the first two terms and then changed to the appropriate letter grade at the end of the course.",
     "prerequisites": "",
     "rating": "",
     "true_units": "",
@@ -7409,7 +7409,7 @@
       0,
       0
     ],
-    "description": "A research project carried out under the mentorship of an approved faculty member. Before the beginning of the first term of the thesis, students must submit a proposal - with project details and significant design component clearly defined - for review and approval by the thesis mentor and chemical engineering senior thesis coordinator (Option Rep). In addition, students must submit the following to the thesis mentor and chemical engineering senior thesis coordinator: a midterm progress report in each term; end-of-term progress reports at the end of the first two terms; and a thesis draft in the third term. A grade will not be assigned prior to completion of the thesis, which normally takes three terms. A P grade will be given for the first two terms and then changed to the appropriate letter grade at the end of the course.",
+    "description": "A research project carried out under the mentorship of an approved faculty member. Before the beginning of the first term of the thesis, students must submit a proposal - with project details and significant design component clearly defined - for review and approval by the thesis mentor and chemical engineering Undergrad Option Rep. In addition, students must submit the following to the thesis mentor and chemical engineering senior thesis coordinator: a midterm progress report in each term; end-of-term progress reports at the end of the first two terms; and a thesis draft in the third term. A grade will not be assigned prior to completion of the thesis, which normally takes three terms. A P grade will be given for the first two terms and then changed to the appropriate letter grade at the end of the course.",
     "prerequisites": "",
     "rating": "",
     "true_units": "",
@@ -7484,8 +7484,8 @@
       0,
       6
     ],
-    "description": "Lectures and recitation on the biochemistry of basic cellular processes in the cytosol and organelles, with emphasis on membrane and protein trafficking. Specific topics include protein secretion, virus entry, endocytosis, endoplasmic reticulum dynamics, nuclear trafficking, autophagy, apoptosis, and mitochondrial dynamics. The relationship of these processes to human disease will be discussed. Not offered 2017-18.",
-    "prerequisites": "Bi/Ch 110; Bi 9 recommended or consent of instructor.",
+    "description": "The milk we drink in the morning (a colloidal dispersion), the gel we put into our hair (a polymer network), and the plaque that we try to scrub off our teeth (a biofilm)are all familiar examples of soft materials. Such materials also hold great promise in helping to solve engineering challenges like drug delivery, water remediation, and sustainable agriculture, as well as the development of new coatings, displays, formulations, food, and biomaterials. This class will cover fundamental aspects of the science of soft materials, presented within the context of these challenges. We will also have guest speakers describe new applications of soft materials.",
+    "prerequisites": "ChE 63ab or equivalent, ChE 103ab or equivalent, and ChE 101 or equivalent; or instructor's permission.",
     "rating": "4.28 +/- 1.10",
     "true_units": "3",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=28&term_id=486&division_id=80423&department_id=153&offering_id=71594&track_id=71594-Default"
@@ -7509,8 +7509,8 @@
       6,
       3
     ],
-    "description": "Short-term, open-ended projects that require students to design and build a chemical process or manufacture a chemical product. Each team selects a project after reviewing a collection of proposals. Students use chemical engineering principles to design, build, test, and optimize a system, component, or product that fulfills specified performance requirements, subject to constraints imposed by budget, schedule, logistics, environmental impact, safety, and ethics.",
-    "prerequisites": "ChE 63 ab, ChE 101, ChE 103 abc, ChE 126, or instructor's permission.",
+    "description": "After selecting a project from a collection of proposals, student groups design, build, and test a proof of concept for the proposed chemical process or product, subject to schedule, financial, and other constraints. Students are encouraged and helped, but not required, to collaborate with on-campus subject-matter experts, laboratories/centers, and OTT/entrepreneurial resources.",
+    "prerequisites": "ChE 126, or instructor's permission.",
     "rating": "5.00 +/- 0.00",
     "true_units": "3",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80424&department_id=116&offering_id=87034&track_id=87034-Default"
@@ -7534,8 +7534,8 @@
       0,
       8
     ],
-    "description": "",
-    "prerequisites": "",
+    "description": "Student groups complete a one-term, data-science project that addresses an instructor-approved chemical engineering challenge. The project may be an original research idea; related to work by a research group at the Institute; an entry in a relevant national/regional contest; a response to an industry relationship; or other meaningful opportunity. There is no lecture, but students participate in weekly progress updates. A student may not select a project too similar to research completed to fulfill requirements for ChE 80 or ChE 90 abc.",
+    "prerequisites": "ChE/Ch 137.",
     "rating": "",
     "true_units": "",
     "link": ""
@@ -7559,7 +7559,7 @@
       0,
       6
     ],
-    "description": "An introduction to the chemistry of polymers, including synthetic methods and mechanisms of macromolecule formation, characterization techniques, reactivity, and applications. Not offered 2022-23.",
+    "description": "An introduction to the chemistry of polymers, including synthetic methods and mechanisms of macromolecule formation, characterization techniques, reactivity, and applications.",
     "prerequisites": "Ch 41 abc.",
     "rating": "4.93 +/- 0.28",
     "true_units": "3",
@@ -7984,7 +7984,7 @@
       3,
       2
     ],
-    "description": "Introduces the basic principles and techniques of synthesis and analysis and develops the laboratory skills and precision that are fundamental to experimental chemistry. Limited enrollment. Students entering in the academic year 2020 and before must take Ch 3 in their first nine terms of residence in order to be graded pass/fail. First-year undergraduate students entering in the academic year 2021 and thereafter must take Ch 3 in their first six terms of residence in order to be graded pass/fail. Ch 3 a and Ch 3 x both satisfy the institute's Core requirement for a Chemistry Laboratory.",
+    "description": "Introduces the basic principles and techniques of synthesis and analysis and develops the laboratory skills and precision that are fundamental to experimental chemistry. Limited enrollment. Students must take Ch 3 in their first six terms of residence in order to be graded pass/fail. Ch 3 a and Ch 3 x both satisfy the institute's Core requirement for a Chemistry Laboratory.",
     "prerequisites": "",
     "rating": "4.25 +/- 0.91",
     "true_units": "Somewhat High",
@@ -8037,7 +8037,7 @@
       3,
       2
     ],
-    "description": "Introduces the basic principles and techniques of synthesis and analysis and develops the laboratory skills and precision that are fundamental to experimental chemistry. Limited enrollment. Students entering in the academic year 2020 and before must take Ch 3 in their first nine terms of residence in order to be graded pass/fail. First-year undergraduate students entering in the academic year 2021 and thereafter must take Ch 3 in their first six terms of residence in order to be graded pass/fail. Ch 3 a and Ch 3 x both satisfy the institute's Core requirement for a Chemistry Laboratory.",
+    "description": "Introduces the basic principles and techniques of synthesis and analysis and develops the laboratory skills and precision that are fundamental to experimental chemistry. Limited enrollment. Students must take Ch 3 in their first six terms of residence in order to be graded pass/fail. Ch 3 a and Ch 3 x both satisfy the institute's Core requirement for a Chemistry Laboratory.",
     "prerequisites": "",
     "rating": "",
     "true_units": "",
@@ -8087,8 +8087,8 @@
       6,
       2
     ],
-    "description": "Prerequisites may be waived with instructor's permission. Preference will be given to students who have taken Ch 5 a or Bi 10. This advanced laboratory course will provide experience in powerful contemporary methods used in chemical biology, including polypeptide synthesis and the selective labeling and imaging of glycoproteins in cells. Experiments will address amino acid protecting group strategies, biopolymer assembly and isolation, and product characterization. A strong emphasis will be placed on understanding the chemical basis underlying the successful utilization of these procedures. In addition, experiments to demonstrate the application of commercially available enzymes for useful synthetic organic transformations will be illustrated. Students need only attend two lab sections per week.",
-    "prerequisites": "Ch 41 abc, Ch/Bi 110 ab, and Ch 4 ab.",
+    "description": "This advanced laboratory course will provide experience in contemporary methods used in chemical biology, including polypeptide synthesis and selective labeling and imaging of glycoproteins in cells. Experiments will address amino acid protecting group strategies, biopolymer assembly and isolation, and product characterization. A strong emphasis will be placed on understanding the chemical basis underlying the successful utilization of these procedures. In addition, experiments to demonstrate the application of commercially available enzymes for useful synthetic organic transformations will be illustrated. Students need only attend two lab sections per week.",
+    "prerequisites": "Ch 41 abc, Ch/Bi 110 ab, and Ch 4 a or instructor's permission.",
     "rating": "5.00 +/- 0.00",
     "true_units": "Somewhat High",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80424&department_id=114&offering_id=90432&track_id=90432-Default"
@@ -8872,7 +8872,7 @@
       0,
       5
     ],
-    "description": "Structure and bonding of inorganic species with special emphasis on symmetry, spectroscopy, oxidation-reduction reactions, organometallic, and solid-state chemistry.",
+    "description": "Structure and bonding of inorganic species with special emphasis on symmetry, spectroscopy, molecular orbital theory, ligand field theory, coordination/organometallic chemistry, and contemporary applied topics.",
     "prerequisites": "Ch 41 ab.",
     "rating": "4.06 +/- 0.95",
     "true_units": "Somewhat High",
@@ -8972,7 +8972,7 @@
       0,
       6
     ],
-    "description": "A survey course in the properties of nuclei, and in atomic phenomena associated with nuclear-particle detection. Topics include rates of production and decay of radioactive nuclei; interaction of radiation with matter; nuclear masses, shapes, spins, and moments; modes of radioactive decay; nuclear fission and energy generation. Given in alternate years; offered 2022-23.",
+    "description": "A survey course in the properties of nuclei, and in atomic phenomena associated with nuclear-particle detection. Topics include rates of production and decay of radioactive nuclei; interaction of radiation with matter; nuclear masses, shapes, spins, and moments; modes of radioactive decay; nuclear fission and energy generation.\n Given in alternate years; offered 2024-25.",
     "prerequisites": "instructor's permission.",
     "rating": "3.78 +/- 0.83",
     "true_units": "4",
@@ -8997,7 +8997,7 @@
       0,
       6
     ],
-    "description": "Physical description of the structure, spectra and dynamics of molecules. Topics include: time-dependent quantum mechanics, molecular structure, coherence, path integral formalism, scattering cross sections, rate constants, intermolecular potentials, classical two-body elastic scattering, reactive scattering, nonadiabatic processes, statistical theories of unimolecular reactions, photochemistry, laser and molecular beam methods, theory of electron transfer, solvent effects, condensed phase dynamics, surface reactions, isotope effects.",
+    "description": "Physical description and computations of chemical reactions and photochemistry with applications in air pollution, planetary atmospheres and condensed phases. Topics include: kinetic modeling, time-dependent quantum mechanics, rate constants, transition state theory intermolecular potentials, classical two-body elastic scattering, reactive scattering, nonadiabatic processes, statistical theories of unimolecular reactions, photochemistry, laser and molecular beam methods, theory of electron transfer, solvent effects, condensed phase dynamics, surface reactions, isotope effects.",
     "prerequisites": "Ch 21 abc and Ch 41 abc, and Ch 125 a or equivalent, or instructor's permission.",
     "rating": "4.93 +/- 0.26",
     "true_units": "3",
@@ -9047,7 +9047,7 @@
       0,
       6
     ],
-    "description": "Ch 153 a: Topics in modern inorganic chemistry. Electronic structure, spectroscopy, and photochemistry with emphasis on examples from the research literature. Ch 153 b: Applications of physical methods to the characterization of inorganic and bioinorganic species, with an emphasis on the practical application of Moessbauer, EPR, and pulse EPR spectroscopies. Ch 153 c: Theoretical and spectroscopic approaches to understanding the electronic structure of transition metal ions. Topics in the 153 bc alternate sequence may include saturation magnetization and zero-field splitting in magnetic circular dichroism and molecular magnetism, hyperfine interactions in electron paramagnetic resonance spectroscopy, Moessbauer and magnetic Moessbauer spectroscopy, vibronic interactions in electronic absorption and resonance Raman spectroscopy, and bonding analyses using x-ray absorption and/or emission spectroscopies.",
+    "description": "Ch 153 a: Topics in modern inorganic chemistry. Electronic structure, spectroscopy, and photochemistry with emphasis on examples from the research literature. Ch 153 b: Applications of physical methods to the characterization of inorganic and bioinorganic species, with an emphasis on the practical application of Moessbauer, EPR, and pulse EPR spectroscopies. Ch 153 c: Theoretical and spectroscopic approaches to understanding the electronic structure of transition metal ions. Topics in the 153 bc alternate sequence may include saturation magnetization and zero-field splitting in magnetic circular dichroism and molecular magnetism, hyperfine interactions in electron paramagnetic resonance spectroscopy, Moessbauer and magnetic Moessbauer spectroscopy, vibronic interactions in electronic absorption and resonance Raman spectroscopy, and bonding analyses using x-ray absorption and/or emission spectroscopies.\n Parts b not offered 2024-25.",
     "prerequisites": "Ch 112 and Ch 21 abc or concurrent registration.",
     "rating": "4.39 +/- 0.97",
     "true_units": "4",
@@ -10885,7 +10885,7 @@
       0,
       6
     ],
-    "description": "First term: a survey emphasizing graph theory, algorithms, and applications of algebraic structures. Graphs: paths, trees, circuits, breadth-first and depth-first searches, colorings, matchings. Enumeration techniques; formal power series; combinatorial interpretations. Topics from coding and cryptography, including Hamming codes and RSA. Second term: directed graphs; networks; combinatorial optimization; linear programming. Permutation groups; counting nonisomorphic structures. Topics from extremal graph and set theory, and partially ordered sets. Third term: elements of computability theory and computational complexity. Discussion of the P=NP problem, syntax and semantics of propositional and first-order logic. Introduction to the G\u00f6del completeness and incompleteness theorems.",
+    "description": "First term: a survey emphasizing graph theory, algorithms, and applications of algebraic structures. Graphs: paths, trees, circuits, breadth-first and depth-first searches, colorings, matchings. Enumeration techniques; formal power series; combinatorial interpretations. Topics from coding and cryptography, including Hamming codes and RSA. Second term: directed graphs; networks; combinatorial optimization; linear programming. Permutation groups; counting nonisomorphic structures. Topics from extremal graph and set theory, and partially ordered sets. Third term: syntax and semantics of propositional and first-order logic. Introduction to the Godel completeness and incompleteness theorems. Elements of computability theory and computational complexity. Discussion of the P=NP problem.",
     "prerequisites": "for Ma/CS 6 c, Ma/CS 6 a or Ma 5 a or instructor's permission.",
     "rating": "4.60 +/- 0.73",
     "true_units": "About Right",
@@ -10942,7 +10942,7 @@
       3,
       0
     ],
-    "description": "A self-paced lab that provides students with extra practice and supervision in transferring their programming skills to a particular programming language. The course can be used for any language of the student's choosing, subject to approval by the instructor. A series of exercises guide the student through the pragmatic use of the chosen language, building his or her familiarity, experience, and style. More advanced students may propose their own programming project as the target demonstration of their new language skills. This course is available for undergraduate students only. Graduate students should register for CS 111. CS 11 may be repeated for credit of up to a total of nine units.",
+    "description": "A self-paced lab that provides students with extra practice and supervision in transferring their programming skills to a particular programming language. The course can be used for any language of the student's choosing, subject to approval by the instructor. A series of exercises guide students through the pragmatic use of the chosen language, building their familiarity, experience, and style. More advanced students may propose their own programming project as the target demonstration of their new language skills. This course is available for undergraduate students only. Graduate students should register for CS 111. CS 11 may be repeated for credit of up to a total of nine units.",
     "prerequisites": "CS 1 or instructor's permission.",
     "rating": "4.59 +/- 0.81",
     "true_units": "About Right",
@@ -11688,7 +11688,7 @@
       0
     ],
     "description": "The topics covered vary from year to year, depending on the students and staff. Primarily for undergraduates.",
-    "prerequisites": "CS 21 and CS 38, or instructor's permission.",
+    "prerequisites": "Prerequisites specified by instructor.",
     "rating": "4.57 +/- 0.60",
     "true_units": "Noticeably High",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=48&term_id=550&division_id=80425&department_id=117&offering_id=89127&track_id=89127-Default"
@@ -11794,7 +11794,7 @@
       3,
       0
     ],
-    "description": "A self-paced lab that provides students with extra practice and supervision in transferring their programming skills to a particular programming language. The course can be used for any language of the student's choosing, subject to approval by the instructor. A series of exercises guide the student through the pragmatic use of the chosen language, building his or her familiarity, experience, and style. More advanced students may propose their own programming project as the target demonstration of their new language skills. This course is available for graduate students only. CS 111 may be repeated for credit of up to a total of nine units. Undergraduates should register for CS 11.",
+    "description": "A self-paced lab that provides students with extra practice and supervision in transferring their programming skills to a particular programming language. The course can be used for any language of the student's choosing, subject to approval by the instructor. A series of exercises guide the student through the pragmatic use of the chosen language, building their familiarity, experience, and style. More advanced students may propose their own programming project as the target demonstration of their new language skills. This course is available for graduate students only. CS 111 may be repeated for credit of up to a total of nine units. Undergraduates should register for CS 11.",
     "prerequisites": "CS 1 or equivalent.",
     "rating": "4.17 +/- 1.09",
     "true_units": "About Right",
@@ -11844,7 +11844,7 @@
       3,
       3
     ],
-    "description": "Advanced digital design as it applies to the design of systems using PLDs and ASICs (in particular, gate arrays and standard cells). The course covers both design and implementation details of various systems and logic device technologies. The emphasis is on the practical aspects of ASIC design, such as timing, testing, and fault grading. Topics include synchronous design, state machine design, ALU and CPU design, application-specific parallel computer design, design for testability, CPLDs, FPGAs, VHDL, standard cells, timing analysis, fault vectors, and fault grading. Students are expected to design and implement both systems discussed in the class as well as self-proposed systems using a variety of technologies and tools. Given in alternate years; offered 2022-23.",
+    "description": "Advanced digital design as it applies to the design of systems using PLDs and ASICs (in particular, gate arrays and standard cells). The course covers both design and implementation details of various systems and logic device technologies. The emphasis is on the practical aspects of ASIC design, such as timing, testing, and fault grading. Topics include synchronous design, state machine design, arithmetic circuit design, application-specific parallel computer design, design for testability, CPLDs, FPGAs, VHDL, standard cells, timing analysis, fault vectors, and fault grading. Students are expected to design and implement both systems discussed in the class as well as self-proposed systems using a variety of technologies and tools.\n Given in alternate years;offered 2024-25.",
     "prerequisites": "EE/CS 10 a or CS 24.",
     "rating": "3.79 +/- 0.41",
     "true_units": "3",
@@ -11870,7 +11870,7 @@
       1
     ],
     "description": "This course covers the foundations of experimental realization on robotic systems. This includes software infrastructure to operate physical hardware, integrate various sensor modalities, and create robust autonomous behaviors. Using the Python programming language, assignments will explore techniques from simple polling to interrupt driven and multi-threaded architectures, ultimately utilizing the Robotic Operating System (ROS). Developments will be integrated on mobile robotic systems and demonstrated in the context of class projects.",
-    "prerequisites": "",
+    "prerequisites": "some experience with (i) Python programming (CS1, CS2, or equivalent), (ii) Hardware, Sensors, and Signal Processing (EE/ME7, ME8, EE1, or similar), and/or (iii) Robotic Devices (ME13, ME72, or related), as evidenced to the instructor.   Not recommended for first-year students.",
     "rating": "4.69 +/- 0.70",
     "true_units": "Somewhat High",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=143&offering_id=90510&track_id=90510-Default"
@@ -11944,7 +11944,7 @@
       0,
       6
     ],
-    "description": "This class introduces information measures such as entropy, information divergence, mutual information, information density, and discusses the relations of those quantities to problems in data compression and transmission, statistical inference, and control. The course does not require a prior exposure to information theory; it is complementary to EE 126 a.",
+    "description": "This class introduces information measures such as entropy, information divergence, mutual information, information density, and establishes the fundamental importance of those measures in data compression, statistical inference, and error control. The course does not require a prior exposure to information theory; it is complementary to EE 126a.",
     "prerequisites": "EE 55 or equivalent.",
     "rating": "4.79 +/- 0.45",
     "true_units": "About Right",
@@ -12069,7 +12069,7 @@
       0,
       9
     ],
-    "description": "This course describes a diverse array of complexity classes that are used to classify problems according to the computational resources (such as time, space, randomness, or parallelism) required for their solution. The course examines problems whose fundamental nature is exposed by this framework, the known relationships between complexity classes, and the numerous open problems in the area. Not offered 2022-23.",
+    "description": "This course describes a diverse array of complexity classes that are used to classify problems according to the computational resources (such as time, space, randomness, or parallelism) required for their solution. The course examines problems whose fundamental nature is exposed by this framework, the known relationships between complexity classes, and the numerous open problems in the area.",
     "prerequisites": "CS 21 and CS 38, or instructor's permission.",
     "rating": "4.70 +/- 0.57",
     "true_units": "About Right",
@@ -12690,8 +12690,8 @@
       0,
       6
     ],
-    "description": "Introduction to modern control systems with emphasis on the role of control in overall system analysis and design. Examples drawn from throughout engineering and science. Open versus closed loop control. State-space methods, time and frequency domain, stability and stabilization, realization theory. Time-varying and nonlinear models. Uncertainty and robustness.",
-    "prerequisites": "Ma 2/102, ACM/CMS 104, CDS 110.",
+    "description": "Advanced topics in optimization-based design of control, optimal control, and estimation/filtering. Optimal control theory using calculus of variations, Hamilton-Jacobi-Bellman equation, Pontryagin's maximum principle, and optimal control applications including reinforcement learning and model predictive control. Kalman filtering, Bayesian filtering, and nonlinear filtering methods for autonomous systems.",
+    "prerequisites": "CDS 110 (or equivalent) and CDS 131.",
     "rating": "2.95 +/- 1.02",
     "true_units": "3",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=23&term_id=507&division_id=80425&department_id=127&offering_id=68828&track_id=68828-Default"
@@ -12715,7 +12715,7 @@
       2,
       4
     ],
-    "description": "Synthesis of robust control systems. Co-design of sparse and limited (delayed, localized, quantized, saturating, noisy) sensing, communications, computing, and actuation using System Level Synthesis (SLS). Layering, localization, and distributed control. Interplay between automation, optimization, control, modeling and system identification, and machine learning. Computational scalability exploiting sparsity and structure. Start with linear input/output models (multi-state difference and differential equations). Stability, input/output norms. Uncertainty, including noise, disturbances, parametric uncertainty, unmodeled dynamics, and structured uncertainty (LTI/LTV). Tradeoffs, robustness versus efficiency, conservation laws and hard limits in time and frequency domain. Nonlinear dynamics and sum of squares, global stability, regions of attraction. Motivation throughout from case studies in tech, neuro, bio, and socioeconomic networks, as introduced in CDS 141, but not a prerequisite.",
+    "description": "Scalable analysis and synthesis of robust control systems. Motivation throughout from case studies in tech, neuro, bio, med, and socioeconomic networks. Co-design of sparse and limited (delayed, localized, quantized, saturating, noisy) sensing, communications, computing, and actuation using System Level Synthesis (SLS). Layering, localization, and distributed control. Computational scalability exploiting sparsity and structure. Uncertainty, including noise, disturbances, parametric uncertainty, unmodeled dynamics, and structured uncertainty (LTI/LTV). Tradeoffs, robustness versus efficiency, conservation laws and hard limits in time and frequency domain. Advanced topics, depending on class interest, can include interplay between automation, optimization, control, modeling and system identification, and machine learning, and nonlinear dynamics and sum of squares, global stability, regions of attraction.",
     "prerequisites": "CMS/ACM/IDS 107, CMS/ACM/EE 122, and CDS 131 (or equivalents).",
     "rating": "4.34 +/- 1.17",
     "true_units": "About Right",
@@ -13027,7 +13027,7 @@
       0,
       6
     ],
-    "description": "",
+    "description": "This course will cover the basic concepts and principles of health economics and challenges in health policy implementation. By studying this course, students will establish economic thinking and be able to flexibly use economic methods to analyze practical problems in the field of health care. Students will also learn about the application of machine learning in public health. This course combines theory and methodology. The teaching goal focuses on students' ability to analyze and solve practical problems. Interactive teaching is done through group discussions and topic debates around case studies. Each chapter consists of a theory and case analysis. The case discussion will focus on basic theories and methods and highlight the hot issues in the current medical and health system. The exam will be an open-book exam, with class discussions accounting for 40%, and the final exam accounting for 60%.",
     "prerequisites": "",
     "rating": "",
     "true_units": "",
@@ -13077,7 +13077,7 @@
       0,
       6
     ],
-    "description": "Introduction to the use of convex analysis in economic theory. Includes separating hyperplane theorems, continuity and differentiability properties of convex and concave functions, support functions, subdifferentials, Fenchel conjugates, saddlepoint theorem, theorems of the alternative, polyhedra, linear programming, and duality in graphs. Introduction to discrete convex analysis and matroids. Emphasis is on the finite-dimensional case, but infinite-dimensional spaces will be discussed. Applications to core convergence, cost and production functions, mathematical finance, decision theory, incentive design, and game theory. Not offered 2022-23.",
+    "description": "Introduction to the use of convex analysis in economic theory. Includes separating hyperplane theorems, continuity and differentiability properties of convex and concave functions, support functions, subdifferentials, Fenchel conjugates, saddlepoint theorem, theorems of the alternative, polyhedra, linear programming, and duality in graphs. Introduction to discrete convex analysis and matroids. Emphasis is on the finite-dimensional case, but infinite-dimensional spaces will be discussed. Applications to core convergence, cost and production functions, mathematical finance, decision theory, incentive design, and game theory.\n Part b not offered 2024-25.",
     "prerequisites": "Ma 1. Ec 121 a is recommended.",
     "rating": "3.50 +/- 1.25",
     "true_units": "2",
@@ -13536,8 +13536,8 @@
       3,
       3
     ],
-    "description": "Advanced topics related to computational methods in biology. Topics might change from year to year. Examples include spectral analysis techniques and their applications in threshold circuits complexity and in computational learning theory. The role of feedback in computation. The logic of computation in gene regulation networks. The class includes a project that has the goal of learning how to understand, criticize, and present the ideas and results in research papers. Not offered 2012-13.",
-    "prerequisites": "Ma 2 or IST 4.",
+    "description": "The course focuses on the design and implementation of modern CPUs and microcontrollers. The topics covered in addition to basic CPU architecture include caching and cache controllers, memory management and virtual memory, pipelining CPU operations, VLIW CPUs, branch prediction, and hardware multi-threading. The emphasis is on the practical aspects of CPU design such as timing, testing, and power use. There is significant laboratory work in which the students are expected to design and implement the systems discussed in the class.",
+    "prerequisites": "EE/CS 119a or EE/CS/MedE 125 or equivalent.",
     "rating": "",
     "true_units": "",
     "link": ""
@@ -13891,7 +13891,7 @@
       0,
       6
     ],
-    "description": "The relationship between patients and doctors, the ill and the well, involves a constant exchange of stories. In this course we will look more closely at the relationship between medicine and narrative through a selection of fiction, essays and poems that investigate the interplay between doubt and diagnosis, the idea of the case study, the problem of medical responsibility, and the language of pain and illness. Authors covered may include Sontag, Mantel, Conan Doyle, Freud, Woolf, Dickinson, Ishiguro and Shelley. Not offered 2022-23.",
+    "description": "The relationship between patients and doctors, the ill and the well, involves a constant exchange of stories. In this course we will look more closely at the relationship between medicine and narrative through a selection of fiction, essays and poems that investigate the interplay between doubt and diagnosis, the idea of the case study, the problem of medical responsibility, and the language of pain and illness. Authors covered may include Sontag, Mantel, Conan Doyle, Freud, Woolf, Dickinson, Ishiguro and Shelley.",
     "prerequisites": "",
     "rating": "4.03 +/- 0.87",
     "true_units": "4",
@@ -13941,7 +13941,7 @@
       0,
       6
     ],
-    "description": "This course introduces students to the historical development of the English language, from its Proto-Indo-European roots through its earliest recorded forms (Old English, Middle English, and Early Modern English) up to its current status as a world language. English is a language that is constantly evolving, and students will gain the linguistic skills necessary for analyzing the features of its evolution. We will study the variation and development in the language over time and across regions, including variations in morphology, phonology, syntax, grammar, and vocabulary. We will also examine sociological, political, and literary phenomena that accompany and shape changes in the language. Not offered 2020-21.",
+    "description": "This course focuses on personal narrative and memoir writing by STEM researchers. STEM research strives for objectivity and replicability, and key genres of STEM research writing require that writers repress their subjectivity and individuality. However, a researcher's experience of inquiry is often deeply personal and emotional, and some researchers choose to write about those experiences in personal essays and memoirs. We will analyze a wide variety of this narrative writing, and we will examine connections between the narratives' formal features and the rhetorical effects they might have on readers. Drawing on what we learn, students will compose an excerpt of their own memoir or a stand-alone personal narrative essay. The course will also explore current approaches to spoken storytelling sometimes utilized by researchers, such as the Moth story and the TED talk. Satisfies the Institute scientific writing requirement and oral communications requirements for students in all options.",
     "prerequisites": "",
     "rating": "",
     "true_units": "",
@@ -13966,7 +13966,7 @@
       0,
       6
     ],
-    "description": "When William Blake wrote \"to see a World in a Grain of Sand,\" he tapped into poetry's power to model the universe. For instance, once we set up a simile between \"world\" and \"grain of sand\", we can test this hypothesis of sameness. How is sand like the world? Where will the model fail? And what might that tell us? Imagery, sensory language, arguments, ideas, and verse form itself can lead poetry toward power and discovery. This pursuit can reach from the page into one's own life. We will work hard together on poems, our own and one another's.",
+    "description": "When William Blake wrote \"to see a World in a Grain of Sand,\" he tapped into poetry's power to model the universe. For instance, once we set up a simile between \"world\" and \"grain of sand\", we can test this hypothesis of sameness. How is sand like the world? Where will the model fail? And what might that tell us? Imagery, sensory language, arguments, ideas, and verse form itself can lead poetry toward power and discovery. This pursuit can reach from the page into one's own life. We will work hard together on poems, our own and one another's. With permission of the instructor students may repeat the course for credit.\n Not offered 2024-25.",
     "prerequisites": "",
     "rating": "4.93 +/- 0.39",
     "true_units": "About Right",
@@ -14041,7 +14041,7 @@
       0,
       6
     ],
-    "description": "This class explores the history of sexuality and gender across the Middle Ages and Renaissance. Exploring both literary texts and visual representation, it considers how previous eras and cultures understood embodiment, sexuality, and gender and asks how we, as modern readers and viewers, approach these questions across the distance of centuries. We will read across a wide range of literature, including theology, philosophy, fiction, romance, and spiritual biography, and examine manuscript illustrations and other early visual media. Questions we will take up include the following: how did writers and artists construct the \"naturalness\" or \"unnaturalness\" of particular bodies and bodily acts? How did individuals understand the relationship between their own bodies and those of others? In what ways did writing and art authorize, scrutinize, or otherwise parse the boundaries of the licit and illicit? Finally, how have modern critics framed these questions? How do we approach and make use of earlier theories of sex and gender? Not offered 2022-23.",
+    "description": "This class explores the history of sexuality and gender across the Middle Ages and Renaissance. Exploring both literary texts and visual representation, it considers how previous eras and cultures understood embodiment, sexuality, and gender and asks how we, as modern readers and viewers, approach these questions across the distance of centuries. We will read across a wide range of literature, including theology, philosophy, fiction, romance, and spiritual biography, and examine manuscript illustrations and other early visual media. Questions we will take up include the following: how did writers and artists construct the \"naturalness\" or \"unnaturalness\" of particular bodies and bodily acts? How did individuals understand the relationship between their own bodies and those of others? In what ways did writing and art authorize, scrutinize, or otherwise parse the boundaries of the licit and illicit? Finally, how have modern critics framed these questions? How do we approach and make use of earlier theories of sex and gender?",
     "prerequisites": "",
     "rating": "4.83 +/- 0.38",
     "true_units": "3",
@@ -14066,7 +14066,7 @@
       0,
       6
     ],
-    "description": "We read three famous novels about people who migrate and people who immigrate, by authors who have also been uprooted in their own lives: Salman Rushdie's 'Midnight's Children' (1981), Zadie Smith's 'White Teeth' (2000), and Jonathan Franzen's 'The Corrections' (2001).  As you can see from these dates, this class will also teach you about experimental fiction in the 20th century, a time that prized complexity and even difficulty.  We won't find \"linear narratives,\" \"well-rounded characters,\" or \"relatability\" here.  How are these novels structured instead?  Do their experimental structures reflect the theme of displacement itself?  Should we even try to generalize about a literature of displacement, and, if yes, what kinds of comparisons can we draw? Not offered 2022-23.",
+    "description": "This class combines the theme of geographic change, including migration and immigration, with two literary questions. Why do novels of migration so often focus on a strongly marked central character?  And why is that character so often lonely or isolated?  Past readings have included Chinua Achebe's 'Things Fall Apart' (1959), Ottessa Moshfegh's 'My Year of Rest and Relaxation' (2018), and Charles Yu's 'Interior Chinatown' (2020).  Those familiar with these novels will notice that, in our class, migration may mean international uprooting or some other profound change closer to home.",
     "prerequisites": "",
     "rating": "3.90 +/- 1.25",
     "true_units": "3",
@@ -14091,7 +14091,7 @@
       0,
       6
     ],
-    "description": "The question of what a woman wants animates a central strain of the modern American novel, as do evolving ideas about what women can and cannot have. This course considers female desire-for personal agency and freedom, self- and sexual fulfillment, economic and social opportunity-across a half dozen novels written from about 1880 - 1940, in light of some of the cultural forces that shape and constrain characters' (and real women's) horizons. Authors covered may include Henry James, Edith Wharton, Theodore Dreiser, Anzia Yezierska, Nella Larsen, and Zora Neale Hurston. Not offered 2022-23.",
+    "description": "The question of what a woman wants animates a central strain of the modern American novel, as do evolving ideas about what women can and cannot have. This course considers female desire-for personal agency and freedom, self- and sexual fulfillment, economic and social opportunity-across a half dozen novels written from about 1880 - 1940, in light of some of the cultural forces that shape and constrain characters' (and real women's) horizons. Authors covered may include Henry James, Edith Wharton, Theodore Dreiser, Anzia Yezierska, Nella Larsen, and Zora Neale Hurston.",
     "prerequisites": "",
     "rating": "4.65 +/- 0.56",
     "true_units": "3",
@@ -14116,7 +14116,7 @@
       0,
       6
     ],
-    "description": "The Victorian period introduced a huge array of new possibilities and constraints for women of all classes, as it witnessed rapid urbanization and industrialization, a changing conception of marriage and motherhood, and a new set of professional restrictions but also opportunities. This class focuses on novels by and about women, as it seeks to take the measure of these transformations and of a larger culture's reaction to them. How did women imagine and re-imagine themselves and what they wanted? How did notions of femininity and masculinity change? How do the imaginings of the Victorians resonate now? Authors studied may include Eliot, Gaskell, the Brontes, Oliphant, Braddon, and Scheiner. Not offered 2022-23.",
+    "description": "The Victorian period introduced a huge array of new possibilities and constraints for women of all classes, as it witnessed rapid urbanization and industrialization, a changing conception of marriage and motherhood, and a new set of professional restrictions but also opportunities. This class focuses on novels by and about women, as it seeks to take the measure of these transformations and of a larger culture's reaction to them. How did women imagine and re-imagine themselves and what they wanted? How did notions of femininity and masculinity change? How do the imaginings of the Victorians resonate now? Authors studied may include Eliot, Gaskell, the Brontes, Oliphant, Braddon, and Scheiner.",
     "prerequisites": "",
     "rating": "4.61 +/- 0.69",
     "true_units": "3",
@@ -14141,7 +14141,7 @@
       0,
       6
     ],
-    "description": "This course examines the post-classical era of Hollywood filmmaking with a focus on the late 1960s through the 1970s, a period of significant formal and thematic experimentation. We will study American culture and politics as well as film in this era, as we consider the relation between broader social transformations and the development of new narrative conventions and cinematic techniques. We will pay particular attention to the changing film industry and its influence on this body of work. Films covered may include Bonnie and Clyde , The Graduate , The Godfather , Taxi Driver , and Jaws . Not offered 2022-23.",
+    "description": "This course examines the post-classical era of Hollywood filmmaking with a focus on the late 1960s through the 1970s, a period of significant formal and thematic experimentation. We will study American culture and politics as well as film in this era, as we consider the relation between broader social transformations and the development of new narrative conventions and cinematic techniques. We will pay particular attention to the changing film industry and its influence on this body of work. Films covered may include Bonnie and Clyde , The Graduate , The Godfather , Taxi Driver , and Jaws .",
     "prerequisites": "",
     "rating": "4.94 +/- 0.25",
     "true_units": "3",
@@ -14198,7 +14198,7 @@
       0,
       3
     ],
-    "description": "This course provides guided instruction in academic writing in STEM fields. More specifically, it teaches graduate students about composing texts in scientific English for expert audiences. It helps familiarize writers with academic STEM discourse, and it teaches writers about the style and genres of U.S. academic STEM writing, helping them learn to locate, read, and write about the work of others in their field. From here, students learn to review the literature in their fields and situate their own research goals within that context. Students are encouraged to take ESL/Wr 107 in the first or second year of graduate school. This course is designed for non-native speakers of English, but it covers topics that are relevant to native English speakers. Open to international graduate students only.",
+    "description": "This course aims to provide a strong scientific writing foundation for multilingual or international graduate students through guided instruction in academic STEM writing. More specifically, it teaches graduate students about composing texts in scientific English for various audiences, focusing on issues of clarity, as well as grammar and usage. It helps familiarize writers with the features of clear and effective STEM writing, and it teaches writers about the style and genres of U.S. academic STEM writing, helping them learn to read and write about the work of others in their field. Students are encouraged to take ESL/Wr 107 in the first or second year of graduate school.",
     "prerequisites": "",
     "rating": "4.82 +/- 0.42",
     "true_units": "About Right",
@@ -14656,7 +14656,7 @@
       0,
       6
     ],
-    "description": "Introduction to the dynamics controlling boundary layers and clouds and how they may change with climate, from a phenomenological overview of cloud and boundary layer morphologies to closure theories for turbulence and convection. Topics include similarity theories for boundary layers; mixed-layer models; moist thermodynamics and stability; stratocumulus and trade-cumulus boundary layers; shallow cumulus convection and deep convection. Not offered 2022-23.",
+    "description": "Introduction to the dynamics controlling boundary layers and clouds and how they may change with climate, from a phenomenological overview of cloud and boundary layer morphologies to closure theories for turbulence and convection. Topics include similarity theories for boundary layers; mixed-layer models; moist thermodynamics and stability; stratocumulus and trade-cumulus boundary layers; shallow cumulus convection and deep convection.",
     "prerequisites": "ESE 101 or instructor's permission.",
     "rating": "4.87 +/- 0.43",
     "true_units": "3",
@@ -15363,7 +15363,7 @@
       3
     ],
     "description": "Field mapping and supporting laboratory studies in topical problems related to the geology of the southwestern United States. Course provides a breadth of experience in igneous, metamorphic, or sedimentary rocks or geomorphology. Multiple terms of 121 may be taken more than once for credit if taught by different instructors.",
-    "prerequisites": "Ge 120 or equivalent, or instructor's permission.",
+    "prerequisites": "Ge 120 or equivalent, or instructor's permission. For Ge 121a (Lamb): Ge 125 or instructor approval.",
     "rating": "4.77 +/- 0.47",
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=49&term_id=551&division_id=80426&department_id=182&offering_id=90306&track_id=90306-Default"
@@ -15487,7 +15487,7 @@
       0,
       6
     ],
-    "description": "An overview of the interaction of minerals with electromagnetic radiation from gamma rays to microwaves. Particular emphasis is placed on visible, infrared, Raman, and M\u00f6ssbauer spectroscopies as applied to mineralogical problems such as phase identification, chemical analysis, site populations, and origin of color and pleochroism. Given in alternate years; offered 2022-23.",
+    "description": "An overview of the interaction of minerals with electromagnetic radiation from gamma rays to microwaves. Particular emphasis is placed on visible, infrared, Raman, and M\u00f6ssbauer spectroscopies as applied to mineralogical problems such as phase identification, chemical analysis, site populations, and origin of color and pleochroism.\n Given in alternate years; offered 2024-25.",
     "prerequisites": "Ge 114 a, Ch 21 ab, or instructor's permission.",
     "rating": "4.84 +/- 0.43",
     "true_units": "About Right",
@@ -15512,7 +15512,7 @@
       0,
       4
     ],
-    "description": "The course deals with advanced topics in stable and radiogenic isotope geo-/cosmochemistry and builds on Ge 140 a and b, with emphasis on non-traditional isotope systems (Mg, Fe, Ti, Mo, U, etc.). Starting with close examination of seminal papers, each topic will build up to a discussion of the remaining outstanding questions. Topics to be covered will be guided by class interests. Example subjects could include: the early solar system, nucleosynthetic anomalies, the early Earth, planetary differentiation, paleoredox reconstructions, medical use of stable isotopes. All participants will lead discussions of papers and present a lecture on a relevant subject. Grades will include participation, a review/proposal paper, and oral examination(s).",
+    "description": "The course deals with advanced topics in stable and radiogenic isotope geo-/cosmochemistry and builds on Ge 140 a and b, with emphasis on non-traditional isotope systems (Mg, Fe, Ti, Mo, U, etc.). Starting with close examination of seminal papers, each topic will build up to a discussion of the remaining outstanding questions. Topics to be covered will be guided by class interests. Example subjects could include: the early solar system, nucleosynthetic anomalies, the early Earth, planetary differentiation, paleoredox reconstructions, medical use of stable isotopes. Given sufficient enrollment (~5 or more), course format will follow a \"Role playing paper-reading\" style (https://colinraffel.com/blog/role-playing-seminar.html). Grades will include participation, intellectual contribution to updating the content of the periodic table of stable isotopes, and the writing by the whole class of a scientific review/original paper (with the goal of submitting it for publication).",
     "prerequisites": "Ge 140 a or b, or permission of instructor.",
     "rating": "4.52 +/- 0.58",
     "true_units": "3",
@@ -16222,7 +16222,7 @@
       0,
       6
     ],
-    "description": "For over 2,000 years, epic poetry was the foremost genre of literature. This most prestigious kind of poetry was also unusually competitive and self-referential. Apollonius of Rhodes imitates and alludes to Homer, Virgil imitates and revises Homer and Apollonius, Ovid and Lucan criticize Virgil's political agenda, and Milton transforms the entire epic tradition. We will consider the differing conceptions of heroism in epics such as Homer's Iliad and Odyssey, Apollonius of Rhodes' Argonautica, Virgil's Aeneid, Ovid's Metamorphoses, Lucan's Civil War, and Milton's Paradise Lost.",
+    "description": "This course will analyze the COVID-19 pandemic in the context of other similar events in the history of public health and medicine. How do we understand the COVID pandemic and the differential responses to it around the globe? What is the best framework for proper understanding? Science, history, politics, culture? Special attention will be given to the state of medical science today and in the past, the understanding of ethology, transmission, and symptoms; the role of scientists, physicians, and \"quacks\"; the persistence and change in the forms of fear, superstition, and misinformation across time.",
     "prerequisites": "",
     "rating": "4.69 +/- 0.76",
     "true_units": "3",
@@ -16322,7 +16322,7 @@
       0,
       6
     ],
-    "description": "This course tells the story of the knight from his beginnings in the early Middle Ages, through his zenith in the 11th, 12th, and 13th centuries, to his decline and transformation in the late medieval and early modern periods. The course treats the knight not simply as a military phenomenon but also as a social, political, religious, and cultural figure who personified many of the elements that set the Middle Ages apart. Not offered 2022-23.",
+    "description": "This course tells the story of the knight from his beginnings in the early Middle Ages, through his zenith in the 11th, 12th, and 13th centuries, to his decline and transformation in the late medieval and early modern periods. The course treats the knight not simply as a military phenomenon but also as a social, political, religious, and cultural figure who personified many of the elements that set the Middle Ages apart.",
     "prerequisites": "",
     "rating": "4.47 +/- 0.50",
     "true_units": "4",
@@ -16347,7 +16347,7 @@
       0,
       6
     ],
-    "description": "Humans are in the midst of the sixth mass extinction-the first to be caused by human activity. Extinction has been viewed in changing ways over the past 200 years, and this course takes an interdisciplinary approach to learning about the extinction process from a historical as well as a modern perspective. Our focus will be on the extinction of biological entities, but we will also touch on other systems that have disappeared: languages, technologies, habitats, and ways of living. Central to our endeavors will be asking what it means to live in this time of loss: Should we mourn? And if so, how do we mourn for what many or most of us do not see, but only read about? Finally, we will scrutinize what the practical effects of extinction have been, are, and will be. We will also make at least one visit to a natural history museum to view some extinct species behind the scenes. Not offered 2022-23.",
+    "description": "Humans are in the midst of the sixth mass extinction-the first to be caused by human activity. Extinction has been viewed in changing ways over the past 200 years, and this course takes an interdisciplinary approach to learning about the extinction process from a historical as well as a modern perspective. Our focus will be on the extinction of biological entities, but we will also touch on other systems that have disappeared: languages, technologies, habitats, and ways of living. Central to our endeavors will be asking what it means to live in this time of loss: Should we mourn? And if so, how do we mourn for what many or most of us do not see, but only read about? Finally, we will scrutinize what the practical effects of extinction have been, are, and will be. We will also make at least one visit to a natural history museum to view some extinct species behind the scenes.",
     "prerequisites": "",
     "rating": "4.94 +/- 0.24",
     "true_units": "3",
@@ -16372,7 +16372,7 @@
       0,
       6
     ],
-    "description": "The Russian intelligentsia registered the arrival of modern urban society with a highly articulate sensitivity, perhaps because these changes-industrialization, the breakdown of traditional hierarchies and social bonds, the questioning of traditional beliefs-came to Russia so suddenly. This gives their writings a paradigmatic quality; the modern dilemmas that still haunt us are made so eloquently explicit in them that they have served as models for succeeding generations of writers and social critics. This course explores these writings (in English translation) against the background of Russian society, focusing especially on particular works of Chekhov, Dostoevsky, Goncharov, Tolstoy, and Turgenev. Not offered 2022-23.",
+    "description": "The Russian intelligentsia registered the arrival of modern urban society with a highly articulate sensitivity, perhaps because these changes-industrialization, the breakdown of traditional hierarchies and social bonds, the questioning of traditional beliefs-came to Russia so suddenly. This gives their writings a paradigmatic quality; the modern dilemmas that still haunt us are made so eloquently explicit in them that they have served as models for succeeding generations of writers and social critics. This course explores these writings (in English translation) against the background of Russian society, focusing especially on particular works of Chekhov, Dostoevsky, Goncharov, Tolstoy, and Turgenev.\n Not offered 2024-25.",
     "prerequisites": "",
     "rating": "4.90 +/- 0.32",
     "true_units": "3",
@@ -16397,7 +16397,7 @@
       0,
       6
     ],
-    "description": "An exploration of the most significant scientific developments in the physical sciences, structured around the life and work of Albert Einstein (1879-1955), with particular emphasis on the new theories of radiation, the structure of matter, relativity, and quantum mechanics. While using original Einstein manuscripts, notebooks, scientific papers, and personal correspondence, we shall also study how experimental and theoretical work in the sciences was carried out; scientific education and career patterns; personal, political, cultural, and sociological dimensions of science. Not offered 2022-23.",
+    "description": "Structured around the life and work of Albert Einstein (1879-1955), the course will focus on the 1930s and 1940s, including the discovery of nuclear fission and the making of the atom bomb. Colleagues of Einstein, such as Max Born, Hans Bethe, Enrico Fermi, Lise Meitner, Erwin Schrodinger, and untold numbers of students, scientists, and engineers were forced out of their universities and laboratories by the rise of Fascism in Europe and sought shelter in the United States and elsewhere. Many contributed to the Allied World War II effort. Einstein himself became a facilitator for immigrant scientists, intellectuals, and artists seeking refuge. We shall use historical documents from the Einstein Archives to understand the complex collective and individual experiences and their impact on developments in science and technology during this turbulent historical period.",
     "prerequisites": "",
     "rating": "4.71 +/- 0.58",
     "true_units": "2",
@@ -16472,7 +16472,7 @@
       0,
       6
     ],
-    "description": "Philosophical and conceptual issues arising from the study of probability theory and how it relates to rationality and belief. Topics discussed may include the foundations and interpretations of probability, arguments for and against the view that we ought to have personal degrees of belief, rational change in beliefs over time, and the relationship between probability and traditional epistemological topics like evidence, justification, and knowledge. Not offered 2022-23.",
+    "description": "Philosophical and conceptual issues arising from the study of probability theory and how it relates to rationality and belief. Topics discussed may include the foundations and interpretations of probability, arguments for and against the view that we ought to have personal degrees of belief, rational change in beliefs over time, and the relationship between probability and traditional epistemological topics like evidence, justification, and knowledge.",
     "prerequisites": "",
     "rating": "4.26 +/- 0.62",
     "true_units": "3",
@@ -16814,7 +16814,7 @@
       0,
       6
     ],
-    "description": "The first two terms feature an extensive grammar review and group activities that promote self- expression. Op-Ed articles and a series of literary texts provide a basis for classroom discussion and vocabulary expansion. Several short-written compositions are required. The third term is designed to further develop an active command of the language. A variety of 19th- and 20th-century short stories are discussed in class to improve comprehension and oral proficiency. Students are expected to do an oral presentation, to write four short compositions, and a final paper.",
+    "description": "The first two terms feature an extensive grammar review and group activities that promote self- expression. Op-Ed articles and a series of literary texts provide a basis for classroom discussion and vocabulary expansion. Several short-written compositions are required. The third term is designed to further develop an active command of the language. A variety of 19th- and 20th-century short stories are discussed in class to improve comprehension and oral proficiency. Students are expected to do an oral presentation, to write three short compositions, and a final paper.",
     "prerequisites": "L 102 abc or equivalent.",
     "rating": "4.82 +/- 0.38",
     "true_units": "4",
@@ -16846,8 +16846,8 @@
       0,
       5
     ],
-    "description": "Emphasis on oral-aural skills, and understanding of basic grammar. Immediate introduction of the native script-hiragana, katakana-and gradual introduction to 300 to 500 characters.",
-    "prerequisites": "Section a is required for sections b and c.",
+    "description": "The goal of Elementary Japanese is to develop the ability to communicate in Japanese and to enable you to attain an elementary level of language proficiency in Japanese. You will have learned the Japanese writing systems, hiragana, katakana and kanji. Students who studied Japanese prior to this course must consult with the instructor before registering.",
+    "prerequisites": "L106a is required for L106b and L106b is required for L106c.",
     "rating": "5.00 +/- 0.00",
     "true_units": "Somewhat Low",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=139&offering_id=90856&track_id=90856-Section 1"
@@ -17910,7 +17910,7 @@
       0,
       6
     ],
-    "description": "Introduction to groups, rings, fields, and modules. The first term is devoted to groups and includes treatments of semidirect products and Sylow's theorem. The second term discusses rings and modules and includes a proof that principal ideal domains have unique factorization and the classification of finitely generated modules over principal ideal domains. The third term covers field theory and Galois theory, plus some special topics if time permits.",
+    "description": "Introduction to groups, rings, fields, and modules. The first term is devoted to groups and includes treatments of semidirect products and Sylow's theorem. The second term discusses rings and modules and includes a proof that principal ideal domains have unique factorization and the classification of finitely generated modules over principal ideal domains. The third term covers field theory, Galois theory, and an introduction to character theory for finite groups.",
     "prerequisites": "",
     "rating": "3.53 +/- 1.39",
     "true_units": "Somewhat High",
@@ -18406,7 +18406,7 @@
       6
     ],
     "description": "First term: aspects of point set topology, and an introduction to geometric and algebraic methods in topology. Second term: the differential geometry of curves and surfaces in two- and three-dimensional Euclidean space. Third term: an introduction to differentiable manifolds. Transversality, differential forms, and further related topics.",
-    "prerequisites": "Ma 2 or equivalent, and Ma 108 must be taken previously or concurrently.",
+    "prerequisites": "Ma 2 or equivalent. We recommend Ma 5 a and Ma 108 a be taken previously or concurrently.",
     "rating": "3.85 +/- 1.34",
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=142&offering_id=90865&track_id=90865-Default"
@@ -18455,7 +18455,7 @@
       0,
       6
     ],
-    "description": "This course will discuss advanced topics in analysis, which vary from year to year. Topics from previous years include potential theory, bounded analytic functions in the unit disk, probabilistic and combinatorial methods in analysis, operator theory, C*-algebras, functional analysis. The third term will cover special functions: gamma functions, hypergeometric functions, beta/Selberg integrals and $q$-analogues. Time permitting: orthogonal polynomials, Painleve transcendents and/or elliptic analogues. Part a (first term) and part b (second term) will not be offered 2022-23.",
+    "description": "This course will discuss advanced topics in analysis, which vary from year to year. Topics from previous years include potential theory, bounded analytic functions in the unit disk, probabilistic and combinatorial methods in analysis, operator theory, C*-algebras, functional analysis. The third term will cover special functions: gamma functions, hypergeometric functions, beta/Selberg integrals and $q$-analogues. Time permitting: orthogonal polynomials, Painleve transcendents and/or elliptic analogues.\n Part a and part b not offered 2024-25.",
     "prerequisites": "Ma 110 or instructor's permission.",
     "rating": "0.00 +/- 0.00",
     "true_units": "About Right",
@@ -18505,7 +18505,7 @@
       0,
       6
     ],
-    "description": "The ubiquitous elliptic curves will be analyzed from elementary, geometric, and arithmetic points of view. Possible topics are the group structure via the chord-and-tangent method, the Nagel-Lutz procedure for finding division points, Mordell's theorem on the finite generation of rational points, points over finite fields through a special case treated by Gauss, Lenstra's factoring algorithm, integral points. Other topics may include diophantine approximation and complex multiplication. Not offered 2022-23.",
+    "description": "The ubiquitous elliptic curves will be analyzed from elementary, geometric, and arithmetic points of view. Possible topics are the group structure via the chord-and-tangent method, the Nagel-Lutz procedure for finding division points, Mordell's theorem on the finite generation of rational points, points over finite fields through a special case treated by Gauss, Lenstra's factoring algorithm, integral points. Other topics may include diophantine approximation and complex multiplication.",
     "prerequisites": "Ma 5 or equivalent.",
     "rating": "",
     "true_units": "",
@@ -18555,7 +18555,7 @@
       0,
       6
     ],
-    "description": "This course will cover advanced topics in algebraic geometry that will vary from year to year. Topics will be listed on the math option website prior to the start of classes. Previous topics have included geometric invariant theory, moduli of curves, logarithmic geometry, Hodge theory, and toric varieties. This course can be repeated for credit. Not offered 2022-23.",
+    "description": "This course will cover advanced topics in algebraic geometry that will vary from year to year. Topics will be listed on the math option website prior to the start of classes. Previous topics have included geometric invariant theory, moduli of curves, logarithmic geometry, Hodge theory, and toric varieties. This course can be repeated for credit.\n Part a and part b not offered 2024-25.",
     "prerequisites": "Ma 130 or instructor's permission.",
     "rating": "4.94 +/- 0.23",
     "true_units": "3",
@@ -18580,7 +18580,7 @@
       0,
       6
     ],
-    "description": "Part a: Homology Theory. Homology and calculation of homology groups, exact sequences, cohomology rings, Poincar\u00e9 duality. Part b: Homotopy Theory and K-theory. Fibrations, higher homotopy groups, and exact sequences of fibrations. Fiber bundles, Eilenberg-MacLane spaces, classifying spaces. K-theory, generalized cohomology theory, Bott periodicity. Part c: Characteristic classes. Stiefel-Whitney classes, Chern classes, Pontryagin classes, cobordism theory, Chern-Weil theory.",
+    "description": "Part a: Homology Theory. CW complexes, homology and calculation of homology groups, exact sequences, cohomology rings, Poincare duality. Part b: Homotopy Theory and K-theory. Fibrations, higher homotopy groups, and exact sequences of fibrations. Fiber bundles, Eilenberg-MacLane spaces, classifying spaces. K-theory, generalized cohomology theory, Bott periodicity. Part c: Basic Riemannian geometry: geometry of Riemannian manifolds, connections, curvature, Bianchi identities, completeness, geodesics, exponential map, Gauss's lemma, Jacobi fields, comparison theorems, relation between curvature and topology.",
     "prerequisites": "Ma 109 abc or equivalent.",
     "rating": "4.99 +/- 0.12",
     "true_units": "Somewhat High",
@@ -18605,7 +18605,7 @@
       0,
       6
     ],
-    "description": "Part a: basic Riemannian geometry: geometry of Riemannian manifolds, connections, curvature, Bianchi identities, completeness, geodesics, exponential map, Gauss's lemma, Jacobi fields, Lie groups, principal bundles, and characteristic classes. Part b: basic topics may vary from year to year and may include elements of Morse theory and the calculus of variations, locally symmetric spaces, special geometry, comparison theorems, relation between curvature and topology, metric functionals and flows, geometry in low dimensions. Part c not offered 2022-23.",
+    "description": "Part a: Characteristic classes. Stiefel--Whitney classes, Chern classes, Pontryagin classes, cobordism theory, Chern--Weil theory. Part b and c: Basic topics may vary from year to year and may include elements of Morse theory and the calculus of variations, locally symmetric spaces, special geometry, comparison theorems, relation between curvature and topology, metric functionals and flows, geometry in low dimensions.",
     "prerequisites": "Ma 151 or equivalent, or instructor's permission.",
     "rating": "4.56 +/- 0.55",
     "true_units": "3",
@@ -18630,7 +18630,7 @@
       0,
       6
     ],
-    "description": "In this course, the basic structures and results of algebraic number theory will be systematically introduced. Topics covered will include the theory of ideals/divisors in Dedekind domains, Dirichlet unit theorem and the class group, p-adic fields, ramification, Abelian extensions of local and global fields. Part c not offered 2022-23.",
+    "description": "In this course, the basic structures and results of algebraic number theory will be systematically introduced. Topics covered will include the theory of ideals/divisors in Dedekind domains, Dirichlet unit theorem and the class group, p-adic fields, ramification, Abelian extensions of local and global fields.",
     "prerequisites": "Ma 5.",
     "rating": "3.83 +/- 1.38",
     "true_units": "4",
@@ -19170,7 +19170,7 @@
       9,
       0
     ],
-    "description": "Experimental research supervised by an engineering faculty member. The topic selection is determined by the adviser and the student and is subject to approval by the Mechanical Engineering Undergraduate Committee. First and second terms: midterm progress report and oral presentation during finals week. Third term: completion of thesis and final presentation. The second and third terms may be used to fulfill laboratory credit for EAS. Not offered on a pass/fail basis.",
+    "description": "Students complete a senior thesis that includes a major design experience (as required for the ME degree).  The major design experience builds on the knowledge and skills acquired in earlier coursework and incorporates appropriate engineering design standards and multiple design constraints. The thesis is supervised by an engineering faculty member. The topic selection is determined by the adviser and the student and is subject to approval by the Mechanical Engineering Undergraduate Committee. First and second terms: midterm progress report and oral presentation during finals week. Third term: completion of thesis and final presentation. Not offered on pass/fail basis.",
     "prerequisites": "senior status; instructor's permission.",
     "rating": "",
     "true_units": "",
@@ -19195,7 +19195,7 @@
       0,
       0
     ],
-    "description": "Undergraduate research supervised by an engineering faculty member. The topic selection is determined by the adviser and the student and is subject to approval by the Mechanical Engineering Undergraduate Committee. First and second terms: midterm progress report and oral presentation during finals week. Third term: completion of thesis and final presentation. Not offered on a pass/fail basis.",
+    "description": "Students complete a senior thesis involving research in mechanical engineering; the thesis is supervised by an engineering faculty member. The topic selection is determined by the adviser and the student and is subject to approval by the Mechanical Engineering Undergraduate Committee. First and second terms: midterm progress report and oral presentation during finals week. Third term: completion of thesis and final presentation. Not offered on a pass/fail basis.",
     "prerequisites": "senior status; instructor's permission.",
     "rating": "",
     "true_units": "",
@@ -19445,7 +19445,7 @@
       0,
       6
     ],
-    "description": "Transport properties, conservation equations, conduction heat transfer, convective heat and mass transport in laminar and turbulent flows, phase change processes, thermal radiation. Not offered 2022-23.",
+    "description": "Transport properties, conservation equations, conduction heat transfer, convective heat and mass transport in laminar and turbulent flows, phase change processes, thermal radiation.",
     "prerequisites": "ME 11 abc, ME 12 abc, ACM 95/100 (may be taken concurrently).",
     "rating": "4.67 +/- 0.56",
     "true_units": "3",
@@ -20089,7 +20089,7 @@
       0,
       6
     ],
-    "description": "More advanced concepts of music theory, including chromatic harmony, and 20th-century procedures relating to selected popular music styles; ear training, continued. Not offered 2022-23.",
+    "description": "More advanced concepts of music theory, including chromatic harmony, and 20th-century procedures relating to selected popular music styles; ear training, continued.",
     "prerequisites": "Mu 58 or entrance exam.",
     "rating": "5.00 +/- 0.00",
     "true_units": "3",
@@ -20574,7 +20574,7 @@
       0,
       1
     ],
-    "description": "Across three terms students explore/write and perform new narratives for the ever-changing 21st century global landscape. 41 a includes finding your stories. Moth to the Flame 41 b builds complex social/scientific narratives, and practices citizen science and democracy in open forums. 41 c concludes with long-form storytelling.  All final classes culminate in original stories recorded in front of a live audience. May be repeated for credit.",
+    "description": "Across three terms students explore/write and perform new narratives for the ever-changing 21st century global landscape. 41 a includes finding your stories. Moth to the Flame 41 b builds complex social/scientific narratives, and practices citizen science and democracy in open forums. 41 c concludes with long-form storytelling. All final classes culminate in original stories recorded in front of a live audience. May be repeated for credit.",
     "prerequisites": "",
     "rating": "5.00 +/- 0.00",
     "true_units": "3",
@@ -20906,7 +20906,7 @@
       0,
       0
     ],
-    "description": "",
+    "description": "Pilates is a body conditioning technique designed to stretch, strengthen and balance the body.  Pilates targets the deep postural muscles within the body through a series of exercises aimed at building muscle strength and rebalancing the body.  Students will focus on developing core strength, joint flexibility and body awareness by engaging in a variety of exercises that integrate the principles of Pilates (concentration, control, center, flow, precision and breathing).  This class will utilize class instruction, assignments and student participation to enable students to: 1. Acquire knowledge of the basic health related components of physical fitness and the different dimension of wellness. 2. Develop the skill related components of fitness, and 3. Understand and practice the behaviors that contribute to  a healthy lifestyle.",
     "prerequisites": "",
     "rating": "",
     "true_units": "",
@@ -21206,7 +21206,7 @@
       0,
       0
     ],
-    "description": "",
+    "description": "Intercollegiate Track and Field Teams for units.",
     "prerequisites": "",
     "rating": "",
     "true_units": "",
@@ -21231,7 +21231,7 @@
       0,
       0
     ],
-    "description": "",
+    "description": "Intercollegiate Water Polo Teams for units.",
     "prerequisites": "",
     "rating": "",
     "true_units": "",
@@ -21256,7 +21256,7 @@
       0,
       0
     ],
-    "description": "",
+    "description": "Intercollegiate Baseball Team for units.",
     "prerequisites": "",
     "rating": "",
     "true_units": "",
@@ -21281,7 +21281,7 @@
       0,
       0
     ],
-    "description": "",
+    "description": "Intercollegiate Tennis Teams for units.",
     "prerequisites": "",
     "rating": "",
     "true_units": "",
@@ -21647,7 +21647,7 @@
       0,
       0
     ],
-    "description": "Open only to senior physics majors. Experimental research must be supervised by a faculty member, the student's thesis adviser. Two 15-minute presentations to the Physics Undergraduate Committee are required, one near the end of the first term and one near the end of third term. The written thesis must be completed and distributed to the committee one week before the second presentation. Students wishing assistance in finding an adviser and/or a topic for a senior thesis are invited to consult with the chair of the Physics Undergraduate Committee, or any other member of this committee. A grade will not be assigned in Ph 78 untli the end of the third term. P grades will be given the first two terms, and then changed at the end of the course to the appropriate letter grade. Not offered on a pass/fail basis.",
+    "description": "Open only to senior physics majors. Experimental research must be supervised by a faculty member, the student's thesis adviser. Two 15-minute presentations to the Physics Undergraduate Committee are required, one near the end of the first term and one near the end of third term. The written thesis must be completed and distributed to the committee one week before the second presentation. Students wishing assistance in finding an adviser and/or a topic for a senior thesis are invited to consult with the chair of the Physics Undergraduate Committee, or any other member of this committee. A grade will not be assigned in Ph 78 until the end of the third term. P grades will be given the first two terms, and then changed at the end of the course to the appropriate letter grade. Not offered on a pass/fail basis.",
     "prerequisites": "To register for this course, the student must obtain approval of the chair of the Physics Undergraduate Committee (Ken Libbrecht).",
     "rating": "",
     "true_units": "",
@@ -21697,7 +21697,7 @@
       0,
       5
     ],
-    "description": "An intermediate course in the application of basic principles of classical physics to a wide variety of subjects. Ph 106 a will be devoted to mechanics, including Lagrangian and Hamiltonian formulations of mechanics, small oscillations and normal modes, central forces, and rigid-body motion. Ph 106 b will be devoted to fundamentals of electrostatics, magnetostatics, and electrodynamics, including boundary-value problems, multipole expansions, electromagnetic waves, and radiation. It will also cover special relativity. Ph 106 c will cover advanced topics in electromagnetism and an introduction to classical optics.",
+    "description": "An intermediate course in the application of basic principles of classical physics to a wide variety of subjects. Ph 106 a will be devoted to mechanics, including Lagrangian and Hamiltonian formulations of mechanics, small oscillations and normal modes, central forces, and rigid-body motion. Ph 106 b will be devoted to fundamentals of electrostatics and magnetostatics, including boundary-value problems, multipole expansions, and electrostatics and magnetostatics in matter. Ph106 c will cover electrodynamics, including conservation laws, potential theory, electromagnetic waves, and radiation as well as the relationship between special relativity and electrodynamics.",
     "prerequisites": "Ph 2 ab or Ph 12 abc, Ma 2.",
     "rating": "4.62 +/- 0.68",
     "true_units": "Somewhat High",
@@ -21722,8 +21722,8 @@
       0,
       6
     ],
-    "description": "This will be a hands-on course in which students learn how to write a long essay or a book explaining complex scientific research. The course will focus on learning to write clearly and compellingly, to rewrite and edit, and, especially, to find one's own writing voice. In the first part of the course, students will read, analyze, and critique published works, including some early drafts of well-known books. Together, we will study different writing styles; how chapters, articles, and books are structured; and basic narrative techniques and their execution. In the second part of the course students will select a cutting-edge scientific research topic to write about and produce a book chapter on that topic. Students' works-in-progress will be analyzed each week in class. The finished chapters will be included in a manuscript for a book one might call The Caltech Student's Guide to the Most Awesome Cutting Edge Science. Limited enrollment. Not offered 2013-14.",
-    "prerequisites": "",
+    "description": "An introduction and overview of classical and laser optics. We will develop tools and concepts to understand the behavior of light, such as ray transfer matrix analysis, wave optics, diffraction, coherence, interference, and polarization. These tools will then be used to understand the action of optical elements, imaging, resonators, waveguides, fiber optics, Gaussian beams, interferometers, and other techniques and concepts commonly encountered in research settings.",
+    "prerequisites": "Ph 2 ab or Ph 12 ab.",
     "rating": "4.40 +/- 0.79",
     "true_units": "3",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=14&term_id=440&division_id=80425&department_id=126&offering_id=61963&track_id=61963-Default"
@@ -21747,7 +21747,7 @@
       6,
       0
     ],
-    "description": "Many of the recent advances in physics are attributed to progress in computational power. In the advanced computational lab, students will hone their computational skills by working through projects inspired by junior level classes (such as classical mechanics and E, statistical mechanics, quantum mechanics and quantum many-body physics). This course will primarily be in Python and Mathematica. This course is offered pass/fail. Part a not offered 2022-23.",
+    "description": "Many of the recent advances in physics are attributed to progress in computational power. In the advanced computational lab, students will hone their computational skills by working through projects inspired by junior level classes (such as classical mechanics and E, statistical mechanics, quantum mechanics and quantum many-body physics). This course will primarily be in Python and Mathematica. This course is offered pass/fail.",
     "prerequisites": "",
     "rating": "5.00 +/- 0.00",
     "true_units": "Somewhat High",
@@ -21797,7 +21797,7 @@
       0,
       6
     ],
-    "description": "Applications of classical physics to topics of interest in contemporary \"macroscopic'' physics. Continuum physics and classical field theory; elasticity and hydrodynamics; plasma physics; magnetohydrodynamics; thermodynamics and statistical mechanics; gravitation theory, including general relativity and cosmology; modern optics. Content will vary from year to year, depending on the instructor. An attempt will be made to organize the material so that the terms may be taken independently. Ph 136 a will focus on thermodynamics, statistical mechanics, random processes, and optics. Ph 136 b will focus on fluid dynamics, MHD, turbulence, and plasma physics. Ph 136 c will cover an introduction to general relativity. Given in alternate years.",
+    "description": "Applications of classical physics to topics of interest in contemporary \"macroscopic\" physics. Continuum physics and classical field theory; elasticity and hydrodynamics; plasma physics; magnetohydrodynamics; thermodynamics and statistical mechanics; gravitation theory, including general relativity and cosmology; modern optics. Content will vary from year to year, depending on the instructor. An attempt will be made to organize the material so that the terms may be taken independently. Ph 136 a will focus on thermodynamics, statistical mechanics, random processes, and optics. Ph 136 b will focus on fluid dynamics, MHD, turbulence, and plasma physics. Ph 136 c will cover an introduction to general relativity. Given in alternate years.",
     "prerequisites": "Ph 106 ab or equivalent.",
     "rating": "4.43 +/- 0.91",
     "true_units": "About Right",
@@ -22221,7 +22221,7 @@
       0,
       0
     ],
-    "description": "Occasionally, advanced work involving reading, special problems, or independent study is carried out under the supervision of an instructor. Approval of the instructor and of the student's departmental adviser must be obtained before registering. The instructor will complete a student evaluation at the end of the term. Graded pass/fail.",
+    "description": "Occasionally, advanced work involving reading, special problems, or independent study is carried out under the supervision of an instructor. Approval of the instructor and of the student's departmental adviser must be obtained before registering. Graded pass/fail.",
     "prerequisites": "",
     "rating": "",
     "true_units": "",
@@ -22659,7 +22659,7 @@
       0,
       0
     ],
-    "description": "Undergraduate students registering for 6 or more units of Ph 172 must provide a brief written summary of their work, not to exceed 3 pages, to the option rep at the end of the term. Approval of the student's research supervisor and departmental adviser must be obtained before registering. Graded pass/fail.",
+    "description": "Undergraduate students registering for 6 or more units of Ph 172 must provide a brief written summary of their work to the option rep at the end of the term. Approval of the student's research supervisor and departmental adviser must be obtained before registering. Graded pass/fail.",
     "prerequisites": "",
     "rating": "",
     "true_units": "",
@@ -22734,7 +22734,7 @@
       0,
       6
     ],
-    "description": "Topics: the Dirac equation, second quantization, quantum electrodynamics, scattering theory, Feynman diagrams, non-Abelian gauge theories, Higgs symmetry-breaking, the Weinberg-Salam model, and renormalization.",
+    "description": "Topics: the Dirac equation, second quantization, quantum electrodynamics, scattering theory, Feynman diagrams, non-Abelian gauge theories, Higgs symmetry-breaking, anomalies, the Weinberg-Salam model, and renormalization.",
     "prerequisites": "Ph 125.",
     "rating": "4.36 +/- 0.86",
     "true_units": "Somewhat High",
@@ -22759,7 +22759,7 @@
       0,
       6
     ],
-    "description": "Advanced topics in geometry and topology that are widely used in modern theoretical physics. Emphasis will be on understanding and applications more than on rigor and proofs. First term will cover basic concepts in topology and manifold theory. Second term will include Riemannian geometry, fiber bundles, characteristic classes, and index theorems. Third term will include anomalies in gauge-field theories and the theory of Riemann surfaces, with emphasis on applications to string theory. Part c will not be offered in 2022-23.",
+    "description": "Advanced topics in geometry and topology that are widely used in modern theoretical physics. Emphasis will be on understanding and applications more than on rigor and proofs. First term will cover basic concepts in topology and manifold theory. Second term will include Riemannian geometry, fiber bundles, characteristic classes, and index theorems. Third term will include anomalies in gauge-field theories and the theory of Riemann surfaces, with emphasis on applications to string theory.\n Part c not offered 2024-25.",
     "prerequisites": "Ph 129 abc or equivalent.",
     "rating": "4.77 +/- 0.49",
     "true_units": "About Right",
@@ -22784,8 +22784,8 @@
       0,
       6
     ],
-    "description": "An introduction to ele-mentary particle physics, stressing experimental phenomena and their theoretical interpretations. The standard model and its confrontation with experiment will be covered. Current notions for particle physics beyond the standard model will be explored, along with possible experimental signatures. Experimental techniques will also be discussed, including an introduction to accelerator physics. Not offered 2013-14.",
-    "prerequisites": "Ph 125 or equivalent.",
+    "description": "The course covers rigorous results in classical and quantum statistical mechanics of lattice systems. Winter quarter: basic lattice models, existence of the thermodynamic limit, phase transitions at positive temperature, Hohenberg-Mermin-Wagner and Goldstone theorems. Spring quarter: C*-algebraic approach to statistical mechanics, locality and dynamics in quantum systems (Lieb-Robinson bounds), topological invariants of gapped quantum systems at zero temperature, Symmetry Protected Topological Phases.",
+    "prerequisites": "Ph 127 or equivalent.",
     "rating": "",
     "true_units": "",
     "link": ""
@@ -22809,7 +22809,7 @@
       0,
       6
     ],
-    "description": "This year, we offer a lighter version of the course. It will cover a condensed version of the world-sheet formulation, then basic elements of the target space physics, after which we will discuss interesting phenomena/applications, such as T-duality, D-branes, anomalies, building semi-realistic models of particle physics from string compactifications, etc. Not offered 2022-23.",
+    "description": "Ph 250 a will cover the worldsheet formulation of string theory, including conformal field theory, supersymmetry, the emergence of gravity, scattering amplitudes, T-duality, and D-branes. We will also discuss how to build semi-realistic models of elementary particle physics from string theory. Ph 250 b will cover advanced topics such as non-perturbative dualities, Calabi-Yau geometry and mirror symmetry, black holes, the holographic principle and its relation to quantum information theory, and constraints on gravitational theories.",
     "prerequisites": "Ph 205 or equivalent.",
     "rating": "4.84 +/- 0.36",
     "true_units": "3",
@@ -23486,7 +23486,7 @@
       0,
       2
     ],
-    "description": "This class provides the opportunity for students to gain experience in academic technical writing in engineering and applied science. Students will choose a technical topic of interest, possibly based on a previous research or course project, and write a paper in an academic genre on that topic. Appropriate genres include the engineering report, review paper, or a peer-reviewed journal paper. Students will receive instruction in academic discourse in engineering and applied sciences as well as substantial feedback on their work-in-progress. This course is recommended for students who plan to attend graduate school or who wish to work toward a senior thesis or academic publication. Fulfills the Institute scientific writing requirement. Enrollment is limited to students in E&AS options and priority is given to seniors. Other students may join the wait list and will be added to the class as space permits.",
+    "description": "This class provides the opportunity for students to gain experience in academic technical writing in engineering and applied science. Students will choose a technical topic of interest, possibly based on a previous research or course project, and write a paper in an academic genre on that topic. Appropriate genres include the engineering report, review paper, or a peer-reviewed journal paper. Students will receive instruction in academic discourse in engineering and applied sciences as well as substantial feedback on their work-in-progress. This course is recommended for students who plan to attend graduate school or who wish to work toward a senior thesis or academic publication. Fulfills the Institute scientific writing requirement. For Winter and Spring terms, seniors will be given priority; however this class is open to all students in EAS and GPS, and to students in other divisions as space allows.",
     "prerequisites": "",
     "rating": "4.37 +/- 0.66",
     "true_units": "About Right",
@@ -23511,7 +23511,7 @@
       0,
       2
     ],
-    "description": "This class introduces students to common workplace genres of writing in professional (non-academic) fields in engineering and the applied sciences. Students will study and practice effective writing strategies within these genres and consider the varied audiences and goals of communicating in engineering and applied science industries. Genres covered may include job applications; performance reviews and recommendation letters; clean code and code documentation; technical reports; progress reports; proposals; or recommendation reports. This course is recommended for students who plan to seek jobs in industry. Fulfills the Institute scientific writing requirement. Enrollment is limited to students in E&AS options and priority is given to seniors. Other students may join the wait list and will be added to the class as space permits.",
+    "description": "This class introduces students to common workplace genres of writing in professional (non-academic) fields in engineering and the applied sciences. Students will study and practice effective writing strategies within these genres and consider the varied audiences and goals of communicating in engineering and applied science industries. Genres covered may include job applications; performance reviews and recommendation letters; clean code and code documentation; technical reports; progress reports; proposals; or recommendation reports. This course is recommended for students who plan to seek jobs in industry. Fulfills the Institute scientific writing requirement. For Winter and Spring terms, seniors will be given priority; however this class is open to all students in EAS and GPS, and to students in other divisions as space allows.",
     "prerequisites": "",
     "rating": "4.91 +/- 0.33",
     "true_units": "About Right",
@@ -23536,7 +23536,7 @@
       0,
       2
     ],
-    "description": "Engineers and applied scientists often work on highly technical, specialized projects. However, their work is often of interest to readers with varied areas and levels of technical expertise, including investors, community stakeholders, government regulators, consumers, voters, students, and enthusiasts. This course introduces students to diverse types of writing about technical engineering and applied science topics intended for these \"non-specialist\" readers who lack some or all of the technical knowledge the author has. Students will compose multiple texts written for different purposes and to different types of audiences outside of their area of expertise. This course is recommended for students who may plan entrepreneurial, non-profit, or government careers, where communication to non-specialists is crucial to success. It may also interest students who enjoy public advocacy or creative writing about technical topics. Fulfills the Institute scientific writing requirement. Enrollment is limited to students in E&AS options and priority is given to seniors. Other students may join the wait list and will be added to the class as space permits.",
+    "description": "Engineers and applied scientists often work on highly technical, specialized projects. However, their work is often of interest to readers with varied areas and levels of technical expertise, including investors, community stakeholders, government regulators, consumers, voters, students, and enthusiasts. This course introduces students to diverse types of writing about technical engineering and applied science topics intended for these \"non-specialist\" readers who lack some or all of the technical knowledge the author has. Students will compose multiple texts written for different purposes and to different types of audiences outside of their area of expertise. This course is recommended for students who may plan entrepreneurial, non-profit, or government careers, where communication to non-specialists is crucial to success. It may also interest students who enjoy public advocacy or creative writing about technical topics. Fulfills the Institute scientific writing requirement. For Winter and Spring terms, seniors will be given priority; however this class is open to all students in EAS and GPS, and to students in other divisions as space allows.",
     "prerequisites": "",
     "rating": "4.55 +/- 0.56",
     "true_units": "About Right",
@@ -23561,7 +23561,7 @@
       0,
       6
     ],
-    "description": "This course covers the fundamentals of utility theory, game theory, and social choice theory. These basic theories are developed and illustrated with applications to electoral politics, market trading, bargaining, auctions, mechanism design and implementation, legislative and parliamentary voting and organization, public economics, industrial organization, and other topics in economics and political science. Open to Social Science graduate students only.",
+    "description": "This course covers the fundamentals of utility theory, game theory, and social choice theory, as well as some topics in experimental and behavioral economics. These basic theories are developed and illustrated with applications to electoral politics, market trading, bargaining, auctions, mechanism design and implementation, legislative and parliamentary voting and organization, public economics, industrial organization, and other topics in economics and political science. Open to Social Science graduate students only.\n Part a and b not offered 2024-25.",
     "prerequisites": "",
     "rating": "4.98 +/- 0.13",
     "true_units": "About Right",
@@ -23711,7 +23711,7 @@
       0,
       6
     ],
-    "description": "The courses in this sequence cover advanced methods and tools in econometrics, as well as their applications to a variety of topics in economics, including industrial organization, dynamic choice, information economics, political economy, market design, and behavioral economics. Offered first and third terms.",
+    "description": "The courses in this sequence cover advanced methods and tools in econometrics, as well as their applications to a variety of topics in economics, including industrial organization, dynamic choice, information economics, political economy, market design, and behavioral economics.\n Part a and b not offered 2024-25.",
     "prerequisites": "SS 222 abc; may be repeated for credit.",
     "rating": "5.00 +/- 0.00",
     "true_units": "About Right",
@@ -23761,7 +23761,7 @@
       0,
       6
     ],
-    "description": "Course covers methods used in contemporary applied empirical work in a variety of social sciences. Topics covered include (a) maximum likelihood, Bayesian estimation, management and computation of large datasets, (b) reduced form methods like instrumental variables (IV), difference-in-differences (DID), natural experiments, event study and panel data methods, and (c) structural estimation. Emphasis is on the application of tools to substantive social science problems rather than statistical theory, in areas including political science, political economy, corporate finance, and accounting. Application focus will vary with instructor interests. Not offered 2022-23.",
+    "description": "Course covers methods used in contemporary applied empirical work in a variety of social sciences. Topics covered include (a) maximum likelihood, Bayesian estimation, management and computation of large datasets, (b) reduced form methods like instrumental variables (IV), difference-in-differences (DID), natural experiments, event study and panel data methods, and (c) structural estimation. Emphasis is on the application of tools to substantive social science problems rather than statistical theory, in areas including political science, political economy, corporate finance, and accounting. Application focus will vary with instructor interests.\n Part a and b not offered 2024-25.",
     "prerequisites": "",
     "rating": "",
     "true_units": "",
@@ -24140,7 +24140,7 @@
       0,
       6
     ],
-    "description": "",
+    "description": "How can art help visualize a post-carbon future? This class will look at environmental art projects over the past 50 years, from the birth of ecofeminism and anti-nuclear movements to today's artistic approaches to environmental justice. This class will research and discuss the legacy of eco artists, read seminal works, and engage in class discussions drawn from contemporary writing on the politics of colonial landscapes and queer approaches to ecology. These artworks address issues of sustainability, extraction and marginalization that affect vulnerable human bodies and the non-human world. We will then use ecological and feminist methods to create personal artworks. This class will use the resources of the Huntington Botanical Garden, and potentially field trips for plein air works on major local energy infrastructure sites.",
     "prerequisites": "",
     "rating": "",
     "true_units": "",
@@ -24190,7 +24190,7 @@
       0,
       6
     ],
-    "description": "",
+    "description": "Histories of photography typically begin with the invention of the camera in 19th century France, highlighting the key figures, movements, and themes of a Western art form. At best, the Global South is an addendum to this narrative - a place photography happens to, rather than a site of visual innovation. Taking an alternative approach to the canon, this course centers non-Western image cultures in the history and theorization of the medium, following the camera as it travels from the studios of colonial bureaucrats in Rajasthan through the struggle against South African apartheid to Tunisia's smartphone revolution. Adopting a global and comparative lens, students will read classic works of photographic theory alongside anticolonial philosophy, fiction, and art manifestos, exploring how a familiar medium has been repeatedly re-imagined and re-invented to suit new contexts and meet new needs. Ultimately, we'll ask how widening our field of view can expand our understanding of photography, shifting how we read images more broadly.",
     "prerequisites": "",
     "rating": "",
     "true_units": "",
