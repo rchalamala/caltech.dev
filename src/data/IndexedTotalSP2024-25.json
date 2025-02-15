@@ -941,14 +941,14 @@
     "number": "ACM/IDS 204",
     "sections": [
       {
-        "grades": "",
-        "instructor": "Meiron, D",
-        "locations": "",
+        "grades": "LETTER",
+        "instructor": "Tropp, J",
+        "locations": "213 ANB",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
-    "comment": " Matrix Analysis 1 Tropp, J TR 10:30 - 11:55 213 ANB LETTER Ae/ACM/ME 232B 3-0-6 Computational Fluid Dynamics",
+    "comment": " Matrix Analysis",
     "units": [
       3,
       0,
@@ -10959,6 +10959,13 @@
         "locations": "",
         "number": 1,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Vanier, M",
+        "locations": "105 ANB",
+        "number": 2,
+        "times": "T 20:00 - 20:55"
       }
     ],
     "comment": " Sec 1: cancelled // Sec 2: TensorFlow (3 units)",
@@ -11665,6 +11672,13 @@
         "locations": "106 ANB",
         "number": 1,
         "times": "OM,T 19:00 - 19:55"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Tsang, J",
+        "locations": "314 ANB",
+        "number": 2,
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": " 3 units (1-0-2) // enrollment by instructor permission only // maximum enrollment: 20 students",
@@ -14144,6 +14158,13 @@
         "locations": "",
         "number": 1,
         "times": "W 19:00 - 21:55\nA"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "Sherazi, M",
+        "locations": "",
+        "number": 2,
+        "times": "TR 10:30 - 11:55\nA"
       }
     ],
     "comment": " Theory max enroll: 15 students",
@@ -16550,6 +16571,20 @@
         "locations": "",
         "number": 1,
         "times": "TR 14:30 - 15:55\nA"
+      },
+      {
+        "grades": "",
+        "instructor": "Morgan, P",
+        "locations": "",
+        "number": 2,
+        "times": "TR 09:00 - 10:25\nA"
+      },
+      {
+        "grades": "",
+        "instructor": "Mundell Perkins, E",
+        "locations": "",
+        "number": 3,
+        "times": "A\nA"
       }
     ],
     "comment": " Instruments of Early Modern Astronomy max enroll: 15 students // counts as first-year Hum under Visual Culture",
