@@ -82,7 +82,7 @@
       {
         "grades": "LETTER",
         "instructor": "Watkins, M",
-        "locations": "232 GUG",
+        "locations": "384 FIR",
         "number": 1,
         "times": "TR 14:30 - 15:55"
       }
@@ -107,9 +107,9 @@
       {
         "grades": "",
         "instructor": "Polk, J",
-        "locations": "232 GUG",
+        "locations": "",
         "number": 1,
-        "times": "TR 13:00 - 14:25"
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -157,9 +157,9 @@
       {
         "grades": "",
         "instructor": "Rosen, P",
-        "locations": "",
+        "locations": "275 RSC",
         "number": 1,
-        "times": "TR 14:30 - 15:55\nA"
+        "times": "TR 14:30 - 15:55"
       }
     ],
     "comment": "",
@@ -559,7 +559,7 @@
       {
         "grades": "",
         "instructor": "Dimotakis, P",
-        "locations": "384 FIR",
+        "locations": "232 GUG",
         "number": 1,
         "times": "TR 10:30 - 11:55"
       }
@@ -1572,9 +1572,9 @@
       {
         "grades": "LETTER",
         "instructor": "Troian, S",
-        "locations": "",
+        "locations": "104 WAT",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 14:30 - 15:55"
       }
     ],
     "comment": "",
@@ -1649,7 +1649,7 @@
         "instructor": "Scherer, A",
         "locations": "142 KCK",
         "number": 1,
-        "times": "R 13:00 - 13:55"
+        "times": "W 13:00 - 13:55"
       }
     ],
     "comment": "",
@@ -1697,9 +1697,9 @@
       {
         "grades": "",
         "instructor": "Bernardi, M",
-        "locations": "",
+        "locations": "104 WAT",
         "number": 1,
-        "times": "A\nA"
+        "times": "MWF 13:00 - 13:55"
       }
     ],
     "comment": "",
@@ -1747,9 +1747,9 @@
       {
         "grades": "",
         "instructor": "Fultz, B",
-        "locations": "",
+        "locations": "104 WAT",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -1772,7 +1772,7 @@
       {
         "grades": "",
         "instructor": "Nad Perge, S",
-        "locations": "104 WAT",
+        "locations": "B270 MRE",
         "number": 1,
         "times": "TR 13:00 - 14:25"
       }
@@ -1797,9 +1797,9 @@
       {
         "grades": "LETTER",
         "instructor": "Vahala, K",
-        "locations": "",
+        "locations": "142 KCK",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -2604,10 +2604,10 @@
         "instructor": "Hillenbrand, L / de Kleer, K",
         "locations": "251 ARM\nRoof CHL",
         "number": 1,
-        "times": "WF 11:00 - 11:55\nTR 19:00 - 21:55"
+        "times": "WF 11:00 - 11:55\nR 19:00 - 21:55"
       }
     ],
-    "comment": " Field Trip: tba // maximum enrollment: 22 students",
+    "comment": " Field Trip: tba // maximum enrollment: 14 students // If course is full, please email the instructors to be added to the waitlist, and attend the first day of class",
     "units": [
       2,
       2,
@@ -4562,7 +4562,7 @@
         "times": "A\nA"
       }
     ],
-    "comment": " class cancelled",
+    "comment": "",
     "units": [
       2,
       4,
@@ -5144,9 +5144,9 @@
       {
         "grades": "",
         "instructor": "McFall-Ngai, M",
-        "locations": "101 KRK",
+        "locations": "101 KRK\n101 KRK",
         "number": 1,
-        "times": "TR 13:00 - 14:25"
+        "times": "TR 13:00 - 14:25\nR 19:00 - 20:55"
       }
     ],
     "comment": " max enroll: 22 students // May be taken pass/fail if taken in the first year // application by survey only",
@@ -6875,7 +6875,7 @@
         "times": "F 15:00 - 15:55\nTR 13:00 - 15:55"
       }
     ],
-    "comment": " open by lottery only, see REGIS home page to enter before 8am February 21st // Ch and ChE students have priority // Maximum enrollment: 14 students per section",
+    "comment": " open by lottery only, see REGIS home page to enter before 8am February 26th // Ch and ChE students have priority // Maximum enrollment: 14 students per section",
     "units": [
       1,
       6,
@@ -7975,10 +7975,10 @@
         "instructor": "Mendez, J / Dingilian, K",
         "locations": "B122 GCL\nB122 GCL\n220 RSC",
         "number": 5,
-        "times": "OM,M 13:00 - 13:55\nF 13:00 - 13:55\nT 08:00 - 10:55"
+        "times": "OM,M 13:00 - 13:55\nF 13:00 - 13:55\nR 08:00 - 10:55"
       }
     ],
-    "comment": " open by lottery only // see REGIS home page to enter before 8am February 21st // Maximum enrollment: 16 students per section // Sec 3 reserved for Frosh // Sections may be cancelled if enrollment is 3 or less // Must take Ch3 in their 1st 6 terms to be graded p/f",
+    "comment": " open by lottery only // see REGIS home page to enter before 8am Feb 26th // Max enroll: 16 students per section // Sec 3 reserved for First-Years // Sections may be cancelled if enrollment is 3 or less // Must take Ch3 in their first 6 terms to be graded P/F",
     "units": [
       1,
       3,
@@ -8031,7 +8031,7 @@
         "times": "F 09:00 - 09:55\nR 08:00 - 10:55\nOM,M 09:00 - 09:55"
       }
     ],
-    "comment": " open by lottery only // see REGIS home page to enter before 8am, Feb 21 // Max enroll: 12 students per section // Sec 3 reserved for Frosh // students must take Ch 3 in their 1st 6 terms in order to be graded p/f",
+    "comment": " open by lottery only // see REGIS website to enter before 8am Feb 26th // Max enroll: 12 students per section // Sec 3 reserved for First-Years // Sections may be cancelled if enrollment is 3 or less // Must take Ch3 in their first 6 terms to be graded P/F",
     "units": [
       1,
       3,
@@ -8056,7 +8056,7 @@
         "times": "OM,M 10:00 - 10:55\nTR 08:00 - 10:55"
       }
     ],
-    "comment": " open by lottery only, see REGIS home page to enter before 8am February 21st // maximum enrollment: 14 students",
+    "comment": " open by lottery only, see REGIS home page to enter before 8am February 26th // maximum enrollment: 14 students",
     "units": [
       1,
       6,
@@ -10768,9 +10768,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Blank, A / Tsang, J",
-        "locations": "",
+        "locations": "105 ANB",
         "number": 1,
-        "times": "A\nA"
+        "times": "MWF 13:00 - 13:55"
       }
     ],
     "comment": " Section Days/Times/Locations TBD",
@@ -10795,63 +10795,35 @@
         "instructor": "Blank, A / Tsang, J",
         "locations": "105 ANB\n106 ANB",
         "number": 1,
-        "times": "MW 13:00 - 13:55\nT 10:00 - 10:55"
+        "times": "TR 13:00 - 13:55\nT 10:00 - 10:55"
       },
       {
         "grades": "LETTER",
         "instructor": "Blank, A / Tsang, J",
         "locations": "105 ANB\n106 ANB",
         "number": 2,
-        "times": "MW 13:00 - 13:55\nT 11:00 - 11:55"
+        "times": "TR 13:00 - 13:55\nT 11:00 - 11:55"
       },
       {
         "grades": "LETTER",
         "instructor": "Blank, A / Tsang, J",
         "locations": "105 ANB\n106 ANB",
         "number": 3,
-        "times": "MW 13:00 - 13:55\nT 12:00 - 12:55"
+        "times": "TR 13:00 - 13:55\nT 12:00 - 12:55"
       },
       {
         "grades": "LETTER",
         "instructor": "Blank, A / Tsang, J",
         "locations": "105 ANB\n106 ANB",
         "number": 4,
-        "times": "MW 13:00 - 13:55\nT 13:00 - 13:55"
-      },
-      {
-        "grades": "LETTER",
-        "instructor": "Blank, A / Tsang, J",
-        "locations": "",
-        "number": 5,
-        "times": "A\nA"
+        "times": "TR 13:00 - 13:55\nT 13:00 - 13:55"
       },
       {
         "grades": "LETTER",
         "instructor": "Blank, A / Tsang, J",
         "locations": "105 ANB\n106 ANB",
         "number": 6,
-        "times": "MW 13:00 - 13:55\nT 15:00 - 15:55"
-      },
-      {
-        "grades": "LETTER",
-        "instructor": "Blank, A / Tsang, J",
-        "locations": "105 ANB\n106 ANB",
-        "number": 7,
-        "times": "MW 13:00 - 13:55\nT 16:00 - 16:55"
-      },
-      {
-        "grades": "LETTER",
-        "instructor": "Blank, A / Tsang, J",
-        "locations": "105 ANB\n106 ANB",
-        "number": 8,
-        "times": "MW 13:00 - 13:55\nT 17:00 - 17:55"
-      },
-      {
-        "grades": "LETTER",
-        "instructor": "Blank, A / Tsang, J",
-        "locations": "105 ANB\n106 ANB",
-        "number": 9,
-        "times": "MW 13:00 - 13:55\nT 18:00 - 18:55"
+        "times": "TR 13:00 - 13:55\nT 15:00 - 15:55"
       }
     ],
     "comment": " maximum enrollment: 15 students per section",
@@ -10968,7 +10940,7 @@
         "times": "T 20:00 - 20:55"
       }
     ],
-    "comment": " Sec 1: cancelled // Sec 2: TensorFlow (3 units)",
+    "comment": " Course Cancelled",
     "units": [
       0,
       0,
@@ -11674,11 +11646,11 @@
         "times": "OM,T 19:00 - 19:55"
       },
       {
-        "grades": "PASS-FAIL",
+        "grades": "",
         "instructor": "Tsang, J",
-        "locations": "314 ANB",
+        "locations": "213 ANB",
         "number": 2,
-        "times": "TR 10:30 - 11:55"
+        "times": "MW 10:00 - 11:25"
       }
     ],
     "comment": " 3 units (1-0-2) // enrollment by instructor permission only // maximum enrollment: 20 students",
@@ -11776,7 +11748,7 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Vanier, M",
-        "locations": "105 ANB",
+        "locations": "104 ANB",
         "number": 1,
         "times": "OM,M 21:00 - 21:55"
       },
@@ -11835,10 +11807,10 @@
         "instructor": "George, G",
         "locations": "B280 MRE",
         "number": 1,
-        "times": "OM,A"
+        "times": "OM,T 17:00 - 17:55"
       }
     ],
-    "comment": "",
+    "comment": " Organizational Meeting on April 1st",
     "units": [
       3,
       3,
@@ -11933,9 +11905,9 @@
       {
         "grades": "",
         "instructor": "Kostina, V",
-        "locations": "",
+        "locations": "B280 MRE",
         "number": 1,
-        "times": "A\nA"
+        "times": "MW 10:30 - 11:55"
       }
     ],
     "comment": "",
@@ -12971,7 +12943,7 @@
         "times": "MR 10:30 - 11:55\nA"
       }
     ],
-    "comment": " class cancelled",
+    "comment": "",
     "units": [
       3,
       0,
@@ -13245,6 +13217,31 @@
     "true_units": "",
     "link": ""
   },
+  "21693977": {
+    "id": 21693977,
+    "name": "Analog Electronics Project Laboratory",
+    "number": "EE 90",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Russell, D",
+        "locations": "B270 MRE",
+        "number": 1,
+        "times": "T 16:00 - 16:55"
+      }
+    ],
+    "comment": "",
+    "units": [
+      1,
+      8,
+      0
+    ],
+    "description": "A structured laboratory course that gives the student the opportunity to design and build a simple analog electronics project. The goal is to gain familiarity with circuit design and construction, component selection, CAD support, and debugging techniques.",
+    "prerequisites": "EE 45 or EE 85.",
+    "rating": "3.48 +/- 1.64",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=55&term_id=556&division_id=80425&department_id=129&offering_id=93815&track_id=93815-Default"
+  },
   "22149854": {
     "id": 22149854,
     "name": "Advanced Work in Electrical Engineering",
@@ -13502,7 +13499,7 @@
         "instructor": "Yang, C",
         "locations": "B280 MRE",
         "number": 1,
-        "times": "TR 11:00 - 12:25"
+        "times": "TR 10:30 - 23:55"
       }
     ],
     "comment": "",
@@ -13849,7 +13846,7 @@
   },
   "21679436": {
     "id": 21679436,
-    "name": "Special Topics in Engineering & Applied Science: Design Your Life",
+    "name": "Special Topics in Engineering & Applied Science: Design Your Career",
     "number": "E 100",
     "sections": [
       {
@@ -13858,6 +13855,20 @@
         "locations": "328 SFL",
         "number": 1,
         "times": "F 14:00 - 15:25"
+      },
+      {
+        "grades": "",
+        "instructor": "Bryant, J / Dabiri, M",
+        "locations": "360 CSS",
+        "number": 2,
+        "times": "T 12:00 - 12:55"
+      },
+      {
+        "grades": "",
+        "instructor": "Phillips, R",
+        "locations": "",
+        "number": 3,
+        "times": "A\nA"
       }
     ],
     "comment": " open by application only to juniors and seniors // apply at http://registrar.caltech.edu/E100SP2024",
@@ -13871,6 +13882,31 @@
     "rating": "4.88 +/- 0.46",
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=57&term_id=558&division_id=80425&department_id=275&offering_id=95432&track_id=95432-Section 1"
+  },
+  "21680805": {
+    "id": 21680805,
+    "name": "Principles of University Teaching and Learning in STEM",
+    "number": "E 110",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Dabiri, M",
+        "locations": "360 CSS",
+        "number": 1,
+        "times": "W 13:00 - 14:55"
+      }
+    ],
+    "comment": "",
+    "units": [
+      2,
+      0,
+      1
+    ],
+    "description": "This graduate course examines the research on university-level STEM (science, technology, engineering, and mathematics) teaching and learning, which has been used to inform a well-established body of evidence-based teaching practices. Weekly interactive meetings will provide focused overviews and guided application of key pedagogical research, such as prior knowledge and misconceptions, novice-expert differences, and cognitive development as applied to university teaching. We will explore the roles of active learning, student engagement, and inclusive teaching practices in designing classes where all students have an equal opportunity to be successful and feel a sense of belonging, both in the course and as scientists. Readings will inform in-class work and students will apply principles to a project of their choice.",
+    "prerequisites": "",
+    "rating": "4.84 +/- 0.37",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=55&term_id=556&division_id=80425&department_id=275&offering_id=93671&track_id=93671-Default"
   },
   "93744785": {
     "id": 93744785,
@@ -15431,7 +15467,7 @@
         "times": "MWF 09:00 - 09:55"
       }
     ],
-    "comment": " class cancelled",
+    "comment": "",
     "units": [
       3,
       0,
@@ -15506,7 +15542,7 @@
         "times": "A\nA"
       }
     ],
-    "comment": " class cancelled",
+    "comment": "",
     "units": [
       2,
       0,
@@ -15531,7 +15567,7 @@
         "times": "TR 13:00 - 14:55"
       }
     ],
-    "comment": " class cancelled",
+    "comment": "",
     "units": [
       3,
       0,
@@ -17399,7 +17435,7 @@
       {
         "grades": "",
         "instructor": "Greer, J / Kornfield, J",
-        "locations": "104 WAT",
+        "locations": "102 SPL",
         "number": 1,
         "times": "TR 14:30 - 15:55"
       }
@@ -21677,6 +21713,31 @@
     "rating": "",
     "true_units": "",
     "link": ""
+  },
+  "804013477": {
+    "id": 804013477,
+    "name": "Order-of-Magnitude Physics",
+    "number": "Ph 101",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Phinney, E",
+        "locations": "201 BRG",
+        "number": 1,
+        "times": "MW 13:00 - 14:25"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "Emphasis will be on using basic physics to understand complicated systems. Examples will be selected from properties of materials, geophysics, weather, planetary science, astrophysics, cosmology, biomechanics, etc. Given in alternate years.",
+    "prerequisites": "",
+    "rating": "3.51 +/- 1.21",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=147&offering_id=92418&track_id=92418-Default"
   },
   "781555701": {
     "id": 781555701,
