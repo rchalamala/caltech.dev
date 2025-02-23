@@ -5146,10 +5146,10 @@
         "instructor": "McFall-Ngai, M",
         "locations": "101 KRK\n101 KRK",
         "number": 1,
-        "times": "TR 13:00 - 14:25\nR 19:00 - 20:55"
+        "times": "TR 13:00 - 14:25\nT 19:00 - 20:55"
       }
     ],
-    "comment": " max enroll: 22 students // May be taken pass/fail if taken in the first year // application by survey only",
+    "comment": " max enroll: 20 students // May be taken pass/fail if taken in the first year // application by survey only",
     "units": [
       3,
       0,
@@ -13499,7 +13499,7 @@
         "instructor": "Yang, C",
         "locations": "B280 MRE",
         "number": 1,
-        "times": "TR 10:30 - 23:55"
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": "",

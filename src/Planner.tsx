@@ -71,7 +71,8 @@ export function parseTimes(times: string): Maybe<TimeInterval>[][] {
             2018,
             0,
             day_to_i.indexOf(day) + 1,
-            parseInt(match[4]),
+            // stupid hacky thing to avoid crashing when time is entered incorrectly in catalog (11pm instead of 11am)
+            parseInt(match[4]) === 23 ? 11 : parseInt(match[4]),
             parseInt(match[5]),
           ),
         });
