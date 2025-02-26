@@ -99,6 +99,31 @@
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=55&term_id=556&division_id=80425&department_id=120&offering_id=93610&track_id=93610-Default"
   },
+  "267231506": {
+    "id": 267231506,
+    "name": "Combustion Fundamentals",
+    "number": "ME/Ae 120",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Blanquart, G",
+        "locations": "115 GTL",
+        "number": 1,
+        "times": "MWF 14:00 - 14:55"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "The course will cover chemical equilibrium, chemical kinetics, combustion chemistry, transport phenomena, and the governing equations for multicomponent gas mixtures. Topics will be chosen from non-premixed and premixed flames, laminar and turbulent flames, combustion-generated pollutants, and numerical simulations of reacting flows.",
+    "prerequisites": "ME 11 abc or equivalent, ACM 95/100 or equivalent (may be taken concurrently).",
+    "rating": "4.43 +/- 0.62",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=120&offering_id=92447&track_id=92447-Default"
+  },
   "772286076": {
     "id": 772286076,
     "name": "Space Propulsion",
@@ -609,7 +634,7 @@
       {
         "grades": "",
         "instructor": "Aghilinejad, A",
-        "locations": "142 KCK",
+        "locations": "107 DWN",
         "number": 1,
         "times": "TR 13:00 - 14:25"
       }
@@ -802,7 +827,7 @@
         "times": "MWF 11:00 - 12:15"
       }
     ],
-    "comment": " class meets in KRK 125 on Friday 4/12 & 4/26",
+    "comment": "",
     "units": [
       4,
       0,
@@ -827,7 +852,7 @@
         "times": "MWF 11:00 - 12:15"
       }
     ],
-    "comment": " class meets in KRK 125 on Friday 4/12 & 4/26",
+    "comment": "",
     "units": [
       4,
       0,
@@ -1129,6 +1154,31 @@
     "rating": "",
     "true_units": "",
     "link": ""
+  },
+  "440540277": {
+    "id": 440540277,
+    "name": "Effective properties of heterogenous and meta-materials",
+    "number": "ME/MS/AM 221",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Bhattacharya, K",
+        "locations": "115 GTL",
+        "number": 1,
+        "times": "TR 14:30 - 15:55"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "Heterogenous materials. Notion of effective properties. Homogenization theory and applications to linear conductivity, elasticity and viscoelasticity. Effective properties in non-linear setting and instabilities.  Wave propagation and meta-materials. Bandgaps.",
+    "prerequisites": "Ae/AM/CE/ME 102 or equivalent.",
+    "rating": "4.51 +/- 0.88",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=143&offering_id=92416&track_id=92416-Default"
   },
   "802142224": {
     "id": 802142224,
@@ -3285,9 +3335,9 @@
       {
         "grades": "",
         "instructor": "Hopkins, P / Most, E",
-        "locations": "",
+        "locations": "219 CHL",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 09:00 - 10:25"
       }
     ],
     "comment": "",
@@ -3359,7 +3409,7 @@
     "sections": [
       {
         "grades": "LETTER",
-        "instructor": "Gavalas, G",
+        "instructor": "Hoelz, A",
         "locations": "",
         "number": 1,
         "times": "A\nA"
@@ -5149,7 +5199,7 @@
         "times": "TR 13:00 - 14:25\nT 19:00 - 20:55"
       }
     ],
-    "comment": " max enroll: 20 students // May be taken pass/fail if taken in the first year // application by survey only",
+    "comment": " max enroll: 20 students // May be taken pass/fail if taken in the first year // application by survey only // Course will be cancelled if less than 10 students enroll",
     "units": [
       3,
       0,
@@ -12718,6 +12768,31 @@
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=55&term_id=556&division_id=80425&department_id=127&offering_id=93882&track_id=93882-Default"
   },
+  "684883049": {
+    "id": 684883049,
+    "name": "Advanced Robotics: Planning",
+    "number": "ME/CDS/EE 234 b",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Burdick, J",
+        "locations": "115 GTL",
+        "number": 1,
+        "times": "TR 13:00 - 14:25"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      3,
+      3
+    ],
+    "description": "Advanced topics in robotic motion planning and navigation, including inertial navigation, simultaneous localization and mapping, Markov Decision Processes, Stochastic Receding Horizon Control, Risk-Aware planning, robotic coverage planning, and multi-robot coordination. Course work will consist of homework, programming projects, and labs. Given in alternate years.",
+    "prerequisites": "ME/CS/EE 133 b, or equivalent. ME/CS/EE 133 a preferred.",
+    "rating": "4.32 +/- 0.91",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80425&department_id=143&offering_id=90419&track_id=90419-Default"
+  },
   "501612924": {
     "id": 501612924,
     "name": "Research in Control and Dynamical Systems",
@@ -13040,7 +13115,7 @@
         "instructor": "Tamuz, O",
         "locations": "",
         "number": 1,
-        "times": "MWF 09:00 - 09:55\nA"
+        "times": "MWF 13:00 - 13:55\nA"
       }
     ],
     "comment": "",
@@ -13857,21 +13932,21 @@
         "times": "F 14:00 - 15:25"
       },
       {
-        "grades": "",
+        "grades": "PASS-FAIL",
         "instructor": "Bryant, J / Dabiri, M",
         "locations": "360 CSS",
         "number": 2,
         "times": "T 12:00 - 12:55"
       },
       {
-        "grades": "",
+        "grades": "PASS-FAIL",
         "instructor": "Phillips, R",
-        "locations": "",
+        "locations": "100 CNRB",
         "number": 3,
-        "times": "A\nA"
+        "times": "OM,M 14:00 - 14:55"
       }
     ],
-    "comment": " open by application only to juniors and seniors // apply at http://registrar.caltech.edu/E100SP2024",
+    "comment": "",
     "units": [
       0,
       0,
@@ -13889,14 +13964,14 @@
     "number": "E 110",
     "sections": [
       {
-        "grades": "",
+        "grades": "PASS-FAIL",
         "instructor": "Dabiri, M",
         "locations": "360 CSS",
         "number": 1,
         "times": "W 13:00 - 14:55"
       }
     ],
-    "comment": "",
+    "comment": " units (2-0-1)",
     "units": [
       2,
       0,
@@ -14698,6 +14773,31 @@
     "true_units": "3",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80426&department_id=495&offering_id=88921&track_id=88921-Default"
   },
+  "815558770": {
+    "id": 815558770,
+    "name": "Organic Geochemistry",
+    "number": "Ge/ESE 143",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Sessions, A",
+        "locations": "215 NMD",
+        "number": 1,
+        "times": "MWF 11:00 - 11:55"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      2,
+      4
+    ],
+    "description": "Main topics include the analysis, properties, sources, and cycling of natural organic materials in the environment, from their production in living organisms to burial and decomposition in sediments and preservation in the rock record. Specific topics include analytical methods for organic geochemistry, lipid structure and biochemistry, composition of organic matter, factors controlling organic preservation, organic climate and CO2 proxies, diagenesis and catagenesis, and biomarkers for ancient life. A laboratory component (three evening labs) teaches the extraction and analysis of modern and ancient organic biomarkers by GC/MS. Class includes a mandatory one-day (weekend) field trip to observe the Monterey Formation.",
+    "prerequisites": "Ch 41 a or equivalent.",
+    "rating": "4.87 +/- 0.41",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80426&department_id=182&offering_id=92481&track_id=92481-Default"
+  },
   "585656318": {
     "id": 585656318,
     "name": "Planetary Atmospheres",
@@ -14730,10 +14830,10 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Klein, J",
-        "locations": "135 LLB",
+        "instructor": "Thompson, A",
+        "locations": "",
         "number": 1,
-        "times": "TR 09:00 - 10:25"
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -14996,12 +15096,12 @@
       {
         "grades": "",
         "instructor": "Fischer, W / Kirschvink, J",
-        "locations": "",
+        "locations": "251 ARM\n251 ARM",
         "number": 1,
-        "times": "MWF 14:00 - 14:55\nA\nF 19:00 - 21:55\nA"
+        "times": "MWF 14:00 - 14:55\nF 19:00 - 21:55"
       }
     ],
-    "comment": "",
+    "comment": " taught concurrently with Ge 104",
     "units": [
       3,
       3,
@@ -15337,12 +15437,12 @@
       {
         "grades": "",
         "instructor": "Fischer, W / Kirschvink, J",
-        "locations": "",
+        "locations": "251 ARM\n251 ARM",
         "number": 1,
-        "times": "MWF 14:00 - 14:55\nA\nF 19:00 - 21:55\nA"
+        "times": "MWF 14:00 - 14:55\nF 19:00 - 21:55"
       }
     ],
-    "comment": "",
+    "comment": " taught concurrently with Ge 011B",
     "units": [
       3,
       0,
@@ -15403,6 +15503,31 @@
     "rating": "4.77 +/- 0.45",
     "true_units": "Somewhat Low",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=54&term_id=555&division_id=80426&department_id=182&offering_id=93128&track_id=93128-Default"
+  },
+  "772286082": {
+    "id": 772286082,
+    "name": "Advanced Field Geology",
+    "number": "Ge 121 c",
+    "sections": [
+      {
+        "grades": "LETTER",
+        "instructor": "Tejada Lara, J",
+        "locations": "",
+        "number": 1,
+        "times": "OM,A\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      0,
+      9,
+      3
+    ],
+    "description": "Field mapping and supporting laboratory studies in topical problems related to the geology of the southwestern United States. Course provides a breadth of experience in igneous, metamorphic, or sedimentary rocks or geomorphology. Multiple terms of 121 may be taken more than once for credit if taught by different instructors.",
+    "prerequisites": "Ge 120 or equivalent, or instructor's permission. For Ge 121a (Lamb): Ge 125 or instructor approval.",
+    "rating": "4.73 +/- 0.52",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80426&department_id=182&offering_id=90550&track_id=90550-Default"
   },
   "804165316": {
     "id": 804165316,
@@ -15478,6 +15603,31 @@
     "rating": "5.00 +/- 0.00",
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80426&department_id=182&offering_id=90517&track_id=90517-Default"
+  },
+  "810091717": {
+    "id": 810091717,
+    "name": "Special Topics in the Planetary Sciences: Space exploration: Opportunities for science in the coming decades",
+    "number": "Ge 194",
+    "sections": [
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Lunine, J",
+        "locations": "",
+        "number": 1,
+        "times": "F 00:00 - 00:00\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "Advanced-level discussions of problems of current interest in planetary sciences. Students may enroll for any or all terms of this course without regard to sequence.",
+    "prerequisites": "",
+    "rating": "4.88 +/- 0.38",
+    "true_units": "3",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=41&term_id=526&division_id=80426&department_id=182&offering_id=82789&track_id=82789-Default"
   },
   "811965878": {
     "id": 811965878,
@@ -15564,7 +15714,7 @@
         "instructor": "Zhan, Z",
         "locations": "256 SMD",
         "number": 1,
-        "times": "TR 13:00 - 14:55"
+        "times": "TR 13:30 - 14:55"
       }
     ],
     "comment": "",
@@ -16249,7 +16399,7 @@
         "instructor": "Kormos-Buchwald, D",
         "locations": "",
         "number": 1,
-        "times": "TR 19:00 - 21:55\nA"
+        "times": "R 19:00 - 21:55\nA"
       }
     ],
     "comment": " max enroll: 15 students",
@@ -18002,6 +18152,31 @@
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=55&term_id=556&division_id=80428&department_id=142&offering_id=94018&track_id=94018-Default"
   },
+  "21885497": {
+    "id": 21885497,
+    "name": "Student-Taught Topics in Mathematics: Differential Forms \u0096 Topology and",
+    "number": "Ma 14",
+    "sections": [
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Mantovan, E",
+        "locations": "255 LINDE",
+        "number": 1,
+        "times": "TR 19:00 - 20:25"
+      }
+    ],
+    "comment": " Geometry",
+    "units": [
+      3,
+      0,
+      0
+    ],
+    "description": "Each section of Ma 14 covers a topic in mathematics with associated sets or projects. Sections are designed and taught by an undergraduate student (or students) under the supervision of a MA faculty member. Ma 14 may be repeated for credit of up to a total of nine units. Graded pass/fail.",
+    "prerequisites": "Ma 1 abc or instructor's permission.",
+    "rating": "",
+    "true_units": "",
+    "link": ""
+  },
   "912826811": {
     "id": 912826811,
     "name": "Senior Thesis",
@@ -18580,9 +18755,9 @@
       {
         "grades": "",
         "instructor": "El Maazouz, Y",
-        "locations": "",
+        "locations": "255 LINDE",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -18687,12 +18862,12 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Reeves, L",
-        "locations": "",
+        "locations": "289 LINDE",
         "number": 2,
-        "times": "A\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
-    "comment": " Sec 1: TBA // Sec 2: TBA",
+    "comment": " Sec 1: TBA // Sec 2: Introduction to lattice models in statistical mechanics",
     "units": [
       3,
       0,
@@ -19557,6 +19732,31 @@
     "rating": "",
     "true_units": "",
     "link": ""
+  },
+  "804014732": {
+    "id": 804014732,
+    "name": "Advanced Topics in Mechanical Engineering",
+    "number": "ME 201",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Andrade, J",
+        "locations": "",
+        "number": 1,
+        "times": "A\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "The faculty will prepare courses on advanced topics to meet the needs of graduate students.",
+    "prerequisites": "",
+    "rating": "5.00 +/- 0.00",
+    "true_units": "3",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=43&term_id=528&division_id=80425&department_id=143&offering_id=84787&track_id=84787-Default"
   },
   "802141940": {
     "id": 802141940,
@@ -23536,7 +23736,7 @@
       {
         "grades": "LETTER",
         "instructor": "George, N",
-        "locations": "104 WAT",
+        "locations": "121 BCK",
         "number": 1,
         "times": "W 13:00 - 13:55"
       }
@@ -23860,7 +24060,7 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Xin, Y",
+        "instructor": "Janas, P",
         "locations": "",
         "number": 1,
         "times": "M 14:30 - 15:55\nA"
