@@ -534,9 +534,9 @@
       {
         "grades": "",
         "instructor": "Meiron, D",
-        "locations": "",
+        "locations": "384 FIR",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 14:30 - 15:55"
       }
     ],
     "comment": "",
@@ -872,9 +872,9 @@
       {
         "grades": "",
         "instructor": "Zhang, L",
-        "locations": "289 LINDE",
+        "locations": "255 LINDE",
         "number": 1,
-        "times": "MWF 14:00 - 14:55"
+        "times": "MWF 11:00 - 11:55"
       }
     ],
     "comment": "",
@@ -2997,6 +2997,13 @@
         "locations": "",
         "number": 37,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Hildebrandt, S",
+        "locations": "",
+        "number": 38,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -3377,6 +3384,31 @@
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80428&department_id=137&offering_id=90648&track_id=90648-Default"
   },
+  "533229357": {
+    "id": 533229357,
+    "name": "Biophysical/Structural Methods",
+    "number": "BMB/Bi/Ch 173",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Chong, S / Chen, Z",
+        "locations": "115 BCK",
+        "number": 1,
+        "times": "TR 10:30 - 11:55"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "Basic principles of modern structural and biophysical methods used to interrogate macromolecules from the atomic to cellular levels, including light and electron microscopy, X-ray crystallography, NMR spectroscopy, single molecule spectroscopy and microscopy techniques, and molecular dynamics and systems biology simulations.",
+    "prerequisites": "",
+    "rating": "4.84 +/- 0.43",
+    "true_units": "4",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=39&term_id=521&division_id=80424&department_id=234&offering_id=79563&track_id=79563-Default"
+  },
   "481830237": {
     "id": 481830237,
     "name": "Biochemistry Seminar Course",
@@ -3410,9 +3442,9 @@
       {
         "grades": "LETTER",
         "instructor": "Hoelz, A",
-        "locations": "",
+        "locations": "101 SCH",
         "number": 1,
-        "times": "A\nA"
+        "times": "W 14:00 - 15:55"
       }
     ],
     "comment": " Methods",
@@ -4248,6 +4280,13 @@
         "locations": "",
         "number": 48,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Demirer, G",
+        "locations": "",
+        "number": 49,
+        "times": "A\nA"
       }
     ],
     "comment": " If your research adviser does not appear below, please contact the Office of the Registrar.",
@@ -4456,7 +4495,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Demirer, G / Vicic, M",
+        "instructor": "Demirer, G",
         "locations": "B126 KRK\n102 SPL",
         "number": 1,
         "times": "MF 13:00 - 15:55\nW 13:00 - 13:55"
@@ -4537,7 +4576,7 @@
         "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course cancelled",
     "units": [
       3,
       0,
@@ -5082,7 +5121,7 @@
         "times": "M 11:00 - 11:55"
       }
     ],
-    "comment": " maximum enrollment: 6 students",
+    "comment": "",
     "units": [
       1,
       8,
@@ -5169,7 +5208,7 @@
       {
         "grades": "",
         "instructor": "Parker, J",
-        "locations": "101 KRK",
+        "locations": "275 RSC",
         "number": 1,
         "times": "TR 13:00 - 14:25"
       }
@@ -5271,10 +5310,17 @@
         "instructor": "Goentoro, L",
         "locations": "101 KRK\n347 KRK",
         "number": 1,
-        "times": "M 11:00 - 11:55\nTR 13:00 - 15:55"
+        "times": "M 11:00 - 11:55\nT 13:00 - 15:55"
+      },
+      {
+        "grades": "",
+        "instructor": "Goentoro, L",
+        "locations": "101 KRK\n347 KRK",
+        "number": 2,
+        "times": "M 11:00 - 11:55\nR 13:00 - 15:55"
       }
     ],
-    "comment": " maximum enrollment: 10 students // priority to seniors",
+    "comment": " maximum enrollment: 10 students per section // priority to seniors",
     "units": [
       1,
       3,
@@ -5941,7 +5987,7 @@
         "times": "MW 14:30 - 15:55\nA"
       }
     ],
-    "comment": " max enroll: 20 students",
+    "comment": "",
     "units": [
       3,
       0,
@@ -5961,7 +6007,7 @@
       {
         "grades": "LETTER",
         "instructor": "Lester, H / Lois, C",
-        "locations": "101 KRK\n130 CNRB",
+        "locations": "152 BRN\n130 CNRB",
         "number": 1,
         "times": "R 14:00 - 14:55\nMWF 10:00 - 10:55"
       },
@@ -5987,7 +6033,7 @@
         "times": "MWF 10:00 - 10:55\nR 19:00 - 19:55"
       }
     ],
-    "comment": "",
+    "comment": " On Thursday, May 1, the class will be in KRK 330",
     "units": [
       4,
       0,
@@ -6925,7 +6971,7 @@
         "times": "F 15:00 - 15:55\nTR 13:00 - 15:55"
       }
     ],
-    "comment": " open by lottery only, see REGIS home page to enter before 8am February 26th // Ch and ChE students have priority // Maximum enrollment: 14 students per section",
+    "comment": " open by lottery only, see REGIS home page to enter before 8am February 26th // Ch and ChE students have priority // Sec 01 max enroll: 8 students // Sec 02 max enroll: 14 students",
     "units": [
       1,
       6,
@@ -7615,6 +7661,31 @@
     "true_units": "3",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80424&department_id=114&offering_id=87410&track_id=87410-Default"
   },
+  "479752302": {
+    "id": 479752302,
+    "name": "Polymer Physics",
+    "number": "ChE/Ch 148",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Wang, Z",
+        "locations": "106 SPL",
+        "number": 1,
+        "times": "TR 10:30 - 11:55"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "An introduction to the physics that govern the structure and dynamics of polymeric liquids, and to the physical basis of characterization methods used in polymer science. The course emphasizes the scaling aspects of the various physical properties. Topics include conformation of a single polymer, a chain under different solvent conditions; dilute and semi-dilute solutions; thermodynamics of polymer blends and block copolymers; polyelectrolytes; rubber elasticity; polymer gels; linear viscoelasticity of polymer solutions and melts.",
+    "prerequisites": "",
+    "rating": "4.75 +/- 0.46",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80424&department_id=116&offering_id=91957&track_id=91957-Default"
+  },
   "14480971": {
     "id": 14480971,
     "name": "Physical and Chemical Rate Processes",
@@ -7973,6 +8044,34 @@
         "locations": "",
         "number": 53,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Anandkumar, A",
+        "locations": "",
+        "number": 54,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Faber, K",
+        "locations": "",
+        "number": 55,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Fong, K",
+        "locations": "",
+        "number": 56,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Voorhees, R",
+        "locations": "",
+        "number": 57,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -8012,20 +8111,6 @@
         "locations": "B122 GCL\nB122 GCL\n220 RSC",
         "number": 3,
         "times": "OM,M 13:00 - 13:55\nF 13:00 - 13:55\nT 19:00 - 21:55"
-      },
-      {
-        "grades": "PASS-FAIL",
-        "instructor": "Mendez, J / Dingilian, K",
-        "locations": "B122 GCL\nB122 GCL\n220 RSC",
-        "number": 4,
-        "times": "OM,M 13:00 - 13:55\nF 13:00 - 13:55\nW 13:00 - 15:55"
-      },
-      {
-        "grades": "PASS-FAIL",
-        "instructor": "Mendez, J / Dingilian, K",
-        "locations": "B122 GCL\nB122 GCL\n220 RSC",
-        "number": 5,
-        "times": "OM,M 13:00 - 13:55\nF 13:00 - 13:55\nR 08:00 - 10:55"
       }
     ],
     "comment": " open by lottery only // see REGIS home page to enter before 8am Feb 26th // Max enroll: 16 students per section // Sec 3 reserved for First-Years // Sections may be cancelled if enrollment is 3 or less // Must take Ch3 in their first 6 terms to be graded P/F",
@@ -8106,7 +8191,7 @@
         "times": "OM,M 10:00 - 10:55\nTR 08:00 - 10:55"
       }
     ],
-    "comment": " open by lottery only, see REGIS home page to enter before 8am February 26th // maximum enrollment: 14 students",
+    "comment": " open by lottery only, see REGIS home page to enter before 8am February 26th // maximum enrollment: 4 students",
     "units": [
       1,
       6,
@@ -8126,7 +8211,7 @@
       {
         "grades": "",
         "instructor": "Hsieh-Wilson, L",
-        "locations": "130 CHR\n151 CRL\n130 CHR",
+        "locations": "222 RSC\n201 RSC\n222 RSC",
         "number": 1,
         "times": "WF 13:00 - 15:55\nM 13:00 - 13:55\nM 14:00 - 16:55"
       }
@@ -8911,9 +8996,9 @@
       {
         "grades": "",
         "instructor": "Hadt, R",
-        "locations": "147 NYS",
+        "locations": "147 NYS\n153 NYS",
         "number": 1,
-        "times": "TR 10:30 - 11:55"
+        "times": "T 11:00 - 12:25\nR 11:00 - 12:25"
       }
     ],
     "comment": " class will meet in 151 Crellin on 4/18/24",
@@ -9011,9 +9096,9 @@
       {
         "grades": "",
         "instructor": "Burnett, D",
-        "locations": "",
+        "locations": "B114F NMD",
         "number": 1,
-        "times": "A\nA"
+        "times": "OM,M 15:00 - 15:55"
       }
     ],
     "comment": "",
@@ -9088,7 +9173,7 @@
         "instructor": "Hadt, R",
         "locations": "151 CRL",
         "number": 1,
-        "times": "A"
+        "times": "F 10:00 - 11:55"
       }
     ],
     "comment": "",
@@ -10061,6 +10146,27 @@
         "locations": "",
         "number": 79,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Zernicka-Goetz, M",
+        "locations": "",
+        "number": 80,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Thomson, M",
+        "locations": "",
+        "number": 81,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Sharma, S",
+        "locations": "",
+        "number": 82,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -10519,6 +10625,13 @@
         "locations": "",
         "number": 41,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Kitaev, A",
+        "locations": "",
+        "number": 42,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -10865,8 +10978,8 @@
         "grades": "LETTER",
         "instructor": "Blank, A / Tsang, J",
         "locations": "105 ANB\n106 ANB",
-        "number": 4,
-        "times": "TR 13:00 - 13:55\nT 13:00 - 13:55"
+        "number": 5,
+        "times": "TR 13:00 - 13:55\nT 14:00 - 14:55"
       },
       {
         "grades": "LETTER",
@@ -10874,6 +10987,13 @@
         "locations": "105 ANB\n106 ANB",
         "number": 6,
         "times": "TR 13:00 - 13:55\nT 15:00 - 15:55"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "Blank, A / Tsang, J",
+        "locations": "105 ANB\n106 ANB",
+        "number": 7,
+        "times": "TR 13:00 - 13:55\nT 09:00 - 09:55"
       }
     ],
     "comment": " maximum enrollment: 15 students per section",
@@ -11374,7 +11494,7 @@
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Lombeyda, S",
+        "instructor": "Lombeyda, S / Mushkin, H",
         "locations": "",
         "number": 31,
         "times": "A\nA"
@@ -11503,6 +11623,20 @@
         "instructor": "Hsieh-Wilson, L",
         "locations": "",
         "number": 49,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Gkioxari, G",
+        "locations": "",
+        "number": 50,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Cvitanic, J",
+        "locations": "",
+        "number": 51,
         "times": "A\nA"
       }
     ],
@@ -11668,6 +11802,13 @@
         "instructor": "Stuart, A",
         "locations": "",
         "number": 23,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Cvitanic, J",
+        "locations": "",
+        "number": 24,
         "times": "A\nA"
       }
     ],
@@ -13068,7 +13209,7 @@
         "times": "T 19:00 - 21:55\nA"
       }
     ],
-    "comment": " maximum enrollment: 15 students",
+    "comment": " maximum enrollment: 25 students",
     "units": [
       3,
       0,
@@ -13574,7 +13715,7 @@
         "instructor": "Yang, C",
         "locations": "B280 MRE",
         "number": 1,
-        "times": "TR 10:30 - 11:55"
+        "times": "TR 11:00 - 12:25"
       }
     ],
     "comment": "",
@@ -13946,7 +14087,7 @@
         "times": "OM,M 14:00 - 14:55"
       }
     ],
-    "comment": "",
+    "comment": " Units (1.5-0-1.5)",
     "units": [
       0,
       0,
@@ -14196,7 +14337,7 @@
         "times": "TR 13:00 - 14:25\nA"
       }
     ],
-    "comment": " max enroll: 15 students",
+    "comment": " max enroll: 15 students // Course Closed // Please contact instructor for waitlist",
     "units": [
       3,
       0,
@@ -14246,7 +14387,7 @@
         "times": "W 19:00 - 21:55\nA"
       }
     ],
-    "comment": " max enroll: 15 students",
+    "comment": " max enroll: 15 students // Course Closed // Please see instructor for waitlist",
     "units": [
       3,
       0,
@@ -14276,6 +14417,13 @@
         "locations": "",
         "number": 2,
         "times": "TR 10:30 - 11:55\nA"
+      },
+      {
+        "grades": "",
+        "instructor": "Haugen, K",
+        "locations": "",
+        "number": 3,
+        "times": "A\nA"
       }
     ],
     "comment": " Theory max enroll: 15 students",
@@ -14836,7 +14984,7 @@
         "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Units (2-0-4)",
     "units": [
       3,
       0,
@@ -15479,6 +15627,31 @@
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=55&term_id=556&division_id=80426&department_id=182&offering_id=93905&track_id=93905-Section 1"
   },
+  "631724007": {
+    "id": 631724007,
+    "name": "Introduction to Field Geology",
+    "number": "Ge 120 a",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Bucholz, C",
+        "locations": "251 ARM",
+        "number": 1,
+        "times": "OM,M 13:00 - 13:55"
+      }
+    ],
+    "comment": "",
+    "units": [
+      1,
+      6,
+      2
+    ],
+    "description": "A comprehensive introduction to methods of geological field mapping in preparation for summer field camp. Field exercises and associated projects introduce methods of geological mapping, field observations, and graphical techniques in the analysis of geologic maps.\n Offered every other year. Offered 2024-25.",
+    "prerequisites": "Ge 11 ab, Ge 106 (may be taken concurrently with Ge 106).",
+    "rating": "5.00 +/- 0.00",
+    "true_units": "Somewhat Low",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=55&term_id=556&division_id=80426&department_id=182&offering_id=93849&track_id=93849-Default"
+  },
   "702942125": {
     "id": 702942125,
     "name": "Advanced Field Geology",
@@ -15612,9 +15785,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Lunine, J",
-        "locations": "",
+        "locations": "162 SMD",
         "number": 1,
-        "times": "F 00:00 - 00:00\nA"
+        "times": "F 11:00 - 11:55"
       }
     ],
     "comment": "",
@@ -16539,31 +16712,6 @@
     "true_units": "Somewhat Low",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=53&term_id=554&division_id=80427&department_id=135&offering_id=94034&track_id=94034-Default"
   },
-  "806090390": {
-    "id": 806090390,
-    "name": "Perspectives on History through Russian Literature",
-    "number": "H/L 142",
-    "sections": [
-      {
-        "grades": "",
-        "instructor": "Dennison, T",
-        "locations": "239 BAX",
-        "number": 1,
-        "times": "TR 10:30 - 11:55"
-      }
-    ],
-    "comment": " maximum enrollment: 15 students",
-    "units": [
-      3,
-      0,
-      6
-    ],
-    "description": "The Russian intelligentsia registered the arrival of modern urban society with a highly articulate sensitivity, perhaps because these changes-industrialization, the breakdown of traditional hierarchies and social bonds, the questioning of traditional beliefs-came to Russia so suddenly. This gives their writings a paradigmatic quality; the modern dilemmas that still haunt us are made so eloquently explicit in them that they have served as models for succeeding generations of writers and social critics. This course explores these writings (in English translation) against the background of Russian society, focusing especially on particular works of Chekhov, Dostoevsky, Goncharov, Tolstoy, and Turgenev.\n Not offered 2024-25.",
-    "prerequisites": "",
-    "rating": "4.98 +/- 0.15",
-    "true_units": "About Right",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=55&term_id=556&division_id=80427&department_id=135&offering_id=94941&track_id=94941-Default"
-  },
   "544784337": {
     "id": 544784337,
     "name": "Einstein on the Run: European Scientists Fleeing Fascism, War, and the",
@@ -16770,7 +16918,7 @@
         "instructor": "Mundell Perkins, E",
         "locations": "",
         "number": 3,
-        "times": "A\nA"
+        "times": "TR 13:00 - 14:25\nA"
       }
     ],
     "comment": " Instruments of Early Modern Astronomy max enroll: 15 students // counts as first-year Hum under Visual Culture",
@@ -16785,6 +16933,31 @@
     "true_units": "Somewhat Low",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=57&term_id=558&division_id=80427&department_id=136&offering_id=95695&track_id=95695-Section 1"
   },
+  "850097984": {
+    "id": 850097984,
+    "name": "Hispanic Cultures in Film and Literature",
+    "number": "Hum 115 c",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Garcia, D",
+        "locations": "",
+        "number": 1,
+        "times": "M 19:00 - 19:55\nA"
+      }
+    ],
+    "comment": " max enroll: 15 students",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "Offered concurrently with L 115. This course introduces students to narrative film and literature from the Hispanic world, with an emphasis on the hero figure. It also takes up hybridization and transculturation in the Americas, specifically in Mexico, Peru, and Cuba, as well as film and narratives of Spain from the Civil War to the present. Conducted in Spanish. (a) Basics of Hispanic films and narratives, and their socio-cultural roots (b) Hybridization and mestizo cultures in the Hispanic world (c) The last century in Hispanic film and narrative. Each term can be taken independently. Students who write papers in Spanish may enroll in this class as L 115.",
+    "prerequisites": "L 112 abc or equivalent.",
+    "rating": "3.71 +/- 1.28",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80427&department_id=136&offering_id=92390&track_id=92390-Default"
+  },
   "305131291": {
     "id": 305131291,
     "name": "Selected Topics in Humanities: Native North America",
@@ -16798,7 +16971,7 @@
         "times": "TR 13:00 - 14:25\nA"
       }
     ],
-    "comment": " max enroll: 15 students",
+    "comment": " Units (3-0-6) // max enroll: 15 students",
     "units": [
       0,
       0,
@@ -16981,6 +17154,31 @@
     "true_units": "",
     "link": ""
   },
+  "912812417": {
+    "id": 912812417,
+    "name": "Elementary French",
+    "number": "L 102 c",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Orcel, C",
+        "locations": "",
+        "number": 1,
+        "times": "OM,M 14:00 -\nA 14:55"
+      }
+    ],
+    "comment": " max enroll: 15 students",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "The course uses a multimedia program and emphasizes the acquisition of fundamental skills: oral ability, comprehension, writing, and reading. Students are evaluated based on quizzes and compositions (1/3), midterm and final (1/3), and class participation (1/3). The course is mainly designed for students with no previous knowledge of French. Students who have had French in secondary school or college must consult with the instructor before registering.",
+    "prerequisites": "",
+    "rating": "5.00 +/- 0.00",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=55&term_id=556&division_id=80427&department_id=139&offering_id=93822&track_id=93822-Default"
+  },
   "912863070": {
     "id": 912863070,
     "name": "Intermediate French",
@@ -17133,7 +17331,7 @@
         "times": "OM,M 19:00 -\nA 19:55"
       }
     ],
-    "comment": " max enroll: 20 students",
+    "comment": " max enroll: 6 students",
     "units": [
       3,
       0,
@@ -17421,7 +17619,7 @@
         "instructor": "Hofmann, D",
         "locations": "104 WAT",
         "number": 1,
-        "times": "M 12:00 - 12:55"
+        "times": "T 12:00 - 12:55"
       }
     ],
     "comment": "",
@@ -18855,9 +19053,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Song, A",
-        "locations": "",
+        "locations": "289 LINDE",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 10:30 - 11:55"
       },
       {
         "grades": "PASS-FAIL",
@@ -18867,7 +19065,7 @@
         "times": "TR 13:00 - 14:25"
       }
     ],
-    "comment": " Sec 1: TBA // Sec 2: Introduction to lattice models in statistical mechanics",
+    "comment": " Sec 1: Length, volume and rigidity in Riemannian geometry // Sec 2: Introduction to lattice models in statistical mechanics",
     "units": [
       3,
       0,
@@ -20549,6 +20747,13 @@
         "locations": "",
         "number": 27,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Stathopoulos, A",
+        "locations": "",
+        "number": 28,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -21158,7 +21363,7 @@
         "instructor": "Chiang, N",
         "locations": "BAC",
         "number": 1,
-        "times": "MW 10:30 - 13:55"
+        "times": "MW 10:30 - 11:55"
       }
     ],
     "comment": " max enroll: 18 students // Graduate students may not enroll until Add Day",
@@ -22474,6 +22679,13 @@
         "locations": "",
         "number": 60,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Abu-Mostafa, Y",
+        "locations": "",
+        "number": 61,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -22911,6 +23123,13 @@
         "instructor": "Most, E",
         "locations": "",
         "number": 63,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Abu-Mostafa, Y",
+        "locations": "",
+        "number": 64,
         "times": "A\nA"
       }
     ],
@@ -23646,7 +23865,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Staff",
+        "instructor": "Kahn, D",
         "locations": "",
         "number": 1,
         "times": "TR 10:30 - 11:55\nA"
@@ -23736,7 +23955,7 @@
       {
         "grades": "LETTER",
         "instructor": "George, N",
-        "locations": "121 BCK",
+        "locations": "115 GTL",
         "number": 1,
         "times": "W 13:00 - 13:55"
       }
