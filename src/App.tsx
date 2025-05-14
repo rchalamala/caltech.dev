@@ -16,8 +16,9 @@ const DATA_SP2024 = require("./data/IndexedTotalSP2023-24.json");
 const DATA_FA2025 = require("./data/IndexedTotalFA2024-25.json");
 const DATA_WI2025 = require("./data/IndexedTotalWI2024-25.json");
 const DATA_SP2025 = require("./data/IndexedTotalSP2024-25.json");
+const DATA_FA2026 = require("./data/IndexedTotalFA2025-26.json");
 
-const CURRENT_TERM = "/sp2025";
+const CURRENT_TERM = "/fa2026";
 
 const courseDataSources: Record<string, CourseData> = {
   "/fa2023": DATA_FA2023,
@@ -29,6 +30,7 @@ const courseDataSources: Record<string, CourseData> = {
   "/fa2025": DATA_FA2025,
   "/wi2025": DATA_WI2025,
   "/sp2025": DATA_SP2025,
+  "/fa2026": DATA_FA2026,
 };
 
 export const AllCourses = createContext<CourseIndex>({});
