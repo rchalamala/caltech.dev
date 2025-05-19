@@ -6738,7 +6738,7 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Wang, Z / Datta, S",
+        "instructor": "Dingilian, K",
         "locations": "153 NYS",
         "number": 1,
         "times": "T 12:00 - 12:55"
@@ -7215,6 +7215,31 @@
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=57&term_id=558&division_id=80424&department_id=116&offering_id=95376&track_id=95376-Default"
   },
+  "193861807": {
+    "id": 193861807,
+    "name": "Physical and Chemical Rate Processes",
+    "number": "ChE 151 a",
+    "sections": [
+      {
+        "grades": "LETTER",
+        "instructor": "Brady, J",
+        "locations": "",
+        "number": 1,
+        "times": "MWF 09:00 - 09:55\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      9
+    ],
+    "description": "The foundations of heat, mass, and momentum transfer for single and multiphase fluids will be developed. Governing differential equations; laminar flow of incompressible fluids at low and high Reynolds numbers; forced and free convective heat and mass transfer, diffusion, and dispersion. Emphasis will be placed on physical understanding, scaling, and formulation and solution of boundary-value problems. Applied mathematical techniques will be developed and used throughout the course.",
+    "prerequisites": "",
+    "rating": "3.57 +/- 1.29",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=54&term_id=555&division_id=80424&department_id=116&offering_id=93535&track_id=93535-Default"
+  },
   "631130622": {
     "id": 631130622,
     "name": "Heterogeneous Kinetics and Reaction Engineering",
@@ -7247,7 +7272,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Wang, Z",
+        "instructor": "Wang, Z / Datta, S",
         "locations": "106 SPL",
         "number": 1,
         "times": "TR 10:30 - 11:55"
@@ -7823,6 +7848,31 @@
     "rating": "",
     "true_units": "",
     "link": ""
+  },
+  "876930306": {
+    "id": 876930306,
+    "name": "Advanced Techniques of Synthesis and Analysis",
+    "number": "Ch 5 b",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Agapie, T",
+        "locations": "",
+        "number": 1,
+        "times": "A\nA\nOM,A\nA"
+      }
+    ],
+    "comment": " Labs will be Wednesday and Friday 8:00am - 4:00pm",
+    "units": [
+      1,
+      9,
+      2
+    ],
+    "description": "Modern synthetic chemistry. Specific experiments may change from year to year. Ch 5 a focuses on experiments illustrating the multistep syntheses of natural products. Ch 5 b focuses on the synthesis and spectroscopic characterization of coordination and organometallic complexes and their applications in organic and electrochemical catalysis. Methodology will include advanced techniques of synthesis and instrumental characterization. Terms may be taken independently.\n Part a not offered 2023-24.",
+    "prerequisites": "Ch 4 ab. Ch 102 strongly recommended for Ch 5 b.",
+    "rating": "4.51 +/- 0.82",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=53&term_id=554&division_id=80424&department_id=114&offering_id=92961&track_id=92961-Default"
   },
   "77685862": {
     "id": 77685862,
@@ -10682,6 +10732,13 @@
         "instructor": "Burdick, J",
         "locations": "",
         "number": 20,
+        "times": "A\nA"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "Preskill, J",
+        "locations": "",
+        "number": 21,
         "times": "A\nA"
       }
     ],
@@ -16879,31 +16936,6 @@
     "rating": "4.08 +/- 0.91",
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=57&term_id=558&division_id=80425&department_id=141&offering_id=96873&track_id=96873-Default"
-  },
-  "684089817": {
-    "id": 684089817,
-    "name": "Fracture of Brittle Solids",
-    "number": "MS/ME 166",
-    "sections": [
-      {
-        "grades": "",
-        "instructor": "Faber, K",
-        "locations": "104 WAT",
-        "number": 1,
-        "times": "TR 10:30 - 11:55"
-      }
-    ],
-    "comment": "",
-    "units": [
-      3,
-      0,
-      6
-    ],
-    "description": "The mechanical response of brittle materials (ceramics, glasses and some network polymers) will be treated using classical elasticity, energy criteria, and fracture mechanics. The influence of environment and microstructure on mechanical behavior will be explored. Transformation toughened systems, large-grain crack-bridging systems, nanostructured ceramics, porous ceramics, anomalous glasses, and the role of residual stresses will be highlighted. Strength, flaw statistics and reliability will be discussed.",
-    "prerequisites": "graduate standing or MS 115 and MS 116.",
-    "rating": "4.37 +/- 0.66",
-    "true_units": "About Right",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=57&term_id=558&division_id=80425&department_id=141&offering_id=96894&track_id=96894-Default"
   },
   "337382215": {
     "id": 337382215,
