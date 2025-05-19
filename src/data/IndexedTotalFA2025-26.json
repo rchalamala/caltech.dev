@@ -20777,16 +20777,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Ravi, V",
-        "locations": "201 BRG",
+        "locations": "201 BRG\n134 BCK (Auditorium)",
         "number": 5,
-        "times": "WF 11:00 - 11:55"
-      },
-      {
-        "grades": "PASS-FAIL",
-        "instructor": "PASS-FAIL",
-        "locations": "BCK",
-        "number": 134,
-        "times": ""
+        "times": "WF 11:00 - 11:55\nMR 13:00 - 13:55"
       },
       {
         "grades": "PASS-FAIL",
