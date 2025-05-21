@@ -5047,7 +5047,7 @@
         "times": "TR 13:00 - 14:25\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled // To be offered in Spring Term",
     "units": [
       3,
       0,
@@ -14253,18 +14253,18 @@
   },
   "357587279": {
     "id": 357587279,
-    "name": "First-Year Seminar: The Science of Music",
+    "name": "The Science of Music",
     "number": "FS/Ph 9",
     "sections": [
       {
         "grades": "PASS-FAIL",
         "instructor": "Politzer, H",
-        "locations": "387 LINDE",
+        "locations": "B157 BRG",
         "number": 1,
-        "times": "MF 13:00 - 13:55"
+        "times": "WF 15:00 - 15:55"
       }
     ],
-    "comment": " maximum enrollment: 12 students",
+    "comment": " open to all undergraduates (all years)",
     "units": [
       2,
       0,
