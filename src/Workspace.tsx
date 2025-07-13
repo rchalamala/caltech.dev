@@ -18,7 +18,7 @@ import { Collapse, IconButton, Switch } from "@mui/material";
 import { UnfoldLess, UnfoldMore } from "@mui/icons-material";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 
-const TERM_START_DATES = require("./data/term_start_dates.json");
+import TERM_START_DATES from "./data/term_start_dates.json";
 
 /** Fetches courses */
 function getCourse(
@@ -53,7 +53,7 @@ function getCourse(
 }
 
 function exportICS(term: string, courses: CourseStorage[]): string {
-  const termStartDate = new Date(TERM_START_DATES[term]);
+  const termStartDate = new Date(TERM_START_DATES[term as keyof typeof TERM_START_DATES]);
 
   // Map weekdays to indices for easy comparison
   const dayMap = "MTWRFSU";
@@ -490,7 +490,7 @@ export default function Workspace({ term }: { term: string }) {
     }
   }
 
-  const [openExportModal, exportModal] = useModal((props) => {
+  const [openExportModal, exportModal] = useModal(() => {
     const shortened = shortenCourses(state.courses)
       .map((c) => [c.courseId, c.enabled, c.locked, c.sectionId])
       .flat();
