@@ -59,5 +59,8 @@
     "typescript": "^5.7.2",
     "vite": "^7.0.4"
   },
+  "resolutions": {
+    "rollup": "4.44.2"
+  },
   "homepage": "."
 }
