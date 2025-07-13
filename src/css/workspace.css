@@ -96,7 +96,7 @@ li {
   border: 1px solid lightgrey;
   border-radius: 4px;
   margin-bottom: 2em;
-  @apply p-2;
+  padding: 0.5rem;
 }
 
 .workspace-entry-enabled {
@@ -139,7 +139,8 @@ li {
   column-gap: 1.5em;
   align-items: center;
   width: 100%;
-  @apply p-2 pt-0;
+  padding: 0.5rem;
+  padding-top: 0;
 }
 
 .workspace-entry-info > p {
