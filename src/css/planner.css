@@ -28,8 +28,9 @@
 
 .time-controls {
   display: grid;
-  grid-template-columns: 65px repeat(5, 1fr);
+  grid-template-columns: 52px repeat(5, 1fr);
   gap: 0;
+  margin-left: 10px;
   margin-right: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
