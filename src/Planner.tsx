@@ -111,8 +111,9 @@ function Planner() {
   };
 
   return (
-    <div>
+    <div className="planner-container">
       <div className="time-controls">
+        <div className="time-gutter-spacer"></div>
         {[0, 1, 2, 3, 4].map((idx) => {
           return (
             <div className="time-picker" key={idx}>
