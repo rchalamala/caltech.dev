@@ -88,7 +88,7 @@ function exportICS(term: string, courses: CourseStorage[]): string {
           // Zip times and locations together
           return times.flatMap((time, index) => {
             const location = locations[index] || 'Unknown'; // Match time with corresponding location
-            const [days, startTime, _, endTime] = time.split(' '); // Separate days and time range
+            const [days, startTime, , endTime] = time.split(' '); // Separate days and time range
             if (days === 'A') return []; // skip to-be-announced times
             
             return days.split('').map(day => ({
