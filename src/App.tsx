@@ -330,13 +330,10 @@ function App() {
     );
     let newCourses: CourseStorage[] = [];
     if (result) {
-      newCourses = courses.map((course) =>
-        course.courseData.id === newCourse.courseData.id
-          ? setField(newCourse, "locked", true)
-          : course,
-      );
+      // course was already in workspace
+      newCourses = courses;
     } else {
-      newCourses = [...courses, newCourse];
+      newCourses = [...courses, setField(setField(newCourse, "locked", true), "sectionId", 0)];
     }
     const newArrangements = generateCourseSections(newCourses, availableTimes);
     let newArrangementIdx = null;
