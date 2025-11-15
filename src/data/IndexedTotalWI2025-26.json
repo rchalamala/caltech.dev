@@ -462,6 +462,13 @@
         "locations": "",
         "number": 38,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Shaikeea, A",
+        "locations": "",
+        "number": 39,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -534,12 +541,12 @@
       {
         "grades": "",
         "instructor": "Colonius, T",
-        "locations": "",
+        "locations": "115 GTL",
         "number": 1,
-        "times": "A\nA"
+        "times": "OM,T 14:30 - 15:25"
       }
     ],
-    "comment": "",
+    "comment": " OM on Tuesday, January 6 at 2:30 PM in 115 GTL",
     "units": [
       3,
       0,
@@ -621,7 +628,7 @@
         "times": "A\nA"
       }
     ],
-    "comment": " Sec 1: Educational Exchange",
+    "comment": " Sec 1: Educational Exchange - units (2-0-7) // Sec 2: Vortex Flows in Nature and Industry - units (3-0-6)",
     "units": [
       0,
       0,
@@ -714,6 +721,13 @@
         "instructor": "Schroeder, P",
         "locations": "",
         "number": 4,
+        "times": "A\nA"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "Hoffmann, F",
+        "locations": "",
+        "number": 5,
         "times": "A\nA"
       }
     ],
@@ -1011,9 +1025,9 @@
       {
         "grades": "",
         "instructor": "Isett, P",
-        "locations": "",
+        "locations": "387 LINDE",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 14:30 - 15:55"
       }
     ],
     "comment": "",
@@ -1353,13 +1367,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Matsko, A",
-        "locations": "125 STL",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "TR 09:00 - 10:25"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       3,
       0,
@@ -2532,13 +2546,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Brown, M",
-        "locations": "162 SMD",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "TR 10:30 - 11:55"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled // Moved to Spring term 2025-26",
     "units": [
       3,
       0,
@@ -2833,13 +2847,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Knutson, H",
-        "locations": "162 SMD",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "MWF 14:00 - 14:55"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       3,
       0,
@@ -2908,13 +2922,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Blake, G",
-        "locations": "162 SMD",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "TR 14:30 - 15:55"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       3,
       0,
@@ -5887,13 +5901,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Newman, D",
-        "locations": "215 NMD",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "MWF 09:00 - 09:55"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       3,
       0,
@@ -5912,13 +5926,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Orphan, V",
-        "locations": "162 SMD",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "TR 13:00 - 14:25"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       3,
       2,
@@ -5979,6 +5993,31 @@
     "rating": "",
     "true_units": "",
     "link": ""
+  },
+  "764035041": {
+    "id": 764035041,
+    "name": "Genetic Dissection of Neural Circuit Function",
+    "number": "NB/Bi/CNS 220",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Anderson, D",
+        "locations": "340A CNRB",
+        "number": 1,
+        "times": "R 15:00 - 17:55"
+      }
+    ],
+    "comment": "",
+    "units": [
+      2,
+      0,
+      4
+    ],
+    "description": "This advanced course will discuss the emerging science of neural \"circuit breaking\" through the application of molecular genetic tools. These include optogenetic and pharmacogenetic manipulations of neuronal activity, genetically based tracing of neuronal connectivity, and genetically based indicators of neuronal activity. Both viral and transgenic approaches will be covered, and examples will be drawn from both the invertebrate and vertebrate literature. Interested CNS or other graduate students who have little or no familiarity with molecular biology will be supplied with the necessary background information. Lectures and student presentations from the current literature.",
+    "prerequisites": "NB/Bi/CNS 150 or equivalent. Open to advanced (junior or senior) undergraduates only and with instructor permission.",
+    "rating": "4.87 +/- 0.39",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=49&term_id=551&division_id=80423&department_id=535&offering_id=91476&track_id=91476-Default"
   },
   "716189954": {
     "id": 716189954,
@@ -7420,13 +7459,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Druckenmiller, H / Fromer,",
-        "locations": "210 RSC\nN / Wennberg, P",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "W 11:00 - 12:55"
+        "times": "A\nA"
       }
     ],
-    "comment": " maximum enrollment: 25 students",
+    "comment": " Course Cancelled // maximum enrollment: 25 students",
     "units": [
       3,
       0,
@@ -8009,12 +8048,12 @@
       {
         "grades": "",
         "instructor": "Mendez, J",
-        "locations": "B122 GCL\n130 CHR\n130 CHR",
+        "locations": "B122 GCL\n130 CHR",
         "number": 1,
-        "times": "F 12:00 - 12:55\nT 08:00 - 10:55\nR 08:00 - 10:55"
+        "times": "F 12:00 - 12:55\nTR 08:00 - 10:55"
       }
     ],
-    "comment": " open by lottery only; see link on the REGIS home page to enter by Nov 20th // maximum enrollment: 14 students",
+    "comment": " max enroll: 14 students",
     "units": [
       1,
       6,
@@ -8075,6 +8114,38 @@
     "rating": "4.64 +/- 0.63",
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=54&term_id=555&division_id=80424&department_id=114&offering_id=93362&track_id=93362-Default"
+  },
+  "150794870": {
+    "id": 150794870,
+    "name": "Organic Chemistry",
+    "number": "Ch 41 b",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Hsieh-Wilson, L",
+        "locations": "153 NYS\n151 CRL",
+        "number": 1,
+        "times": "MWF 09:00 - 09:55\nW 13:00 - 13:55"
+      },
+      {
+        "grades": "",
+        "instructor": "Hsieh-Wilson, L",
+        "locations": "153 NYS\n151 CRL",
+        "number": 2,
+        "times": "MWF 09:00 - 09:55\nR 20:00 - 20:55"
+      }
+    ],
+    "comment": "",
+    "units": [
+      4,
+      0,
+      5
+    ],
+    "description": "The synthesis, structure, and reaction mechanisms of organic compounds.",
+    "prerequisites": "Ch 1 ab or instructor's permission.",
+    "rating": "4.75 +/- 0.47",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=54&term_id=555&division_id=80424&department_id=114&offering_id=93363&track_id=93363-Default"
   },
   "460608923": {
     "id": 460608923,
@@ -8830,13 +8901,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Wennberg, P",
-        "locations": "136 LLB",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "TR 13:00 - 14:25"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       3,
       0,
@@ -8855,13 +8926,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Diallo, M",
-        "locations": "135 LLB",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "TR 14:30 - 15:55"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       3,
       0,
@@ -10883,7 +10954,7 @@
         "times": "OM,M 21:00 - 21:55"
       }
     ],
-    "comment": " CS 1 or instructor's permission is required. // Sec 1: C",
+    "comment": " CS 1 or instructor's permission is required. // Sec 1: Rust Track",
     "units": [
       0,
       3,
@@ -10915,7 +10986,7 @@
         "times": "OM,M 20:00 - 20:55"
       }
     ],
-    "comment": " Section 01 units (1-0-2) // Section 09 units (1-2-0) // Sec 09 OM is Monday, Jan. 5 in 104 ANB from 8:00-9:00PM",
+    "comment": " Section 01: High-Dimensional Probability - units (1-0-2) // Section 09: Introduction to Prototyping - units (1-2-0) // Sec 09 OM is Monday, Jan. 5 in 104 ANB from 8:00-9:00PM",
     "units": [
       0,
       0,
@@ -11820,7 +11891,7 @@
         "times": "OM,M 21:00 - 21:55"
       }
     ],
-    "comment": " Sec 1: C",
+    "comment": " Sec 1: Rust Track",
     "units": [
       0,
       3,
@@ -12963,7 +13034,7 @@
   },
   "43912750": {
     "id": 43912750,
-    "name": "Selected Topics in Economics",
+    "name": "Selected Topics in Economics: Markets, politics and Growth in China 1700- 2020",
     "number": "Ec 101",
     "sections": [
       {
@@ -12974,7 +13045,7 @@
         "times": "MWF 14:00 - 14:55"
       }
     ],
-    "comment": " units (3-0-6)",
+    "comment": " units (3-0-6) // max enroll: 15 students // undergraduates only",
     "units": [
       3,
       0,
@@ -13899,10 +13970,10 @@
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Phinney, E",
-        "locations": "201 BRG",
+        "instructor": "Staff",
+        "locations": "",
         "number": 2,
-        "times": "OM,M 14:05 - 14:45"
+        "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
@@ -13973,31 +14044,6 @@
     "rating": "4.84 +/- 0.37",
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=55&term_id=556&division_id=80425&department_id=275&offering_id=93671&track_id=93671-Default"
-  },
-  "414103100": {
-    "id": 414103100,
-    "name": "Leonardo da Vinci & Co.: How to Understand Technological Invention in the",
-    "number": "Hum/En 38",
-    "sections": [
-      {
-        "grades": "PASS-FAIL",
-        "instructor": "Zanetti, C",
-        "locations": "",
-        "number": 1,
-        "times": "TR 09:00 - 10:25\nA"
-      }
-    ],
-    "comment": " Long Renaissance",
-    "units": [
-      3,
-      0,
-      6
-    ],
-    "description": "This course will explore modern American literature's interest in time. We will identify the narrative methods that modernist texts use to characterize the experience of lived time, or temporality, such as streams of consciousness, non-linear storytelling, and narrative omissions. What challenges do such methods pose to clock time and, more broadly, historical time? Students will learn about key literary movements within American modernism, and they will consider modernist literature's relationships to other genres and media, including music and visual culture. The course will emphasize modernism's engagements with shifting social norms related to race, class, gender, and sexuality during the first half of the twentieth century.",
-    "prerequisites": "",
-    "rating": "4.35 +/- 0.63",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=38&term_id=520&division_id=80427&department_id=136&offering_id=80308&track_id=80308-Default"
   },
   "979829491": {
     "id": 979829491,
@@ -14131,7 +14177,7 @@
     "sections": [
       {
         "grades": "LETTER",
-        "instructor": "Weinstein, C",
+        "instructor": "Staff",
         "locations": "",
         "number": 1,
         "times": "A\nA"
@@ -14323,6 +14369,31 @@
     "rating": "4.55 +/- 0.84",
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=54&term_id=555&division_id=80427&department_id=132&offering_id=93223&track_id=93223-Default"
+  },
+  "460732542": {
+    "id": 460732542,
+    "name": "Earth's Climate",
+    "number": "ESE 1",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Wennberg, P",
+        "locations": "275 RSC\n210 RSC",
+        "number": 1,
+        "times": "TR 10:30 - 11:20\nTR 11:20 - 11:55"
+      }
+    ],
+    "comment": " ATTENDANCE IS REQUIRED // RSC 275 (10:30-11:20 AM); RSC 275 & RSC 210 (both classrooms at 11:20-11:55 AM)",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "An introduction to climate on Earth. How Earth's climate has changed in the past and its evolving response to the rapid increase in carbon dioxide and methane happening today. Model projections of future climate and associated risks. Development of climate policies in face of uncertainty in these projections and risks. Enrollment is limited. Satisfies the menu requirement of the Caltech core curriculum. Juniors and Seniors who have satisfied their menu course requirement should enroll in ESE 101.",
+    "prerequisites": "",
+    "rating": "4.09 +/- 1.15",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=55&term_id=556&division_id=80426&department_id=495&offering_id=93613&track_id=93613-Default"
   },
   "42577198": {
     "id": 42577198,
@@ -14539,6 +14610,31 @@
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=54&term_id=555&division_id=80426&department_id=495&offering_id=94125&track_id=94125-Default"
   },
+  "832806930": {
+    "id": 832806930,
+    "name": "Current Problems in Environmental Science and Engineering",
+    "number": "ESE 104",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Callies, J",
+        "locations": "",
+        "number": 1,
+        "times": "A\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      1,
+      0,
+      0
+    ],
+    "description": "Discussion of current research by ESE graduate students, faculty, and staff.",
+    "prerequisites": "",
+    "rating": "5.00 +/- 0.00",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=54&term_id=555&division_id=80426&department_id=495&offering_id=94689&track_id=94689-Default"
+  },
   "971494844": {
     "id": 971494844,
     "name": "Research in Environmental Science and Engineering",
@@ -14747,6 +14843,56 @@
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=54&term_id=555&division_id=80426&department_id=495&offering_id=94688&track_id=94688-Default"
   },
+  "34966204": {
+    "id": 34966204,
+    "name": "Marine Geochemistry",
+    "number": "Ge/ESE 149",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Adkins, J",
+        "locations": "",
+        "number": 1,
+        "times": "A\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "Introduction to chemical oceanography and sediment geochemistry. We will address the question \"Why is the ocean salty?\" by examining the processes that determine the major, minor, and trace element distributions of seawater and ocean sediments. Topics include river and estuarine chemistry, air/sea exchange, nutrient uptake by the biota, radioactive tracers, redox processes in the water column and sediments, carbonate chemistry, and ventilation.\n Given in alternate years; not offered 2024-25.",
+    "prerequisites": "ESE 102.",
+    "rating": "4.51 +/- 0.71",
+    "true_units": "2",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80426&department_id=182&offering_id=88532&track_id=88532-Default"
+  },
+  "941311205": {
+    "id": 941311205,
+    "name": "Readings in Paleoclimate",
+    "number": "Ge/ESE 154",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Adkins, J",
+        "locations": "",
+        "number": 1,
+        "times": "A\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      0,
+      0,
+      0
+    ],
+    "description": "Lectures and readings in areas of current interest in paleoceanography and paleoclimate.",
+    "prerequisites": "instructor's permission.",
+    "rating": "4.28 +/- 0.45",
+    "true_units": "3",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=46&term_id=547&division_id=80426&department_id=182&offering_id=88533&track_id=88533-Default"
+  },
   "873187483": {
     "id": 873187483,
     "name": "Paleoceanography",
@@ -14754,13 +14900,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Adkins, J",
-        "locations": "212 NMD",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "F 10:00 - 11:25"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       3,
       0,
@@ -15051,7 +15197,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Staff",
+        "instructor": "Tejada Lara, J",
         "locations": "",
         "number": 1,
         "times": "A\nA"
@@ -15421,13 +15567,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Brown, M",
-        "locations": "162 SMD",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "TR 10:30 - 11:55"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled // Moved to Spring term 2025-26 (taught concurrently with Ge/Ay 11c)",
     "units": [
       3,
       0,
@@ -15446,7 +15592,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Staff",
+        "instructor": "Tejada Lara, J",
         "locations": "",
         "number": 1,
         "times": "A\nA"
@@ -15471,13 +15617,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Avouac, J",
-        "locations": "212 NMD\n212 NMD",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "MR 09:00 - 09:55\nT 16:00 - 16:55"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       3,
       0,
@@ -15514,6 +15660,31 @@
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=55&term_id=556&division_id=80426&department_id=182&offering_id=93905&track_id=93905-Section 1"
   },
+  "45837640": {
+    "id": 45837640,
+    "name": "Sedimentology and Stratigraphy",
+    "number": "Ge 112",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Grotzinger, J",
+        "locations": "267 ARM\n251 ARM",
+        "number": 1,
+        "times": "W 13:00 - 15:55\nTR 09:00 - 10:25"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      5,
+      4
+    ],
+    "description": "Systematic analysis of transport and deposition in sedimentary environments and the resulting composition, texture, and structure of both clastic and chemical sedimentary rocks. The nature and genesis of sequence architecture of sedimentary basins and cyclic aspects of sedimentary accumulation will be introduced. Covers the formal and practical principles of definition of stratigraphic units, correlation, and the construction of a geologic timescale. Field trip and laboratory exercises.\n Given in alternate years; not offered 2024-25.",
+    "prerequisites": "Ge 11 ab.",
+    "rating": "4.70 +/- 0.52",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=54&term_id=555&division_id=80426&department_id=182&offering_id=94687&track_id=94687-Default"
+  },
   "53334284": {
     "id": 53334284,
     "name": "Analytical Techniques Laboratory",
@@ -15521,8 +15692,8 @@
     "sections": [
       {
         "grades": "LETTER",
-        "instructor": "Jackson, J / Asimow, P /",
-        "locations": "251 ARM\nEhlmann, B",
+        "instructor": "Jackson, J / Asimow, P",
+        "locations": "251 ARM",
         "number": 1,
         "times": "T 14:00 - 14:55"
       }
@@ -15546,13 +15717,13 @@
     "sections": [
       {
         "grades": "LETTER",
-        "instructor": "Bucholz, C",
-        "locations": "251 ARM",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "OM,M 13:00 - 13:55"
+        "times": "A\nA"
       }
     ],
-    "comment": " Field Trip dates: TBA // OM December 16, 2024",
+    "comment": " Course Cancelled",
     "units": [
       0,
       9,
@@ -15571,13 +15742,13 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Stock, J",
-        "locations": "215 NMD",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "W 11:00 - 11:55"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       1,
       3,
@@ -15599,10 +15770,10 @@
         "instructor": "Kirschvink, J",
         "locations": "251 ARM",
         "number": 1,
-        "times": "OM,M 17:00 - 17:55"
+        "times": "OM,T 17:00 - 17:55"
       }
     ],
-    "comment": "",
+    "comment": " OM Jan 06, 2026",
     "units": [
       1,
       0,
@@ -15621,13 +15792,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Eiler, J",
-        "locations": "215 NMD",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "MWF 14:00 - 14:55"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       3,
       0,
@@ -15638,6 +15809,31 @@
     "rating": "4.30 +/- 0.84",
     "true_units": "Somewhat High",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=49&term_id=551&division_id=80426&department_id=182&offering_id=92129&track_id=92129-Default"
+  },
+  "577449875": {
+    "id": 577449875,
+    "name": "Radiogenic Isotope Geochemistry",
+    "number": "Ge 140 b",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Tissot, F",
+        "locations": "215 NMD",
+        "number": 1,
+        "times": "TR 09:00 - 10:25"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "An introduction to the use of stable isotopes in biogeochemistry, intended to give interested students the necessary background to understand applications in a variety of fields, from modern carbon cycling to microbial ecology to records of Ancient Earth. Topics include the principles of isotope distribution in reaction networks; isotope effects in enzyme-mediated reactions, and in metabolism and biosynthesis; characteristic fractionations accompanying carbon, nitrogen, and sulfur cycling; and applications of stable isotopes in the biogeosciences.\n Not offered 2024-25.",
+    "prerequisites": "Ge 140 a or equivalent.",
+    "rating": "4.71 +/- 0.57",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=54&term_id=555&division_id=80426&department_id=182&offering_id=94239&track_id=94239-Default"
   },
   "44166091": {
     "id": 44166091,
@@ -15696,13 +15892,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Ross, Z",
-        "locations": "256 SMD",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "TR 13:00 - 14:25"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       3,
       0,
@@ -15714,6 +15910,56 @@
     "true_units": "2",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80426&department_id=182&offering_id=87376&track_id=87376-Default"
   },
+  "55461710": {
+    "id": 55461710,
+    "name": "Tectonic Geodesy",
+    "number": "Ge 167",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Simons, M",
+        "locations": "162 SMD",
+        "number": 1,
+        "times": "TR 10:30 - 11:55"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "An introduction to the use of modern geodetic observations (e.g., GPS and InSAR) to constrain crustal deformation models. Secular velocity fields, coseismic and time-dependent processes; volcano deformation and seasonal loading phenomena. Basic inverse approaches for parameter estimation and basic temporal filtering algorithms.\n Given in alternate years; offered 2024-25.",
+    "prerequisites": "a working knowledge of unix/linux or equivalent, linear algebra, and coursework in geophysics.",
+    "rating": "4.66 +/- 0.78",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=49&term_id=551&division_id=80426&department_id=182&offering_id=90313&track_id=90313-Default"
+  },
+  "46242864": {
+    "id": 46242864,
+    "name": "Special Topics in the Geological Sciences",
+    "number": "Ge 192",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Staff",
+        "locations": "",
+        "number": 1,
+        "times": "A\nA"
+      }
+    ],
+    "comment": " Topic TBA",
+    "units": [
+      0,
+      0,
+      0
+    ],
+    "description": "Advanced-level discussions of problems of current interest in the geological sciences. Students may enroll for any or all terms of this course without regard to sequence.",
+    "prerequisites": "",
+    "rating": "4.23 +/- 1.19",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=57&term_id=558&division_id=80426&department_id=182&offering_id=96952&track_id=96952-Default"
+  },
   "48117025": {
     "id": 48117025,
     "name": "Special Topics in Geophysics: Fault dynamics",
@@ -15721,13 +15967,13 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Barbot, S",
-        "locations": "251 ARM",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "F 09:00 - 11:25"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       0,
       0,
@@ -15738,6 +15984,81 @@
     "rating": "4.63 +/- 0.65",
     "true_units": "5",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=45&term_id=546&division_id=80426&department_id=182&offering_id=87987&track_id=87987-Default"
+  },
+  "57083975": {
+    "id": 57083975,
+    "name": "Stable Isotopes Seminar",
+    "number": "Ge 218",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Eiler, J",
+        "locations": "215 NMD",
+        "number": 1,
+        "times": "T 10:00 - 10:55"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      3
+    ],
+    "description": "The course deals with advanced topics in stable isotope geochemistry and builds on Ge 140. The course will explore in depth the theory and applications of a subject in stable isotope geochemistry, selected by consensus of the enrolled students at or before the beginning of term. Example subjects could include: stable isotope thermometry; paleoclimate studies; paleoaltimetry; the early solar system; terrestrial weathering; photochemistry; or biosynthetic fractionations. The class will read and discuss classic papers in that subject area, supplemented with instructor lectures and broader background reading. All participants will lead discussions of papers and present one lecture on a relevant subject.\n Given in alternate years; not offered 2024-25.",
+    "prerequisites": "Ge 140 or permission of instructor.",
+    "rating": "5.00 +/- 0.00",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=54&term_id=555&division_id=80426&department_id=182&offering_id=94683&track_id=94683-Default"
+  },
+  "44268766": {
+    "id": 44268766,
+    "name": "Dynamics of Seismicity",
+    "number": "Ge 271",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Ross, Z",
+        "locations": "",
+        "number": 1,
+        "times": "A\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "A comprehensive introduction to seismicity of the Earth. Topics covered: Empirical laws for seismicity; spatial and temporal evolution of earthquake sequences; earthquake location algorithms; seismicity in crustal fault zones, subduction zones, creeping faults, volcanoes, and intraplate regions; earthquake triggering; induced seismicity; tectonic tremor and low-frequency earthquakes. Requires a class project.",
+    "prerequisites": "",
+    "rating": "4.52 +/- 0.50",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=54&term_id=555&division_id=80426&department_id=182&offering_id=93135&track_id=93135-Default"
+  },
+  "55513732": {
+    "id": 55513732,
+    "name": "Active Tectonics Seminar",
+    "number": "Ge 277",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Avouac, J",
+        "locations": "212 NMD",
+        "number": 1,
+        "times": "W 10:00 - 10:55"
+      }
+    ],
+    "comment": "",
+    "units": [
+      2,
+      0,
+      4
+    ],
+    "description": "Discussion of key issues in active tectonics based on a review of the literature. The topic of the seminar is adjusted every year based on students' interest and recent literature.\n Given in alternate years; not offered 2024-25.",
+    "prerequisites": "",
+    "rating": "4.77 +/- 0.42",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=54&term_id=555&division_id=80426&department_id=182&offering_id=94684&track_id=94684-Default"
   },
   "55615038": {
     "id": 55615038,
@@ -16442,6 +16763,31 @@
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=53&term_id=554&division_id=80427&department_id=136&offering_id=94041&track_id=94041-Section 1"
   },
+  "119007400": {
+    "id": 119007400,
+    "name": "Leonardo da Vinci & Co.: How to Understand Technological Invention in the",
+    "number": "Hum/H 38",
+    "sections": [
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Zanetti, C",
+        "locations": "",
+        "number": 1,
+        "times": "TR 09:00 - 10:25\nA"
+      }
+    ],
+    "comment": " Long Renaissance",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "This course will explore modern American literature's interest in time. We will identify the narrative methods that modernist texts use to characterize the experience of lived time, or temporality, such as streams of consciousness, non-linear storytelling, and narrative omissions. What challenges do such methods pose to clock time and, more broadly, historical time? Students will learn about key literary movements within American modernism, and they will consider modernist literature's relationships to other genres and media, including music and visual culture. The course will emphasize modernism's engagements with shifting social norms related to race, class, gender, and sexuality during the first half of the twentieth century.",
+    "prerequisites": "",
+    "rating": "4.35 +/- 0.63",
+    "true_units": "4",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=38&term_id=520&division_id=80427&department_id=136&offering_id=80308&track_id=80308-Default"
+  },
   "93540959": {
     "id": 93540959,
     "name": "Reading in History",
@@ -16755,7 +17101,7 @@
         "times": "TR 13:00 - 14:25\nA"
       }
     ],
-    "comment": " By application only",
+    "comment": " max enroll: 15 students // Open by lottery only // https://forms.office.com/r/R0ESTpDiG5",
     "units": [
       3,
       0,
@@ -16901,7 +17247,7 @@
   },
   "53630581": {
     "id": 53630581,
-    "name": "Special Topics in Humanities/English",
+    "name": "Special Topics in Humanities/English: Medieval Networks",
     "number": "Hum 56",
     "sections": [
       {
@@ -16912,7 +17258,7 @@
         "times": "TR 13:00 - 13:55\nA"
       }
     ],
-    "comment": "",
+    "comment": " units (3-0-6)",
     "units": [
       0,
       0,
@@ -16973,6 +17319,31 @@
     "rating": "5.00 +/- 0.00",
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=54&term_id=555&division_id=80427&department_id=136&offering_id=94605&track_id=94605-Default"
+  },
+  "181411896": {
+    "id": 181411896,
+    "name": "Selected Topics in Humanities: Advanced Chinese: Contemporary China (B)",
+    "number": "Hum 119",
+    "sections": [
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Wang, P",
+        "locations": "",
+        "number": 1,
+        "times": "OM,M 12:00 -\nA 12:55"
+      }
+    ],
+    "comment": " Prerequisites: L 171 abc, L 172 abc or equivalent.",
+    "units": [
+      0,
+      0,
+      0
+    ],
+    "description": "This is an advanced humanities course on a specialized topic in some area of the humanities. It is usually taught by new or visiting faculty. The course may be re-taken for credit except as noted in the course announcement. Limited to 15 students. See registrar's announcement for details.",
+    "prerequisites": "",
+    "rating": "3.65 +/- 1.82",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=54&term_id=555&division_id=80427&department_id=136&offering_id=94585&track_id=94585-Default"
   },
   "57724856": {
     "id": 57724856,
@@ -17505,13 +17876,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Wang, P",
+        "instructor": "Staff",
         "locations": "",
         "number": 1,
-        "times": "OM,M 12:00 -\nA 12:55"
+        "times": "A\nA"
       }
     ],
-    "comment": " Prerequisites: L 171 abc, L 172 abc or equivalent.",
+    "comment": " Course Cancelled // Please see Hum 119 Section 01 // Prerequisites: L 171 abc, L 172 abc or equivalent.",
     "units": [
       3,
       0,
@@ -18206,7 +18577,7 @@
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Graber, T",
+        "instructor": "Gherman, M",
         "locations": "310 LINDE\n289 LINDE",
         "number": 4,
         "times": "MWF 10:00 - 10:55\nR 16:00 - 16:55"
@@ -18305,8 +18676,8 @@
       },
       {
         "grades": "LETTER",
-        "instructor": "Pachter, L /",
-        "locations": "Lecture Hall\nHallgrimsdottir, I\nBAX\n107 DWN",
+        "instructor": "Hallgrimsdottir, I / Pachter,",
+        "locations": "Lecture Hall\nL\nBAX\n107 DWN",
         "number": 3,
         "times": "MWF 10:00 - 10:55\nR 13:00 - 13:55"
       },
@@ -18976,9 +19347,9 @@
       {
         "grades": "",
         "instructor": "Heinaevaara, O",
-        "locations": "",
+        "locations": "289 LINDE",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 09:00 - 10:25"
       },
       {
         "grades": "",
@@ -23459,7 +23830,7 @@
         "times": "MWF 11:00 - 11:55"
       }
     ],
-    "comment": " if class is full, see waitlist form at https://forms.office.com/r/SEVCpEpvbM // class meets in LAU 269 on 1/3/24 and 1/5/24 /// maximum enrollment: 18 students per section",
+    "comment": " if class is full, see waitlist form at https://forms.office.com/r/SEVCpEpvbM /// maximum enrollment: 18 students per section",
     "units": [
       3,
       0,
@@ -24199,7 +24570,7 @@
         "instructor": "Hall, S",
         "locations": "",
         "number": 1,
-        "times": "W 09:00 - 09:55\nA"
+        "times": "T 11:00 - 11:55\nA"
       }
     ],
     "comment": " Instructor permission required before enrolling",
