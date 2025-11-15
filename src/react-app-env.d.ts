@@ -18,6 +18,7 @@ interface CourseData {
   rating: string;
   true_units: string;
   link: string;
+  comment: string;
 }
 
 interface DateData {

@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useState } from "react";app
 import Modal, { useModal } from "./Modal";
 import Select from "react-select";
 import { SingleValue } from "react-select";
@@ -201,6 +201,10 @@ function AdvancedCourseInfo(props: { course: CourseStorage }) {
           </a>
           : {course.rating}
         </p>
+      </section>
+      <section>
+        <h2 className="text-lg font-bold">Comments</h2>
+        <p>{course.comment || "None"}</p>
       </section>
     </div>
   );
