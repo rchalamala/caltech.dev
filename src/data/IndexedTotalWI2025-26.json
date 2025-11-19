@@ -182,9 +182,9 @@
       {
         "grades": "",
         "instructor": "Bhattacharya, K",
-        "locations": "",
+        "locations": "115 GTL",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 14:30 - 15:55"
       }
     ],
     "comment": "",
@@ -293,13 +293,6 @@
         "instructor": "Rosakis, A",
         "locations": "",
         "number": 13,
-        "times": "A\nA"
-      },
-      {
-        "grades": "PASS-FAIL",
-        "instructor": "McKeon, B",
-        "locations": "",
-        "number": 14,
         "times": "A\nA"
       },
       {
@@ -543,10 +536,10 @@
         "instructor": "Colonius, T",
         "locations": "115 GTL",
         "number": 1,
-        "times": "OM,T 14:30 - 15:25"
+        "times": "OM,M 16:00 - 16:55"
       }
     ],
-    "comment": " OM on Tuesday, January 6 at 2:30 PM in 115 GTL",
+    "comment": " OM for Monday, January 5 at 4 PM in 115 Gates-Thomas",
     "units": [
       3,
       0,
@@ -623,12 +616,12 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Gharib, M",
-        "locations": "",
+        "locations": "232 GUG",
         "number": 2,
-        "times": "A\nA"
+        "times": "OM,M 09:00 - 09:55"
       }
     ],
-    "comment": " Sec 1: Educational Exchange - units (2-0-7) // Sec 2: Vortex Flows in Nature and Industry - units (3-0-6)",
+    "comment": " Sec 1: Educational Exchange - units (2-0-7) // Sec 2: Vortex Flows in Nature and Industry - units (3-0-6) // OM for section 2 on Monday 1/5 at 9:00am in room 232 Guggenheim",
     "units": [
       0,
       0,
@@ -1827,7 +1820,7 @@
         "instructor": "Hutzler, N",
         "locations": "103 DWN",
         "number": 1,
-        "times": "TR 14:30 - 15:55"
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": "",
@@ -1850,9 +1843,9 @@
       {
         "grades": "",
         "instructor": "Marandi, A",
-        "locations": "",
+        "locations": "104 ANB",
         "number": 1,
-        "times": "TR 10:30 - 11:55\nA"
+        "times": "MW 10:30 - 11:55"
       }
     ],
     "comment": "",
@@ -4076,6 +4069,13 @@
       },
       {
         "grades": "PASS-FAIL",
+        "instructor": "Demirer, G",
+        "locations": "",
+        "number": 31,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
         "instructor": "Davis, M",
         "locations": "",
         "number": 32,
@@ -4322,6 +4322,13 @@
         "locations": "",
         "number": 11,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Demirer, G",
+        "locations": "",
+        "number": 12,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -4468,13 +4475,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Tai, Y",
-        "locations": "142 KCK",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "MW 10:30 - 11:55"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       3,
       0,
@@ -4494,7 +4501,7 @@
       {
         "grades": "LETTER",
         "instructor": "Winfree, E",
-        "locations": "142 KCK",
+        "locations": "130 CNRB",
         "number": 1,
         "times": "TR 10:30 - 11:55"
       }
@@ -4524,7 +4531,7 @@
         "times": "R 14:00 - 15:55\nTR 13:00 - 13:55\nT 14:00 - 15:55"
       }
     ],
-    "comment": " maximum enrollment: 16 students",
+    "comment": " maximum enrollment: 8 students // enrollments are based on applications and invitations; no open signups will be available",
     "units": [
       2,
       4,
@@ -5877,7 +5884,7 @@
       {
         "grades": "",
         "instructor": "Lester, H / Lois, C",
-        "locations": "B101 BBB",
+        "locations": "340A CNRB",
         "number": 1,
         "times": "MW 09:00 - 10:25"
       }
@@ -7942,35 +7949,35 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Mendez, J",
-        "locations": "B122 GCL\n220 RSC",
+        "locations": "275 RSC\n220 RSC",
         "number": 1,
         "times": "F 13:00 - 13:55\nT 08:00 - 10:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Mendez, J",
-        "locations": "B122 GCL\n220 RSC",
+        "locations": "275 RSC\n220 RSC",
         "number": 2,
         "times": "F 13:00 - 13:55\nT 13:00 - 15:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Mendez, J",
-        "locations": "B122 GCL\n220 RSC",
+        "locations": "275 RSC\n220 RSC",
         "number": 3,
         "times": "F 13:00 - 13:55\nT 19:00 - 21:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Mendez, J",
-        "locations": "B122 GCL\n220 RSC",
+        "locations": "275 RSC\n220 RSC",
         "number": 4,
         "times": "F 13:00 - 13:55\nW 13:00 - 15:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Mendez, J",
-        "locations": "B122 GCL\n220 RSC",
+        "locations": "275 RSC\n220 RSC",
         "number": 5,
         "times": "F 13:00 - 13:55\nR 08:00 - 10:55"
       }
@@ -7995,35 +8002,35 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Mendez, J",
-        "locations": "B122 GCL\n252 RSC",
+        "locations": "275 RSC\n252 RSC",
         "number": 1,
         "times": "F 14:00 - 14:55\nT 08:00 - 10:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Mendez, J",
-        "locations": "B122 GCL\n252 RSC",
+        "locations": "275 RSC\n252 RSC",
         "number": 2,
         "times": "F 14:00 - 14:55\nT 13:00 - 15:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Mendez, J",
-        "locations": "B122 GCL\n252 RSC",
+        "locations": "275 RSC\n252 RSC",
         "number": 3,
         "times": "F 14:00 - 14:55\nT 19:00 - 21:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Mendez, J",
-        "locations": "B122 GCL\n252 RSC",
+        "locations": "275 RSC\n252 RSC",
         "number": 4,
         "times": "F 14:00 - 14:55\nW 13:00 - 15:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Mendez, J",
-        "locations": "252 RSC\nB122 GCL",
+        "locations": "252 RSC\n275 RSC",
         "number": 5,
         "times": "R 08:00 - 10:55\nF 14:00 - 14:55"
       }
@@ -11153,6 +11160,13 @@
       },
       {
         "grades": "LETTER",
+        "instructor": "Preskill, J",
+        "locations": "",
+        "number": 16,
+        "times": "A\nA"
+      },
+      {
+        "grades": "LETTER",
         "instructor": "Anandkumar, A",
         "locations": "",
         "number": 17,
@@ -12116,7 +12130,7 @@
         "times": "TR 14:30 - 15:55"
       }
     ],
-    "comment": " taught concurrently with CS/IDS 162 // maximum enrollment: 15 students between VC 162 and CS/IDS 162 // instructor permission required to add // application required https://forms.gle/HxCECWgsUaujvT5d8",
+    "comment": " max enroll: 15 students // instructor permission required // application required https://docs.google.com/forms/d/e/1FAIpQLSfaPrhnhS17UeN05KJ CT-N1GPIibVfhuMhRKq-gPjuAqnzn1w/viewform?usp=header",
     "units": [
       3,
       0,
@@ -13306,9 +13320,9 @@
       {
         "grades": "",
         "instructor": "Russell, D",
-        "locations": "",
+        "locations": "B280 MRE",
         "number": 1,
-        "times": "A\nA"
+        "times": "M 09:00 - 09:55"
       }
     ],
     "comment": "",
@@ -13514,9 +13528,9 @@
       {
         "grades": "",
         "instructor": "George, G",
-        "locations": "",
+        "locations": "B270 MRE",
         "number": 1,
-        "times": "A\nA"
+        "times": "MW 14:30 - 15:55"
       }
     ],
     "comment": "",
@@ -13714,7 +13728,7 @@
       {
         "grades": "",
         "instructor": "Tai, Y",
-        "locations": "B270 MRE",
+        "locations": "B280 MRE",
         "number": 1,
         "times": "MW 14:30 - 15:55"
       }
@@ -13978,9 +13992,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Phillips, R",
-        "locations": "201 BRG",
+        "locations": "",
         "number": 3,
-        "times": "OM,M 14:05 - 14:45"
+        "times": "OM,A\nA"
       }
     ],
     "comment": " Caltech",
@@ -14272,7 +14286,7 @@
   },
   "42444220": {
     "id": 42444220,
-    "name": "Special Topics in English",
+    "name": "Special Topics in English: The Harlem Renaissance and Anti-Colonial",
     "number": "En 180",
     "sections": [
       {
@@ -14283,7 +14297,7 @@
         "times": "R 19:00 - 21:55\nA"
       }
     ],
-    "comment": "",
+    "comment": " Modernism",
     "units": [
       3,
       0,
@@ -15685,6 +15699,31 @@
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=54&term_id=555&division_id=80426&department_id=182&offering_id=94687&track_id=94687-Default"
   },
+  "517324764": {
+    "id": 517324764,
+    "name": "Petrology and Petrography: Igneous Petrology",
+    "number": "Ge 115 a",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Asimow, P",
+        "locations": "267 ARM",
+        "number": 1,
+        "times": "OM,M 14:00 - 14:55"
+      }
+    ],
+    "comment": " OM \u0096 Monday, January 5, 2026",
+    "units": [
+      3,
+      3,
+      3
+    ],
+    "description": "Study of the origin, occurrence, tectonic significance and evolution of igneous rocks with emphasis on use of phase equilibria and geochemistry.\n Given in alternate years; not offered 2025-26.",
+    "prerequisites": "Ge 114 ab.",
+    "rating": "3.26 +/- 1.31",
+    "true_units": "Noticeably High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=54&term_id=555&division_id=80426&department_id=182&offering_id=94680&track_id=94680-Default"
+  },
   "53334284": {
     "id": 53334284,
     "name": "Analytical Techniques Laboratory",
@@ -16023,7 +16062,7 @@
         "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled // To be offered in Sping Term",
     "units": [
       3,
       0,
@@ -17804,7 +17843,7 @@
         "instructor": "Wang, P",
         "locations": "",
         "number": 1,
-        "times": "MW 13:00 - 14:25\nA"
+        "times": "WF 13:00 - 14:25\nA"
       }
     ],
     "comment": "",
@@ -17893,6 +17932,31 @@
     "rating": "4.71 +/- 0.49",
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=57&term_id=558&division_id=80427&department_id=139&offering_id=95643&track_id=95643-Default"
+  },
+  "149279804": {
+    "id": 149279804,
+    "name": "Senior Thesis",
+    "number": "MS 78 a",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Nad Perge, S",
+        "locations": "",
+        "number": 1,
+        "times": "A\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      0,
+      0,
+      0
+    ],
+    "description": "Supervised research experience, open only to senior materials science majors. Starting with an open-ended topic, students will plan and execute a project in materials science and engineering that includes written and oral reports based upon actual results, synthesizing topics from their course work. Only the first term may be taken pass/fail.",
+    "prerequisites": "instructor's permission.",
+    "rating": "",
+    "true_units": "",
+    "link": ""
   },
   "151153965": {
     "id": 151153965,
@@ -18003,6 +18067,13 @@
         "locations": "",
         "number": 15,
         "times": "A\nA"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "Nad Perge, S",
+        "locations": "",
+        "number": 16,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -18027,6 +18098,13 @@
         "instructor": "Ravichandran, G",
         "locations": "",
         "number": 1,
+        "times": "A\nA"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "Nad Perge, S",
+        "locations": "",
+        "number": 2,
         "times": "A\nA"
       }
     ],
@@ -18698,7 +18776,7 @@
       {
         "grades": "LETTER",
         "instructor": "Hallgrimsdottir, I / Pachter,",
-        "locations": "Lecture Hall\nL\nBAX\n187 LINDE",
+        "locations": "Lecture Hall\nL\nBAX\n289 LINDE",
         "number": 6,
         "times": "MWF 10:00 - 10:55\nR 10:30 - 11:25"
       },
@@ -18739,7 +18817,7 @@
         "instructor": "Aluffi, P",
         "locations": "387 LINDE",
         "number": 1,
-        "times": "MWF 09:00 - 09:55"
+        "times": "MWF 13:00 - 13:55"
       }
     ],
     "comment": " taught concurrently with Ma 105b",
@@ -19274,7 +19352,7 @@
         "instructor": "Song, A",
         "locations": "289 LINDE",
         "number": 1,
-        "times": "MWF 13:00 - 13:55"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -19322,9 +19400,9 @@
       {
         "grades": "",
         "instructor": "Dimitrov, V",
-        "locations": "",
+        "locations": "255 LINDE",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": "",
@@ -19375,12 +19453,12 @@
       {
         "grades": "",
         "instructor": "El Maazouz, Y",
-        "locations": "",
+        "locations": "187 LINDE",
         "number": 5,
-        "times": "A\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
-    "comment": " Sec 1: Loewner\u0092s Theorem on Monotone Matrix Functions // Sec 2: The Mathematical Analysis of the Incompressible Euler and Navier- StokesEquations // Sec 3: Intersection Theory and related topics // Sec 4: Geometry and Neuroscience // Sec 5: TBA",
+    "comment": " Sec 1: Loewner\u0092s Theorem on Monotone Matrix Functions // Sec 2: The Mathematical Analysis of the Incompressible Euler and Navier- StokesEquations // Sec 3: Quantum groups and Categorification // Sec 4: Geometry and Neuroscience // Sec 5: Tropical Geometry",
     "units": [
       3,
       0,
@@ -20503,7 +20581,7 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Tai, Y / Gao, W",
-        "locations": "105 ANB",
+        "locations": "B270 MRE",
         "number": 1,
         "times": "R 16:00 - 16:55"
       }
@@ -21994,26 +22072,26 @@
       {
         "grades": "",
         "instructor": "Black, E / Libbrecht, K",
-        "locations": "308 BRG",
+        "locations": "308 BRG\n308 BRG",
         "number": 1,
-        "times": "W 13:00 - 15:55"
+        "times": "W 13:00 - 15:55\nOM,M 14:00 - 14:55"
       },
       {
         "grades": "",
         "instructor": "Black, E / Libbrecht, K",
-        "locations": "308 BRG",
+        "locations": "308 BRG\n308 BRG",
         "number": 2,
-        "times": "R 13:00 - 15:55"
+        "times": "R 13:00 - 15:55\nOM,M 14:00 - 14:55"
       },
       {
         "grades": "",
         "instructor": "Black, E / Libbrecht, K",
-        "locations": "308 BRG",
+        "locations": "308 BRG\n308 BRG",
         "number": 3,
-        "times": "F 13:00 - 15:55"
+        "times": "F 13:00 - 15:55\nOM,M 14:00 - 14:55"
       }
     ],
-    "comment": " Maximum enrollment: 24 students per section",
+    "comment": " Maximum enrollment: 24 students per section // OM on Monday, Jan 5 at 2pm in E. Bridge 308",
     "units": [
       0,
       3,
@@ -22132,13 +22210,13 @@
     "sections": [
       {
         "grades": "LETTER",
-        "instructor": "Hitlin, D",
-        "locations": "469 LAU",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "T 14:00 - 15:55"
+        "times": "A\nA"
       }
     ],
-    "comment": " Maximum enrollment: 9",
+    "comment": " Course Cancelled // Maximum enrollment: 9",
     "units": [
       2,
       0,
@@ -22160,7 +22238,7 @@
         "instructor": "Black, E / Libbrecht, K",
         "locations": "210 BRG",
         "number": 1,
-        "times": "OM,W 15:00 - 15:55"
+        "times": "OM,M 15:00 - 15:55"
       }
     ],
     "comment": "",
@@ -22185,7 +22263,7 @@
         "instructor": "Black, E / Libbrecht, K",
         "locations": "210 BRG",
         "number": 1,
-        "times": "OM,W 15:00 - 15:55"
+        "times": "OM,M 15:00 - 15:55"
       }
     ],
     "comment": "",
@@ -22210,7 +22288,7 @@
         "instructor": "Black, E / Libbrecht, K",
         "locations": "210 BRG",
         "number": 1,
-        "times": "OM,W 15:00 - 15:55"
+        "times": "OM,M 15:00 - 15:55"
       }
     ],
     "comment": "",
@@ -23126,7 +23204,7 @@
     "number": "Ph 230 a",
     "sections": [
       {
-        "grades": "",
+        "grades": "PASS-FAIL",
         "instructor": "Papucci, M",
         "locations": "269 LAU",
         "number": 1,
@@ -23152,10 +23230,10 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Kapustin, A",
-        "locations": "219 CHL",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "TR 13:00 - 14:25"
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -23201,7 +23279,7 @@
     "number": "Ph 236 b",
     "sections": [
       {
-        "grades": "",
+        "grades": "PASS-FAIL",
         "instructor": "Teukolsky, S",
         "locations": "269 LAU",
         "number": 1,
@@ -23852,7 +23930,7 @@
         "instructor": "George, N",
         "locations": "104 WAT",
         "number": 1,
-        "times": "W 10:00 - 10:55"
+        "times": "W 13:00 - 13:55"
       }
     ],
     "comment": " Open to E&AS and GPS students only // maximum enrollment: 20 students // to be added to waitlist go to https://forms.office.com/r/KABh4Epxap",
@@ -23874,13 +23952,13 @@
     "sections": [
       {
         "grades": "LETTER",
-        "instructor": "Meyer, V",
-        "locations": "104 WAT",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "F 10:00 - 10:55"
+        "times": "A\nA"
       }
     ],
-    "comment": " Open to E&AS and GPS students only // maximum enrollment: 20 students // to be added to waitlist go to https://forms.office.com/r/KABh4Epxap",
+    "comment": " Course Cancelled // To be offered Spring Term",
     "units": [
       1,
       0,
