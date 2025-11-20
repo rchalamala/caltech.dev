@@ -140,8 +140,12 @@ function Planner() {
       },
       onEventUpdate(updatedEvent: any) {
         if (updatedEvent.id.startsWith("custom-")) {
-          const startDate = new Date(updatedEvent.start);
-          const endDate = new Date(updatedEvent.end);
+          const startDate = typeof updatedEvent.start === 'string'
+            ? new Date(updatedEvent.start.replace(' ', 'T'))
+            : new Date(updatedEvent.start.toInstant().epochMilliseconds);
+          const endDate = typeof updatedEvent.end === 'string'
+            ? new Date(updatedEvent.end.replace(' ', 'T'))
+            : new Date(updatedEvent.end.toInstant().epochMilliseconds);
           state.updateCustomBlock(updatedEvent.id, {
             start: startDate,
             end: endDate,
@@ -149,8 +153,9 @@ function Planner() {
         }
       },
       onClickDateTime(dateTime: any) {
-        const clickedDate = new Date(dateTime.toString());
-        const endDate = new Date(clickedDate.getTime() + 60 * 60 * 1000);
+        const ms = dateTime.toInstant().epochMilliseconds;
+        const clickedDate = new Date(ms);
+        const endDate = new Date(ms + 60 * 60 * 1000);
         setPendingBlock({ start: clickedDate, end: endDate });
         openModal();
       },
