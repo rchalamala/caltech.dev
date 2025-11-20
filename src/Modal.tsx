@@ -1,5 +1,5 @@
-import { useEffect, useState, ReactElement } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { type ReactElement, useEffect, useState } from "react";
 
 import "./css/modal.css";
 

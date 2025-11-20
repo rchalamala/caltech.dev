@@ -29,9 +29,13 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "dev": "wrangler dev",
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "check": "biome check --write ."
   },
   "devDependencies": {
+    "@biomejs/biome": "2.3.6",
     "@types/react": "^19.2.6",
     "@types/react-big-calendar": "^1.16.3",
     "@types/react-dom": "^19.2.3",
@@ -39,7 +43,6 @@
     "@types/react-toggle": "^4.0.5",
     "@vitejs/plugin-react": "^5.1.1",
     "autoprefixer": "^10.4.22",
-    "eslint": "^9.39.1",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.17",
     "typescript": "^5.9.3",

@@ -1,21 +1,20 @@
-import { useEffect, useState, createContext } from "react";
-import Planner from "./Planner";
-import { parseTimes } from "./Planner";
-import Workspace from "./Workspace";
-import Modal from "./Modal";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import { motion } from "framer-motion";
+import { createContext, useEffect, useState } from "react";
 import DATA_FA2023 from "./data/IndexedTotalFA2022-23.json";
-import DATA_WI2023 from "./data/IndexedTotalWI2022-23.json";
-import DATA_SP2023 from "./data/IndexedTotalSP2022-23.json";
 import DATA_FA2024 from "./data/IndexedTotalFA2023-24.json";
-import DATA_WI2024 from "./data/IndexedTotalWI2023-24.json";
-import DATA_SP2024 from "./data/IndexedTotalSP2023-24.json";
 import DATA_FA2025 from "./data/IndexedTotalFA2024-25.json";
-import DATA_WI2025 from "./data/IndexedTotalWI2024-25.json";
-import DATA_SP2025 from "./data/IndexedTotalSP2024-25.json";
 import DATA_FA2026 from "./data/IndexedTotalFA2025-26.json";
+import DATA_SP2023 from "./data/IndexedTotalSP2022-23.json";
+import DATA_SP2024 from "./data/IndexedTotalSP2023-24.json";
+import DATA_SP2025 from "./data/IndexedTotalSP2024-25.json";
+import DATA_WI2023 from "./data/IndexedTotalWI2022-23.json";
+import DATA_WI2024 from "./data/IndexedTotalWI2023-24.json";
+import DATA_WI2025 from "./data/IndexedTotalWI2024-25.json";
 import DATA_WI2026 from "./data/IndexedTotalWI2025-26.json";
+import Modal from "./Modal";
+import Planner, { parseTimes } from "./Planner";
+import Workspace from "./Workspace";
 
 const CURRENT_TERM = "/wi2026";
 
@@ -170,7 +169,9 @@ function generateCourseSections(
 
     for (let i = 0; i < arr.length; i++) {
       for (let j = i + 1; j < arr.length; j++) {
-        valid &&= !sectionsIntersect(arr[i], arr[j]) || (arr[i].locked && arr[j].locked);
+        valid &&=
+          !sectionsIntersect(arr[i], arr[j]) ||
+          (arr[i].locked && arr[j].locked);
       }
     }
 
@@ -269,7 +270,7 @@ const useReactPath = () => {
 /** Main wrapper */
 function App() {
   // really basic routing
-  let pathname = useReactPath();
+  const pathname = useReactPath();
   const realPath = pathname === "/" ? CURRENT_TERM : pathname;
   const data = courseDataSources[realPath];
   const [indexedCourses, setIndexedCourses] = useState({});
@@ -289,12 +290,12 @@ function App() {
     localWorkspaces
       ? JSON.parse(localWorkspaces)
       : [
-        emptyWorkspace(),
-        emptyWorkspace(),
-        emptyWorkspace(),
-        emptyWorkspace(),
-        emptyWorkspace(),
-      ],
+          emptyWorkspace(),
+          emptyWorkspace(),
+          emptyWorkspace(),
+          emptyWorkspace(),
+          emptyWorkspace(),
+        ],
   );
   const localWorkspaceIdx = localStorage.getItem("workspaceIdx" + realPath);
   const [workspaceIdx, setWorkspaceIdx] = useState<number>(
@@ -331,7 +332,10 @@ function App() {
       // course was already in workspace
       newCourses = courses;
     } else {
-      newCourses = [...courses, setField(setField(newCourse, "locked", true), "sectionId", 0)];
+      newCourses = [
+        ...courses,
+        setField(setField(newCourse, "locked", true), "sectionId", 0),
+      ];
     }
     const newArrangements = generateCourseSections(newCourses, availableTimes);
     let newArrangementIdx = null;
