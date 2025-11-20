@@ -113,6 +113,7 @@ function Planner() {
   return (
     <div>
       <div className="time-controls">
+        <div></div>
         {[0, 1, 2, 3, 4].map((idx) => {
           return (
             <div className="time-picker" key={idx}>
