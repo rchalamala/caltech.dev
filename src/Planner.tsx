@@ -6,6 +6,7 @@ import { createDragAndDropPlugin } from "@schedule-x/drag-and-drop";
 import { createResizePlugin } from "@schedule-x/resize";
 import "@schedule-x/theme-default/dist/index.css";
 import { useModal } from "./Modal";
+import { Temporal } from "temporal-polyfill";
 
 import "./css/planner.css";
 
@@ -47,13 +48,9 @@ export function parseTimes(times: string): Maybe<TimeInterval>[][] {
   return ret;
 }
 
-function formatDateForScheduleX(date: Date): string {
-  const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, "0");
-  const day = String(date.getDate()).padStart(2, "0");
-  const hours = String(date.getHours()).padStart(2, "0");
-  const minutes = String(date.getMinutes()).padStart(2, "0");
-  return `${year}-${month}-${day} ${hours}:${minutes}`;
+function dateToTemporalZDT(date: Date): any {
+  const tz = Temporal.Now.timeZoneId();
+  return Temporal.Instant.fromEpochMilliseconds(date.getTime()).toZonedDateTimeISO(tz);
 }
 
 function CourseToDates(courses: CourseStorage[]) {
@@ -82,8 +79,8 @@ function CourseToDates(courses: CourseStorage[]) {
         dates.push({
           id: `course-${course.courseData.id}-${interval!.start.getTime()}`,
           title: course.courseData.number + " Section " + section.number,
-          start: formatDateForScheduleX(interval!.start),
-          end: formatDateForScheduleX(interval!.end),
+          start: dateToTemporalZDT(interval!.start),
+          end: dateToTemporalZDT(interval!.end),
           calendarId: "courses",
           _customData: {
             backgroundColor: backgroundColor,
@@ -169,8 +166,8 @@ function Planner() {
   const customBlockEvents = (state.customBlocks || []).map((block) => ({
     id: block.id,
     title: block.title,
-    start: formatDateForScheduleX(block.start),
-    end: formatDateForScheduleX(block.end),
+    start: dateToTemporalZDT(block.start),
+    end: dateToTemporalZDT(block.end),
     calendarId: "blocks",
   }));
 
