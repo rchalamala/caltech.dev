@@ -6,11 +6,6 @@
 }
 
 /* Hide the date numbers in the week view header, keep only weekday names */
-.sx__week-grid__header-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.sx__week-grid__header-content .sx__date {
+.sx__week-grid__date-number {
   display: none !important;
 }
