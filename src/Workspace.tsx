@@ -1,15 +1,11 @@
-import { useContext, useState } from "react";
-import Modal, { useModal } from "./Modal";
-import Select from "react-select";
-import { SingleValue } from "react-select";
 import {
-  DndContext,
   closestCenter,
+  DndContext,
+  type DragEndEvent,
   KeyboardSensor,
   PointerSensor,
   useSensor,
   useSensors,
-  DragEndEvent,
 } from "@dnd-kit/core";
 import {
   arrayMove,
@@ -19,27 +15,30 @@ import {
   verticalListSortingStrategy,
 } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
-import { Fzf } from "fzf";
-import Lock from "@mui/icons-material/Lock";
-import LockOpen from "@mui/icons-material/LockOpen";
-import Delete from "@mui/icons-material/Delete";
 import ArrowBack from "@mui/icons-material/ArrowBack";
 import ArrowForward from "@mui/icons-material/ArrowForward";
-import { shortenCourses, lengthenCourses, AllCourses, AppState } from "./App";
+import Delete from "@mui/icons-material/Delete";
+import Lock from "@mui/icons-material/Lock";
+import LockOpen from "@mui/icons-material/LockOpen";
 import { motion } from "framer-motion";
+import { Fzf } from "fzf";
+import { useContext, useState } from "react";
+import Select, { type SingleValue } from "react-select";
+import { AllCourses, AppState, lengthenCourses, shortenCourses } from "./App";
+import Modal, { useModal } from "./Modal";
 
 import "react-toggle/style.css";
 import "./css/workspace.css";
-import { Collapse, IconButton, Switch } from "@mui/material";
-import { UnfoldLess, UnfoldMore } from "@mui/icons-material";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
+import { UnfoldLess, UnfoldMore } from "@mui/icons-material";
+import { Collapse, IconButton, Switch } from "@mui/material";
 import TERM_START_DATES from "./data/term_start_dates.json";
 
 const DEFAULT_COURSES: { [key: string]: string[] } = {
-  "fa": ["Ma 1 a", "Ph 1 a", "Ch 1 a", "CS 1"],
-  "wi": ["Ma 1 b", "Ph 1 b", "Ch 1 b", "CS 2"],
-  "sp": ["Ma 1 c", "Ph 1 c", "CS 3"],
-}
+  fa: ["Ma 1 a", "Ph 1 a", "Ch 1 a", "CS 1"],
+  wi: ["Ma 1 b", "Ph 1 b", "Ch 1 b", "CS 2"],
+  sp: ["Ma 1 c", "Ph 1 c", "CS 3"],
+};
 
 /** Fetches courses */
 function getCourse(
@@ -74,13 +73,19 @@ function getCourse(
 }
 
 function exportICS(term: string, courses: CourseStorage[]): string {
-  const termStartDate = new Date(TERM_START_DATES[term as keyof typeof TERM_START_DATES]);
+  const termStartDate = new Date(
+    TERM_START_DATES[term as keyof typeof TERM_START_DATES],
+  );
 
   // Map weekdays to indices for easy comparison
   const dayMap = "MTWRFSU";
 
   // Helper function to get the first occurrence of a day after the term start date
-  function getFirstOccurrence(startDate: Date, dayOfWeek: string, timeString: string): Date {
+  function getFirstOccurrence(
+    startDate: Date,
+    dayOfWeek: string,
+    timeString: string,
+  ): Date {
     const date = new Date(startDate); // Copy the term start date
     const targetDay = dayMap.indexOf(dayOfWeek) + 1; // Get index for the weekday
     const currentDay = date.getDay();
@@ -90,33 +95,33 @@ function exportICS(term: string, courses: CourseStorage[]): string {
     date.setDate(date.getDate() + dayOffset); // Ensure we don't return the start date if it's the same day
 
     // Parse time (e.g., "09:00") and set the time explicitly using local time
-    const [hours, minutes] = timeString.split(':').map(Number);
+    const [hours, minutes] = timeString.split(":").map(Number);
     date.setHours(hours, minutes, 0, 0); // Set hours and minutes in the local timezone
-    
+
     return date;
   }
 
   // Flatten the courses and parse times with start and end times, matching locations
   const parsedEvents = courses
-    .filter(course => course.enabled)
-    .flatMap(course => {
+    .filter((course) => course.enabled)
+    .flatMap((course) => {
       return course.courseData.sections
-        .filter(section => section.number - 1 === course.sectionId) // Filter by selected section
-        .flatMap(section => {
-          const times = section.times.split('\n'); // Split multiple times on newline
-          const locations = section.locations.split('\n'); // Split multiple locations on newline
+        .filter((section) => section.number - 1 === course.sectionId) // Filter by selected section
+        .flatMap((section) => {
+          const times = section.times.split("\n"); // Split multiple times on newline
+          const locations = section.locations.split("\n"); // Split multiple locations on newline
 
           // Zip times and locations together
           return times.flatMap((time, index) => {
-            const location = locations[index] || 'Unknown'; // Match time with corresponding location
-            const [days, startTime, , endTime] = time.split(' '); // Separate days and time range
-            if (days === 'A') return []; // skip to-be-announced times
-            
-            return days.split('').map(day => ({
+            const location = locations[index] || "Unknown"; // Match time with corresponding location
+            const [days, startTime, , endTime] = time.split(" "); // Separate days and time range
+            if (days === "A") return []; // skip to-be-announced times
+
+            return days.split("").map((day) => ({
               name: course.courseData.number, // Use course number for the title
               location, // Set the matched location for this time
               startTime: getFirstOccurrence(termStartDate, day, startTime),
-              endTime: getFirstOccurrence(termStartDate, day, endTime) // Parse the end time
+              endTime: getFirstOccurrence(termStartDate, day, endTime), // Parse the end time
             }));
           });
         });
@@ -131,7 +136,7 @@ METHOD:PUBLISH
 `;
 
   // Generate the events in ICS format
-  parsedEvents.forEach(event => {
+  parsedEvents.forEach((event) => {
     const dtStart = event.startTime.toISOString().replace(/-|:|\.\d+/g, ""); // Convert to UTC in .ics format
     const dtEnd = event.endTime.toISOString().replace(/-|:|\.\d+/g, ""); // Convert to UTC in .ics format
 
@@ -152,7 +157,6 @@ END:VEVENT
 
   return icsContent;
 }
-
 
 function SectionDropdown(props: { course: CourseStorage }) {
   const course = props.course;
@@ -252,13 +256,8 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
   const [expanded, setExpanded] = useState(true);
   const [animParent] = useAutoAnimate();
 
-  const {
-    attributes,
-    listeners,
-    setNodeRef,
-    transform,
-    transition,
-  } = useSortable({ id: course.courseData.id });
+  const { attributes, listeners, setNodeRef, transform, transition } =
+    useSortable({ id: course.courseData.id });
 
   const style = {
     transform: CSS.Transform.toString(transform),
@@ -285,10 +284,7 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
           course.locked && "bg-neutral-100"
         }`}
       >
-        <div
-          className={`relative w-full whitespace-nowrap`}
-          ref={animParent}
-        >
+        <div className={`relative w-full whitespace-nowrap`} ref={animParent}>
           <div className="left-0 w-min align-middle inline-block">
             <IconButton
               onClick={() => {
@@ -352,9 +348,7 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
                 {`(${course.courseData.units[0]}-${course.courseData.units[1]}-${course.courseData.units[2]})`}
               </p>
               <p>
-                {id !== null
-                  ? sections[id].instructor
-                  : "No Section Selected"}
+                {id !== null ? sections[id].instructor : "No Section Selected"}
               </p>
               <p>{id !== null ? sections[id].locations : "Location"}</p>
               <p>{id !== null ? sections[id].times : "Times"}</p>
@@ -481,7 +475,6 @@ function WorkspaceScheduler() {
   }
 }
 
-
 /** A component that provides UI for searching/adding/removing courses
 A fuzzy searcher will show you a limited selection of courses
 Clicking on the course will add it to the workspace and enable it (there will also be a button to show more info)
@@ -495,18 +488,15 @@ export default function Workspace({ term }: { term: string }) {
     useSensor(PointerSensor),
     useSensor(KeyboardSensor, {
       coordinateGetter: sortableKeyboardCoordinates,
-    })
+    }),
   );
 
   const workspaceEntries = () =>
     state.courses.map((course: CourseStorage) => (
-      <WorkspaceEntry
-        course={course}
-        key={course.courseData.id}
-      />
+      <WorkspaceEntry course={course} key={course.courseData.id} />
     ));
 
-  let units = [0, 0, 0];
+  const units = [0, 0, 0];
   for (let i = 0; i < state.courses.length; ++i) {
     if (state.courses[i].enabled) {
       units[0] += state.courses[i].courseData.units[0];
@@ -516,9 +506,12 @@ export default function Workspace({ term }: { term: string }) {
   }
 
   const [openExportModal, exportModal] = useModal((_props) => {
-    const shortened = shortenCourses(state.courses)
-      .map((c) => [c.courseId, c.enabled, c.locked, c.sectionId])
-      .flat();
+    const shortened = shortenCourses(state.courses).flatMap((c) => [
+      c.courseId,
+      c.enabled,
+      c.locked,
+      c.sectionId,
+    ]);
     const code = window.btoa(JSON.stringify(shortened));
     const copy = () => {
       navigator.clipboard.writeText(code);
@@ -584,10 +577,10 @@ export default function Workspace({ term }: { term: string }) {
 
     if (over && active.id !== over.id) {
       const oldIndex = state.courses.findIndex(
-        (c) => c.courseData.id === active.id
+        (c) => c.courseData.id === active.id,
       );
       const newIndex = state.courses.findIndex(
-        (c) => c.courseData.id === over.id
+        (c) => c.courseData.id === over.id,
       );
 
       state.setCourses(arrayMove(state.courses, oldIndex, newIndex));
@@ -662,20 +655,23 @@ export default function Workspace({ term }: { term: string }) {
         />
         <ControlButton text="Import Workspace" onClick={importWorkspace} />
         <ControlButton text="Export Workspace" onClick={openExportModal} />
-        <ControlButton text="Export .ics" onClick={() => {
-          const icsContent = exportICS(term, state.courses);
+        <ControlButton
+          text="Export .ics"
+          onClick={() => {
+            const icsContent = exportICS(term, state.courses);
 
-          const blob = new Blob([icsContent], { type: 'text/calendar' });
+            const blob = new Blob([icsContent], { type: "text/calendar" });
 
-          const link = document.createElement('a');
-          link.href = URL.createObjectURL(blob);
-          link.download = `schedule_${term}.ics`;
+            const link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = `schedule_${term}.ics`;
 
-          document.body.appendChild(link);
-          link.click();
-          URL.revokeObjectURL(link.href);
-          document.body.removeChild(link);
-        }} />
+            document.body.appendChild(link);
+            link.click();
+            URL.revokeObjectURL(link.href);
+            document.body.removeChild(link);
+          }}
+        />
       </div>
       <b className="py-3">
         {`${units[0] + units[1] + units[2]} units (${units[0]}-${units[1]}-${units[2]})`}
