@@ -1,15 +1,26 @@
+import { format, getDay, parse, startOfWeek } from "date-fns";
+import enUS from "date-fns/locale/en-US";
 import { useContext } from "react";
-import { AppState } from "./App";
-import { Calendar, momentLocalizer, Views } from "react-big-calendar";
-import moment from "moment";
+import { Calendar, dateFnsLocalizer, Views } from "react-big-calendar";
 import Flatpickr from "react-flatpickr";
+import { AppState } from "./App";
 
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import "flatpickr/dist/themes/airbnb.css";
 
 import "./css/planner.css";
 
-const localizer = momentLocalizer(moment);
+const locales = {
+  "en-US": enUS,
+};
+
+const localizer = dateFnsLocalizer({
+  format,
+  parse,
+  startOfWeek,
+  getDay,
+  locales,
+});
 const hasWeekendCourse = false;
 
 function CourseToDates(courses: CourseStorage[]): DateData[] {
@@ -55,10 +66,10 @@ export function parseTimes(times: string): Maybe<TimeInterval>[][] {
   const day_to_i = ["M", "T", "W", "R", "F"]; // TODO: Include Sat/Sun Courses, OM Courses
 
   // super hacky fix for a parsing bug when location is A
-  let times_clean = times.replace("\nA", "");
-  console.log(times_clean)
+  const times_clean = times.replace("\nA", "");
+  console.log(times_clean);
 
-  for (let line of times_clean.split(/[,\n]/)) {
+  for (const line of times_clean.split(/[,\n]/)) {
     const match = line.match(/([MTWRF]+) (\d\d):(\d\d) - (\d\d):(\d\d)/);
     if (match !== null) {
       //  An example match: [ "MWF 14:00 - 14:55", "MWF", "14", "00", "14", "55" ]
@@ -147,11 +158,21 @@ function Planner() {
       <Calendar
         localizer={localizer}
         formats={{
-          timeGutterFormat: (date, culture, localizer) =>
-            date.getMinutes() > 0
-              ? ""
-              : localizer!.format(date, "h A", culture),
-          dayFormat: "ddd",
+          timeGutterFormat: "h a",
+          eventTimeRangeFormat: ({ start, end }, culture, localizer) =>
+            localizer!.format(start, "h:mm a", culture) +
+            " - " +
+            localizer!.format(end, "h:mm a", culture),
+          eventTimeRangeStartFormat: ({ start }, culture, localizer) =>
+            localizer!.format(start, "h:mm a", culture),
+          eventTimeRangeEndFormat: ({ end }, culture, localizer) =>
+            localizer!.format(end, "h:mm a", culture),
+          dayFormat: "EEE",
+          dayHeaderFormat: "EEEE MMM dd",
+          dayRangeHeaderFormat: ({ start, end }, culture, localizer) =>
+            localizer!.format(start, "MMM dd", culture) +
+            " - " +
+            localizer!.format(end, "MMM dd", culture),
         }}
         views={[Views.WEEK, Views.WORK_WEEK]}
         view={hasWeekendCourse ? Views.WEEK : Views.WORK_WEEK}

@@ -1,3 +1,6 @@
+@import "tailwindcss" reference;
+
+
 .workspace-wrapper {
   padding-left: 10px;
   display: flex;
