@@ -2,7 +2,6 @@
 	"name": "caltech-dev",
 	"compatibility_date": "2025-11-20",
 	"assets": {
-		"directory": "./dist",
-		"not_found_handling": "single-page-application"
+		"directory": "./dist"
 	}
 }
