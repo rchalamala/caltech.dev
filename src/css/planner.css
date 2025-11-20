@@ -1,5 +1,7 @@
 /* Hide Schedule-X date navigation controls */
-.sx__date-picker,
+.sx__date-picker-wrapper,
+.sx__date-input-wrapper,
+.sx__date-input-chevron-wrapper,
 .sx__chevron-wrapper,
 .sx__today-button {
   display: none !important;
