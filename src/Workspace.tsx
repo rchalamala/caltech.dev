@@ -500,7 +500,7 @@ export default function Workspace({ term }: { term: string }) {
     }
   }
 
-  const [openExportModal, exportModal] = useModal((props) => {
+  const [openExportModal, exportModal] = useModal((_props) => {
     const shortened = shortenCourses(state.courses)
       .map((c) => [c.courseId, c.enabled, c.locked, c.sectionId])
       .flat();
