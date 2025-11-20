@@ -14,9 +14,7 @@ export default defineConfig({
     svgr(),
     tsconfigPaths(),
   ],
-  base: './',
   build: {
-    outDir: 'build',
     sourcemap: true,
   },
   server: {
