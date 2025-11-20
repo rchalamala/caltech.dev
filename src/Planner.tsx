@@ -162,39 +162,8 @@ function Planner() {
     }
   };
 
-  const handleTimeChange = (dayIdx: number, isStart: boolean, value: string) => {
-    const [hours, minutes] = value.split(":").map(Number);
-    const date = new Date(state.availableTimes[dayIdx][isStart ? 0 : 1]);
-    date.setHours(hours, minutes, 0, 0);
-    state.updateAvailableTimes(dayIdx, isStart, date);
-  };
-
-  const formatTime = (date: Date): string => {
-    const hours = date.getHours().toString().padStart(2, "0");
-    const minutes = date.getMinutes().toString().padStart(2, "0");
-    return `${hours}:${minutes}`;
-  };
-
   return (
     <div>
-      <div className="time-controls">
-        {[0, 1, 2, 3, 4].map((idx) => {
-          return (
-            <div className="time-picker" key={idx}>
-              <input
-                type="time"
-                value={formatTime(state.availableTimes[idx][0])}
-                onChange={(e) => handleTimeChange(idx, true, e.target.value)}
-              />
-              <input
-                type="time"
-                value={formatTime(state.availableTimes[idx][1])}
-                onChange={(e) => handleTimeChange(idx, false, e.target.value)}
-              />
-            </div>
-          );
-        })}
-      </div>
       <FullCalendar
         ref={calendarRef}
         plugins={[timeGridPlugin, interactionPlugin]}
