@@ -1,19 +1,62 @@
-import { useContext } from "react";
+import { useContext, useState, useRef } from "react";
 import { AppState } from "./App";
-import { Calendar, momentLocalizer, Views } from "react-big-calendar";
-import moment from "moment";
-import Flatpickr from "react-flatpickr";
-
-import "react-big-calendar/lib/css/react-big-calendar.css";
-import "flatpickr/dist/themes/airbnb.css";
+import FullCalendar from "@fullcalendar/react";
+import timeGridPlugin from "@fullcalendar/timegrid";
+import interactionPlugin from "@fullcalendar/interaction";
+import { EventInput, EventClickArg, EventChangeArg, DateSelectArg } from "@fullcalendar/core";
 
 import "./css/planner.css";
 
-const localizer = momentLocalizer(moment);
-const hasWeekendCourse = false;
+type TimeInterval = {
+  start: Date;
+  end: Date;
+};
 
-function CourseToDates(courses: CourseStorage[]): DateData[] {
-  const dates: DateData[] = [];
+export function parseTimes(times: string): Maybe<TimeInterval>[][] {
+  const ret: Maybe<TimeInterval>[][] = [[], [], [], [], []];
+  const day_to_i = ["M", "T", "W", "R", "F"];
+
+  let times_clean = times.replace("\nA", "");
+  console.log(times_clean);
+
+  for (let line of times_clean.split(/[,\n]/)) {
+    const match = line.match(/([MTWRF]+) (\d\d):(\d\d) - (\d\d):(\d\d)/);
+    if (match !== null) {
+      for (const day of match[1]) {
+        ret[day_to_i.indexOf(day)].push({
+          start: new Date(
+            2018,
+            0,
+            day_to_i.indexOf(day) + 1,
+            parseInt(match[2]),
+            parseInt(match[3]),
+          ),
+          end: new Date(
+            2018,
+            0,
+            day_to_i.indexOf(day) + 1,
+            parseInt(match[4]) === 23 ? 11 : parseInt(match[4]),
+            parseInt(match[5]),
+          ),
+        });
+      }
+    }
+  }
+  return ret;
+}
+
+interface CustomBlock {
+  id: string;
+  title: string;
+  start: Date;
+  end: Date;
+  backgroundColor?: string;
+  borderColor?: string;
+  editable: boolean;
+}
+
+function CourseToDates(courses: CourseStorage[]): EventInput[] {
+  const dates: EventInput[] = [];
 
   for (const course of courses) {
     if (course.sectionId === null) {
@@ -31,12 +74,18 @@ function CourseToDates(courses: CourseStorage[]): DateData[] {
         continue;
       }
       for (const interval of day) {
+        const hue = ((course.courseData.id * 1.4269) % 1.0) * 360;
+        const sat = (((course.courseData.id * 1.7234) % 0.2) + 0.5) * 100;
+        const backgroundColor = `hsl(${hue}, ${sat}%, 70%)`;
+
         dates.push({
-          id: course.courseData.id,
+          id: `course-${course.courseData.id}-${interval!.start.getTime()}`,
           title: course.courseData.number + " Section " + section.number,
           start: interval!.start,
           end: interval!.end,
-          courseData: course.courseData,
+          backgroundColor: backgroundColor,
+          borderColor: backgroundColor,
+          editable: false,
         });
       }
     }
@@ -45,69 +94,85 @@ function CourseToDates(courses: CourseStorage[]): DateData[] {
   return dates;
 }
 
-type TimeInterval = {
-  start: Date;
-  end: Date;
-};
-
-export function parseTimes(times: string): Maybe<TimeInterval>[][] {
-  const ret: Maybe<TimeInterval>[][] = [[], [], [], [], []];
-  const day_to_i = ["M", "T", "W", "R", "F"]; // TODO: Include Sat/Sun Courses, OM Courses
-
-  // super hacky fix for a parsing bug when location is A
-  let times_clean = times.replace("\nA", "");
-  console.log(times_clean)
-
-  for (let line of times_clean.split(/[,\n]/)) {
-    const match = line.match(/([MTWRF]+) (\d\d):(\d\d) - (\d\d):(\d\d)/);
-    if (match !== null) {
-      //  An example match: [ "MWF 14:00 - 14:55", "MWF", "14", "00", "14", "55" ]
-      for (const day of match[1]) {
-        ret[day_to_i.indexOf(day)].push({
-          start: new Date(
-            2018,
-            0,
-            day_to_i.indexOf(day) + 1,
-            parseInt(match[2]),
-            parseInt(match[3]),
-          ),
-          end: new Date(
-            2018,
-            0,
-            day_to_i.indexOf(day) + 1,
-            // stupid hacky thing to avoid crashing when time is entered incorrectly in catalog (11pm instead of 11am)
-            parseInt(match[4]) === 23 ? 11 : parseInt(match[4]),
-            parseInt(match[5]),
-          ),
-        });
-      }
-    }
-  }
-  return ret;
-}
-
-/** Calendar shown on left side of screen
- * Extends from `App.tsx` */
 function Planner() {
   const state = useContext(AppState);
+  const calendarRef = useRef<FullCalendar>(null);
+  const [customBlocks, setCustomBlocks] = useState<CustomBlock[]>([]);
+  const [blockIdCounter, setBlockIdCounter] = useState(0);
 
-  const calEvents: DateData[] = CourseToDates(
+  const courseEvents: EventInput[] = CourseToDates(
     state.courses.filter((course) => course.enabled),
   );
 
-  /** Hashes id to proper color and styling for calendar items */
-  const eventStyleGetter = (event: DateData) => {
-    const hue = ((event.id * 1.4269) % 1.0) * 360;
-    const sat = (((event.id * 1.7234) % 0.2) + 0.5) * 100;
+  const customBlockEvents: EventInput[] = customBlocks.map((block) => ({
+    id: block.id,
+    title: block.title,
+    start: block.start,
+    end: block.end,
+    backgroundColor: block.backgroundColor || "#3788d8",
+    borderColor: block.borderColor || "#3788d8",
+    editable: block.editable,
+  }));
 
-    return {
-      style: {
-        backgroundColor: `hsl(${hue}, ${sat}%, 70%)`,
-        cursor: "pointer",
-        borderStyle: "none",
-        borderRadius: "4px",
-      },
-    };
+  const allEvents = [...courseEvents, ...customBlockEvents];
+
+  const handleDateSelect = (selectInfo: DateSelectArg) => {
+    const title = prompt("Enter block title:");
+    if (title) {
+      const newBlock: CustomBlock = {
+        id: `custom-${blockIdCounter}`,
+        title: title,
+        start: selectInfo.start,
+        end: selectInfo.end,
+        backgroundColor: "#3788d8",
+        borderColor: "#3788d8",
+        editable: true,
+      };
+      setCustomBlocks([...customBlocks, newBlock]);
+      setBlockIdCounter(blockIdCounter + 1);
+    }
+    const calendarApi = selectInfo.view.calendar;
+    calendarApi.unselect();
+  };
+
+  const handleEventClick = (clickInfo: EventClickArg) => {
+    if (clickInfo.event.id.startsWith("custom-")) {
+      if (confirm(`Delete block '${clickInfo.event.title}'?`)) {
+        setCustomBlocks(
+          customBlocks.filter((block) => block.id !== clickInfo.event.id)
+        );
+      }
+    }
+  };
+
+  const handleEventChange = (changeInfo: EventChangeArg) => {
+    if (changeInfo.event.id.startsWith("custom-")) {
+      setCustomBlocks(
+        customBlocks.map((block) => {
+          if (block.id === changeInfo.event.id) {
+            return {
+              ...block,
+              start: changeInfo.event.start!,
+              end: changeInfo.event.end!,
+            };
+          }
+          return block;
+        })
+      );
+    }
+  };
+
+  const handleTimeChange = (dayIdx: number, isStart: boolean, value: string) => {
+    const [hours, minutes] = value.split(":").map(Number);
+    const date = new Date(state.availableTimes[dayIdx][isStart ? 0 : 1]);
+    date.setHours(hours, minutes, 0, 0);
+    state.updateAvailableTimes(dayIdx, isStart, date);
+  };
+
+  const formatTime = (date: Date): string => {
+    const hours = date.getHours().toString().padStart(2, "0");
+    const minutes = date.getMinutes().toString().padStart(2, "0");
+    return `${hours}:${minutes}`;
   };
 
   return (
@@ -116,93 +181,48 @@ function Planner() {
         {[0, 1, 2, 3, 4].map((idx) => {
           return (
             <div className="time-picker" key={idx}>
-              <Flatpickr
-                data-enable-time
-                options={{
-                  dateFormat: "H:i",
-                  enableTime: true,
-                  noCalendar: true,
-                }}
-                value={state.availableTimes[idx][0]}
-                onChange={([day]) => {
-                  state.updateAvailableTimes(idx, true, day);
-                }}
+              <input
+                type="time"
+                value={formatTime(state.availableTimes[idx][0])}
+                onChange={(e) => handleTimeChange(idx, true, e.target.value)}
               />
-              <Flatpickr
-                data-enable-time
-                options={{
-                  dateFormat: "H:i",
-                  enableTime: true,
-                  noCalendar: true,
-                }}
-                value={state.availableTimes[idx][1]}
-                onChange={([day]) => {
-                  state.updateAvailableTimes(idx, false, day);
-                }}
+              <input
+                type="time"
+                value={formatTime(state.availableTimes[idx][1])}
+                onChange={(e) => handleTimeChange(idx, false, e.target.value)}
               />
             </div>
           );
         })}
       </div>
-      <Calendar
-        localizer={localizer}
-        formats={{
-          timeGutterFormat: (date, culture, localizer) =>
-            date.getMinutes() > 0
-              ? ""
-              : localizer!.format(date, "h A", culture),
-          dayFormat: "ddd",
+      <FullCalendar
+        ref={calendarRef}
+        plugins={[timeGridPlugin, interactionPlugin]}
+        initialView="timeGridWeek"
+        headerToolbar={false}
+        allDaySlot={false}
+        slotMinTime="08:00:00"
+        slotMaxTime="23:00:00"
+        slotDuration="00:15:00"
+        snapDuration="00:15:00"
+        height="auto"
+        editable={true}
+        selectable={true}
+        selectMirror={true}
+        dayHeaderFormat={{ weekday: "short" }}
+        slotLabelFormat={{
+          hour: "numeric",
+          minute: "2-digit",
+          omitZeroMinute: true,
+          meridiem: "short",
         }}
-        views={[Views.WEEK, Views.WORK_WEEK]}
-        view={hasWeekendCourse ? Views.WEEK : Views.WORK_WEEK}
-        onView={() => {}}
-        step={15}
-        timeslots={2}
-        defaultDate={new Date(2018, 0, 1)}
-        min={
-          new Date(
-            2018,
-            0,
-            1,
-            calEvents.length === 0
-              ? 9
-              : Math.min(
-                  calEvents
-                    .reduce((prev, curr) =>
-                      curr.start.getHours() < prev.start.getHours()
-                        ? curr
-                        : prev,
-                    )
-                    .start.getHours(),
-                  9,
-                ),
-          )
-        }
-        max={
-          new Date(
-            2018,
-            0,
-            1,
-            calEvents.length === 0
-              ? 16
-              : Math.max(
-                  calEvents
-                    .reduce((prev, curr) =>
-                      curr.end.getHours() > prev.end.getHours() ? curr : prev,
-                    )
-                    .end.getHours() + 1,
-                  16,
-                ),
-          )
-        }
-        toolbar={false}
-        events={calEvents}
-        startAccessor="start"
-        endAccessor="end"
-        style={{
-          margin: "10px",
-        }}
-        eventPropGetter={eventStyleGetter}
+        weekends={false}
+        events={allEvents}
+        select={handleDateSelect}
+        eventClick={handleEventClick}
+        eventChange={handleEventChange}
+        eventResizableFromStart={true}
+        initialDate={new Date(2018, 0, 1)}
       />
     </div>
   );
