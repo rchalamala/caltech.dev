@@ -148,8 +148,8 @@ function Planner() {
           });
         }
       },
-      onClickDateTime(dateTime: string) {
-        const clickedDate = new Date(dateTime);
+      onClickDateTime(dateTime: any) {
+        const clickedDate = new Date(dateTime.toString());
         const endDate = new Date(clickedDate.getTime() + 60 * 60 * 1000);
         setPendingBlock({ start: clickedDate, end: endDate });
         openModal();
