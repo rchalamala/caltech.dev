@@ -6,18 +6,17 @@ import Workspace from "./Workspace";
 import Modal from "./Modal";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import { motion } from "framer-motion";
-
-const DATA_FA2023 = require("./data/IndexedTotalFA2022-23.json");
-const DATA_WI2023 = require("./data/IndexedTotalWI2022-23.json");
-const DATA_SP2023 = require("./data/IndexedTotalSP2022-23.json");
-const DATA_FA2024 = require("./data/IndexedTotalFA2023-24.json");
-const DATA_WI2024 = require("./data/IndexedTotalWI2023-24.json");
-const DATA_SP2024 = require("./data/IndexedTotalSP2023-24.json");
-const DATA_FA2025 = require("./data/IndexedTotalFA2024-25.json");
-const DATA_WI2025 = require("./data/IndexedTotalWI2024-25.json");
-const DATA_SP2025 = require("./data/IndexedTotalSP2024-25.json");
-const DATA_FA2026 = require("./data/IndexedTotalFA2025-26.json");
-const DATA_WI2026 = require("./data/IndexedTotalWI2025-26.json");
+import DATA_FA2023 from "./data/IndexedTotalFA2022-23.json";
+import DATA_WI2023 from "./data/IndexedTotalWI2022-23.json";
+import DATA_SP2023 from "./data/IndexedTotalSP2022-23.json";
+import DATA_FA2024 from "./data/IndexedTotalFA2023-24.json";
+import DATA_WI2024 from "./data/IndexedTotalWI2023-24.json";
+import DATA_SP2024 from "./data/IndexedTotalSP2023-24.json";
+import DATA_FA2025 from "./data/IndexedTotalFA2024-25.json";
+import DATA_WI2025 from "./data/IndexedTotalWI2024-25.json";
+import DATA_SP2025 from "./data/IndexedTotalSP2024-25.json";
+import DATA_FA2026 from "./data/IndexedTotalFA2025-26.json";
+import DATA_WI2026 from "./data/IndexedTotalWI2025-26.json";
 
 const CURRENT_TERM = "/wi2026";
 

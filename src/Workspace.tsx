@@ -17,8 +17,7 @@ import "./css/workspace.css";
 import { Collapse, IconButton, Switch } from "@mui/material";
 import { UnfoldLess, UnfoldMore } from "@mui/icons-material";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
-
-const TERM_START_DATES = require("./data/term_start_dates.json");
+import TERM_START_DATES from "./data/term_start_dates.json";
 
 const DEFAULT_COURSES: { [key: string]: string[] } = {
   "fa": ["Ma 1 a", "Ph 1 a", "Ch 1 a", "CS 1"],
@@ -500,7 +499,7 @@ export default function Workspace({ term }: { term: string }) {
     }
   }
 
-  const [openExportModal, exportModal] = useModal((props) => {
+  const [openExportModal, exportModal] = useModal((_props) => {
     const shortened = shortenCourses(state.courses)
       .map((c) => [c.courseId, c.enabled, c.locked, c.sectionId])
       .flat();
