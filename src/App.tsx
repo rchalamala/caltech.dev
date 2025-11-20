@@ -298,7 +298,14 @@ function App() {
   const localWorkspaces = localStorage.getItem("workspaces" + realPath);
   const [workspaces, setWorkspaces] = useState<Workspace[]>(
     localWorkspaces
-      ? JSON.parse(localWorkspaces)
+      ? JSON.parse(localWorkspaces).map((ws: Workspace) => ({
+          ...ws,
+          customBlocks: (ws.customBlocks || []).map((block) => ({
+            ...block,
+            start: new Date(block.start),
+            end: new Date(block.end),
+          })),
+        }))
       : [
         emptyWorkspace(),
         emptyWorkspace(),
