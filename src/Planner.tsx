@@ -1,9 +1,11 @@
-import { useContext, useState, useRef } from "react";
+import { useContext, useState, useEffect } from "react";
 import { AppState } from "./App";
-import FullCalendar from "@fullcalendar/react";
-import timeGridPlugin from "@fullcalendar/timegrid";
-import interactionPlugin from "@fullcalendar/interaction";
-import { EventInput, EventClickArg, EventChangeArg, DateSelectArg } from "@fullcalendar/core";
+import { useCalendarApp, ScheduleXCalendar } from "@schedule-x/react";
+import { createViewWeek } from "@schedule-x/calendar";
+import { createDragAndDropPlugin } from "@schedule-x/drag-and-drop";
+import { createResizePlugin } from "@schedule-x/resize";
+import "@schedule-x/theme-default/dist/index.css";
+import { useModal } from "./Modal";
 
 import "./css/planner.css";
 
@@ -45,18 +47,17 @@ export function parseTimes(times: string): Maybe<TimeInterval>[][] {
   return ret;
 }
 
-interface CustomBlock {
-  id: string;
-  title: string;
-  start: Date;
-  end: Date;
-  backgroundColor?: string;
-  borderColor?: string;
-  editable: boolean;
+function formatDateForScheduleX(date: Date): string {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  const hours = String(date.getHours()).padStart(2, "0");
+  const minutes = String(date.getMinutes()).padStart(2, "0");
+  return `${year}-${month}-${day} ${hours}:${minutes}`;
 }
 
-function CourseToDates(courses: CourseStorage[]): EventInput[] {
-  const dates: EventInput[] = [];
+function CourseToDates(courses: CourseStorage[]) {
+  const dates: any[] = [];
 
   for (const course of courses) {
     if (course.sectionId === null) {
@@ -81,11 +82,13 @@ function CourseToDates(courses: CourseStorage[]): EventInput[] {
         dates.push({
           id: `course-${course.courseData.id}-${interval!.start.getTime()}`,
           title: course.courseData.number + " Section " + section.number,
-          start: interval!.start,
-          end: interval!.end,
-          backgroundColor: backgroundColor,
-          borderColor: backgroundColor,
-          editable: false,
+          start: formatDateForScheduleX(interval!.start),
+          end: formatDateForScheduleX(interval!.end),
+          calendarId: "courses",
+          _customData: {
+            backgroundColor: backgroundColor,
+            editable: false,
+          },
         });
       }
     }
@@ -96,103 +99,127 @@ function CourseToDates(courses: CourseStorage[]): EventInput[] {
 
 function Planner() {
   const state = useContext(AppState);
-  const calendarRef = useRef<FullCalendar>(null);
-  const [customBlocks, setCustomBlocks] = useState<CustomBlock[]>([]);
-  const [blockIdCounter, setBlockIdCounter] = useState(0);
+  const [blockTitle, setBlockTitle] = useState("");
+  const [pendingBlock, setPendingBlock] = useState<{
+    start: Date;
+    end: Date;
+  } | null>(null);
 
-  const courseEvents: EventInput[] = CourseToDates(
-    state.courses.filter((course) => course.enabled),
+  const calendar = useCalendarApp({
+    views: [createViewWeek()],
+    defaultView: "week",
+    weekOptions: {
+      gridHeight: 800,
+      nDays: 5,
+    },
+    calendars: {
+      courses: {
+        colorName: "courses",
+        lightColors: {
+          main: "#1c7df9",
+          container: "#d2e7ff",
+          onContainer: "#002859",
+        },
+      },
+      blocks: {
+        colorName: "blocks",
+        lightColors: {
+          main: "#3788d8",
+          container: "#d2e7ff",
+          onContainer: "#002859",
+        },
+      },
+    },
+    callbacks: {
+      onEventClick(calendarEvent: any) {
+        if (calendarEvent.id.startsWith("custom-")) {
+          if (confirm(`Delete block '${calendarEvent.title}'?`)) {
+            state.removeCustomBlock(calendarEvent.id);
+          }
+        }
+      },
+      onEventUpdate(updatedEvent: any) {
+        if (updatedEvent.id.startsWith("custom-")) {
+          const startDate = new Date(updatedEvent.start);
+          const endDate = new Date(updatedEvent.end);
+          state.updateCustomBlock(updatedEvent.id, {
+            start: startDate,
+            end: endDate,
+          });
+        }
+      },
+      onClickDateTime(dateTime: string) {
+        const clickedDate = new Date(dateTime);
+        const endDate = new Date(clickedDate.getTime() + 60 * 60 * 1000);
+        setPendingBlock({ start: clickedDate, end: endDate });
+        openModal();
+      },
+    },
+  }, [createDragAndDropPlugin(), createResizePlugin()]);
+
+  const courseEvents = CourseToDates(
+    state.courses.filter((course) => course.enabled)
   );
 
-  const customBlockEvents: EventInput[] = customBlocks.map((block) => ({
+  const customBlockEvents = (state.customBlocks || []).map((block) => ({
     id: block.id,
     title: block.title,
-    start: block.start,
-    end: block.end,
-    backgroundColor: block.backgroundColor || "#3788d8",
-    borderColor: block.borderColor || "#3788d8",
-    editable: block.editable,
+    start: formatDateForScheduleX(block.start),
+    end: formatDateForScheduleX(block.end),
+    calendarId: "blocks",
   }));
 
-  const allEvents = [...courseEvents, ...customBlockEvents];
-
-  const handleDateSelect = (selectInfo: DateSelectArg) => {
-    const title = prompt("Enter block title:");
-    if (title) {
-      const newBlock: CustomBlock = {
-        id: `custom-${blockIdCounter}`,
-        title: title,
-        start: selectInfo.start,
-        end: selectInfo.end,
-        backgroundColor: "#3788d8",
-        borderColor: "#3788d8",
-        editable: true,
-      };
-      setCustomBlocks([...customBlocks, newBlock]);
-      setBlockIdCounter(blockIdCounter + 1);
+  useEffect(() => {
+    if (calendar) {
+      calendar.events.set([...courseEvents, ...customBlockEvents]);
     }
-    const calendarApi = selectInfo.view.calendar;
-    calendarApi.unselect();
-  };
+  }, [state.courses, state.customBlocks, calendar]);
 
-  const handleEventClick = (clickInfo: EventClickArg) => {
-    if (clickInfo.event.id.startsWith("custom-")) {
-      if (confirm(`Delete block '${clickInfo.event.title}'?`)) {
-        setCustomBlocks(
-          customBlocks.filter((block) => block.id !== clickInfo.event.id)
-        );
-      }
-    }
-  };
-
-  const handleEventChange = (changeInfo: EventChangeArg) => {
-    if (changeInfo.event.id.startsWith("custom-")) {
-      setCustomBlocks(
-        customBlocks.map((block) => {
-          if (block.id === changeInfo.event.id) {
-            return {
-              ...block,
-              start: changeInfo.event.start!,
-              end: changeInfo.event.end!,
-            };
-          }
-          return block;
-        })
-      );
-    }
-  };
+  const [openModal, modal] = useModal(() => (
+    <div className="p-4">
+      <h2 className="text-lg font-bold mb-4">Create Time Block</h2>
+      <input
+        type="text"
+        placeholder="Enter block title"
+        value={blockTitle}
+        onChange={(e) => setBlockTitle(e.target.value)}
+        className="w-full px-3 py-2 border border-gray-300 rounded-md mb-4"
+        autoFocus
+      />
+      <div className="flex gap-2">
+        <button
+          onClick={() => {
+            if (blockTitle.trim() && pendingBlock) {
+              state.addCustomBlock({
+                title: blockTitle.trim(),
+                start: pendingBlock.start,
+                end: pendingBlock.end,
+              });
+              setBlockTitle("");
+              setPendingBlock(null);
+            }
+          }}
+          className="px-4 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600"
+        >
+          Create
+        </button>
+        <button
+          onClick={() => {
+            setBlockTitle("");
+            setPendingBlock(null);
+          }}
+          className="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  ));
 
   return (
     <div>
-      <FullCalendar
-        ref={calendarRef}
-        plugins={[timeGridPlugin, interactionPlugin]}
-        initialView="timeGridWeek"
-        headerToolbar={false}
-        allDaySlot={false}
-        slotMinTime="08:00:00"
-        slotMaxTime="23:00:00"
-        slotDuration="00:15:00"
-        snapDuration="00:15:00"
-        height="auto"
-        editable={true}
-        selectable={true}
-        selectMirror={true}
-        dayHeaderFormat={{ weekday: "short" }}
-        slotLabelFormat={{
-          hour: "numeric",
-          minute: "2-digit",
-          omitZeroMinute: true,
-          meridiem: "short",
-        }}
-        weekends={false}
-        events={allEvents}
-        select={handleDateSelect}
-        eventClick={handleEventClick}
-        eventChange={handleEventChange}
-        eventResizableFromStart={true}
-        initialDate={new Date(2018, 0, 1)}
-      />
+      {modal}
+      <ScheduleXCalendar calendarApp={calendar} />
     </div>
   );
 }

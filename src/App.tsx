@@ -47,6 +47,7 @@ function emptyWorkspace() {
       [new Date(2025, 0, 4, 8), new Date(2025, 0, 4, 23)],
       [new Date(2025, 0, 5, 8), new Date(2025, 0, 5, 23)],
     ],
+    customBlocks: [],
   };
 }
 
@@ -69,6 +70,11 @@ interface AppStateProps {
 
   availableTimes: Date[][];
   updateAvailableTimes: (dayIdx: number, isStart: boolean, day: Date) => void;
+
+  customBlocks: CustomBlock[];
+  addCustomBlock: (block: Omit<CustomBlock, "id">) => void;
+  removeCustomBlock: (id: string) => void;
+  updateCustomBlock: (id: string, updates: Partial<CustomBlock>) => void;
 }
 
 /** Allows to easily add/remove courses to `state` */
@@ -91,6 +97,11 @@ export const AppState = createContext<AppStateProps>({
 
   availableTimes: [],
   updateAvailableTimes: () => null,
+
+  customBlocks: [],
+  addCustomBlock: () => null,
+  removeCustomBlock: () => null,
+  updateCustomBlock: () => null,
 });
 
 function sectionsIntersect(a: CourseStorage, b: CourseStorage): boolean {
@@ -604,7 +615,44 @@ function App() {
     );
   };
 
+  const addCustomBlock = (block: Omit<CustomBlock, "id">) => {
+    const currentBlocks = workspaces[workspaceIdx].customBlocks || [];
+    const newBlock: CustomBlock = {
+      ...block,
+      id: `custom-${Date.now()}-${Math.random()}`,
+    };
+    setWorkspaces(
+      setArrayIdx(workspaces, workspaceIdx, {
+        ...workspaces[workspaceIdx],
+        customBlocks: [...currentBlocks, newBlock],
+      }),
+    );
+  };
+
+  const removeCustomBlock = (id: string) => {
+    const currentBlocks = workspaces[workspaceIdx].customBlocks || [];
+    setWorkspaces(
+      setArrayIdx(workspaces, workspaceIdx, {
+        ...workspaces[workspaceIdx],
+        customBlocks: currentBlocks.filter((block) => block.id !== id),
+      }),
+    );
+  };
+
+  const updateCustomBlock = (id: string, updates: Partial<CustomBlock>) => {
+    const currentBlocks = workspaces[workspaceIdx].customBlocks || [];
+    setWorkspaces(
+      setArrayIdx(workspaces, workspaceIdx, {
+        ...workspaces[workspaceIdx],
+        customBlocks: currentBlocks.map((block) =>
+          block.id === id ? { ...block, ...updates } : block
+        ),
+      }),
+    );
+  };
+
   const { arrangements, arrangementIdx } = workspaces[workspaceIdx];
+  const customBlocks = workspaces[workspaceIdx].customBlocks || [];
 
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -627,6 +675,10 @@ function App() {
           updateAvailableTimes,
           setWorkspace,
           toggleSectionLock,
+          customBlocks,
+          addCustomBlock,
+          removeCustomBlock,
+          updateCustomBlock,
         }}
       >
         <div className="sticky-help">

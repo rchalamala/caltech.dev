@@ -46,12 +46,22 @@ interface CourseStorageShort {
 
 type AvailableTimes = Date[][];
 
+interface CustomBlock {
+  id: string;
+  title: string;
+  start: Date;
+  end: Date;
+  backgroundColor?: string;
+  borderColor?: string;
+}
+
 // the overall state of a single workspace
 interface Workspace {
   courses: CourseStorage[];
   arrangements: CourseStorageShort[][];
   arrangementIdx: Maybe<number>;
   availableTimes: AvailableTimes;
+  customBlocks?: CustomBlock[];
 }
 
 type CourseIndex = Record<string, CourseData>;
