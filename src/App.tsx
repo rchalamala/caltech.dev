@@ -1,5 +1,4 @@
 import { useEffect, useState, createContext } from "react";
-import { Analytics } from "@vercel/analytics/react";
 import Planner from "./Planner";
 import { parseTimes } from "./Planner";
 import Workspace from "./Workspace";

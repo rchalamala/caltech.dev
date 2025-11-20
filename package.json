@@ -8,7 +8,6 @@
     "@formkit/auto-animate": "^0.8.2",
     "@mui/icons-material": "^5.16.13",
     "@mui/material": "^5.16.13",
-    "@vercel/analytics": "^1.4.1",
     "flatpickr": "^4.6.13",
     "framer-motion": "^11.16.0",
     "fzf": "^0.5.1",
@@ -25,7 +24,8 @@
     "start": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "predeploy": "npm run build"
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
@@ -41,10 +41,10 @@
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.2",
-    "vercel": "^48.10.4",
     "vite": "^7.2.4",
     "vite-plugin-svgr": "^4.5.0",
-    "vite-tsconfig-paths": "^5.1.4"
+    "vite-tsconfig-paths": "^5.1.4",
+    "wrangler": "^4.49.1"
   },
   "homepage": "."
 }
