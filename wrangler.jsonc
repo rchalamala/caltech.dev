@@ -8,5 +8,6 @@
 	"routes": [
 		"caltech.dev/*",
 		"www.caltech.dev/*"
-	]
+	],
+	"workers_dev": true
 }
