@@ -20,6 +20,12 @@ import { useAutoAnimate } from "@formkit/auto-animate/react";
 
 const TERM_START_DATES = require("./data/term_start_dates.json");
 
+const DEFAULT_COURSES: { [key: string]: string[] } = {
+  "fa": ["Ma 1 a", "Ph 1 a", "Ch 1 a", "CS 1"],
+  "wi": ["Ma 1 b", "Ph 1 b", "Ch 1 b", "CS 2"],
+  "sp": ["Ma 1 c", "Ph 1 c", "CS 3"],
+}
+
 /** Fetches courses */
 function getCourse(
   identifier: number | string,
@@ -628,7 +634,8 @@ export default function Workspace({ term }: { term: string }) {
           text="Default Schedule"
           onClick={() => {
             state.setCourses(
-              ["Ma 1 a", "Ph 1 a", "Ch 1 a"].map((name) => ({
+              // Change based on term
+              DEFAULT_COURSES[term.substring(0, 2)].map((name) => ({
                 ...getCourse(name, indexedCourses)!,
                 enabled: true,
                 locked: true,
