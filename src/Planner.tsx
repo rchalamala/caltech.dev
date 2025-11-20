@@ -10,6 +10,9 @@ import { Temporal } from "temporal-polyfill";
 
 import "./css/planner.css";
 
+const TZ = Temporal.Now.timeZoneId();
+const REF_MONDAY = Temporal.ZonedDateTime.from(`2018-01-01T00:00[${TZ}]`);
+
 type TimeInterval = {
   start: Date;
   end: Date;
@@ -48,9 +51,15 @@ export function parseTimes(times: string): Maybe<TimeInterval>[][] {
   return ret;
 }
 
-function dateToTemporalZDT(date: Date): any {
-  const tz = Temporal.Now.timeZoneId();
-  return Temporal.Instant.fromEpochMilliseconds(date.getTime()).toZonedDateTimeISO(tz);
+function dateToRefWeekZDT(date: Date): any {
+  const zdt = Temporal.Instant.fromEpochMilliseconds(date.getTime()).toZonedDateTimeISO(TZ);
+  const dayOfWeek = zdt.dayOfWeek;
+  return REF_MONDAY.add({ days: dayOfWeek - 1 }).with({
+    hour: zdt.hour,
+    minute: zdt.minute,
+    second: 0,
+    millisecond: 0,
+  });
 }
 
 function CourseToDates(courses: CourseStorage[]) {
@@ -79,8 +88,8 @@ function CourseToDates(courses: CourseStorage[]) {
         dates.push({
           id: `course-${course.courseData.id}-${interval!.start.getTime()}`,
           title: course.courseData.number + " Section " + section.number,
-          start: dateToTemporalZDT(interval!.start),
-          end: dateToTemporalZDT(interval!.end),
+          start: dateToRefWeekZDT(interval!.start),
+          end: dateToRefWeekZDT(interval!.end),
           calendarId: "courses",
           _customData: {
             backgroundColor: backgroundColor,
@@ -105,6 +114,7 @@ function Planner() {
   const calendar = useCalendarApp({
     views: [createViewWeek()],
     defaultView: "week",
+    selectedDate: "2018-01-01",
     weekOptions: {
       gridHeight: 800,
       nDays: 5,
@@ -137,12 +147,14 @@ function Planner() {
       },
       onEventUpdate(updatedEvent: any) {
         if (updatedEvent.id.startsWith("custom-")) {
-          const startDate = typeof updatedEvent.start === 'string'
-            ? new Date(updatedEvent.start.replace(' ', 'T'))
-            : new Date(updatedEvent.start.toInstant().epochMilliseconds);
-          const endDate = typeof updatedEvent.end === 'string'
-            ? new Date(updatedEvent.end.replace(' ', 'T'))
-            : new Date(updatedEvent.end.toInstant().epochMilliseconds);
+          const startZDT = typeof updatedEvent.start === 'string'
+            ? Temporal.ZonedDateTime.from(updatedEvent.start.replace(' ', 'T') + `[${TZ}]`)
+            : updatedEvent.start;
+          const endZDT = typeof updatedEvent.end === 'string'
+            ? Temporal.ZonedDateTime.from(updatedEvent.end.replace(' ', 'T') + `[${TZ}]`)
+            : updatedEvent.end;
+          const startDate = new Date(startZDT.toInstant().epochMilliseconds);
+          const endDate = new Date(endZDT.toInstant().epochMilliseconds);
           state.updateCustomBlock(updatedEvent.id, {
             start: startDate,
             end: endDate,
@@ -150,10 +162,18 @@ function Planner() {
         }
       },
       onClickDateTime(dateTime: any) {
-        const ms = dateTime.toInstant().epochMilliseconds;
-        const clickedDate = new Date(ms);
-        const endDate = new Date(ms + 60 * 60 * 1000);
-        setPendingBlock({ start: clickedDate, end: endDate });
+        const clickedZDT = dateTime as any;
+        const dayOfWeek = clickedZDT.dayOfWeek;
+        const refStart = REF_MONDAY.add({ days: dayOfWeek - 1 }).with({
+          hour: clickedZDT.hour,
+          minute: clickedZDT.minute,
+          second: 0,
+          millisecond: 0,
+        });
+        const refEnd = refStart.add({ hours: 1 });
+        const startDate = new Date(refStart.toInstant().epochMilliseconds);
+        const endDate = new Date(refEnd.toInstant().epochMilliseconds);
+        setPendingBlock({ start: startDate, end: endDate });
         openModal();
       },
     },
@@ -166,15 +186,14 @@ function Planner() {
   const customBlockEvents = (state.customBlocks || []).map((block) => ({
     id: block.id,
     title: block.title,
-    start: dateToTemporalZDT(block.start),
-    end: dateToTemporalZDT(block.end),
+    start: dateToRefWeekZDT(block.start),
+    end: dateToRefWeekZDT(block.end),
     calendarId: "blocks",
   }));
 
   useEffect(() => {
     if (calendar) {
       const allEvents = [...courseEvents, ...customBlockEvents];
-      console.log('Setting events:', allEvents);
       calendar.events.set(allEvents);
     }
   }, [state.courses, state.customBlocks, calendar]);
