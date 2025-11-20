@@ -24,8 +24,8 @@
 
 .time-controls {
   display: grid;
-  grid-template-columns: 60px repeat(5, 1fr);
-  gap: 0;
+  grid-template-columns: var(--gutter, 60px) repeat(var(--cols, 5), var(--col, 1fr));
+  column-gap: var(--gap, 0px);
   margin-left: 10px;
   margin-right: 10px;
   padding-top: 5px;

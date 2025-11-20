@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useRef, useLayoutEffect } from "react";
 import { AppState } from "./App";
 import { Calendar, momentLocalizer, Views } from "react-big-calendar";
 import moment from "moment";
@@ -90,6 +90,7 @@ export function parseTimes(times: string): Maybe<TimeInterval>[][] {
  * Extends from `App.tsx` */
 function Planner() {
   const state = useContext(AppState);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   const calEvents: DateData[] = CourseToDates(
     state.courses.filter((course) => course.enabled),
@@ -110,8 +111,70 @@ function Planner() {
     };
   };
 
+  useLayoutEffect(() => {
+    let raf: number | null = null;
+
+    const measure = () => {
+      const container = containerRef.current;
+      if (!container) return;
+
+      const content = container.querySelector('.rbc-time-content') as HTMLElement | null;
+      const controls = container.querySelector('.time-controls') as HTMLElement | null;
+      if (!content || !controls) return;
+
+      const gutterEl = content.querySelector('.rbc-time-gutter') as HTMLElement | null;
+      const dayEls = Array.from(content.querySelectorAll('.rbc-day-slot')) as HTMLElement[];
+
+      if (!gutterEl || dayEls.length === 0) return;
+
+      const gutterW = gutterEl.getBoundingClientRect().width;
+      const firstRect = dayEls[0].getBoundingClientRect();
+      const secondRect = dayEls[1]?.getBoundingClientRect();
+      const colW = firstRect.width;
+
+      let gap = 0;
+      if (secondRect) {
+        const delta = Math.round(secondRect.left - (firstRect.left + firstRect.width));
+        gap = Math.max(0, delta);
+      }
+
+      const cols = dayEls.length;
+      const width = content.clientWidth; // excludes vertical scrollbar
+
+      controls.style.width = `${width}px`;
+      controls.style.setProperty('--gutter', `${gutterW}px`);
+      controls.style.setProperty('--cols', `${cols}`);
+      controls.style.setProperty('--col', `${colW}px`);
+      controls.style.setProperty('--gap', `${gap}px`);
+    };
+
+    const schedule = () => {
+      if (raf) cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(measure);
+    };
+
+    schedule();
+
+    const handleResize = () => schedule();
+    window.addEventListener('resize', handleResize);
+
+    const container = containerRef.current;
+    const content = container?.querySelector('.rbc-time-content') as HTMLElement | null;
+    let ro: ResizeObserver | null = null;
+    if (content) {
+      ro = new ResizeObserver(schedule);
+      ro.observe(content);
+    }
+
+    return () => {
+      if (raf) cancelAnimationFrame(raf);
+      window.removeEventListener('resize', handleResize);
+      if (ro) ro.disconnect();
+    };
+  }, [calEvents.length]);
+
   return (
-    <div>
+    <div ref={containerRef}>
       <div className="time-controls">
         <div></div>
         {[0, 1, 2, 3, 4].map((idx) => {
