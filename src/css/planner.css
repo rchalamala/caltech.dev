@@ -1,9 +1,5 @@
-/* Hide Schedule-X date navigation controls */
-.sx__date-picker-wrapper,
-.sx__date-input-wrapper,
-.sx__date-input-chevron-wrapper,
-.sx__chevron-wrapper,
-.sx__today-button {
+/* Hide the entire Schedule-X header (date picker, navigation, month/year display) */
+.sx__header {
   display: none !important;
 }
 
