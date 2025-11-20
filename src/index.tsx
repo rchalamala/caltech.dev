@@ -7,5 +7,4 @@ const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
 );
 
-// Remove StrictMode for react-beautiful-dnd
 root.render(<App />);
