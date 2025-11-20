@@ -42,11 +42,11 @@ function emptyWorkspace() {
     arrangements: [],
     arrangementIdx: null,
     availableTimes: [
-      [new Date(2018, 0, 1, 8), new Date(2018, 0, 1, 23)],
-      [new Date(2018, 0, 2, 8), new Date(2018, 0, 2, 23)],
-      [new Date(2018, 0, 3, 8), new Date(2018, 0, 3, 23)],
-      [new Date(2018, 0, 4, 8), new Date(2018, 0, 4, 23)],
-      [new Date(2018, 0, 5, 8), new Date(2018, 0, 5, 23)],
+      [new Date(2025, 0, 1, 8), new Date(2025, 0, 1, 23)],
+      [new Date(2025, 0, 2, 8), new Date(2025, 0, 2, 23)],
+      [new Date(2025, 0, 3, 8), new Date(2025, 0, 3, 23)],
+      [new Date(2025, 0, 4, 8), new Date(2025, 0, 4, 23)],
+      [new Date(2025, 0, 5, 8), new Date(2025, 0, 5, 23)],
     ],
   };
 }
