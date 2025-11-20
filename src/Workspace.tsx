@@ -2,7 +2,23 @@ import { useContext, useState } from "react";
 import Modal, { useModal } from "./Modal";
 import Select from "react-select";
 import { SingleValue } from "react-select";
-import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import {
+  DndContext,
+  closestCenter,
+  KeyboardSensor,
+  PointerSensor,
+  useSensor,
+  useSensors,
+  DragEndEvent,
+} from "@dnd-kit/core";
+import {
+  arrayMove,
+  SortableContext,
+  sortableKeyboardCoordinates,
+  useSortable,
+  verticalListSortingStrategy,
+} from "@dnd-kit/sortable";
+import { CSS } from "@dnd-kit/utilities";
 import { Fzf } from "fzf";
 import Lock from "@mui/icons-material/Lock";
 import LockOpen from "@mui/icons-material/LockOpen";
@@ -58,7 +74,7 @@ function getCourse(
 }
 
 function exportICS(term: string, courses: CourseStorage[]): string {
-  const termStartDate = new Date(( TERM_START_DATES as {[key: string] : string} )[term]);
+  const termStartDate = new Date(TERM_START_DATES[term as keyof typeof TERM_START_DATES]);
 
   // Map weekdays to indices for easy comparison
   const dayMap = "MTWRFSU";
@@ -217,9 +233,6 @@ function AdvancedCourseInfo(props: { course: CourseStorage }) {
 
 interface WorkspaceEntryProps {
   course: CourseStorage;
-  innerRef: any;
-  provided: any;
-  index: number;
 }
 
 /** Contains:
@@ -239,6 +252,19 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
   const [expanded, setExpanded] = useState(true);
   const [animParent] = useAutoAnimate();
 
+  const {
+    attributes,
+    listeners,
+    setNodeRef,
+    transform,
+    transition,
+  } = useSortable({ id: course.courseData.id });
+
+  const style = {
+    transform: CSS.Transform.toString(transform),
+    transition,
+  };
+
   let className = "workspace-entry";
   className += course.locked
     ? " workspace-entry-locked"
@@ -249,111 +275,108 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
 
   const [infoModalOpen, setInfoModalOpen] = useState(false);
   return (
-    <div>
-      <Draggable draggableId={`${course.courseData.id}`} index={props.index}>
-        {(provided) => (
-          <div
-            className={`${className} bg-white shadow-lg border-0 ${
-              course.locked && "bg-neutral-100"
-            }`}
-            ref={provided.innerRef}
-            {...provided.draggableProps}
-            {...provided.dragHandleProps}
-          >
-            <div
-              className={`relative w-full whitespace-nowrap`}
-              ref={animParent}
+    <>
+      <div
+        ref={setNodeRef}
+        style={style}
+        {...attributes}
+        {...listeners}
+        className={`${className} bg-white shadow-lg border-0 ${
+          course.locked && "bg-neutral-100"
+        }`}
+      >
+        <div
+          className={`relative w-full whitespace-nowrap`}
+          ref={animParent}
+        >
+          <div className="left-0 w-min align-middle inline-block">
+            <IconButton
+              onClick={() => {
+                setExpanded(!expanded);
+              }}
             >
-              <div className="left-0 w-min align-middle inline-block">
-                <IconButton
-                  onClick={() => {
-                    setExpanded(!expanded);
-                  }}
-                >
-                  {expanded ? <UnfoldLess /> : <UnfoldMore />}
-                </IconButton>
-              </div>
-              {expanded ? (
-                <></>
-              ) : (
-                <div className="align-middle inline-block max-w-[calc(100%-11rem)] items-center overflow-clip w-full whitespace-nowrap">
-                  <span className="font-bold">{course.courseData.number}</span>{" "}
-                  {course.courseData.name}
-                </div>
-              )}
-              <div
-                className={`${expanded ? "w-[calc(100%-2.5rem)]" : "w-min"} inline-block top-auto bottom-0 right-0 left-auto align-middle`}
-              >
-                <div className="workspace-entry-buttons">
-                  <Switch
-                    color="warning"
-                    checked={course.enabled}
-                    onChange={() => {
-                      state.toggleCourse(course);
-                    }}
-                  />
-
-                  {course.locked ? (
-                    <IconButton
-                      color="warning"
-                      onClick={() => state.toggleSectionLock(course)}
-                    >
-                      <Lock className="" />
-                    </IconButton>
-                  ) : (
-                    <IconButton onClick={() => state.toggleSectionLock(course)}>
-                      <LockOpen />
-                    </IconButton>
-                  )}
-                  <IconButton
-                    color="error"
-                    className="workspace-entry-controls-remove"
-                    onClick={() => {
-                      state.removeCourse(course);
-                    }}
-                  >
-                    <Delete />
-                  </IconButton>
-                </div>
-              </div>
-            </div>
-            <Collapse in={expanded} className="w-full">
-              <div className="workspace-entry-content">
-                <div className="workspace-entry-info">
-                  <p>
-                    <b>{course.courseData.number}</b>
-                    {": "}
-                    <b>{course.courseData.name}</b>{" "}
-                    {`(${course.courseData.units[0]}-${course.courseData.units[1]}-${course.courseData.units[2]})`}
-                  </p>
-                  <p>
-                    {id !== null
-                      ? sections[id].instructor
-                      : "No Section Selected"}
-                  </p>
-                  <p>{id !== null ? sections[id].locations : "Location"}</p>
-                  <p>{id !== null ? sections[id].times : "Times"}</p>
-                </div>
-                <div className="workspace-entry-controls">
-                  <motion.button
-                    whileHover={{ scale: 0.95 }}
-                    whileTap={{ scale: 0.9 }}
-                    className="py-1 font-bold text-white bg-orange-500 rounded-md workspace-entry-controls-info"
-                    onClick={() => setInfoModalOpen(true)}
-                  >
-                    More Info
-                  </motion.button>
-                  <SectionDropdown course={course} />
-                </div>
-              </div>
-            </Collapse>
+              {expanded ? <UnfoldLess /> : <UnfoldMore />}
+            </IconButton>
           </div>
-        )}
-      </Draggable>
+          {expanded ? (
+            <></>
+          ) : (
+            <div className="align-middle inline-block max-w-[calc(100%-11rem)] items-center overflow-clip w-full whitespace-nowrap">
+              <span className="font-bold">{course.courseData.number}</span>{" "}
+              {course.courseData.name}
+            </div>
+          )}
+          <div
+            className={`${expanded ? "w-[calc(100%-2.5rem)]" : "w-min"} inline-block top-auto bottom-0 right-0 left-auto align-middle`}
+          >
+            <div className="workspace-entry-buttons">
+              <Switch
+                color="warning"
+                checked={course.enabled}
+                onChange={() => {
+                  state.toggleCourse(course);
+                }}
+              />
+
+              {course.locked ? (
+                <IconButton
+                  color="warning"
+                  onClick={() => state.toggleSectionLock(course)}
+                >
+                  <Lock className="" />
+                </IconButton>
+              ) : (
+                <IconButton onClick={() => state.toggleSectionLock(course)}>
+                  <LockOpen />
+                </IconButton>
+              )}
+              <IconButton
+                color="error"
+                className="workspace-entry-controls-remove"
+                onClick={() => {
+                  state.removeCourse(course);
+                }}
+              >
+                <Delete />
+              </IconButton>
+            </div>
+          </div>
+        </div>
+        <Collapse in={expanded} className="w-full">
+          <div className="workspace-entry-content">
+            <div className="workspace-entry-info">
+              <p>
+                <b>{course.courseData.number}</b>
+                {": "}
+                <b>{course.courseData.name}</b>{" "}
+                {`(${course.courseData.units[0]}-${course.courseData.units[1]}-${course.courseData.units[2]})`}
+              </p>
+              <p>
+                {id !== null
+                  ? sections[id].instructor
+                  : "No Section Selected"}
+              </p>
+              <p>{id !== null ? sections[id].locations : "Location"}</p>
+              <p>{id !== null ? sections[id].times : "Times"}</p>
+            </div>
+            <div className="workspace-entry-controls">
+              <motion.button
+                whileHover={{ scale: 0.95 }}
+                whileTap={{ scale: 0.9 }}
+                className="py-1 font-bold text-white bg-orange-500 rounded-md workspace-entry-controls-info"
+                onClick={() => setInfoModalOpen(true)}
+              >
+                More Info
+              </motion.button>
+              <SectionDropdown course={course} />
+            </div>
+          </div>
+        </Collapse>
+      </div>
       <Modal isOpen={infoModalOpen} onClose={() => setInfoModalOpen(false)}>
         <AdvancedCourseInfo course={props.course} />
       </Modal>
-    </div>
+    </>
   );
 }
 
@@ -458,17 +481,6 @@ function WorkspaceScheduler() {
   }
 }
 
-function reorder<T>(
-  list: Array<T>,
-  startIndex: number,
-  endIndex: number,
-): Array<T> {
-  const result = Array.from(list);
-  const [removed] = result.splice(startIndex, 1);
-  result.splice(endIndex, 0, removed);
-
-  return result;
-}
 
 /** A component that provides UI for searching/adding/removing courses
 A fuzzy searcher will show you a limited selection of courses
@@ -479,12 +491,16 @@ export default function Workspace({ term }: { term: string }) {
   const state = useContext(AppState);
   const indexedCourses = useContext(AllCourses);
 
-  const workspaceEntries = (provided: any) =>
-    state.courses.map((course: CourseStorage, index: number) => (
+  const sensors = useSensors(
+    useSensor(PointerSensor),
+    useSensor(KeyboardSensor, {
+      coordinateGetter: sortableKeyboardCoordinates,
+    })
+  );
+
+  const workspaceEntries = () =>
+    state.courses.map((course: CourseStorage) => (
       <WorkspaceEntry
-        index={index}
-        innerRef={provided.innerRef}
-        provided={provided}
         course={course}
         key={course.courseData.id}
       />
@@ -563,17 +579,19 @@ export default function Workspace({ term }: { term: string }) {
     }
   };
 
-  function onDragEnd(result: any) {
-    if (
-      !result.destination ||
-      result.destination.index === result.source.index
-    ) {
-      return;
-    }
+  function handleDragEnd(event: DragEndEvent) {
+    const { active, over } = event;
 
-    state.setCourses(
-      reorder(state.courses, result.source.index, result.destination.index),
-    );
+    if (over && active.id !== over.id) {
+      const oldIndex = state.courses.findIndex(
+        (c) => c.courseData.id === active.id
+      );
+      const newIndex = state.courses.findIndex(
+        (c) => c.courseData.id === over.id
+      );
+
+      state.setCourses(arrayMove(state.courses, oldIndex, newIndex));
+    }
   }
 
   return (
@@ -668,16 +686,18 @@ export default function Workspace({ term }: { term: string }) {
             No courses added. Add some using the search bar above!
           </p>
         ) : (
-          <DragDropContext onDragEnd={onDragEnd}>
-            <Droppable droppableId="droppable">
-              {(provided) => (
-                <div ref={provided.innerRef} {...provided.droppableProps}>
-                  {workspaceEntries(provided)}
-                  {provided.placeholder}
-                </div>
-              )}
-            </Droppable>
-          </DragDropContext>
+          <DndContext
+            sensors={sensors}
+            collisionDetection={closestCenter}
+            onDragEnd={handleDragEnd}
+          >
+            <SortableContext
+              items={state.courses.map((c) => c.courseData.id)}
+              strategy={verticalListSortingStrategy}
+            >
+              {workspaceEntries()}
+            </SortableContext>
+          </DndContext>
         )}
       </div>
     </div>
