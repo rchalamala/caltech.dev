@@ -1,33 +1,10 @@
-.rbc-allday-cell {
-  display: none;
+/* Hide the Schedule-X calendar header (month/year display and date range) */
+.sx__calendar-header,
+.sx__range-heading {
+  display: none !important;
 }
 
-.rbc-time-view .rbc-header {
-  border-bottom: none;
-}
-
-.time-picker {
-  display: flex;
-  flex-direction: column;
-  row-gap: 8px;
-  max-width: 4rem;
-}
-
-.time-picker > input {
-  text-align: center;
-}
-
-.flatpickr-input {
-  border: 1px solid lightgrey;
-  border-radius: 4px;
-}
-
-.time-controls {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-left: 65px;
-  margin-right: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+/* Hide the date numbers in the week view header, keep only weekday names */
+.sx__week-grid__date-number {
+  display: none !important;
 }
