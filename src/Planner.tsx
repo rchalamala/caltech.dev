@@ -114,7 +114,7 @@ function Planner() {
   const calendar = useCalendarApp({
     views: [createViewWeek()],
     defaultView: "week",
-    selectedDate: "2018-01-01",
+    selectedDate: Temporal.PlainDate.from("2018-01-01"),
     weekOptions: {
       gridHeight: 800,
       nDays: 5,
