@@ -20,7 +20,7 @@ import DATA_WI2026 from "./data/IndexedTotalWI2025-26.json";
 
 const CURRENT_TERM = "/wi2026";
 
-const courseDataSources: Record<string, CourseData> = {
+const courseDataSources: {[key: string]: { [key: string]: CourseData }} = {
   "/fa2023": DATA_FA2023,
   "/wi2023": DATA_WI2023,
   "/sp2023": DATA_SP2023,

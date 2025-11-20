@@ -58,7 +58,7 @@ function getCourse(
 }
 
 function exportICS(term: string, courses: CourseStorage[]): string {
-  const termStartDate = new Date(TERM_START_DATES[term]);
+  const termStartDate = new Date(( TERM_START_DATES as {[key: string] : string} )[term]);
 
   // Map weekdays to indices for easy comparison
   const dayMap = "MTWRFSU";
