@@ -176,11 +176,13 @@ function Planner() {
 
   useEffect(() => {
     if (calendar) {
-      calendar.events.set([...courseEvents, ...customBlockEvents]);
+      const allEvents = [...courseEvents, ...customBlockEvents];
+      console.log('Setting events:', allEvents);
+      calendar.events.set(allEvents);
     }
   }, [state.courses, state.customBlocks, calendar]);
 
-  const [openModal, modal] = useModal(() => (
+  const [openModal, modal] = useModal((props) => (
     <div className="p-4">
       <h2 className="text-lg font-bold mb-4">Create Time Block</h2>
       <input
@@ -202,6 +204,7 @@ function Planner() {
               });
               setBlockTitle("");
               setPendingBlock(null);
+              props.onClose();
             }
           }}
           className="px-4 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600"
@@ -212,6 +215,7 @@ function Planner() {
           onClick={() => {
             setBlockTitle("");
             setPendingBlock(null);
+            props.onClose();
           }}
           className="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400"
         >
