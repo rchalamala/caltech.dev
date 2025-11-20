@@ -1,5 +1,5 @@
-/* Hide the entire Schedule-X header (date picker, navigation, month/year display) */
-.sx__header {
+/* Hide the entire Schedule-X calendar header (date picker, navigation, month/year display) */
+.sx__calendar-header {
   display: none !important;
 }
 
