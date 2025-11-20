@@ -5,32 +5,13 @@
     "clientKind": "git",
     "useIgnoreFile": true
   },
-  "files": {
-    "ignoreUnknown": false,
-    "ignore": ["build/**", "node_modules/**", "src/css/workspace.css"]
-  },
   "formatter": {
-    "enabled": true,
-    "indentStyle": "space",
     "indentWidth": 2
   },
   "linter": {
     "enabled": true,
     "rules": {
       "recommended": true
-    }
-  },
-  "javascript": {
-    "formatter": {
-      "quoteStyle": "double"
-    }
-  },
-  "assist": {
-    "enabled": true,
-    "actions": {
-      "source": {
-        "organizeImports": "on"
-      }
     }
   }
 }
