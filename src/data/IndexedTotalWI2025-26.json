@@ -4990,12 +4990,12 @@
       {
         "grades": "",
         "instructor": "Dickinson, M",
-        "locations": "106 SPL\n106 SPL",
+        "locations": "106 SPL",
         "number": 1,
-        "times": "TWF 13:00 - 13:55\nMT 19:00 - 19:55"
+        "times": "TWF 13:00 - 13:55\nOM,T 13:00 - 13:55\nA"
       }
     ],
-    "comment": " max enroll: 20 students // pass/fail for all first-year students and graded only for all non-first-year students",
+    "comment": " max enroll: 20 students // pass/fail for all first-year students and graded only for all non-first-year students // Recitation day to be decided on first day of class Tuesday (OM)",
     "units": [
       3,
       0,
@@ -5014,10 +5014,10 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Staff",
+        "instructor": "Newman, D / Bois, J",
         "locations": "",
         "number": 1,
-        "times": "A\nA"
+        "times": "M 10:00 - 10:55\nA\nR 15:00 - 15:55\nA\nW 11:00 - 11:55\nA"
       }
     ],
     "comment": "",
@@ -5092,7 +5092,7 @@
         "instructor": "McFall-Ngai, M / Ruby, E",
         "locations": "101 KRK\n101 KRK",
         "number": 1,
-        "times": "W 14:00 - 15:55\nT 19:00 - 20:55"
+        "times": "TR 10:00 - 11:25\nW 14:00 - 15:55"
       }
     ],
     "comment": " Min enrollment:10 // Max enrollment: 20 // Class will be cancelled if less than 10 students enroll",
@@ -5683,13 +5683,55 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Staff",
-        "locations": "",
+        "instructor": "Jeckel, H",
+        "locations": "152 BRN",
         "number": 1,
-        "times": "A\nA"
+        "times": "OM,W 16:00 - 16:55"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Gregory, M / Prober, D",
+        "locations": "101 KRK",
+        "number": 2,
+        "times": "OM,M 16:00 - 16:55"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Sun, J",
+        "locations": "200 BRD",
+        "number": 3,
+        "times": "OM,R 16:00 - 16:55"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Subramanian, A",
+        "locations": "340A CNRB",
+        "number": 4,
+        "times": "OM,T 16:00 - 16:55"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Readhead, C",
+        "locations": "222 CNRB",
+        "number": 5,
+        "times": "OM,M 16:00 - 16:55"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Marable, S",
+        "locations": "251 CNRB",
+        "number": 6,
+        "times": "OM,W 16:00 - 16:55"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Prober, D",
+        "locations": "152 BRN",
+        "number": 7,
+        "times": "OM,W 16:00 - 16:55"
       }
     ],
-    "comment": "",
+    "comment": " See course syllabus link for section topics",
     "units": [
       0,
       0,
@@ -5850,6 +5892,31 @@
     "rating": "4.19 +/- 0.86",
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=54&term_id=555&division_id=80423&department_id=153&offering_id=93463&track_id=93463-Default"
+  },
+  "657137860": {
+    "id": 657137860,
+    "name": "Advanced Chemical Biology",
+    "number": "Ch/Bi 145",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Morstein, J",
+        "locations": "147 NYS",
+        "number": 1,
+        "times": "TR 10:30 - 11:55"
+      }
+    ],
+    "comment": " Only the first 5 UG Seniors will be accepted and any beyond that will be waitlisted",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "An overview of chemical approaches used to study, target, and rewire biology. Topics covered will include bioorganic chemistry, bioconjugation and bioorthogonal chemistries, fluorophores and chemical probes, crosslinking and proximity labeling, chemical genetics, new modalities in pharmacology and screening, photopharmacology, reprogramming genetic, epigenetic, and metabolic codes.",
+    "prerequisites": "Ch 41 abc; Ch/Bi 110 ab recommended.",
+    "rating": "3.59 +/- 1.35",
+    "true_units": "4",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=38&term_id=520&division_id=80424&department_id=114&offering_id=79059&track_id=79059-Default"
   },
   "586820823": {
     "id": 586820823,
@@ -7334,6 +7401,31 @@
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=54&term_id=555&division_id=80424&department_id=116&offering_id=93282&track_id=93282-Default"
   },
+  "834680682": {
+    "id": 834680682,
+    "name": "Solid State NMR Spectroscopy for Materials Chemistry",
+    "number": "ChE 114",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Hwang, S",
+        "locations": "102 SPL",
+        "number": 1,
+        "times": "TR 14:30 - 15:55"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      3,
+      3
+    ],
+    "description": "This course covers the principles and applications of solid-state NMR spectroscopy, with a focus on structural and dynamic characterization of organic and inorganic solids. Key applications include the analysis of heterogeneous catalysts, battery materials, and other energy storage systems. Topics include fundamental and advanced solid-state NMR techniques such as magic angle spinning (MAS), cross-polarization (CP), NMR of quadrupolar nuclei, multiple-pulse sequences, multi-dimensional experiments, sensitivity enhancement methods, and NMR methods for probing molecular dynamics. Recent advances in the field such as the integration of machine learning and artificial intelligence (AI) for automated spectral analysis, structural prediction, and data-driven materials discovery will also be briefly reviewed. Hands-on laboratory sessions using solid-state NMR spectrometers at the Caltech Solid State NMR Facility provide practical experience.",
+    "prerequisites": "Ch 21 abc or instructor's permission.",
+    "rating": "3.24 +/- 1.07",
+    "true_units": "5",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=39&term_id=521&division_id=80424&department_id=116&offering_id=81330&track_id=81330-Default"
+  },
   "112056501": {
     "id": 112056501,
     "name": "Introduction to the Design of Chemical Systems",
@@ -7369,7 +7461,7 @@
         "instructor": "Vicic, M",
         "locations": "102 SPL",
         "number": 1,
-        "times": "TR 09:00 - 10:30"
+        "times": "TR 09:00 - 10:25"
       }
     ],
     "comment": " Max enrollment is 15 students; Priority given to ChE undergrads",
@@ -7680,6 +7772,13 @@
       },
       {
         "grades": "PASS-FAIL",
+        "instructor": "Datta, S",
+        "locations": "",
+        "number": 30,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
         "instructor": "Tirrell, D",
         "locations": "",
         "number": 36,
@@ -7923,10 +8022,10 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Staff",
+        "instructor": "Rees, D / Blake, G",
         "locations": "",
         "number": 1,
-        "times": "A\nA"
+        "times": "MT 09:00 - 09:55\nA\nF 13:00 - 13:55\nA\nR 19:00 - 21:55\nA"
       }
     ],
     "comment": "",
@@ -7966,23 +8065,9 @@
         "locations": "275 RSC\n220 RSC",
         "number": 3,
         "times": "F 13:00 - 13:55\nT 19:00 - 21:55"
-      },
-      {
-        "grades": "PASS-FAIL",
-        "instructor": "Mendez, J",
-        "locations": "275 RSC\n220 RSC",
-        "number": 4,
-        "times": "F 13:00 - 13:55\nW 13:00 - 15:55"
-      },
-      {
-        "grades": "PASS-FAIL",
-        "instructor": "Mendez, J",
-        "locations": "275 RSC\n220 RSC",
-        "number": 5,
-        "times": "F 13:00 - 13:55\nR 08:00 - 10:55"
       }
     ],
-    "comment": " Max enroll: Enrollment open to all majors / 16 students per section / Sec 3 reserved for First-Years // Instructor permission required to enroll after first week / Must take Ch3 in their first 6 terms to be graded P/F",
+    "comment": " Sections 04 & 05 Cancelled / 16 students per section / Sec 3 reserved for First-Years // Instructor permission required to enroll after first week / Must take Ch3 in their first 6 terms to be graded P/F",
     "units": [
       1,
       3,
@@ -8003,22 +8088,8 @@
         "grades": "PASS-FAIL",
         "instructor": "Mendez, J",
         "locations": "275 RSC\n252 RSC",
-        "number": 1,
-        "times": "F 14:00 - 14:55\nT 08:00 - 10:55"
-      },
-      {
-        "grades": "PASS-FAIL",
-        "instructor": "Mendez, J",
-        "locations": "275 RSC\n252 RSC",
         "number": 2,
         "times": "F 14:00 - 14:55\nT 13:00 - 15:55"
-      },
-      {
-        "grades": "PASS-FAIL",
-        "instructor": "Mendez, J",
-        "locations": "275 RSC\n252 RSC",
-        "number": 3,
-        "times": "F 14:00 - 14:55\nT 19:00 - 21:55"
       },
       {
         "grades": "PASS-FAIL",
@@ -8035,7 +8106,7 @@
         "times": "R 08:00 - 10:55\nF 14:00 - 14:55"
       }
     ],
-    "comment": " Max enroll: Enrollment open to all majors / 12 students per section / Sec 3 reserved for First-Years // Instructor permission required to enroll after first week / Must take Ch3 in their first 6 terms to be graded P/F",
+    "comment": " Sections 01 & 03 Cancelled / 12 students per section / Sec 3 reserved for First-Years // Instructor permission required to enroll after first week / Must take Ch3 in their first 6 terms to be graded P/F",
     "units": [
       1,
       3,
@@ -8055,9 +8126,9 @@
       {
         "grades": "",
         "instructor": "Mendez, J",
-        "locations": "B122 GCL\n130 CHR",
+        "locations": "130 CHR",
         "number": 1,
-        "times": "F 12:00 - 12:55\nTR 08:00 - 10:55"
+        "times": "A\nA\nTR 08:00 - 10:55"
       }
     ],
     "comment": " max enroll: 14 students",
@@ -8262,6 +8333,13 @@
         "instructor": "Arnold, F",
         "locations": "",
         "number": 15,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Fianu, I",
+        "locations": "",
+        "number": 16,
         "times": "A\nA"
       },
       {
@@ -8554,6 +8632,13 @@
       },
       {
         "grades": "PASS-FAIL",
+        "instructor": "Demirer, G / Okumura, M",
+        "locations": "",
+        "number": 4,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
         "instructor": "Agapie, T / Okumura, M",
         "locations": "",
         "number": 5,
@@ -8825,31 +8910,6 @@
     "rating": "3.52 +/- 1.04",
     "true_units": "2",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=36&term_id=518&division_id=80424&department_id=114&offering_id=78552&track_id=78552-Default"
-  },
-  "51612189": {
-    "id": 51612189,
-    "name": "Bioorganic Chemistry of Proteins",
-    "number": "Ch 145",
-    "sections": [
-      {
-        "grades": "",
-        "instructor": "Morstein, J",
-        "locations": "147 NYS",
-        "number": 1,
-        "times": "TR 10:30 - 11:55"
-      }
-    ],
-    "comment": "",
-    "units": [
-      3,
-      0,
-      6
-    ],
-    "description": "An overview of chemical approaches used to study, target, and rewire biology. Topics covered will include bioorganic chemistry, bioconjugation and bioorthogonal chemistries, fluorophores and chemical probes, crosslinking and proximity labeling, chemical genetics, new modalities in pharmacology and screening, photopharmacology, reprogramming genetic, epigenetic, and metabolic codes.",
-    "prerequisites": "Ch 41 abc; Ch/Bi 110 ab recommended.",
-    "rating": "3.59 +/- 1.35",
-    "true_units": "4",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=38&term_id=520&division_id=80424&department_id=114&offering_id=79059&track_id=79059-Default"
   },
   "513779161": {
     "id": 513779161,
@@ -10983,7 +11043,7 @@
         "instructor": "Zuev, K",
         "locations": "104 ANB",
         "number": 1,
-        "times": "T 19:30 - 20:55"
+        "times": "R 19:30 - 20:55"
       },
       {
         "grades": "PASS-FAIL",
@@ -11549,6 +11609,13 @@
       },
       {
         "grades": "PASS-FAIL",
+        "instructor": "Rutishauser, U",
+        "locations": "",
+        "number": 46,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
         "instructor": "Shapiro, M",
         "locations": "",
         "number": 47,
@@ -11616,7 +11683,7 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Staff",
+        "instructor": "Blank, A",
         "locations": "",
         "number": 1,
         "times": "A\nA"
@@ -12130,7 +12197,7 @@
         "times": "TR 14:30 - 15:55"
       }
     ],
-    "comment": " max enroll: 15 students // instructor permission required // application required https://docs.google.com/forms/d/e/1FAIpQLSfaPrhnhS17UeN05KJ CT-N1GPIibVfhuMhRKq-gPjuAqnzn1w/viewform?usp=header",
+    "comment": " taught concurrently with VC 162 // max enroll: 15 students between VC 162 and CS/IDS 162 // instructor permission required // application required https://docs.google.com/forms/d/e/1FAIpQLSfaPrhnhS17UeN05KJ CT-N1GPIibVfhuMhRKq-gPjuAqnzn1w/viewform?usp=header",
     "units": [
       3,
       0,
@@ -12817,12 +12884,12 @@
       {
         "grades": "LETTER",
         "instructor": "Burdick, J",
-        "locations": "",
+        "locations": "115 GTL",
         "number": 1,
-        "times": "OM,A\nA"
+        "times": "OM,T 13:00 - 13:55"
       }
     ],
-    "comment": " Organizational Meeting TBA",
+    "comment": " OM 1/6 at 1 PM in 115 GTL",
     "units": [
       3,
       3,
@@ -13217,6 +13284,13 @@
       },
       {
         "grades": "LETTER",
+        "instructor": "Gkioxari, G",
+        "locations": "",
+        "number": 3,
+        "times": "A\nA"
+      },
+      {
+        "grades": "LETTER",
         "instructor": "Tai, Y",
         "locations": "",
         "number": 4,
@@ -13578,9 +13652,9 @@
       {
         "grades": "",
         "instructor": "George, G",
-        "locations": "",
+        "locations": "B270 MRE",
         "number": 1,
-        "times": "A\nA"
+        "times": "MF 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -14216,7 +14290,7 @@
     "sections": [
       {
         "grades": "LETTER",
-        "instructor": "Staff",
+        "instructor": "Gilmore, D",
         "locations": "",
         "number": 1,
         "times": "A\nA"
@@ -14454,6 +14528,13 @@
         "instructor": "Thompson, A",
         "locations": "",
         "number": 6,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Schneider, T",
+        "locations": "",
+        "number": 7,
         "times": "A\nA"
       },
       {
@@ -15186,10 +15267,10 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Salinas, C",
+        "instructor": "Asimow, P",
         "locations": "",
         "number": 1,
-        "times": "A\nA"
+        "times": "W 19:00 - 19:55\nA"
       }
     ],
     "comment": "",
@@ -17152,31 +17233,6 @@
     "true_units": "Somewhat Low",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=54&term_id=555&division_id=80427&department_id=150&offering_id=94596&track_id=94596-Default"
   },
-  "732704752": {
-    "id": 732704752,
-    "name": "Bioethics",
-    "number": "Pl/HPS 183",
-    "sections": [
-      {
-        "grades": "",
-        "instructor": "Helou, A",
-        "locations": "127 BAX",
-        "number": 1,
-        "times": "TR 10:30 - 11:55"
-      }
-    ],
-    "comment": " maximum enrollment: 15 students",
-    "units": [
-      3,
-      0,
-      6
-    ],
-    "description": "A survey of issues in bioethics. Topics may include: abortion and reproductive rights; euthanasia; physician-patient relationships; use of human embryos and stem cells in research; use of human subjects in research and the concept of informed consent; research on and treatment of non-human animals; organ transplantation, distribution, and sale; genetic modification of organisms (including humans); synthetic biology; cure vs. enhancement and other issues in biotechnology and neuroethics.",
-    "prerequisites": "",
-    "rating": "4.51 +/- 0.67",
-    "true_units": "About Right",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=57&term_id=558&division_id=80427&department_id=171&offering_id=96338&track_id=96338-Default"
-  },
   "954444835": {
     "id": 954444835,
     "name": "Right and Wrong",
@@ -17266,10 +17322,10 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Staff",
+        "instructor": "Jahner, J",
         "locations": "",
         "number": 1,
-        "times": "A\nA"
+        "times": "R 09:00 - 10:55\nA"
       }
     ],
     "comment": "",
@@ -17501,10 +17557,10 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Staff",
+        "instructor": "Refael, G / George, G",
         "locations": "",
         "number": 1,
-        "times": "A\nA"
+        "times": "MRF 11:00 - 11:55\nA\nM 15:00 - 15:55\nA\nW 09:00 - 10:55\nA"
       }
     ],
     "comment": "",
@@ -17526,10 +17582,10 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Staff",
+        "instructor": "Graber, T / Gherman, M",
         "locations": "",
         "number": 1,
-        "times": "A\nA"
+        "times": "MW 13:00 - 13:55\nA\nF 09:00 - 09:55\nA\nW 15:00 - 15:55\nA"
       }
     ],
     "comment": "",
@@ -18073,6 +18129,13 @@
         "instructor": "Nad Perge, S",
         "locations": "",
         "number": 16,
+        "times": "A\nA"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "Datta, S",
+        "locations": "",
+        "number": 17,
         "times": "A\nA"
       }
     ],
@@ -19152,7 +19215,7 @@
         "instructor": "Aluffi, P",
         "locations": "387 LINDE",
         "number": 1,
-        "times": "MWF 09:00 - 09:55"
+        "times": "MWF 13:00 - 13:55"
       }
     ],
     "comment": " taught concurrently with Ma 5b",
@@ -22236,9 +22299,16 @@
       {
         "grades": "",
         "instructor": "Black, E / Libbrecht, K",
-        "locations": "210 BRG",
+        "locations": "210 BRG\n210 BRG",
         "number": 1,
-        "times": "OM,M 15:00 - 15:55"
+        "times": "OM,M 15:00 - 15:55\nR 10:00 - 15:55"
+      },
+      {
+        "grades": "",
+        "instructor": "Black, E / Libbrecht, K",
+        "locations": "210 BRG\n210 BRG",
+        "number": 2,
+        "times": "OM,M 15:00 - 15:55\nF 10:00 - 15:55"
       }
     ],
     "comment": "",
@@ -22261,9 +22331,16 @@
       {
         "grades": "",
         "instructor": "Black, E / Libbrecht, K",
-        "locations": "210 BRG",
+        "locations": "210 BRG\n210 BRG",
         "number": 1,
-        "times": "OM,M 15:00 - 15:55"
+        "times": "OM,M 15:00 - 15:55\nR 10:00 - 15:55"
+      },
+      {
+        "grades": "",
+        "instructor": "Black, E / Libbrecht, K",
+        "locations": "210 BRG\n210 BRG",
+        "number": 2,
+        "times": "OM,M 15:00 - 15:55\nF 10:00 - 15:55"
       }
     ],
     "comment": "",
@@ -22286,9 +22363,16 @@
       {
         "grades": "",
         "instructor": "Black, E / Libbrecht, K",
-        "locations": "210 BRG",
+        "locations": "210 BRG\n210 BRG",
         "number": 1,
-        "times": "OM,M 15:00 - 15:55"
+        "times": "OM,M 15:00 - 15:55\nR 10:00 - 15:55"
+      },
+      {
+        "grades": "",
+        "instructor": "Black, E / Libbrecht, K",
+        "locations": "210 BRG\n210 BRG",
+        "number": 2,
+        "times": "OM,M 15:00 - 15:55\nR 10:00 - 15:55"
       }
     ],
     "comment": "",
@@ -22846,6 +22930,13 @@
         "instructor": "Adhikari, R",
         "locations": "",
         "number": 1,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Wu, W",
+        "locations": "",
+        "number": 2,
         "times": "A\nA"
       },
       {
@@ -23908,7 +23999,7 @@
         "times": "MWF 11:00 - 11:55"
       }
     ],
-    "comment": " if class is full, see waitlist form at https://forms.office.com/r/SEVCpEpvbM /// maximum enrollment: 18 students per section",
+    "comment": " if class is full, see waitlist form at https://forms.office.com/r/SEVCpEpvbM /// maximum enrollment: 18 students per section // SENIORS ONLY",
     "units": [
       3,
       0,
@@ -23933,7 +24024,7 @@
         "times": "W 13:00 - 13:55"
       }
     ],
-    "comment": " Open to E&AS and GPS students only // maximum enrollment: 20 students // to be added to waitlist go to https://forms.office.com/r/KABh4Epxap",
+    "comment": " Open to E&AS and GPS students only // maximum enrollment: 20 students // to be added to waitlist go to https://forms.office.com/r/KABh4Epxap // SENIORS ONLY",
     "units": [
       1,
       0,
@@ -23983,7 +24074,7 @@
         "times": "W 11:00 - 11:55"
       }
     ],
-    "comment": " Open to E&AS and GPS students only // maximum enrollment: 20 students // to be added to waitlist go to https://forms.office.com/r/KABh4Epxap",
+    "comment": " Open to E&AS and GPS students only // maximum enrollment: 20 students // to be added to waitlist go to https://forms.office.com/r/KABh4Epxap // SENIORS ONLY",
     "units": [
       1,
       0,
@@ -24612,6 +24703,31 @@
     "rating": "5.00 +/- 0.00",
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=54&term_id=555&division_id=80427&department_id=656&offering_id=93522&track_id=93522-Default"
+  },
+  "46090846": {
+    "id": 46090846,
+    "name": "Data, Algorithms and Society",
+    "number": "VC 162",
+    "sections": [
+      {
+        "grades": "LETTER",
+        "instructor": "Mushkin, H / Ralph, C",
+        "locations": "105 ANB",
+        "number": 1,
+        "times": "TR 14:30 - 15:55"
+      }
+    ],
+    "comment": " taught concurrently with CS/IDS 162 // max enroll: 15 students between VC 162 and CS/IDS 162 / instructor permission required // application required https://docs.google.com/forms/d/e/1FAIpQLSfaPrhnhS17UeN05KJ CT-N1GPIibVfhuMhRKq-gPjuAqnzn1w/viewform?usp=header",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "This course examines algorithms and data practices in fields such as machine learning, privacy, and communication networks through a social lens. We will draw upon theory and practices from art, media, computer science and technology studies to critically analyze algorithms and their implementations within society. The course includes projects, lectures, readings, and discussions. Students will learn mathematical formalisms, critical thinking and creative problem solving to connect algorithms to their practical implementations within social, cultural, economic, legal and political contexts. Enrollment by application. Taught concurrently with CS/IDS 162 and can only be taken once as VC 172 or CS/IDS 162.",
+    "prerequisites": "",
+    "rating": "",
+    "true_units": "",
+    "link": ""
   },
   "57386465": {
     "id": 57386465,
