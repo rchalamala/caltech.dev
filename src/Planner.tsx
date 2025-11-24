@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext, useState, useEffect } from "react";
 import { AppState } from "./App";
 import { useCalendarApp, ScheduleXCalendar } from "@schedule-x/react";
 import { createViewWeek } from "@schedule-x/calendar";
@@ -6,8 +6,6 @@ import { createDragAndDropPlugin } from "@schedule-x/drag-and-drop";
 import { createResizePlugin } from "@schedule-x/resize";
 import "@schedule-x/theme-default/dist/index.css";
 import { Temporal } from "temporal-polyfill";
-
-import "./css/planner.css";
 
 const TZ = Temporal.Now.timeZoneId();
 const REF_MONDAY = Temporal.ZonedDateTime.from(`2018-01-01T00:00[${TZ}]`);
@@ -104,6 +102,7 @@ function CourseToDates(courses: CourseStorage[]) {
 
 function Planner() {
   const state = useContext(AppState);
+  const [selectedEventId, setSelectedEventId] = useState<string | null>(null);
 
   const calendar = useCalendarApp({
     views: [createViewWeek()],
@@ -134,9 +133,7 @@ function Planner() {
     callbacks: {
       onEventClick(calendarEvent: any) {
         if (calendarEvent.id.startsWith("custom-")) {
-          if (confirm(`Delete block '${calendarEvent.title}'?`)) {
-            state.removeCustomBlock(calendarEvent.id);
-          }
+          setSelectedEventId(calendarEvent.id);
         }
       },
       onEventUpdate(updatedEvent: any) {
@@ -197,8 +194,66 @@ function Planner() {
   }, [state.courses, state.customBlocks, calendar]);
 
   return (
-    <div>
+    <div style={{ position: "relative" }}>
       <ScheduleXCalendar calendarApp={calendar} />
+      {selectedEventId && (
+        <>
+          <div
+            style={{
+              position: "fixed",
+              inset: 0,
+              zIndex: 999,
+            }}
+            onClick={() => setSelectedEventId(null)}
+          />
+          <div
+            style={{
+              position: "fixed",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              backgroundColor: "white",
+              padding: "20px",
+              borderRadius: "8px",
+              boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+              zIndex: 1000,
+            }}
+          >
+            <p style={{ marginBottom: "15px" }}>Delete this block?</p>
+            <div style={{ display: "flex", gap: "10px" }}>
+              <button
+                onClick={() => {
+                  state.removeCustomBlock(selectedEventId);
+                  setSelectedEventId(null);
+                }}
+                style={{
+                  padding: "8px 16px",
+                  backgroundColor: "#ef4444",
+                  color: "white",
+                  border: "none",
+                  borderRadius: "4px",
+                  cursor: "pointer",
+                }}
+              >
+                Delete
+              </button>
+              <button
+                onClick={() => setSelectedEventId(null)}
+                style={{
+                  padding: "8px 16px",
+                  backgroundColor: "#e5e7eb",
+                  color: "#374151",
+                  border: "none",
+                  borderRadius: "4px",
+                  cursor: "pointer",
+                }}
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }
