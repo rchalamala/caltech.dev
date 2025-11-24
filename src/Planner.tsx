@@ -7,7 +7,7 @@ import { createResizePlugin } from "@schedule-x/resize";
 import "@schedule-x/theme-default/dist/index.css";
 import { Temporal } from "temporal-polyfill";
 
-const TZ = 'America/Los_Angeles';
+const TZ = Temporal.Now.timeZoneId();
 const REF_MONDAY = Temporal.ZonedDateTime.from(`2018-01-01T00:00[${TZ}]`);
 const SNAP_MINUTES = 30;// Snap time blocks to 30-minute intervals (like Google Calendar)
 
@@ -27,19 +27,21 @@ export function parseTimes(times: string): Maybe<TimeInterval>[][] {
     const match = line.match(/([MTWRF]+) (\d\d):(\d\d) - (\d\d):(\d\d)/);
     if (match !== null) {
       for (const day of match[1]) {
-        const dayIndex = day_to_i.indexOf(day) + 1;
-        const endHour = parseInt(match[4]) === 23 ? 11 : parseInt(match[4]);
-        
-        const startZdt = Temporal.ZonedDateTime.from(
-          `2018-01-${String(dayIndex).padStart(2, '0')}T${match[2]}:${match[3]}[${TZ}]`
-        );
-        const endZdt = Temporal.ZonedDateTime.from(
-          `2018-01-${String(dayIndex).padStart(2, '0')}T${String(endHour).padStart(2, '0')}:${match[5]}[${TZ}]`
-        );
-        
         ret[day_to_i.indexOf(day)].push({
-          start: new Date(startZdt.toInstant().epochMilliseconds),
-          end: new Date(endZdt.toInstant().epochMilliseconds),
+          start: new Date(
+            2018,
+            0,
+            day_to_i.indexOf(day) + 1,
+            parseInt(match[2]),
+            parseInt(match[3]),
+          ),
+          end: new Date(
+            2018,
+            0,
+            day_to_i.indexOf(day) + 1,
+            parseInt(match[4]) === 23 ? 11 : parseInt(match[4]),
+            parseInt(match[5]),
+          ),
         });
       }
     }
@@ -167,18 +169,13 @@ function Planner() {
         const snappedZDT = snapZDTToInterval(clickedZDT, SNAP_MINUTES);
         const dayOfWeek = snappedZDT.dayOfWeek;
         
-        const pacificStart = REF_MONDAY.add({ days: dayOfWeek - 1 }).with({
-          hour: snappedZDT.hour,
-          minute: snappedZDT.minute,
-          second: 0,
-          millisecond: 0,
-        });
-        const pacificEnd = pacificStart.add({ hours: 1 });
+        const startDate = new Date(2018, 0, dayOfWeek, snappedZDT.hour, snappedZDT.minute, 0, 0);
+        const endDate = new Date(2018, 0, dayOfWeek, snappedZDT.hour + 1, snappedZDT.minute, 0, 0);
         
         state.addCustomBlock({
           title: "",
-          start: new Date(pacificStart.toInstant().epochMilliseconds),
-          end: new Date(pacificEnd.toInstant().epochMilliseconds),
+          start: startDate,
+          end: endDate,
         });
       },
     },

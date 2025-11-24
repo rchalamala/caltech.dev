@@ -80,3 +80,9 @@ a {
 .sx__week-grid__date-number {
   display: none !important;
 }
+
+/* Hide time text for custom blocks (blocks should have no title or text) */
+.sx__event[data-calendar-id="blocks"] .sx__event__title,
+.sx__event[data-calendar-id="blocks"] .sx__event__time {
+  display: none !important;
+}
