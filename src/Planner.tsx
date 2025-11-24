@@ -165,19 +165,12 @@ function Planner() {
       },
       onClickDateTime(dateTime: any) {
         const clickedZDT = dateTime as any;
-        const dayOfWeek = clickedZDT.dayOfWeek;
         
         const snappedZDT = snapZDTToInterval(clickedZDT, SNAP_MINUTES);
+        const dayOfWeek = snappedZDT.dayOfWeek;
         
-        const refStart = REF_MONDAY.add({ days: dayOfWeek - 1 }).with({
-          hour: snappedZDT.hour,
-          minute: snappedZDT.minute,
-          second: 0,
-          millisecond: 0,
-        });
-        const refEnd = refStart.add({ hours: 1 });
-        const startDate = new Date(refStart.toInstant().epochMilliseconds);
-        const endDate = new Date(refEnd.toInstant().epochMilliseconds);
+        const startDate = new Date(2018, 0, dayOfWeek, snappedZDT.hour, snappedZDT.minute, 0, 0);
+        const endDate = new Date(2018, 0, dayOfWeek, snappedZDT.hour + 1, snappedZDT.minute, 0, 0);
         
         state.addCustomBlock({
           title: "New Block",
