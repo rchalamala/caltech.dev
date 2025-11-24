@@ -1,62 +1,62 @@
 @import url("./tailwind.css");
 
 body {
-  /* margin: 0; */
-  font-family:
-    "ProximaSoft", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 0.9em; /* basically zooms out to 90% by default */
+	background-color: white;
+	font-family:
+		"ProximaSoft", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 0.9em;
 }
 
 #column-container {
-  display: flex;
-  align-items: top;
-  flex-direction: column;
+	display: flex;
+	align-items: top;
+	flex-direction: column;
 }
 
 @media (min-width: 768px) {
-  #column-container {
-    flex-direction: row;
-  }
+	#column-container {
+		flex-direction: row;
+	}
 }
 
 .column {
-  flex: 1;
+	flex: 1;
 }
 
 .footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  row-gap: 10px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 10px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin: auto;
 }
 
 .footer p {
-  text-align: center;
+	text-align: center;
 }
 
 .sticky-help {
-  position: fixed;
-  z-index: 999;
-  margin: 0.5rem;
+	position: fixed;
+	z-index: 999;
+	margin: 0.5rem;
 }
 
 .help-button {
-  width: 2rem;
-  height: 2rem;
-  padding: 0;
-  background-color: white;
-  border: none;
-  border-radius: 100px;
+	width: 2rem;
+	height: 2rem;
+	padding: 0;
+	background-color: white;
+	border: none;
+	border-radius: 100px;
 }
 
 a {
-  color: blue;
-  text-decoration: underline;
+	color: blue;
+	text-decoration: underline;
 }
