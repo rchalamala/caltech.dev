@@ -9,6 +9,7 @@ import { Temporal } from "temporal-polyfill";
 
 const TZ = Temporal.Now.timeZoneId();
 const REF_MONDAY = Temporal.ZonedDateTime.from(`2018-01-01T00:00[${TZ}]`);
+const SNAP_MINUTES = 30; // Snap time blocks to 30-minute intervals (like Google Calendar)
 
 type TimeInterval = {
   start: Date;
@@ -46,6 +47,12 @@ export function parseTimes(times: string): Maybe<TimeInterval>[][] {
     }
   }
   return ret;
+}
+
+function snapZDTToInterval(zdt: any, snapMinutes: number): any {
+  const snappedMinute = Math.round(zdt.minute / snapMinutes) * snapMinutes;
+  const base = zdt.with({ minute: 0, second: 0, millisecond: 0 });
+  return base.add({ minutes: snappedMinute });
 }
 
 function dateToRefWeekZDT(date: Date): any {
@@ -144,8 +151,12 @@ function Planner() {
           const endZDT = typeof updatedEvent.end === 'string'
             ? Temporal.ZonedDateTime.from(updatedEvent.end.replace(' ', 'T') + `[${TZ}]`)
             : updatedEvent.end;
-          const startDate = new Date(startZDT.toInstant().epochMilliseconds);
-          const endDate = new Date(endZDT.toInstant().epochMilliseconds);
+          
+          const snappedStartZDT = snapZDTToInterval(startZDT, SNAP_MINUTES);
+          const snappedEndZDT = snapZDTToInterval(endZDT, SNAP_MINUTES);
+          
+          const startDate = new Date(snappedStartZDT.toInstant().epochMilliseconds);
+          const endDate = new Date(snappedEndZDT.toInstant().epochMilliseconds);
           state.updateCustomBlock(updatedEvent.id, {
             start: startDate,
             end: endDate,
@@ -155,9 +166,12 @@ function Planner() {
       onClickDateTime(dateTime: any) {
         const clickedZDT = dateTime as any;
         const dayOfWeek = clickedZDT.dayOfWeek;
+        
+        const snappedZDT = snapZDTToInterval(clickedZDT, SNAP_MINUTES);
+        
         const refStart = REF_MONDAY.add({ days: dayOfWeek - 1 }).with({
-          hour: clickedZDT.hour,
-          minute: clickedZDT.minute,
+          hour: snappedZDT.hour,
+          minute: snappedZDT.minute,
           second: 0,
           millisecond: 0,
         });
