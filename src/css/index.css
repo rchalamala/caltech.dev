@@ -82,6 +82,6 @@ a {
 }
 
 /* Hide time text for custom blocks (blocks should have no title or text) */
-.sx__time-grid-event[data-calendar-id="blocks"] .sx__time-grid-event-time {
+.sx__time-grid-event[data-event-id^="custom-"] .sx__time-grid-event-time {
   display: none !important;
 }
