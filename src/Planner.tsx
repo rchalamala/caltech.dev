@@ -1,11 +1,10 @@
-import { useContext, useState, useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { AppState } from "./App";
 import { useCalendarApp, ScheduleXCalendar } from "@schedule-x/react";
 import { createViewWeek } from "@schedule-x/calendar";
 import { createDragAndDropPlugin } from "@schedule-x/drag-and-drop";
 import { createResizePlugin } from "@schedule-x/resize";
 import "@schedule-x/theme-default/dist/index.css";
-import { useModal } from "./Modal";
 import { Temporal } from "temporal-polyfill";
 
 import "./css/planner.css";
@@ -105,11 +104,6 @@ function CourseToDates(courses: CourseStorage[]) {
 
 function Planner() {
   const state = useContext(AppState);
-  const [blockTitle, setBlockTitle] = useState("");
-  const [pendingBlock, setPendingBlock] = useState<{
-    start: Date;
-    end: Date;
-  } | null>(null);
 
   const calendar = useCalendarApp({
     views: [createViewWeek()],
@@ -173,8 +167,12 @@ function Planner() {
         const refEnd = refStart.add({ hours: 1 });
         const startDate = new Date(refStart.toInstant().epochMilliseconds);
         const endDate = new Date(refEnd.toInstant().epochMilliseconds);
-        setPendingBlock({ start: startDate, end: endDate });
-        openModal();
+        
+        state.addCustomBlock({
+          title: "New Block",
+          start: startDate,
+          end: endDate,
+        });
       },
     },
   }, [createDragAndDropPlugin(), createResizePlugin()]);
@@ -198,52 +196,8 @@ function Planner() {
     }
   }, [state.courses, state.customBlocks, calendar]);
 
-  const [openModal, modal] = useModal((props) => (
-    <div className="p-4">
-      <h2 className="text-lg font-bold mb-4">Create Time Block</h2>
-      <input
-        type="text"
-        placeholder="Enter block title"
-        value={blockTitle}
-        onChange={(e) => setBlockTitle(e.target.value)}
-        className="w-full px-3 py-2 border border-gray-300 rounded-md mb-4"
-        autoFocus
-      />
-      <div className="flex gap-2">
-        <button
-          onClick={() => {
-            if (blockTitle.trim() && pendingBlock) {
-              state.addCustomBlock({
-                title: blockTitle.trim(),
-                start: pendingBlock.start,
-                end: pendingBlock.end,
-              });
-              setBlockTitle("");
-              setPendingBlock(null);
-              props.onClose();
-            }
-          }}
-          className="px-4 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600"
-        >
-          Create
-        </button>
-        <button
-          onClick={() => {
-            setBlockTitle("");
-            setPendingBlock(null);
-            props.onClose();
-          }}
-          className="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400"
-        >
-          Cancel
-        </button>
-      </div>
-    </div>
-  ));
-
   return (
     <div>
-      {modal}
       <ScheduleXCalendar calendarApp={calendar} />
     </div>
   );
