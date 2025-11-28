@@ -7408,7 +7408,7 @@
       {
         "grades": "",
         "instructor": "Dingilian, K",
-        "locations": "106 SPL",
+        "locations": "102 SPL",
         "number": 1,
         "times": "MWF 10:00 - 10:55"
       }
@@ -10083,6 +10083,13 @@
         "instructor": "Chan, D",
         "locations": "",
         "number": 82,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Flagan, R",
+        "locations": "",
+        "number": 83,
         "times": "A\nA"
       }
     ],
@@ -14050,6 +14057,13 @@
         "instructor": "Vaidyanathan, P",
         "locations": "",
         "number": 29,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Mirhosseini, M",
+        "locations": "",
+        "number": 30,
         "times": "A\nA"
       },
       {
@@ -24461,6 +24475,13 @@
         "instructor": "Tamuz, O",
         "locations": "",
         "number": 9,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Janas, P",
+        "locations": "",
+        "number": 10,
         "times": "A\nA"
       },
       {
