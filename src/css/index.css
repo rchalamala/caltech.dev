@@ -69,3 +69,19 @@ a {
   color: blue;
   text-decoration: underline;
 }
+
+/* Hide the Schedule-X calendar header (month/year display and date range) */
+.sx__calendar-header,
+.sx__range-heading {
+  display: none !important;
+}
+
+/* Hide the date numbers in the week view header, keep only weekday names */
+.sx__week-grid__date-number {
+  display: none !important;
+}
+
+/* Hide time text for custom blocks (blocks should have no title or text) */
+.sx__time-grid-event[data-event-id^="custom-"] .sx__time-grid-event-time {
+  display: none !important;
+}
