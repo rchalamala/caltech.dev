@@ -4241,6 +4241,20 @@
         "locations": "",
         "number": 53,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Rothenberg, E",
+        "locations": "",
+        "number": 54,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Orphan, V",
+        "locations": "",
+        "number": 55,
+        "times": "A\nA"
       }
     ],
     "comment": " If your research advisor does not appear below, please contact the Office of the Registrar.",
@@ -4865,6 +4879,13 @@
       },
       {
         "grades": "PASS-FAIL",
+        "instructor": "Gao, W",
+        "locations": "",
+        "number": 45,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
         "instructor": "Rutishauser, U",
         "locations": "",
         "number": 46,
@@ -4875,6 +4896,13 @@
         "instructor": "Chan, D",
         "locations": "",
         "number": 47,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Adolphs, R",
+        "locations": "",
+        "number": 48,
         "times": "A\nA"
       },
       {
@@ -6388,6 +6416,13 @@
       },
       {
         "grades": "PASS-FAIL",
+        "instructor": "Tejada Lara, J",
+        "locations": "",
+        "number": 31,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
         "instructor": "Lois, C",
         "locations": "",
         "number": 32,
@@ -7033,6 +7068,13 @@
       },
       {
         "grades": "PASS-FAIL",
+        "instructor": "Datta, S",
+        "locations": "",
+        "number": 25,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
         "instructor": "Seinfeld, J",
         "locations": "",
         "number": 34,
@@ -7103,6 +7145,13 @@
         "instructor": "Tirrell, D",
         "locations": "",
         "number": 4,
+        "times": "A\nA"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "Lewis, N",
+        "locations": "",
+        "number": 5,
         "times": "A\nA"
       },
       {
@@ -8097,23 +8146,23 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Mendez, J",
-        "locations": "275 RSC\n220 RSC",
+        "locations": "275 RSC\n220 RSC\n275 RSC",
         "number": 1,
-        "times": "F 13:00 - 13:55\nT 08:00 - 10:55"
+        "times": "F 13:00 - 13:55\nT 08:00 - 10:55\nOM,M 13:00 - 13:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Mendez, J",
-        "locations": "275 RSC\n220 RSC",
+        "locations": "275 RSC\n220 RSC\n275 RSC",
         "number": 2,
-        "times": "F 13:00 - 13:55\nT 13:00 - 15:55"
+        "times": "F 13:00 - 13:55\nT 13:00 - 15:55\nOM,M 13:00 - 13:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Mendez, J",
-        "locations": "275 RSC\n220 RSC",
+        "locations": "275 RSC\n220 RSC\n275 RSC",
         "number": 3,
-        "times": "F 13:00 - 13:55\nT 19:00 - 21:55"
+        "times": "F 13:00 - 13:55\nT 19:00 - 21:55\nOM,M 13:00 - 13:55"
       }
     ],
     "comment": " Sections 04 & 05 Cancelled / 16 students per section / Sec 3 reserved for First-Years // Instructor permission required to enroll after first week / Must take Ch3 in their first 6 terms to be graded P/F",
@@ -8136,23 +8185,23 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Mendez, J",
-        "locations": "275 RSC\n252 RSC",
+        "locations": "275 RSC\n252 RSC\n275 RSC",
         "number": 2,
-        "times": "F 14:00 - 14:55\nT 13:00 - 15:55"
+        "times": "F 14:00 - 14:55\nT 13:00 - 15:55\nOM,M 14:00 - 14:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Mendez, J",
-        "locations": "275 RSC\n252 RSC",
+        "locations": "275 RSC\n252 RSC\n275 RSC",
         "number": 4,
-        "times": "F 14:00 - 14:55\nW 13:00 - 15:55"
+        "times": "F 14:00 - 14:55\nW 13:00 - 15:55\nOM,M 14:00 - 14:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Mendez, J",
-        "locations": "252 RSC\n275 RSC",
+        "locations": "252 RSC\n275 RSC\n275 RSC",
         "number": 5,
-        "times": "R 08:00 - 10:55\nF 14:00 - 14:55"
+        "times": "R 08:00 - 10:55\nF 14:00 - 14:55\nOM,M 14:00 - 14:55"
       }
     ],
     "comment": " Sections 01 & 03 Cancelled / 12 students per section / Sec 3 reserved for First-Years // Instructor permission required to enroll after first week / Must take Ch3 in their first 6 terms to be graded P/F",
@@ -11739,6 +11788,13 @@
         "locations": "",
         "number": 53,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ames, A",
+        "locations": "",
+        "number": 54,
+        "times": "A\nA"
       }
     ],
     "comment": " enrollment by instructor permission only",
@@ -12281,7 +12337,7 @@
         "times": "TR 14:30 - 15:55"
       }
     ],
-    "comment": " taught concurrently with VC 162 // max enroll: 15 students between VC 162 and CS/IDS 162 // instructor permission required // application required https://docs.google.com/forms/d/e/1FAIpQLSfaPrhnhS17UeN05KJ CT-N1GPIibVfhuMhRKq-gPjuAqnzn1w/viewform?usp=header",
+    "comment": " taught concurrently with VC 162 // max enroll: 15 students between VC 162 and CS/IDS 162 // instructor permission required // application required https://forms.gle/eDpoAr8TtaLQmUXU8",
     "units": [
       3,
       0,
@@ -13048,6 +13104,13 @@
       },
       {
         "grades": "PASS-FAIL",
+        "instructor": "Huang, H",
+        "locations": "",
+        "number": 9,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
         "instructor": "Elowitz, M",
         "locations": "",
         "number": 11,
@@ -13065,6 +13128,13 @@
         "instructor": "Beck, J",
         "locations": "",
         "number": 14,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Huang, H",
+        "locations": "",
+        "number": 15,
         "times": "A\nA"
       },
       {
@@ -15556,6 +15626,34 @@
         "locations": "",
         "number": 18,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ozturk, S",
+        "locations": "",
+        "number": 19,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Minchew, B",
+        "locations": "",
+        "number": 20,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Lunine, J",
+        "locations": "",
+        "number": 21,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Leshin, L",
+        "locations": "",
+        "number": 22,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -15713,6 +15811,34 @@
         "instructor": "Newman, D",
         "locations": "",
         "number": 20,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ozturk, S",
+        "locations": "",
+        "number": 21,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Minchew, B",
+        "locations": "",
+        "number": 22,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Lunine, J",
+        "locations": "",
+        "number": 23,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Leshin, L",
+        "locations": "",
+        "number": 24,
         "times": "A\nA"
       }
     ],
@@ -15988,10 +16114,10 @@
         "instructor": "Kirschvink, J",
         "locations": "251 ARM",
         "number": 1,
-        "times": "OM,T 17:00 - 17:55"
+        "times": "OM,M 17:00 - 17:55"
       }
     ],
-    "comment": " OM Jan 06, 2026",
+    "comment": " OM Monday, January 5",
     "units": [
       1,
       0,
@@ -16186,9 +16312,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Lecampion, B",
-        "locations": "",
+        "locations": "215 NMD",
         "number": 1,
-        "times": "A\nA"
+        "times": "OM,M 10:00 - 10:55"
       }
     ],
     "comment": " ruptures in the upper Course Cancelled",
@@ -16211,7 +16337,7 @@
       {
         "grades": "",
         "instructor": "Eiler, J",
-        "locations": "215 NMD",
+        "locations": "212 NMD",
         "number": 1,
         "times": "T 10:00 - 10:55"
       }
@@ -16569,6 +16695,34 @@
         "locations": "",
         "number": 48,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ozturk, S",
+        "locations": "",
+        "number": 49,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Minchew, B",
+        "locations": "",
+        "number": 50,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Lunine, J",
+        "locations": "",
+        "number": 51,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Leshin, L",
+        "locations": "",
+        "number": 52,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -16866,6 +17020,34 @@
         "instructor": "Tejada Lara, J",
         "locations": "",
         "number": 45,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ozturk, S",
+        "locations": "",
+        "number": 46,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Minchew, B",
+        "locations": "",
+        "number": 47,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Lunine, J",
+        "locations": "",
+        "number": 48,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Leshin, L",
+        "locations": "",
+        "number": 49,
         "times": "A\nA"
       }
     ],
@@ -17526,7 +17708,7 @@
         "times": "OM,M 12:00 -\nA 12:55"
       }
     ],
-    "comment": " Prerequisites: L 171 abc, L 172 abc or equivalent.",
+    "comment": " units (3-0-6) // Prerequisites: L 171 abc, L 172 abc or equivalent.",
     "units": [
       0,
       0,
@@ -19017,6 +19199,13 @@
         "instructor": "Rangel, A",
         "locations": "",
         "number": 3,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Heinaevaara, O",
+        "locations": "",
+        "number": 4,
         "times": "A\nA"
       },
       {
@@ -21238,6 +21427,13 @@
         "locations": "",
         "number": 26,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Stathopoulos, A",
+        "locations": "",
+        "number": 27,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -22699,7 +22895,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Porter, F",
+        "instructor": "Weinstein, A",
         "locations": "103 DWN",
         "number": 1,
         "times": "TR 13:00 - 14:25"
@@ -22734,6 +22930,13 @@
         "instructor": "Alicea, J",
         "locations": "",
         "number": 2,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ravi, V",
+        "locations": "",
+        "number": 3,
         "times": "A\nA"
       },
       {
@@ -23078,6 +23281,13 @@
       },
       {
         "grades": "PASS-FAIL",
+        "instructor": "Bellan, P",
+        "locations": "",
+        "number": 4,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
         "instructor": "Endres, M",
         "locations": "",
         "number": 5,
@@ -23116,6 +23326,13 @@
         "instructor": "Hsieh, D",
         "locations": "",
         "number": 10,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ravi, V",
+        "locations": "",
+        "number": 11,
         "times": "A\nA"
       },
       {
@@ -23193,6 +23410,13 @@
         "instructor": "Scherer, A",
         "locations": "",
         "number": 28,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Newman, H",
+        "locations": "",
+        "number": 29,
         "times": "A\nA"
       },
       {
@@ -23561,6 +23785,13 @@
         "instructor": "Alicea, J",
         "locations": "",
         "number": 2,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ravi, V",
+        "locations": "",
+        "number": 3,
         "times": "A\nA"
       },
       {
@@ -24666,10 +24897,17 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Bryant, J / Dabiri, M",
-        "locations": "360 CSS",
+        "instructor": "Bryant, J / Dabiri, M /",
+        "locations": "360 CSS\nTsang, J",
         "number": 1,
         "times": "T 12:00 - 12:55"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Resnick, A",
+        "locations": "",
+        "number": 2,
+        "times": "F 14:00 - 15:25\nA"
       }
     ],
     "comment": " units (1-0-0) // Class meets weeks 2, 4, 6, 8, and 10 // First class is Tuesday, January 13 // Lunch is provided each session // Course is open to first-year and sophomore undergrads",
@@ -24879,7 +25117,7 @@
         "times": "TR 14:30 - 15:55"
       }
     ],
-    "comment": " taught concurrently with CS/IDS 162 // max enroll: 15 students between VC 162 and CS/IDS 162 / instructor permission required // application required https://docs.google.com/forms/d/e/1FAIpQLSfaPrhnhS17UeN05KJ CT-N1GPIibVfhuMhRKq-gPjuAqnzn1w/viewform?usp=header",
+    "comment": " taught concurrently with CS/IDS 162 // max enroll: 15 students between VC 162 and CS/IDS 162 / instructor permission required // application required https://forms.gle/eDpoAr8TtaLQmUXU8",
     "units": [
       3,
       0,
