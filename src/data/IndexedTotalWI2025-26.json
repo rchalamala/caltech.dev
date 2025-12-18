@@ -1226,6 +1226,13 @@
         "locations": "",
         "number": 13,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Shaikeea, A",
+        "locations": "",
+        "number": 14,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -1645,6 +1652,20 @@
         "instructor": "Marandi, A",
         "locations": "",
         "number": 16,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Bernardi, M",
+        "locations": "",
+        "number": 17,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Staff",
+        "locations": "",
+        "number": 18,
         "times": "A\nA"
       }
     ],
@@ -2272,6 +2293,13 @@
         "locations": "",
         "number": 46,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Darkwah Oppong, N",
+        "locations": "",
+        "number": 47,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -2454,6 +2482,13 @@
         "instructor": "Yariv, A",
         "locations": "",
         "number": 25,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Darkwah Oppong, N",
+        "locations": "",
+        "number": 27,
         "times": "A\nA"
       },
       {
@@ -4255,6 +4290,20 @@
         "locations": "",
         "number": 55,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Glover, D",
+        "locations": "",
+        "number": 56,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Greer, J",
+        "locations": "",
+        "number": 57,
+        "times": "A\nA"
       }
     ],
     "comment": " If your research advisor does not appear below, please contact the Office of the Registrar.",
@@ -4356,6 +4405,13 @@
         "instructor": "Demirer, G",
         "locations": "",
         "number": 12,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Glover, D",
+        "locations": "",
+        "number": 13,
         "times": "A\nA"
       }
     ],
@@ -4960,6 +5016,13 @@
         "locations": "",
         "number": 56,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Nolan, T",
+        "locations": "",
+        "number": 57,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -5057,9 +5120,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Newman, D / Bois, J",
-        "locations": "",
+        "locations": "B101 BBB\nB101 BBB\nB157 CRL",
         "number": 1,
-        "times": "M 10:00 - 10:55\nA\nR 15:00 - 15:55\nA\nW 11:00 - 11:55\nA"
+        "times": "M 10:00 - 10:55\nW 15:00 - 15:55\nF 11:00 - 11:55"
       }
     ],
     "comment": "",
@@ -5082,12 +5145,12 @@
       {
         "grades": "",
         "instructor": "Pachter, L",
-        "locations": "340A CNRB",
+        "locations": "275 RSC",
         "number": 1,
         "times": "TR 13:00 - 14:25"
       }
     ],
-    "comment": " max enroll: 20 students // pass/fail for all first-year students and graded only for all non-first-year students",
+    "comment": " max enroll: 40 students // pass/fail for all first-year students and graded only for all non-first-year students",
     "units": [
       3,
       0,
@@ -5131,13 +5194,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "McFall-Ngai, M / Ruby, E",
+        "instructor": "Staff",
         "locations": "101 KRK\n101 KRK",
         "number": 1,
         "times": "TR 10:00 - 11:25\nW 14:00 - 15:55"
       }
     ],
-    "comment": " Min enrollment:10 // Max enrollment: 20 // Class will be cancelled if less than 10 students enroll",
+    "comment": " Course Cancelled // Min enrollment:10 // Max enrollment: 20 // Class will be cancelled if less than 10 students enroll",
     "units": [
       3,
       0,
@@ -5196,9 +5259,9 @@
       {
         "grades": "",
         "instructor": "Hoelz, A / Chong, S",
-        "locations": "252 RSC\n252 RSC",
+        "locations": "252 RSC\n252 RSC\n252 RSC",
         "number": 1,
-        "times": "R 14:45 - 18:45\nF 13:00 - 15:55"
+        "times": "T 08:00 - 10:25\nF 11:00 - 11:55\nF 13:00 - 15:55"
       }
     ],
     "comment": "",
@@ -6114,9 +6177,9 @@
       {
         "grades": "",
         "instructor": "Meister, M / Perona, P /",
-        "locations": "B180 BBB\nShimojo, S / Rutishauser,\nU",
+        "locations": "200 BRD\nShimojo, S / Rutishauser,\nU",
         "number": 1,
-        "times": "TR 10:30 - 11:55"
+        "times": "TR 09:00 - 10:25"
       }
     ],
     "comment": "",
@@ -6795,7 +6858,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Staff",
+        "instructor": "Kim, D",
         "locations": "",
         "number": 1,
         "times": "MW 10:30 - 11:55\nA"
@@ -6895,13 +6958,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Flagan, R",
+        "instructor": "Staff",
         "locations": "210 RSC",
         "number": 1,
         "times": "TR 13:00 - 14:25"
       }
     ],
-    "comment": " On 1/15 and 2/19, class will be held in Spalding 102",
+    "comment": " Course Cancelled",
     "units": [
       1,
       4,
@@ -7061,9 +7124,23 @@
       },
       {
         "grades": "PASS-FAIL",
+        "instructor": "Fong, K",
+        "locations": "",
+        "number": 18,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
         "instructor": "Peters, J",
         "locations": "",
         "number": 20,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Minnich, A",
+        "locations": "",
+        "number": 22,
         "times": "A\nA"
       },
       {
@@ -7800,6 +7877,13 @@
       },
       {
         "grades": "PASS-FAIL",
+        "instructor": "Fong, K",
+        "locations": "",
+        "number": 18,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
         "instructor": "Shapiro, M",
         "locations": "",
         "number": 19,
@@ -8054,49 +8138,49 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Nelson, H / Dingilian, K",
-        "locations": "210 RSC\nB122 GCL",
+        "locations": "210 RSC\nLecture Hall\nBAX",
         "number": 1,
         "times": "W 19:00 - 19:55\nMWF 09:00 - 09:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Nelson, H / Dingilian, K",
-        "locations": "275 RSC\nB122 GCL",
+        "locations": "275 RSC\nLecture Hall\nBAX",
         "number": 2,
         "times": "W 11:00 - 11:55\nMWF 09:00 - 09:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Nelson, H / Dingilian, K",
-        "locations": "275 RSC\nB122 GCL",
+        "locations": "275 RSC\nLecture Hall\nBAX",
         "number": 3,
         "times": "W 13:00 - 13:55\nMWF 09:00 - 09:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Nelson, H / Dingilian, K",
-        "locations": "275 RSC\nB122 GCL",
+        "locations": "275 RSC\nLecture Hall\nBAX",
         "number": 4,
         "times": "W 15:00 - 15:55\nMWF 09:00 - 09:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Nelson, H / Dingilian, K",
-        "locations": "275 RSC\nB122 GCL",
+        "locations": "275 RSC\nLecture Hall\nBAX",
         "number": 5,
         "times": "W 19:00 - 19:55\nMWF 09:00 - 09:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Nelson, H / Dingilian, K",
-        "locations": "B122 GTS\nB122 GCL",
+        "locations": "B122 GTS\nLecture Hall\nBAX",
         "number": 6,
         "times": "W 19:00 - 19:55\nMWF 09:00 - 09:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Nelson, H / Dingilian, K",
-        "locations": "252 RSC\nB122 GCL",
+        "locations": "252 RSC\nLecture Hall\nBAX",
         "number": 7,
         "times": "W 19:00 - 19:55\nMWF 09:00 - 09:55"
       }
@@ -8121,9 +8205,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Rees, D / Blake, G",
-        "locations": "",
+        "locations": "B101 BBB\nB101 BBB\nB157 CRL",
         "number": 1,
-        "times": "MT 09:00 - 09:55\nA\nF 13:00 - 13:55\nA\nR 19:00 - 21:55\nA"
+        "times": "MW 09:00 - 09:55\nW 10:00 - 10:55\nR 19:00 - 20:55"
       }
     ],
     "comment": "",
@@ -8301,7 +8385,7 @@
         "instructor": "Hsieh-Wilson, L",
         "locations": "153 NYS\n151 CRL",
         "number": 1,
-        "times": "MWF 09:00 - 09:55\nW 13:00 - 13:55"
+        "times": "MWF 09:00 - 09:55\nW 15:00 - 15:55"
       },
       {
         "grades": "",
@@ -8508,6 +8592,13 @@
         "instructor": "Gao, W",
         "locations": "",
         "number": 30,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Datta, S",
+        "locations": "",
+        "number": 31,
         "times": "A\nA"
       },
       {
@@ -8931,7 +9022,7 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Bikle, K",
-        "locations": "320 BRN",
+        "locations": "151 CRL",
         "number": 1,
         "times": "W 10:00 - 11:55"
       }
@@ -9828,6 +9919,13 @@
       },
       {
         "grades": "PASS-FAIL",
+        "instructor": "Morstein, J",
+        "locations": "",
+        "number": 37,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
         "instructor": "Weitekamp, D",
         "locations": "",
         "number": 38,
@@ -10304,9 +10402,9 @@
       {
         "grades": "",
         "instructor": "Perona, P",
-        "locations": "",
+        "locations": "125 KRK",
         "number": 1,
-        "times": "TR 10:30 - 11:55\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": "",
@@ -11140,7 +11238,7 @@
         "times": "OM,M 21:00 - 21:55"
       }
     ],
-    "comment": " CS 1 or instructor's permission is required. // Sec 1: Rust Track",
+    "comment": " CS 1 or instructor's permission is required. // Sec 1: C Track",
     "units": [
       0,
       3,
@@ -11216,13 +11314,13 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Ralph, C / Wierman, A",
+        "instructor": "Staff",
         "locations": "121 ANB",
         "number": 1,
         "times": "W 14:00 - 14:55"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       2,
       2,
@@ -11398,6 +11496,13 @@
         "instructor": "Burdick, J",
         "locations": "",
         "number": 24,
+        "times": "A\nA"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "O'Doherty, J",
+        "locations": "",
+        "number": 25,
         "times": "A\nA"
       }
     ],
@@ -11795,6 +11900,20 @@
         "locations": "",
         "number": 54,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Eberhardt, F",
+        "locations": "",
+        "number": 55,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "O'Doherty, J",
+        "locations": "",
+        "number": 56,
+        "times": "A\nA"
       }
     ],
     "comment": " enrollment by instructor permission only",
@@ -12112,7 +12231,7 @@
         "times": "OM,M 21:00 - 21:55"
       }
     ],
-    "comment": " Sec 1: Rust Track",
+    "comment": " Sec 1: C Track",
     "units": [
       0,
       3,
@@ -12595,6 +12714,13 @@
       },
       {
         "grades": "PASS-FAIL",
+        "instructor": "Huang, H",
+        "locations": "",
+        "number": 16,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
         "instructor": "Doyle, J",
         "locations": "",
         "number": 17,
@@ -12782,6 +12908,13 @@
         "instructor": "Chandrasekaran, V",
         "locations": "",
         "number": 9,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Mahadev, U",
+        "locations": "",
+        "number": 10,
         "times": "A\nA"
       },
       {
@@ -13380,7 +13513,7 @@
         "times": "TR 13:00 - 14:25"
       }
     ],
-    "comment": "",
+    "comment": " Course is no longer Writing Intensive",
     "units": [
       3,
       0,
@@ -13880,13 +14013,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Yang, C",
+        "instructor": "Staff",
         "locations": "B280 MRE",
         "number": 1,
         "times": "TR 13:00 - 14:25"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       3,
       0,
@@ -14346,6 +14479,31 @@
       6
     ],
     "description": "This course will provide an introduction to English poetry in the 16th and 17th centuries, with an emphasis on exploring how poems served as vehicles to make sense of the political and social contradictions of early modern England. How do Sir Philip Sidney and William Shakespeare's sonnets blend themes of unrequited desire with political critique? How does Hester Pulter develop early ideas of physics through her lyrics, like imagining the apocalypse through the dissolution of atoms? Other authors covered in the course may include Katherine Philips, John Donne, Margaret Cavendish, and John Milton.",
+    "prerequisites": "",
+    "rating": "",
+    "true_units": "",
+    "link": ""
+  },
+  "421338241": {
+    "id": 421338241,
+    "name": "Special Topics in Humanities/English: Medieval Networks",
+    "number": "Hum/En 56",
+    "sections": [
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Matthews, R",
+        "locations": "",
+        "number": 1,
+        "times": "TR 16:00 - 17:25\nA"
+      }
+    ],
+    "comment": " units (3-0-6)",
+    "units": [
+      0,
+      0,
+      0
+    ],
+    "description": "This course will count as a first-year humanities course in English. It is usually taught by new or visiting faculty. This course is not repeatable. Limited to 15 students. See registrar's announcement for details.",
     "prerequisites": "",
     "rating": "",
     "true_units": "",
@@ -15411,7 +15569,7 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Preskill, J",
-        "locations": "269 LAU",
+        "locations": "469 LAU",
         "number": 1,
         "times": "MW 14:00 - 14:55"
       }
@@ -15436,9 +15594,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Asimow, P",
-        "locations": "",
+        "locations": "B101 BBB",
         "number": 1,
-        "times": "W 19:00 - 19:55\nA"
+        "times": "T 19:00 - 19:55"
       }
     ],
     "comment": "",
@@ -15460,10 +15618,10 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Tejada Lara, J",
-        "locations": "",
+        "instructor": "Tejada Lara, J / Kirschvink,",
+        "locations": "251 ARM\nJ\n251 ARM",
         "number": 1,
-        "times": "A\nA"
+        "times": "MWF 14:00 - 14:55\nF 19:00 - 21:55"
       }
     ],
     "comment": " taught concurrently with Ge 104",
@@ -15911,10 +16069,10 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Tejada Lara, J",
-        "locations": "",
+        "instructor": "Tejada Lara, J / Kirschvink,",
+        "locations": "251 ARM\nJ\n251 ARM",
         "number": 1,
-        "times": "A\nA"
+        "times": "MWF 14:00 - 14:55\nF 19:00 - 21:55"
       }
     ],
     "comment": " taught concurrently with Ge 11b",
@@ -15964,7 +16122,7 @@
         "instructor": "Jackson, J",
         "locations": "254 SMD",
         "number": 1,
-        "times": "T 12:00 - 12:55"
+        "times": "W 12:00 - 12:55"
       }
     ],
     "comment": " Section 1: Geophysics",
@@ -16036,8 +16194,8 @@
     "sections": [
       {
         "grades": "LETTER",
-        "instructor": "Jackson, J / Asimow, P",
-        "locations": "251 ARM",
+        "instructor": "Jackson, J / Asimow, P /",
+        "locations": "251 ARM\nMagyar, J / Ma, C /\nDalleska, N / Takase, M",
         "number": 1,
         "times": "T 14:00 - 14:55"
       }
@@ -16061,13 +16219,13 @@
     "sections": [
       {
         "grades": "LETTER",
-        "instructor": "Staff",
-        "locations": "",
+        "instructor": "Grotzinger, J / Lamb, M",
+        "locations": "267 ARM",
         "number": 1,
-        "times": "A\nA"
+        "times": "W 16:00 - 16:55"
       }
     ],
-    "comment": " Course Cancelled",
+    "comment": " OM on December 10, 2025 at 4:00 PM-4:55 PM in 267 Arms",
     "units": [
       0,
       9,
@@ -16287,9 +16445,9 @@
       {
         "grades": "",
         "instructor": "Staff",
-        "locations": "",
+        "locations": "251 ARM",
         "number": 1,
-        "times": "A\nA"
+        "times": "OM,M 09:00 - 09:55"
       }
     ],
     "comment": " Topic TBA",
@@ -17145,13 +17303,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Feingold, M",
+        "instructor": "Staff",
         "locations": "",
         "number": 1,
         "times": "M 19:00 - 21:55\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       3,
       0,
@@ -17313,6 +17471,31 @@
     "true_units": "",
     "link": ""
   },
+  "22593213": {
+    "id": 22593213,
+    "name": "Birds, Evolution, Speciation and Society",
+    "number": "H/HPS 134",
+    "sections": [
+      {
+        "grades": "LETTER",
+        "instructor": "Lewis, D",
+        "locations": "",
+        "number": 1,
+        "times": "T 19:00 - 21:55\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "The cultural, scientific, social and political roles of birds make them an excellent lens through which to view humans' interactions with the natural world. This course will cover our changing understandings of birds, starting with hawking and falconry in earlier centuries, through the discovery of new species, up through Darwinian understandings of speciation and evolution, and continuing up to present scientific understandings of birds' capabilities and their ties to humankind, as well as to other anchors in the natural world. We will take a strong biographical as well as avian approach to understanding key personalities who furthered our understandings of avian science.\n Not offered 2025-26.",
+    "prerequisites": "",
+    "rating": "4.91 +/- 0.46",
+    "true_units": "Somewhat Low",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=57&term_id=558&division_id=80427&department_id=135&offering_id=96333&track_id=96333-Default"
+  },
   "460654512": {
     "id": 460654512,
     "name": "Selected Topics in History",
@@ -17337,31 +17520,6 @@
     "rating": "4.61 +/- 0.78",
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=57&term_id=558&division_id=80427&department_id=135&offering_id=97032&track_id=97032-Default"
-  },
-  "361525077": {
-    "id": 361525077,
-    "name": "Historical Perspectives on the Relations between Science and Religion",
-    "number": "HPS/H 166",
-    "sections": [
-      {
-        "grades": "LETTER",
-        "instructor": "Feingold, M",
-        "locations": "",
-        "number": 1,
-        "times": "T 19:00 - 21:55\nA"
-      }
-    ],
-    "comment": " No admission after the first week",
-    "units": [
-      3,
-      0,
-      6
-    ],
-    "description": "The course develops a framework for understanding the changing relations between science and religion in Western culture since antiquity. Focus will be on the ways in which the conceptual, personal, and social boundaries between the two domains have been reshaped over the centuries. Questions to be addressed include the extent to which a particular religious doctrine was more or less amenable to scientific work in a given period, how scientific activity carved an autonomous domain, and the roles played by scientific activity in the overall process of secularization.",
-    "prerequisites": "",
-    "rating": "4.23 +/- 0.56",
-    "true_units": "About Right",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=58&term_id=559&division_id=80427&department_id=150&offering_id=97242&track_id=97242-Default"
   },
   "971224298": {
     "id": 971224298,
@@ -17603,9 +17761,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Jahner, J",
-        "locations": "",
+        "locations": "B101 BBB",
         "number": 1,
-        "times": "R 09:00 - 10:55\nA"
+        "times": "R 09:00 - 10:25"
       }
     ],
     "comment": "",
@@ -17616,31 +17774,6 @@
     ],
     "description": "This sequence of humanities courses will introduce students to political philosophy and ethics, historical research, and literary analysis, in conjunction with themes treated in other parts of the integrated core. Key topics will include the ethics of space travel, the history of Caltech energy research, and contemporary climate fiction. All three terms together count as the equivalent of a single 9-unit first-year humanities class; students may choose their other first-year humanities class from any area of humanities instruction.",
     "prerequisites": "concurrent enrollment in other integrated core classes and instructor permission.",
-    "rating": "",
-    "true_units": "",
-    "link": ""
-  },
-  "53630581": {
-    "id": 53630581,
-    "name": "Special Topics in Humanities/English: Medieval Networks",
-    "number": "Hum 56",
-    "sections": [
-      {
-        "grades": "",
-        "instructor": "Matthews, R",
-        "locations": "",
-        "number": 1,
-        "times": "TR 13:00 - 13:55\nA"
-      }
-    ],
-    "comment": " units (3-0-6)",
-    "units": [
-      0,
-      0,
-      0
-    ],
-    "description": "This course will count as a first-year humanities course in English. It is usually taught by new or visiting faculty. This course is not repeatable. Limited to 15 students. See registrar's announcement for details.",
-    "prerequisites": "",
     "rating": "",
     "true_units": "",
     "link": ""
@@ -17680,7 +17813,7 @@
         "instructor": "Arjona, G",
         "locations": "",
         "number": 1,
-        "times": "OM,M 07:00 -\nA 19:55"
+        "times": "OM,M 19:00 -\nA 19:55"
       }
     ],
     "comment": " Prerequisites: L 112 abc or equivalent",
@@ -17838,9 +17971,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Refael, G / George, G",
-        "locations": "",
+        "locations": "B101 BBB\nB101 BBB\nB157 CRL",
         "number": 1,
-        "times": "MRF 11:00 - 11:55\nA\nM 15:00 - 15:55\nA\nW 09:00 - 10:55\nA"
+        "times": "MWR 11:00 - 11:55\nM 15:00 - 15:55\nF 09:00 - 10:55"
       }
     ],
     "comment": "",
@@ -17863,9 +17996,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Graber, T / Gherman, M",
-        "locations": "",
+        "locations": "B101 BBB\nB101 BBB",
         "number": 1,
-        "times": "MW 13:00 - 13:55\nA\nF 09:00 - 09:55\nA\nW 15:00 - 15:55\nA"
+        "times": "MWF 13:00 - 13:55\nR 15:00 - 15:55"
       }
     ],
     "comment": "",
@@ -18978,28 +19111,28 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Gherman, M",
-        "locations": "310 LINDE\n107 DWN",
+        "locations": "B122 GTS\n107 DWN",
         "number": 1,
         "times": "MWF 10:00 - 10:55\nR 09:00 - 09:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Gherman, M",
-        "locations": "310 LINDE\n387 LINDE",
+        "locations": "B122 GTS\n387 LINDE",
         "number": 2,
         "times": "MWF 10:00 - 10:55\nR 10:00 - 10:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Gherman, M",
-        "locations": "310 LINDE\n289 LINDE",
+        "locations": "B122 GTS\n289 LINDE",
         "number": 3,
         "times": "MWF 10:00 - 10:55\nR 15:00 - 15:55"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Gherman, M",
-        "locations": "310 LINDE\n289 LINDE",
+        "locations": "B122 GTS\n289 LINDE",
         "number": 4,
         "times": "MWF 10:00 - 10:55\nR 16:00 - 16:55"
       },
@@ -20419,6 +20552,13 @@
         "instructor": "Kohler, M",
         "locations": "",
         "number": 22,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Gao, W",
+        "locations": "",
+        "number": 23,
         "times": "A\nA"
       }
     ],
@@ -23344,6 +23484,13 @@
       },
       {
         "grades": "PASS-FAIL",
+        "instructor": "Huang, H",
+        "locations": "",
+        "number": 13,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
         "instructor": "Libbrecht, K",
         "locations": "",
         "number": 15,
@@ -23445,6 +23592,13 @@
         "instructor": "Zmuidzinas, J",
         "locations": "",
         "number": 34,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Faraon, A",
+        "locations": "",
+        "number": 35,
         "times": "A\nA"
       },
       {
@@ -23557,6 +23711,13 @@
         "instructor": "McCuller, L",
         "locations": "",
         "number": 63,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Darkwah Oppong, N",
+        "locations": "",
+        "number": 65,
         "times": "A\nA"
       },
       {
@@ -23681,7 +23842,7 @@
         "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       3,
       0,
