@@ -6,7 +6,7 @@
     "sections": [
       {
         "grades": "LETTER",
-        "instructor": "Dimotakis, P",
+        "instructor": "Staff",
         "locations": "133 GUG",
         "number": 1,
         "times": "MWF 10:00 - 10:55"
@@ -180,7 +180,7 @@
     "number": "Ae/Ge/ME 160 b",
     "sections": [
       {
-        "grades": "",
+        "grades": "LETTER",
         "instructor": "Bhattacharya, K",
         "locations": "115 GTL",
         "number": 1,
@@ -582,7 +582,7 @@
     "number": "Ae 239 a",
     "sections": [
       {
-        "grades": "",
+        "grades": "LETTER",
         "instructor": "Lozano Duran, A",
         "locations": "133 GUG",
         "number": 1,
@@ -5900,7 +5900,7 @@
     "number": "CNS/Psy/Bi 102 a",
     "sections": [
       {
-        "grades": "",
+        "grades": "LETTER",
         "instructor": "Adolphs, R / O'Doherty, J",
         "locations": "100 CNRB",
         "number": 1,
@@ -6079,7 +6079,7 @@
         "instructor": "Lester, H / Lois, C",
         "locations": "340A CNRB",
         "number": 1,
-        "times": "MW 09:00 - 10:25"
+        "times": "MW 08:30 - 09:55"
       }
     ],
     "comment": "",
@@ -6252,9 +6252,9 @@
       {
         "grades": "",
         "instructor": "Mobbs, D",
-        "locations": "",
+        "locations": "128 BAX",
         "number": 1,
-        "times": "W 10:00 - 12:55\nA"
+        "times": "W 10:00 - 12:55"
       }
     ],
     "comment": "",
@@ -6859,9 +6859,9 @@
       {
         "grades": "",
         "instructor": "Kim, D",
-        "locations": "",
+        "locations": "127 BAX",
         "number": 1,
-        "times": "MW 10:30 - 11:55\nA"
+        "times": "MW 10:30 - 11:55"
       }
     ],
     "comment": "",
@@ -8267,21 +8267,21 @@
     "number": "Ch 3 x",
     "sections": [
       {
-        "grades": "PASS-FAIL",
+        "grades": "",
         "instructor": "Mendez, J",
         "locations": "275 RSC\n252 RSC\n275 RSC",
         "number": 2,
         "times": "F 14:00 - 14:55\nT 13:00 - 15:55\nOM,M 14:00 - 14:55"
       },
       {
-        "grades": "PASS-FAIL",
+        "grades": "",
         "instructor": "Mendez, J",
         "locations": "275 RSC\n252 RSC\n275 RSC",
         "number": 4,
         "times": "F 14:00 - 14:55\nW 13:00 - 15:55\nOM,M 14:00 - 14:55"
       },
       {
-        "grades": "PASS-FAIL",
+        "grades": "",
         "instructor": "Mendez, J",
         "locations": "252 RSC\n275 RSC\n275 RSC",
         "number": 5,
@@ -13082,7 +13082,7 @@
       {
         "grades": "",
         "instructor": "Chung, S",
-        "locations": "314 ANB",
+        "locations": "213 ANB",
         "number": 1,
         "times": "MW 13:00 - 14:25"
       }
@@ -13130,7 +13130,7 @@
     "number": "CDS 232",
     "sections": [
       {
-        "grades": "LETTER",
+        "grades": "",
         "instructor": "Ames, A",
         "locations": "135 GTL",
         "number": 1,
@@ -13433,9 +13433,9 @@
       {
         "grades": "LETTER",
         "instructor": "Caradonna, P",
-        "locations": "",
+        "locations": "228 BAX",
         "number": 1,
-        "times": "TR 10:30 - 11:55\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": "",
@@ -13483,9 +13483,9 @@
       {
         "grades": "",
         "instructor": "Sherman, R",
-        "locations": "",
+        "locations": "B125 BAX",
         "number": 1,
-        "times": "TR 14:30 - 15:55\nA"
+        "times": "TR 14:30 - 15:55"
       }
     ],
     "comment": "",
@@ -13508,7 +13508,7 @@
       {
         "grades": "LETTER",
         "instructor": "Janas, P",
-        "locations": "B125 BAX",
+        "locations": "B133 BAX",
         "number": 1,
         "times": "TR 13:00 - 14:25"
       }
@@ -13941,7 +13941,7 @@
         "instructor": "George, G",
         "locations": "B270 MRE",
         "number": 1,
-        "times": "MF 13:00 - 14:25"
+        "times": "MW 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -13962,7 +13962,7 @@
     "number": "ME/EE/EST 117",
     "sections": [
       {
-        "grades": "LETTER",
+        "grades": "",
         "instructor": "Hunt, M",
         "locations": "135 GTL",
         "number": 1,
@@ -14112,7 +14112,7 @@
     "number": "MedE/EE 204",
     "sections": [
       {
-        "grades": "LETTER",
+        "grades": "",
         "instructor": "Tai, Y",
         "locations": "142 KCK",
         "number": 1,
@@ -14442,9 +14442,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Morstein, T",
-        "locations": "",
+        "locations": "125 BAX",
         "number": 1,
-        "times": "TR 09:00 - 10:25\nA"
+        "times": "TR 09:00 - 10:25"
       }
     ],
     "comment": "",
@@ -14467,9 +14467,9 @@
       {
         "grades": "",
         "instructor": "Li, P",
-        "locations": "",
+        "locations": "117 DAB",
         "number": 1,
-        "times": "W 19:00 - 21:55\nA"
+        "times": "W 19:00 - 21:55"
       }
     ],
     "comment": "",
@@ -14492,9 +14492,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Matthews, R",
-        "locations": "",
+        "locations": "115 DAB",
         "number": 1,
-        "times": "TR 16:00 - 17:25\nA"
+        "times": "TR 16:00 - 17:25"
       }
     ],
     "comment": " units (3-0-6)",
@@ -14517,9 +14517,9 @@
       {
         "grades": "",
         "instructor": "Factor, J",
-        "locations": "",
+        "locations": "127 BAX",
         "number": 1,
-        "times": "TR 13:00 - 14:25\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": " First class attendance is required to stay in class",
@@ -14542,9 +14542,9 @@
       {
         "grades": "",
         "instructor": "Lepucki, E",
-        "locations": "",
+        "locations": "115 DAB",
         "number": 1,
-        "times": "R 19:00 - 21:55\nA"
+        "times": "R 19:00 - 21:55"
       }
     ],
     "comment": "",
@@ -14642,9 +14642,9 @@
       {
         "grades": "",
         "instructor": "Holland, J",
-        "locations": "",
+        "locations": "125 BAX",
         "number": 1,
-        "times": "TR 10:30 - 11:55\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": "",
@@ -14667,9 +14667,9 @@
       {
         "grades": "LETTER",
         "instructor": "Schneiderman, J",
-        "locations": "",
+        "locations": "B119 BAX",
         "number": 1,
-        "times": "TR 10:30 - 11:55\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": "",
@@ -14692,9 +14692,9 @@
       {
         "grades": "",
         "instructor": "Bartell, B",
-        "locations": "",
+        "locations": "125 BAX",
         "number": 1,
-        "times": "R 19:00 - 21:55\nA"
+        "times": "R 19:00 - 21:55"
       }
     ],
     "comment": " Modernism",
@@ -14717,9 +14717,9 @@
       {
         "grades": "",
         "instructor": "Earhart, N",
-        "locations": "",
+        "locations": "121 BCK",
         "number": 1,
-        "times": "TR 14:30 - 15:55\nA"
+        "times": "TR 14:30 - 15:55"
       }
     ],
     "comment": "",
@@ -14742,9 +14742,9 @@
       {
         "grades": "LETTER",
         "instructor": "Morstein, T",
-        "locations": "",
+        "locations": "125 BAX",
         "number": 1,
-        "times": "TR 13:00 - 14:25\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -15037,7 +15037,7 @@
     "number": "ESE 104",
     "sections": [
       {
-        "grades": "",
+        "grades": "PASS-FAIL",
         "instructor": "Callies, J",
         "locations": "",
         "number": 1,
@@ -15272,9 +15272,9 @@
       {
         "grades": "",
         "instructor": "Adkins, J",
-        "locations": "",
+        "locations": "135 LLB",
         "number": 1,
-        "times": "A\nA"
+        "times": "MWF 09:00 - 09:55"
       }
     ],
     "comment": "",
@@ -16418,7 +16418,7 @@
     "number": "Ge 167",
     "sections": [
       {
-        "grades": "",
+        "grades": "LETTER",
         "instructor": "Simons, M",
         "locations": "162 SMD",
         "number": 1,
@@ -16493,7 +16493,7 @@
     "number": "Ge 218",
     "sections": [
       {
-        "grades": "",
+        "grades": "PASS-FAIL",
         "instructor": "Eiler, J",
         "locations": "212 NMD",
         "number": 1,
@@ -16519,7 +16519,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Ross, Z",
+        "instructor": "Staff",
         "locations": "",
         "number": 1,
         "times": "A\nA"
@@ -17229,9 +17229,9 @@
       {
         "grades": "",
         "instructor": "Brown, W",
-        "locations": "",
+        "locations": "127 BAX",
         "number": 1,
-        "times": "TR 14:30 - 15:55\nA"
+        "times": "TR 14:30 - 15:55"
       }
     ],
     "comment": "",
@@ -17254,9 +17254,9 @@
       {
         "grades": "",
         "instructor": "Wey-Gomez, N",
-        "locations": "",
+        "locations": "110 DAB",
         "number": 1,
-        "times": "TR 09:00 - 10:25\nA"
+        "times": "TR 09:00 - 10:25"
       }
     ],
     "comment": "",
@@ -17279,9 +17279,9 @@
       {
         "grades": "",
         "instructor": "Jones, E",
-        "locations": "",
+        "locations": "B119 BAX",
         "number": 1,
-        "times": "TR 14:30 - 15:55\nA"
+        "times": "TR 14:30 - 15:55"
       }
     ],
     "comment": "",
@@ -17329,9 +17329,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Zanetti, C",
-        "locations": "",
+        "locations": "127 BAX",
         "number": 1,
-        "times": "TR 09:00 - 10:25\nA"
+        "times": "TR 09:00 - 10:25"
       }
     ],
     "comment": " Long Renaissance",
@@ -17404,9 +17404,9 @@
       {
         "grades": "",
         "instructor": "Brown, W",
-        "locations": "",
+        "locations": "125 BAX",
         "number": 1,
-        "times": "MWF 13:00 - 13:55\nA"
+        "times": "MWF 13:00 - 13:55"
       }
     ],
     "comment": "",
@@ -17429,9 +17429,9 @@
       {
         "grades": "",
         "instructor": "Jones, E",
-        "locations": "",
+        "locations": "408 BCK",
         "number": 1,
-        "times": "TR 10:30 - 11:55\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": "",
@@ -17454,9 +17454,9 @@
       {
         "grades": "",
         "instructor": "Morgan, P",
-        "locations": "",
+        "locations": "228 BCK",
         "number": 1,
-        "times": "TR 10:30 - 11:55\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": "",
@@ -17479,9 +17479,9 @@
       {
         "grades": "LETTER",
         "instructor": "Lewis, D",
-        "locations": "",
+        "locations": "127 BAX",
         "number": 1,
-        "times": "T 19:00 - 21:55\nA"
+        "times": "T 19:00 - 21:55"
       }
     ],
     "comment": "",
@@ -17504,9 +17504,9 @@
       {
         "grades": "",
         "instructor": "Stohler, J",
-        "locations": "",
+        "locations": "B119 BAX",
         "number": 1,
-        "times": "TR 13:00 - 14:25\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -17529,9 +17529,9 @@
       {
         "grades": "",
         "instructor": "Wey-Gomez, N",
-        "locations": "",
+        "locations": "110 DAB",
         "number": 1,
-        "times": "TR 13:00 - 14:25\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -17604,9 +17604,9 @@
       {
         "grades": "",
         "instructor": "Hitchcock, C",
-        "locations": "",
+        "locations": "110 DAB",
         "number": 1,
-        "times": "TR 10:30 - 11:55\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": "",
@@ -17629,9 +17629,9 @@
       {
         "grades": "",
         "instructor": "Hitchcock, C",
-        "locations": "",
+        "locations": "110 DAB",
         "number": 1,
-        "times": "TR 14:30 - 15:55\nA"
+        "times": "TR 14:30 - 15:55"
       }
     ],
     "comment": "",
@@ -17654,9 +17654,9 @@
       {
         "grades": "LETTER",
         "instructor": "Quartz, S",
-        "locations": "",
+        "locations": "115 DAB",
         "number": 1,
-        "times": "TR 13:00 - 14:25\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": " max enroll: 15 students // Open by lottery only // https://forms.office.com/r/R0ESTpDiG5",
@@ -17679,9 +17679,9 @@
       {
         "grades": "",
         "instructor": "Quartz, S",
-        "locations": "",
+        "locations": "115 DAB",
         "number": 1,
-        "times": "TR 14:30 - 15:55\nA"
+        "times": "TR 14:30 - 15:55"
       }
     ],
     "comment": "",
@@ -17704,16 +17704,16 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Eberhardt, F",
-        "locations": "",
+        "locations": "128 BAX",
         "number": 1,
-        "times": "TR 09:00 - 10:25\nA"
+        "times": "TR 09:00 - 10:25"
       },
       {
         "grades": "PASS-FAIL",
         "instructor": "Eberhardt, F",
-        "locations": "",
+        "locations": "128 BAX",
         "number": 2,
-        "times": "TR 10:30 - 11:55\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": "",
@@ -17736,9 +17736,9 @@
       {
         "grades": "",
         "instructor": "Linden, D",
-        "locations": "",
+        "locations": "128 BAX",
         "number": 1,
-        "times": "TR 14:30 - 15:55\nA"
+        "times": "TR 14:30 - 15:55"
       }
     ],
     "comment": "",
@@ -17786,9 +17786,9 @@
       {
         "grades": "",
         "instructor": "Orcel, C",
-        "locations": "",
+        "locations": "117 DAB",
         "number": 1,
-        "times": "OM,M 15:00 -\nA 15:55"
+        "times": "OM,M 15:00 - 15:55"
       }
     ],
     "comment": "",
@@ -17811,9 +17811,9 @@
       {
         "grades": "LETTER",
         "instructor": "Arjona, G",
-        "locations": "",
+        "locations": "127 BAX",
         "number": 1,
-        "times": "OM,M 19:00 -\nA 19:55"
+        "times": "OM,M 19:00 - 19:55"
       }
     ],
     "comment": " Prerequisites: L 112 abc or equivalent",
@@ -17836,9 +17836,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Wang, P",
-        "locations": "",
+        "locations": "127 BAX",
         "number": 1,
-        "times": "OM,M 12:00 -\nA 12:55"
+        "times": "OM,M 12:00 - 12:55"
       }
     ],
     "comment": " units (3-0-6) // Prerequisites: L 171 abc, L 172 abc or equivalent.",
@@ -18021,9 +18021,9 @@
       {
         "grades": "",
         "instructor": "Orcel, C",
-        "locations": "",
+        "locations": "117 DAB",
         "number": 1,
-        "times": "OM,M 14:00 -\nA 14:55"
+        "times": "OM,M 14:00 - 14:55"
       }
     ],
     "comment": "",
@@ -18046,9 +18046,9 @@
       {
         "grades": "",
         "instructor": "Merrill, T",
-        "locations": "",
+        "locations": "115 DAB",
         "number": 1,
-        "times": "OM,M 14:00 -\nA 14:55"
+        "times": "OM,M 14:00 - 14:55"
       }
     ],
     "comment": "",
@@ -18071,9 +18071,9 @@
       {
         "grades": "",
         "instructor": "Orcel, C",
-        "locations": "",
+        "locations": "117 DAB",
         "number": 1,
-        "times": "OM,M 15:00 -\nA 15:55"
+        "times": "OM,M 15:00 - 15:55"
       }
     ],
     "comment": " Prerequisites: L 103 abc or equivalent.",
@@ -18096,16 +18096,16 @@
       {
         "grades": "",
         "instructor": "Fujio, M",
-        "locations": "",
+        "locations": "228 BAX",
         "number": 1,
-        "times": "MTWR 15:00 -\nA 15:55"
+        "times": "MTWR 15:00 - 15:55"
       },
       {
         "grades": "",
         "instructor": "Fujio, M",
-        "locations": "",
+        "locations": "228 BAX",
         "number": 2,
-        "times": "MTWR 16:00 -\nA 16:55"
+        "times": "MTWR 16:00 - 16:55"
       }
     ],
     "comment": " Prerequisites: L106a or equivalent is required for L106b",
@@ -18128,9 +18128,9 @@
       {
         "grades": "",
         "instructor": "Toner, R",
-        "locations": "",
+        "locations": "125 BAX",
         "number": 1,
-        "times": "MW 16:00 - 17:25\nA"
+        "times": "MW 16:00 - 17:25"
       }
     ],
     "comment": " Prerequisites: L 106 abc or equivalent.",
@@ -18153,9 +18153,9 @@
       {
         "grades": "",
         "instructor": "Toner, R",
-        "locations": "",
+        "locations": "125 BAX",
         "number": 1,
-        "times": "TR 16:00 - 17:25\nA"
+        "times": "TR 16:00 - 17:25"
       }
     ],
     "comment": " Prerequisites: L 107 abc or equivalent.",
@@ -18178,16 +18178,16 @@
       {
         "grades": "",
         "instructor": "Arjona, G",
-        "locations": "",
+        "locations": "127 BAX",
         "number": 1,
-        "times": "OM,M 17:00 -\nA 17:55"
+        "times": "OM,M 17:00 - 17:55"
       },
       {
         "grades": "",
         "instructor": "Garcia, D",
-        "locations": "",
+        "locations": "125 BAX",
         "number": 2,
-        "times": "MWR 12:00 - 12:55\nA"
+        "times": "MWR 12:00 - 12:55"
       }
     ],
     "comment": "",
@@ -18210,9 +18210,9 @@
       {
         "grades": "",
         "instructor": "Garcia, D",
-        "locations": "",
+        "locations": "128 BAX",
         "number": 1,
-        "times": "OM,M 19:00 -\nA 19:55"
+        "times": "OM,M 19:00 - 19:55"
       }
     ],
     "comment": " Prerequisites: L 110 abc or equivalent.",
@@ -18235,9 +18235,9 @@
       {
         "grades": "",
         "instructor": "Arjona, G",
-        "locations": "",
+        "locations": "127 BAX",
         "number": 1,
-        "times": "OM,M 19:00 -\nA 19:55"
+        "times": "OM,M 19:00 - 19:55"
       }
     ],
     "comment": " Prerequisites: L 112 abc or equivalent.",
@@ -18260,9 +18260,9 @@
       {
         "grades": "",
         "instructor": "Aebi, A",
-        "locations": "",
+        "locations": "117 DAB",
         "number": 1,
-        "times": "MWR 13:00 - 13:55\nA"
+        "times": "MWR 13:00 - 13:55"
       }
     ],
     "comment": "",
@@ -18285,9 +18285,9 @@
       {
         "grades": "",
         "instructor": "Aebi, A",
-        "locations": "",
+        "locations": "117 DAB",
         "number": 1,
-        "times": "MWR 12:00 - 12:55\nA"
+        "times": "MWR 12:00 - 12:55"
       }
     ],
     "comment": " Prerequisites: L 130 abc or equivalent.",
@@ -18310,9 +18310,9 @@
       {
         "grades": "",
         "instructor": "Wang, P",
-        "locations": "",
+        "locations": "115 DAB",
         "number": 1,
-        "times": "WF 13:00 - 14:25\nA"
+        "times": "WF 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -18335,9 +18335,9 @@
       {
         "grades": "",
         "instructor": "Zhu, J",
-        "locations": "",
+        "locations": "B119 BAX",
         "number": 1,
-        "times": "WF 09:00 - 10:25\nA"
+        "times": "WF 09:00 - 10:25"
       }
     ],
     "comment": " Prerequisites: Prior exposure to the language.",
@@ -18360,9 +18360,9 @@
       {
         "grades": "",
         "instructor": "Zhu, J",
-        "locations": "",
+        "locations": "B119 BAX",
         "number": 1,
-        "times": "WF 10:30 - 11:55\nA"
+        "times": "WF 10:30 - 11:55"
       }
     ],
     "comment": " Prerequisites: L 170 abc or L 171 abc or equivalent.",
@@ -20226,7 +20226,7 @@
     "number": "ME 11 b",
     "sections": [
       {
-        "grades": "",
+        "grades": "LETTER",
         "instructor": "Blanquart, G",
         "locations": "135 GTL",
         "number": 1,
@@ -21339,9 +21339,9 @@
       {
         "grades": "",
         "instructor": "Ballance, S",
-        "locations": "",
+        "locations": "B133 BAX",
         "number": 1,
-        "times": "TR 10:30 - 11:55\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": "",
@@ -21364,9 +21364,9 @@
       {
         "grades": "",
         "instructor": "Ballance, S",
-        "locations": "",
+        "locations": "B133 BAX",
         "number": 1,
-        "times": "TR 09:00 - 10:25\nA"
+        "times": "TR 09:00 - 10:25"
       }
     ],
     "comment": "",
@@ -24275,9 +24275,9 @@
     "number": "PS 12",
     "sections": [
       {
-        "grades": "LETTER",
+        "grades": "",
         "instructor": "Hirsch, A",
-        "locations": "Lecture Hall\nBAX",
+        "locations": "127 BAX",
         "number": 1,
         "times": "TR 10:30 - 11:55"
       }
@@ -24402,9 +24402,9 @@
       {
         "grades": "LETTER",
         "instructor": "Gibilisco, M",
-        "locations": "",
+        "locations": "117 DAB",
         "number": 1,
-        "times": "TR 10:30 - 11:55\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": "",
@@ -24427,9 +24427,9 @@
       {
         "grades": "LETTER",
         "instructor": "Centeno, R",
-        "locations": "",
+        "locations": "B133 BAX",
         "number": 1,
-        "times": "TR 14:30 - 15:55\nA"
+        "times": "TR 14:30 - 15:55"
       }
     ],
     "comment": "",
@@ -24452,7 +24452,7 @@
       {
         "grades": "LETTER",
         "instructor": "Lopez-Moctezuma Jassan,",
-        "locations": "128 BAX\nG",
+        "locations": "125 BAX\nG",
         "number": 1,
         "times": "M 19:00 - 21:55"
       }
@@ -24616,7 +24616,7 @@
       {
         "grades": "LETTER",
         "instructor": "Hirsch, A",
-        "locations": "127 BAX",
+        "locations": "125 BAX",
         "number": 1,
         "times": "TR 14:30 - 15:55"
       }
@@ -24641,9 +24641,9 @@
       {
         "grades": "LETTER",
         "instructor": "Pomatto, L",
-        "locations": "",
+        "locations": "128 BAX",
         "number": 1,
-        "times": "MW 13:00 - 14:25\nA"
+        "times": "MW 13:00 - 14:25"
       }
     ],
     "comment": " Open to Social Science graduate students only.",
@@ -24666,9 +24666,9 @@
       {
         "grades": "LETTER",
         "instructor": "Gibilisco, M",
-        "locations": "",
+        "locations": "125 BAX",
         "number": 1,
-        "times": "W 09:00 - 11:55\nA"
+        "times": "W 09:00 - 11:55"
       }
     ],
     "comment": "",
@@ -24691,9 +24691,9 @@
       {
         "grades": "LETTER",
         "instructor": "Agranov, M",
-        "locations": "",
+        "locations": "B133 BAX",
         "number": 1,
-        "times": "MW 13:00 - 14:25\nA"
+        "times": "MW 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -24716,9 +24716,9 @@
       {
         "grades": "LETTER",
         "instructor": "Xin, Y",
-        "locations": "",
+        "locations": "B125 BAX",
         "number": 1,
-        "times": "TR 13:00 - 14:25\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": " Open to Social Science graduate students only",
@@ -24741,9 +24741,9 @@
       {
         "grades": "LETTER",
         "instructor": "Katz, J",
-        "locations": "",
+        "locations": "128 BAX",
         "number": 1,
-        "times": "F 13:00 - 15:55\nA"
+        "times": "F 13:00 - 15:55"
       }
     ],
     "comment": "",
@@ -24766,9 +24766,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Nielsen, K / Druckenmiller,",
-        "locations": "H",
+        "locations": "127 BAX\nH",
         "number": 1,
-        "times": "M 14:30 - 15:55\nA"
+        "times": "M 14:30 - 15:55"
       }
     ],
     "comment": "",
@@ -24791,9 +24791,9 @@
       {
         "grades": "LETTER",
         "instructor": "Sherazi, M",
-        "locations": "",
+        "locations": "117 DAB",
         "number": 1,
-        "times": "T 13:00 - 15:55\nA"
+        "times": "T 13:00 - 15:55"
       }
     ],
     "comment": "",
@@ -25298,9 +25298,9 @@
       {
         "grades": "",
         "instructor": "Linden, D",
-        "locations": "",
+        "locations": "115 DAB",
         "number": 1,
-        "times": "TR 10:30 - 11:55\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
     "comment": "",
@@ -25323,9 +25323,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Hall, S",
-        "locations": "",
+        "locations": "117 DAB",
         "number": 1,
-        "times": "T 11:00 - 11:55\nA"
+        "times": "T 11:00 - 11:55"
       }
     ],
     "comment": " Instructor permission required before enrolling",
