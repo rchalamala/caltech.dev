@@ -6,7 +6,7 @@
     "sections": [
       {
         "grades": "LETTER",
-        "instructor": "Staff",
+        "instructor": "Meiron, D",
         "locations": "133 GUG",
         "number": 1,
         "times": "MWF 10:00 - 10:55"
@@ -615,13 +615,13 @@
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Gharib, M",
+        "instructor": "Staff",
         "locations": "232 GUG",
         "number": 2,
         "times": "OM,M 09:00 - 09:55"
       }
     ],
-    "comment": " Sec 1: Educational Exchange - units (2-0-7) // Sec 2: Vortex Flows in Nature and Industry - units (3-0-6) // OM for section 2 on Monday 1/5 at 9:00am in room 232 Guggenheim",
+    "comment": " Sec 1: Educational Exchange - units (2-0-7) // Sec 2: Vortex Flows in Nature and Industry - units (3-0-6) // OM for section 2 on Monday 1/5 at 9:00am in room 232 Guggenheim // Section 02 Cancelled",
     "units": [
       0,
       0,
@@ -1393,7 +1393,7 @@
       {
         "grades": "",
         "instructor": "Marandi, A",
-        "locations": "B280 MRE",
+        "locations": "B270 MRE",
         "number": 1,
         "times": "MW 13:00 - 14:25"
       }
@@ -1788,13 +1788,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Roukes, M",
+        "instructor": "Staff",
         "locations": "255 LINDE",
         "number": 1,
         "times": "TR 14:30 - 15:55"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       3,
       0,
@@ -1819,7 +1819,7 @@
         "times": "TR 13:00 - 14:25"
       }
     ],
-    "comment": "",
+    "comment": " Class Time will be 12:00pm \u0096 2:25pm from January 13 \u0096 February 24",
     "units": [
       3,
       0,
@@ -2131,6 +2131,13 @@
         "instructor": "Bernardi, M",
         "locations": "",
         "number": 21,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Wu, W",
+        "locations": "",
+        "number": 22,
         "times": "A\nA"
       },
       {
@@ -2468,6 +2475,13 @@
         "instructor": "Chen, Y",
         "locations": "",
         "number": 21,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Wu, W",
+        "locations": "",
+        "number": 22,
         "times": "A\nA"
       },
       {
@@ -4435,7 +4449,7 @@
       {
         "grades": "",
         "instructor": "Bois, J",
-        "locations": "100 - Rock\nAuditorium\nBRD\n100 CNRB",
+        "locations": "100 - Rock\nAuditorium\nBRD\nB123 KRK",
         "number": 1,
         "times": "M 09:00 - 09:55\nW 09:00 - 11:55"
       }
@@ -4610,7 +4624,7 @@
       {
         "grades": "",
         "instructor": "Qian, L",
-        "locations": "B127 KRK\n125 KRK\n125 KRK",
+        "locations": "B127 KRK\nB136 KRK\nB136 KRK",
         "number": 1,
         "times": "R 14:00 - 15:55\nTR 13:00 - 13:55\nT 14:00 - 15:55"
       }
@@ -5809,7 +5823,7 @@
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Gregory, M / Prober, D",
+        "instructor": "Staff",
         "locations": "101 KRK",
         "number": 2,
         "times": "OM,M 16:00 - 16:55"
@@ -5857,7 +5871,7 @@
         "times": "OM,T 16:00 - 16:55"
       }
     ],
-    "comment": " See course syllabus link for section topics",
+    "comment": " See course syllabus link for section topics // Section 02 Cancelled",
     "units": [
       1,
       0,
@@ -7184,6 +7198,13 @@
         "locations": "",
         "number": 40,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Shan, S",
+        "locations": "",
+        "number": 41,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -7203,6 +7224,13 @@
     "name": "Undergraduate Thesis",
     "number": "ChE 90 a",
     "sections": [
+      {
+        "grades": "LETTER",
+        "instructor": "Manthiram, K",
+        "locations": "",
+        "number": 1,
+        "times": "A\nA"
+      },
       {
         "grades": "LETTER",
         "instructor": "Giapis, K",
@@ -8308,9 +8336,9 @@
       {
         "grades": "",
         "instructor": "Mendez, J",
-        "locations": "130 CHR",
+        "locations": "275 RSC\n130 CHR",
         "number": 1,
-        "times": "A\nA\nTR 08:00 - 10:55"
+        "times": "M 12:00 - 12:55\nTR 08:00 - 10:55"
       }
     ],
     "comment": " max enroll: 14 students",
@@ -9147,7 +9175,7 @@
       {
         "grades": "",
         "instructor": "Peters, J",
-        "locations": "147 NYS",
+        "locations": "210 RSC",
         "number": 1,
         "times": "TR 13:00 - 14:25"
       }
@@ -11149,18 +11177,11 @@
     "number": "CS 4",
     "sections": [
       {
-        "grades": "",
+        "grades": "LETTER",
         "instructor": "Vanier, M",
-        "locations": "",
+        "locations": "106 ANB",
         "number": 1,
         "times": "MWF 15:00 - 15:55"
-      },
-      {
-        "grades": "LETTER",
-        "instructor": "LETTER",
-        "locations": "BCK",
-        "number": 134,
-        "times": ""
       }
     ],
     "comment": "",
@@ -11412,6 +11433,13 @@
         "instructor": "Schulman, L",
         "locations": "",
         "number": 11,
+        "times": "A\nA"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "Low, S",
+        "locations": "",
+        "number": 12,
         "times": "A\nA"
       },
       {
@@ -12426,9 +12454,9 @@
       {
         "grades": "",
         "instructor": "Hassibi, B",
-        "locations": "B280 MRE",
+        "locations": "B270 MRE",
         "number": 1,
-        "times": "TR 10:30 - 11:55"
+        "times": "TR 09:00 - 10:25"
       }
     ],
     "comment": "",
@@ -13939,7 +13967,7 @@
       {
         "grades": "",
         "instructor": "George, G",
-        "locations": "B270 MRE",
+        "locations": "B280 MRE",
         "number": 1,
         "times": "MW 13:00 - 14:25"
       }
@@ -14089,7 +14117,7 @@
       {
         "grades": "",
         "instructor": "Tai, Y",
-        "locations": "B280 MRE",
+        "locations": "B270 MRE",
         "number": 1,
         "times": "MW 14:30 - 15:55"
       }
@@ -14173,9 +14201,23 @@
       },
       {
         "grades": "PASS-FAIL",
+        "instructor": "Hutzler, N",
+        "locations": "",
+        "number": 6,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
         "instructor": "Effros, M",
         "locations": "",
         "number": 7,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ames, A",
+        "locations": "",
+        "number": 8,
         "times": "A\nA"
       },
       {
@@ -14218,6 +14260,13 @@
         "instructor": "Perona, P",
         "locations": "",
         "number": 18,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Thomson, M",
+        "locations": "",
+        "number": 20,
         "times": "A\nA"
       },
       {
@@ -14517,7 +14566,7 @@
       {
         "grades": "",
         "instructor": "Factor, J",
-        "locations": "127 BAX",
+        "locations": "125 BAX",
         "number": 1,
         "times": "TR 13:00 - 14:25"
       }
@@ -14742,7 +14791,7 @@
       {
         "grades": "LETTER",
         "instructor": "Morstein, T",
-        "locations": "125 BAX",
+        "locations": "127 BAX",
         "number": 1,
         "times": "TR 13:00 - 14:25"
       }
@@ -16147,7 +16196,7 @@
         "instructor": "Grotzinger, J",
         "locations": "251 ARM\n267 ARM",
         "number": 1,
-        "times": "TR 09:00 - 10:25\nW 14:00 - 15:55"
+        "times": "TR 09:00 - 10:25\nW 15:00 - 16:55"
       }
     ],
     "comment": "",
@@ -16169,7 +16218,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Asimow, P",
+        "instructor": "Asimow, P / Bucholz, C",
         "locations": "267 ARM",
         "number": 1,
         "times": "OM,M 14:00 - 14:55"
@@ -17811,9 +17860,9 @@
       {
         "grades": "LETTER",
         "instructor": "Arjona, G",
-        "locations": "127 BAX",
+        "locations": "127 BAX\n125 BAX",
         "number": 1,
-        "times": "OM,M 19:00 - 19:55"
+        "times": "OM,M 19:00 - 19:55\nMW 18:30 - 19:55"
       }
     ],
     "comment": " Prerequisites: L 112 abc or equivalent",
@@ -18021,9 +18070,9 @@
       {
         "grades": "",
         "instructor": "Orcel, C",
-        "locations": "117 DAB",
+        "locations": "117 DAB\n115 DAB",
         "number": 1,
-        "times": "OM,M 14:00 - 14:55"
+        "times": "OM,M 14:00 - 14:55\nMWF 09:00 - 09:55"
       }
     ],
     "comment": "",
@@ -18046,9 +18095,9 @@
       {
         "grades": "",
         "instructor": "Merrill, T",
-        "locations": "115 DAB",
+        "locations": "128 BAX\n128 BAX",
         "number": 1,
-        "times": "OM,M 14:00 - 14:55"
+        "times": "M 10:00 - 10:55\nTR 12:00 - 12:55"
       }
     ],
     "comment": "",
@@ -18071,9 +18120,9 @@
       {
         "grades": "",
         "instructor": "Orcel, C",
-        "locations": "117 DAB",
+        "locations": "117 DAB\n115 DAB",
         "number": 1,
-        "times": "OM,M 15:00 - 15:55"
+        "times": "OM,M 15:00 - 15:55\nM 16:00 - 16:55"
       }
     ],
     "comment": " Prerequisites: L 103 abc or equivalent.",
@@ -18128,7 +18177,7 @@
       {
         "grades": "",
         "instructor": "Toner, R",
-        "locations": "125 BAX",
+        "locations": "128 BAX",
         "number": 1,
         "times": "MW 16:00 - 17:25"
       }
@@ -18153,7 +18202,7 @@
       {
         "grades": "",
         "instructor": "Toner, R",
-        "locations": "125 BAX",
+        "locations": "128 BAX",
         "number": 1,
         "times": "TR 16:00 - 17:25"
       }
@@ -18178,9 +18227,9 @@
       {
         "grades": "",
         "instructor": "Arjona, G",
-        "locations": "127 BAX",
+        "locations": "127 BAX\n125 BAX",
         "number": 1,
-        "times": "OM,M 17:00 - 17:55"
+        "times": "OM,M 17:00 - 17:55\nMW 16:00 - 17:25"
       },
       {
         "grades": "",
@@ -18210,9 +18259,9 @@
       {
         "grades": "",
         "instructor": "Garcia, D",
-        "locations": "128 BAX",
+        "locations": "128 BAX\n117 DAB",
         "number": 1,
-        "times": "OM,M 19:00 - 19:55"
+        "times": "OM,M 19:00 - 19:55\nMR 19:00 - 20:25"
       }
     ],
     "comment": " Prerequisites: L 110 abc or equivalent.",
@@ -18235,9 +18284,9 @@
       {
         "grades": "",
         "instructor": "Arjona, G",
-        "locations": "127 BAX",
+        "locations": "127 BAX\n125 BAX",
         "number": 1,
-        "times": "OM,M 19:00 - 19:55"
+        "times": "OM,M 19:00 - 19:55\nMW 18:30 - 19:55"
       }
     ],
     "comment": " Prerequisites: L 112 abc or equivalent.",
@@ -19132,7 +19181,7 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Gherman, M",
-        "locations": "B122 GTS\n289 LINDE",
+        "locations": "B122 GTS\n269 LAU",
         "number": 4,
         "times": "MWF 10:00 - 10:55\nR 16:00 - 16:55"
       },
@@ -19315,58 +19364,135 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Mantovan, E",
+        "instructor": "Aluffi, P",
         "locations": "",
         "number": 1,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Marcolli, M",
+        "instructor": "Babecki, C",
         "locations": "",
         "number": 2,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Rangel, A",
+        "instructor": "Caniato, R",
         "locations": "",
         "number": 3,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Heinaevaara, O",
+        "instructor": "Chen, D",
         "locations": "",
         "number": 4,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Yu, T",
+        "instructor": "Conlon, D",
+        "locations": "",
+        "number": 5,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Dimitrov, V",
         "locations": "",
         "number": 6,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Song, A",
+        "instructor": "Dong, D",
         "locations": "",
         "number": 7,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Tamuz, O",
+        "instructor": "El Maazouz, Y",
         "locations": "",
         "number": 8,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Aluffi, P",
+        "instructor": "Flach, M",
         "locations": "",
         "number": 9,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Fu, Y",
+        "locations": "",
+        "number": 10,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Gherman, M",
+        "locations": "",
+        "number": 11,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Graber, T",
+        "locations": "",
+        "number": 12,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Gukov, S",
+        "locations": "",
+        "number": 13,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Heinaevaara, O",
+        "locations": "",
+        "number": 14,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Hutchcroft, T",
+        "locations": "",
+        "number": 15,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Mantovan, E",
+        "locations": "",
+        "number": 22,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Marcolli, M",
+        "locations": "",
+        "number": 23,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Yu, T",
+        "locations": "",
+        "number": 34,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Rangel, A",
+        "locations": "",
+        "number": 37,
         "times": "A\nA"
       }
     ],
@@ -19389,42 +19515,56 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Dimitrov, V",
+        "instructor": "Aluffi, P",
         "locations": "",
         "number": 1,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Mantovan, E",
+        "instructor": "Babecki, C",
         "locations": "",
         "number": 2,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Conlon, D",
+        "instructor": "Caniato, R",
+        "locations": "",
+        "number": 3,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Chen, D",
         "locations": "",
         "number": 4,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Tamuz, O",
+        "instructor": "Conlon, D",
         "locations": "",
         "number": 5,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Yu, T",
+        "instructor": "Dimitrov, V",
+        "locations": "",
+        "number": 6,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Dong, D",
         "locations": "",
         "number": 7,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Ervin, G",
+        "instructor": "El Maazouz, Y",
         "locations": "",
         "number": 8,
         "times": "A\nA"
@@ -19438,6 +19578,13 @@
       },
       {
         "grades": "PASS-FAIL",
+        "instructor": "Fu, Y",
+        "locations": "",
+        "number": 10,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
         "instructor": "Gherman, M",
         "locations": "",
         "number": 11,
@@ -19445,37 +19592,184 @@
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Marcolli, M",
+        "instructor": "Graber, T",
         "locations": "",
         "number": 12,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Jang, H",
+        "instructor": "Gukov, S",
         "locations": "",
         "number": 13,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Isett, P",
+        "instructor": "Heinaevaara, O",
         "locations": "",
         "number": 14,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Zhang, L",
+        "instructor": "Hutchcroft, T",
         "locations": "",
         "number": 15,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Tang, Y",
+        "instructor": "Isett, P",
         "locations": "",
         "number": 16,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Kapustin, A",
+        "locations": "",
+        "number": 17,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Kim, Y",
+        "locations": "",
+        "number": 18,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Kitaev, A",
+        "locations": "",
+        "number": 19,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Looi, S",
+        "locations": "",
+        "number": 20,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Makarov, N",
+        "locations": "",
+        "number": 21,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Mantovan, E",
+        "locations": "",
+        "number": 22,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Marcolli, M",
+        "locations": "",
+        "number": 23,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ni, Y",
+        "locations": "",
+        "number": 24,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Oguri, H",
+        "locations": "",
+        "number": 25,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Pham, H",
+        "locations": "",
+        "number": 26,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Reeves, L",
+        "locations": "",
+        "number": 27,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ryoo, S",
+        "locations": "",
+        "number": 28,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Song, A",
+        "locations": "",
+        "number": 29,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Sugimoto, S",
+        "locations": "",
+        "number": 30,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Svoboda, J",
+        "locations": "",
+        "number": 31,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Tamuz, O",
+        "locations": "",
+        "number": 32,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Tang, Y",
+        "locations": "",
+        "number": 33,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Yu, T",
+        "locations": "",
+        "number": 34,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Zhang, L",
+        "locations": "",
+        "number": 35,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Zhang, X",
+        "locations": "",
+        "number": 36,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Rangel, A",
+        "locations": "",
+        "number": 37,
         "times": "A\nA"
       }
     ],
@@ -19498,93 +19792,261 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Chen, D",
+        "instructor": "Aluffi, P",
         "locations": "",
         "number": 1,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Ervin, G",
+        "instructor": "Babecki, C",
         "locations": "",
         "number": 2,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Flach, M",
+        "instructor": "Caniato, R",
         "locations": "",
         "number": 3,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Yu, T",
+        "instructor": "Chen, D",
         "locations": "",
         "number": 4,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Ni, Y",
+        "instructor": "Conlon, D",
         "locations": "",
         "number": 5,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Gherman, M",
+        "instructor": "Dimitrov, V",
         "locations": "",
         "number": 6,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Dimitrov, V",
+        "instructor": "Dong, D",
         "locations": "",
         "number": 7,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Aluffi, P",
+        "instructor": "El Maazouz, Y",
         "locations": "",
         "number": 8,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Graber, T",
+        "instructor": "Flach, M",
         "locations": "",
         "number": 9,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Marcolli, M",
+        "instructor": "Fu, Y",
         "locations": "",
         "number": 10,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Isett, P",
+        "instructor": "Gherman, M",
+        "locations": "",
+        "number": 11,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Graber, T",
         "locations": "",
         "number": 12,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Caniato, R",
+        "instructor": "Gukov, S",
         "locations": "",
         "number": 13,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Zhang, L",
+        "instructor": "Heinaevaara, O",
         "locations": "",
         "number": 14,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Hutchcroft, T",
+        "locations": "",
+        "number": 15,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Hutchcroft, T",
+        "locations": "",
+        "number": 16,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Kapustin, A",
+        "locations": "",
+        "number": 17,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Kim, Y",
+        "locations": "",
+        "number": 18,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Kitaev, A",
+        "locations": "",
+        "number": 19,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Looi, S",
+        "locations": "",
+        "number": 20,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Makarov, N",
+        "locations": "",
+        "number": 21,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Mantovan, E",
+        "locations": "",
+        "number": 22,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Marcolli, M",
+        "locations": "",
+        "number": 23,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ni, Y",
+        "locations": "",
+        "number": 24,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Oguri, H",
+        "locations": "",
+        "number": 25,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Pham, H",
+        "locations": "",
+        "number": 26,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Reeves, L",
+        "locations": "",
+        "number": 27,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ryoo, S",
+        "locations": "",
+        "number": 28,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Song, A",
+        "locations": "",
+        "number": 29,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Sugimoto, S",
+        "locations": "",
+        "number": 30,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Svoboda, J",
+        "locations": "",
+        "number": 31,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Tamuz, O",
+        "locations": "",
+        "number": 32,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Tang, Y",
+        "locations": "",
+        "number": 33,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Yu, T",
+        "locations": "",
+        "number": 34,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Zhang, L",
+        "locations": "",
+        "number": 35,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Zhang, X",
+        "locations": "",
+        "number": 36,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Rangel, A",
+        "locations": "",
+        "number": 37,
         "times": "A\nA"
       }
     ],
@@ -20090,121 +20552,261 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Conlon, D",
+        "instructor": "Aluffi, P",
         "locations": "",
         "number": 1,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Flach, M",
+        "instructor": "Babecki, C",
         "locations": "",
         "number": 2,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Hutchcroft, T",
+        "instructor": "Caniato, R",
         "locations": "",
         "number": 3,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Graber, T",
+        "instructor": "Chen, D",
         "locations": "",
         "number": 4,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Isett, P",
+        "instructor": "Conlon, D",
         "locations": "",
         "number": 5,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Makarov, N",
+        "instructor": "Dimitrov, V",
+        "locations": "",
+        "number": 6,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Dong, D",
+        "locations": "",
+        "number": 7,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "El Maazouz, Y",
         "locations": "",
         "number": 8,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Mantovan, E",
+        "instructor": "Flach, M",
         "locations": "",
         "number": 9,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Marcolli, M",
+        "instructor": "Fu, Y",
         "locations": "",
         "number": 10,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Tang, Y",
+        "instructor": "Gherman, M",
         "locations": "",
         "number": 11,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Ni, Y",
+        "instructor": "Graber, T",
         "locations": "",
         "number": 12,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Yu, T",
+        "instructor": "Gukov, S",
+        "locations": "",
+        "number": 13,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Heinaevaara, O",
+        "locations": "",
+        "number": 14,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Hutchcroft, T",
+        "locations": "",
+        "number": 15,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Isett, P",
         "locations": "",
         "number": 16,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Gukov, S",
+        "instructor": "Kapustin, A",
+        "locations": "",
+        "number": 17,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Kim, Y",
         "locations": "",
         "number": 18,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Kapustin, A",
+        "instructor": "Kitaev, A",
         "locations": "",
         "number": 19,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Kitaev, A",
+        "instructor": "Looi, S",
         "locations": "",
         "number": 20,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Oguri, H",
+        "instructor": "Makarov, N",
         "locations": "",
         "number": 21,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Tamuz, O",
+        "instructor": "Mantovan, E",
         "locations": "",
         "number": 22,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Song, A",
+        "instructor": "Marcolli, M",
+        "locations": "",
+        "number": 23,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ni, Y",
+        "locations": "",
+        "number": 24,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Oguri, H",
         "locations": "",
         "number": 25,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Pham, H",
+        "locations": "",
+        "number": 26,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Reeves, L",
+        "locations": "",
+        "number": 27,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ryoo, S",
+        "locations": "",
+        "number": 28,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Song, A",
+        "locations": "",
+        "number": 29,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Sugimoto, S",
+        "locations": "",
+        "number": 30,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Svoboda, J",
+        "locations": "",
+        "number": 31,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Tamuz, O",
+        "locations": "",
+        "number": 32,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Tang, Y",
+        "locations": "",
+        "number": 33,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Yu, T",
+        "locations": "",
+        "number": 34,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Zhang, L",
+        "locations": "",
+        "number": 35,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Zhang, X",
+        "locations": "",
+        "number": 36,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Rangel, A",
+        "locations": "",
+        "number": 37,
         "times": "A\nA"
       }
     ],
@@ -20559,6 +21161,20 @@
         "instructor": "Gao, W",
         "locations": "",
         "number": 23,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Chung, S",
+        "locations": "",
+        "number": 24,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Shepherd, J",
+        "locations": "",
+        "number": 25,
         "times": "A\nA"
       }
     ],
@@ -22495,9 +23111,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Chen, X",
-        "locations": "201 BRG",
+        "locations": "201 BRG\n151 CRL",
         "number": 3,
-        "times": "WF 15:00 - 15:55\nMR 15:00 - 15:55\nA"
+        "times": "WF 15:00 - 15:55\nMR 15:00 - 15:55"
       },
       {
         "grades": "PASS-FAIL",
@@ -22530,7 +23146,7 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Patterson, R",
-        "locations": "201 BRG\nHameetman\nAud CHL",
+        "locations": "201 BRG\n201 BRG",
         "number": 9,
         "times": "WF 11:00 - 11:55\nMR 13:00 - 13:55"
       },
@@ -24402,7 +25018,7 @@
       {
         "grades": "LETTER",
         "instructor": "Gibilisco, M",
-        "locations": "117 DAB",
+        "locations": "239 BAX",
         "number": 1,
         "times": "TR 10:30 - 11:55"
       }
@@ -24452,7 +25068,7 @@
       {
         "grades": "LETTER",
         "instructor": "Lopez-Moctezuma Jassan,",
-        "locations": "125 BAX\nG",
+        "locations": "127 BAX\nG",
         "number": 1,
         "times": "M 19:00 - 21:55"
       }
@@ -24616,9 +25232,9 @@
       {
         "grades": "LETTER",
         "instructor": "Hirsch, A",
-        "locations": "125 BAX",
+        "locations": "127 BAX\n125 BAX",
         "number": 1,
-        "times": "TR 14:30 - 15:55"
+        "times": "W 14:45 - 16:10\nR 14:45 - 16:10"
       }
     ],
     "comment": " Open to Social Science graduate students only",
@@ -24691,7 +25307,7 @@
       {
         "grades": "LETTER",
         "instructor": "Agranov, M",
-        "locations": "B133 BAX",
+        "locations": "B119 BAX",
         "number": 1,
         "times": "MW 13:00 - 14:25"
       }
