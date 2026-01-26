@@ -16,7 +16,7 @@
     "react-beautiful-dnd": "^13.1.1",
     "react-big-calendar": "^1.17.1",
     "react-dom": "^18.2.0",
-    "react-flatpickr": "^3.10.13",
+    "react-flatpickr": "^4.0.11",
     "react-select": "^5.9.0",
     "react-toggle": "^4.1.3"
   },
