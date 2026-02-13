@@ -22,7 +22,7 @@ import TERM_START_DATES from "./data/term_start_dates.json";
 const DEFAULT_COURSES: { [key: string]: string[] } = {
   "fa": ["Ma 1 a", "Ph 1 a", "Ch 1 a", "CS 1"],
   "wi": ["Ma 1 b", "Ph 1 b", "Ch 1 b", "CS 2"],
-  "sp": ["Ma 1 c", "Ph 1 c", "CS 3"],
+  "sp": ["Ma 1 c", "Ph 1 c", "CS 3 x"],
 }
 
 /** Fetches courses */
