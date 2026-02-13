@@ -16,8 +16,9 @@ import DATA_WI2025 from "./data/IndexedTotalWI2024-25.json";
 import DATA_SP2025 from "./data/IndexedTotalSP2024-25.json";
 import DATA_FA2026 from "./data/IndexedTotalFA2025-26.json";
 import DATA_WI2026 from "./data/IndexedTotalWI2025-26.json";
+import DATA_SP2026 from "./data/IndexedTotalSP2025-26.json";
 
-const CURRENT_TERM = "/wi2026";
+const CURRENT_TERM = "/sp2026";
 
 const courseDataSources: { [key: string]: { [key: string]: CourseData } } = {
   "/fa2023": DATA_FA2023,
@@ -31,6 +32,7 @@ const courseDataSources: { [key: string]: { [key: string]: CourseData } } = {
   "/sp2025": DATA_SP2025,
   "/fa2026": DATA_FA2026,
   "/wi2026": DATA_WI2026,
+  "/sp2026": DATA_SP2026,
 };
 
 export const AllCourses = createContext<CourseIndex>({});
