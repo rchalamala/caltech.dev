@@ -39,7 +39,7 @@
     "autoprefixer": "^10.4.11",
     "eslint": "^8.46.0",
     "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.17",
+    "tailwindcss": "^4.1.17",
     "typescript": "^5.7.2",
     "vite": "^7.2.4",
     "vite-plugin-svgr": "^4.5.0",
