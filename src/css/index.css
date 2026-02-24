@@ -1,7 +1,11 @@
 @import url("./tailwind.css");
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
-  /* margin: 0; */
+  margin: 0;
   font-family:
     "ProximaSoft",
     -apple-system,
@@ -20,10 +24,17 @@ body {
   font-size: 0.9em; /* basically zooms out to 90% by default */
 }
 
+@media (max-width: 767px) {
+  body {
+    font-size: 0.85em;
+  }
+}
+
 #column-container {
   display: flex;
   align-items: top;
   flex-direction: column;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -34,6 +45,17 @@ body {
 
 .column {
   flex: 1;
+  min-width: 0;
+}
+
+.planner-column {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .planner-column {
+    width: auto;
+  }
 }
 
 .footer {
