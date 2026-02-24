@@ -1,0 +1,72 @@
+/* Mobile responsive styles */
+@media (max-width: 767px) {
+  /* Ensure body doesn't overflow horizontally */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Make planner column take full width and allow horizontal scroll for calendar */
+  .planner-column {
+    width: 100%;
+    min-width: 0;
+    overflow-x: auto;
+  }
+
+  /* Make workspace full width on mobile */
+  .workspace-wrapper {
+    width: 100% !important;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Time controls: reduce margins and make more compact */
+  .time-controls {
+    margin-left: 5px;
+    margin-right: 5px;
+    gap: 2px;
+  }
+
+  .time-picker {
+    max-width: 3rem;
+  }
+
+  .flatpickr-input {
+    font-size: 0.75rem;
+    padding: 1px 2px;
+  }
+
+  /* Stack workspace entry content vertically on mobile */
+  .workspace-entry-content {
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 0.5em;
+  }
+
+  /* Make controls row on mobile */
+  .workspace-entry-controls {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .workspace-entry-controls-info {
+    flex: 1;
+  }
+
+  .workspace-entry-section {
+    flex: 1;
+  }
+
+  /* Make modal fit mobile screens */
+  .modal {
+    max-width: 90vw;
+    min-width: unset;
+  }
+
+  /* Improve footer spacing */
+  .footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
