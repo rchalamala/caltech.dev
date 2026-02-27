@@ -871,13 +871,6 @@
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Baptista, R",
-        "locations": "",
-        "number": 2,
-        "times": "A\nA"
-      },
-      {
-        "grades": "PASS-FAIL",
         "instructor": "Hoffmann, F",
         "locations": "",
         "number": 3,
@@ -905,7 +898,7 @@
   },
   "828839647": {
     "id": 828839647,
-    "name": "Advanced Topics in Applied and Computational Math: Particles in motion -",
+    "name": "Advanced Topics in Applied and Computational Math",
     "number": "ACM 270",
     "sections": [
       {
@@ -914,9 +907,23 @@
         "locations": "104 ANB",
         "number": 1,
         "times": "TR 13:00 - 14:25"
+      },
+      {
+        "grades": "",
+        "instructor": "Valva, C",
+        "locations": "213 ANB",
+        "number": 2,
+        "times": "MWF 10:00 - 10:55"
+      },
+      {
+        "grades": "",
+        "instructor": "Zou, Z",
+        "locations": "104 ANB",
+        "number": 3,
+        "times": "TR 10:30 - 11:55"
       }
     ],
-    "comment": " mathematical modelling across the scales",
+    "comment": " Sec 01: Particles in motion - mathematical modelling across scales (Letter & P/F) // Sec 02: Data-driven methods for dynamical systems:theory and applications (P/F only) // Sec 03: Scientific Machine Learning (Letter only)",
     "units": [
       3,
       0,
@@ -1584,7 +1591,7 @@
         "times": "W 13:00 - 13:55"
       }
     ],
-    "comment": "",
+    "comment": " max enroll: 10",
     "units": [
       1,
       4,
@@ -2026,6 +2033,13 @@
         "locations": "",
         "number": 45,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ozturk, S",
+        "locations": "",
+        "number": 46,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -2254,6 +2268,13 @@
       },
       {
         "grades": "PASS-FAIL",
+        "instructor": "Ozturk, S",
+        "locations": "",
+        "number": 30,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
         "instructor": "Phillips, R",
         "locations": "",
         "number": 31,
@@ -2331,6 +2352,31 @@
     "rating": "4.40 +/- 0.71",
     "true_units": "Somewhat Low",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=59&term_id=560&division_id=80428&department_id=137&offering_id=96678&track_id=96678-Default"
+  },
+  "627590848": {
+    "id": 627590848,
+    "name": "Introduction to Earth and Planetary Sciences: Planetary Sciences",
+    "number": "Ge/Ay 11 c",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Brown, M",
+        "locations": "162 SMD",
+        "number": 1,
+        "times": "TR 13:00 - 14:25"
+      }
+    ],
+    "comment": " Concurrent with Ge 103",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "A broad introduction to the present state and early history of the solar system, including terrestrial planets, giant planets, moons, asteroids, comets, and rings. Earth-based observations, observations by planetary spacecraft, study of meteorites, and observations of extrasolar planets are used to constrain models of the dynamical and chemical processes of planetary systems. Although Ge 11 abcd is designed as a sequence, any one term may be taken as a standalone course. Physicists and astronomers are particularly welcome.",
+    "prerequisites": "Ma 1 ab, Ph 1 ab.",
+    "rating": "5.00 +/- 0.00",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=58&term_id=559&division_id=80426&department_id=182&offering_id=97270&track_id=97270-Default"
   },
   "835737218": {
     "id": 835737218,
@@ -2544,7 +2590,7 @@
       {
         "grades": "",
         "instructor": "Hallinan, G",
-        "locations": "211 CHL",
+        "locations": "273 CHL",
         "number": 1,
         "times": "TR 13:00 - 15:55"
       }
@@ -2567,11 +2613,11 @@
     "number": "Ay/Ge 107",
     "sections": [
       {
-        "grades": "",
+        "grades": "LETTER",
         "instructor": "Hillenbrand, L / de Kleer, K",
-        "locations": "",
+        "locations": "251 ARM\nLawn BCK",
         "number": 1,
-        "times": "MW 11:00 - 11:55\nA\nR 19:00 - 21:55\nA"
+        "times": "WF 11:00 - 11:55\nR 19:00 - 21:55"
       }
     ],
     "comment": " Field Trip: tba // maximum enrollment: 14 students // If course is full, please email the instructors to be added to the waitlist, and attend the first day of class",
@@ -3389,9 +3435,9 @@
       {
         "grades": "",
         "instructor": "Howard, A",
-        "locations": "",
+        "locations": "204 CHL",
         "number": 1,
-        "times": "M 10:00 - 11:55\nA"
+        "times": "M 10:00 - 11:55"
       }
     ],
     "comment": "",
@@ -4073,12 +4119,12 @@
       {
         "grades": "",
         "instructor": "Staff",
-        "locations": "152 BRN",
+        "locations": "",
         "number": 1,
-        "times": "MW 10:30 - 11:55"
+        "times": "A\nA"
       }
     ],
-    "comment": " Pending Department Approval // maximum enrollment: 12 students // open to seniors only",
+    "comment": " Course Cancelled // maximum enrollment: 12 students // open to seniors only",
     "units": [
       3,
       0,
@@ -4307,6 +4353,13 @@
       },
       {
         "grades": "PASS-FAIL",
+        "instructor": "Nolan, T",
+        "locations": "",
+        "number": 31,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
         "instructor": "Goentoro, L",
         "locations": "",
         "number": 32,
@@ -4443,6 +4496,13 @@
         "instructor": "Demirer, G",
         "locations": "",
         "number": 51,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Fianu, I",
+        "locations": "",
+        "number": 52,
         "times": "A\nA"
       }
     ],
@@ -4766,14 +4826,14 @@
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=54&term_id=555&division_id=80423&department_id=153&offering_id=93240&track_id=93240-Default"
   },
-  "636452964": {
-    "id": 636452964,
+  "68167388": {
+    "id": 68167388,
     "name": "Design and Construction of Biodevices",
-    "number": "BE/EE/MedE 189 a",
+    "number": "BE/EE/MedE 189",
     "sections": [
       {
         "grades": "",
-        "instructor": "Yang, C",
+        "instructor": "Russell, D",
         "locations": "B127 KRK",
         "number": 1,
         "times": "TR 14:30 - 15:55"
@@ -4787,34 +4847,9 @@
     ],
     "description": "Students will learn to use an Arduino microcontroller to interface sensing and actuation hardware with the computer. Students will learn and practice engineering design principles through a set of projects where they design and implement biosensing systems. Examples include a pulse monitor, a pulse oximeter, and a real-time polymerase-chain-reaction incubator.  Enrollment is limited based on laboratory capacity.",
     "prerequisites": "",
-    "rating": "4.77 +/- 0.48",
-    "true_units": "About Right",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=57&term_id=558&division_id=80423&department_id=575&offering_id=95312&track_id=95312-Default"
-  },
-  "814654797": {
-    "id": 814654797,
-    "name": "Design and Construction of Biodevices",
-    "number": "BE/EE/MedE 189 b",
-    "sections": [
-      {
-        "grades": "",
-        "instructor": "Yang, C",
-        "locations": "B127 KRK",
-        "number": 1,
-        "times": "TR 14:30 - 15:55"
-      }
-    ],
-    "comment": "",
-    "units": [
-      0,
-      9,
-      0
-    ],
-    "description": "Students will learn to use an Arduino microcontroller to interface sensing and actuation hardware with the computer. Students will learn and practice engineering design principles through a set of projects where they design and implement biosensing systems. Examples include a pulse monitor, a pulse oximeter, and a real-time polymerase-chain-reaction incubator.  Enrollment is limited based on laboratory capacity.",
-    "prerequisites": "",
-    "rating": "4.67 +/- 0.75",
-    "true_units": "About Right",
-    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=59&term_id=560&division_id=80423&department_id=575&offering_id=96547&track_id=96547-Default"
+    "rating": "3.78 +/- 1.21",
+    "true_units": "4",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=5&term_id=319&division_id=80425&department_id=176&offering_id=56502&track_id=56502-Default"
   },
   "86161446": {
     "id": 86161446,
@@ -5359,7 +5394,7 @@
         "times": "TR 13:00 - 14:25\nW 17:00 - 17:55"
       }
     ],
-    "comment": " maximum enrollment: 33 students per section // May be taken pass/fail if taken in a first-year student's first year.// All sections are application by survey only",
+    "comment": " maximum enrollment: 33 students per section // May be taken pass/fail if taken in a first-year student's first year.// All sections are application only // https://www.registrar.caltech.edu/BI1SP2526",
     "units": [
       4,
       0,
@@ -5370,6 +5405,31 @@
     "rating": "4.63 +/- 0.70",
     "true_units": "Somewhat High",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=57&term_id=558&division_id=80423&department_id=153&offering_id=96840&track_id=96840-Default"
+  },
+  "912064196": {
+    "id": 912064196,
+    "name": "Integrated Core: Energy in Biology",
+    "number": "IC/Bi 1 c",
+    "sections": [
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Newman, D / Bois, J",
+        "locations": "",
+        "number": 1,
+        "times": "R 12:00 - 12:55\nA\nR 11:00 - 11:55\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      1,
+      1,
+      1
+    ],
+    "description": "Biological processes take place at length scales ranging from that of individual protein molecules all the way to the algal blooms or rainforests that can be seen from space and over a dizzying nearly 30 orders of magnitude in time scales.  This course will start by examining the biology of processes such as how plants and animals colonize oceanic islands and the physics of how animals such as wildebeest form giant herds during their year-long migration.  With these wonders of the living world revealed, we will then seek to understand biological phenomena by thinking about genes and cells. May be taken pass/fail if taken in a first-year student's first year.",
+    "prerequisites": "",
+    "rating": "4.73 +/- 0.65",
+    "true_units": "Somewhat Low",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=58&term_id=559&division_id=80423&department_id=153&offering_id=96156&track_id=96156-Default"
   },
   "941600264": {
     "id": 941600264,
@@ -5384,7 +5444,7 @@
         "times": "TR 13:00 - 14:25"
       }
     ],
-    "comment": " max enroll: 24 students // May be taken pass/fail if taken in a first- year student's first year // application by survey only",
+    "comment": " max enroll: 24 students // May be taken pass/fail if taken in a first- year student's first year // application only // https://www.registrar.caltech.edu/BI1SP2526",
     "units": [
       3,
       0,
@@ -5409,7 +5469,7 @@
         "times": "TR 13:00 - 15:55"
       }
     ],
-    "comment": " open by application only // maximum enrollment: 24 students // May be taken pass/fail if taken in a first-year student's first year.",
+    "comment": " maximum enrollment: 24 students // May be taken pass/fail if taken in a first-year student's first year. // application only // https://www.registrar.caltech.edu/BI1SP2526",
     "units": [
       0,
       6,
@@ -5625,6 +5685,13 @@
         "instructor": "Orphan, V",
         "locations": "",
         "number": 16,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "McMahon, A",
+        "locations": "",
+        "number": 17,
         "times": "A\nA"
       },
       {
@@ -6152,28 +6219,28 @@
     "sections": [
       {
         "grades": "LETTER",
-        "instructor": "Lester, H / Lois, C",
+        "instructor": "Lester, H / Adolphs, R",
         "locations": "152 BRN\n130 CNRB",
         "number": 1,
         "times": "R 14:00 - 14:55\nMWF 10:00 - 10:55"
       },
       {
         "grades": "LETTER",
-        "instructor": "Lester, H / Lois, C",
+        "instructor": "Lester, H / Adolphs, R",
         "locations": "130 CNRB\n152 BRN",
         "number": 2,
         "times": "MWF 10:00 - 10:55\nR 11:00 - 11:55"
       },
       {
         "grades": "LETTER",
-        "instructor": "Lester, H / Lois, C",
+        "instructor": "Lester, H / Adolphs, R",
         "locations": "130 CNRB\n101 KRK",
         "number": 3,
         "times": "MWF 10:00 - 10:55\nR 20:00 - 20:55"
       },
       {
         "grades": "LETTER",
-        "instructor": "Lester, H / Lois, C",
+        "instructor": "Lester, H / Adolphs, R",
         "locations": "130 CNRB\n101 KRK",
         "number": 4,
         "times": "MWF 10:00 - 10:55\nR 19:00 - 19:55"
@@ -7227,6 +7294,13 @@
       },
       {
         "grades": "PASS-FAIL",
+        "instructor": "Shan, S",
+        "locations": "",
+        "number": 12,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
         "instructor": "Flagan, R",
         "locations": "",
         "number": 13,
@@ -7709,7 +7783,7 @@
         "instructor": "Vicic, M",
         "locations": "106 SPL",
         "number": 1,
-        "times": "MWF 14:00 - 14:55"
+        "times": "MWF 15:00 - 15:55"
       }
     ],
     "comment": "",
@@ -8288,6 +8362,31 @@
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=59&term_id=560&division_id=80424&department_id=116&offering_id=97736&track_id=97736-Default"
   },
+  "912014912": {
+    "id": 912014912,
+    "name": "Integrated Core: General Chemistry with Lab",
+    "number": "IC/Ch 1 c",
+    "sections": [
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Rees, D / Blake, G",
+        "locations": "",
+        "number": 1,
+        "times": "W 10:00 - 10:55\nA\nM 19:00 - 20:55\nA\nT 11:00 - 11:55\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      1,
+      3,
+      2
+    ],
+    "description": "A classroom- and laboratory-based introduction to fundamental principles in biology with a focus on bioenergetics. Topics include diverse modes of energy conservation, the relationship between catabolism and anabolism, free energy of the processes of life, and how microbial metabolic diversity has shaped the Earth and can be harnessed for energy and sustainability applications.",
+    "prerequisites": "concurrent enrollment in other integrated core classes and instructor permission.",
+    "rating": "",
+    "true_units": "",
+    "link": ""
+  },
   "941400354": {
     "id": 941400354,
     "name": "Fundamental Techniques of Experimental Chemistry",
@@ -8450,7 +8549,7 @@
         "times": "T 19:00 - 20:55"
       }
     ],
-    "comment": " Sec 1 must have instructor's permission prior to registering for course // open to freshmen and sophomores only / max enroll Sec 01: 20 studentsSec 2 open to freshmen only // max enroll Sec 02: 15 students",
+    "comment": " Sec 1 must have instructor's permission prior to registering for course // open to freshmen and sophomores only / max enroll Sec 01: 20 students// Sec 2 open to freshmen only // max enroll Sec 02: 15 students",
     "units": [
       1,
       4,
@@ -9018,6 +9117,13 @@
       },
       {
         "grades": "",
+        "instructor": "Demirer, G / Okumura, M",
+        "locations": "",
+        "number": 3,
+        "times": "A\nA"
+      },
+      {
+        "grades": "",
         "instructor": "Gray, H / Okumura, M",
         "locations": "",
         "number": 4,
@@ -9204,13 +9310,20 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "See, K / Chan, G",
-        "locations": "",
+        "instructor": "Power, M / Quinn, E",
+        "locations": "320 BRN",
         "number": 1,
-        "times": "A\nA"
+        "times": "W 14:00 - 14:55"
+      },
+      {
+        "grades": "",
+        "instructor": "See, K / Chan, G",
+        "locations": "147 NYS",
+        "number": 2,
+        "times": "R 14:30 - 15:25"
       }
     ],
-    "comment": "",
+    "comment": " Sec 01: Enzyme Engineering and Biocatalysis // Sec 02: Chemistry of the Main Group: Structure, Reactivity, and Catalysis // Sec 02 on April 16, the class will be held in B122 Gates Annex",
     "units": [
       1,
       0,
@@ -9304,13 +9417,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Burnett, D",
-        "locations": "B114F NMD",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "OM,M 15:00 - 15:55"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course cancelled",
     "units": [
       3,
       0,
@@ -9329,7 +9442,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Zakem, E",
+        "instructor": "Adkins, J",
         "locations": "135 LLB",
         "number": 1,
         "times": "TR 10:30 - 11:55"
@@ -9379,13 +9492,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Hadt, R",
-        "locations": "151 CRL",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "F 10:00 - 11:55"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       3,
       0,
@@ -10540,9 +10653,9 @@
       {
         "grades": "",
         "instructor": "Abu-Mostafa, Y",
-        "locations": "",
+        "locations": "B270 MRE",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 14:30 - 15:55"
       }
     ],
     "comment": "",
@@ -10565,9 +10678,9 @@
       {
         "grades": "",
         "instructor": "Yue, Y",
-        "locations": "",
+        "locations": "105 ANB",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 14:30 - 15:55"
       }
     ],
     "comment": "",
@@ -11220,7 +11333,7 @@
     "number": "Ma/CS 6 c",
     "sections": [
       {
-        "grades": "",
+        "grades": "PASS-FAIL",
         "instructor": "Marcolli, M",
         "locations": "187 LINDE",
         "number": 1,
@@ -11272,7 +11385,7 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Vanier, M",
-        "locations": "105 ANB",
+        "locations": "104 ANB",
         "number": 15,
         "times": "OM,M 21:00 - 21:55"
       }
@@ -11302,7 +11415,7 @@
         "times": "A\nA"
       }
     ],
-    "comment": " Section 01 Course Details TBA",
+    "comment": " Course Cancelled",
     "units": [
       0,
       0,
@@ -11352,7 +11465,7 @@
         "times": "OM,M 19:00 - 19:55"
       }
     ],
-    "comment": "",
+    "comment": " Instructor permission required",
     "units": [
       1,
       0,
@@ -11834,13 +11947,6 @@
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Baptista, R",
-        "locations": "",
-        "number": 44,
-        "times": "A\nA"
-      },
-      {
-        "grades": "PASS-FAIL",
         "instructor": "Perona, P",
         "locations": "",
         "number": 45,
@@ -12207,7 +12313,7 @@
     "number": "Ma/CS 106 c",
     "sections": [
       {
-        "grades": "",
+        "grades": "PASS-FAIL",
         "instructor": "Marcolli, M",
         "locations": "187 LINDE",
         "number": 1,
@@ -12259,7 +12365,7 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Vanier, M",
-        "locations": "104 ANB",
+        "locations": "105 ANB",
         "number": 15,
         "times": "OM,M 21:00 - 21:55"
       }
@@ -13111,13 +13217,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Mazumdar, E",
+        "instructor": "Staff",
         "locations": "",
         "number": 1,
         "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course cancelled",
     "units": [
       3,
       3,
@@ -13618,6 +13724,13 @@
       },
       {
         "grades": "",
+        "instructor": "Gkioxari, G",
+        "locations": "",
+        "number": 11,
+        "times": "A\nA"
+      },
+      {
+        "grades": "",
         "instructor": "Marandi, A",
         "locations": "",
         "number": 13,
@@ -13931,7 +14044,7 @@
     "number": "EE 154 b",
     "sections": [
       {
-        "grades": "",
+        "grades": "LETTER",
         "instructor": "Klesh, A",
         "locations": "B270 MRE",
         "number": 1,
@@ -14296,11 +14409,25 @@
         "grades": "PASS-FAIL",
         "instructor": "Phillips, R",
         "locations": "100 CNRB",
-        "number": 3,
+        "number": 1,
         "times": "OM,M 14:00 - 14:55"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ye, L",
+        "locations": "",
+        "number": 2,
+        "times": "OM,A\nA\nA\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Politzer, H",
+        "locations": "",
+        "number": 3,
+        "times": "A\nA"
       }
     ],
-    "comment": " Brilliantly) Units (0.5-0.5-1) // max enroll: 25 students",
+    "comment": " Brilliantly)! units (0.5-0.5-1) // max enroll: 25 students // first-years only",
     "units": [
       0,
       0,
@@ -14744,13 +14871,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Wennberg, P",
-        "locations": "B122 GCL",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "WF 14:00 - 14:55"
+        "times": "A\nA"
       }
     ],
-    "comment": " max enroll: 65 students // see instructor for waitlist if class is full",
+    "comment": " Course cancelled // max enroll: 65 students // see instructor for waitlist if class is full",
     "units": [
       3,
       0,
@@ -15181,6 +15308,31 @@
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=55&term_id=556&division_id=80426&department_id=495&offering_id=93842&track_id=93842-Default"
   },
+  "890625951": {
+    "id": 890625951,
+    "name": "Ocean Dynamics",
+    "number": "ESE 131",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Callies, J",
+        "locations": "135 LLB",
+        "number": 1,
+        "times": "MWF 11:00 - 11:55"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "This course gives an in-depth discussion of the fluid dynamics of the world ocean. Building on the concepts developed in ESE 130, this course explores the vertical structure of the wind-driven gyre circulation, thermocline theory, the dynamics of the Southern Ocean, eddies and eddy parameterizations, geostrophic turbulence, submesoscale dynamics, the circulation of the deep ocean, tides, internal waves, and turbulent mixing.\n Offered 2025-26.",
+    "prerequisites": "ESE 102 and ESE 130, or instructor's permission.",
+    "rating": "4.73 +/- 0.53",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=55&term_id=556&division_id=80426&department_id=495&offering_id=95052&track_id=95052-Default"
+  },
   "98657813": {
     "id": 98657813,
     "name": "Cloud and Boundary Layer Dynamics",
@@ -15206,6 +15358,31 @@
     "true_units": "Somewhat Low",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=59&term_id=560&division_id=80426&department_id=495&offering_id=97612&track_id=97612-Default"
   },
+  "397854958": {
+    "id": 397854958,
+    "name": "Stable Isotope Biogeochemistry",
+    "number": "Ge/ESE 140 c",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Sessions, A",
+        "locations": "",
+        "number": 1,
+        "times": "MWF 11:00 - 11:55\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "An introduction to the use of stable isotopes in biogeochemistry, intended to give interested students the necessary background to understand applications in a variety of fields, from modern carbon cycling to microbial ecology to records of Ancient Earth. Topics include the principles of isotope distribution in reaction networks; isotope effects in enzyme-mediated reactions, and in metabolism and biosynthesis; characteristic fractionations accompanying carbon, nitrogen, and sulfur cycling; and applications of stable isotopes in the biogeosciences.\n Offered 2025-26.",
+    "prerequisites": "Ge 140 a or equivalent.",
+    "rating": "4.99 +/- 0.12",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=55&term_id=556&division_id=80426&department_id=182&offering_id=95063&track_id=95063-Default"
+  },
   "696397253": {
     "id": 696397253,
     "name": "Organic Geochemistry",
@@ -15213,13 +15390,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Sessions, A",
-        "locations": "215 NMD",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "MWF 11:00 - 11:55"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course cancelled",
     "units": [
       3,
       2,
@@ -15230,6 +15407,31 @@
     "rating": "4.87 +/- 0.41",
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=50&term_id=552&division_id=80426&department_id=182&offering_id=92481&track_id=92481-Default"
+  },
+  "100531974": {
+    "id": 100531974,
+    "name": "Climate From Space",
+    "number": "ESE 144",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Thompson, A / Teixeira, J",
+        "locations": "135 LLB",
+        "number": 1,
+        "times": "TR 14:00 - 14:55"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "This class will provide an overview of how we study the Earth's climate system using satellite remote sensing; a series of core lectures and guest lectures will be jointly taught by Caltech faculty and JPL scientists. Topics that will be covered include Introduction to the climate system; introduction to radiative transfer, retrieval methods and data assimilation; Earth's energy balance; atmospheric physics and composition; ocean dynamics and ice physics; monitoring the carbon cycle from space.\n Offered 2025-26.",
+    "prerequisites": "",
+    "rating": "4.50 +/- 0.73",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=55&term_id=556&division_id=80426&department_id=495&offering_id=95055&track_id=95055-Default"
   },
   "466494801": {
     "id": 466494801,
@@ -15255,6 +15457,31 @@
     "rating": "4.74 +/- 0.66",
     "true_units": "Somewhat Low",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=59&term_id=560&division_id=80426&department_id=182&offering_id=96627&track_id=96627-Default"
+  },
+  "241094049": {
+    "id": 241094049,
+    "name": "Remote Sensing of the Atmosphere and Biosphere",
+    "number": "ESE 156",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Frankenberg, C",
+        "locations": "162 SMD",
+        "number": 1,
+        "times": "TR 13:00 - 14:25"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "An introduction into methods to quantify trace gases as well as vegetation properties remotely (from space, air-borne or ground-based). This course will provide the basic concepts of remote sensing, using hands-on examples to be solved in class and as problem-sets. Topics covered include Absorption spectroscopy, measurement and modeling techniques, optimal estimation theory and error characterization, applications in global studies of biogeochemical cycles and air pollution/quality. This course is complementary to EE/Ae 157 ab and Ge/EE/ESE 157 c with stronger emphasis on applications for the atmosphere and biosphere. Students will work with real and synthetic remote sensing data (basic knowledge of a scripting language is required, most of the examples will be in Julia).",
+    "prerequisites": "ESE 101 or instructor's permission.",
+    "rating": "4.70 +/- 0.64",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=57&term_id=558&division_id=80426&department_id=495&offering_id=96860&track_id=96860-Default"
   },
   "815710164": {
     "id": 815710164,
@@ -15322,7 +15549,7 @@
         "times": "A\nA"
       }
     ],
-    "comment": " meets Mondays from 1-2pm in 135 LLB",
+    "comment": " To be determined",
     "units": [
       0,
       0,
@@ -15496,13 +15723,13 @@
     "sections": [
       {
         "grades": "LETTER",
-        "instructor": "Asimow, P",
+        "instructor": "Fischer, W",
         "locations": "155 ARM",
         "number": 1,
         "times": "MWF 14:00 - 14:55"
       }
     ],
-    "comment": " continuous 2-hour lab sessions on ALTERNATE Tuesdays from 9:00 to 9:00 PM on April 1, 15, 29, May 15, 29- meeting location for lab sessions: 251 Arms // Field Trip Dates: TBD",
+    "comment": " continuous 2-hour lab sessions on ALTERNATE Tuesdays from 9:00 to 9:00 PM- meeting location for lab sessions: 251 Arms // Field Trip Dates: TBD",
     "units": [
       3,
       3,
@@ -15514,6 +15741,31 @@
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=59&term_id=560&division_id=80426&department_id=182&offering_id=96513&track_id=96513-Default"
   },
+  "911868429": {
+    "id": 911868429,
+    "name": "Integrated Core: Energy, Climate, and Carbon",
+    "number": "IC/Ge 1 c",
+    "sections": [
+      {
+        "grades": "LETTER",
+        "instructor": "Asimow, P",
+        "locations": "",
+        "number": 1,
+        "times": "R 14:30 - 15:55\nA\nW 19:00 - 21:55\nA\nT 14:30 - 15:25\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      2,
+      3,
+      1
+    ],
+    "description": "A classroom- and laboratory-based introduction to fundamental principles in biology with a focus on bioenergetics. Topics include diverse modes of energy conservation, the relationship between catabolism and anabolism, free energy of the processes of life, and how microbial metabolic diversity has shaped the Earth and can be harnessed for energy and sustainability applications.",
+    "prerequisites": "concurrent enrollment in other integrated core classes and instructor permission.",
+    "rating": "",
+    "true_units": "",
+    "link": ""
+  },
   "833499538": {
     "id": 833499538,
     "name": "Introduction to Earth and Planetary Sciences: Earth and the Biosphere",
@@ -15521,13 +15773,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Fischer, W / Kirschvink, J",
-        "locations": "251 ARM",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "MWF 14:00 - 14:55"
+        "times": "A\nA"
       }
     ],
-    "comment": " taught concurrently with Ge 104",
+    "comment": " Course Cancelled // taught concurrently with Ge 104",
     "units": [
       3,
       3,
@@ -15855,6 +16107,31 @@
     "true_units": "",
     "link": ""
   },
+  "730370030": {
+    "id": 730370030,
+    "name": "Introduction to the Solar System",
+    "number": "Ge 103",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Brown, M",
+        "locations": "162 SMD",
+        "number": 1,
+        "times": "TR 13:00 - 14:25"
+      }
+    ],
+    "comment": " Concurrent with Ge/Ay 11c",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "Formation and evolution of the solar system. Interiors, surfaces, and atmospheres. Orbital dynamics, chaos, and tidal friction. Cratering. Comets and asteroids. Extrasolar planetary systems.",
+    "prerequisites": "instructor's permission.",
+    "rating": "4.76 +/- 0.54",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=58&term_id=559&division_id=80426&department_id=182&offering_id=97269&track_id=97269-Default"
+  },
   "732244191": {
     "id": 732244191,
     "name": "Introduction to Geobiology",
@@ -15862,13 +16139,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Fischer, W / Kirschvink, J",
-        "locations": "251 ARM",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "MWF 14:00 - 14:55"
+        "times": "A\nA"
       }
     ],
-    "comment": " taught concurrently with Ge 011B",
+    "comment": " Course Cancelled // taught concurrently with Ge 011B",
     "units": [
       3,
       0,
@@ -15905,6 +16182,56 @@
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=59&term_id=560&division_id=80426&department_id=182&offering_id=96593&track_id=96593-Default"
   },
+  "724798200": {
+    "id": 724798200,
+    "name": "Introduction to Planetary Mission Formulation and Design",
+    "number": "Ge 110",
+    "sections": [
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Hofmann, A",
+        "locations": "215 NMD",
+        "number": 1,
+        "times": "TR 10:30 - 11:55"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      3
+    ],
+    "description": "An introduction to planetary mission formulation from napkin-sketch-level conceptualization to proposal selection. The course will consist of modules that cover science, systems engineering, instrument design, requirements traceability and data sufficiency, mission implementation, and mission management. Coursework and assignments will include quantitation and design, crafting effective figures, proposal writing, and oral presentations (e.g., mission concept pitches, science/engineering/instrument talks).",
+    "prerequisites": "instructor's permission.",
+    "rating": "3.74 +/- 0.65",
+    "true_units": "3",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=13&term_id=439&division_id=80426&department_id=182&offering_id=61376&track_id=61376-Default"
+  },
+  "726672361": {
+    "id": 726672361,
+    "name": "Methods in Field Geophysics",
+    "number": "Ge 111",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Simons, M / Zhan, Z",
+        "locations": "",
+        "number": 1,
+        "times": "A\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      6,
+      0,
+      3
+    ],
+    "description": "An introduction to basic methods used for field geophysics (e.g., gravity, resistivity, seismic, surveying and remote sensing). The course will mix classroom and field work in the local area.",
+    "prerequisites": "Ge 102, or, be able to opt out with demonstration of prior undergrad coursework in this area.",
+    "rating": "",
+    "true_units": "",
+    "link": ""
+  },
   "768233021": {
     "id": 768233021,
     "name": "Introduction to Field Geology",
@@ -15912,13 +16239,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Bucholz, C",
-        "locations": "251 ARM",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "OM,T 23:00 - 23:55"
+        "times": "A\nA"
       }
     ],
-    "comment": " OM is on April 8, 2025 (week 2) // Class does not meet in week 1",
+    "comment": " Course cancelled",
     "units": [
       1,
       6,
@@ -15937,13 +16264,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Bucholz, C",
+        "instructor": "Staff",
         "locations": "",
         "number": 1,
         "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course cancelled",
     "units": [
       0,
       9,
@@ -15962,7 +16289,7 @@
     "sections": [
       {
         "grades": "LETTER",
-        "instructor": "Tejada Lara, J",
+        "instructor": "Grotzinger, J",
         "locations": "",
         "number": 1,
         "times": "OM,A\nA"
@@ -15987,7 +16314,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Stevenson, D",
+        "instructor": "Fuller, J",
         "locations": "162 SMD",
         "number": 1,
         "times": "MWF 10:00 - 10:55"
@@ -16055,20 +16382,70 @@
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=59&term_id=560&division_id=80426&department_id=182&offering_id=96370&track_id=96370-Default"
   },
-  "732700068": {
-    "id": 732700068,
-    "name": "Special Topics in the Planetary Sciences: Space exploration: Opportunities for science in the coming decades",
-    "number": "Ge 194",
+  "738221245": {
+    "id": 738221245,
+    "name": "Active Tectonics",
+    "number": "Ge 177",
     "sections": [
       {
-        "grades": "PASS-FAIL",
-        "instructor": "Lunine, J",
-        "locations": "162 SMD",
+        "grades": "",
+        "instructor": "Avouac, J",
+        "locations": "",
         "number": 1,
-        "times": "F 11:00 - 11:55"
+        "times": "A\nA"
       }
     ],
     "comment": "",
+    "units": [
+      3,
+      3,
+      6
+    ],
+    "description": "Introduction to techniques for identifying and quantifying active tectonic processes. Geomorphology, stratigraphy, structural geology, and geodesy applied to the study of active faults and folds in a variety of tectonic settings. Relation of seismicity and geodetic measurements to geologic structure and active tectonics processes. Review of case studies of selected earthquakes.\n Given in alternate years; offered 2025-26.",
+    "prerequisites": "Ge 112 and Ge 106 or equivalent.",
+    "rating": "4.89 +/- 0.31",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=55&term_id=556&division_id=80426&department_id=182&offering_id=95068&track_id=95068-Default"
+  },
+  "728951746": {
+    "id": 728951746,
+    "name": "Special Topics in the Geological Sciences: Economic Geology",
+    "number": "Ge 192",
+    "sections": [
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Eiler, J",
+        "locations": "215 NMD",
+        "number": 1,
+        "times": "TR 10:30 - 11:55"
+      }
+    ],
+    "comment": " units (3-0-1)",
+    "units": [
+      0,
+      0,
+      0
+    ],
+    "description": "Advanced-level discussions of problems of current interest in the geological sciences. Students may enroll for any or all terms of this course without regard to sequence.",
+    "prerequisites": "",
+    "rating": "4.23 +/- 1.19",
+    "true_units": "Somewhat High",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=57&term_id=558&division_id=80426&department_id=182&offering_id=96952&track_id=96952-Default"
+  },
+  "732700068": {
+    "id": 732700068,
+    "name": "Special Topics in the Planetary Sciences: \u0093The Physics, Chemistry, and",
+    "number": "Ge 194",
+    "sections": [
+      {
+        "grades": "LETTER",
+        "instructor": "Lunine, J",
+        "locations": "215 NMD",
+        "number": 1,
+        "times": "WF 10:00 - 10:55"
+      }
+    ],
+    "comment": " Biology of Ocean Worlds\u0094",
     "units": [
       3,
       0,
@@ -16087,13 +16464,13 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Bucholz, C",
+        "instructor": "Staff",
         "locations": "",
         "number": 1,
         "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course cancelled",
     "units": [
       0,
       0,
@@ -16112,13 +16489,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Rossman, G",
-        "locations": "251 ARM",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "MWF 15:00 - 15:55"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course cancelled",
     "units": [
       3,
       0,
@@ -16130,6 +16507,31 @@
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=59&term_id=560&division_id=80426&department_id=182&offering_id=97606&track_id=97606-Default"
   },
+  "737918696": {
+    "id": 737918696,
+    "name": "Radiogenic Isotopes Seminar",
+    "number": "Ge 217",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Farley, K",
+        "locations": "",
+        "number": 1,
+        "times": "A\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      3
+    ],
+    "description": "The course deals with advanced topics in radiogenic isotope geochemistry and builds on Ge 140 b, addressing unconventional applications of radioisotopes as well as treating several conventional radiogenic systems in more detail. Topics to be covered will be guided by class interests.\n Given in alternate years; offered 2025-26.",
+    "prerequisites": "Ge 140 b or permission of instructor.",
+    "rating": "4.61 +/- 0.77",
+    "true_units": "3",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=47&term_id=548&division_id=80426&department_id=182&offering_id=88929&track_id=88929-Default"
+  },
   "741667018": {
     "id": 741667018,
     "name": "Non-traditional Isotopes Seminar",
@@ -16137,13 +16539,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Tissot, F",
+        "instructor": "Staff",
         "locations": "",
         "number": 1,
         "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course cancelled",
     "units": [
       2,
       0,
@@ -16162,13 +16564,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Zhan, Z",
-        "locations": "256 SMD",
+        "instructor": "Staff",
+        "locations": "",
         "number": 1,
-        "times": "TR 13:30 - 14:55"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       3,
       0,
@@ -16179,6 +16581,31 @@
     "rating": "4.21 +/- 0.47",
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=59&term_id=560&division_id=80426&department_id=182&offering_id=96803&track_id=96803-Default"
+  },
+  "726977648": {
+    "id": 726977648,
+    "name": "Dynamics of Seismicity",
+    "number": "Ge 271",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Ross, Z",
+        "locations": "256 SMD",
+        "number": 1,
+        "times": "TR 10:30 - 11:55"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      0,
+      6
+    ],
+    "description": "A comprehensive introduction to seismicity of the Earth. Topics covered: Empirical laws for seismicity; spatial and temporal evolution of earthquake sequences; earthquake location algorithms; seismicity in crustal fault zones, subduction zones, creeping faults, volcanoes, and intraplate regions; earthquake triggering; induced seismicity; tectonic tremor and low-frequency earthquakes. Requires a class project.",
+    "prerequisites": "",
+    "rating": "4.52 +/- 0.50",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=54&term_id=555&division_id=80426&department_id=182&offering_id=93135&track_id=93135-Default"
   },
   "738323920": {
     "id": 738323920,
@@ -17197,6 +17624,31 @@
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=57&term_id=558&division_id=80427&department_id=136&offering_id=95568&track_id=95568-Default"
   },
+  "739669696": {
+    "id": 739669696,
+    "name": "Integrated Core: Introduction to Energy Humanities",
+    "number": "IC/Hum 55 c",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Jahner, J",
+        "locations": "",
+        "number": 1,
+        "times": "W 14:00 - 15:25\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      1,
+      0,
+      2
+    ],
+    "description": "This sequence of humanities courses will introduce students to political philosophy and ethics, historical research, and literary analysis, in conjunction with themes treated in other parts of the integrated core. Key topics will include the ethics of space travel, the history of Caltech energy research, and contemporary climate fiction. All three terms together count as the equivalent of a single 9-unit first-year humanities class; students may choose their other first-year humanities class from any area of humanities instruction.",
+    "prerequisites": "concurrent enrollment in other integrated core classes and instructor permission.",
+    "rating": "",
+    "true_units": "",
+    "link": ""
+  },
   "725246456": {
     "id": 725246456,
     "name": "Frontiers in the Humanities: Black Studies in Stem",
@@ -17232,7 +17684,7 @@
         "instructor": "Arjona, G",
         "locations": "",
         "number": 1,
-        "times": "OM,A\nA"
+        "times": "OM,M 19:00 -\nA 19:55"
       }
     ],
     "comment": " max enroll: 10 // Prerequisites: L 112 abc or equivalent.",
@@ -17400,6 +17852,81 @@
     "true_units": "",
     "link": ""
   },
+  "912032709": {
+    "id": 912032709,
+    "name": "Integrated Core: Classical Mechanics and Electromagnetism",
+    "number": "IC/Ph 1 c",
+    "sections": [
+      {
+        "grades": "LETTER",
+        "instructor": "Refael, G / George, G",
+        "locations": "",
+        "number": 1,
+        "times": "MTW 11:00 - 11:55\nA\nF 10:00 - 10:55\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      3,
+      1,
+      5
+    ],
+    "description": "A classroom- and laboratory-based introduction to fundamental principles in biology with a focus on bioenergetics. Topics include diverse modes of energy conservation, the relationship between catabolism and anabolism, free energy of the processes of life, and how microbial metabolic diversity has shaped the Earth and can be harnessed for energy and sustainability applications.",
+    "prerequisites": "concurrent enrollment in other integrated core classes and instructor permission.",
+    "rating": "4.48 +/- 1.01",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=59&term_id=560&division_id=80428&department_id=147&offering_id=96640&track_id=96640-Analytical"
+  },
+  "911674031": {
+    "id": 911674031,
+    "name": "Integrated Core: Linear Algebra and Multivariable Calculus",
+    "number": "IC/Ma 1 c",
+    "sections": [
+      {
+        "grades": "LETTER",
+        "instructor": "Graber, T / Gherman, M",
+        "locations": "",
+        "number": 1,
+        "times": "M 10:00 - 10:55\nA\nF 11:00 - 11:55\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      2,
+      0,
+      1
+    ],
+    "description": "A classroom- and laboratory-based introduction to fundamental principles in biology with a focus on bioenergetics. Topics include diverse modes of energy conservation, the relationship between catabolism and anabolism, free energy of the processes of life, and how microbial metabolic diversity has shaped the Earth and can be harnessed for energy and sustainability applications.",
+    "prerequisites": "concurrent enrollment in other integrated core classes and instructor permission.",
+    "rating": "4.16 +/- 0.92",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=59&term_id=560&division_id=80428&department_id=142&offering_id=96674&track_id=96674-Practical"
+  },
+  "106452480": {
+    "id": 106452480,
+    "name": "Integrated Core: Additional Introductory Laboratory",
+    "number": "IC 3",
+    "sections": [
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "George, G",
+        "locations": "",
+        "number": 1,
+        "times": "M 21:00 - 21:55\nA\nF 19:00 - 20:55\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      0,
+      2,
+      1
+    ],
+    "description": "This introductory lab will allow the student to investigate many of the concepts discussed in the Integrated Core lectures in a laboratory setting. The labs will cover topics such as kinematics, angular momentum, electric motor principles, and electromechanical power conversion.  Students will also have the opportunity to become familiar with basic electronic circuits and test equipment such as power supplies, multimeters, and oscilloscopes. The student will be expected to do data analysis and comprehensive lab write-ups.",
+    "prerequisites": "concurrent enrollment in other integrated core classes and instructor permission.",
+    "rating": "",
+    "true_units": "",
+    "link": ""
+  },
   "835420768": {
     "id": 835420768,
     "name": "Elementary French",
@@ -17517,7 +18044,7 @@
         "instructor": "Arjona, G",
         "locations": "",
         "number": 1,
-        "times": "OM,A\nA"
+        "times": "OM,M 17:00 -\nA 17:55"
       },
       {
         "grades": "",
@@ -17574,7 +18101,7 @@
         "instructor": "Arjona, G",
         "locations": "",
         "number": 1,
-        "times": "OM,A\nA"
+        "times": "OM,M 19:00 -\nA 19:55"
       }
     ],
     "comment": " max enroll: 10 // Prerequisites: L 112 abc or equivalent.",
@@ -17671,7 +18198,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Wang, P / Zhu, J",
+        "instructor": "Zhu, J",
         "locations": "",
         "number": 1,
         "times": "WF 09:00 - 10:25\nA"
@@ -17721,7 +18248,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Wang, P",
+        "instructor": "Wang, P / Zhu, J",
         "locations": "",
         "number": 1,
         "times": "OM,W 12:00 -\nA 12:55"
@@ -18079,9 +18606,9 @@
       {
         "grades": "",
         "instructor": "Faber, K",
-        "locations": "",
+        "locations": "102 SPL",
         "number": 1,
-        "times": "A\nA"
+        "times": "MW 09:00 - 10:25"
       }
     ],
     "comment": "",
@@ -18513,7 +19040,7 @@
     "number": "Ma 4",
     "sections": [
       {
-        "grades": "",
+        "grades": "PASS-FAIL",
         "instructor": "Marcolli, M",
         "locations": "387 LINDE",
         "number": 1,
@@ -18618,6 +19145,258 @@
         "locations": "",
         "number": 1,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Babecki, C",
+        "locations": "",
+        "number": 2,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Caniato, R",
+        "locations": "",
+        "number": 3,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Chen, D",
+        "locations": "",
+        "number": 4,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Conlon, D",
+        "locations": "",
+        "number": 5,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Dimitrov, V",
+        "locations": "",
+        "number": 6,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Dong, D",
+        "locations": "",
+        "number": 7,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "El Maazouz, Y",
+        "locations": "",
+        "number": 8,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Flach, M",
+        "locations": "",
+        "number": 9,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Fu, Y",
+        "locations": "",
+        "number": 10,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Gherman, M",
+        "locations": "",
+        "number": 11,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Graber, T",
+        "locations": "",
+        "number": 12,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Gukov, S",
+        "locations": "",
+        "number": 13,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Heinaevaara, O",
+        "locations": "",
+        "number": 14,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Hutchcroft, T",
+        "locations": "",
+        "number": 15,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Isett, P",
+        "locations": "",
+        "number": 16,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Kapustin, A",
+        "locations": "",
+        "number": 17,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Kim, Y",
+        "locations": "",
+        "number": 18,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Kitaev, A",
+        "locations": "",
+        "number": 19,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Looi, S",
+        "locations": "",
+        "number": 20,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Makarov, N",
+        "locations": "",
+        "number": 21,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Mantovan, E",
+        "locations": "",
+        "number": 22,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Marcolli, M",
+        "locations": "",
+        "number": 23,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ni, Y",
+        "locations": "",
+        "number": 24,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Oguri, H",
+        "locations": "",
+        "number": 25,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Pham, H",
+        "locations": "",
+        "number": 26,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Reeves, L",
+        "locations": "",
+        "number": 27,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ryoo, S",
+        "locations": "",
+        "number": 28,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Song, A",
+        "locations": "",
+        "number": 29,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Sugimoto, S",
+        "locations": "",
+        "number": 30,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Svoboda, J",
+        "locations": "",
+        "number": 31,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Tamuz, O",
+        "locations": "",
+        "number": 32,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Tang, Y",
+        "locations": "",
+        "number": 33,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Yu, T",
+        "locations": "",
+        "number": 34,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Zhang, L",
+        "locations": "",
+        "number": 35,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Zhang, X",
+        "locations": "",
+        "number": 36,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Rangel, A",
+        "locations": "",
+        "number": 37,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -18639,93 +19418,261 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Ni, Y",
+        "instructor": "Aluffi, P",
         "locations": "",
         "number": 1,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Ervin, G",
+        "instructor": "Babecki, C",
         "locations": "",
         "number": 2,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Mantovan, E",
+        "instructor": "Caniato, R",
         "locations": "",
         "number": 3,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Tamuz, O",
+        "instructor": "Chen, D",
         "locations": "",
         "number": 4,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Heinaevaara, O",
+        "instructor": "Conlon, D",
         "locations": "",
         "number": 5,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Marcolli, M",
+        "instructor": "Dimitrov, V",
         "locations": "",
         "number": 6,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Yu, T",
+        "instructor": "Dong, D",
         "locations": "",
         "number": 7,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Gherman, M",
+        "instructor": "El Maazouz, Y",
         "locations": "",
         "number": 8,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Dimitrov, V",
+        "instructor": "Flach, M",
         "locations": "",
         "number": 9,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Caniato, R",
+        "instructor": "Fu, Y",
         "locations": "",
         "number": 10,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Kechris, A",
+        "instructor": "Gherman, M",
         "locations": "",
         "number": 11,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Aluffi, P",
+        "instructor": "Graber, T",
         "locations": "",
         "number": 12,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Conlon, D",
+        "instructor": "Gukov, S",
         "locations": "",
         "number": 13,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Heinaevaara, O",
+        "locations": "",
+        "number": 14,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Hutchcroft, T",
+        "locations": "",
+        "number": 15,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Isett, P",
+        "locations": "",
+        "number": 16,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Kapustin, A",
+        "locations": "",
+        "number": 17,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Kim, Y",
+        "locations": "",
+        "number": 18,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Kitaev, A",
+        "locations": "",
+        "number": 19,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Looi, S",
+        "locations": "",
+        "number": 20,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Makarov, N",
+        "locations": "",
+        "number": 21,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Mantovan, E",
+        "locations": "",
+        "number": 22,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Marcolli, M",
+        "locations": "",
+        "number": 23,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ni, Y",
+        "locations": "",
+        "number": 24,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Oguri, H",
+        "locations": "",
+        "number": 25,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Pham, H",
+        "locations": "",
+        "number": 26,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Reeves, L",
+        "locations": "",
+        "number": 27,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ryoo, S",
+        "locations": "",
+        "number": 28,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Song, A",
+        "locations": "",
+        "number": 29,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Sugimoto, S",
+        "locations": "",
+        "number": 30,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Svoboda, J",
+        "locations": "",
+        "number": 31,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Tamuz, O",
+        "locations": "",
+        "number": 32,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Tang, Y",
+        "locations": "",
+        "number": 33,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Yu, T",
+        "locations": "",
+        "number": 34,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Zhang, L",
+        "locations": "",
+        "number": 35,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Zhang, X",
+        "locations": "",
+        "number": 36,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Rangel, A",
+        "locations": "",
+        "number": 37,
         "times": "A\nA"
       }
     ],
@@ -18748,107 +19695,261 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Graber, T",
+        "instructor": "Aluffi, P",
         "locations": "",
         "number": 1,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Staff",
+        "instructor": "Babecki, C",
+        "locations": "",
+        "number": 2,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Caniato, R",
         "locations": "",
         "number": 3,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Staff",
+        "instructor": "Chen, D",
         "locations": "",
         "number": 4,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Staff",
+        "instructor": "Conlon, D",
         "locations": "",
         "number": 5,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Staff",
+        "instructor": "Dimitrov, V",
         "locations": "",
         "number": 6,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Looi, S",
+        "instructor": "Dong, D",
         "locations": "",
         "number": 7,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Schroeder, P",
+        "instructor": "El Maazouz, Y",
         "locations": "",
         "number": 8,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Ni, Y",
+        "instructor": "Flach, M",
         "locations": "",
         "number": 9,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Aluffi, P",
+        "instructor": "Fu, Y",
         "locations": "",
         "number": 10,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Dimitrov, V",
+        "instructor": "Gherman, M",
         "locations": "",
         "number": 11,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Marcolli, M",
+        "instructor": "Graber, T",
         "locations": "",
         "number": 12,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Gherman, M",
+        "instructor": "Gukov, S",
         "locations": "",
         "number": 13,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Chen, D",
+        "instructor": "Heinaevaara, O",
         "locations": "",
         "number": 14,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Flach, M",
+        "instructor": "Hutchcroft, T",
         "locations": "",
         "number": 15,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Jang, H",
+        "instructor": "Isett, P",
         "locations": "",
         "number": 16,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Kapustin, A",
+        "locations": "",
+        "number": 17,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Kim, Y",
+        "locations": "",
+        "number": 18,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Kitaev, A",
+        "locations": "",
+        "number": 19,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Looi, S",
+        "locations": "",
+        "number": 20,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Makarov, N",
+        "locations": "",
+        "number": 21,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Mantovan, E",
+        "locations": "",
+        "number": 22,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Marcolli, M",
+        "locations": "",
+        "number": 23,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ni, Y",
+        "locations": "",
+        "number": 24,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Oguri, H",
+        "locations": "",
+        "number": 25,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Pham, H",
+        "locations": "",
+        "number": 26,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Reeves, L",
+        "locations": "",
+        "number": 27,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ryoo, S",
+        "locations": "",
+        "number": 28,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Song, A",
+        "locations": "",
+        "number": 29,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Sugimoto, S",
+        "locations": "",
+        "number": 30,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Svoboda, J",
+        "locations": "",
+        "number": 31,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Tamuz, O",
+        "locations": "",
+        "number": 32,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Tang, Y",
+        "locations": "",
+        "number": 33,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Yu, T",
+        "locations": "",
+        "number": 34,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Zhang, L",
+        "locations": "",
+        "number": 35,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Zhang, X",
+        "locations": "",
+        "number": 36,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Rangel, A",
+        "locations": "",
+        "number": 37,
         "times": "A\nA"
       }
     ],
@@ -19047,9 +20148,9 @@
       {
         "grades": "",
         "instructor": "El Maazouz, Y",
-        "locations": "",
+        "locations": "255 LINDE",
         "number": 1,
-        "times": "A\nA"
+        "times": "TR 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -19170,28 +20271,28 @@
     "number": "Ma 191 c",
     "sections": [
       {
-        "grades": "PASS-FAIL",
+        "grades": "",
         "instructor": "Flach, M",
         "locations": "289 LINDE",
         "number": 1,
         "times": "TR 14:00 - 15:25"
       },
       {
-        "grades": "PASS-FAIL",
+        "grades": "",
         "instructor": "Dong, D",
         "locations": "289 LINDE",
         "number": 2,
-        "times": "TR 10:30 - 11:55"
+        "times": "TR 09:00 - 10:25"
       },
       {
-        "grades": "PASS-FAIL",
-        "instructor": "Staff",
-        "locations": "",
+        "grades": "",
+        "instructor": "Zhang, L",
+        "locations": "255 LINDE",
         "number": 3,
-        "times": "A\nA"
+        "times": "TR 10:30 - 11:55"
       }
     ],
-    "comment": " Sec 1: The local Langlands correspondence // Sec 2: Topics in combinatorics // Sec 3: TBA",
+    "comment": " Sec 1: The local Langlands correspondence (P/F only) // Sec 2: Topics in combinatorics (Letter & P/F) // Sec 3: Special Theory and Anderson localization (P/F only)",
     "units": [
       3,
       0,
@@ -19764,7 +20865,7 @@
     "sections": [
       {
         "grades": "LETTER",
-        "instructor": "Fu, X",
+        "instructor": "Blanquart, G",
         "locations": "135 GTL",
         "number": 1,
         "times": "MWF 14:00 - 14:55"
@@ -20605,7 +21706,7 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Tai, Y / Gao, W",
-        "locations": "105 ANB",
+        "locations": "B270 MRE",
         "number": 1,
         "times": "R 16:00 - 16:55"
       }
@@ -20629,13 +21730,13 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Petrasek, D",
+        "instructor": "Staff",
         "locations": "",
         "number": 1,
-        "times": "TR 14:30 - 15:55\nA"
+        "times": "A\nA"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       3,
       0,
@@ -22097,7 +23198,7 @@
         "times": "TR 11:00 - 11:55\nWF 16:00 - 16:55"
       }
     ],
-    "comment": " Maximum enrollment: 35 students per section",
+    "comment": "",
     "units": [
       4,
       0,
@@ -22255,7 +23356,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Hitlin, D",
+        "instructor": "Michalakis, S",
         "locations": "469 LAU",
         "number": 1,
         "times": "T 14:00 - 15:55"
@@ -22452,9 +23553,9 @@
       {
         "grades": "",
         "instructor": "Hutzler, N",
-        "locations": "269 LAU",
+        "locations": "107 DWN",
         "number": 1,
-        "times": "MWF 11:00 - 11:55"
+        "times": "MW 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -22501,7 +23602,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Porter, F",
+        "instructor": "Nguyen, H",
         "locations": "107 DWN",
         "number": 1,
         "times": "MWF 10:00 - 10:55"
@@ -22527,9 +23628,9 @@
       {
         "grades": "",
         "instructor": "Kapustin, A",
-        "locations": "",
+        "locations": "102 SPL",
         "number": 1,
-        "times": "MW 14:30 - 15:55\nA"
+        "times": "MW 14:30 - 15:55"
       }
     ],
     "comment": "",
@@ -23476,7 +24577,7 @@
         "instructor": "Endres, M",
         "locations": "LAU",
         "number": 1,
-        "times": "W 16:00 - 17:55"
+        "times": "F 14:00 - 15:55"
       }
     ],
     "comment": " class meets outside LAU 469 common area",
@@ -24276,9 +25377,9 @@
       {
         "grades": "LETTER",
         "instructor": "George, N",
-        "locations": "115 GTL",
+        "locations": "104 WAT",
         "number": 1,
-        "times": "W 13:00 - 13:55"
+        "times": "W 10:00 - 10:55"
       }
     ],
     "comment": " Open to E&AS Seniors only // All other students must complete waitlist form: https://forms.office.com/r/KABh4Epxap // Max enroll: 20 students",
@@ -24899,7 +26000,7 @@
         "times": "M 15:00 - 15:50"
       }
     ],
-    "comment": " Undergraduate Students Only // Course is located at 1245 Arden Rd. Student Wellness Services North",
+    "comment": " maximum enrollment: 12 students // Undergraduate Students Only // Course is located at 1245 Arden Rd. Student Wellness Services North",
     "units": [
       1,
       0,
