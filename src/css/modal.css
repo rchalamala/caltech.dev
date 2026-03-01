@@ -12,6 +12,14 @@
   min-width: 400px;
 }
 
+@media (max-width: 480px) {
+  .modal {
+    max-width: 90vw;
+    min-width: unset;
+    width: 90vw;
+  }
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;
