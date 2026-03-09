@@ -12,18 +12,13 @@ import {
   normalizeAvailableTimes,
   shortenCourses,
 } from "./lib/scheduling";
-import DATA_FA2023 from "./data/IndexedTotalFA2022-23.json";
-import DATA_WI2023 from "./data/IndexedTotalWI2022-23.json";
-import DATA_SP2023 from "./data/IndexedTotalSP2022-23.json";
-import DATA_FA2024 from "./data/IndexedTotalFA2023-24.json";
-import DATA_WI2024 from "./data/IndexedTotalWI2023-24.json";
-import DATA_SP2024 from "./data/IndexedTotalSP2023-24.json";
-import DATA_FA2025 from "./data/IndexedTotalFA2024-25.json";
-import DATA_WI2025 from "./data/IndexedTotalWI2024-25.json";
-import DATA_SP2025 from "./data/IndexedTotalSP2024-25.json";
-import DATA_FA2026 from "./data/IndexedTotalFA2025-26.json";
-import DATA_WI2026 from "./data/IndexedTotalWI2025-26.json";
-import DATA_SP2026 from "./data/IndexedTotalSP2025-26.json";
+import {
+  DEFAULT_TERM_PATH,
+  getSupportedTermPaths,
+  isSupportedTermPath,
+  loadTermCourseData,
+  resolveTermPath,
+} from "./lib/termData";
 import {
   AvailableTimes,
   CourseIndex,
@@ -32,23 +27,6 @@ import {
   Maybe,
   Workspace as WorkspaceState,
 } from "./types";
-
-const CURRENT_TERM = "/sp2026";
-
-const courseDataSources: Record<string, CourseIndex> = {
-  "/fa2023": DATA_FA2023,
-  "/wi2023": DATA_WI2023,
-  "/sp2023": DATA_SP2023,
-  "/fa2024": DATA_FA2024,
-  "/wi2024": DATA_WI2024,
-  "/sp2024": DATA_SP2024,
-  "/fa2025": DATA_FA2025,
-  "/wi2025": DATA_WI2025,
-  "/sp2025": DATA_SP2025,
-  "/fa2026": DATA_FA2026,
-  "/wi2026": DATA_WI2026,
-  "/sp2026": DATA_SP2026,
-};
 
 export const AllCourses = createContext<CourseIndex>({});
 
@@ -125,18 +103,58 @@ const useReactPath = () => {
 function App() {
   // really basic routing
   const pathname = useReactPath();
-  const realPath = pathname === "/" ? CURRENT_TERM : pathname;
-  const data = courseDataSources[realPath];
-  const [indexedCourses, setIndexedCourses] = useState<CourseIndex>({});
+  const realPath = resolveTermPath(pathname);
+  const [courseDataState, setCourseDataState] = useState<{
+    termPath: string;
+    data: CourseIndex;
+    error: string | null;
+  }>({
+    termPath: "",
+    data: {},
+    error: null,
+  });
 
-  // load course data from a json url
+  const indexedCourses = courseDataState.termPath === realPath
+    ? courseDataState.data
+    : {};
+  const dataLoadError =
+    courseDataState.termPath === realPath ? courseDataState.error : null;
+  const isLoadingCourses = courseDataState.termPath !== realPath;
+
   useEffect(() => {
-    try {
-      setIndexedCourses(data);
-    } catch {
-      alert("Error loading course data");
-    }
-  }, [data]);
+    let cancelled = false;
+
+    loadTermCourseData(realPath)
+      .then((courseData) => {
+        if (cancelled) {
+          return;
+        }
+
+        setCourseDataState({
+          termPath: realPath,
+          data: courseData,
+          error: null,
+        });
+      })
+      .catch((error: unknown) => {
+        if (cancelled) {
+          return;
+        }
+
+        setCourseDataState({
+          termPath: realPath,
+          data: {},
+          error:
+            error instanceof Error
+              ? error.message
+              : "Unable to load course data.",
+        });
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [realPath]);
 
   // 5 blank workspaces by default bc I'm too lazy to implement dynamic tabs and stuff
   const localWorkspaces = localStorage.getItem("workspaces" + realPath);
@@ -434,6 +452,7 @@ function App() {
   const { arrangements, arrangementIdx } = workspaces[workspaceIdx];
 
   const [modalOpen, setModalOpen] = useState(false);
+  const supportedTerms = getSupportedTermPaths();
 
   return (
     <AllCourses.Provider value={indexedCourses}>
@@ -514,12 +533,41 @@ function App() {
         </div>
 
         <main className="py-5 mx-2 antialiased scroll-smooth selection:bg-orange-400 selection:text-black">
-          <div id="column-container">
-            <div className="column planner-column">
-              <Planner />
+          {isLoadingCourses ? (
+            <div className="py-16 text-center space-y-2">
+              <p className="text-2xl font-bold">Loading course data…</p>
+              <p>Term: {realPath.substring(1)}</p>
             </div>
-            <WorkspacePanel term={realPath.substring(1)} />
-          </div>
+          ) : dataLoadError ? (
+            <div className="py-16 text-center space-y-4">
+              <p className="text-2xl font-bold">
+                Unable to load course data for {realPath.substring(1)}
+              </p>
+              <p>{dataLoadError}</p>
+              {!isSupportedTermPath(pathname) && (
+                <p className="text-sm text-neutral-600">
+                  Supported terms: {supportedTerms.join(", ")}
+                </p>
+              )}
+              <p>
+                Try the{" "}
+                <a
+                  className="font-mono font-bold text-orange-500 hover:underline"
+                  href={DEFAULT_TERM_PATH}
+                >
+                  {DEFAULT_TERM_PATH.substring(1)}
+                </a>{" "}
+                term instead.
+              </p>
+            </div>
+          ) : (
+            <div id="column-container">
+              <div className="column planner-column">
+                <Planner />
+              </div>
+              <WorkspacePanel term={realPath.substring(1)} />
+            </div>
+          )}
         </main>
 
         <footer className="footer">
