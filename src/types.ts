@@ -1,13 +1,13 @@
-type Maybe<T> = T | null;
+export type Maybe<T> = T | null;
 
-interface CourseStorage {
+export interface CourseStorage {
   courseData: CourseData;
   sectionId: Maybe<number>;
   enabled: boolean;
   locked: boolean;
 }
 
-interface CourseData {
+export interface CourseData {
   id: number;
   name: string;
   number: string;
@@ -21,7 +21,7 @@ interface CourseData {
   comment: string;
 }
 
-interface DateData {
+export interface DateData {
   id: number;
   title: string;
   start: Date;
@@ -29,7 +29,7 @@ interface DateData {
   courseData: CourseData;
 }
 
-interface SectionData {
+export interface SectionData {
   grades: string;
   instructor: string;
   locations: string;
@@ -37,21 +37,21 @@ interface SectionData {
   times: string;
 }
 
-interface CourseStorageShort {
+export interface CourseStorageShort {
   courseId: number;
   sectionId: Maybe<number>;
   enabled: boolean;
   locked: boolean;
 }
 
-type AvailableTimes = Date[][];
+export type AvailableTimeRange = [Date, Date];
+export type AvailableTimes = AvailableTimeRange[];
 
-// the overall state of a single workspace
-interface Workspace {
+export interface Workspace {
   courses: CourseStorage[];
   arrangements: CourseStorageShort[][];
   arrangementIdx: Maybe<number>;
   availableTimes: AvailableTimes;
 }
 
-type CourseIndex = Record<string, CourseData>;
+export type CourseIndex = Record<string, CourseData>;

@@ -1,29 +1,46 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useMemo, useState } from "react";
 import Modal, { useModal } from "./Modal";
 import Select from "react-select";
 import { SingleValue } from "react-select";
-import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import {
+  DragDropContext,
+  Draggable,
+  DraggableProvided,
+  DraggableStateSnapshot,
+  DropResult,
+  Droppable,
+  DroppableProvided,
+} from "@hello-pangea/dnd";
 import { Fzf } from "fzf";
 import Lock from "@mui/icons-material/Lock";
 import LockOpen from "@mui/icons-material/LockOpen";
 import Delete from "@mui/icons-material/Delete";
+import DragIndicator from "@mui/icons-material/DragIndicator";
 import ArrowBack from "@mui/icons-material/ArrowBack";
 import ArrowForward from "@mui/icons-material/ArrowForward";
-import { shortenCourses, lengthenCourses, AllCourses, AppState } from "./App";
+import { AllCourses, AppState } from "./App";
 import { motion } from "framer-motion";
+import { lengthenCourses, reorder, shortenCourses } from "./lib/scheduling";
 
-import "react-toggle/style.css";
 import "./css/workspace.css";
 import { Collapse, IconButton, Switch } from "@mui/material";
 import { UnfoldLess, UnfoldMore } from "@mui/icons-material";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import TERM_START_DATES from "./data/term_start_dates.json";
+import {
+  CourseData,
+  CourseIndex,
+  CourseStorage,
+  CourseStorageShort,
+  Maybe,
+  SectionData,
+} from "./types";
 
 const DEFAULT_COURSES: { [key: string]: string[] } = {
   "fa": ["Ma 1 a", "Ph 1 a", "Ch 1 a", "CS 1"],
   "wi": ["Ma 1 b", "Ph 1 b", "Ch 1 b", "CS 2"],
   "sp": ["Ma 1 c", "Ph 1 c", "CS 3 x"],
-}
+};
 
 /** Fetches courses */
 function getCourse(
@@ -179,14 +196,20 @@ function SectionDropdown(props: { course: CourseStorage }) {
   const state = useContext(AppState);
 
   const onChange = (newSection: SingleValue<Maybe<SectionData>>) => {
-    course.sectionId =
+    const sectionId =
       newSection !== null
         ? course.courseData.sections.findIndex(
             (s) => s.number === newSection.number,
           )
         : null;
-    // if course with same id already exists, section number will simply be updated
-    state.addCourse(course);
+
+    state.setCourses(
+      state.courses.map((existingCourse) =>
+        existingCourse.courseData.id === course.courseData.id
+          ? { ...existingCourse, sectionId }
+          : existingCourse,
+      ),
+    );
   };
 
   return (
@@ -253,8 +276,6 @@ function AdvancedCourseInfo(props: { course: CourseStorage }) {
 
 interface WorkspaceEntryProps {
   course: CourseStorage;
-  innerRef: any;
-  provided: any;
   index: number;
 }
 
@@ -287,20 +308,20 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
   return (
     <div>
       <Draggable draggableId={`${course.courseData.id}`} index={props.index}>
-        {(provided) => (
+        {(provided: DraggableProvided, snapshot: DraggableStateSnapshot) => (
           <div
             className={`${className} bg-white shadow-lg border-0 ${
               course.locked && "bg-neutral-100"
             }`}
             ref={provided.innerRef}
             {...provided.draggableProps}
-            {...provided.dragHandleProps}
+            style={provided.draggableProps.style}
           >
             <div
-              className={`relative w-full whitespace-nowrap`}
+              className={`relative w-full whitespace-nowrap ${snapshot.isDragging ? "workspace-entry-dragging" : ""}`}
               ref={animParent}
             >
-              <div className="left-0 w-min align-middle inline-block">
+              <div className="left-0 w-min align-middle inline-flex items-center">
                 <IconButton
                   onClick={() => {
                     setExpanded(!expanded);
@@ -308,6 +329,14 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
                 >
                   {expanded ? <UnfoldLess /> : <UnfoldMore />}
                 </IconButton>
+                <span
+                  className="workspace-entry-drag-handle"
+                  aria-label={`Reorder ${course.courseData.number}`}
+                  title={`Reorder ${course.courseData.number}`}
+                  {...provided.dragHandleProps}
+                >
+                  <DragIndicator fontSize="small" />
+                </span>
               </div>
               {expanded ? (
                 <></>
@@ -387,7 +416,7 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
         )}
       </Draggable>
       <Modal isOpen={infoModalOpen} onClose={() => setInfoModalOpen(false)}>
-        <AdvancedCourseInfo course={props.course} />
+        <AdvancedCourseInfo course={course} />
       </Modal>
     </div>
   );
@@ -396,19 +425,14 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
 function WorkspaceSearch() {
   const state = useContext(AppState);
   const indexedCourses = useContext(AllCourses);
-  const courses = Object.values(indexedCourses);
-
-  // For some reason, options = [] on the second render, even though
-  // courses = [...] by then and options should equal courses.
-  // I came up with this hacky solution to get around that...
-  // The dropdown options should re-render properly
-  let [options, setOptions] = useState<CourseData[]>(courses);
-  const [firstLoad, setFirstLoad] = useState(true);
-  if (firstLoad && options.length === 0) {
-    options = courses;
-  }
+  const courses = useMemo(() => Object.values(indexedCourses), [indexedCourses]);
+  const [options, setOptions] = useState<CourseData[]>(() => courses);
 
   const [selectedCourse, setCourse] = useState<Maybe<CourseData>>(null);
+
+  useEffect(() => {
+    setOptions(courses);
+  }, [courses]);
 
   const handleSelect = (courseData: SingleValue<CourseData>) => {
     setCourse(courseData as CourseData);
@@ -423,13 +447,16 @@ function WorkspaceSearch() {
     }
   };
 
-  const fzf = new Fzf(courses, {
-    selector: (item) => `${item.number} ${item.name}`,
-  });
+  const fzf = useMemo(
+    () =>
+      new Fzf(courses, {
+        selector: (item) => `${item.number} ${item.name}`,
+      }),
+    [courses],
+  );
 
   const sortCourses = (input: string) => {
     setOptions(fzf.find(input).map((item) => item.item));
-    setFirstLoad(false);
   };
 
   return (
@@ -494,18 +521,6 @@ function WorkspaceScheduler() {
   }
 }
 
-function reorder<T>(
-  list: Array<T>,
-  startIndex: number,
-  endIndex: number,
-): Array<T> {
-  const result = Array.from(list);
-  const [removed] = result.splice(startIndex, 1);
-  result.splice(endIndex, 0, removed);
-
-  return result;
-}
-
 /** A component that provides UI for searching/adding/removing courses
 A fuzzy searcher will show you a limited selection of courses
 Clicking on the course will add it to the workspace and enable it (there will also be a button to show more info)
@@ -515,18 +530,7 @@ export default function Workspace({ term }: { term: string }) {
   const state = useContext(AppState);
   const indexedCourses = useContext(AllCourses);
 
-  const workspaceEntries = (provided: any) =>
-    state.courses.map((course: CourseStorage, index: number) => (
-      <WorkspaceEntry
-        index={index}
-        innerRef={provided.innerRef}
-        provided={provided}
-        course={course}
-        key={course.courseData.id}
-      />
-    ));
-
-  let units = [0, 0, 0];
+  const units = [0, 0, 0];
   for (let i = 0; i < state.courses.length; ++i) {
     if (state.courses[i].enabled) {
       units[0] += state.courses[i].courseData.units[0];
@@ -535,7 +539,7 @@ export default function Workspace({ term }: { term: string }) {
     }
   }
 
-  const [openExportModal, exportModal] = useModal((_props) => {
+  const [openExportModal, exportModal] = useModal(() => {
     const shortened = shortenCourses(state.courses)
       .map((c) => [c.courseId, c.enabled, c.locked, c.sectionId])
       .flat();
@@ -599,7 +603,7 @@ export default function Workspace({ term }: { term: string }) {
     }
   };
 
-  function onDragEnd(result: any) {
+  function onDragEnd(result: DropResult) {
     if (
       !result.destination ||
       result.destination.index === result.source.index
@@ -706,9 +710,15 @@ export default function Workspace({ term }: { term: string }) {
         ) : (
           <DragDropContext onDragEnd={onDragEnd}>
             <Droppable droppableId="droppable">
-              {(provided) => (
+              {(provided: DroppableProvided) => (
                 <div ref={provided.innerRef} {...provided.droppableProps}>
-                  {workspaceEntries(provided)}
+                  {state.courses.map((course, index) => (
+                    <WorkspaceEntry
+                      index={index}
+                      course={course}
+                      key={course.courseData.id}
+                    />
+                  ))}
                   {provided.placeholder}
                 </div>
               )}

@@ -1,15 +1,17 @@
 import { useContext } from "react";
 import { AppState } from "./App";
-import { Calendar, momentLocalizer, Views } from "react-big-calendar";
-import moment from "moment";
+import { Calendar, dayjsLocalizer, Views } from "react-big-calendar";
+import dayjs from "dayjs";
 import Flatpickr from "react-flatpickr";
+import { parseTimes } from "./lib/time";
+import { CourseStorage, DateData } from "./types";
 
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import "flatpickr/dist/themes/airbnb.css";
 
 import "./css/planner.css";
 
-const localizer = momentLocalizer(moment);
+const localizer = dayjsLocalizer(dayjs);
 const hasWeekendCourse = false;
 
 function CourseToDates(courses: CourseStorage[]): DateData[] {
@@ -31,11 +33,14 @@ function CourseToDates(courses: CourseStorage[]): DateData[] {
         continue;
       }
       for (const interval of day) {
+        if (!interval) {
+          continue;
+        }
         dates.push({
           id: course.courseData.id,
           title: course.courseData.number + " Section " + section.number,
-          start: interval!.start,
-          end: interval!.end,
+          start: interval.start,
+          end: interval.end,
           courseData: course.courseData,
         });
       }
@@ -43,47 +48,6 @@ function CourseToDates(courses: CourseStorage[]): DateData[] {
   }
 
   return dates;
-}
-
-type TimeInterval = {
-  start: Date;
-  end: Date;
-};
-
-export function parseTimes(times: string): Maybe<TimeInterval>[][] {
-  const ret: Maybe<TimeInterval>[][] = [[], [], [], [], []];
-  const day_to_i = ["M", "T", "W", "R", "F"]; // TODO: Include Sat/Sun Courses, OM Courses
-
-  // super hacky fix for a parsing bug when location is A
-  let times_clean = times.replace("\nA", "");
-  console.log(times_clean)
-
-  for (let line of times_clean.split(/[,\n]/)) {
-    const match = line.match(/([MTWRF]+) (\d\d):(\d\d) - (\d\d):(\d\d)/);
-    if (match !== null) {
-      //  An example match: [ "MWF 14:00 - 14:55", "MWF", "14", "00", "14", "55" ]
-      for (const day of match[1]) {
-        ret[day_to_i.indexOf(day)].push({
-          start: new Date(
-            2018,
-            0,
-            day_to_i.indexOf(day) + 1,
-            parseInt(match[2]),
-            parseInt(match[3]),
-          ),
-          end: new Date(
-            2018,
-            0,
-            day_to_i.indexOf(day) + 1,
-            // stupid hacky thing to avoid crashing when time is entered incorrectly in catalog (11pm instead of 11am)
-            parseInt(match[4]) === 23 ? 11 : parseInt(match[4]),
-            parseInt(match[5]),
-          ),
-        });
-      }
-    }
-  }
-  return ret;
 }
 
 /** Calendar shown on left side of screen
