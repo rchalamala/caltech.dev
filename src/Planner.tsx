@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { AppState } from "./App";
-import { Calendar, momentLocalizer, Views } from "react-big-calendar";
-import moment from "moment";
+import { Calendar, dayjsLocalizer, Views } from "react-big-calendar";
+import dayjs from "dayjs";
 import Flatpickr from "react-flatpickr";
 import { parseTimes } from "./lib/time";
 import { CourseStorage, DateData } from "./types";
@@ -11,7 +11,7 @@ import "flatpickr/dist/themes/airbnb.css";
 
 import "./css/planner.css";
 
-const localizer = momentLocalizer(moment);
+const localizer = dayjsLocalizer(dayjs);
 const hasWeekendCourse = false;
 
 function CourseToDates(courses: CourseStorage[]): DateData[] {

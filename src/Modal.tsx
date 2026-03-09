@@ -1,4 +1,4 @@
-import { ReactNode, useEffect, useState } from "react";
+import { ReactElement, ReactNode, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import "./css/modal.css";
@@ -76,7 +76,7 @@ function Modal({ isOpen, onClose, children }: ModalProps) {
   );
 }
 
-export type ModalReturn = [() => void, JSX.Element];
+export type ModalReturn = [() => void, ReactElement];
 
 export function useModal(
   contents: (props: ModalProps) => ReactNode,

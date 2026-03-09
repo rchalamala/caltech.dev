@@ -20,7 +20,6 @@ import { AllCourses, AppState } from "./App";
 import { motion } from "framer-motion";
 import { lengthenCourses, reorder, shortenCourses } from "./lib/scheduling";
 
-import "react-toggle/style.css";
 import "./css/workspace.css";
 import { Collapse, IconButton, Switch } from "@mui/material";
 import { UnfoldLess, UnfoldMore } from "@mui/icons-material";
