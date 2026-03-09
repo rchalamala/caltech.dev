@@ -124,6 +124,19 @@ li {
   /* top: -12px; */
 }
 
+.workspace-entry-drag-handle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(115, 115, 115);
+  cursor: grab;
+  padding: 0.25rem;
+}
+
+.workspace-entry-drag-handle:active {
+  cursor: grabbing;
+}
+
 .workspace-entry-toggle .react-toggle-track {
   border-radius: 20px;
 }

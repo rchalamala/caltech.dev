@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useMemo, useState } from "react";
 import Modal, { useModal } from "./Modal";
 import Select from "react-select";
 import { SingleValue } from "react-select";
@@ -14,6 +14,7 @@ import { Fzf } from "fzf";
 import Lock from "@mui/icons-material/Lock";
 import LockOpen from "@mui/icons-material/LockOpen";
 import Delete from "@mui/icons-material/Delete";
+import DragIndicator from "@mui/icons-material/DragIndicator";
 import ArrowBack from "@mui/icons-material/ArrowBack";
 import ArrowForward from "@mui/icons-material/ArrowForward";
 import { AllCourses, AppState } from "./App";
@@ -277,13 +278,12 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
             }`}
             ref={provided.innerRef}
             {...provided.draggableProps}
-            {...provided.dragHandleProps}
           >
             <div
               className={`relative w-full whitespace-nowrap`}
               ref={animParent}
             >
-              <div className="left-0 w-min align-middle inline-block">
+              <div className="left-0 w-min align-middle inline-flex items-center">
                 <IconButton
                   onClick={() => {
                     setExpanded(!expanded);
@@ -291,6 +291,14 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
                 >
                   {expanded ? <UnfoldLess /> : <UnfoldMore />}
                 </IconButton>
+                <span
+                  className="workspace-entry-drag-handle"
+                  aria-label={`Reorder ${course.courseData.number}`}
+                  title={`Reorder ${course.courseData.number}`}
+                  {...provided.dragHandleProps}
+                >
+                  <DragIndicator fontSize="small" />
+                </span>
               </div>
               {expanded ? (
                 <></>
@@ -379,7 +387,7 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
 function WorkspaceSearch() {
   const state = useContext(AppState);
   const indexedCourses = useContext(AllCourses);
-  const courses = Object.values(indexedCourses);
+  const courses = useMemo(() => Object.values(indexedCourses), [indexedCourses]);
   const [options, setOptions] = useState<CourseData[]>(() => courses);
 
   const [selectedCourse, setCourse] = useState<Maybe<CourseData>>(null);
@@ -401,9 +409,13 @@ function WorkspaceSearch() {
     }
   };
 
-  const fzf = new Fzf(courses, {
-    selector: (item) => `${item.number} ${item.name}`,
-  });
+  const fzf = useMemo(
+    () =>
+      new Fzf(courses, {
+        selector: (item) => `${item.number} ${item.name}`,
+      }),
+    [courses],
+  );
 
   const sortCourses = (input: string) => {
     setOptions(fzf.find(input).map((item) => item.item));
