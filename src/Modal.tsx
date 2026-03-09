@@ -1,12 +1,12 @@
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import "./css/modal.css";
 
 export interface ModalProps {
   isOpen: boolean;
-  onClose: any;
-  children: any;
+  onClose: () => void;
+  children: ReactNode;
 }
 
 function Modal({ isOpen, onClose, children }: ModalProps) {
@@ -79,7 +79,7 @@ function Modal({ isOpen, onClose, children }: ModalProps) {
 export type ModalReturn = [() => void, JSX.Element];
 
 export function useModal(
-  contents: (props: ModalProps) => JSX.Element,
+  contents: (props: ModalProps) => ReactNode,
 ): ModalReturn {
   const [isOpen, setIsOpen] = useState(false);
   const onClose = () => {
