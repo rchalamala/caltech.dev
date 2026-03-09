@@ -11,13 +11,13 @@ Favicon art by Audrey Wong.
 Install dependencies:
 
 ```bash
-npm install
+bun install
 ```
 
 Start the dev server:
 
 ```bash
-npm run dev
+bun run dev
 ```
 
 ## Validation
@@ -26,13 +26,19 @@ The repository now includes a GitHub Actions CI workflow that runs the same
 core checks used locally:
 
 ```bash
-npm run lint
-npm run test:run
-npm run build
+bun run lint
+bun run test:run
+bun run build
 ```
 
 To run the full validation sequence locally in one command:
 
 ```bash
-npm run check
+bun run check
 ```
+
+## Package manager
+
+This repository now uses a Bun-first workflow. Installing dependencies with
+`npm install` is intentionally blocked so the committed `bun.lock` remains the
+single source of truth for dependency resolution.

@@ -2,6 +2,7 @@
   "name": "caltech-dev",
   "version": "0.1.0",
   "private": false,
+  "packageManager": "bun@1.3.10",
   "dependencies": {
     "@emotion/babel-plugin": "^11.13.5",
     "@emotion/react": "^11.14.0",
@@ -22,6 +23,7 @@
     "react-select": "^5.10.2"
   },
   "scripts": {
+    "preinstall": "node ./enforce-bun.js",
     "dev": "vite",
     "start": "vite",
     "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.node.json",
