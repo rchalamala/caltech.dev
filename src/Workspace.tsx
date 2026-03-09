@@ -6,6 +6,7 @@ import {
   DragDropContext,
   Draggable,
   DraggableProvided,
+  DraggableStateSnapshot,
   DropResult,
   Droppable,
   DroppableProvided,
@@ -271,16 +272,17 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
   return (
     <div>
       <Draggable draggableId={`${course.courseData.id}`} index={props.index}>
-        {(provided: DraggableProvided) => (
+        {(provided: DraggableProvided, snapshot: DraggableStateSnapshot) => (
           <div
             className={`${className} bg-white shadow-lg border-0 ${
               course.locked && "bg-neutral-100"
             }`}
             ref={provided.innerRef}
             {...provided.draggableProps}
+            style={provided.draggableProps.style}
           >
             <div
-              className={`relative w-full whitespace-nowrap`}
+              className={`relative w-full whitespace-nowrap ${snapshot.isDragging ? "workspace-entry-dragging" : ""}`}
               ref={animParent}
             >
               <div className="left-0 w-min align-middle inline-flex items-center">
