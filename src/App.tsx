@@ -5,32 +5,26 @@ import Modal from "./Modal";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import { motion } from "framer-motion";
 import {
-  createEmptyWorkspace,
-  generateCourseSections,
-  lengthenCourses,
-  normalizeAvailableTime,
-  normalizeAvailableTimes,
-  shortenCourses,
-} from "./lib/scheduling";
-import {
   DEFAULT_TERM_PATH,
   getSupportedTermPaths,
   isSupportedTermPath,
   loadTermCourseData,
   resolveTermPath,
 } from "./lib/termData";
+import { useWorkspaceState, WorkspaceStateAPI } from "./hooks/useWorkspaceState";
 import {
-  AvailableTimes,
   CourseIndex,
   CourseStorage,
   CourseStorageShort,
   Maybe,
   Workspace as WorkspaceState,
+  AvailableTimes,
 } from "./types";
+import { createEmptyWorkspace } from "./lib/scheduling";
 
 export const AllCourses = createContext<CourseIndex>({});
 
-interface AppStateProps {
+export interface AppStateProps {
   workspaces: WorkspaceState[];
   workspaceIdx: number;
   setWorkspace: (idx: number) => void;
@@ -72,16 +66,6 @@ export const AppState = createContext<AppStateProps>({
   availableTimes: [],
   updateAvailableTimes: () => null,
 });
-
-function setArrayIdx<T>(arr: T[], idx: number, element: T): T[] {
-  return arr.map((value, i) => {
-    if (i === idx) {
-      return element;
-    } else {
-      return value;
-    }
-  });
-}
 
 // credit to https://stackoverflow.com/a/58443076
 const useReactPath = () => {
@@ -126,21 +110,11 @@ function App() {
 
     loadTermCourseData(realPath)
       .then((courseData) => {
-        if (cancelled) {
-          return;
-        }
-
-        setCourseDataState({
-          termPath: realPath,
-          data: courseData,
-          error: null,
-        });
+        if (cancelled) return;
+        setCourseDataState({ termPath: realPath, data: courseData, error: null });
       })
       .catch((error: unknown) => {
-        if (cancelled) {
-          return;
-        }
-
+        if (cancelled) return;
         setCourseDataState({
           termPath: realPath,
           data: {},
@@ -151,330 +125,21 @@ function App() {
         });
       });
 
-    return () => {
-      cancelled = true;
-    };
+    return () => { cancelled = true; };
   }, [realPath]);
 
-  // 5 blank workspaces by default bc I'm too lazy to implement dynamic tabs and stuff
-  const localWorkspaces = localStorage.getItem("workspaces" + realPath);
-  const [workspaces, setWorkspaces] = useState<WorkspaceState[]>(
-    localWorkspaces
-      ? JSON.parse(localWorkspaces)
-      : [
-          createEmptyWorkspace(),
-          createEmptyWorkspace(),
-          createEmptyWorkspace(),
-          createEmptyWorkspace(),
-          createEmptyWorkspace(),
-      ],
+  // All workspace state is managed by this hook
+  const workspaceState: WorkspaceStateAPI = useWorkspaceState(
+    realPath,
+    indexedCourses,
   );
-  const localWorkspaceIdx = localStorage.getItem("workspaceIdx" + realPath);
-  const [workspaceIdx, setWorkspaceIdx] = useState<number>(
-    localWorkspaceIdx ? JSON.parse(localWorkspaceIdx) : 0,
-  );
-
-  const courses = workspaces[workspaceIdx].courses;
-  const availableTimes = normalizeAvailableTimes(
-    workspaces[workspaceIdx].availableTimes.map(([start, end]) => [
-      new Date(start),
-      new Date(end),
-    ]),
-  );
-
-  // Save state to local storage
-  useEffect(() => {
-    localStorage.setItem("workspaces" + realPath, JSON.stringify(workspaces));
-    localStorage.setItem(
-      "workspaceIdx" + realPath,
-      JSON.stringify(workspaceIdx),
-    );
-  }, [workspaces, workspaceIdx, realPath]);
-
-  const clearUnlockedSections = (courseList: CourseStorage[]) =>
-    courseList.map((course) =>
-      course.locked ? course : { ...course, sectionId: null },
-    );
-
-  /** Helper functions to be sent sent through Context */
-  const addCourse = (newCourse: CourseStorage) => {
-    const result = courses.find(
-      (course) => course.courseData.id === newCourse.courseData.id,
-    );
-    let newCourses: CourseStorage[] = [];
-    if (result) {
-      // course was already in workspace
-      newCourses = courses;
-    } else {
-      newCourses = [
-        ...courses,
-        { ...newCourse, locked: true, sectionId: 0 },
-      ];
-    }
-    const newArrangements = generateCourseSections(newCourses, availableTimes);
-    let newArrangementIdx: Maybe<number> = null;
-    if (newArrangements.length === 0) {
-      newCourses = clearUnlockedSections(newCourses);
-    } else {
-      newArrangementIdx = 0;
-      newCourses = lengthenCourses(
-        newArrangements[newArrangementIdx],
-        indexedCourses,
-      );
-    }
-    // these happen in parallel
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangements: newArrangements,
-        arrangementIdx: newArrangementIdx,
-      }),
-    );
-  };
-
-  const removeCourse = (course: CourseStorage) => {
-    let newCourses = courses.filter(
-      (currCourse) => currCourse.courseData.id !== course.courseData.id,
-    );
-    const newArrangements = generateCourseSections(newCourses, availableTimes);
-    let newArrangementIdx: Maybe<number> = null;
-    if (newArrangements.length === 0) {
-      newCourses = clearUnlockedSections(newCourses);
-    } else {
-      newArrangementIdx = 0;
-      newCourses = lengthenCourses(
-        newArrangements[newArrangementIdx],
-        indexedCourses,
-      );
-    }
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangements: generateCourseSections(newCourses, availableTimes),
-        arrangementIdx: newArrangementIdx,
-      }),
-    );
-  };
-
-  const toggleCourse = (newCourse: CourseStorage) => {
-    const updatedCourse = { ...newCourse, enabled: !newCourse.enabled };
-    let newCourses = courses.map((course) => {
-      if (course.courseData.id === updatedCourse.courseData.id) {
-        return updatedCourse;
-      } else {
-        return course;
-      }
-    });
-    const newArrangements = generateCourseSections(newCourses, availableTimes);
-    let newArrangementIdx = arrangementIdx;
-    if (newArrangements.length === 0) {
-      newCourses = clearUnlockedSections(newCourses);
-      newArrangementIdx = null;
-    } else {
-      // if course went disabled => enabled or is unlocked, then need to recalculate
-      // otherwise, just keep arrangementIdx the same
-      if (updatedCourse.enabled || !updatedCourse.locked) {
-        newArrangementIdx = 0;
-        newCourses = lengthenCourses(
-          newArrangements[newArrangementIdx],
-          indexedCourses,
-        );
-      }
-    }
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangements: newArrangements,
-        arrangementIdx: newArrangementIdx,
-      }),
-    );
-  };
-
-  const toggleSectionLock = (newCourse: CourseStorage) => {
-    const updatedCourse = { ...newCourse, locked: !newCourse.locked };
-    let newCourses = courses.map((course) => {
-      if (course.courseData.id === updatedCourse.courseData.id) {
-        return updatedCourse;
-      } else {
-        return course;
-      }
-    });
-    const newArrangements = generateCourseSections(newCourses, availableTimes);
-    let newArrangementIdx = arrangementIdx;
-    if (newArrangements.length === 0) {
-      newCourses = clearUnlockedSections(newCourses);
-      newArrangementIdx = null;
-    } else {
-      newArrangementIdx = 0;
-      newCourses = lengthenCourses(
-        newArrangements[newArrangementIdx],
-        indexedCourses,
-      );
-    }
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangements: newArrangements,
-        arrangementIdx: newArrangementIdx,
-      }),
-    );
-  };
-
-  const nextArrangement = () => {
-    const workspace = workspaces[workspaceIdx];
-    let newIdx = workspace.arrangementIdx;
-    if (workspace.arrangements.length === 0) {
-      newIdx = null;
-    } else if (workspace.arrangementIdx === null) {
-      newIdx = 0;
-    } else {
-      newIdx = (workspace.arrangementIdx + 1) % workspace.arrangements.length;
-    }
-    const newArrangement =
-      newIdx === null
-        ? shortenCourses(workspace.courses)
-        : workspace.arrangements[newIdx!];
-    const newCourses = lengthenCourses(newArrangement, indexedCourses);
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangementIdx: newIdx,
-      }),
-    );
-  };
-
-  const prevArrangement = () => {
-    const workspace = workspaces[workspaceIdx];
-    let newIdx = workspace.arrangementIdx;
-    if (workspace.arrangements.length === 0) {
-      newIdx = null;
-    } else if (workspace.arrangementIdx === null) {
-      newIdx = 0;
-    } else {
-      newIdx =
-        (workspace.arrangements.length + workspace.arrangementIdx - 1) %
-        workspace.arrangements.length;
-    }
-    const newArrangement =
-      newIdx === null
-        ? shortenCourses(workspace.courses)
-        : workspace.arrangements[newIdx!];
-    const newCourses = lengthenCourses(newArrangement, indexedCourses);
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangementIdx: newIdx,
-      }),
-    );
-  };
-
-  const setCourses = (courses: CourseStorage[]) => {
-    let newCourses = courses;
-    const newArrangements = generateCourseSections(newCourses, availableTimes);
-    let newArrangementIdx: Maybe<number> = null;
-    if (newArrangements.length === 0) {
-      newCourses = clearUnlockedSections(newCourses);
-    } else {
-      newArrangementIdx = 0;
-      newCourses = lengthenCourses(
-        newArrangements[newArrangementIdx],
-        indexedCourses,
-      );
-    }
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangements: newArrangements,
-        arrangementIdx: newArrangementIdx,
-      }),
-    );
-  };
-
-  const setWorkspace = (idx: number) => {
-    // invariant: previous idx is always valid
-    let newIdx = workspaceIdx;
-    if (idx >= 0 && idx < workspaces.length) {
-      newIdx = idx;
-    }
-    setWorkspaceIdx(newIdx);
-  };
-
-  const updateAvailableTimes = (
-    dayIdx: number,
-    isStart: boolean,
-    day: Date,
-  ) => {
-    const normalizedDay = normalizeAvailableTime(dayIdx, day);
-    const newAvailableTimes: AvailableTimes = setArrayIdx(availableTimes, dayIdx, [
-      isStart ? normalizedDay : availableTimes[dayIdx][0],
-      isStart ? availableTimes[dayIdx][1] : normalizedDay,
-    ]);
-    let newCourses = courses;
-    const newArrangements = generateCourseSections(
-      newCourses,
-      newAvailableTimes,
-    );
-    let newArrangementIdx = arrangementIdx;
-    if (newArrangements.length === 0) {
-      newCourses = clearUnlockedSections(newCourses);
-      newArrangementIdx = null;
-    } else {
-      const isWidening =
-        (isStart && normalizedDay < availableTimes[dayIdx][0]) ||
-        (!isStart && normalizedDay > availableTimes[dayIdx][1]);
-      if (!isWidening || newArrangements.length !== arrangements.length) {
-        newArrangementIdx = 0;
-        newCourses = lengthenCourses(
-          newArrangements[newArrangementIdx],
-          indexedCourses,
-        );
-      }
-    }
-    // if current sections are invalid, jump to first valid one (or null everything)
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangements: newArrangements,
-        arrangementIdx: newArrangementIdx,
-        availableTimes: newAvailableTimes,
-      }),
-    );
-  };
-
-  const { arrangements, arrangementIdx } = workspaces[workspaceIdx];
 
   const [modalOpen, setModalOpen] = useState(false);
   const supportedTerms = getSupportedTermPaths();
 
   return (
     <AllCourses.Provider value={indexedCourses}>
-      <AppState.Provider
-        value={{
-          workspaces,
-          workspaceIdx,
-          courses: courses,
-          addCourse,
-          removeCourse,
-          toggleCourse,
-          setCourses,
-          arrangements,
-          arrangementIdx,
-          nextArrangement,
-          prevArrangement,
-          availableTimes,
-          updateAvailableTimes,
-          setWorkspace,
-          toggleSectionLock,
-        }}
-      >
+      <AppState.Provider value={workspaceState}>
         <div className="sticky-help">
           <motion.button
             whileHover={{ rotate: 15 }}
