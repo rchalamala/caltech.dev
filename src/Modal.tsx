@@ -45,7 +45,7 @@ function Modal({ isOpen, onClose, children }: ModalProps) {
             initial={{ x: -100 }}
             animate={{ x: 0 }}
             exit={{ x: 100 }}
-            className="relative flex flex-col space-y-4 bg-white p-16 rounded-md border-[1px] shadow-lg sm:w-[40%] w-[80%] h-fit z-[600]"
+            className="relative flex flex-col space-y-4 bg-white p-6 sm:p-16 rounded-md border-[1px] shadow-lg sm:w-[40%] w-[90%] max-h-[90vh] overflow-y-auto z-[600]"
           >
             {children}
             <motion.button

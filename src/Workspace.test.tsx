@@ -182,7 +182,7 @@ describe("Workspace", () => {
     const { mockState, container } = renderWorkspace({ courses });
 
     // MUI Switch renders an <input type="checkbox"> inside the component
-    const checkbox = container.querySelector("input[type='checkbox']");
+    const checkbox = container.querySelector<HTMLInputElement>("input[type='checkbox']");
     expect(checkbox).not.toBeNull();
 
     await user.click(checkbox!);
@@ -207,11 +207,11 @@ describe("Workspace", () => {
   it("shows workspace switcher with 5 tabs", () => {
     renderWorkspace();
 
-    const switcher = screen.getByText("1").closest(".workspace-switcher");
+    const switcher = screen.getByText("1").closest(".workspace-switcher") as HTMLElement;
     expect(switcher).toBeInTheDocument();
 
     for (let i = 1; i <= 5; i++) {
-      expect(within(switcher!).getByText(`${i}`)).toBeInTheDocument();
+      expect(within(switcher).getByText(`${i}`)).toBeInTheDocument();
     }
   });
 
