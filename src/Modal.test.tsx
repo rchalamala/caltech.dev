@@ -24,11 +24,28 @@ describe("Modal", () => {
 
     expect(screen.getByText("Visible modal content")).toBeInTheDocument();
 
-    fireEvent.keyDown(window, { key: "Escape" });
+    // Escape is now handled by onKeyDown on the dialog element
+    const dialog = screen.getByRole("dialog");
+    fireEvent.keyDown(dialog, { key: "Escape" });
     expect(onClose).toHaveBeenCalledTimes(1);
 
-    const [backdropButton] = screen.getAllByRole("button");
+    // Backdrop close button
+    const backdropButton = screen.getByLabelText("Close dialog");
     fireEvent.click(backdropButton);
     expect(onClose).toHaveBeenCalledTimes(2);
+  });
+
+  it("has accessible dialog role and close button", () => {
+    render(
+      <Modal isOpen onClose={vi.fn()}>
+        <p>Content</p>
+      </Modal>,
+    );
+
+    const dialog = screen.getByRole("dialog");
+    expect(dialog).toHaveAttribute("aria-modal", "true");
+
+    expect(screen.getByLabelText("Close")).toBeInTheDocument();
+    expect(screen.getByLabelText("Close dialog")).toBeInTheDocument();
   });
 });

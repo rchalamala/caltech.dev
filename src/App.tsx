@@ -120,11 +120,18 @@ function TermPage() {
   return (
     <AllCourses.Provider value={indexedCourses}>
       <AppState.Provider value={workspaceState}>
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:z-[1100] focus:p-2 focus:bg-orange-500 focus:text-white focus:rounded"
+        >
+          Skip to content
+        </a>
         <div className="sticky-help">
           <motion.button
             whileHover={{ rotate: 15 }}
             className="help-button"
             onClick={() => setModalOpen(true)}
+            aria-label="Help"
           >
             <HelpOutlineIcon
               className="text-orange-500 bg-transparent"
@@ -177,9 +184,9 @@ function TermPage() {
           </Modal>
         </div>
 
-        <main className="py-5 mx-2 antialiased scroll-smooth selection:bg-orange-400 selection:text-black">
+        <main id="main-content" className="py-5 mx-2 antialiased scroll-smooth selection:bg-orange-400 selection:text-black">
           {isLoadingCourses ? (
-            <div className="py-16 text-center space-y-2">
+            <div className="py-16 text-center space-y-2" aria-live="polite">
               <p className="text-2xl font-bold">Loading course data…</p>
               <p>Term: {term}</p>
             </div>

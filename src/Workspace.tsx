@@ -211,6 +211,8 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
                   onClick={() => {
                     setExpanded(!expanded);
                   }}
+                  aria-expanded={expanded}
+                  aria-label={`${expanded ? "Collapse" : "Expand"} ${course.courseData.number}`}
                 >
                   {expanded ? <UnfoldLess /> : <UnfoldMore />}
                 </IconButton>
@@ -241,17 +243,24 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
                     onChange={() => {
                       state.toggleCourse(course);
                     }}
+                    inputProps={{
+                      "aria-label": `${course.enabled ? "Disable" : "Enable"} ${course.courseData.number}`,
+                    }}
                   />
 
                   {course.locked ? (
                     <IconButton
                       color="warning"
                       onClick={() => state.toggleSectionLock(course)}
+                      aria-label={`Unlock ${course.courseData.number}`}
                     >
-                      <Lock className="" />
+                      <Lock />
                     </IconButton>
                   ) : (
-                    <IconButton onClick={() => state.toggleSectionLock(course)}>
+                    <IconButton
+                      onClick={() => state.toggleSectionLock(course)}
+                      aria-label={`Lock ${course.courseData.number}`}
+                    >
                       <LockOpen />
                     </IconButton>
                   )}
@@ -261,6 +270,7 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
                     onClick={() => {
                       state.removeCourse(course);
                     }}
+                    aria-label={`Remove ${course.courseData.number}`}
                   >
                     <Delete />
                   </IconButton>
@@ -393,12 +403,12 @@ function WorkspaceScheduler() {
     );
   } else {
     return (
-      <div className="workspace-scheduler">
-        <button className="small-button" onClick={handleLeft}>
+      <div className="workspace-scheduler" role="group" aria-label="Arrangement navigation">
+        <button className="small-button" onClick={handleLeft} aria-label="Previous arrangement">
           <ArrowBack style={{ width: "auto", height: "auto" }} />
         </button>
-        <p className="workspace-scheduler-content">{`${displayIdx}/${total}`}</p>
-        <button className="small-button" onClick={handleRight}>
+        <p className="workspace-scheduler-content" aria-live="polite">{`${displayIdx}/${total}`}</p>
+        <button className="small-button" onClick={handleRight} aria-label="Next arrangement">
           <ArrowForward style={{ width: "auto", height: "auto" }} />
         </button>
       </div>
@@ -505,12 +515,32 @@ export default function Workspace({ term }: { term: string }) {
     <div className="workspace-wrapper">
       {exportModal}
       <h2 className="mb-2 text-center">Choose Workspace...</h2>
-      <div className="workspace-switcher">
+      <div
+        className="workspace-switcher"
+        role="tablist"
+        aria-label="Workspace tabs"
+        onKeyDown={(e) => {
+          const current = state.workspaceIdx;
+          if (e.key === "ArrowRight") {
+            e.preventDefault();
+            state.setWorkspace(Math.min(current + 1, 4));
+          } else if (e.key === "ArrowLeft") {
+            e.preventDefault();
+            state.setWorkspace(Math.max(current - 1, 0));
+          }
+        }}
+      >
         {[0, 1, 2, 3, 4].map((idx) => {
+          const isSelected = state.workspaceIdx === idx;
           return (
             <button
               key={idx}
-              className={state.workspaceIdx === idx ? "enabled" : ""}
+              role="tab"
+              aria-selected={isSelected}
+              aria-controls="workspace-tabpanel"
+              id={`workspace-tab-${idx}`}
+              tabIndex={isSelected ? 0 : -1}
+              className={isSelected ? "enabled" : ""}
               onClick={() => state.setWorkspace(idx)}
             >
               {idx + 1}
@@ -518,6 +548,11 @@ export default function Workspace({ term }: { term: string }) {
           );
         })}
       </div>
+      <div
+        role="tabpanel"
+        id="workspace-tabpanel"
+        aria-labelledby={`workspace-tab-${state.workspaceIdx}`}
+      >
       <WorkspaceScheduler />
       <WorkspaceSearch />
       <div className="workspace-controls">
@@ -611,6 +646,7 @@ export default function Workspace({ term }: { term: string }) {
           </DragDropContext>
         )}
       </div>
+      </div>{/* end tabpanel */}
     </div>
   );
 }
