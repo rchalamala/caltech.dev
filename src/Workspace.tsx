@@ -521,12 +521,21 @@ export default function Workspace({ term }: { term: string }) {
         aria-label="Workspace tabs"
         onKeyDown={(e) => {
           const current = state.workspaceIdx;
+          let next = current;
           if (e.key === "ArrowRight") {
             e.preventDefault();
-            state.setWorkspace(Math.min(current + 1, 4));
+            next = Math.min(current + 1, 4);
           } else if (e.key === "ArrowLeft") {
             e.preventDefault();
-            state.setWorkspace(Math.max(current - 1, 0));
+            next = Math.max(current - 1, 0);
+          }
+          if (next !== current) {
+            state.setWorkspace(next);
+            // Move focus to the newly selected tab
+            const nextTab = (e.currentTarget as HTMLElement).querySelector<HTMLElement>(
+              `#workspace-tab-${next}`,
+            );
+            nextTab?.focus();
           }
         }}
       >

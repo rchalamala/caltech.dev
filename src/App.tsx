@@ -122,7 +122,7 @@ function TermPage() {
       <AppState.Provider value={workspaceState}>
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:z-[1100] focus:p-2 focus:bg-orange-500 focus:text-white focus:rounded"
+          className="skip-to-content"
         >
           Skip to content
         </a>

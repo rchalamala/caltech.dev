@@ -71,6 +71,32 @@ a {
   text-decoration: underline;
 }
 
+/* Skip-to-content link: hidden until focused */
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 1100;
+}
+
+.skip-to-content:focus {
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  padding: 0.5rem 1rem;
+  background-color: rgb(249 115 22);
+  color: white;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 /* Mobile adjustments */
 @media (max-width: 767px) {
   .footer {
