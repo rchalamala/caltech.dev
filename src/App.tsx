@@ -1,4 +1,5 @@
 import { useEffect, useState, createContext } from "react";
+import { Routes, Route, Navigate, useParams, Link } from "react-router";
 import Planner from "./Planner";
 import WorkspacePanel from "./Workspace";
 import Modal from "./Modal";
@@ -9,7 +10,6 @@ import {
   getSupportedTermPaths,
   isSupportedTermPath,
   loadTermCourseData,
-  resolveTermPath,
 } from "./lib/termData";
 import { useWorkspaceState, WorkspaceStateAPI } from "./hooks/useWorkspaceState";
 import {
@@ -67,56 +67,38 @@ export const AppState = createContext<AppStateProps>({
   updateAvailableTimes: () => null,
 });
 
-// credit to https://stackoverflow.com/a/58443076
-const useReactPath = () => {
-  const [path, setPath] = useState(window.location.pathname);
-  const listenToPopstate = () => {
-    const winPath = window.location.pathname;
-    setPath(winPath);
-  };
-  useEffect(() => {
-    window.addEventListener("popstate", listenToPopstate);
-    return () => {
-      window.removeEventListener("popstate", listenToPopstate);
-    };
-  }, []);
-  return path;
-};
+/* ------------------------------------------------------------------ */
+/*  TermPage — loads data for a specific term and renders the app     */
+/* ------------------------------------------------------------------ */
 
-/** Main wrapper */
-function App() {
-  // really basic routing
-  const pathname = useReactPath();
-  const realPath = resolveTermPath(pathname);
+function TermPage() {
+  const { term } = useParams<{ term: string }>();
+  const termPath = `/${(term ?? "").toLowerCase()}`;
+
   const [courseDataState, setCourseDataState] = useState<{
     termPath: string;
     data: CourseIndex;
     error: string | null;
-  }>({
-    termPath: "",
-    data: {},
-    error: null,
-  });
+  }>({ termPath: "", data: {}, error: null });
 
-  const indexedCourses = courseDataState.termPath === realPath
-    ? courseDataState.data
-    : {};
+  const indexedCourses =
+    courseDataState.termPath === termPath ? courseDataState.data : {};
   const dataLoadError =
-    courseDataState.termPath === realPath ? courseDataState.error : null;
-  const isLoadingCourses = courseDataState.termPath !== realPath;
+    courseDataState.termPath === termPath ? courseDataState.error : null;
+  const isLoadingCourses = courseDataState.termPath !== termPath;
 
   useEffect(() => {
     let cancelled = false;
 
-    loadTermCourseData(realPath)
+    loadTermCourseData(termPath)
       .then((courseData) => {
         if (cancelled) return;
-        setCourseDataState({ termPath: realPath, data: courseData, error: null });
+        setCourseDataState({ termPath, data: courseData, error: null });
       })
       .catch((error: unknown) => {
         if (cancelled) return;
         setCourseDataState({
-          termPath: realPath,
+          termPath,
           data: {},
           error:
             error instanceof Error
@@ -126,16 +108,14 @@ function App() {
       });
 
     return () => { cancelled = true; };
-  }, [realPath]);
+  }, [termPath]);
 
-  // All workspace state is managed by this hook
   const workspaceState: WorkspaceStateAPI = useWorkspaceState(
-    realPath,
+    termPath,
     indexedCourses,
   );
 
   const [modalOpen, setModalOpen] = useState(false);
-  const supportedTerms = getSupportedTermPaths();
 
   return (
     <AllCourses.Provider value={indexedCourses}>
@@ -201,36 +181,16 @@ function App() {
           {isLoadingCourses ? (
             <div className="py-16 text-center space-y-2">
               <p className="text-2xl font-bold">Loading course data…</p>
-              <p>Term: {realPath.substring(1)}</p>
+              <p>Term: {term}</p>
             </div>
           ) : dataLoadError ? (
-            <div className="py-16 text-center space-y-4">
-              <p className="text-2xl font-bold">
-                Unable to load course data for {realPath.substring(1)}
-              </p>
-              <p>{dataLoadError}</p>
-              {!isSupportedTermPath(pathname) && (
-                <p className="text-sm text-neutral-600">
-                  Supported terms: {supportedTerms.join(", ")}
-                </p>
-              )}
-              <p>
-                Try the{" "}
-                <a
-                  className="font-mono font-bold text-orange-500 hover:underline"
-                  href={DEFAULT_TERM_PATH}
-                >
-                  {DEFAULT_TERM_PATH.substring(1)}
-                </a>{" "}
-                term instead.
-              </p>
-            </div>
+            <ErrorPage term={term ?? ""} error={dataLoadError} />
           ) : (
             <div id="column-container">
               <div className="column planner-column">
                 <Planner />
               </div>
-              <WorkspacePanel term={realPath.substring(1)} />
+              <WorkspacePanel term={term ?? ""} />
             </div>
           )}
         </main>
@@ -242,12 +202,85 @@ function App() {
             <Hyperlink href="https://github.com/ericlovesmath" text="Eric" />, &{" "}
             <Hyperlink href="https://github.com/zack466" text="Zack" />
           </p>
-          <p>Current term: {realPath.substring(1)}</p>
+          <p>Current term: {term}</p>
         </footer>
       </AppState.Provider>
     </AllCourses.Provider>
   );
 }
+
+/* ------------------------------------------------------------------ */
+/*  ErrorPage                                                         */
+/* ------------------------------------------------------------------ */
+
+function ErrorPage({ term, error }: { term: string; error?: string }) {
+  const supportedTerms = getSupportedTermPaths();
+  const pathname = `/${term}`;
+
+  return (
+    <div className="py-16 text-center space-y-4">
+      <p className="text-2xl font-bold">
+        Unable to load course data for {term}
+      </p>
+      {error && <p>{error}</p>}
+      {!isSupportedTermPath(pathname) && (
+        <p className="text-sm text-neutral-600">
+          Supported terms: {supportedTerms.join(", ")}
+        </p>
+      )}
+      <p>
+        Try the{" "}
+        <Link
+          className="font-mono font-bold text-orange-500 hover:underline"
+          to={DEFAULT_TERM_PATH}
+        >
+          {DEFAULT_TERM_PATH.substring(1)}
+        </Link>{" "}
+        term instead.
+      </p>
+    </div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  NotFoundPage — catch-all for unrecognized routes                  */
+/* ------------------------------------------------------------------ */
+
+function NotFoundPage() {
+  const pathname = window.location.pathname;
+  const term = pathname.substring(1) || "unknown";
+  return (
+    <div className="py-5 mx-2 antialiased">
+      <ErrorPage term={term} />
+      <footer className="footer">
+        <p>
+          Made with ❤️ by{" "}
+          <Hyperlink href="https://github.com/rchalamala" text="Rahul" />,{" "}
+          <Hyperlink href="https://github.com/ericlovesmath" text="Eric" />, &{" "}
+          <Hyperlink href="https://github.com/zack466" text="Zack" />
+        </p>
+      </footer>
+    </div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  App — route definitions                                           */
+/* ------------------------------------------------------------------ */
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Navigate to={DEFAULT_TERM_PATH} replace />} />
+      <Route path="/:term" element={<TermPage />} />
+      <Route path="*" element={<NotFoundPage />} />
+    </Routes>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  Shared components                                                 */
+/* ------------------------------------------------------------------ */
 
 function Hyperlink(props: { href: string; text: string }) {
   return (

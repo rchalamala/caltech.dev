@@ -1,22 +1,24 @@
 import { render, screen, waitFor } from "@testing-library/react";
 import { describe, expect, it, beforeEach } from "vitest";
+import { MemoryRouter } from "react-router";
 import App from "./App";
 
+function renderApp(initialPath: string) {
+  return render(
+    <MemoryRouter initialEntries={[initialPath]}>
+      <App />
+    </MemoryRouter>,
+  );
+}
+
 beforeEach(() => {
-  // Clear localStorage to prevent state leaking between tests
   localStorage.clear();
 });
 
 describe("App routing and error states", () => {
-  it("loads the default term when visiting /", async () => {
-    window.history.pushState({}, "", "/");
+  it("redirects / to the default term", async () => {
+    renderApp("/");
 
-    render(<App />);
-
-    // Should show loading state first
-    expect(screen.getByText(/loading course data/i)).toBeInTheDocument();
-
-    // Then should resolve to the planner (default term /sp2026)
     await waitFor(
       () => {
         expect(screen.getByText(/current term: sp2026/i)).toBeInTheDocument();
@@ -26,9 +28,7 @@ describe("App routing and error states", () => {
   });
 
   it("loads course data for a valid term route", async () => {
-    window.history.pushState({}, "", "/sp2026");
-
-    render(<App />);
+    renderApp("/sp2026");
 
     await waitFor(
       () => {
@@ -37,14 +37,11 @@ describe("App routing and error states", () => {
       { timeout: 5000 },
     );
 
-    // Should not show error
     expect(screen.queryByText(/unable to load/i)).not.toBeInTheDocument();
   });
 
   it("shows error state for an invalid term route", async () => {
-    window.history.pushState({}, "", "/invalid");
-
-    render(<App />);
+    renderApp("/invalid");
 
     await waitFor(
       () => {
@@ -57,9 +54,7 @@ describe("App routing and error states", () => {
   });
 
   it("shows supported terms on error page", async () => {
-    window.history.pushState({}, "", "/unknown");
-
-    render(<App />);
+    renderApp("/unknown");
 
     await waitFor(
       () => {
@@ -70,9 +65,7 @@ describe("App routing and error states", () => {
   });
 
   it("shows a link to the default term on error page", async () => {
-    window.history.pushState({}, "", "/nosuchterm");
-
-    render(<App />);
+    renderApp("/nosuchterm");
 
     await waitFor(
       () => {
@@ -85,9 +78,7 @@ describe("App routing and error states", () => {
   });
 
   it("normalizes uppercase term paths", async () => {
-    window.history.pushState({}, "", "/SP2026");
-
-    render(<App />);
+    renderApp("/SP2026");
 
     await waitFor(
       () => {
