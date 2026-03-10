@@ -9,20 +9,24 @@ Use this skill first when an agent needs to run the app, validate a change, or f
 
 ## Quick facts
 
-- Package manager: `npm`
+- Package manager: **Bun** (`bun.lock` is the lockfile; `enforce-bun.js` blocks `npm install`)
 - App type: single-page React + TypeScript app with Vite
-- Cloud preview/deploy tool: Wrangler
+- Cloud preview/deploy tool: Wrangler (Cloudflare Workers)
 - Backend/API: none in this repo; the app loads checked-in JSON from `src/data/`
 - App login: none
 - Env vars / feature flag service: none found
+- CI: GitHub Actions at `.github/workflows/ci.yml` (lint, test, build)
+- CD: GitHub Actions at `.github/workflows/deploy.yml` (build + deploy to Cloudflare)
 
 ## Bootstrap
 
-1. Install dependencies with `npm ci`.
-2. For the fastest local loop, start Vite with `npm start -- --host 0.0.0.0`.
+1. Install dependencies with `bun install`.
+2. For the fastest local loop, start Vite with `bun run dev -- --host 0.0.0.0`.
 3. Open `http://localhost:3000/`. The default route redirects in-app to the hardcoded current term.
-4. For a production-style local check, build first with `npm run build`, then start Wrangler with `npm run dev -- --port 8787`.
+4. For a production-style local check, build first with `bun run build`, then start Wrangler with `bun run dev:wrangler -- --port 8787`.
 5. Open `http://localhost:8787/` for the Wrangler-served build.
+
+> **Cloud VM note:** Bun may not be installed in every Cloud VM. If `bun` is unavailable, you can use `npx` to run individual tools (e.g., `npx vitest run`, `npx vite`), but avoid `npm install` which is intentionally blocked.
 
 ## Login and auth
 
@@ -37,12 +41,11 @@ Use this skill first when an agent needs to run the app, validate a change, or f
 - Per-term workspace keys are `workspaces/<term>` and `workspaceIdx/<term>`, for example `workspaces/sp2026`.
 - If state gets weird during testing, clear only the current term keys instead of all storage.
 - There is no remote API to mock. The practical mock layer is the checked-in JSON under `src/data/`.
-- There is no feature-flag system. The closest flag-like switches are hardcoded constants:
-  - `CURRENT_TERM` in `src/App.tsx`
-  - `courseDataSources` in `src/App.tsx`
-  - `hasWeekendCourse` in `src/Planner.tsx`
-  - `DEFAULT_COURSES` in `src/Workspace.tsx`
-  - `src/data/term_start_dates.json` for `.ics` export dates
+- There is no feature-flag system. The closest flag-like switches are:
+  - `DEFAULT_TERM_PATH` in `src/lib/termData.ts` — controls which term loads for the `/` route
+  - `hasWeekendCourse` in `src/Planner.tsx` — hardcoded boolean for weekend calendar display
+  - `DEFAULT_COURSES` in `src/Workspace.tsx` — per-term-prefix default course lists
+  - `src/data/term_start_dates.json` — term start dates used for `.ics` export
 
 ## Codebase areas
 
@@ -51,13 +54,14 @@ Use this skill first when an agent needs to run the app, validate a change, or f
 Files to check first:
 
 - `src/App.tsx`
+- `src/lib/termData.ts`
 - `src/data/*.json`
 - `src/data/term_start_dates.json`
 
 What lives here:
 
-- Term routing and the current-term default
-- Static course catalog imports
+- Term routing via `resolveTermPath()` and dynamic `import.meta.glob` data loading
+- The `DEFAULT_TERM_PATH` constant (currently `/sp2026`)
 - localStorage persistence for the five workspaces
 - Section-arrangement generation and overlap filtering
 
@@ -70,11 +74,11 @@ Use this area when:
 
 Testing workflow:
 
-1. Run `npm start -- --host 0.0.0.0`.
+1. Run `bun run dev -- --host 0.0.0.0`.
 2. Open the target term route, such as `/sp2026`.
 3. Add a few courses, switch between workspace tabs, and reload the page.
 4. Confirm the same workspace content comes back after reload.
-5. If you changed term support, verify the route loads data without the "Error loading course data" alert.
+5. If you changed term support, verify the route loads data without the error page.
 6. If you changed `.ics` term dates, also run the Workspace export flow in section 3 below.
 
 ### 2) Planner and calendar behavior
@@ -82,14 +86,15 @@ Testing workflow:
 Files to check first:
 
 - `src/Planner.tsx`
+- `src/lib/time.ts`
 - `src/App.tsx`
 
 What lives here:
 
-- Time-string parsing
-- Calendar rendering
+- Time-string parsing (`parseTimes` in `src/lib/time.ts`)
+- Calendar rendering (react-big-calendar)
 - Weekday-only display behavior
-- Available-time filtering
+- Available-time filtering via flatpickr time pickers
 
 Use this area when:
 
@@ -100,7 +105,7 @@ Use this area when:
 
 Testing workflow:
 
-1. Run `npm start -- --host 0.0.0.0`.
+1. Run `bun run dev -- --host 0.0.0.0`.
 2. Add two or more courses with meeting times.
 3. Confirm events appear on the calendar and match the selected sections.
 4. Change the daily time pickers on the left to narrow availability.
@@ -112,6 +117,7 @@ Testing workflow:
 Files to check first:
 
 - `src/Workspace.tsx`
+- `src/lib/ics.ts`
 
 What lives here:
 
@@ -121,7 +127,7 @@ What lives here:
 - Arrangement navigation
 - Drag/drop reorder
 - Workspace import/export
-- `.ics` export
+- `.ics` export (`exportICS` in `src/lib/ics.ts`)
 
 Use this area when:
 
@@ -133,7 +139,7 @@ Use this area when:
 
 Testing workflow:
 
-1. Run `npm start -- --host 0.0.0.0`.
+1. Run `bun run dev -- --host 0.0.0.0`.
 2. Search for a course and add it.
 3. Change its section, then toggle enabled and locked states.
 4. Add enough courses to make the arrangement arrows meaningful, then step left and right.
@@ -149,13 +155,14 @@ Files to check first:
 - `package.json`
 - `wrangler.jsonc`
 - `vite.config.ts`
+- `.github/workflows/deploy.yml`
 
 What lives here:
 
 - Local Vite dev server config
 - Production build command
 - Static asset directory for Wrangler
-- Deploy route config
+- Deploy route config and CD automation
 
 Use this area when:
 
@@ -166,19 +173,49 @@ Use this area when:
 
 Testing workflow:
 
-1. Run `npm run build`.
-2. Run `npm run dev -- --port 8787`.
+1. Run `bun run build`.
+2. Run `bun run dev:wrangler -- --port 8787`.
 3. Open `http://localhost:8787/`.
 4. Re-test the exact user flow you changed against the Wrangler-served build.
 5. If deploy work is required, run `npx wrangler whoami` first.
-6. Only use `npm run deploy` after confirming authentication and a successful local build.
+6. Only use `bun run deploy` after confirming authentication and a successful local build.
+
+### 5) Validation and CI
+
+Files to check first:
+
+- `.github/workflows/ci.yml`
+- `vitest.config.ts`
+- `eslint.config.mjs`
+
+What lives here:
+
+- CI pipeline: lint (`eslint`), test (`vitest`), typecheck (`tsc`), build (`vite build`)
+- Test setup (`src/test/setup.ts`) with jsdom and testing-library
+- ESLint flat config
+
+Run the full local validation:
+
+```bash
+bun run check   # runs lint, test:run, and build in sequence
+```
+
+Or individually:
+
+```bash
+bun run lint        # eslint with zero-warning policy
+bun run test:run    # vitest with coverage
+bun run typecheck   # tsc --noEmit for both tsconfigs
+bun run build       # typecheck + vite build
+```
 
 ## Fast troubleshooting notes
 
 - If Vite works but Wrangler does not reflect your change, rebuild first; Wrangler serves `dist/`, not live source files.
-- If a route-specific issue only happens for one term, inspect `CURRENT_TERM`, `courseDataSources`, and the matching JSON import together.
+- If a route-specific issue only happens for one term, inspect `DEFAULT_TERM_PATH` in `src/lib/termData.ts` and the matching JSON data file.
 - If a behavior only repros after reload, suspect localStorage before suspecting the calendar.
 - If you need a quick "known-good" schedule seed, use the built-in "Default Schedule" button for the current term prefix.
+- SPA routing is handled by Cloudflare Workers (`wrangler.jsonc` → `not_found_handling: "single-page-application"`). There is no `404.html` redirect hack.
 
 ## How to update this skill
 
