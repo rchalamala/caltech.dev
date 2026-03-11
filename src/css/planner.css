@@ -31,3 +31,21 @@
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
+/* Mobile: tighten calendar controls */
+@media (max-width: 767px) {
+  .time-controls {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .time-picker {
+    max-width: 3.5rem;
+    row-gap: 4px;
+  }
+
+  .flatpickr-input {
+    font-size: 0.75rem;
+    padding: 2px 4px;
+  }
+}

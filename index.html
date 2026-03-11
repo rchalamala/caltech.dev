@@ -15,25 +15,6 @@
 
       gtag("config", "G-61TJYY82J2");
     </script>
-    <script type="text/javascript">
-      // Restore GitHub Pages SPA redirects like `/?/fa2023` before React boots.
-      (function (l) {
-        if (l.search[1] === "/") {
-          var decoded = l.search
-            .slice(1)
-            .split("&")
-            .map(function (s) {
-              return s.replace(/~and~/g, "&");
-            })
-            .join("?");
-          window.history.replaceState(
-            null,
-            "",
-            l.pathname.slice(0, -1) + decoded + l.hash,
-          );
-        }
-      })(window.location);
-    </script>
     <link rel="manifest" href="/manifest.json" />
     <meta
       property="og:title"

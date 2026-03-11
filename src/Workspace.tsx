@@ -26,7 +26,7 @@ import "./css/workspace.css";
 import { Collapse, IconButton, Switch } from "@mui/material";
 import { UnfoldLess, UnfoldMore } from "@mui/icons-material";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
-import TERM_START_DATES from "./data/term_start_dates.json";
+import { exportICS } from "./lib/ics";
 import {
   CourseData,
   CourseIndex,
@@ -74,121 +74,6 @@ function getCourse(
   return null;
 }
 
-function exportICS(term: string, courses: CourseStorage[]): string {
-  const [termStartYear, termStartMonth, termStartDay] = (
-    TERM_START_DATES as { [key: string]: string }
-  )[term]
-    .split("-")
-    .map(Number);
-  const termStartDate = new Date(
-    termStartYear,
-    termStartMonth - 1,
-    termStartDay,
-  );
-
-  // Map weekdays to indices for easy comparison
-  const dayMap = "MTWRFSU";
-
-  // Helper function to get the first occurrence of a day after the term start date
-  function getFirstOccurrence(startDate: Date, dayOfWeek: string, timeString: string): Date {
-    const date = new Date(startDate); // Copy the term start date
-    const targetDay = dayMap.indexOf(dayOfWeek) + 1; // Get index for the weekday
-    const currentDay = date.getDay();
-
-    // Move the date to the first occurrence of the target weekday
-    const dayOffset = (targetDay - currentDay + 7) % 7;
-    date.setDate(date.getDate() + dayOffset); // Ensure we don't return the start date if it's the same day
-
-    // Parse time (e.g., "09:00") and set the time explicitly using local time
-    const [hours, minutes] = timeString.split(':').map(Number);
-    date.setHours(hours, minutes, 0, 0); // Set hours and minutes in the local timezone
-    
-    return date;
-  }
-
-  function formatICSDate(date: Date): string {
-    const pad = (value: number) => value.toString().padStart(2, "0");
-    return `${date.getFullYear()}${pad(date.getMonth() + 1)}${pad(date.getDate())}T${pad(date.getHours())}${pad(date.getMinutes())}00`;
-  }
-
-  function getEventUid(
-    event: {
-      name: string;
-      location: string;
-      startTime: Date;
-      endTime: Date;
-    },
-    index: number,
-  ): string {
-    return [
-      term,
-      event.name,
-      event.location,
-      formatICSDate(event.startTime),
-      formatICSDate(event.endTime),
-      index,
-    ]
-      .join("-")
-      .replace(/[^a-zA-Z0-9-]/g, "_")
-      .toLowerCase();
-  }
-
-  // Flatten the courses and parse times with start and end times, matching locations
-  const parsedEvents = courses
-    .filter(course => course.enabled)
-    .flatMap(course => {
-      return course.courseData.sections
-        .filter(section => section.number - 1 === course.sectionId) // Filter by selected section
-        .flatMap(section => {
-          const times = section.times.split('\n'); // Split multiple times on newline
-          const locations = section.locations.split('\n'); // Split multiple locations on newline
-
-          // Zip times and locations together
-          return times.flatMap((time, index) => {
-            const location = locations[index] || 'Unknown'; // Match time with corresponding location
-            const [days, startTime, , endTime] = time.split(' '); // Separate days and time range
-            if (days === 'A') return []; // skip to-be-announced times
-            
-            return days.split('').map(day => ({
-              name: course.courseData.number, // Use course number for the title
-              location, // Set the matched location for this time
-              startTime: getFirstOccurrence(termStartDate, day, startTime),
-              endTime: getFirstOccurrence(termStartDate, day, endTime) // Parse the end time
-            }));
-          });
-        });
-    });
-
-  // Create a basic ICS header using stable floating local times.
-  let icsContent = `BEGIN:VCALENDAR
-VERSION:2.0
-PRODID:-//YourApp//Course Planner//EN
-CALSCALE:GREGORIAN
-METHOD:PUBLISH
-`;
-
-  // Generate the events in ICS format
-  parsedEvents.forEach((event, index) => {
-    const dtStart = formatICSDate(event.startTime);
-    const dtEnd = formatICSDate(event.endTime);
-
-    // Add each event to the ICS content
-    icsContent += `BEGIN:VEVENT
-SUMMARY:${event.name}
-LOCATION:${event.location}
-DTSTART:${dtStart}
-DTEND:${dtEnd}
-RRULE:FREQ=WEEKLY;COUNT=10
-UID:${getEventUid(event, index)}@caltech.dev
-END:VEVENT
-`;
-  });
-
-  // Close the calendar
-  icsContent += `END:VCALENDAR`;
-
-  return icsContent;
-}
 
 
 function SectionDropdown(props: { course: CourseStorage }) {
@@ -326,6 +211,8 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
                   onClick={() => {
                     setExpanded(!expanded);
                   }}
+                  aria-expanded={expanded}
+                  aria-label={`${expanded ? "Collapse" : "Expand"} ${course.courseData.number}`}
                 >
                   {expanded ? <UnfoldLess /> : <UnfoldMore />}
                 </IconButton>
@@ -356,17 +243,24 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
                     onChange={() => {
                       state.toggleCourse(course);
                     }}
+                    inputProps={{
+                      "aria-label": `${course.enabled ? "Disable" : "Enable"} ${course.courseData.number}`,
+                    }}
                   />
 
                   {course.locked ? (
                     <IconButton
                       color="warning"
                       onClick={() => state.toggleSectionLock(course)}
+                      aria-label={`Unlock ${course.courseData.number}`}
                     >
-                      <Lock className="" />
+                      <Lock />
                     </IconButton>
                   ) : (
-                    <IconButton onClick={() => state.toggleSectionLock(course)}>
+                    <IconButton
+                      onClick={() => state.toggleSectionLock(course)}
+                      aria-label={`Lock ${course.courseData.number}`}
+                    >
                       <LockOpen />
                     </IconButton>
                   )}
@@ -376,6 +270,7 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
                     onClick={() => {
                       state.removeCourse(course);
                     }}
+                    aria-label={`Remove ${course.courseData.number}`}
                   >
                     <Delete />
                   </IconButton>
@@ -508,12 +403,12 @@ function WorkspaceScheduler() {
     );
   } else {
     return (
-      <div className="workspace-scheduler">
-        <button className="small-button" onClick={handleLeft}>
+      <div className="workspace-scheduler" role="group" aria-label="Arrangement navigation">
+        <button className="small-button" onClick={handleLeft} aria-label="Previous arrangement">
           <ArrowBack style={{ width: "auto", height: "auto" }} />
         </button>
-        <p className="workspace-scheduler-content">{`${displayIdx}/${total}`}</p>
-        <button className="small-button" onClick={handleRight}>
+        <p className="workspace-scheduler-content" aria-live="polite">{`${displayIdx}/${total}`}</p>
+        <button className="small-button" onClick={handleRight} aria-label="Next arrangement">
           <ArrowForward style={{ width: "auto", height: "auto" }} />
         </button>
       </div>
@@ -620,12 +515,41 @@ export default function Workspace({ term }: { term: string }) {
     <div className="workspace-wrapper">
       {exportModal}
       <h2 className="mb-2 text-center">Choose Workspace...</h2>
-      <div className="workspace-switcher">
+      <div
+        className="workspace-switcher"
+        role="tablist"
+        aria-label="Workspace tabs"
+        onKeyDown={(e) => {
+          const current = state.workspaceIdx;
+          let next = current;
+          if (e.key === "ArrowRight") {
+            e.preventDefault();
+            next = Math.min(current + 1, 4);
+          } else if (e.key === "ArrowLeft") {
+            e.preventDefault();
+            next = Math.max(current - 1, 0);
+          }
+          if (next !== current) {
+            state.setWorkspace(next);
+            // Move focus to the newly selected tab
+            const nextTab = (e.currentTarget as HTMLElement).querySelector<HTMLElement>(
+              `#workspace-tab-${next}`,
+            );
+            nextTab?.focus();
+          }
+        }}
+      >
         {[0, 1, 2, 3, 4].map((idx) => {
+          const isSelected = state.workspaceIdx === idx;
           return (
             <button
               key={idx}
-              className={state.workspaceIdx === idx ? "enabled" : ""}
+              role="tab"
+              aria-selected={isSelected}
+              aria-controls="workspace-tabpanel"
+              id={`workspace-tab-${idx}`}
+              tabIndex={isSelected ? 0 : -1}
+              className={isSelected ? "enabled" : ""}
               onClick={() => state.setWorkspace(idx)}
             >
               {idx + 1}
@@ -633,6 +557,11 @@ export default function Workspace({ term }: { term: string }) {
           );
         })}
       </div>
+      <div
+        role="tabpanel"
+        id="workspace-tabpanel"
+        aria-labelledby={`workspace-tab-${state.workspaceIdx}`}
+      >
       <WorkspaceScheduler />
       <WorkspaceSearch />
       <div className="workspace-controls">
@@ -726,6 +655,7 @@ export default function Workspace({ term }: { term: string }) {
           </DragDropContext>
         )}
       </div>
+      </div>{/* end tabpanel */}
     </div>
   );
 }

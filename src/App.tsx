@@ -1,36 +1,30 @@
 import { useEffect, useState, createContext } from "react";
+import { Routes, Route, Navigate, useParams, Link } from "react-router";
 import Planner from "./Planner";
 import WorkspacePanel from "./Workspace";
 import Modal from "./Modal";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import { motion } from "framer-motion";
 import {
-  createEmptyWorkspace,
-  generateCourseSections,
-  lengthenCourses,
-  normalizeAvailableTime,
-  normalizeAvailableTimes,
-  shortenCourses,
-} from "./lib/scheduling";
-import {
   DEFAULT_TERM_PATH,
   getSupportedTermPaths,
   isSupportedTermPath,
   loadTermCourseData,
-  resolveTermPath,
 } from "./lib/termData";
+import { useWorkspaceState, WorkspaceStateAPI } from "./hooks/useWorkspaceState";
 import {
-  AvailableTimes,
   CourseIndex,
   CourseStorage,
   CourseStorageShort,
   Maybe,
   Workspace as WorkspaceState,
+  AvailableTimes,
 } from "./types";
+import { createEmptyWorkspace } from "./lib/scheduling";
 
 export const AllCourses = createContext<CourseIndex>({});
 
-interface AppStateProps {
+export interface AppStateProps {
   workspaces: WorkspaceState[];
   workspaceIdx: number;
   setWorkspace: (idx: number) => void;
@@ -73,76 +67,38 @@ export const AppState = createContext<AppStateProps>({
   updateAvailableTimes: () => null,
 });
 
-function setArrayIdx<T>(arr: T[], idx: number, element: T): T[] {
-  return arr.map((value, i) => {
-    if (i === idx) {
-      return element;
-    } else {
-      return value;
-    }
-  });
-}
+/* ------------------------------------------------------------------ */
+/*  TermPage — loads data for a specific term and renders the app     */
+/* ------------------------------------------------------------------ */
 
-// credit to https://stackoverflow.com/a/58443076
-const useReactPath = () => {
-  const [path, setPath] = useState(window.location.pathname);
-  const listenToPopstate = () => {
-    const winPath = window.location.pathname;
-    setPath(winPath);
-  };
-  useEffect(() => {
-    window.addEventListener("popstate", listenToPopstate);
-    return () => {
-      window.removeEventListener("popstate", listenToPopstate);
-    };
-  }, []);
-  return path;
-};
+function TermPage() {
+  const { term } = useParams<{ term: string }>();
+  const termPath = `/${(term ?? "").toLowerCase()}`;
 
-/** Main wrapper */
-function App() {
-  // really basic routing
-  const pathname = useReactPath();
-  const realPath = resolveTermPath(pathname);
   const [courseDataState, setCourseDataState] = useState<{
     termPath: string;
     data: CourseIndex;
     error: string | null;
-  }>({
-    termPath: "",
-    data: {},
-    error: null,
-  });
+  }>({ termPath: "", data: {}, error: null });
 
-  const indexedCourses = courseDataState.termPath === realPath
-    ? courseDataState.data
-    : {};
+  const indexedCourses =
+    courseDataState.termPath === termPath ? courseDataState.data : {};
   const dataLoadError =
-    courseDataState.termPath === realPath ? courseDataState.error : null;
-  const isLoadingCourses = courseDataState.termPath !== realPath;
+    courseDataState.termPath === termPath ? courseDataState.error : null;
+  const isLoadingCourses = courseDataState.termPath !== termPath;
 
   useEffect(() => {
     let cancelled = false;
 
-    loadTermCourseData(realPath)
+    loadTermCourseData(termPath)
       .then((courseData) => {
-        if (cancelled) {
-          return;
-        }
-
-        setCourseDataState({
-          termPath: realPath,
-          data: courseData,
-          error: null,
-        });
+        if (cancelled) return;
+        setCourseDataState({ termPath, data: courseData, error: null });
       })
       .catch((error: unknown) => {
-        if (cancelled) {
-          return;
-        }
-
+        if (cancelled) return;
         setCourseDataState({
-          termPath: realPath,
+          termPath,
           data: {},
           error:
             error instanceof Error
@@ -151,335 +107,31 @@ function App() {
         });
       });
 
-    return () => {
-      cancelled = true;
-    };
-  }, [realPath]);
+    return () => { cancelled = true; };
+  }, [termPath]);
 
-  // 5 blank workspaces by default bc I'm too lazy to implement dynamic tabs and stuff
-  const localWorkspaces = localStorage.getItem("workspaces" + realPath);
-  const [workspaces, setWorkspaces] = useState<WorkspaceState[]>(
-    localWorkspaces
-      ? JSON.parse(localWorkspaces)
-      : [
-          createEmptyWorkspace(),
-          createEmptyWorkspace(),
-          createEmptyWorkspace(),
-          createEmptyWorkspace(),
-          createEmptyWorkspace(),
-      ],
+  const workspaceState: WorkspaceStateAPI = useWorkspaceState(
+    termPath,
+    indexedCourses,
   );
-  const localWorkspaceIdx = localStorage.getItem("workspaceIdx" + realPath);
-  const [workspaceIdx, setWorkspaceIdx] = useState<number>(
-    localWorkspaceIdx ? JSON.parse(localWorkspaceIdx) : 0,
-  );
-
-  const courses = workspaces[workspaceIdx].courses;
-  const availableTimes = normalizeAvailableTimes(
-    workspaces[workspaceIdx].availableTimes.map(([start, end]) => [
-      new Date(start),
-      new Date(end),
-    ]),
-  );
-
-  // Save state to local storage
-  useEffect(() => {
-    localStorage.setItem("workspaces" + realPath, JSON.stringify(workspaces));
-    localStorage.setItem(
-      "workspaceIdx" + realPath,
-      JSON.stringify(workspaceIdx),
-    );
-  }, [workspaces, workspaceIdx, realPath]);
-
-  const clearUnlockedSections = (courseList: CourseStorage[]) =>
-    courseList.map((course) =>
-      course.locked ? course : { ...course, sectionId: null },
-    );
-
-  /** Helper functions to be sent sent through Context */
-  const addCourse = (newCourse: CourseStorage) => {
-    const result = courses.find(
-      (course) => course.courseData.id === newCourse.courseData.id,
-    );
-    let newCourses: CourseStorage[] = [];
-    if (result) {
-      // course was already in workspace
-      newCourses = courses;
-    } else {
-      newCourses = [
-        ...courses,
-        { ...newCourse, locked: true, sectionId: 0 },
-      ];
-    }
-    const newArrangements = generateCourseSections(newCourses, availableTimes);
-    let newArrangementIdx: Maybe<number> = null;
-    if (newArrangements.length === 0) {
-      newCourses = clearUnlockedSections(newCourses);
-    } else {
-      newArrangementIdx = 0;
-      newCourses = lengthenCourses(
-        newArrangements[newArrangementIdx],
-        indexedCourses,
-      );
-    }
-    // these happen in parallel
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangements: newArrangements,
-        arrangementIdx: newArrangementIdx,
-      }),
-    );
-  };
-
-  const removeCourse = (course: CourseStorage) => {
-    let newCourses = courses.filter(
-      (currCourse) => currCourse.courseData.id !== course.courseData.id,
-    );
-    const newArrangements = generateCourseSections(newCourses, availableTimes);
-    let newArrangementIdx: Maybe<number> = null;
-    if (newArrangements.length === 0) {
-      newCourses = clearUnlockedSections(newCourses);
-    } else {
-      newArrangementIdx = 0;
-      newCourses = lengthenCourses(
-        newArrangements[newArrangementIdx],
-        indexedCourses,
-      );
-    }
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangements: generateCourseSections(newCourses, availableTimes),
-        arrangementIdx: newArrangementIdx,
-      }),
-    );
-  };
-
-  const toggleCourse = (newCourse: CourseStorage) => {
-    const updatedCourse = { ...newCourse, enabled: !newCourse.enabled };
-    let newCourses = courses.map((course) => {
-      if (course.courseData.id === updatedCourse.courseData.id) {
-        return updatedCourse;
-      } else {
-        return course;
-      }
-    });
-    const newArrangements = generateCourseSections(newCourses, availableTimes);
-    let newArrangementIdx = arrangementIdx;
-    if (newArrangements.length === 0) {
-      newCourses = clearUnlockedSections(newCourses);
-      newArrangementIdx = null;
-    } else {
-      // if course went disabled => enabled or is unlocked, then need to recalculate
-      // otherwise, just keep arrangementIdx the same
-      if (updatedCourse.enabled || !updatedCourse.locked) {
-        newArrangementIdx = 0;
-        newCourses = lengthenCourses(
-          newArrangements[newArrangementIdx],
-          indexedCourses,
-        );
-      }
-    }
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangements: newArrangements,
-        arrangementIdx: newArrangementIdx,
-      }),
-    );
-  };
-
-  const toggleSectionLock = (newCourse: CourseStorage) => {
-    const updatedCourse = { ...newCourse, locked: !newCourse.locked };
-    let newCourses = courses.map((course) => {
-      if (course.courseData.id === updatedCourse.courseData.id) {
-        return updatedCourse;
-      } else {
-        return course;
-      }
-    });
-    const newArrangements = generateCourseSections(newCourses, availableTimes);
-    let newArrangementIdx = arrangementIdx;
-    if (newArrangements.length === 0) {
-      newCourses = clearUnlockedSections(newCourses);
-      newArrangementIdx = null;
-    } else {
-      newArrangementIdx = 0;
-      newCourses = lengthenCourses(
-        newArrangements[newArrangementIdx],
-        indexedCourses,
-      );
-    }
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangements: newArrangements,
-        arrangementIdx: newArrangementIdx,
-      }),
-    );
-  };
-
-  const nextArrangement = () => {
-    const workspace = workspaces[workspaceIdx];
-    let newIdx = workspace.arrangementIdx;
-    if (workspace.arrangements.length === 0) {
-      newIdx = null;
-    } else if (workspace.arrangementIdx === null) {
-      newIdx = 0;
-    } else {
-      newIdx = (workspace.arrangementIdx + 1) % workspace.arrangements.length;
-    }
-    const newArrangement =
-      newIdx === null
-        ? shortenCourses(workspace.courses)
-        : workspace.arrangements[newIdx!];
-    const newCourses = lengthenCourses(newArrangement, indexedCourses);
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangementIdx: newIdx,
-      }),
-    );
-  };
-
-  const prevArrangement = () => {
-    const workspace = workspaces[workspaceIdx];
-    let newIdx = workspace.arrangementIdx;
-    if (workspace.arrangements.length === 0) {
-      newIdx = null;
-    } else if (workspace.arrangementIdx === null) {
-      newIdx = 0;
-    } else {
-      newIdx =
-        (workspace.arrangements.length + workspace.arrangementIdx - 1) %
-        workspace.arrangements.length;
-    }
-    const newArrangement =
-      newIdx === null
-        ? shortenCourses(workspace.courses)
-        : workspace.arrangements[newIdx!];
-    const newCourses = lengthenCourses(newArrangement, indexedCourses);
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangementIdx: newIdx,
-      }),
-    );
-  };
-
-  const setCourses = (courses: CourseStorage[]) => {
-    let newCourses = courses;
-    const newArrangements = generateCourseSections(newCourses, availableTimes);
-    let newArrangementIdx: Maybe<number> = null;
-    if (newArrangements.length === 0) {
-      newCourses = clearUnlockedSections(newCourses);
-    } else {
-      newArrangementIdx = 0;
-      newCourses = lengthenCourses(
-        newArrangements[newArrangementIdx],
-        indexedCourses,
-      );
-    }
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangements: newArrangements,
-        arrangementIdx: newArrangementIdx,
-      }),
-    );
-  };
-
-  const setWorkspace = (idx: number) => {
-    // invariant: previous idx is always valid
-    let newIdx = workspaceIdx;
-    if (idx >= 0 && idx < workspaces.length) {
-      newIdx = idx;
-    }
-    setWorkspaceIdx(newIdx);
-  };
-
-  const updateAvailableTimes = (
-    dayIdx: number,
-    isStart: boolean,
-    day: Date,
-  ) => {
-    const normalizedDay = normalizeAvailableTime(dayIdx, day);
-    const newAvailableTimes: AvailableTimes = setArrayIdx(availableTimes, dayIdx, [
-      isStart ? normalizedDay : availableTimes[dayIdx][0],
-      isStart ? availableTimes[dayIdx][1] : normalizedDay,
-    ]);
-    let newCourses = courses;
-    const newArrangements = generateCourseSections(
-      newCourses,
-      newAvailableTimes,
-    );
-    let newArrangementIdx = arrangementIdx;
-    if (newArrangements.length === 0) {
-      newCourses = clearUnlockedSections(newCourses);
-      newArrangementIdx = null;
-    } else {
-      const isWidening =
-        (isStart && normalizedDay < availableTimes[dayIdx][0]) ||
-        (!isStart && normalizedDay > availableTimes[dayIdx][1]);
-      if (!isWidening || newArrangements.length !== arrangements.length) {
-        newArrangementIdx = 0;
-        newCourses = lengthenCourses(
-          newArrangements[newArrangementIdx],
-          indexedCourses,
-        );
-      }
-    }
-    // if current sections are invalid, jump to first valid one (or null everything)
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangements: newArrangements,
-        arrangementIdx: newArrangementIdx,
-        availableTimes: newAvailableTimes,
-      }),
-    );
-  };
-
-  const { arrangements, arrangementIdx } = workspaces[workspaceIdx];
 
   const [modalOpen, setModalOpen] = useState(false);
-  const supportedTerms = getSupportedTermPaths();
 
   return (
     <AllCourses.Provider value={indexedCourses}>
-      <AppState.Provider
-        value={{
-          workspaces,
-          workspaceIdx,
-          courses: courses,
-          addCourse,
-          removeCourse,
-          toggleCourse,
-          setCourses,
-          arrangements,
-          arrangementIdx,
-          nextArrangement,
-          prevArrangement,
-          availableTimes,
-          updateAvailableTimes,
-          setWorkspace,
-          toggleSectionLock,
-        }}
-      >
+      <AppState.Provider value={workspaceState}>
+        <a
+          href="#main-content"
+          className="skip-to-content"
+        >
+          Skip to content
+        </a>
         <div className="sticky-help">
           <motion.button
             whileHover={{ rotate: 15 }}
             className="help-button"
             onClick={() => setModalOpen(true)}
+            aria-label="Help"
           >
             <HelpOutlineIcon
               className="text-orange-500 bg-transparent"
@@ -532,40 +184,20 @@ function App() {
           </Modal>
         </div>
 
-        <main className="py-5 mx-2 antialiased scroll-smooth selection:bg-orange-400 selection:text-black">
+        <main id="main-content" className="py-5 mx-2 antialiased scroll-smooth selection:bg-orange-400 selection:text-black">
           {isLoadingCourses ? (
-            <div className="py-16 text-center space-y-2">
+            <div className="py-16 text-center space-y-2" aria-live="polite">
               <p className="text-2xl font-bold">Loading course data…</p>
-              <p>Term: {realPath.substring(1)}</p>
+              <p>Term: {term}</p>
             </div>
           ) : dataLoadError ? (
-            <div className="py-16 text-center space-y-4">
-              <p className="text-2xl font-bold">
-                Unable to load course data for {realPath.substring(1)}
-              </p>
-              <p>{dataLoadError}</p>
-              {!isSupportedTermPath(pathname) && (
-                <p className="text-sm text-neutral-600">
-                  Supported terms: {supportedTerms.join(", ")}
-                </p>
-              )}
-              <p>
-                Try the{" "}
-                <a
-                  className="font-mono font-bold text-orange-500 hover:underline"
-                  href={DEFAULT_TERM_PATH}
-                >
-                  {DEFAULT_TERM_PATH.substring(1)}
-                </a>{" "}
-                term instead.
-              </p>
-            </div>
+            <ErrorPage term={term ?? ""} error={dataLoadError} />
           ) : (
             <div id="column-container">
               <div className="column planner-column">
                 <Planner />
               </div>
-              <WorkspacePanel term={realPath.substring(1)} />
+              <WorkspacePanel term={term ?? ""} />
             </div>
           )}
         </main>
@@ -577,12 +209,85 @@ function App() {
             <Hyperlink href="https://github.com/ericlovesmath" text="Eric" />, &{" "}
             <Hyperlink href="https://github.com/zack466" text="Zack" />
           </p>
-          <p>Current term: {realPath.substring(1)}</p>
+          <p>Current term: {term}</p>
         </footer>
       </AppState.Provider>
     </AllCourses.Provider>
   );
 }
+
+/* ------------------------------------------------------------------ */
+/*  ErrorPage                                                         */
+/* ------------------------------------------------------------------ */
+
+function ErrorPage({ term, error }: { term: string; error?: string }) {
+  const supportedTerms = getSupportedTermPaths();
+  const pathname = `/${term}`;
+
+  return (
+    <div className="py-16 text-center space-y-4">
+      <p className="text-2xl font-bold">
+        Unable to load course data for {term}
+      </p>
+      {error && <p>{error}</p>}
+      {!isSupportedTermPath(pathname) && (
+        <p className="text-sm text-neutral-600">
+          Supported terms: {supportedTerms.join(", ")}
+        </p>
+      )}
+      <p>
+        Try the{" "}
+        <Link
+          className="font-mono font-bold text-orange-500 hover:underline"
+          to={DEFAULT_TERM_PATH}
+        >
+          {DEFAULT_TERM_PATH.substring(1)}
+        </Link>{" "}
+        term instead.
+      </p>
+    </div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  NotFoundPage — catch-all for unrecognized routes                  */
+/* ------------------------------------------------------------------ */
+
+function NotFoundPage() {
+  const pathname = window.location.pathname;
+  const term = pathname.substring(1) || "unknown";
+  return (
+    <div className="py-5 mx-2 antialiased">
+      <ErrorPage term={term} />
+      <footer className="footer">
+        <p>
+          Made with ❤️ by{" "}
+          <Hyperlink href="https://github.com/rchalamala" text="Rahul" />,{" "}
+          <Hyperlink href="https://github.com/ericlovesmath" text="Eric" />, &{" "}
+          <Hyperlink href="https://github.com/zack466" text="Zack" />
+        </p>
+      </footer>
+    </div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  App — route definitions                                           */
+/* ------------------------------------------------------------------ */
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Navigate to={DEFAULT_TERM_PATH} replace />} />
+      <Route path="/:term" element={<TermPage />} />
+      <Route path="*" element={<NotFoundPage />} />
+    </Routes>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  Shared components                                                 */
+/* ------------------------------------------------------------------ */
 
 function Hyperlink(props: { href: string; text: string }) {
   return (

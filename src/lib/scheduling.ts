@@ -89,6 +89,14 @@ export function sectionsIntersect(a: CourseStorage, b: CourseStorage): boolean {
   return false;
 }
 
+export function clearUnlockedSections(
+  courses: CourseStorage[],
+): CourseStorage[] {
+  return courses.map((course) =>
+    course.locked ? course : { ...course, sectionId: null },
+  );
+}
+
 export function shortenCourses(
   courses: CourseStorage[],
 ): CourseStorageShort[] {
