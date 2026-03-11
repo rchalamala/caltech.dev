@@ -1,5 +1,5 @@
 import { useEffect, useState, createContext } from "react";
-import { Routes, Route, Navigate, useParams, Link } from "react-router";
+import { Routes, Route, Navigate, useParams, useNavigate, Link } from "react-router";
 import Planner from "./Planner";
 import WorkspacePanel from "./Workspace";
 import Modal from "./Modal";
@@ -159,15 +159,15 @@ function TermPage() {
               the section number will not be changed.
             </p>
             <p>
-              You can also limit sections be time. Above the calendar, you can
+              You can also limit sections by time. Above the calendar, you can
               change the allowed time range for any day of the week. The course
               scheduler should respect these times, and it will not generate
               arrangements with courses that start before the first time or end
-              after the second. Note: If has a course doesn't have a time
+              after the second. Note: If a course doesn't have a time
               (marked as A), then the scheduler will leave it blank.
             </p>
             <p>
-              We hope that this course schuduler makes your life easier! You can
+              We hope that this course scheduler makes your life easier! You can
               find the source code{" "}
               <Hyperlink
                 href="https://github.com/rchalamala/caltech.dev"
@@ -209,7 +209,7 @@ function TermPage() {
             <Hyperlink href="https://github.com/ericlovesmath" text="Eric" />, &{" "}
             <Hyperlink href="https://github.com/zack466" text="Zack" />
           </p>
-          <p>Current term: {term}</p>
+          <TermSelector currentTerm={term ?? ""} />
         </footer>
       </AppState.Provider>
     </AllCourses.Provider>
@@ -288,6 +288,28 @@ function App() {
 /* ------------------------------------------------------------------ */
 /*  Shared components                                                 */
 /* ------------------------------------------------------------------ */
+
+function TermSelector({ currentTerm }: { currentTerm: string }) {
+  const navigate = useNavigate();
+  const supportedTerms = getSupportedTermPaths();
+
+  return (
+    <p>
+      Term:{" "}
+      <select
+        className="font-mono font-bold text-orange-500 bg-transparent border-b border-orange-500 cursor-pointer focus:outline-none"
+        value={`/${currentTerm.toLowerCase()}`}
+        onChange={(e) => navigate(e.target.value)}
+      >
+        {supportedTerms.map((tp) => (
+          <option key={tp} value={tp}>
+            {tp.substring(1)}
+          </option>
+        ))}
+      </select>
+    </p>
+  );
+}
 
 function Hyperlink(props: { href: string; text: string }) {
   return (

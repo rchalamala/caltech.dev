@@ -104,9 +104,9 @@ describe("Planner", () => {
   it("renders the calendar without errors when no courses are added", () => {
     renderPlanner();
 
-    // react-big-calendar renders day headers: Mon, Tue, Wed, Thu, Fri
-    expect(screen.getByText("Mon")).toBeInTheDocument();
-    expect(screen.getByText("Fri")).toBeInTheDocument();
+    // react-big-calendar renders day headers and time-picker labels: Mon, Tue, Wed, Thu, Fri
+    expect(screen.getAllByText("Mon").length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText("Fri").length).toBeGreaterThanOrEqual(1);
   });
 
   it("renders time pickers for 5 weekdays", () => {

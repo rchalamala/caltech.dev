@@ -4,6 +4,7 @@ import { Calendar, dayjsLocalizer, Views } from "react-big-calendar";
 import dayjs from "dayjs";
 import Flatpickr from "react-flatpickr";
 import { parseTimes } from "./lib/time";
+import { getCourseColorHSL } from "./lib/courseColor";
 import { CourseStorage, DateData } from "./types";
 
 import "react-big-calendar/lib/css/react-big-calendar.css";
@@ -61,12 +62,9 @@ function Planner() {
 
   /** Hashes id to proper color and styling for calendar items */
   const eventStyleGetter = (event: DateData) => {
-    const hue = ((event.id * 1.4269) % 1.0) * 360;
-    const sat = (((event.id * 1.7234) % 0.2) + 0.5) * 100;
-
     return {
       style: {
-        backgroundColor: `hsl(${hue}, ${sat}%, 70%)`,
+        backgroundColor: getCourseColorHSL(event.id),
         cursor: "pointer",
         borderStyle: "none",
         borderRadius: "4px",
@@ -77,9 +75,10 @@ function Planner() {
   return (
     <div>
       <div className="time-controls">
-        {[0, 1, 2, 3, 4].map((idx) => {
+        {["Mon", "Tue", "Wed", "Thu", "Fri"].map((day, idx) => {
           return (
             <div className="time-picker" key={idx}>
+              <span className="time-picker-label">{day}</span>
               <Flatpickr
                 data-enable-time
                 options={{
