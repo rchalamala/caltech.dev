@@ -128,4 +128,23 @@ describe("exportICS", () => {
     const eventCount = (ics.match(/BEGIN:VEVENT/g) || []).length;
     expect(eventCount).toBe(1);
   });
+
+  it("correctly exports section when section numbers have gaps", () => {
+    // Simulate real Caltech data where section numbers skip (e.g., 1, 2, 4, 5)
+    const section1 = makeSection(1, "M 09:00 - 09:55", "Baxter 101");
+    const section2 = makeSection(2, "T 10:00 - 10:55", "Baxter 102");
+    const section4 = makeSection(4, "W 11:00 - 11:55", "Sloan 151");
+    const section5 = makeSection(5, "R 13:00 - 13:55", "Sloan 152");
+    const courseData = makeCourseData(1, "CS 1", [section1, section2, section4, section5]);
+
+    // sectionId 2 = array index 2 = section number 4 (Wednesday)
+    const course = makeCourse(courseData, { sectionId: 2 });
+
+    const ics = exportICS("sp2026", [course]);
+
+    expect(ics).toContain("BEGIN:VEVENT");
+    const eventCount = (ics.match(/BEGIN:VEVENT/g) || []).length;
+    expect(eventCount).toBe(1);
+    expect(ics).toContain("LOCATION:Sloan 151");
+  });
 });

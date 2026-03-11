@@ -63,28 +63,27 @@ export function exportICS(term: string, courses: CourseStorage[]): string {
 
   // Flatten the courses and parse times with start and end times, matching locations
   const parsedEvents = courses
-    .filter(course => course.enabled)
+    .filter(course => course.enabled && course.sectionId !== null)
     .flatMap(course => {
-      return course.courseData.sections
-        .filter(section => section.number - 1 === course.sectionId) // Filter by selected section
-        .flatMap(section => {
-          const times = section.times.split('\n'); // Split multiple times on newline
-          const locations = section.locations.split('\n'); // Split multiple locations on newline
+      const section = course.courseData.sections[course.sectionId!];
+      if (!section) return [];
 
-          // Zip times and locations together
-          return times.flatMap((time, index) => {
-            const location = locations[index] || 'Unknown'; // Match time with corresponding location
-            const [days, startTime, , endTime] = time.split(' '); // Separate days and time range
-            if (days === 'A') return []; // skip to-be-announced times
-            
-            return days.split('').map(day => ({
-              name: course.courseData.number, // Use course number for the title
-              location, // Set the matched location for this time
-              startTime: getFirstOccurrence(termStartDate, day, startTime),
-              endTime: getFirstOccurrence(termStartDate, day, endTime) // Parse the end time
-            }));
-          });
-        });
+      const times = section.times.split('\n'); // Split multiple times on newline
+      const locations = section.locations.split('\n'); // Split multiple locations on newline
+
+      // Zip times and locations together
+      return times.flatMap((time, index) => {
+        const location = locations[index] || 'Unknown'; // Match time with corresponding location
+        const [days, startTime, , endTime] = time.split(' '); // Separate days and time range
+        if (days === 'A') return []; // skip to-be-announced times
+
+        return days.split('').map(day => ({
+          name: course.courseData.number, // Use course number for the title
+          location, // Set the matched location for this time
+          startTime: getFirstOccurrence(termStartDate, day, startTime),
+          endTime: getFirstOccurrence(termStartDate, day, endTime) // Parse the end time
+        }));
+      });
     });
 
   // Create a basic ICS header using stable floating local times.
