@@ -6,6 +6,12 @@
   border-bottom: none;
 }
 
+/* ── Time Controls Container (margins set here for mobile overrides) ── */
+.time-controls {
+  margin-left: 65px;
+  margin-right: 20px;
+}
+
 /* ── Time Input Styling ── */
 input.time-input {
   width: 100%;
@@ -39,8 +45,13 @@ input.time-input.active {
   background-color: #fff;
 }
 
-/* ── Mobile: tighten time inputs ── */
+/* ── Mobile: tighten time controls and inputs ── */
 @media (max-width: 767px) {
+  .time-controls {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
   input.time-input {
     max-width: 3.5rem;
     font-size: 0.7rem;

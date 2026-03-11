@@ -77,14 +77,13 @@ function Planner() {
   return (
     <div>
       <div
+        className="time-controls"
         style={{
           display: "flex",
           flexDirection: "row",
           alignItems: "stretch",
           gap: 8,
           padding: "12px 0",
-          marginLeft: 65,
-          marginRight: 20,
         }}
       >
         {[0, 1, 2, 3, 4].map((idx) => {
@@ -103,7 +102,6 @@ function Planner() {
               }}
             >
               <span
-                aria-hidden="true"
                 style={{
                   fontSize: "0.7rem",
                   fontWeight: 600,
@@ -126,6 +124,7 @@ function Planner() {
               >
                 <Flatpickr
                   className="time-input"
+                  aria-label={`${dayLabels[idx]} start time`}
                   data-enable-time
                   options={{
                     dateFormat: "H:i",
@@ -138,6 +137,7 @@ function Planner() {
                   }}
                 />
                 <span
+                  aria-hidden="true"
                   style={{
                     fontSize: "0.6rem",
                     color: "#a3a3a3",
@@ -149,6 +149,7 @@ function Planner() {
                 </span>
                 <Flatpickr
                   className="time-input"
+                  aria-label={`${dayLabels[idx]} end time`}
                   data-enable-time
                   options={{
                     dateFormat: "H:i",
