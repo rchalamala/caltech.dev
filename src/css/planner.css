@@ -6,46 +6,44 @@
   border-bottom: none;
 }
 
-.time-picker {
-  display: flex;
-  flex-direction: column;
-  row-gap: 8px;
-  max-width: 4rem;
-}
-
-.time-picker > input {
+/* ── Time Input Styling ── */
+input.time-input {
+  width: 100%;
+  max-width: 4.5rem;
+  padding: 4px 6px;
   text-align: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  color: #262626;
+  background-color: #fafafa;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  outline: none;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease;
+  cursor: pointer;
 }
 
-.flatpickr-input {
-  border: 1px solid lightgrey;
-  border-radius: 4px;
+input.time-input:hover {
+  border-color: #d4d4d4;
+  background-color: #fff;
 }
 
-.time-controls {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-left: 65px;
-  margin-right: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+input.time-input:focus,
+input.time-input.active {
+  border-color: #f97316;
+  box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.15);
+  background-color: #fff;
 }
 
-/* Mobile: tighten calendar controls */
+/* ── Mobile: tighten time inputs ── */
 @media (max-width: 767px) {
-  .time-controls {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .time-picker {
+  input.time-input {
     max-width: 3.5rem;
-    row-gap: 4px;
-  }
-
-  .flatpickr-input {
-    font-size: 0.75rem;
-    padding: 2px 4px;
+    font-size: 0.7rem;
+    padding: 3px 4px;
   }
 }

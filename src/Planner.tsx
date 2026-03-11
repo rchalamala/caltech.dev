@@ -76,34 +76,91 @@ function Planner() {
 
   return (
     <div>
-      <div className="time-controls">
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "stretch",
+          gap: 8,
+          padding: "12px 0",
+          marginLeft: 65,
+          marginRight: 20,
+        }}
+      >
         {[0, 1, 2, 3, 4].map((idx) => {
+          const dayLabels = ["Mon", "Tue", "Wed", "Thu", "Fri"];
           return (
-            <div className="time-picker" key={idx}>
-              <Flatpickr
-                data-enable-time
-                options={{
-                  dateFormat: "H:i",
-                  enableTime: true,
-                  noCalendar: true,
+            <div
+              className="time-picker"
+              key={idx}
+              style={{
+                display: "flex",
+                flex: 1,
+                minWidth: 0,
+                flexDirection: "column",
+                alignItems: "center",
+                gap: 4,
+              }}
+            >
+              <span
+                aria-hidden="true"
+                style={{
+                  fontSize: "0.7rem",
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.05em",
+                  color: "#737373",
+                  userSelect: "none",
                 }}
-                value={state.availableTimes[idx][0]}
-                onChange={([day]) => {
-                  state.updateAvailableTimes(idx, true, day);
+              >
+                {dayLabels[idx]}
+              </span>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  gap: 2,
+                  width: "100%",
                 }}
-              />
-              <Flatpickr
-                data-enable-time
-                options={{
-                  dateFormat: "H:i",
-                  enableTime: true,
-                  noCalendar: true,
-                }}
-                value={state.availableTimes[idx][1]}
-                onChange={([day]) => {
-                  state.updateAvailableTimes(idx, false, day);
-                }}
-              />
+              >
+                <Flatpickr
+                  className="time-input"
+                  data-enable-time
+                  options={{
+                    dateFormat: "H:i",
+                    enableTime: true,
+                    noCalendar: true,
+                  }}
+                  value={state.availableTimes[idx][0]}
+                  onChange={([day]) => {
+                    state.updateAvailableTimes(idx, true, day);
+                  }}
+                />
+                <span
+                  style={{
+                    fontSize: "0.6rem",
+                    color: "#a3a3a3",
+                    lineHeight: 1,
+                    userSelect: "none",
+                  }}
+                >
+                  to
+                </span>
+                <Flatpickr
+                  className="time-input"
+                  data-enable-time
+                  options={{
+                    dateFormat: "H:i",
+                    enableTime: true,
+                    noCalendar: true,
+                  }}
+                  value={state.availableTimes[idx][1]}
+                  onChange={([day]) => {
+                    state.updateAvailableTimes(idx, false, day);
+                  }}
+                />
+              </div>
             </div>
           );
         })}
