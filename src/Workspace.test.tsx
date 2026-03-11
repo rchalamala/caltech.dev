@@ -241,11 +241,11 @@ describe("Workspace", () => {
     expect(screen.getByText("1/2")).toBeInTheDocument();
   });
 
-  it("shows 'All sections set' when all courses are locked", () => {
+  it("shows unlock hint when all courses are locked", () => {
     const courses = [makeCourseStorage(1, { locked: true })];
     renderWorkspace({ courses });
 
-    expect(screen.getByText(/all sections set/i)).toBeInTheDocument();
+    expect(screen.getByText(/unlock courses/i)).toBeInTheDocument();
   });
 
   it("calls prevArrangement and nextArrangement on arrow clicks", async () => {
@@ -296,7 +296,10 @@ describe("Workspace", () => {
     const courses = [makeCourseStorage(1)];
     const { mockState } = renderWorkspace({ courses });
 
+    // Mock window.confirm to return true
+    const confirmSpy = vi.spyOn(window, "confirm").mockReturnValue(true);
     await user.click(screen.getByText("Remove All"));
     expect(mockState.setCourses).toHaveBeenCalledWith([]);
+    confirmSpy.mockRestore();
   });
 });

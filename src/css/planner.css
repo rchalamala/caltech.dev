@@ -11,6 +11,14 @@
   flex-direction: column;
   row-gap: 8px;
   max-width: 4rem;
+  align-items: center;
+}
+
+.time-picker-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  color: #737373;
 }
 
 .time-picker > input {

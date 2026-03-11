@@ -1,4 +1,4 @@
-import { useContext, useEffect, useMemo, useState } from "react";
+import { useContext, useEffect, useMemo, useRef, useState } from "react";
 import Modal, { useModal } from "./Modal";
 import Select from "react-select";
 import { SingleValue } from "react-select";
@@ -27,6 +27,7 @@ import { Collapse, IconButton, Switch } from "@mui/material";
 import { UnfoldLess, UnfoldMore } from "@mui/icons-material";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import { exportICS } from "./lib/ics";
+import { getCourseColorHSL } from "./lib/courseColor";
 import {
   CourseData,
   CourseIndex,
@@ -113,7 +114,13 @@ function SectionDropdown(props: { course: CourseStorage }) {
         }
         onChange={onChange}
         options={course.courseData.sections}
-        getOptionLabel={(section) => `${section.number}`}
+        getOptionLabel={(section) => {
+          const time = section.times === "A" ? "TBD" : section.times;
+          const parts = [`${section.number}`];
+          if (section.instructor) parts.push(section.instructor);
+          parts.push(time);
+          return parts.join(" \u2014 ");
+        }}
         isOptionSelected={(section) =>
           course.sectionId !== null
             ? section.number ===
@@ -200,7 +207,10 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
             }`}
             ref={provided.innerRef}
             {...provided.draggableProps}
-            style={provided.draggableProps.style}
+            style={{
+              ...provided.draggableProps.style,
+              borderLeft: `4px solid ${getCourseColorHSL(course.courseData.id)}`,
+            }}
           >
             <div
               className={`relative w-full whitespace-nowrap ${snapshot.isDragging ? "workspace-entry-dragging" : ""}`}
@@ -392,7 +402,11 @@ function WorkspaceScheduler() {
   if (allSectionsSet) {
     return (
       <div className="workspace-scheduler">
-        <p>All sections set.</p>
+        <p>
+          {state.courses.length > 0
+            ? "All sections locked. Unlock courses to auto-find non-conflicting schedules."
+            : "All sections set."}
+        </p>
       </div>
     );
   } else if (total === 0) {
@@ -475,28 +489,57 @@ export default function Workspace({ term }: { term: string }) {
     );
   });
 
-  const importWorkspace = () => {
-    const code = prompt("Copy in the workspace code.") || "";
-    if (code === "") {
-      return;
-    }
-    try {
-      const shortened = JSON.parse(window.atob(code));
-      const courses: CourseStorageShort[] = [];
-      for (let i = 0; i * 4 < shortened.length; i++) {
-        courses.push({
-          courseId: shortened[i * 4],
-          enabled: shortened[i * 4 + 1],
-          locked: shortened[i * 4 + 2],
-          sectionId: shortened[i * 4 + 3],
-        });
+  const [importError, setImportError] = useState<string | null>(null);
+  const importInputRef = useRef<HTMLTextAreaElement>(null);
+
+  const [openImportModal, importModal] = useModal(() => {
+    const handleImport = () => {
+      const code = importInputRef.current?.value.trim() || "";
+      if (code === "") {
+        return;
       }
-      const lengthened = lengthenCourses(courses, indexedCourses);
-      state.setCourses(lengthened);
-    } catch {
-      alert("Error importing workspace.");
-    }
-  };
+      try {
+        const shortened = JSON.parse(window.atob(code));
+        const courses: CourseStorageShort[] = [];
+        for (let i = 0; i * 4 < shortened.length; i++) {
+          courses.push({
+            courseId: shortened[i * 4],
+            enabled: shortened[i * 4 + 1],
+            locked: shortened[i * 4 + 2],
+            sectionId: shortened[i * 4 + 3],
+          });
+        }
+        const lengthened = lengthenCourses(courses, indexedCourses);
+        state.setCourses(lengthened);
+        setImportError(null);
+      } catch {
+        setImportError("Invalid workspace code. Please check and try again.");
+      }
+    };
+
+    return (
+      <div className="export-modal">
+        <p className="text-lg font-bold">Paste your workspace code:</p>
+        <textarea
+          ref={importInputRef}
+          className="w-full p-2 font-mono text-sm border rounded-md border-neutral-300"
+          rows={4}
+          placeholder="Paste workspace code here..."
+        />
+        {importError && (
+          <p className="text-sm text-red-500">{importError}</p>
+        )}
+        <motion.button
+          whileHover={{ scale: 0.95 }}
+          whileTap={{ scale: 0.9 }}
+          className="flex px-4 py-2 mx-auto space-x-2 font-bold border-2 rounded-md"
+          onClick={handleImport}
+        >
+          <p>Import</p>
+        </motion.button>
+      </div>
+    );
+  });
 
   function onDragEnd(result: DropResult) {
     if (
@@ -514,6 +557,7 @@ export default function Workspace({ term }: { term: string }) {
   return (
     <div className="workspace-wrapper">
       {exportModal}
+      {importModal}
       <h2 className="mb-2 text-center">Choose Workspace...</h2>
       <div
         className="workspace-switcher"
@@ -597,21 +641,27 @@ export default function Workspace({ term }: { term: string }) {
             );
           }}
         />
-        <ControlButton text="Remove All" onClick={() => state.setCourses([])} />
+        <ControlButton text="Remove All" onClick={() => {
+          if (state.courses.length === 0 || window.confirm("Remove all courses from this workspace?")) {
+            state.setCourses([]);
+          }
+        }} />
         <ControlButton
           text="Default Schedule"
           onClick={() => {
-            state.setCourses(
-              // Change based on term
-              DEFAULT_COURSES[term.substring(0, 2)].map((name) => ({
-                ...getCourse(name, indexedCourses)!,
-                enabled: true,
-                locked: true,
-              })),
-            );
+            if (state.courses.length === 0 || window.confirm("Replace current courses with the default schedule?")) {
+              state.setCourses(
+                // Change based on term
+                (DEFAULT_COURSES[term.substring(0, 2)] ?? []).map((name) => ({
+                  ...getCourse(name, indexedCourses)!,
+                  enabled: true,
+                  locked: true,
+                })),
+              );
+            }
           }}
         />
-        <ControlButton text="Import Workspace" onClick={importWorkspace} />
+        <ControlButton text="Import Workspace" onClick={openImportModal} />
         <ControlButton text="Export Workspace" onClick={openExportModal} />
         <ControlButton text="Export .ics" onClick={() => {
           const icsContent = exportICS(term, state.courses);
