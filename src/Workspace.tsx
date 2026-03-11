@@ -492,7 +492,7 @@ export default function Workspace({ term }: { term: string }) {
   const [importError, setImportError] = useState<string | null>(null);
   const importInputRef = useRef<HTMLTextAreaElement>(null);
 
-  const [openImportModal, importModal] = useModal(() => {
+  const [openImportModalRaw, importModal] = useModal(({ onClose }) => {
     const handleImport = () => {
       const code = importInputRef.current?.value.trim() || "";
       if (code === "") {
@@ -512,6 +512,7 @@ export default function Workspace({ term }: { term: string }) {
         const lengthened = lengthenCourses(courses, indexedCourses);
         state.setCourses(lengthened);
         setImportError(null);
+        onClose();
       } catch {
         setImportError("Invalid workspace code. Please check and try again.");
       }
@@ -540,6 +541,11 @@ export default function Workspace({ term }: { term: string }) {
       </div>
     );
   });
+
+  const openImportModal = () => {
+    setImportError(null);
+    openImportModalRaw();
+  };
 
   function onDragEnd(result: DropResult) {
     if (
@@ -652,11 +658,14 @@ export default function Workspace({ term }: { term: string }) {
             if (state.courses.length === 0 || window.confirm("Replace current courses with the default schedule?")) {
               state.setCourses(
                 // Change based on term
-                (DEFAULT_COURSES[term.substring(0, 2)] ?? []).map((name) => ({
-                  ...getCourse(name, indexedCourses)!,
-                  enabled: true,
-                  locked: true,
-                })),
+                (DEFAULT_COURSES[term.substring(0, 2)] ?? [])
+                  .map((name) => getCourse(name, indexedCourses))
+                  .filter((c): c is CourseStorage => c !== null)
+                  .map((c) => ({
+                    ...c,
+                    enabled: true,
+                    locked: true,
+                  })),
               );
             }
           }}
