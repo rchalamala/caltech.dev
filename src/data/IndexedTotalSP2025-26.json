@@ -32,7 +32,7 @@
       {
         "grades": "LETTER",
         "instructor": "Pellegrino, S",
-        "locations": "133 GUG",
+        "locations": "390 FIR",
         "number": 1,
         "times": "TR 09:00 - 10:25"
       }
@@ -644,6 +644,13 @@
         "locations": "",
         "number": 2,
         "times": "A\nA"
+      },
+      {
+        "grades": "",
+        "instructor": "Hoffmann, F",
+        "locations": "",
+        "number": 3,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -923,7 +930,7 @@
         "times": "TR 10:30 - 11:55"
       }
     ],
-    "comment": " Sec 01: Particles in motion - mathematical modelling across scales (Letter & P/F) // Sec 02: Data-driven methods for dynamical systems:theory and applications (P/F only) // Sec 03: Scientific Machine Learning (Letter only)",
+    "comment": " Sec 01: Particles in motion - mathematical modelling across scales (Letter & P/F) // Sec 02: Data-driven methods for dynamical systems:theory and applications (Letter & P/F) // Sec 03: Scientific Machine Learning (Letter only)",
     "units": [
       3,
       0,
@@ -1464,6 +1471,13 @@
         "locations": "",
         "number": 18,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Bernardi, M",
+        "locations": "",
+        "number": 19,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -1638,7 +1652,7 @@
         "instructor": "Bernardi, M",
         "locations": "104 WAT",
         "number": 1,
-        "times": "MWF 13:00 - 13:55"
+        "times": "WF 13:00 - 14:25"
       }
     ],
     "comment": "",
@@ -1927,6 +1941,13 @@
         "instructor": "Hutzler, N",
         "locations": "",
         "number": 29,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Wu, W",
+        "locations": "",
+        "number": 30,
         "times": "A\nA"
       },
       {
@@ -2264,6 +2285,13 @@
         "instructor": "Chen, Y",
         "locations": "",
         "number": 27,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Wu, W",
+        "locations": "",
+        "number": 28,
         "times": "A\nA"
       },
       {
@@ -3584,13 +3612,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Kennedy, M",
+        "instructor": "Staff",
         "locations": "101 KRK",
         "number": 1,
         "times": "M 16:00 - 17:55"
       }
     ],
-    "comment": "",
+    "comment": " Course cancelled",
     "units": [
       2,
       0,
@@ -3634,13 +3662,13 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Sternberg, P / Hay, B",
+        "instructor": "Staff",
         "locations": "125 KRK",
         "number": 1,
         "times": "W 12:00 - 12:55"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       1,
       0,
@@ -3809,6 +3837,13 @@
         "instructor": "Ismagilov, R",
         "locations": "",
         "number": 22,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ozturk, S",
+        "locations": "",
+        "number": 23,
         "times": "A\nA"
       },
       {
@@ -4503,6 +4538,13 @@
         "instructor": "Fianu, I",
         "locations": "",
         "number": 52,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Glover, D",
+        "locations": "",
+        "number": 53,
         "times": "A\nA"
       }
     ],
@@ -5226,6 +5268,13 @@
       },
       {
         "grades": "PASS-FAIL",
+        "instructor": "Gao, W",
+        "locations": "",
+        "number": 50,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
         "instructor": "Rothenberg, E",
         "locations": "",
         "number": 51,
@@ -5414,9 +5463,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Newman, D / Bois, J",
-        "locations": "",
+        "locations": "B101 BBB\nB101 BBB",
         "number": 1,
-        "times": "R 12:00 - 12:55\nA\nR 11:00 - 11:55\nA"
+        "times": "R 12:00 - 12:55\nR 11:00 - 11:55"
       }
     ],
     "comment": "",
@@ -5755,6 +5804,13 @@
         "instructor": "Wold, B",
         "locations": "",
         "number": 26,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Wagenaar, D",
+        "locations": "",
+        "number": 27,
         "times": "A\nA"
       },
       {
@@ -7073,7 +7129,7 @@
         "times": "TR 14:30 - 15:55"
       }
     ],
-    "comment": "",
+    "comment": " Open to Juniors and Seniors only",
     "units": [
       3,
       0,
@@ -7420,6 +7476,13 @@
         "instructor": "Shapiro, M",
         "locations": "",
         "number": 1,
+        "times": "A\nA"
+      },
+      {
+        "grades": "",
+        "instructor": "Lewis, N",
+        "locations": "",
+        "number": 2,
         "times": "A\nA"
       }
     ],
@@ -7906,7 +7969,7 @@
       {
         "grades": "LETTER",
         "instructor": "Manthiram, K",
-        "locations": "106 SPL",
+        "locations": "275 RSC",
         "number": 1,
         "times": "TR 09:00 - 10:25"
       }
@@ -8098,6 +8161,13 @@
         "instructor": "Kornfield, J",
         "locations": "",
         "number": 21,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ozturk, S",
+        "locations": "",
+        "number": 22,
         "times": "A\nA"
       },
       {
@@ -8370,9 +8440,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Rees, D / Blake, G",
-        "locations": "",
+        "locations": "B101 BBB\nB101 BBB\nB101 BBB",
         "number": 1,
-        "times": "W 10:00 - 10:55\nA\nM 19:00 - 20:55\nA\nT 11:00 - 11:55\nA"
+        "times": "W 10:00 - 10:55\nM 19:00 - 21:55\nT 12:00 - 12:55"
       }
     ],
     "comment": "",
@@ -8836,13 +8906,6 @@
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Rossman, G",
-        "locations": "",
-        "number": 23,
-        "times": "A\nA"
-      },
-      {
-        "grades": "PASS-FAIL",
         "instructor": "Virgil, S",
         "locations": "",
         "number": 25,
@@ -8944,13 +9007,6 @@
         "instructor": "Eiler, J",
         "locations": "",
         "number": 41,
-        "times": "A\nA"
-      },
-      {
-        "grades": "PASS-FAIL",
-        "instructor": "Rossman, G",
-        "locations": "",
-        "number": 42,
         "times": "A\nA"
       },
       {
@@ -9173,13 +9229,6 @@
       },
       {
         "grades": "",
-        "instructor": "Rossman, G / Okumura, M",
-        "locations": "",
-        "number": 11,
-        "times": "A\nA"
-      },
-      {
-        "grades": "",
         "instructor": "Dougherty, D / Okumura,",
         "locations": "M",
         "number": 12,
@@ -9232,6 +9281,13 @@
         "instructor": "Okumura, M",
         "locations": "",
         "number": 19,
+        "times": "A\nA"
+      },
+      {
+        "grades": "",
+        "instructor": "Datta, S / Okumura, M",
+        "locations": "",
+        "number": 20,
         "times": "A\nA"
       },
       {
@@ -9317,13 +9373,13 @@
       },
       {
         "grades": "",
-        "instructor": "See, K / Chan, G",
+        "instructor": "Staff",
         "locations": "147 NYS",
         "number": 2,
         "times": "R 14:30 - 15:25"
       }
     ],
-    "comment": " Sec 01: Enzyme Engineering and Biocatalysis // Sec 02: Chemistry of the Main Group: Structure, Reactivity, and Catalysis // Sec 02 on April 16, the class will be held in B122 Gates Annex",
+    "comment": " Sec 01: Enzyme Engineering and Biocatalysis // Sec 02: Section Cancelled",
     "units": [
       1,
       0,
@@ -10173,6 +10229,13 @@
         "instructor": "Hoelz, A",
         "locations": "",
         "number": 32,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Minnich, A",
+        "locations": "",
+        "number": 33,
         "times": "A\nA"
       },
       {
@@ -11290,7 +11353,7 @@
         "times": "MWF 13:00 - 13:55"
       }
     ],
-    "comment": " Section Days/Times/Locations TBD // Instructor permission required to enroll",
+    "comment": " max enroll: 50 students",
     "units": [
       3,
       4,
@@ -11312,7 +11375,7 @@
         "instructor": "Ordentlich, E / Blank, A",
         "locations": "105 ANB",
         "number": 1,
-        "times": "MWF 09:00 - 09:55"
+        "times": "MW 09:00 - 09:55"
       }
     ],
     "comment": "",
@@ -11333,7 +11396,7 @@
     "number": "Ma/CS 6 c",
     "sections": [
       {
-        "grades": "PASS-FAIL",
+        "grades": "",
         "instructor": "Marcolli, M",
         "locations": "187 LINDE",
         "number": 1,
@@ -11490,7 +11553,7 @@
         "times": "TR 13:00 - 14:25"
       }
     ],
-    "comment": "",
+    "comment": " Prereq:CS 2; CS 21; & one of Ma/CS 6a, Ma 121a, or CS13. Soph, JR, & SR can take CS13 as a coreq if you have not already taken Ma6a or 121a. No exceptions for First-Years. We rec CS13 this Spring or Ma6a next Fall. Non-CS/IDS (JR & SR) for whom CS38 is not req may request exception from instructors",
     "units": [
       3,
       0,
@@ -11677,6 +11740,13 @@
         "instructor": "Preskill, J",
         "locations": "",
         "number": 4,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Eberhardt, F",
+        "locations": "",
+        "number": 5,
         "times": "A\nA"
       },
       {
@@ -12313,7 +12383,7 @@
     "number": "Ma/CS 106 c",
     "sections": [
       {
-        "grades": "PASS-FAIL",
+        "grades": "",
         "instructor": "Marcolli, M",
         "locations": "187 LINDE",
         "number": 1,
@@ -12470,7 +12540,7 @@
         "times": "TR 13:00 - 14:25"
       }
     ],
-    "comment": "",
+    "comment": " Prereq:CS 2; CS 21; & one of Ma/CS 6a, Ma 121a, or CS13. Soph, JR, & SR can take CS13 as a coreq if you have not already taken Ma6a or 121a. No exceptions for First-Years. We rec CS13 this Spring or Ma6a next Fall. Non-CS/IDS (JR & SR) for whom CS38 is not req may request exception from instructors",
     "units": [
       3,
       0,
@@ -13171,6 +13241,13 @@
         "locations": "",
         "number": 27,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Huang, H",
+        "locations": "",
+        "number": 28,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -13267,13 +13344,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Chung, S",
+        "instructor": "Staff",
         "locations": "213 ANB",
         "number": 1,
         "times": "MW 13:00 - 14:25"
       }
     ],
-    "comment": "",
+    "comment": " Course cancelled",
     "units": [
       3,
       0,
@@ -13422,6 +13499,13 @@
         "instructor": "Siapas, A",
         "locations": "",
         "number": 14,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Huang, H",
+        "locations": "",
+        "number": 15,
         "times": "A\nA"
       },
       {
@@ -14144,6 +14228,13 @@
       },
       {
         "grades": "PASS-FAIL",
+        "instructor": "Ames, A",
+        "locations": "",
+        "number": 8,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
         "instructor": "George, G",
         "locations": "",
         "number": 9,
@@ -14182,6 +14273,13 @@
         "instructor": "Low, S",
         "locations": "",
         "number": 14,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Hutzler, N",
+        "locations": "",
+        "number": 15,
         "times": "A\nA"
       },
       {
@@ -14415,9 +14513,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "Ye, L",
-        "locations": "",
+        "locations": "B157 BRG",
         "number": 2,
-        "times": "OM,A\nA\nA\nA"
+        "times": "OM,A\nA\nT 16:00 - 16:55"
       },
       {
         "grades": "PASS-FAIL",
@@ -14446,7 +14544,7 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Dabiri, M",
+        "instructor": "Dabiri, M / Tsang, J",
         "locations": "360 CSS",
         "number": 1,
         "times": "W 13:00 - 14:55"
@@ -14621,7 +14719,7 @@
     "sections": [
       {
         "grades": "LETTER",
-        "instructor": "Staff",
+        "instructor": "Earhart, N",
         "locations": "",
         "number": 1,
         "times": "A\nA"
@@ -14920,6 +15018,13 @@
         "instructor": "Hoffmann, M",
         "locations": "",
         "number": 4,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Schneider, T",
+        "locations": "",
+        "number": 5,
         "times": "A\nA"
       },
       {
@@ -15340,13 +15445,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Schneider, T",
+        "instructor": "Staff",
         "locations": "135 LLB",
         "number": 1,
         "times": "TR 13:00 - 14:25"
       }
     ],
-    "comment": "",
+    "comment": " Course Cancelled",
     "units": [
       3,
       0,
@@ -15366,9 +15471,9 @@
       {
         "grades": "",
         "instructor": "Sessions, A",
-        "locations": "",
+        "locations": "215 NMD",
         "number": 1,
-        "times": "MWF 11:00 - 11:55\nA"
+        "times": "MWF 11:00 - 11:55"
       }
     ],
     "comment": "",
@@ -15749,9 +15854,9 @@
       {
         "grades": "LETTER",
         "instructor": "Asimow, P",
-        "locations": "",
+        "locations": "B101 BBB\nB101 BBB",
         "number": 1,
-        "times": "R 14:30 - 15:55\nA\nW 19:00 - 21:55\nA\nT 14:30 - 15:25\nA"
+        "times": "R 14:30 - 15:55\nW 19:00 - 21:55"
       }
     ],
     "comment": "",
@@ -15822,13 +15927,6 @@
         "instructor": "Adkins, J",
         "locations": "",
         "number": 4,
-        "times": "A\nA"
-      },
-      {
-        "grades": "PASS-FAIL",
-        "instructor": "Rossman, G",
-        "locations": "",
-        "number": 5,
         "times": "A\nA"
       },
       {
@@ -15935,6 +16033,27 @@
         "locations": "",
         "number": 20,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ozturk, S",
+        "locations": "",
+        "number": 21,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Minchew, B",
+        "locations": "",
+        "number": 22,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Lunine, J",
+        "locations": "",
+        "number": 23,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -16033,13 +16152,6 @@
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Rossman, G",
-        "locations": "",
-        "number": 12,
-        "times": "A\nA"
-      },
-      {
-        "grades": "PASS-FAIL",
         "instructor": "Adkins, J",
         "locations": "",
         "number": 13,
@@ -16092,6 +16204,27 @@
         "instructor": "Tejada Lara, J",
         "locations": "",
         "number": 20,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ozturk, S",
+        "locations": "",
+        "number": 21,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Minchew, B",
+        "locations": "",
+        "number": 22,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Lunine, J",
+        "locations": "",
+        "number": 23,
         "times": "A\nA"
       }
     ],
@@ -16317,7 +16450,7 @@
         "instructor": "Fuller, J",
         "locations": "162 SMD",
         "number": 1,
-        "times": "MWF 10:00 - 10:55"
+        "times": "MWF 11:00 - 11:55"
       }
     ],
     "comment": "",
@@ -16364,13 +16497,13 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Gurnis, M",
+        "instructor": "Staff",
         "locations": "162 SMD",
         "number": 1,
         "times": "MWF 09:00 - 09:55"
       }
     ],
-    "comment": "",
+    "comment": " Course cancelled",
     "units": [
       3,
       0,
@@ -16481,6 +16614,31 @@
     "rating": "5.00 +/- 0.00",
     "true_units": "About Right",
     "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=59&term_id=560&division_id=80426&department_id=182&offering_id=97609&track_id=97609-Default"
+  },
+  "738322551": {
+    "id": 738322551,
+    "name": "Special Topics in Geobiology",
+    "number": "Ge 197",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Orphan, V",
+        "locations": "251 ARM",
+        "number": 1,
+        "times": "OM,W 13:00 - 13:55"
+      }
+    ],
+    "comment": " units (3-0-0) // Organizational meeting: Wed, April 1st at 3 PM",
+    "units": [
+      0,
+      0,
+      0
+    ],
+    "description": "Abundant molecular oxygen is a defining feature of the biology and geochemistry at the surface of our planet, but the geological record shows us that this was not always the case.  This course will combine lectures with advanced-level discussions of selected literature and project-based work focused on the modern oxygen cycle, current knowledge of the history of atmospheric oxygen, and new ideas and constraints on the evolution of aerobic metabolisms.\n Offered by announcement only",
+    "prerequisites": "",
+    "rating": "4.72 +/- 0.50",
+    "true_units": "About Right",
+    "link": "https://access.caltech.edu/tqfr/reports/show_report?survey_id=57&term_id=558&division_id=80426&department_id=182&offering_id=97112&track_id=97112-Default"
   },
   "732296213": {
     "id": 732296213,
@@ -16740,13 +16898,6 @@
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Rossman, G",
-        "locations": "",
-        "number": 22,
-        "times": "A\nA"
-      },
-      {
-        "grades": "PASS-FAIL",
         "instructor": "Lamb, M",
         "locations": "",
         "number": 23,
@@ -16894,9 +17045,23 @@
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Rossman, G",
+        "instructor": "Ozturk, S",
         "locations": "",
-        "number": 48,
+        "number": 49,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Minchew, B",
+        "locations": "",
+        "number": 50,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Lunine, J",
+        "locations": "",
+        "number": 51,
         "times": "A\nA"
       }
     ],
@@ -17136,13 +17301,6 @@
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Rossman, G",
-        "locations": "",
-        "number": 34,
-        "times": "A\nA"
-      },
-      {
-        "grades": "PASS-FAIL",
         "instructor": "Sessions, A",
         "locations": "",
         "number": 35,
@@ -17195,6 +17353,27 @@
         "instructor": "Tejada Lara, J",
         "locations": "",
         "number": 44,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Ozturk, S",
+        "locations": "",
+        "number": 46,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Minchew, B",
+        "locations": "",
+        "number": 47,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Lunine, J",
+        "locations": "",
+        "number": 48,
         "times": "A\nA"
       }
     ],
@@ -17374,7 +17553,7 @@
     "sections": [
       {
         "grades": "",
-        "instructor": "Staff",
+        "instructor": "Brown, W",
         "locations": "",
         "number": 1,
         "times": "A\nA"
@@ -17632,9 +17811,9 @@
       {
         "grades": "",
         "instructor": "Jahner, J",
-        "locations": "",
+        "locations": "B101 BBB",
         "number": 1,
-        "times": "W 14:00 - 15:25\nA"
+        "times": "W 14:30 - 15:55"
       }
     ],
     "comment": "",
@@ -17860,9 +18039,9 @@
       {
         "grades": "LETTER",
         "instructor": "Refael, G / George, G",
-        "locations": "",
+        "locations": "B101 BBB\nB101 BBB",
         "number": 1,
-        "times": "MTW 11:00 - 11:55\nA\nF 10:00 - 10:55\nA"
+        "times": "MTW 11:00 - 11:55\nF 10:00 - 10:55"
       }
     ],
     "comment": "",
@@ -17885,9 +18064,9 @@
       {
         "grades": "LETTER",
         "instructor": "Graber, T / Gherman, M",
-        "locations": "",
+        "locations": "B101 BBB\nB101 BBB",
         "number": 1,
-        "times": "M 10:00 - 10:55\nA\nF 11:00 - 11:55\nA"
+        "times": "M 10:00 - 10:55\nF 11:00 - 11:55"
       }
     ],
     "comment": "",
@@ -17910,9 +18089,9 @@
       {
         "grades": "PASS-FAIL",
         "instructor": "George, G",
-        "locations": "",
+        "locations": "B101 BBB",
         "number": 1,
-        "times": "M 21:00 - 21:55\nA\nF 19:00 - 20:55\nA"
+        "times": "F 19:00 - 20:55"
       }
     ],
     "comment": "",
@@ -18266,6 +18445,56 @@
     "true_units": "",
     "link": ""
   },
+  "831988686": {
+    "id": 831988686,
+    "name": "Senior Thesis",
+    "number": "MS 78 a",
+    "sections": [
+      {
+        "grades": "",
+        "instructor": "Nad Perge, S",
+        "locations": "",
+        "number": 1,
+        "times": "A\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      0,
+      0,
+      0
+    ],
+    "description": "Supervised research experience, open only to senior materials science majors. Starting with an open-ended topic, students will plan and execute a project in materials science and engineering that includes written and oral reports based upon actual results, synthesizing topics from their course work. Only the first term may be taken pass/fail.",
+    "prerequisites": "instructor's permission.",
+    "rating": "",
+    "true_units": "",
+    "link": ""
+  },
+  "833862847": {
+    "id": 833862847,
+    "name": "Senior Thesis",
+    "number": "MS 78 b",
+    "sections": [
+      {
+        "grades": "LETTER",
+        "instructor": "Nad Perge, S",
+        "locations": "",
+        "number": 1,
+        "times": "A\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      0,
+      0,
+      0
+    ],
+    "description": "Supervised research experience, open only to senior materials science majors. Starting with an open-ended topic, students will plan and execute a project in materials science and engineering that includes written and oral reports based upon actual results, synthesizing topics from their course work. Only the first term may be taken pass/fail.",
+    "prerequisites": "instructor's permission.",
+    "rating": "",
+    "true_units": "",
+    "link": ""
+  },
   "835737008": {
     "id": 835737008,
     "name": "Senior Thesis",
@@ -18367,6 +18596,27 @@
         "instructor": "Lewis, N",
         "locations": "",
         "number": 14,
+        "times": "A\nA"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "Datta, S",
+        "locations": "",
+        "number": 15,
+        "times": "A\nA"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "Nad Perge, S",
+        "locations": "",
+        "number": 16,
+        "times": "A\nA"
+      },
+      {
+        "grades": "LETTER",
+        "instructor": "Cushing, S",
+        "locations": "",
+        "number": 17,
         "times": "A\nA"
       }
     ],
@@ -18480,13 +18730,6 @@
         "instructor": "Atwater, H",
         "locations": "",
         "number": 10,
-        "times": "A\nA"
-      },
-      {
-        "grades": "PASS-FAIL",
-        "instructor": "Rossman, G",
-        "locations": "",
-        "number": 11,
         "times": "A\nA"
       },
       {
@@ -20173,9 +20416,9 @@
       {
         "grades": "",
         "instructor": "Xu, W",
-        "locations": "289 LINDE\n289 LINDE",
+        "locations": "289 LINDE\n289 LINDE\n255 LINDE",
         "number": 1,
-        "times": "MW 15:00 - 15:55\nF 15:00 - 15:55"
+        "times": "OM,MW 15:00 - 15:55\nOM,F 15:00 - 15:55\nMWF 13:00 - 13:55"
       }
     ],
     "comment": "",
@@ -21184,6 +21427,13 @@
         "locations": "",
         "number": 21,
         "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Kohler, M",
+        "locations": "",
+        "number": 22,
+        "times": "A\nA"
       }
     ],
     "comment": "",
@@ -21683,6 +21933,13 @@
         "instructor": "Wang, L",
         "locations": "",
         "number": 3,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Zhang, A",
+        "locations": "",
+        "number": 4,
         "times": "A\nA"
       }
     ],
@@ -22215,6 +22472,13 @@
         "instructor": "Stathopoulos, A",
         "locations": "",
         "number": 28,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Rutishauser, U",
+        "locations": "",
+        "number": 29,
         "times": "A\nA"
       }
     ],
@@ -23096,63 +23360,63 @@
     "number": "Ph 1 c",
     "sections": [
       {
-        "grades": "",
+        "grades": "LETTER",
         "instructor": "Chen, X",
         "locations": "201 BRG\n142 KCK",
         "number": 1,
         "times": "WF 15:00 - 15:55\nMR 11:00 - 11:55"
       },
       {
-        "grades": "",
+        "grades": "LETTER",
         "instructor": "Chen, X",
         "locations": "201 BRG\n102 STL",
         "number": 2,
         "times": "WF 15:00 - 15:55\nMR 15:00 - 15:55"
       },
       {
-        "grades": "",
+        "grades": "LETTER",
         "instructor": "Chen, X",
         "locations": "201 BRG\nHameetman\nAud CHL",
         "number": 3,
         "times": "WF 15:00 - 15:55\nMR 15:00 - 15:55"
       },
       {
-        "grades": "",
+        "grades": "LETTER",
         "instructor": "Chen, X",
         "locations": "201 BRG\n125 KRK",
         "number": 4,
         "times": "WF 15:00 - 15:55\nMR 15:00 - 15:55"
       },
       {
-        "grades": "",
+        "grades": "LETTER",
         "instructor": "Chen, X",
         "locations": "201 BRG\nHameetman\nAud CHL",
         "number": 5,
         "times": "WF 15:00 - 15:55\nMR 11:00 - 11:55"
       },
       {
-        "grades": "",
+        "grades": "LETTER",
         "instructor": "Patterson, R",
         "locations": "201 BRG\n103 DWN",
         "number": 6,
         "times": "WF 11:00 - 11:55\nMR 15:00 - 15:55"
       },
       {
-        "grades": "",
+        "grades": "LETTER",
         "instructor": "Patterson, R",
         "locations": "201 BRG\n125 KRK",
         "number": 7,
         "times": "WF 11:00 - 11:55\nMR 11:00 - 11:55"
       },
       {
-        "grades": "",
+        "grades": "LETTER",
         "instructor": "Patterson, R",
         "locations": "201 BRG\n102 STL",
         "number": 9,
         "times": "WF 11:00 - 11:55\nMR 11:00 - 11:55"
       },
       {
-        "grades": "",
+        "grades": "LETTER",
         "instructor": "Patterson, R",
         "locations": "201 BRG\n107 DWN",
         "number": 10,
@@ -23577,13 +23841,13 @@
     "sections": [
       {
         "grades": "PASS-FAIL",
-        "instructor": "Huang, H",
+        "instructor": "Staff",
         "locations": "103 DWN\n103 DWN",
         "number": 1,
         "times": "TR 10:30 - 11:25\nOM,T 10:30 - 11:25"
       }
     ],
-    "comment": "",
+    "comment": " Course cancelled",
     "units": [
       0,
       6,
@@ -24009,14 +24273,14 @@
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Staff",
+        "instructor": "Ravi, V",
         "locations": "",
         "number": 52,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Staff",
+        "instructor": "Faraon, A",
         "locations": "",
         "number": 53,
         "times": "A\nA"
@@ -24454,14 +24718,14 @@
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Staff",
+        "instructor": "Ravi, V",
         "locations": "",
         "number": 52,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Staff",
+        "instructor": "Faraon, A",
         "locations": "",
         "number": 53,
         "times": "A\nA"
@@ -25081,14 +25345,14 @@
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Staff",
+        "instructor": "Ravi, V",
         "locations": "",
         "number": 52,
         "times": "A\nA"
       },
       {
         "grades": "PASS-FAIL",
-        "instructor": "Staff",
+        "instructor": "Faraon, A",
         "locations": "",
         "number": 53,
         "times": "A\nA"
@@ -25715,6 +25979,13 @@
       },
       {
         "grades": "PASS-FAIL",
+        "instructor": "Janas, P",
+        "locations": "",
+        "number": 3,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
         "instructor": "Niemeyer, A",
         "locations": "",
         "number": 4,
@@ -25746,6 +26017,13 @@
         "instructor": "Camerer, C",
         "locations": "",
         "number": 9,
+        "times": "A\nA"
+      },
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Caradonna, P",
+        "locations": "",
+        "number": 10,
         "times": "A\nA"
       },
       {
@@ -26057,6 +26335,31 @@
       0
     ],
     "description": "",
+    "prerequisites": "",
+    "rating": "",
+    "true_units": "",
+    "link": ""
+  },
+  "938517074": {
+    "id": 938517074,
+    "name": "Art/Media",
+    "number": "VC 60",
+    "sections": [
+      {
+        "grades": "PASS-FAIL",
+        "instructor": "Mushkin, H",
+        "locations": "",
+        "number": 1,
+        "times": "A\nA"
+      }
+    ],
+    "comment": "",
+    "units": [
+      0,
+      0,
+      0
+    ],
+    "description": "A practice-based course taught by a visiting artist in residence. See registrar's announcement for details.",
     "prerequisites": "",
     "rating": "",
     "true_units": "",
