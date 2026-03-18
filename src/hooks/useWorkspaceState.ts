@@ -30,6 +30,20 @@ function setArrayIdx<T>(arr: T[], idx: number, element: T): T[] {
   return arr.map((value, i) => (i === idx ? element : value));
 }
 
+function clampWorkspaceIdx(workspaces: Workspace[], workspaceIdx: number): number {
+  return workspaceIdx >= 0 && workspaceIdx < workspaces.length ? workspaceIdx : 0;
+}
+
+function loadPersistedWorkspaceState(
+  termPath: string,
+): { workspaces: Workspace[]; workspaceIdx: number } {
+  const workspaces = loadWorkspaces(termPath);
+  return {
+    workspaces,
+    workspaceIdx: clampWorkspaceIdx(workspaces, loadWorkspaceIdx(termPath)),
+  };
+}
+
 /**
  * The core dedup: recalculates arrangements after any course/time change
  * and returns a fully-updated workspace object. Resets arrangementIdx to 0
@@ -91,17 +105,33 @@ export function useWorkspaceState(
   indexedCourses: CourseIndex,
 ): WorkspaceStateAPI {
   const [workspaces, setWorkspaces] = useState<Workspace[]>(() =>
-    loadWorkspaces(termPath),
+    loadPersistedWorkspaceState(termPath).workspaces,
   );
   const [workspaceIdx, setWorkspaceIdxRaw] = useState<number>(() =>
-    loadWorkspaceIdx(termPath),
+    loadPersistedWorkspaceState(termPath).workspaceIdx,
   );
+  const [loadedTermPath, setLoadedTermPath] = useState(termPath);
+
+  useEffect(() => {
+    if (loadedTermPath === termPath) {
+      return;
+    }
+
+    const persistedState = loadPersistedWorkspaceState(termPath);
+    setWorkspaces(persistedState.workspaces);
+    setWorkspaceIdxRaw(persistedState.workspaceIdx);
+    setLoadedTermPath(termPath);
+  }, [loadedTermPath, termPath]);
 
   // Persist to localStorage on every change
   useEffect(() => {
+    if (loadedTermPath !== termPath) {
+      return;
+    }
+
     saveWorkspaces(termPath, workspaces);
     saveWorkspaceIdx(termPath, workspaceIdx);
-  }, [workspaces, workspaceIdx, termPath]);
+  }, [loadedTermPath, termPath, workspaces, workspaceIdx]);
 
   // Derived state for the active workspace
   const activeWorkspace = workspaces[workspaceIdx];
