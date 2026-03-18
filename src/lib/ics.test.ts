@@ -128,4 +128,16 @@ describe("exportICS", () => {
     const eventCount = (ics.match(/BEGIN:VEVENT/g) || []).length;
     expect(eventCount).toBe(1);
   });
+
+  it("matches sections by stored index instead of section number", () => {
+    const section1 = makeSection(7, "M 09:00 - 09:55", "Baxter 101");
+    const section2 = makeSection(11, "T 10:00 - 10:55", "Sloan 151");
+    const courseData = makeCourseData(1, "CS 1", [section1, section2]);
+    const course = makeCourse(courseData, { sectionId: 1 });
+
+    const ics = exportICS("sp2026", [course]);
+
+    expect(ics).toContain("LOCATION:Sloan 151");
+    expect(ics).not.toContain("LOCATION:Baxter 101");
+  });
 });

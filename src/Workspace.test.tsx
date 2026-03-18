@@ -299,4 +299,30 @@ describe("Workspace", () => {
     await user.click(screen.getByText("Remove All"));
     expect(mockState.setCourses).toHaveBeenCalledWith([]);
   });
+
+  it("skips missing default schedule courses instead of crashing", async () => {
+    const user = userEvent.setup();
+    const springCourseIndex: CourseIndex = {
+      "10": makeCourseData(10, "Ma 1 c", "Calculus"),
+      "11": makeCourseData(11, "Ph 1 c", "Mechanics"),
+    };
+    const { mockState } = renderWorkspace({}, springCourseIndex);
+
+    await user.click(screen.getByText("Default Schedule"));
+
+    expect(mockState.setCourses).toHaveBeenCalledWith([
+      {
+        courseData: springCourseIndex["10"],
+        sectionId: 0,
+        enabled: true,
+        locked: true,
+      },
+      {
+        courseData: springCourseIndex["11"],
+        sectionId: 0,
+        enabled: true,
+        locked: true,
+      },
+    ]);
+  });
 });

@@ -603,11 +603,12 @@ export default function Workspace({ term }: { term: string }) {
           onClick={() => {
             state.setCourses(
               // Change based on term
-              DEFAULT_COURSES[term.substring(0, 2)].map((name) => ({
-                ...getCourse(name, indexedCourses)!,
-                enabled: true,
-                locked: true,
-              })),
+              (DEFAULT_COURSES[term.substring(0, 2)] ?? []).flatMap((name) => {
+                const course = getCourse(name, indexedCourses);
+                return course
+                  ? [{ ...course, enabled: true, locked: true }]
+                  : [];
+              }),
             );
           }}
         />
