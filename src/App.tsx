@@ -1,59 +1,31 @@
 import { useEffect, useState, createContext } from "react";
+import { Routes, Route, Navigate, useParams, Link } from "react-router";
 import Planner from "./Planner";
-import { parseTimes } from "./Planner";
-import Workspace from "./Workspace";
+import WorkspacePanel from "./Workspace";
 import Modal from "./Modal";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import { motion } from "framer-motion";
-import DATA_FA2023 from "./data/IndexedTotalFA2022-23.json";
-import DATA_WI2023 from "./data/IndexedTotalWI2022-23.json";
-import DATA_SP2023 from "./data/IndexedTotalSP2022-23.json";
-import DATA_FA2024 from "./data/IndexedTotalFA2023-24.json";
-import DATA_WI2024 from "./data/IndexedTotalWI2023-24.json";
-import DATA_SP2024 from "./data/IndexedTotalSP2023-24.json";
-import DATA_FA2025 from "./data/IndexedTotalFA2024-25.json";
-import DATA_WI2025 from "./data/IndexedTotalWI2024-25.json";
-import DATA_SP2025 from "./data/IndexedTotalSP2024-25.json";
-import DATA_FA2026 from "./data/IndexedTotalFA2025-26.json";
-import DATA_WI2026 from "./data/IndexedTotalWI2025-26.json";
-import DATA_SP2026 from "./data/IndexedTotalSP2025-26.json";
-
-const CURRENT_TERM = "/sp2026";
-
-const courseDataSources: { [key: string]: { [key: string]: CourseData } } = {
-  "/fa2023": DATA_FA2023,
-  "/wi2023": DATA_WI2023,
-  "/sp2023": DATA_SP2023,
-  "/fa2024": DATA_FA2024,
-  "/wi2024": DATA_WI2024,
-  "/sp2024": DATA_SP2024,
-  "/fa2025": DATA_FA2025,
-  "/wi2025": DATA_WI2025,
-  "/sp2025": DATA_SP2025,
-  "/fa2026": DATA_FA2026,
-  "/wi2026": DATA_WI2026,
-  "/sp2026": DATA_SP2026,
-};
+import {
+  DEFAULT_TERM_PATH,
+  getSupportedTermPaths,
+  isSupportedTermPath,
+  loadTermCourseData,
+} from "./lib/termData";
+import { useWorkspaceState, WorkspaceStateAPI } from "./hooks/useWorkspaceState";
+import {
+  CourseIndex,
+  CourseStorage,
+  CourseStorageShort,
+  Maybe,
+  Workspace as WorkspaceState,
+  AvailableTimes,
+} from "./types";
+import { createEmptyWorkspace } from "./lib/scheduling";
 
 export const AllCourses = createContext<CourseIndex>({});
 
-function emptyWorkspace() {
-  return {
-    courses: [],
-    arrangements: [],
-    arrangementIdx: null,
-    availableTimes: [
-      [new Date(2025, 0, 1, 8), new Date(2025, 0, 1, 23)],
-      [new Date(2025, 0, 2, 8), new Date(2025, 0, 2, 23)],
-      [new Date(2025, 0, 3, 8), new Date(2025, 0, 3, 23)],
-      [new Date(2025, 0, 4, 8), new Date(2025, 0, 4, 23)],
-      [new Date(2025, 0, 5, 8), new Date(2025, 0, 5, 23)],
-    ],
-  };
-}
-
-interface AppStateProps {
-  workspaces: Workspace[];
+export interface AppStateProps {
+  workspaces: WorkspaceState[];
   workspaceIdx: number;
   setWorkspace: (idx: number) => void;
 
@@ -69,13 +41,13 @@ interface AppStateProps {
   prevArrangement: () => void;
   toggleSectionLock: (course: CourseStorage) => void;
 
-  availableTimes: Date[][];
+  availableTimes: AvailableTimes;
   updateAvailableTimes: (dayIdx: number, isStart: boolean, day: Date) => void;
 }
 
 /** Allows to easily add/remove courses to `state` */
 export const AppState = createContext<AppStateProps>({
-  workspaces: [emptyWorkspace()],
+  workspaces: [createEmptyWorkspace()],
   workspaceIdx: 0,
   setWorkspace: () => null,
 
@@ -95,547 +67,71 @@ export const AppState = createContext<AppStateProps>({
   updateAvailableTimes: () => null,
 });
 
-function sectionsIntersect(a: CourseStorage, b: CourseStorage): boolean {
-  if (!a.enabled || !b.enabled) {
-    return false;
-  }
-  if (a.sectionId === null || b.sectionId === null) {
-    return false;
-  }
-  const sectionA = a.courseData.sections.find(
-    (s) => s.number === a.courseData.sections[a.sectionId!].number,
-  );
-  const sectionB = b.courseData.sections.find(
-    (s) => s.number === b.courseData.sections[b.sectionId!].number,
-  );
+/* ------------------------------------------------------------------ */
+/*  TermPage — loads data for a specific term and renders the app     */
+/* ------------------------------------------------------------------ */
 
-  const timesA = parseTimes(sectionA!.times);
-  const timesB = parseTimes(sectionB!.times);
+function TermPage() {
+  const { term } = useParams<{ term: string }>();
+  const termPath = `/${(term ?? "").toLowerCase()}`;
 
-  for (let i = 0; i < 5; i++) {
-    for (const intervalA of timesA[i]) {
-      for (const intervalB of timesB[i]) {
-        if (
-          (intervalA!.start >= intervalB!.start &&
-            intervalA!.start < intervalB!.end) ||
-          (intervalB!.start >= intervalA!.start &&
-            intervalB!.start < intervalA!.end)
-        ) {
-          return true;
-        }
-      }
-    }
-  }
-  return false;
-}
+  const [courseDataState, setCourseDataState] = useState<{
+    termPath: string;
+    data: CourseIndex;
+    error: string | null;
+  }>({ termPath: "", data: {}, error: null });
 
-export function shortenCourses(courses: CourseStorage[]): CourseStorageShort[] {
-  return courses.map((storage) => {
-    return {
-      courseId: storage.courseData.id,
-      sectionId: storage.sectionId,
-      enabled: storage.enabled,
-      locked: storage.locked,
-    };
-  });
-}
+  const indexedCourses =
+    courseDataState.termPath === termPath ? courseDataState.data : {};
+  const dataLoadError =
+    courseDataState.termPath === termPath ? courseDataState.error : null;
+  const isLoadingCourses = courseDataState.termPath !== termPath;
 
-export function lengthenCourses(
-  shortened: CourseStorageShort[],
-  courseIndex: CourseIndex,
-): CourseStorage[] {
-  return shortened.map((storage) => {
-    return {
-      courseData: courseIndex[storage.courseId.toString()]!,
-      sectionId: storage.sectionId,
-      enabled: storage.enabled,
-      locked: storage.locked,
-    };
-  });
-}
-
-/** Takes a list of course requests and generates a list of possible arrangements.
- One section from each class will be selected in an arrangement, and
- none of these sections will have overlapping times. */
-function generateCourseSections(
-  requests: CourseStorage[],
-  availableTimes: Date[][],
-): CourseStorageShort[][] {
-  if (requests.length === 0) {
-    return [];
-  }
-  // console.log("generating sections, ", requests)
-  const output: CourseStorageShort[][] = [];
-
-  const verify = (arr: CourseStorage[]) => {
-    let valid = true;
-
-    for (let i = 0; i < arr.length; i++) {
-      for (let j = i + 1; j < arr.length; j++) {
-        valid &&= !sectionsIntersect(arr[i], arr[j]) || (arr[i].locked && arr[j].locked);
-      }
-    }
-
-    for (let i = 0; i < arr.length; i++) {
-      if (arr[i].sectionId === null) {
-        continue;
-      }
-      const section = arr[i].courseData.sections.find(
-        (s) =>
-          s.number === arr[i].courseData.sections[arr[i].sectionId!].number,
-      );
-      const intervals = parseTimes(section!.times);
-      for (let j = 0; j < 5; j++) {
-        for (const interval of intervals[j]) {
-          valid &&=
-            availableTimes[j][0].getTime() <= interval!.start.getTime() &&
-            interval!.end.getTime() <= availableTimes[j][1].getTime();
-        }
-      }
-    }
-
-    return valid;
-  };
-
-  const search = (acc: CourseStorage[], idx: number) => {
-    // if a section from each course has been selected
-    if (idx === requests.length) {
-      output.push(shortenCourses(acc));
-      return;
-    }
-    // add a course/section pair
-    const request = requests[idx];
-
-    if (
-      !request.enabled ||
-      request.locked ||
-      // ignore "A" courses to reduce the number of total arrangements
-      (request.courseData.sections.length > 0 &&
-        request.courseData.sections[0].times === "A")
-    ) {
-      acc.push(request);
-      if (verify(acc)) {
-        search(acc, idx + 1);
-      }
-      acc.pop();
-    } else {
-      // otherwise, look through all sections
-      for (let i = 0; i < request.courseData.sections.length; i++) {
-        const new_request = { ...request, sectionId: i };
-        acc.push(new_request);
-        if (verify(acc)) {
-          search(acc, idx + 1);
-        }
-        acc.pop();
-      }
-    }
-  };
-
-  search([], 0);
-  return output;
-}
-
-function setArrayIdx<T>(arr: Array<T>, idx: number, element: T) {
-  return arr.map((value, i) => {
-    if (i === idx) {
-      return element;
-    } else {
-      return value;
-    }
-  });
-}
-
-function setField(obj: any, field: string, value: any) {
-  return {
-    ...obj,
-    [field]: value,
-  };
-}
-
-// credit to https://stackoverflow.com/a/58443076
-const useReactPath = () => {
-  const [path, setPath] = useState(window.location.pathname);
-  const listenToPopstate = () => {
-    const winPath = window.location.pathname;
-    setPath(winPath);
-  };
   useEffect(() => {
-    window.addEventListener("popstate", listenToPopstate);
-    return () => {
-      window.removeEventListener("popstate", listenToPopstate);
-    };
-  }, []);
-  return path;
-};
+    let cancelled = false;
 
-/** Main wrapper */
-function App() {
-  // really basic routing
-  let pathname = useReactPath();
-  const realPath = pathname === "/" ? CURRENT_TERM : pathname;
-  const data = courseDataSources[realPath];
-  const [indexedCourses, setIndexedCourses] = useState({});
+    loadTermCourseData(termPath)
+      .then((courseData) => {
+        if (cancelled) return;
+        setCourseDataState({ termPath, data: courseData, error: null });
+      })
+      .catch((error: unknown) => {
+        if (cancelled) return;
+        setCourseDataState({
+          termPath,
+          data: {},
+          error:
+            error instanceof Error
+              ? error.message
+              : "Unable to load course data.",
+        });
+      });
 
-  // load course data from a json url
-  useEffect(() => {
-    try {
-      setIndexedCourses(data);
-    } catch {
-      alert("Error loading course data");
-    }
-  }, [data]);
+    return () => { cancelled = true; };
+  }, [termPath]);
 
-  // 5 blank workspaces by default bc I'm too lazy to implement dynamic tabs and stuff
-  const localWorkspaces = localStorage.getItem("workspaces" + realPath);
-  const [workspaces, setWorkspaces] = useState<Workspace[]>(
-    localWorkspaces
-      ? JSON.parse(localWorkspaces)
-      : [
-        emptyWorkspace(),
-        emptyWorkspace(),
-        emptyWorkspace(),
-        emptyWorkspace(),
-        emptyWorkspace(),
-      ],
+  const workspaceState: WorkspaceStateAPI = useWorkspaceState(
+    termPath,
+    indexedCourses,
   );
-  const localWorkspaceIdx = localStorage.getItem("workspaceIdx" + realPath);
-  const [workspaceIdx, setWorkspaceIdx] = useState<number>(
-    localWorkspaceIdx ? JSON.parse(localWorkspaceIdx) : 0,
-  );
-
-  const courses = workspaces[workspaceIdx].courses;
-  const availableTimes: Date[][] = [[], [], [], [], []];
-
-  for (let i = 0; i < availableTimes.length; ++i) {
-    for (let j = 0; j < 2; ++j) {
-      availableTimes[i][j] = new Date(
-        workspaces[workspaceIdx].availableTimes[i][j],
-      );
-    }
-  }
-
-  // Save state to local storage
-  useEffect(() => {
-    localStorage.setItem("workspaces" + realPath, JSON.stringify(workspaces));
-    localStorage.setItem(
-      "workspaceIdx" + realPath,
-      JSON.stringify(workspaceIdx),
-    );
-  }, [workspaces, workspaceIdx, realPath]);
-
-  /** Helper functions to be sent sent through Context */
-  const addCourse = (newCourse: CourseStorage) => {
-    const result = courses.find(
-      (course) => course.courseData.id === newCourse.courseData.id,
-    );
-    let newCourses: CourseStorage[] = [];
-    if (result) {
-      // course was already in workspace
-      newCourses = courses;
-    } else {
-      newCourses = [...courses, setField(setField(newCourse, "locked", true), "sectionId", 0)];
-    }
-    const newArrangements = generateCourseSections(newCourses, availableTimes);
-    let newArrangementIdx = null;
-    if (newArrangements.length === 0) {
-      newCourses = newCourses.map((course) => {
-        if (!course.locked) {
-          return setField(course, "sectionId", null);
-        } else {
-          return course;
-        }
-      });
-    } else {
-      newArrangementIdx = 0;
-      newCourses = lengthenCourses(
-        newArrangements[newArrangementIdx],
-        indexedCourses,
-      );
-    }
-    // these happen in parallel
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangements: newArrangements,
-        arrangementIdx: newArrangementIdx,
-      }),
-    );
-  };
-
-  const removeCourse = (course: CourseStorage) => {
-    let newCourses = courses.filter((currCourse) => currCourse !== course);
-    const newArrangements = generateCourseSections(newCourses, availableTimes);
-    let newArrangementIdx = null;
-    if (newArrangements.length === 0) {
-      newCourses = newCourses.map((course) => {
-        if (!course.locked) {
-          return setField(course, "sectionId", null);
-        } else {
-          return course;
-        }
-      });
-    } else {
-      newArrangementIdx = 0;
-      newCourses = lengthenCourses(
-        newArrangements[newArrangementIdx],
-        indexedCourses,
-      );
-    }
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangements: generateCourseSections(newCourses, availableTimes),
-        arrangementIdx: newArrangementIdx,
-      }),
-    );
-  };
-
-  const toggleCourse = (newCourse: CourseStorage) => {
-    let newCourses = courses.map((course) => {
-      if (course.courseData.id === newCourse.courseData.id) {
-        newCourse.enabled = !newCourse.enabled;
-        return newCourse;
-      } else {
-        return course;
-      }
-    });
-    const newArrangements = generateCourseSections(newCourses, availableTimes);
-    let newArrangementIdx = arrangementIdx;
-    if (newArrangements.length === 0) {
-      newCourses = newCourses.map((course) => {
-        if (!course.locked) {
-          return setField(course, "sectionId", null);
-        } else {
-          return course;
-        }
-      });
-      newArrangementIdx = null;
-    } else {
-      // if course went disabled => enabled or is unlocked, then need to recalculate
-      // otherwise, just keep arrangementIdx the same
-      if (newCourse.enabled || !newCourse.locked) {
-        newArrangementIdx = 0;
-        newCourses = lengthenCourses(
-          newArrangements[newArrangementIdx],
-          indexedCourses,
-        );
-      }
-    }
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangements: newArrangements,
-        arrangementIdx: newArrangementIdx,
-      }),
-    );
-  };
-
-  const toggleSectionLock = (newCourse: CourseStorage) => {
-    let newCourses = courses.map((course) => {
-      if (course.courseData.id === newCourse.courseData.id) {
-        newCourse.locked = !newCourse.locked;
-        return newCourse;
-      } else {
-        return course;
-      }
-    });
-    const newArrangements = generateCourseSections(newCourses, availableTimes);
-    let newArrangementIdx = arrangementIdx;
-    if (newArrangements.length === 0) {
-      newCourses = newCourses.map((course) => {
-        if (!course.locked) {
-          return setField(course, "sectionId", null);
-        } else {
-          return course;
-        }
-      });
-      newArrangementIdx = null;
-    } else {
-      newArrangementIdx = 0;
-      newCourses = lengthenCourses(
-        newArrangements[newArrangementIdx],
-        indexedCourses,
-      );
-    }
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangements: newArrangements,
-        arrangementIdx: newArrangementIdx,
-      }),
-    );
-  };
-
-  const nextArrangement = () => {
-    const workspace = workspaces[workspaceIdx];
-    let newIdx = workspace.arrangementIdx;
-    if (workspace.arrangements.length === 0) {
-      newIdx = null;
-    } else if (workspace.arrangementIdx === null) {
-      newIdx = 0;
-    } else {
-      newIdx = (workspace.arrangementIdx + 1) % workspace.arrangements.length;
-    }
-    const newArrangement =
-      newIdx === null
-        ? shortenCourses(workspace.courses)
-        : workspace.arrangements[newIdx!];
-    const newCourses = lengthenCourses(newArrangement, indexedCourses);
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangementIdx: newIdx,
-      }),
-    );
-  };
-
-  const prevArrangement = () => {
-    const workspace = workspaces[workspaceIdx];
-    let newIdx = workspace.arrangementIdx;
-    if (workspace.arrangements.length === 0) {
-      newIdx = null;
-    } else if (workspace.arrangementIdx === null) {
-      newIdx = 0;
-    } else {
-      newIdx =
-        (workspace.arrangements.length + workspace.arrangementIdx - 1) %
-        workspace.arrangements.length;
-    }
-    const newArrangement =
-      newIdx === null
-        ? shortenCourses(workspace.courses)
-        : workspace.arrangements[newIdx!];
-    const newCourses = lengthenCourses(newArrangement, indexedCourses);
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangementIdx: newIdx,
-      }),
-    );
-  };
-
-  const setCourses = (courses: CourseStorage[]) => {
-    let newCourses = courses;
-    const newArrangements = generateCourseSections(newCourses, availableTimes);
-    let newArrangementIdx = null;
-    if (newArrangements.length === 0) {
-      newCourses = newCourses.map((course) => {
-        if (!course.locked) {
-          return setField(course, "sectionId", null);
-        } else {
-          return course;
-        }
-      });
-    } else {
-      newArrangementIdx = 0;
-      newCourses = lengthenCourses(
-        newArrangements[newArrangementIdx],
-        indexedCourses,
-      );
-    }
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangements: newArrangements,
-        arrangementIdx: newArrangementIdx,
-      }),
-    );
-  };
-
-  const setWorkspace = (idx: number) => {
-    // invariant: previous idx is always valid
-    let newIdx = workspaceIdx;
-    if (idx >= 0 && idx < workspaces.length) {
-      newIdx = idx;
-    }
-    setWorkspaceIdx(newIdx);
-  };
-
-  const updateAvailableTimes = (
-    dayIdx: number,
-    isStart: boolean,
-    day: Date,
-  ) => {
-    const newAvailableTimes = setArrayIdx(availableTimes, dayIdx, [
-      isStart ? day : availableTimes[dayIdx][0],
-      isStart ? availableTimes[dayIdx][1] : day,
-    ]);
-    let newCourses = courses;
-    const newArrangements = generateCourseSections(
-      newCourses,
-      newAvailableTimes,
-    );
-    let newArrangementIdx = arrangementIdx;
-    if (newArrangements.length === 0) {
-      newCourses = newCourses.map((course) => {
-        if (!course.locked) {
-          return setField(course, "sectionId", null);
-        } else {
-          return course;
-        }
-      });
-      newArrangementIdx = null;
-    } else {
-      const isWidening =
-        (isStart && day < availableTimes[dayIdx][0]) ||
-        (!isStart && day > availableTimes[dayIdx][1]);
-      if (!isWidening || newArrangements.length !== arrangements.length) {
-        newArrangementIdx = 0;
-        newCourses = lengthenCourses(
-          newArrangements[newArrangementIdx],
-          indexedCourses,
-        );
-      }
-    }
-    // if current sections are invalid, jump to first valid one (or null everything)
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangements: newArrangements,
-        arrangementIdx: newArrangementIdx,
-        availableTimes: newAvailableTimes,
-      }),
-    );
-  };
-
-  const { arrangements, arrangementIdx } = workspaces[workspaceIdx];
 
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <AllCourses.Provider value={indexedCourses}>
-      <AppState.Provider
-        value={{
-          workspaces,
-          workspaceIdx,
-          courses: courses,
-          addCourse,
-          removeCourse,
-          toggleCourse,
-          setCourses,
-          arrangements,
-          arrangementIdx,
-          nextArrangement,
-          prevArrangement,
-          availableTimes,
-          updateAvailableTimes,
-          setWorkspace,
-          toggleSectionLock,
-        }}
-      >
+      <AppState.Provider value={workspaceState}>
+        <a
+          href="#main-content"
+          className="skip-to-content"
+        >
+          Skip to content
+        </a>
         <div className="sticky-help">
           <motion.button
             whileHover={{ rotate: 15 }}
             className="help-button"
             onClick={() => setModalOpen(true)}
+            aria-label="Help"
           >
             <HelpOutlineIcon
               className="text-orange-500 bg-transparent"
@@ -688,13 +184,22 @@ function App() {
           </Modal>
         </div>
 
-        <main className="py-5 mx-2 antialiased scroll-smooth selection:bg-orange-400 selection:text-black">
-          <div id="column-container">
-            <div className="column planner-column">
-              <Planner />
+        <main id="main-content" className="py-5 mx-2 antialiased scroll-smooth selection:bg-orange-400 selection:text-black">
+          {isLoadingCourses ? (
+            <div className="py-16 text-center space-y-2" aria-live="polite">
+              <p className="text-2xl font-bold">Loading course data…</p>
+              <p>Term: {term}</p>
             </div>
-            <Workspace term={realPath.substring(1)} />
-          </div>
+          ) : dataLoadError ? (
+            <ErrorPage term={term ?? ""} error={dataLoadError} />
+          ) : (
+            <div id="column-container">
+              <div className="column planner-column">
+                <Planner />
+              </div>
+              <WorkspacePanel term={term ?? ""} />
+            </div>
+          )}
         </main>
 
         <footer className="footer">
@@ -704,12 +209,85 @@ function App() {
             <Hyperlink href="https://github.com/ericlovesmath" text="Eric" />, &{" "}
             <Hyperlink href="https://github.com/zack466" text="Zack" />
           </p>
-          <p>Current term: {realPath.substring(1)}</p>
+          <p>Current term: {term}</p>
         </footer>
       </AppState.Provider>
     </AllCourses.Provider>
   );
 }
+
+/* ------------------------------------------------------------------ */
+/*  ErrorPage                                                         */
+/* ------------------------------------------------------------------ */
+
+function ErrorPage({ term, error }: { term: string; error?: string }) {
+  const supportedTerms = getSupportedTermPaths();
+  const pathname = `/${term}`;
+
+  return (
+    <div className="py-16 text-center space-y-4">
+      <p className="text-2xl font-bold">
+        Unable to load course data for {term}
+      </p>
+      {error && <p>{error}</p>}
+      {!isSupportedTermPath(pathname) && (
+        <p className="text-sm text-neutral-600">
+          Supported terms: {supportedTerms.join(", ")}
+        </p>
+      )}
+      <p>
+        Try the{" "}
+        <Link
+          className="font-mono font-bold text-orange-500 hover:underline"
+          to={DEFAULT_TERM_PATH}
+        >
+          {DEFAULT_TERM_PATH.substring(1)}
+        </Link>{" "}
+        term instead.
+      </p>
+    </div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  NotFoundPage — catch-all for unrecognized routes                  */
+/* ------------------------------------------------------------------ */
+
+function NotFoundPage() {
+  const pathname = window.location.pathname;
+  const term = pathname.substring(1) || "unknown";
+  return (
+    <div className="py-5 mx-2 antialiased">
+      <ErrorPage term={term} />
+      <footer className="footer">
+        <p>
+          Made with ❤️ by{" "}
+          <Hyperlink href="https://github.com/rchalamala" text="Rahul" />,{" "}
+          <Hyperlink href="https://github.com/ericlovesmath" text="Eric" />, &{" "}
+          <Hyperlink href="https://github.com/zack466" text="Zack" />
+        </p>
+      </footer>
+    </div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  App — route definitions                                           */
+/* ------------------------------------------------------------------ */
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Navigate to={DEFAULT_TERM_PATH} replace />} />
+      <Route path="/:term" element={<TermPage />} />
+      <Route path="*" element={<NotFoundPage />} />
+    </Routes>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  Shared components                                                 */
+/* ------------------------------------------------------------------ */
 
 function Hyperlink(props: { href: string; text: string }) {
   return (

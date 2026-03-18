@@ -96,7 +96,7 @@ li {
   border: 1px solid lightgrey;
   border-radius: 4px;
   margin-bottom: 2em;
-  @apply p-2;
+  padding: 0.5rem;
 }
 
 .workspace-entry-enabled {
@@ -115,6 +115,10 @@ li {
   background-color: rgb(200, 200, 200);
 }
 
+.workspace-entry-dragging {
+  opacity: 0.95;
+}
+
 .workspace-entry-buttons {
   display: flex;
   flex-direction: row;
@@ -122,6 +126,19 @@ li {
   justify-content: space-between;
   /* position: relative; */
   /* top: -12px; */
+}
+
+.workspace-entry-drag-handle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(115, 115, 115);
+  cursor: grab;
+  padding: 0.25rem;
+}
+
+.workspace-entry-drag-handle:active {
+  cursor: grabbing;
 }
 
 .workspace-entry-toggle .react-toggle-track {
@@ -139,7 +156,7 @@ li {
   column-gap: 1.5em;
   align-items: center;
   width: 100%;
-  @apply p-2 pt-0;
+  padding: 0 0.5rem 0.5rem;
 }
 
 .workspace-entry-info > p {
@@ -185,4 +202,60 @@ li {
   margin-left: auto;
   margin-right: auto;
   max-width: 75%;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Mobile responsive                                                 */
+/* ------------------------------------------------------------------ */
+@media (max-width: 767px) {
+  .workspace-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .workspace-switcher {
+    justify-content: center;
+  }
+
+  .workspace-switcher > button {
+    height: 2.5rem;
+    min-width: 2.75rem;
+  }
+
+  .workspace-scheduler > .small-button {
+    width: 2.5em;
+    height: 2.5em;
+  }
+
+  .workspace-controls {
+    gap: 8px;
+    padding: 0 0.5rem;
+  }
+
+  .workspace-entry {
+    margin-bottom: 1em;
+  }
+
+  .workspace-entry-content {
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 0.75em;
+  }
+
+  .workspace-entry-controls {
+    min-width: unset;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    align-items: center;
+  }
+
+  .workspace-entry-section {
+    flex: 1;
+    min-width: 5rem;
+  }
+
+  .export-modal > p {
+    max-width: 100%;
+  }
 }
