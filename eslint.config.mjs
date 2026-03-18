@@ -21,6 +21,7 @@ export default tseslint.config(
       "react-refresh": reactRefresh,
     },
     rules: {
+      "no-useless-assignment": "off",
       ...reactHooks.configs.recommended.rules,
       "prefer-const": "off",
       "@typescript-eslint/no-explicit-any": "off",
