@@ -100,38 +100,51 @@ export interface WorkspaceStateAPI {
   updateAvailableTimes: (dayIdx: number, isStart: boolean, day: Date) => void;
 }
 
+interface PersistedWorkspaceState {
+  workspaces: Workspace[];
+  workspaceIdx: number;
+}
+
 export function useWorkspaceState(
   termPath: string,
   indexedCourses: CourseIndex,
 ): WorkspaceStateAPI {
-  const [workspaces, setWorkspaces] = useState<Workspace[]>(() =>
-    loadPersistedWorkspaceState(termPath).workspaces,
-  );
-  const [workspaceIdx, setWorkspaceIdxRaw] = useState<number>(() =>
-    loadPersistedWorkspaceState(termPath).workspaceIdx,
-  );
-  const [loadedTermPath, setLoadedTermPath] = useState(termPath);
+  const [workspaceStateByTerm, setWorkspaceStateByTerm] = useState<
+    Record<string, PersistedWorkspaceState>
+  >(() => ({
+    [termPath]: loadPersistedWorkspaceState(termPath),
+  }));
 
-  useEffect(() => {
-    if (loadedTermPath === termPath) {
-      return;
-    }
+  const { workspaces, workspaceIdx } =
+    workspaceStateByTerm[termPath] ?? loadPersistedWorkspaceState(termPath);
 
-    const persistedState = loadPersistedWorkspaceState(termPath);
-    setWorkspaces(persistedState.workspaces);
-    setWorkspaceIdxRaw(persistedState.workspaceIdx);
-    setLoadedTermPath(termPath);
-  }, [loadedTermPath, termPath]);
+  const updateTermState = useCallback(
+    (
+      updater: (currentState: PersistedWorkspaceState) => PersistedWorkspaceState,
+    ) => {
+      setWorkspaceStateByTerm((prev) => {
+        const currentState = prev[termPath] ?? loadPersistedWorkspaceState(termPath);
+        const nextState = updater(currentState);
+        return {
+          ...prev,
+          [termPath]: {
+            ...nextState,
+            workspaceIdx: clampWorkspaceIdx(
+              nextState.workspaces,
+              nextState.workspaceIdx,
+            ),
+          },
+        };
+      });
+    },
+    [termPath],
+  );
 
   // Persist to localStorage on every change
   useEffect(() => {
-    if (loadedTermPath !== termPath) {
-      return;
-    }
-
     saveWorkspaces(termPath, workspaces);
     saveWorkspaceIdx(termPath, workspaceIdx);
-  }, [loadedTermPath, termPath, workspaces, workspaceIdx]);
+  }, [termPath, workspaces, workspaceIdx]);
 
   // Derived state for the active workspace
   const activeWorkspace = workspaces[workspaceIdx];
@@ -147,9 +160,16 @@ export function useWorkspaceState(
   // Helper: update the active workspace in the workspaces array
   const updateActive = useCallback(
     (updated: Workspace) => {
-      setWorkspaces((prev) => setArrayIdx(prev, workspaceIdx, updated));
+      updateTermState((currentState) => ({
+        ...currentState,
+        workspaces: setArrayIdx(
+          currentState.workspaces,
+          currentState.workspaceIdx,
+          updated,
+        ),
+      }));
     },
-    [workspaceIdx],
+    [updateTermState],
   );
 
   /* ---- Mutations ---- */
@@ -275,11 +295,13 @@ export function useWorkspaceState(
 
   const setWorkspace = useCallback(
     (idx: number) => {
-      if (idx >= 0 && idx < workspaces.length) {
-        setWorkspaceIdxRaw(idx);
-      }
+      updateTermState((currentState) =>
+        idx >= 0 && idx < currentState.workspaces.length
+          ? { ...currentState, workspaceIdx: idx }
+          : currentState,
+      );
     },
-    [workspaces.length],
+    [updateTermState],
   );
 
   const updateAvailableTimes = useCallback(
