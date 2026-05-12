@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, createContext } from "react";
+import { useCallback, useEffect, useMemo, useState, createContext } from "react";
 import Planner from "./Planner";
 import { parseTimes } from "./Planner";
 import Workspace from "./Workspace";
@@ -572,6 +572,7 @@ function App() {
     () => cloneAvailableTimes(workspace.availableTimes),
     [workspace.availableTimes],
   );
+  const { arrangements, arrangementIdx } = workspace;
 
   // Save state to local storage
   useEffect(() => {
@@ -591,11 +592,11 @@ function App() {
   }
 
   /** Helper functions to be sent sent through Context */
-  const replaceWorkspace = (updatedWorkspace: Workspace) => {
+  const replaceWorkspace = useCallback((updatedWorkspace: Workspace) => {
     setWorkspaces(setArrayIdx(workspaces, workspaceIdx, updatedWorkspace));
-  };
+  }, [workspaces, workspaceIdx]);
 
-  const addCourse = (newCourse: CourseStorage) => {
+  const addCourse = useCallback((newCourse: CourseStorage) => {
     const result = courses.find(
       (course) => course.courseData.id === newCourse.courseData.id,
     );
@@ -624,9 +625,9 @@ function App() {
       arrangements: newArrangements,
       arrangementIdx: newArrangementIdx,
     });
-  };
+  }, [availableTimes, courses, indexedCourses, replaceWorkspace, workspace]);
 
-  const removeCourse = (course: CourseStorage) => {
+  const removeCourse = useCallback((course: CourseStorage) => {
     let newCourses = courses.filter((currCourse) => currCourse !== course);
     const newArrangements = generateCourseSections(newCourses, availableTimes);
     let newArrangementIdx: Maybe<number> = null;
@@ -643,9 +644,9 @@ function App() {
       arrangements: newArrangements,
       arrangementIdx: newArrangementIdx,
     });
-  };
+  }, [availableTimes, courses, indexedCourses, replaceWorkspace, workspace]);
 
-  const toggleCourse = (newCourse: CourseStorage) => {
+  const toggleCourse = useCallback((newCourse: CourseStorage) => {
     let toggledCourse = newCourse;
     let newCourses = courses.map((course) => {
       if (course.courseData.id === newCourse.courseData.id) {
@@ -675,9 +676,9 @@ function App() {
       arrangements: newArrangements,
       arrangementIdx: newArrangementIdx,
     });
-  };
+  }, [arrangementIdx, availableTimes, courses, indexedCourses, replaceWorkspace, workspace]);
 
-  const toggleSectionLock = (newCourse: CourseStorage) => {
+  const toggleSectionLock = useCallback((newCourse: CourseStorage) => {
     let newCourses = courses.map((course) => {
       if (course.courseData.id === newCourse.courseData.id) {
         return { ...course, locked: !course.locked };
@@ -701,9 +702,9 @@ function App() {
       arrangements: newArrangements,
       arrangementIdx: newArrangementIdx,
     });
-  };
+  }, [arrangementIdx, availableTimes, courses, indexedCourses, replaceWorkspace, workspace]);
 
-  const nextArrangement = () => {
+  const nextArrangement = useCallback(() => {
     let newIdx = workspace.arrangementIdx;
     if (workspace.arrangements.length === 0) {
       newIdx = null;
@@ -722,9 +723,9 @@ function App() {
       courses: newCourses,
       arrangementIdx: newIdx,
     });
-  };
+  }, [indexedCourses, replaceWorkspace, workspace]);
 
-  const prevArrangement = () => {
+  const prevArrangement = useCallback(() => {
     let newIdx = workspace.arrangementIdx;
     if (workspace.arrangements.length === 0) {
       newIdx = null;
@@ -745,9 +746,9 @@ function App() {
       courses: newCourses,
       arrangementIdx: newIdx,
     });
-  };
+  }, [indexedCourses, replaceWorkspace, workspace]);
 
-  const setCourses = (nextCourses: CourseStorage[]) => {
+  const setCourses = useCallback((nextCourses: CourseStorage[]) => {
     let newCourses = nextCourses;
     const newArrangements = generateCourseSections(newCourses, availableTimes);
     let newArrangementIdx: Maybe<number> = null;
@@ -764,18 +765,18 @@ function App() {
       arrangements: newArrangements,
       arrangementIdx: newArrangementIdx,
     });
-  };
+  }, [availableTimes, indexedCourses, replaceWorkspace, workspace]);
 
-  const setWorkspace = (idx: number) => {
+  const setWorkspace = useCallback((idx: number) => {
     // invariant: previous idx is always valid
     let newIdx = workspaceIdx;
     if (idx >= 0 && idx < workspaces.length) {
       newIdx = idx;
     }
     setWorkspaceIdx(newIdx);
-  };
+  }, [workspaceIdx, workspaces.length]);
 
-  const updateAvailableTimes = (
+  const updateAvailableTimes = useCallback((
     dayIdx: WeekdayIndex,
     isStart: boolean,
     day: Date,
@@ -811,31 +812,56 @@ function App() {
       arrangementIdx: newArrangementIdx,
       availableTimes: newAvailableTimes,
     });
-  };
+  }, [
+    arrangementIdx,
+    arrangements.length,
+    availableTimes,
+    courses,
+    indexedCourses,
+    replaceWorkspace,
+    workspace,
+  ]);
 
-  const { arrangements, arrangementIdx } = workspace;
+  const appStateValue = useMemo<AppStateProps>(
+    () => ({
+      workspaces,
+      workspaceIdx,
+      courses,
+      addCourse,
+      removeCourse,
+      toggleCourse,
+      setCourses,
+      arrangements,
+      arrangementIdx,
+      nextArrangement,
+      prevArrangement,
+      availableTimes,
+      updateAvailableTimes,
+      setWorkspace,
+      toggleSectionLock,
+    }),
+    [
+      addCourse,
+      arrangementIdx,
+      arrangements,
+      availableTimes,
+      courses,
+      nextArrangement,
+      prevArrangement,
+      removeCourse,
+      setCourses,
+      setWorkspace,
+      toggleCourse,
+      toggleSectionLock,
+      updateAvailableTimes,
+      workspaceIdx,
+      workspaces,
+    ],
+  );
 
   return (
     <AllCourses.Provider value={indexedCourses}>
-      <AppState.Provider
-        value={{
-          workspaces,
-          workspaceIdx,
-          courses,
-          addCourse,
-          removeCourse,
-          toggleCourse,
-          setCourses,
-          arrangements,
-          arrangementIdx,
-          nextArrangement,
-          prevArrangement,
-          availableTimes,
-          updateAvailableTimes,
-          setWorkspace,
-          toggleSectionLock,
-        }}
-      >
+      <AppState.Provider value={appStateValue}>
         <div className="fixed z-[999] m-2">
           <motion.button
             whileHover={{ rotate: 15 }}

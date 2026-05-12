@@ -29,8 +29,9 @@
     }
   },
   "rules": {
+    // CSS and vendor stylesheets are intentionally loaded for side effects.
     "import/no-unassigned-import": "off",
-    "react/jsx-no-constructed-context-values": "off",
+    // React 17+ automatic JSX runtime does not need React in scope.
     "react/react-in-jsx-scope": "off"
   }
 }
