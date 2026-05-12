@@ -46,7 +46,6 @@ interface CourseStorageShort {
 
 type AvailableTimes = Date[][];
 
-// the overall state of a single workspace
 interface Workspace {
   courses: CourseStorage[];
   arrangements: CourseStorageShort[][];

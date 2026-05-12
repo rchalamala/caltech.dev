@@ -3,36 +3,24 @@ import Planner from "./Planner";
 import { parseTimes } from "./Planner";
 import Workspace from "./Workspace";
 import Modal from "./Modal";
-import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
+import HelpOutlineIcon from "@mui/icons-material/HelpOutlineOutlined";
 import { motion } from "framer-motion";
-import DATA_FA2023 from "./data/IndexedTotalFA2022-23.json";
-import DATA_WI2023 from "./data/IndexedTotalWI2022-23.json";
-import DATA_SP2023 from "./data/IndexedTotalSP2022-23.json";
-import DATA_FA2024 from "./data/IndexedTotalFA2023-24.json";
-import DATA_WI2024 from "./data/IndexedTotalWI2023-24.json";
-import DATA_SP2024 from "./data/IndexedTotalSP2023-24.json";
-import DATA_FA2025 from "./data/IndexedTotalFA2024-25.json";
-import DATA_WI2025 from "./data/IndexedTotalWI2024-25.json";
-import DATA_SP2025 from "./data/IndexedTotalSP2024-25.json";
-import DATA_FA2026 from "./data/IndexedTotalFA2025-26.json";
-import DATA_WI2026 from "./data/IndexedTotalWI2025-26.json";
-import DATA_SP2026 from "./data/IndexedTotalSP2025-26.json";
 
 const CURRENT_TERM = "/sp2026";
 
-const courseDataSources: { [key: string]: { [key: string]: CourseData } } = {
-  "/fa2023": DATA_FA2023,
-  "/wi2023": DATA_WI2023,
-  "/sp2023": DATA_SP2023,
-  "/fa2024": DATA_FA2024,
-  "/wi2024": DATA_WI2024,
-  "/sp2024": DATA_SP2024,
-  "/fa2025": DATA_FA2025,
-  "/wi2025": DATA_WI2025,
-  "/sp2025": DATA_SP2025,
-  "/fa2026": DATA_FA2026,
-  "/wi2026": DATA_WI2026,
-  "/sp2026": DATA_SP2026,
+const courseDataUrls: Record<string, string> = {
+  "/fa2023": "/data/IndexedTotalFA2022-23.json",
+  "/wi2023": "/data/IndexedTotalWI2022-23.json",
+  "/sp2023": "/data/IndexedTotalSP2022-23.json",
+  "/fa2024": "/data/IndexedTotalFA2023-24.json",
+  "/wi2024": "/data/IndexedTotalWI2023-24.json",
+  "/sp2024": "/data/IndexedTotalSP2023-24.json",
+  "/fa2025": "/data/IndexedTotalFA2024-25.json",
+  "/wi2025": "/data/IndexedTotalWI2024-25.json",
+  "/sp2025": "/data/IndexedTotalSP2024-25.json",
+  "/fa2026": "/data/IndexedTotalFA2025-26.json",
+  "/wi2026": "/data/IndexedTotalWI2025-26.json",
+  "/sp2026": "/data/IndexedTotalSP2025-26.json",
 };
 
 export const AllCourses = createContext<CourseIndex>({});
@@ -273,17 +261,35 @@ function App() {
   // really basic routing
   let pathname = useReactPath();
   const realPath = pathname === "/" ? CURRENT_TERM : pathname;
-  const data = courseDataSources[realPath];
-  const [indexedCourses, setIndexedCourses] = useState({});
+  const [indexedCourses, setIndexedCourses] = useState<Maybe<CourseIndex>>(null);
 
-  // load course data from a json url
   useEffect(() => {
-    try {
-      setIndexedCourses(data);
-    } catch {
-      alert("Error loading course data");
-    }
-  }, [data]);
+    let cancelled = false;
+    const courseDataUrl = courseDataUrls[realPath] ?? courseDataUrls[CURRENT_TERM];
+
+    setIndexedCourses(null);
+    fetch(courseDataUrl)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`Course data returned ${response.status}`);
+        }
+        return response.json() as Promise<CourseIndex>;
+      })
+      .then((data) => {
+        if (!cancelled) {
+          setIndexedCourses(data);
+        }
+      })
+      .catch(() => {
+        if (!cancelled) {
+          alert("Error loading course data");
+        }
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [realPath]);
 
   // 5 blank workspaces by default bc I'm too lazy to implement dynamic tabs and stuff
   const localWorkspaces = localStorage.getItem("workspaces" + realPath);
@@ -302,6 +308,7 @@ function App() {
   const [workspaceIdx, setWorkspaceIdx] = useState<number>(
     localWorkspaceIdx ? JSON.parse(localWorkspaceIdx) : 0,
   );
+  const [modalOpen, setModalOpen] = useState(false);
 
   const courses = workspaces[workspaceIdx].courses;
   const availableTimes: Date[][] = [[], [], [], [], []];
@@ -322,6 +329,14 @@ function App() {
       JSON.stringify(workspaceIdx),
     );
   }, [workspaces, workspaceIdx, realPath]);
+
+  if (indexedCourses === null) {
+    return (
+      <main className="py-5 mx-2 antialiased">
+        <p className="font-mono text-orange-500">Loading course data...</p>
+      </main>
+    );
+  }
 
   /** Helper functions to be sent sent through Context */
   const addCourse = (newCourse: CourseStorage) => {
@@ -607,8 +622,6 @@ function App() {
   };
 
   const { arrangements, arrangementIdx } = workspaces[workspaceIdx];
-
-  const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <AllCourses.Provider value={indexedCourses}>

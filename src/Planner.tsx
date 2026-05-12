@@ -5,7 +5,7 @@ import moment from "moment";
 import Flatpickr from "react-flatpickr";
 
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import "flatpickr/dist/themes/airbnb.css";
+import "flatpickr/dist/themes/material_orange.css";
 
 import "./css/planner.css";
 
@@ -56,7 +56,6 @@ export function parseTimes(times: string): Maybe<TimeInterval>[][] {
 
   // super hacky fix for a parsing bug when location is A
   let times_clean = times.replace("\nA", "");
-  console.log(times_clean)
 
   for (let line of times_clean.split(/[,\n]/)) {
     const match = line.match(/([MTWRF]+) (\d\d):(\d\d) - (\d\d):(\d\d)/);
