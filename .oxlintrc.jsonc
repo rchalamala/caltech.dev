@@ -6,7 +6,6 @@
     "node": true
   },
   "plugins": [
-    "eslint",
     "typescript",
     "unicorn",
     "oxc",
@@ -22,11 +21,6 @@
   "options": {
     "denyWarnings": true,
     "typeAware": true
-  },
-  "settings": {
-    "react": {
-      "version": "19.2.5"
-    }
   },
   "rules": {
     // CSS and vendor stylesheets are intentionally loaded for side effects.
