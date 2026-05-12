@@ -1,8 +1,12 @@
 import { useContext, useState } from "react";
 import Modal, { useModal } from "./Modal";
-import Select from "react-select";
-import { SingleValue } from "react-select";
-import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
+import Select, { type SingleValue } from "react-select";
+import {
+  DragDropContext,
+  Droppable,
+  Draggable,
+  type DropResult,
+} from "@hello-pangea/dnd";
 import { Fzf } from "fzf";
 import Lock from "@mui/icons-material/Lock";
 import LockOpen from "@mui/icons-material/LockOpen";
@@ -12,8 +16,6 @@ import ArrowForward from "@mui/icons-material/ArrowForward";
 import { shortenCourses, lengthenCourses, AllCourses, AppState } from "./App";
 import { motion } from "framer-motion";
 
-import "react-toggle/style.css";
-import "./css/workspace.css";
 import { Collapse, IconButton, Switch } from "@mui/material";
 import { UnfoldLess, UnfoldMore } from "@mui/icons-material";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
@@ -23,7 +25,7 @@ const DEFAULT_COURSES: { [key: string]: string[] } = {
   "fa": ["Ma 1 a", "Ph 1 a", "Ch 1 a", "CS 1"],
   "wi": ["Ma 1 b", "Ph 1 b", "Ch 1 b", "CS 2"],
   "sp": ["Ma 1 c", "Ph 1 c", "CS 3 x"],
-}
+};
 
 /** Fetches courses */
 function getCourse(
@@ -58,7 +60,12 @@ function getCourse(
 }
 
 function exportICS(term: string, courses: CourseStorage[]): string {
-  const termStartDate = new Date(( TERM_START_DATES as {[key: string] : string} )[term]);
+  const termStartDateValue = (TERM_START_DATES as Record<string, string>)[term];
+  if (termStartDateValue === undefined) {
+    throw new Error(`Missing term start date for ${term}`);
+  }
+
+  const termStartDate = new Date(termStartDateValue);
 
   // Map weekdays to indices for easy comparison
   const dayMap = "MTWRFSU";
@@ -67,6 +74,9 @@ function exportICS(term: string, courses: CourseStorage[]): string {
   function getFirstOccurrence(startDate: Date, dayOfWeek: string, timeString: string): Date {
     const date = new Date(startDate); // Copy the term start date
     const targetDay = dayMap.indexOf(dayOfWeek) + 1; // Get index for the weekday
+    if (targetDay === 0) {
+      throw new Error(`Unknown weekday ${dayOfWeek}`);
+    }
     const currentDay = date.getDay();
 
     // Move the date to the first occurrence of the target weekday
@@ -74,33 +84,45 @@ function exportICS(term: string, courses: CourseStorage[]): string {
     date.setDate(date.getDate() + dayOffset); // Ensure we don't return the start date if it's the same day
 
     // Parse time (e.g., "09:00") and set the time explicitly using local time
-    const [hours, minutes] = timeString.split(':').map(Number);
+    const [hoursText, minutesText] = timeString.split(":");
+    if (hoursText === undefined || minutesText === undefined) {
+      throw new Error(`Invalid time ${timeString}`);
+    }
+    const hours = Number.parseInt(hoursText, 10);
+    const minutes = Number.parseInt(minutesText, 10);
     date.setHours(hours, minutes, 0, 0); // Set hours and minutes in the local timezone
-    
+
     return date;
   }
 
   // Flatten the courses and parse times with start and end times, matching locations
   const parsedEvents = courses
-    .filter(course => course.enabled)
-    .flatMap(course => {
+    .filter((course) => course.enabled)
+    .flatMap((course) => {
       return course.courseData.sections
-        .filter(section => section.number - 1 === course.sectionId) // Filter by selected section
-        .flatMap(section => {
-          const times = section.times.split('\n'); // Split multiple times on newline
-          const locations = section.locations.split('\n'); // Split multiple locations on newline
+        .filter((section) => section.number - 1 === course.sectionId) // Filter by selected section
+        .flatMap((section) => {
+          const times = section.times.split("\n"); // Split multiple times on newline
+          const locations = section.locations.split("\n"); // Split multiple locations on newline
 
           // Zip times and locations together
           return times.flatMap((time, index) => {
-            const location = locations[index] || 'Unknown'; // Match time with corresponding location
-            const [days, startTime, , endTime] = time.split(' '); // Separate days and time range
-            if (days === 'A') return []; // skip to-be-announced times
-            
-            return days.split('').map(day => ({
+            const location = locations[index] ?? "Unknown"; // Match time with corresponding location
+            const [days, startTime, , endTime] = time.split(" "); // Separate days and time range
+            if (
+              days === undefined ||
+              startTime === undefined ||
+              endTime === undefined ||
+              days === "A"
+            ) {
+              return []; // skip to-be-announced times
+            }
+
+            return days.split("").map((day) => ({
               name: course.courseData.number, // Use course number for the title
               location, // Set the matched location for this time
               startTime: getFirstOccurrence(termStartDate, day, startTime),
-              endTime: getFirstOccurrence(termStartDate, day, endTime) // Parse the end time
+              endTime: getFirstOccurrence(termStartDate, day, endTime), // Parse the end time
             }));
           });
         });
@@ -115,7 +137,7 @@ METHOD:PUBLISH
 `;
 
   // Generate the events in ICS format
-  parsedEvents.forEach(event => {
+  parsedEvents.forEach((event) => {
     const dtStart = event.startTime.toISOString().replace(/-|:|\.\d+/g, ""); // Convert to UTC in .ics format
     const dtEnd = event.endTime.toISOString().replace(/-|:|\.\d+/g, ""); // Convert to UTC in .ics format
 
@@ -141,40 +163,36 @@ END:VEVENT
 function SectionDropdown(props: { course: CourseStorage }) {
   const course = props.course;
   const state = useContext(AppState);
+  const selectedSection =
+    course.sectionId === null
+      ? null
+      : (course.courseData.sections[course.sectionId] ?? null);
 
-  const onChange = (newSection: SingleValue<Maybe<SectionData>>) => {
-    course.sectionId =
-      newSection !== null
-        ? course.courseData.sections.findIndex(
-            (s) => s.number === newSection.number,
-          )
-        : null;
+  const onChange = (newSection: SingleValue<SectionData>) => {
+    const sectionId =
+      newSection === null
+        ? null
+        : course.courseData.sections.findIndex(
+            (section) => section.number === newSection.number,
+          );
     // if course with same id already exists, section number will simply be updated
-    state.addCourse(course);
+    state.addCourse({
+      ...course,
+      sectionId: sectionId === -1 ? null : sectionId,
+    });
   };
 
   return (
-    <div className="workspace-entry-section">
+    <div>
       <Select
         isClearable
         placeholder=""
-        value={
-          course.sectionId !== null
-            ? course.courseData.sections.find(
-                (c) =>
-                  c.number ===
-                  course.courseData.sections[course.sectionId!].number,
-              )
-            : null
-        }
+        value={selectedSection}
         onChange={onChange}
         options={course.courseData.sections}
         getOptionLabel={(section) => `${section.number}`}
         isOptionSelected={(section) =>
-          course.sectionId !== null
-            ? section.number ===
-              course.courseData.sections[course.sectionId].number
-            : false
+          selectedSection === null ? false : section.number === selectedSection.number
         }
       />
     </div>
@@ -217,8 +235,6 @@ function AdvancedCourseInfo(props: { course: CourseStorage }) {
 
 interface WorkspaceEntryProps {
   course: CourseStorage;
-  innerRef: any;
-  provided: any;
   index: number;
 }
 
@@ -233,19 +249,17 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
   const course = props.course;
   const sections = course.courseData.sections;
   const id = course.sectionId;
+  const selectedSection = id === null ? null : (sections[id] ?? null);
 
   const state = useContext(AppState);
 
   const [expanded, setExpanded] = useState(true);
   const [animParent] = useAutoAnimate();
 
-  let className = "workspace-entry";
-  className += course.locked
-    ? " workspace-entry-locked"
-    : " workspace-entry-unlocked";
-  className += course.enabled
-    ? " workspace-entry-enabled"
-    : " workspace-entry-disabled";
+  let className =
+    "mb-8 flex flex-col items-center rounded border border-neutral-300 p-2 transition-colors shadow-lg";
+  className += course.enabled ? " bg-white" : " bg-neutral-300";
+  className += course.locked ? " bg-neutral-100" : "";
 
   const [infoModalOpen, setInfoModalOpen] = useState(false);
   return (
@@ -284,7 +298,7 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
               <div
                 className={`${expanded ? "w-[calc(100%-2.5rem)]" : "w-min"} inline-block top-auto bottom-0 right-0 left-auto align-middle`}
               >
-                <div className="workspace-entry-buttons">
+                <div className="flex flex-row items-center justify-between">
                   <Switch
                     color="warning"
                     checked={course.enabled}
@@ -307,7 +321,6 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
                   )}
                   <IconButton
                     color="error"
-                    className="workspace-entry-controls-remove"
                     onClick={() => {
                       state.removeCourse(course);
                     }}
@@ -318,28 +331,28 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
               </div>
             </div>
             <Collapse in={expanded} className="w-full">
-              <div className="workspace-entry-content">
-                <div className="workspace-entry-info">
+              <div className="flex w-full flex-row items-center justify-between gap-6 px-2 pb-2">
+                <div className="flex flex-col gap-[2.5px]">
                   <p>
                     <b>{course.courseData.number}</b>
                     {": "}
                     <b>{course.courseData.name}</b>{" "}
-                    {`(${course.courseData.units[0]}-${course.courseData.units[1]}-${course.courseData.units[2]})`}
+                    {`(${course.courseData.units[0] ?? 0}-${course.courseData.units[1] ?? 0}-${course.courseData.units[2] ?? 0})`}
                   </p>
                   <p>
-                    {id !== null
-                      ? sections[id].instructor
-                      : "No Section Selected"}
+                    {selectedSection?.instructor ?? "No Section Selected"}
                   </p>
-                  <p>{id !== null ? sections[id].locations : "Location"}</p>
-                  <p>{id !== null ? sections[id].times : "Times"}</p>
+                  <p>{selectedSection?.locations ?? "Location"}</p>
+                  <p>{selectedSection?.times ?? "Times"}</p>
                 </div>
-                <div className="workspace-entry-controls">
+                <div className="flex min-w-[7.5rem] flex-col flex-wrap gap-2.5">
                   <motion.button
                     whileHover={{ scale: 0.95 }}
                     whileTap={{ scale: 0.9 }}
-                    className="py-1 font-bold text-white bg-orange-500 rounded-md workspace-entry-controls-info"
-                    onClick={() => setInfoModalOpen(true)}
+                    className="rounded-md bg-orange-500 py-1 font-bold text-white"
+                    onClick={() => {
+                      setInfoModalOpen(true);
+                    }}
                   >
                     More Info
                   </motion.button>
@@ -350,7 +363,12 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
           </div>
         )}
       </Draggable>
-      <Modal isOpen={infoModalOpen} onClose={() => setInfoModalOpen(false)}>
+      <Modal
+        isOpen={infoModalOpen}
+        onClose={() => {
+          setInfoModalOpen(false);
+        }}
+      >
         <AdvancedCourseInfo course={props.course} />
       </Modal>
     </div>
@@ -375,8 +393,8 @@ function WorkspaceSearch() {
   const [selectedCourse, setCourse] = useState<Maybe<CourseData>>(null);
 
   const handleSelect = (courseData: SingleValue<CourseData>) => {
-    setCourse(courseData as CourseData);
-    if (courseData) {
+    setCourse(courseData);
+    if (courseData !== null) {
       state.addCourse({
         courseData: courseData,
         sectionId: null,
@@ -403,7 +421,7 @@ function WorkspaceSearch() {
       placeholder="Add a course..."
       options={options}
       value={selectedCourse}
-      getOptionLabel={(course) => `${course?.number} - ${course?.name}`}
+      getOptionLabel={(course) => `${course.number} - ${course.name}`}
       onChange={handleSelect}
       isOptionSelected={(course) => course.id === selectedCourse?.id}
       onInputChange={sortCourses}
@@ -433,24 +451,30 @@ function WorkspaceScheduler() {
     -1 === state.courses.findIndex((c) => c.enabled && !c.locked);
   if (allSectionsSet) {
     return (
-      <div className="workspace-scheduler">
+      <div className="mt-2 flex items-center justify-center">
         <p>All sections set.</p>
       </div>
     );
   } else if (total === 0) {
     return (
-      <div className="workspace-scheduler">
+      <div className="mt-2 flex items-center justify-center">
         <p>No arrangements found :(</p>
       </div>
     );
   } else {
     return (
-      <div className="workspace-scheduler">
-        <button className="small-button" onClick={handleLeft}>
+      <div className="mt-2 flex items-center justify-center">
+        <button
+          className="h-8 w-8 rounded border border-neutral-300 bg-white hover:cursor-pointer hover:bg-neutral-200"
+          onClick={handleLeft}
+        >
           <ArrowBack style={{ width: "auto", height: "auto" }} />
         </button>
-        <p className="workspace-scheduler-content">{`${displayIdx}/${total}`}</p>
-        <button className="small-button" onClick={handleRight}>
+        <p className="w-[74px] text-center">{`${displayIdx}/${total}`}</p>
+        <button
+          className="h-8 w-8 rounded border border-neutral-300 bg-white hover:cursor-pointer hover:bg-neutral-200"
+          onClick={handleRight}
+        >
           <ArrowForward style={{ width: "auto", height: "auto" }} />
         </button>
       </div>
@@ -459,12 +483,15 @@ function WorkspaceScheduler() {
 }
 
 function reorder<T>(
-  list: Array<T>,
+  list: readonly T[],
   startIndex: number,
   endIndex: number,
 ): Array<T> {
   const result = Array.from(list);
   const [removed] = result.splice(startIndex, 1);
+  if (removed === undefined) {
+    return result;
+  }
   result.splice(endIndex, 0, removed);
 
   return result;
@@ -474,41 +501,43 @@ function reorder<T>(
 A fuzzy searcher will show you a limited selection of courses
 Clicking on the course will add it to the workspace and enable it (there will also be a button to show more info)
 From the workspace, you can enable/disable courses in addition to switching the section number */
-// TODO: import/export classes in plaintext or a human-readable format
 export default function Workspace({ term }: { term: string }) {
   const state = useContext(AppState);
   const indexedCourses = useContext(AllCourses);
 
-  const workspaceEntries = (provided: any) =>
+  const workspaceEntries = () =>
     state.courses.map((course: CourseStorage, index: number) => (
       <WorkspaceEntry
         index={index}
-        innerRef={provided.innerRef}
-        provided={provided}
         course={course}
         key={course.courseData.id}
       />
     ));
 
-  let units = [0, 0, 0];
-  for (let i = 0; i < state.courses.length; ++i) {
-    if (state.courses[i].enabled) {
-      units[0] += state.courses[i].courseData.units[0];
-      units[1] += state.courses[i].courseData.units[1];
-      units[2] += state.courses[i].courseData.units[2];
+  const units: [number, number, number] = [0, 0, 0];
+  for (const course of state.courses) {
+    if (course.enabled) {
+      const [lecture = 0, lab = 0, homework = 0] = course.courseData.units;
+      units[0] += lecture;
+      units[1] += lab;
+      units[2] += homework;
     }
   }
 
   const [openExportModal, exportModal] = useModal((_props) => {
     const shortened = shortenCourses(state.courses)
-      .map((c) => [c.courseId, c.enabled, c.locked, c.sectionId])
-      .flat();
+      .flatMap((course) => [
+        course.courseId,
+        course.enabled,
+        course.locked,
+        course.sectionId,
+      ]);
     const code = window.btoa(JSON.stringify(shortened));
     const copy = () => {
-      navigator.clipboard.writeText(code);
+      void navigator.clipboard.writeText(code);
     };
     return (
-      <div className="export-modal">
+      <div className="flex flex-col gap-4">
         <p className="text-lg font-bold">Your workspace code is:</p>
         <p className="font-mono text-sm" style={{ wordBreak: "break-all" }}>
           {code}
@@ -516,7 +545,7 @@ export default function Workspace({ term }: { term: string }) {
         <motion.button
           whileHover={{ scale: 0.95 }}
           whileTap={{ scale: 0.9 }}
-          className="flex px-4 py-2 space-x-2 font-bold border-2 rounded-md"
+          className="flex space-x-2 rounded-md border-2 px-4 py-2 font-bold"
           onClick={copy}
         >
           <svg
@@ -541,19 +570,34 @@ export default function Workspace({ term }: { term: string }) {
   });
 
   const importWorkspace = () => {
-    const code = prompt("Copy in the workspace code.") || "";
+    const code = prompt("Copy in the workspace code.") ?? "";
     if (code === "") {
       return;
     }
     try {
-      const shortened = JSON.parse(window.atob(code));
+      const shortened = JSON.parse(window.atob(code)) as unknown;
+      if (!Array.isArray(shortened)) {
+        throw new Error("Workspace code must decode to an array.");
+      }
       const courses: CourseStorageShort[] = [];
       for (let i = 0; i * 4 < shortened.length; i++) {
+        const courseId = shortened[i * 4];
+        const enabled = shortened[i * 4 + 1];
+        const locked = shortened[i * 4 + 2];
+        const sectionId = shortened[i * 4 + 3];
+        if (
+          typeof courseId !== "number" ||
+          typeof enabled !== "boolean" ||
+          typeof locked !== "boolean" ||
+          (typeof sectionId !== "number" && sectionId !== null)
+        ) {
+          throw new Error("Workspace code contains invalid course data.");
+        }
         courses.push({
-          courseId: shortened[i * 4],
-          enabled: shortened[i * 4 + 1],
-          locked: shortened[i * 4 + 2],
-          sectionId: shortened[i * 4 + 3],
+          courseId,
+          enabled,
+          locked,
+          sectionId,
         });
       }
       const lengthened = lengthenCourses(courses, indexedCourses);
@@ -563,9 +607,10 @@ export default function Workspace({ term }: { term: string }) {
     }
   };
 
-  function onDragEnd(result: any) {
+  function onDragEnd(result: DropResult) {
     if (
-      !result.destination ||
+      result.destination === null ||
+      result.destination === undefined ||
       result.destination.index === result.source.index
     ) {
       return;
@@ -577,16 +622,20 @@ export default function Workspace({ term }: { term: string }) {
   }
 
   return (
-    <div className="workspace-wrapper">
+    <div className="mb-2.5 flex flex-col pl-2.5 md:w-[40vw]">
       {exportModal}
       <h2 className="mb-2 text-center">Choose Workspace...</h2>
-      <div className="workspace-switcher">
+      <div className="flex flex-row gap-3 border-b border-neutral-300">
         {[0, 1, 2, 3, 4].map((idx) => {
           return (
             <button
               key={idx}
-              className={state.workspaceIdx === idx ? "enabled" : ""}
-              onClick={() => state.setWorkspace(idx)}
+              className={`relative bottom-[-1px] h-6 w-12 rounded-t border border-neutral-300 bg-white transition-colors hover:cursor-pointer hover:bg-neutral-200 ${
+                state.workspaceIdx === idx ? "border-b-transparent" : ""
+              }`}
+              onClick={() => {
+                state.setWorkspace(idx);
+              }}
             >
               {idx + 1}
             </button>
@@ -595,7 +644,7 @@ export default function Workspace({ term }: { term: string }) {
       </div>
       <WorkspaceScheduler />
       <WorkspaceSearch />
-      <div className="workspace-controls">
+      <div className="mb-3 flex flex-row flex-wrap justify-evenly gap-2.5">
         <ControlButton
           text="Unlock All"
           onClick={() => {
@@ -628,41 +677,51 @@ export default function Workspace({ term }: { term: string }) {
             );
           }}
         />
-        <ControlButton text="Remove All" onClick={() => state.setCourses([])} />
+        <ControlButton
+          text="Remove All"
+          onClick={() => {
+            state.setCourses([]);
+          }}
+        />
         <ControlButton
           text="Default Schedule"
           onClick={() => {
+            const defaultCourses = DEFAULT_COURSES[term.substring(0, 2)] ?? [];
             state.setCourses(
               // Change based on term
-              DEFAULT_COURSES[term.substring(0, 2)].map((name) => ({
-                ...getCourse(name, indexedCourses)!,
-                enabled: true,
-                locked: true,
-              })),
+              defaultCourses.flatMap((name) => {
+                const course = getCourse(name, indexedCourses);
+                return course === null
+                  ? []
+                  : [{ ...course, enabled: true, locked: true }];
+              }),
             );
           }}
         />
         <ControlButton text="Import Workspace" onClick={importWorkspace} />
         <ControlButton text="Export Workspace" onClick={openExportModal} />
-        <ControlButton text="Export .ics" onClick={() => {
-          const icsContent = exportICS(term, state.courses);
+        <ControlButton
+          text="Export .ics"
+          onClick={() => {
+            const icsContent = exportICS(term, state.courses);
 
-          const blob = new Blob([icsContent], { type: 'text/calendar' });
+            const blob = new Blob([icsContent], { type: "text/calendar" });
 
-          const link = document.createElement('a');
-          link.href = URL.createObjectURL(blob);
-          link.download = `schedule_${term}.ics`;
+            const link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = `schedule_${term}.ics`;
 
-          document.body.appendChild(link);
-          link.click();
-          URL.revokeObjectURL(link.href);
-          document.body.removeChild(link);
-        }} />
+            document.body.appendChild(link);
+            link.click();
+            URL.revokeObjectURL(link.href);
+            document.body.removeChild(link);
+          }}
+        />
       </div>
       <b className="py-3">
         {`${units[0] + units[1] + units[2]} units (${units[0]}-${units[1]}-${units[2]})`}
       </b>
-      <div className="workspace-entries">
+      <div className="flex flex-col pt-3">
         {state.courses.length === 0 ? (
           <p className="m-auto">
             No courses added. Add some using the search bar above!
@@ -672,7 +731,7 @@ export default function Workspace({ term }: { term: string }) {
             <Droppable droppableId="droppable">
               {(provided) => (
                 <div ref={provided.innerRef} {...provided.droppableProps}>
-                  {workspaceEntries(provided)}
+                  {workspaceEntries()}
                   {provided.placeholder}
                 </div>
               )}

@@ -4,9 +4,13 @@ import App from "./App";
 
 import "./css/index.css";
 
-const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement,
-);
+const rootElement = document.querySelector("#root");
+
+if (rootElement === null) {
+  throw new Error("Root element not found");
+}
+
+const root = ReactDOM.createRoot(rootElement);
 
 root.render(
   <StrictMode>

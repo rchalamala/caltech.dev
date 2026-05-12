@@ -1,4 +1,13 @@
 type Maybe<T> = T | null;
+type WeekdayIndex = 0 | 1 | 2 | 3 | 4;
+type DayAvailability = [Date, Date];
+type AvailableTimes = [
+  DayAvailability,
+  DayAvailability,
+  DayAvailability,
+  DayAvailability,
+  DayAvailability,
+];
 
 interface CourseStorage {
   courseData: CourseData;
@@ -43,8 +52,6 @@ interface CourseStorageShort {
   enabled: boolean;
   locked: boolean;
 }
-
-type AvailableTimes = Date[][];
 
 interface Workspace {
   courses: CourseStorage[];

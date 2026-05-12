@@ -1,7 +1,6 @@
 import { useEffect, useState, type ReactElement, type ReactNode } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-
-import "./css/modal.css";
+import CloseIcon from "@mui/icons-material/Close";
 
 export interface ModalProps {
   isOpen: boolean;
@@ -35,39 +34,26 @@ function Modal({ isOpen, onClose, children }: ModalProps) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="overflow-y-scroll flex items-center justify-center w-screen h-screen backdrop-blur-lg fixed top-0 left-0 z-[1000]"
+          className="fixed left-0 top-0 z-[1000] flex h-screen w-screen items-center justify-center overflow-y-scroll backdrop-blur-lg"
         >
           <button
-            className="w-full h-full z-[500] absolute top-0 left-0"
+            className="absolute left-0 top-0 z-[500] h-full w-full"
             onClick={onClose}
           />
           <motion.div
             initial={{ x: -100 }}
             animate={{ x: 0 }}
             exit={{ x: 100 }}
-            className="relative flex flex-col space-y-4 bg-white p-16 rounded-md border-[1px] shadow-lg sm:w-[40%] w-[80%] h-fit z-[600]"
+            className="relative z-[600] flex h-fit w-[80%] flex-col space-y-4 rounded-md border bg-white p-16 shadow-lg sm:w-[40%]"
           >
             {children}
             <motion.button
               whileHover={{ scale: 0.95, rotate: 90 }}
               whileTap={{ scale: 0.9, rotate: 180 }}
               onClick={onClose}
-              className="absolute p-0 m-0 font-bold text-white bg-red-500 rounded-full top-2 right-4"
+              className="absolute right-4 top-2 m-0 rounded-full bg-red-500 p-0 font-bold text-white"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-10 h-10"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+              <CloseIcon className="h-10 w-10" />
             </motion.button>
           </motion.div>
         </motion.div>
@@ -86,8 +72,10 @@ export function useModal(
     setIsOpen(false);
   };
   return [
-    () => setIsOpen(true),
-    <Modal isOpen={isOpen} onClose={onClose}>
+    () => {
+      setIsOpen(true);
+    },
+    <Modal isOpen={isOpen} onClose={onClose} key="modal">
       {contents({ isOpen, onClose, children: null })}
     </Modal>,
   ];

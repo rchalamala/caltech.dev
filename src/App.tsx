@@ -1,4 +1,4 @@
-import { useEffect, useState, createContext } from "react";
+import { useEffect, useMemo, useState, createContext } from "react";
 import Planner from "./Planner";
 import { parseTimes } from "./Planner";
 import Workspace from "./Workspace";
@@ -25,18 +25,24 @@ const courseDataUrls: Record<string, string> = {
 
 export const AllCourses = createContext<CourseIndex>({});
 
-function emptyWorkspace() {
+const WEEKDAY_INDICES: WeekdayIndex[] = [0, 1, 2, 3, 4];
+
+function defaultAvailableTimes(): AvailableTimes {
+  return [
+    [new Date(2025, 0, 1, 8), new Date(2025, 0, 1, 23)],
+    [new Date(2025, 0, 2, 8), new Date(2025, 0, 2, 23)],
+    [new Date(2025, 0, 3, 8), new Date(2025, 0, 3, 23)],
+    [new Date(2025, 0, 4, 8), new Date(2025, 0, 4, 23)],
+    [new Date(2025, 0, 5, 8), new Date(2025, 0, 5, 23)],
+  ];
+}
+
+function emptyWorkspace(): Workspace {
   return {
     courses: [],
     arrangements: [],
     arrangementIdx: null,
-    availableTimes: [
-      [new Date(2025, 0, 1, 8), new Date(2025, 0, 1, 23)],
-      [new Date(2025, 0, 2, 8), new Date(2025, 0, 2, 23)],
-      [new Date(2025, 0, 3, 8), new Date(2025, 0, 3, 23)],
-      [new Date(2025, 0, 4, 8), new Date(2025, 0, 4, 23)],
-      [new Date(2025, 0, 5, 8), new Date(2025, 0, 5, 23)],
-    ],
+    availableTimes: defaultAvailableTimes(),
   };
 }
 
@@ -57,8 +63,8 @@ interface AppStateProps {
   prevArrangement: () => void;
   toggleSectionLock: (course: CourseStorage) => void;
 
-  availableTimes: Date[][];
-  updateAvailableTimes: (dayIdx: number, isStart: boolean, day: Date) => void;
+  availableTimes: AvailableTimes;
+  updateAvailableTimes: (dayIdx: WeekdayIndex, isStart: boolean, day: Date) => void;
 }
 
 /** Allows to easily add/remove courses to `state` */
@@ -79,7 +85,7 @@ export const AppState = createContext<AppStateProps>({
   prevArrangement: () => null,
   toggleSectionLock: () => null,
 
-  availableTimes: [],
+  availableTimes: defaultAvailableTimes(),
   updateAvailableTimes: () => null,
 });
 
@@ -90,24 +96,32 @@ function sectionsIntersect(a: CourseStorage, b: CourseStorage): boolean {
   if (a.sectionId === null || b.sectionId === null) {
     return false;
   }
+  const selectedA = a.courseData.sections[a.sectionId];
+  const selectedB = b.courseData.sections[b.sectionId];
+  if (selectedA === undefined || selectedB === undefined) {
+    return false;
+  }
   const sectionA = a.courseData.sections.find(
-    (s) => s.number === a.courseData.sections[a.sectionId!].number,
+    (section) => section.number === selectedA.number,
   );
   const sectionB = b.courseData.sections.find(
-    (s) => s.number === b.courseData.sections[b.sectionId!].number,
+    (section) => section.number === selectedB.number,
   );
+  if (sectionA === undefined || sectionB === undefined) {
+    return false;
+  }
 
-  const timesA = parseTimes(sectionA!.times);
-  const timesB = parseTimes(sectionB!.times);
+  const timesA = parseTimes(sectionA.times);
+  const timesB = parseTimes(sectionB.times);
 
-  for (let i = 0; i < 5; i++) {
+  for (const i of WEEKDAY_INDICES) {
     for (const intervalA of timesA[i]) {
       for (const intervalB of timesB[i]) {
         if (
-          (intervalA!.start >= intervalB!.start &&
-            intervalA!.start < intervalB!.end) ||
-          (intervalB!.start >= intervalA!.start &&
-            intervalB!.start < intervalA!.end)
+          (intervalA.start >= intervalB.start &&
+            intervalA.start < intervalB.end) ||
+          (intervalB.start >= intervalA.start &&
+            intervalB.start < intervalA.end)
         ) {
           return true;
         }
@@ -132,13 +146,20 @@ export function lengthenCourses(
   shortened: CourseStorageShort[],
   courseIndex: CourseIndex,
 ): CourseStorage[] {
-  return shortened.map((storage) => {
-    return {
-      courseData: courseIndex[storage.courseId.toString()]!,
-      sectionId: storage.sectionId,
-      enabled: storage.enabled,
-      locked: storage.locked,
-    };
+  return shortened.flatMap((storage) => {
+    const courseData = courseIndex[storage.courseId.toString()];
+    if (courseData === undefined) {
+      return [];
+    }
+
+    return [
+      {
+        courseData,
+        sectionId: storage.sectionId,
+        enabled: storage.enabled,
+        locked: storage.locked,
+      },
+    ];
   });
 }
 
@@ -147,7 +168,7 @@ export function lengthenCourses(
  none of these sections will have overlapping times. */
 function generateCourseSections(
   requests: CourseStorage[],
-  availableTimes: Date[][],
+  availableTimes: AvailableTimes,
 ): CourseStorageShort[][] {
   if (requests.length === 0) {
     return [];
@@ -160,24 +181,36 @@ function generateCourseSections(
 
     for (let i = 0; i < arr.length; i++) {
       for (let j = i + 1; j < arr.length; j++) {
-        valid &&= !sectionsIntersect(arr[i], arr[j]) || (arr[i].locked && arr[j].locked);
+        const left = arr[i];
+        const right = arr[j];
+        if (left === undefined || right === undefined) {
+          continue;
+        }
+        valid &&= !sectionsIntersect(left, right) || (left.locked && right.locked);
       }
     }
 
-    for (let i = 0; i < arr.length; i++) {
-      if (arr[i].sectionId === null) {
+    for (const course of arr) {
+      if (course.sectionId === null) {
         continue;
       }
-      const section = arr[i].courseData.sections.find(
-        (s) =>
-          s.number === arr[i].courseData.sections[arr[i].sectionId!].number,
+      const selectedSection = course.courseData.sections[course.sectionId];
+      if (selectedSection === undefined) {
+        return false;
+      }
+      const section = course.courseData.sections.find(
+        (candidate) => candidate.number === selectedSection.number,
       );
-      const intervals = parseTimes(section!.times);
-      for (let j = 0; j < 5; j++) {
+      if (section === undefined) {
+        return false;
+      }
+      const intervals = parseTimes(section.times);
+      for (const j of WEEKDAY_INDICES) {
+        const [availableStart, availableEnd] = availableTimes[j];
         for (const interval of intervals[j]) {
           valid &&=
-            availableTimes[j][0].getTime() <= interval!.start.getTime() &&
-            interval!.end.getTime() <= availableTimes[j][1].getTime();
+            availableStart.getTime() <= interval.start.getTime() &&
+            interval.end.getTime() <= availableEnd.getTime();
         }
       }
     }
@@ -193,13 +226,15 @@ function generateCourseSections(
     }
     // add a course/section pair
     const request = requests[idx];
+    if (request === undefined) {
+      return;
+    }
 
     if (
       !request.enabled ||
       request.locked ||
       // ignore "A" courses to reduce the number of total arrangements
-      (request.courseData.sections.length > 0 &&
-        request.courseData.sections[0].times === "A")
+      request.courseData.sections[0]?.times === "A"
     ) {
       acc.push(request);
       if (verify(acc)) {
@@ -223,7 +258,7 @@ function generateCourseSections(
   return output;
 }
 
-function setArrayIdx<T>(arr: Array<T>, idx: number, element: T) {
+function setArrayIdx<T>(arr: readonly T[], idx: number, element: T): T[] {
   return arr.map((value, i) => {
     if (i === idx) {
       return element;
@@ -233,11 +268,234 @@ function setArrayIdx<T>(arr: Array<T>, idx: number, element: T) {
   });
 }
 
-function setField(obj: any, field: string, value: any) {
+function cloneAvailableTimes(availableTimes: AvailableTimes): AvailableTimes {
+  return [
+    [new Date(availableTimes[0][0]), new Date(availableTimes[0][1])],
+    [new Date(availableTimes[1][0]), new Date(availableTimes[1][1])],
+    [new Date(availableTimes[2][0]), new Date(availableTimes[2][1])],
+    [new Date(availableTimes[3][0]), new Date(availableTimes[3][1])],
+    [new Date(availableTimes[4][0]), new Date(availableTimes[4][1])],
+  ];
+}
+
+function setAvailableTime(
+  availableTimes: AvailableTimes,
+  dayIdx: WeekdayIndex,
+  availability: DayAvailability,
+): AvailableTimes {
+  return [
+    dayIdx === 0 ? availability : availableTimes[0],
+    dayIdx === 1 ? availability : availableTimes[1],
+    dayIdx === 2 ? availability : availableTimes[2],
+    dayIdx === 3 ? availability : availableTimes[3],
+    dayIdx === 4 ? availability : availableTimes[4],
+  ];
+}
+
+function clearUnlockedSections(courses: CourseStorage[]): CourseStorage[] {
+  return courses.map((course) =>
+    course.locked ? course : { ...course, sectionId: null },
+  );
+}
+
+function firstLengthenedArrangement(
+  arrangements: CourseStorageShort[][],
+  indexedCourses: CourseIndex,
+): { courses: CourseStorage[]; arrangementIdx: Maybe<number> } {
+  const firstArrangement = arrangements[0];
+  if (firstArrangement === undefined) {
+    return { courses: [], arrangementIdx: null };
+  }
+
   return {
-    ...obj,
-    [field]: value,
+    courses: lengthenCourses(firstArrangement, indexedCourses),
+    arrangementIdx: 0,
   };
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null;
+}
+
+function isUnknownArray(value: unknown): value is unknown[] {
+  return Array.isArray(value);
+}
+
+function isSectionData(value: unknown): value is SectionData {
+  if (!isRecord(value)) {
+    return false;
+  }
+
+  return (
+    typeof value["grades"] === "string" &&
+    typeof value["instructor"] === "string" &&
+    typeof value["locations"] === "string" &&
+    typeof value["number"] === "number" &&
+    typeof value["times"] === "string"
+  );
+}
+
+function isCourseData(value: unknown): value is CourseData {
+  if (!isRecord(value) || !isUnknownArray(value["sections"])) {
+    return false;
+  }
+
+  return (
+    typeof value["id"] === "number" &&
+    typeof value["name"] === "string" &&
+    typeof value["number"] === "string" &&
+    value["sections"].every(isSectionData) &&
+    isUnknownArray(value["units"]) &&
+    value["units"].every((unit) => typeof unit === "number") &&
+    typeof value["description"] === "string" &&
+    typeof value["prerequisites"] === "string" &&
+    typeof value["rating"] === "string" &&
+    typeof value["true_units"] === "string" &&
+    typeof value["link"] === "string" &&
+    typeof value["comment"] === "string"
+  );
+}
+
+function isCourseIndex(value: unknown): value is CourseIndex {
+  return isRecord(value) && Object.values(value).every(isCourseData);
+}
+
+function isSectionId(value: unknown): value is Maybe<number> {
+  return value === null || typeof value === "number";
+}
+
+function isCourseStorage(value: unknown): value is CourseStorage {
+  if (!isRecord(value)) {
+    return false;
+  }
+
+  return (
+    isCourseData(value["courseData"]) &&
+    isSectionId(value["sectionId"]) &&
+    typeof value["enabled"] === "boolean" &&
+    typeof value["locked"] === "boolean"
+  );
+}
+
+function isCourseStorageShort(value: unknown): value is CourseStorageShort {
+  if (!isRecord(value)) {
+    return false;
+  }
+
+  return (
+    typeof value["courseId"] === "number" &&
+    isSectionId(value["sectionId"]) &&
+    typeof value["enabled"] === "boolean" &&
+    typeof value["locked"] === "boolean"
+  );
+}
+
+function parseStoredDate(value: unknown, fallback: Date): Date {
+  if (
+    value instanceof Date ||
+    typeof value === "string" ||
+    typeof value === "number"
+  ) {
+    const parsed = new Date(value);
+    if (!Number.isNaN(parsed.getTime())) {
+      return parsed;
+    }
+  }
+
+  return fallback;
+}
+
+function parseStoredAvailableTimes(value: unknown): AvailableTimes {
+  const fallback = defaultAvailableTimes();
+  if (!isUnknownArray(value)) {
+    return fallback;
+  }
+
+  return [
+    parseStoredAvailability(value[0], fallback[0]),
+    parseStoredAvailability(value[1], fallback[1]),
+    parseStoredAvailability(value[2], fallback[2]),
+    parseStoredAvailability(value[3], fallback[3]),
+    parseStoredAvailability(value[4], fallback[4]),
+  ];
+}
+
+function parseStoredAvailability(
+  value: unknown,
+  fallback: DayAvailability,
+): DayAvailability {
+  if (!isUnknownArray(value)) {
+    return fallback;
+  }
+
+  return [
+    parseStoredDate(value[0], fallback[0]),
+    parseStoredDate(value[1], fallback[1]),
+  ];
+}
+
+function parseStoredArrangement(value: unknown): CourseStorageShort[] {
+  return isUnknownArray(value) ? value.filter(isCourseStorageShort) : [];
+}
+
+function parseStoredWorkspace(value: unknown): Maybe<Workspace> {
+  if (!isRecord(value)) {
+    return null;
+  }
+
+  return {
+    courses: isUnknownArray(value["courses"])
+      ? value["courses"].filter(isCourseStorage)
+      : [],
+    arrangements: isUnknownArray(value["arrangements"])
+      ? value["arrangements"].map(parseStoredArrangement)
+      : [],
+    arrangementIdx:
+      typeof value["arrangementIdx"] === "number"
+        ? value["arrangementIdx"]
+        : null,
+    availableTimes: parseStoredAvailableTimes(value["availableTimes"]),
+  };
+}
+
+function defaultWorkspaces(): Workspace[] {
+  return Array.from({ length: 5 }, () => emptyWorkspace());
+}
+
+function parseStoredWorkspaces(storedWorkspaces: string | null): Workspace[] {
+  if (storedWorkspaces === null) {
+    return defaultWorkspaces();
+  }
+
+  try {
+    const parsed: unknown = JSON.parse(storedWorkspaces);
+    if (!isUnknownArray(parsed)) {
+      return defaultWorkspaces();
+    }
+
+    const workspaces = parsed.flatMap((value) => {
+      const workspace = parseStoredWorkspace(value);
+      return workspace === null ? [] : [workspace];
+    });
+
+    return workspaces.length > 0 ? workspaces : defaultWorkspaces();
+  } catch {
+    return defaultWorkspaces();
+  }
+}
+
+function parseStoredWorkspaceIdx(
+  storedWorkspaceIdx: string | null,
+  workspaceCount: number,
+): number {
+  if (storedWorkspaceIdx === null) {
+    return 0;
+  }
+
+  const parsed = Number(storedWorkspaceIdx);
+  return Number.isInteger(parsed) && parsed >= 0 && parsed < workspaceCount
+    ? parsed
+    : 0;
 }
 
 // credit to https://stackoverflow.com/a/58443076
@@ -259,13 +517,16 @@ const useReactPath = () => {
 /** Main wrapper */
 function App() {
   // really basic routing
-  let pathname = useReactPath();
+  const pathname = useReactPath();
   const realPath = pathname === "/" ? CURRENT_TERM : pathname;
   const [indexedCourses, setIndexedCourses] = useState<Maybe<CourseIndex>>(null);
 
   useEffect(() => {
     let cancelled = false;
     const courseDataUrl = courseDataUrls[realPath] ?? courseDataUrls[CURRENT_TERM];
+    if (courseDataUrl === undefined) {
+      throw new Error(`Missing course data URL for ${realPath}`);
+    }
 
     setIndexedCourses(null);
     fetch(courseDataUrl)
@@ -273,9 +534,12 @@ function App() {
         if (!response.ok) {
           throw new Error(`Course data returned ${response.status}`);
         }
-        return response.json() as Promise<CourseIndex>;
+        return response.json();
       })
-      .then((data) => {
+      .then((data: unknown) => {
+        if (!isCourseIndex(data)) {
+          throw new Error("Course data response had an unexpected shape");
+        }
         if (!cancelled) {
           setIndexedCourses(data);
         }
@@ -293,33 +557,21 @@ function App() {
 
   // 5 blank workspaces by default bc I'm too lazy to implement dynamic tabs and stuff
   const localWorkspaces = localStorage.getItem("workspaces" + realPath);
-  const [workspaces, setWorkspaces] = useState<Workspace[]>(
-    localWorkspaces
-      ? JSON.parse(localWorkspaces)
-      : [
-        emptyWorkspace(),
-        emptyWorkspace(),
-        emptyWorkspace(),
-        emptyWorkspace(),
-        emptyWorkspace(),
-      ],
+  const [workspaces, setWorkspaces] = useState<Workspace[]>(() =>
+    parseStoredWorkspaces(localWorkspaces),
   );
   const localWorkspaceIdx = localStorage.getItem("workspaceIdx" + realPath);
-  const [workspaceIdx, setWorkspaceIdx] = useState<number>(
-    localWorkspaceIdx ? JSON.parse(localWorkspaceIdx) : 0,
+  const [workspaceIdx, setWorkspaceIdx] = useState<number>(() =>
+    parseStoredWorkspaceIdx(localWorkspaceIdx, workspaces.length),
   );
   const [modalOpen, setModalOpen] = useState(false);
 
-  const courses = workspaces[workspaceIdx].courses;
-  const availableTimes: Date[][] = [[], [], [], [], []];
-
-  for (let i = 0; i < availableTimes.length; ++i) {
-    for (let j = 0; j < 2; ++j) {
-      availableTimes[i][j] = new Date(
-        workspaces[workspaceIdx].availableTimes[i][j],
-      );
-    }
-  }
+  const workspace = workspaces[workspaceIdx] ?? workspaces[0] ?? emptyWorkspace();
+  const courses = workspace.courses;
+  const availableTimes = useMemo(
+    () => cloneAvailableTimes(workspace.availableTimes),
+    [workspace.availableTimes],
+  );
 
   // Save state to local storage
   useEffect(() => {
@@ -339,6 +591,10 @@ function App() {
   }
 
   /** Helper functions to be sent sent through Context */
+  const replaceWorkspace = (updatedWorkspace: Workspace) => {
+    setWorkspaces(setArrayIdx(workspaces, workspaceIdx, updatedWorkspace));
+  };
+
   const addCourse = (newCourse: CourseStorage) => {
     const result = courses.find(
       (course) => course.courseData.id === newCourse.courseData.id,
@@ -346,72 +602,55 @@ function App() {
     let newCourses: CourseStorage[] = [];
     if (result) {
       // course was already in workspace
-      newCourses = courses;
+      newCourses = courses.map((course) =>
+        course.courseData.id === newCourse.courseData.id ? newCourse : course,
+      );
     } else {
-      newCourses = [...courses, setField(setField(newCourse, "locked", true), "sectionId", 0)];
+      newCourses = [...courses, { ...newCourse, locked: true, sectionId: 0 }];
     }
     const newArrangements = generateCourseSections(newCourses, availableTimes);
-    let newArrangementIdx = null;
+    let newArrangementIdx: Maybe<number> = null;
     if (newArrangements.length === 0) {
-      newCourses = newCourses.map((course) => {
-        if (!course.locked) {
-          return setField(course, "sectionId", null);
-        } else {
-          return course;
-        }
-      });
+      newCourses = clearUnlockedSections(newCourses);
     } else {
-      newArrangementIdx = 0;
-      newCourses = lengthenCourses(
-        newArrangements[newArrangementIdx],
-        indexedCourses,
-      );
+      const lengthened = firstLengthenedArrangement(newArrangements, indexedCourses);
+      newArrangementIdx = lengthened.arrangementIdx;
+      newCourses = lengthened.courses;
     }
     // these happen in parallel
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangements: newArrangements,
-        arrangementIdx: newArrangementIdx,
-      }),
-    );
+    replaceWorkspace({
+      ...workspace,
+      courses: newCourses,
+      arrangements: newArrangements,
+      arrangementIdx: newArrangementIdx,
+    });
   };
 
   const removeCourse = (course: CourseStorage) => {
     let newCourses = courses.filter((currCourse) => currCourse !== course);
     const newArrangements = generateCourseSections(newCourses, availableTimes);
-    let newArrangementIdx = null;
+    let newArrangementIdx: Maybe<number> = null;
     if (newArrangements.length === 0) {
-      newCourses = newCourses.map((course) => {
-        if (!course.locked) {
-          return setField(course, "sectionId", null);
-        } else {
-          return course;
-        }
-      });
+      newCourses = clearUnlockedSections(newCourses);
     } else {
-      newArrangementIdx = 0;
-      newCourses = lengthenCourses(
-        newArrangements[newArrangementIdx],
-        indexedCourses,
-      );
+      const lengthened = firstLengthenedArrangement(newArrangements, indexedCourses);
+      newArrangementIdx = lengthened.arrangementIdx;
+      newCourses = lengthened.courses;
     }
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangements: generateCourseSections(newCourses, availableTimes),
-        arrangementIdx: newArrangementIdx,
-      }),
-    );
+    replaceWorkspace({
+      ...workspace,
+      courses: newCourses,
+      arrangements: newArrangements,
+      arrangementIdx: newArrangementIdx,
+    });
   };
 
   const toggleCourse = (newCourse: CourseStorage) => {
+    let toggledCourse = newCourse;
     let newCourses = courses.map((course) => {
       if (course.courseData.id === newCourse.courseData.id) {
-        newCourse.enabled = !newCourse.enabled;
-        return newCourse;
+        toggledCourse = { ...course, enabled: !course.enabled };
+        return toggledCourse;
       } else {
         return course;
       }
@@ -419,40 +658,29 @@ function App() {
     const newArrangements = generateCourseSections(newCourses, availableTimes);
     let newArrangementIdx = arrangementIdx;
     if (newArrangements.length === 0) {
-      newCourses = newCourses.map((course) => {
-        if (!course.locked) {
-          return setField(course, "sectionId", null);
-        } else {
-          return course;
-        }
-      });
+      newCourses = clearUnlockedSections(newCourses);
       newArrangementIdx = null;
     } else {
       // if course went disabled => enabled or is unlocked, then need to recalculate
       // otherwise, just keep arrangementIdx the same
-      if (newCourse.enabled || !newCourse.locked) {
-        newArrangementIdx = 0;
-        newCourses = lengthenCourses(
-          newArrangements[newArrangementIdx],
-          indexedCourses,
-        );
+      if (toggledCourse.enabled || !toggledCourse.locked) {
+        const lengthened = firstLengthenedArrangement(newArrangements, indexedCourses);
+        newArrangementIdx = lengthened.arrangementIdx;
+        newCourses = lengthened.courses;
       }
     }
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangements: newArrangements,
-        arrangementIdx: newArrangementIdx,
-      }),
-    );
+    replaceWorkspace({
+      ...workspace,
+      courses: newCourses,
+      arrangements: newArrangements,
+      arrangementIdx: newArrangementIdx,
+    });
   };
 
   const toggleSectionLock = (newCourse: CourseStorage) => {
     let newCourses = courses.map((course) => {
       if (course.courseData.id === newCourse.courseData.id) {
-        newCourse.locked = !newCourse.locked;
-        return newCourse;
+        return { ...course, locked: !course.locked };
       } else {
         return course;
       }
@@ -460,33 +688,22 @@ function App() {
     const newArrangements = generateCourseSections(newCourses, availableTimes);
     let newArrangementIdx = arrangementIdx;
     if (newArrangements.length === 0) {
-      newCourses = newCourses.map((course) => {
-        if (!course.locked) {
-          return setField(course, "sectionId", null);
-        } else {
-          return course;
-        }
-      });
+      newCourses = clearUnlockedSections(newCourses);
       newArrangementIdx = null;
     } else {
-      newArrangementIdx = 0;
-      newCourses = lengthenCourses(
-        newArrangements[newArrangementIdx],
-        indexedCourses,
-      );
+      const lengthened = firstLengthenedArrangement(newArrangements, indexedCourses);
+      newArrangementIdx = lengthened.arrangementIdx;
+      newCourses = lengthened.courses;
     }
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangements: newArrangements,
-        arrangementIdx: newArrangementIdx,
-      }),
-    );
+    replaceWorkspace({
+      ...workspace,
+      courses: newCourses,
+      arrangements: newArrangements,
+      arrangementIdx: newArrangementIdx,
+    });
   };
 
   const nextArrangement = () => {
-    const workspace = workspaces[workspaceIdx];
     let newIdx = workspace.arrangementIdx;
     if (workspace.arrangements.length === 0) {
       newIdx = null;
@@ -498,19 +715,16 @@ function App() {
     const newArrangement =
       newIdx === null
         ? shortenCourses(workspace.courses)
-        : workspace.arrangements[newIdx!];
+        : (workspace.arrangements[newIdx] ?? shortenCourses(workspace.courses));
     const newCourses = lengthenCourses(newArrangement, indexedCourses);
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangementIdx: newIdx,
-      }),
-    );
+    replaceWorkspace({
+      ...workspace,
+      courses: newCourses,
+      arrangementIdx: newIdx,
+    });
   };
 
   const prevArrangement = () => {
-    const workspace = workspaces[workspaceIdx];
     let newIdx = workspace.arrangementIdx;
     if (workspace.arrangements.length === 0) {
       newIdx = null;
@@ -524,44 +738,32 @@ function App() {
     const newArrangement =
       newIdx === null
         ? shortenCourses(workspace.courses)
-        : workspace.arrangements[newIdx!];
+        : (workspace.arrangements[newIdx] ?? shortenCourses(workspace.courses));
     const newCourses = lengthenCourses(newArrangement, indexedCourses);
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangementIdx: newIdx,
-      }),
-    );
+    replaceWorkspace({
+      ...workspace,
+      courses: newCourses,
+      arrangementIdx: newIdx,
+    });
   };
 
-  const setCourses = (courses: CourseStorage[]) => {
-    let newCourses = courses;
+  const setCourses = (nextCourses: CourseStorage[]) => {
+    let newCourses = nextCourses;
     const newArrangements = generateCourseSections(newCourses, availableTimes);
-    let newArrangementIdx = null;
+    let newArrangementIdx: Maybe<number> = null;
     if (newArrangements.length === 0) {
-      newCourses = newCourses.map((course) => {
-        if (!course.locked) {
-          return setField(course, "sectionId", null);
-        } else {
-          return course;
-        }
-      });
+      newCourses = clearUnlockedSections(newCourses);
     } else {
-      newArrangementIdx = 0;
-      newCourses = lengthenCourses(
-        newArrangements[newArrangementIdx],
-        indexedCourses,
-      );
+      const lengthened = firstLengthenedArrangement(newArrangements, indexedCourses);
+      newArrangementIdx = lengthened.arrangementIdx;
+      newCourses = lengthened.courses;
     }
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangements: newArrangements,
-        arrangementIdx: newArrangementIdx,
-      }),
-    );
+    replaceWorkspace({
+      ...workspace,
+      courses: newCourses,
+      arrangements: newArrangements,
+      arrangementIdx: newArrangementIdx,
+    });
   };
 
   const setWorkspace = (idx: number) => {
@@ -574,13 +776,14 @@ function App() {
   };
 
   const updateAvailableTimes = (
-    dayIdx: number,
+    dayIdx: WeekdayIndex,
     isStart: boolean,
     day: Date,
   ) => {
-    const newAvailableTimes = setArrayIdx(availableTimes, dayIdx, [
-      isStart ? day : availableTimes[dayIdx][0],
-      isStart ? availableTimes[dayIdx][1] : day,
+    const [availableStart, availableEnd] = availableTimes[dayIdx];
+    const newAvailableTimes = setAvailableTime(availableTimes, dayIdx, [
+      isStart ? day : availableStart,
+      isStart ? availableEnd : day,
     ]);
     let newCourses = courses;
     const newArrangements = generateCourseSections(
@@ -589,39 +792,28 @@ function App() {
     );
     let newArrangementIdx = arrangementIdx;
     if (newArrangements.length === 0) {
-      newCourses = newCourses.map((course) => {
-        if (!course.locked) {
-          return setField(course, "sectionId", null);
-        } else {
-          return course;
-        }
-      });
+      newCourses = clearUnlockedSections(newCourses);
       newArrangementIdx = null;
     } else {
       const isWidening =
-        (isStart && day < availableTimes[dayIdx][0]) ||
-        (!isStart && day > availableTimes[dayIdx][1]);
+        (isStart && day < availableStart) || (!isStart && day > availableEnd);
       if (!isWidening || newArrangements.length !== arrangements.length) {
-        newArrangementIdx = 0;
-        newCourses = lengthenCourses(
-          newArrangements[newArrangementIdx],
-          indexedCourses,
-        );
+        const lengthened = firstLengthenedArrangement(newArrangements, indexedCourses);
+        newArrangementIdx = lengthened.arrangementIdx;
+        newCourses = lengthened.courses;
       }
     }
     // if current sections are invalid, jump to first valid one (or null everything)
-    setWorkspaces(
-      setArrayIdx(workspaces, workspaceIdx, {
-        ...workspaces[workspaceIdx],
-        courses: newCourses,
-        arrangements: newArrangements,
-        arrangementIdx: newArrangementIdx,
-        availableTimes: newAvailableTimes,
-      }),
-    );
+    replaceWorkspace({
+      ...workspace,
+      courses: newCourses,
+      arrangements: newArrangements,
+      arrangementIdx: newArrangementIdx,
+      availableTimes: newAvailableTimes,
+    });
   };
 
-  const { arrangements, arrangementIdx } = workspaces[workspaceIdx];
+  const { arrangements, arrangementIdx } = workspace;
 
   return (
     <AllCourses.Provider value={indexedCourses}>
@@ -629,7 +821,7 @@ function App() {
         value={{
           workspaces,
           workspaceIdx,
-          courses: courses,
+          courses,
           addCourse,
           removeCourse,
           toggleCourse,
@@ -644,18 +836,25 @@ function App() {
           toggleSectionLock,
         }}
       >
-        <div className="sticky-help">
+        <div className="fixed z-[999] m-2">
           <motion.button
             whileHover={{ rotate: 15 }}
-            className="help-button"
-            onClick={() => setModalOpen(true)}
+            className="h-8 w-8 rounded-full border-0 bg-white p-0"
+            onClick={() => {
+              setModalOpen(true);
+            }}
           >
             <HelpOutlineIcon
               className="text-orange-500 bg-transparent"
               style={{ width: "auto", height: "auto" }}
             />
           </motion.button>
-          <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
+          <Modal
+            isOpen={modalOpen}
+            onClose={() => {
+              setModalOpen(false);
+            }}
+          >
             <p>
               Add courses from the search bar. An entry will then appear in the
               workspace. You can click on the dropdown to select a section, and
@@ -702,15 +901,15 @@ function App() {
         </div>
 
         <main className="py-5 mx-2 antialiased scroll-smooth selection:bg-orange-400 selection:text-black">
-          <div id="column-container">
-            <div className="column planner-column">
+          <div className="flex flex-col items-start md:flex-row">
+            <div className="flex-1">
               <Planner />
             </div>
             <Workspace term={realPath.substring(1)} />
           </div>
         </main>
 
-        <footer className="footer">
+        <footer className="mx-auto flex flex-col justify-center gap-2.5 py-[30px] text-center">
           <p>
             Made with ❤️ by{" "}
             <Hyperlink href="https://github.com/rchalamala" text="Rahul" />,{" "}
