@@ -22,11 +22,9 @@
   },
   "scripts": {
     "start": "vite",
-    "typecheck": "tsc -b",
+    "typecheck": "tsc --noEmit",
     "lint": "bun run lint:ts",
-    "lint:ts": "bun run lint:app && bun run lint:config",
-    "lint:app": "oxlint src --config .oxlintrc.jsonc --tsconfig tsconfig.app.json",
-    "lint:config": "oxlint vite.config.ts postcss.config.mjs --config .oxlintrc.jsonc --tsconfig tsconfig.node.json",
+    "lint:ts": "oxlint src vite.config.ts postcss.config.mjs --config .oxlintrc.jsonc --tsconfig tsconfig.json",
     "build": "bun run typecheck && vite build",
     "check": "bun run typecheck && bun run lint && vite build",
     "preview": "vite preview",
