@@ -9897,19 +9897,12 @@
     "number": "CS/CNS/EE 156 a",
     "sections": [
       {
-        "grades": "",
-        "instructor": "Abu-Mostafa, Y",
-        "locations": "",
-        "number": 1,
-        "times": "OM,M 16:00 - 16:55"
-      },
-      {
         "grades": "PASS-FAIL",
-        "instructor": "PASS-FAIL",
-        "locations": "(Auditorium)\nBCK",
-        "number": 134,
-        "times": ""
-      }
+        "instructor": "Abu-Mostafa, Y",
+        "locations": "BCK 134 (Auditorium)",
+        "number": 1,
+        "times": "OM,M 16:00 - 16:55\nTR 14:30 - 15:55"
+      },
     ],
     "comment": "",
     "units": [
