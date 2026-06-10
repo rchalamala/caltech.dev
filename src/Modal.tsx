@@ -76,10 +76,10 @@ function Modal({ isOpen, onClose, children }: ModalProps) {
   );
 }
 
-export type ModalReturn = [() => void, JSX.Element];
+export type ModalReturn = [() => void, React.JSX.Element];
 
 export function useModal(
-  contents: (props: ModalProps) => JSX.Element,
+  contents: (props: ModalProps) => React.JSX.Element,
 ): ModalReturn {
   const [isOpen, setIsOpen] = useState(false);
   const onClose = () => {
