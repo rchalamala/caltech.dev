@@ -4,6 +4,7 @@ import Select from "react-select";
 import { SingleValue } from "react-select";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 import { Fzf } from "fzf";
+import { createEvents } from "ics";
 import Lock from "@mui/icons-material/Lock";
 import LockOpen from "@mui/icons-material/LockOpen";
 import Delete from "@mui/icons-material/Delete";
@@ -108,6 +109,7 @@ function exportICS(term: string, courses: CourseStorage[]): string {
         const location = locations[index] || "Unknown"; // Match time with corresponding location
         const [days, startTime, , endTime] = time.split(" "); // Separate days and time range
         if (days === "A") return; // skip to-be-announced times
+        if (!startTime || !endTime) return; // skip malformed time entries
 
         for (const day of days) {
           parsedEvents.push({
@@ -121,35 +123,22 @@ function exportICS(term: string, courses: CourseStorage[]): string {
     }
   }
 
-  // Create a basic ICS header (no timezone needed as we rely on UTC conversion)
-  let icsContent = `BEGIN:VCALENDAR
-VERSION:2.0
-PRODID:-//YourApp//Course Planner//EN
-CALSCALE:GREGORIAN
-METHOD:PUBLISH
-`;
+  const { error, value } = createEvents(
+    parsedEvents.map((event) => ({
+      title: event.name,
+      location: event.location,
+      start: event.startTime.getTime(),
+      end: event.endTime.getTime(),
+      startInputType: "utc",
+      endInputType: "utc",
+      startOutputType: "utc",
+      endOutputType: "utc",
+      recurrenceRule: "FREQ=WEEKLY;COUNT=10",
+    })),
+  );
+  if (error || value == null) throw error ?? new Error("ICS export failed");
 
-  // Generate the events in ICS format
-  parsedEvents.forEach((event) => {
-    const dtStart = event.startTime.toISOString().replace(/-|:|\.\d+/g, ""); // Convert to UTC in .ics format
-    const dtEnd = event.endTime.toISOString().replace(/-|:|\.\d+/g, ""); // Convert to UTC in .ics format
-
-    // Add each event to the ICS content
-    icsContent += `BEGIN:VEVENT
-SUMMARY:${event.name}
-LOCATION:${event.location}
-DTSTART:${dtStart}
-DTEND:${dtEnd}
-RRULE:FREQ=WEEKLY;COUNT=10
-UID:${Date.now() + Math.random()}@caltech.dev
-END:VEVENT
-`;
-  });
-
-  // Close the calendar
-  icsContent += `END:VCALENDAR`;
-
-  return icsContent;
+  return value;
 }
 
 function SectionDropdown(props: { course: CourseStorage }) {
