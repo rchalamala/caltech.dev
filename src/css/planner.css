@@ -1,20 +1,27 @@
-.rbc-allday-cell {
+.planner {
+  margin: 10px;
+}
+
+/* the schedule is a single fixed week, so hide navigation chrome */
+.sx__calendar-header {
   display: none;
 }
 
-.rbc-time-view .rbc-header {
-  border-bottom: none;
+.sx__week-grid__date-axis .sx__week-grid__date-number,
+.sx__week-grid__date-axis .sx__week-grid__date--is-today .sx__week-grid__date-number {
+  display: none;
 }
 
 .time-picker {
   display: flex;
   flex-direction: column;
   row-gap: 8px;
-  max-width: 4rem;
+  align-items: center;
 }
 
 .time-picker > input {
   text-align: center;
+  max-width: 4rem;
 }
 
 .flatpickr-input {
@@ -23,11 +30,17 @@
 }
 
 .time-controls {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-left: 65px;
-  margin-right: 20px;
+  display: grid;
+  /* first column mirrors the calendar's time-axis gutter so each picker
+     sits exactly over its weekday column */
+  grid-template-columns: var(--sx-calendar-week-grid-padding-left, 75px) repeat(
+      5,
+      1fr
+    );
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.time-controls > .time-picker:first-of-type {
+  grid-column: 2;
 }
