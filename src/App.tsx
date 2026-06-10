@@ -174,7 +174,9 @@ function generateCourseSections(
 
     for (let i = 0; i < arr.length; i++) {
       for (let j = i + 1; j < arr.length; j++) {
-        valid &&= !sectionsIntersect(arr[i], arr[j]) || (arr[i].locked && arr[j].locked);
+        valid &&=
+          !sectionsIntersect(arr[i], arr[j]) ||
+          (arr[i].locked && arr[j].locked);
       }
     }
 
@@ -293,12 +295,12 @@ function App() {
     localWorkspaces
       ? JSON.parse(localWorkspaces)
       : [
-        emptyWorkspace(),
-        emptyWorkspace(),
-        emptyWorkspace(),
-        emptyWorkspace(),
-        emptyWorkspace(),
-      ],
+          emptyWorkspace(),
+          emptyWorkspace(),
+          emptyWorkspace(),
+          emptyWorkspace(),
+          emptyWorkspace(),
+        ],
   );
   const localWorkspaceIdx = localStorage.getItem("workspaceIdx" + realPath);
   const [workspaceIdx, setWorkspaceIdx] = useState<number>(
@@ -335,7 +337,10 @@ function App() {
       // course was already in workspace
       newCourses = courses;
     } else {
-      newCourses = [...courses, setField(setField(newCourse, "locked", true), "sectionId", 0)];
+      newCourses = [
+        ...courses,
+        setField(setField(newCourse, "locked", true), "sectionId", 0),
+      ];
     }
     const newArrangements = generateCourseSections(newCourses, availableTimes);
     let newArrangementIdx = null;
