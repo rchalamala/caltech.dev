@@ -4,6 +4,7 @@ import Select from "react-select";
 import { SingleValue } from "react-select";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 import { Fzf } from "fzf";
+import { createEvents } from "ics";
 import Lock from "@mui/icons-material/Lock";
 import LockOpen from "@mui/icons-material/LockOpen";
 import Delete from "@mui/icons-material/Delete";
@@ -21,7 +22,6 @@ import {
   decompressFromEncodedURIComponent,
 } from "lz-string";
 
-import "./css/workspace.css";
 import { Collapse, IconButton, Switch } from "@mui/material";
 import { UnfoldLess, UnfoldMore } from "@mui/icons-material";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
@@ -127,6 +127,7 @@ function exportICS(term: string, courses: CourseStorage[]): string {
         const location = locations[index] || "Unknown"; // Match time with corresponding location
         const [days, startTime, , endTime] = time.split(" "); // Separate days and time range
         if (days === "A") return; // skip to-be-announced times
+        if (!startTime || !endTime) return; // skip malformed time entries
 
         for (const day of days) {
           parsedEvents.push({
@@ -140,35 +141,22 @@ function exportICS(term: string, courses: CourseStorage[]): string {
     }
   }
 
-  // Create a basic ICS header (no timezone needed as we rely on UTC conversion)
-  let icsContent = `BEGIN:VCALENDAR
-VERSION:2.0
-PRODID:-//YourApp//Course Planner//EN
-CALSCALE:GREGORIAN
-METHOD:PUBLISH
-`;
+  const { error, value } = createEvents(
+    parsedEvents.map((event) => ({
+      title: event.name,
+      location: event.location,
+      start: event.startTime.getTime(),
+      end: event.endTime.getTime(),
+      startInputType: "utc",
+      endInputType: "utc",
+      startOutputType: "utc",
+      endOutputType: "utc",
+      recurrenceRule: "FREQ=WEEKLY;COUNT=10",
+    })),
+  );
+  if (error || value == null) throw error ?? new Error("ICS export failed");
 
-  // Generate the events in ICS format
-  parsedEvents.forEach((event) => {
-    const dtStart = event.startTime.toISOString().replace(/-|:|\.\d+/g, ""); // Convert to UTC in .ics format
-    const dtEnd = event.endTime.toISOString().replace(/-|:|\.\d+/g, ""); // Convert to UTC in .ics format
-
-    // Add each event to the ICS content
-    icsContent += `BEGIN:VEVENT
-SUMMARY:${event.name}
-LOCATION:${event.location}
-DTSTART:${dtStart}
-DTEND:${dtEnd}
-RRULE:FREQ=WEEKLY;COUNT=10
-UID:${Date.now() + Math.random()}@caltech.dev
-END:VEVENT
-`;
-  });
-
-  // Close the calendar
-  icsContent += `END:VCALENDAR`;
-
-  return icsContent;
+  return value;
 }
 
 function SectionDropdown(props: { course: CourseStorage }) {
@@ -272,13 +260,11 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
   const [expanded, setExpanded] = useState(true);
   const [animParent] = useAutoAnimate();
 
-  let className = "workspace-entry";
-  className += course.locked
-    ? " workspace-entry-locked"
-    : " workspace-entry-unlocked";
-  className += course.enabled
-    ? " workspace-entry-enabled"
-    : " workspace-entry-disabled";
+  const entryBg = !course.enabled
+    ? "bg-[rgb(200,200,200)]"
+    : course.locked
+      ? "bg-neutral-100"
+      : "bg-white";
 
   const [infoModalOpen, setInfoModalOpen] = useState(false);
   return (
@@ -286,9 +272,7 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
       <Draggable draggableId={`${course.courseData.id}`} index={props.index}>
         {(provided) => (
           <div
-            className={`${className} bg-white shadow-lg border-0 ${
-              course.locked && "bg-neutral-100"
-            }`}
+            className={`mb-[2em] flex flex-col items-center rounded p-2 shadow-lg transition-colors duration-200 ${entryBg}`}
             ref={provided.innerRef}
             {...provided.draggableProps}
             {...provided.dragHandleProps}
@@ -317,7 +301,7 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
               <div
                 className={`${expanded ? "w-[calc(100%-2.5rem)]" : "w-min"} inline-block top-auto bottom-0 right-0 left-auto align-middle`}
               >
-                <div className="workspace-entry-buttons">
+                <div className="flex flex-row items-center justify-between">
                   <Switch
                     color="warning"
                     checked={course.enabled}
@@ -351,8 +335,8 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
               </div>
             </div>
             <Collapse in={expanded} className="w-full">
-              <div className="workspace-entry-content">
-                <div className="workspace-entry-info">
+              <div className="flex w-full flex-row items-center justify-between gap-x-[1.5em] p-2 pt-0">
+                <div className="flex flex-col [&>p]:m-[2.5px]">
                   <p>
                     <b>{course.courseData.number}</b>
                     {": "}
@@ -367,7 +351,7 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
                   <p>{id !== null ? sections[id].locations : "Location"}</p>
                   <p>{id !== null ? sections[id].times : "Times"}</p>
                 </div>
-                <div className="workspace-entry-controls">
+                <div className="flex min-w-[7.5rem] flex-col flex-wrap gap-y-2.5">
                   <m.button
                     whileHover={{ scale: 0.95 }}
                     whileTap={{ scale: 0.9 }}
@@ -466,32 +450,32 @@ function WorkspaceScheduler() {
     -1 === state.courses.findIndex((c) => c.enabled && !c.locked);
   if (allSectionsSet) {
     return (
-      <div className="workspace-scheduler">
+      <div className="mt-2 flex flex-row items-center justify-center">
         <p>All sections set.</p>
       </div>
     );
   } else if (total === 0) {
     return (
-      <div className="workspace-scheduler">
+      <div className="mt-2 flex flex-row items-center justify-center">
         <p>No arrangements found :(</p>
       </div>
     );
   } else {
     return (
-      <div className="workspace-scheduler">
+      <div className="mt-2 flex flex-row items-center justify-center">
         <button
           type="button"
           aria-label="Previous arrangement"
-          className="small-button"
+          className="h-[2em] w-[2em] cursor-pointer rounded border border-[lightgrey] bg-white hover:bg-[lightgrey]"
           onClick={handleLeft}
         >
           <ArrowBack style={{ width: "auto", height: "auto" }} />
         </button>
-        <p className="workspace-scheduler-content">{`${displayIdx}/${total}`}</p>
+        <p className="w-[74px] text-center">{`${displayIdx}/${total}`}</p>
         <button
           type="button"
           aria-label="Next arrangement"
-          className="small-button"
+          className="h-[2em] w-[2em] cursor-pointer rounded border border-[lightgrey] bg-white hover:bg-[lightgrey]"
           onClick={handleRight}
         >
           <ArrowForward style={{ width: "auto", height: "auto" }} />
@@ -551,15 +535,20 @@ export default function Workspace({ term }: { term: string }) {
       navigator.clipboard.writeText(code);
     };
     return (
-      <div className="export-modal">
-        <p className="text-lg font-bold">Your workspace code is:</p>
-        <p className="font-mono text-sm" style={{ wordBreak: "break-all" }}>
+      <div className="my-4 flex flex-col">
+        <p className="mx-auto mb-[1.2em] mt-0 max-w-[75%] text-center text-lg font-bold">
+          Your workspace code is:
+        </p>
+        <p
+          className="mx-auto mb-[1.2em] mt-0 max-w-[75%] text-center font-mono text-sm"
+          style={{ wordBreak: "break-all" }}
+        >
           {code}
         </p>
         <m.button
           whileHover={{ scale: 0.95 }}
           whileTap={{ scale: 0.9 }}
-          className="flex px-4 py-2 space-x-2 font-bold border-2 rounded-md"
+          className="m-auto flex cursor-pointer space-x-2 rounded border border-[lightgrey] bg-white px-4 py-2 font-bold hover:bg-[lightgrey]"
           onClick={copy}
         >
           <svg
@@ -620,16 +609,18 @@ export default function Workspace({ term }: { term: string }) {
   }
 
   return (
-    <div className="workspace-wrapper">
+    <div className="mb-2.5 flex flex-col pl-2.5 md:w-[40vw]">
       {exportModal}
       <h2 className="mb-2 text-center">Choose Workspace...</h2>
-      <div className="workspace-switcher">
+      <div className="flex flex-row gap-[0.8rem] border-b border-[lightgrey]">
         {[0, 1, 2, 3, 4].map((idx) => {
           return (
             <button
               type="button"
               key={idx}
-              className={state.workspaceIdx === idx ? "enabled" : ""}
+              className={`relative -bottom-px h-6 w-12 cursor-pointer rounded-t border border-[lightgrey] bg-white transition-colors duration-100 hover:bg-[lightgrey] ${
+                state.workspaceIdx === idx ? "border-b-transparent" : ""
+              }`}
               onClick={() => state.setWorkspace(idx)}
             >
               {idx + 1}
@@ -639,7 +630,7 @@ export default function Workspace({ term }: { term: string }) {
       </div>
       <WorkspaceScheduler />
       <WorkspaceSearch />
-      <div className="workspace-controls">
+      <div className="mb-[0.8em] flex flex-row flex-wrap justify-evenly gap-2.5">
         <ControlButton
           text="Unlock All"
           onClick={() => {
@@ -709,7 +700,7 @@ export default function Workspace({ term }: { term: string }) {
       <b className="py-3">
         {`${units[0] + units[1] + units[2]} units (${units[0]}-${units[1]}-${units[2]})`}
       </b>
-      <div className="workspace-entries">
+      <div className="flex flex-col pt-3">
         {state.courses.length === 0 ? (
           <p className="m-auto">
             No courses added. Add some using the search bar above!
