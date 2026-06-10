@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, m } from "motion/react";
 
 import "./css/modal.css";
@@ -10,15 +10,17 @@ export interface ModalProps {
 }
 
 function Modal({ isOpen, onClose, children }: ModalProps) {
+  const onCloseRef = useRef(onClose);
+  onCloseRef.current = onClose;
+
   useEffect(() => {
+    if (!isOpen) {
+      return;
+    }
     const handler = (e: KeyboardEvent) => {
-      if (isOpen) {
-        switch (e.key) {
-          case "Escape": {
-            e.preventDefault();
-            onClose();
-          }
-        }
+      if (e.key === "Escape") {
+        e.preventDefault();
+        onCloseRef.current();
       }
     };
 
@@ -26,7 +28,7 @@ function Modal({ isOpen, onClose, children }: ModalProps) {
     return () => {
       window.removeEventListener("keydown", handler);
     };
-  }, [isOpen, onClose]);
+  }, [isOpen]);
 
   return (
     <AnimatePresence mode="wait">

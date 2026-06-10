@@ -91,30 +91,36 @@ function exportICS(term: string, courses: CourseStorage[]): string {
   }
 
   // Flatten the courses and parse times with start and end times, matching locations
-  const parsedEvents = courses
-    .filter((course) => course.enabled)
-    .flatMap((course) => {
-      return course.courseData.sections
-        .filter((section) => section.number - 1 === course.sectionId) // Filter by selected section
-        .flatMap((section) => {
-          const times = section.times.split("\n"); // Split multiple times on newline
-          const locations = section.locations.split("\n"); // Split multiple locations on newline
+  const parsedEvents: {
+    name: string;
+    location: string;
+    startTime: Date;
+    endTime: Date;
+  }[] = [];
+  for (const course of courses) {
+    if (!course.enabled) continue;
+    for (const section of course.courseData.sections) {
+      if (section.number - 1 !== course.sectionId) continue; // Filter by selected section
+      const times = section.times.split("\n"); // Split multiple times on newline
+      const locations = section.locations.split("\n"); // Split multiple locations on newline
 
-          // Zip times and locations together
-          return times.flatMap((time, index) => {
-            const location = locations[index] || "Unknown"; // Match time with corresponding location
-            const [days, startTime, , endTime] = time.split(" "); // Separate days and time range
-            if (days === "A") return []; // skip to-be-announced times
+      // Zip times and locations together
+      times.forEach((time, index) => {
+        const location = locations[index] || "Unknown"; // Match time with corresponding location
+        const [days, startTime, , endTime] = time.split(" "); // Separate days and time range
+        if (days === "A") return; // skip to-be-announced times
 
-            return days.split("").map((day) => ({
-              name: course.courseData.number, // Use course number for the title
-              location, // Set the matched location for this time
-              startTime: getFirstOccurrence(termStartDate, day, startTime),
-              endTime: getFirstOccurrence(termStartDate, day, endTime), // Parse the end time
-            }));
+        for (const day of days) {
+          parsedEvents.push({
+            name: course.courseData.number, // Use course number for the title
+            location, // Set the matched location for this time
+            startTime: getFirstOccurrence(termStartDate, day, startTime),
+            endTime: getFirstOccurrence(termStartDate, day, endTime), // Parse the end time
           });
-        });
-    });
+        }
+      });
+    }
+  }
 
   // Create a basic ICS header (no timezone needed as we rely on UTC conversion)
   let icsContent = `BEGIN:VCALENDAR

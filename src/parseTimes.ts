@@ -5,7 +5,14 @@ export type TimeInterval = {
 
 export function parseTimes(times: string): Maybe<TimeInterval>[][] {
   const ret: Maybe<TimeInterval>[][] = [[], [], [], [], []];
-  const day_to_i = ["M", "T", "W", "R", "F"]; // TODO: Include Sat/Sun Courses, OM Courses
+  // TODO: Include Sat/Sun Courses, OM Courses
+  const day_to_i = new Map([
+    ["M", 0],
+    ["T", 1],
+    ["W", 2],
+    ["R", 3],
+    ["F", 4],
+  ]);
 
   // super hacky fix for a parsing bug when location is A
   let times_clean = times.replace("\nA", "");
@@ -15,7 +22,7 @@ export function parseTimes(times: string): Maybe<TimeInterval>[][] {
     if (match !== null) {
       //  An example match: [ "MWF 14:00 - 14:55", "MWF", "14", "00", "14", "55" ]
       for (const day of match[1]) {
-        const dayIdx = day_to_i.indexOf(day);
+        const dayIdx = day_to_i.get(day)!;
         ret[dayIdx].push({
           start: new Date(
             2018,
