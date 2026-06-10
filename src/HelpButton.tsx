@@ -8,12 +8,12 @@ export default function HelpButton() {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
-    <div className="sticky-help">
+    <div className="fixed z-[999] m-2">
       <m.button
         type="button"
         aria-label="Help"
         whileHover={{ rotate: 15 }}
-        className="help-button"
+        className="h-8 w-8 rounded-full border-none bg-white p-0"
         onClick={() => setModalOpen(true)}
       >
         <HelpOutlineIcon

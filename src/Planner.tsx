@@ -152,11 +152,16 @@ function Planner() {
       : `${Math.min(...hours, 9)}-${Math.max(...hours, 16)}-${courseIds.join(",")}`;
 
   return (
-    <div className="planner">
-      <div className="time-controls">
+    <div className="m-2.5">
+      {/* first column mirrors the calendar's time-axis gutter so each picker
+          sits exactly over its weekday column */}
+      <div className="grid grid-cols-[var(--sx-calendar-week-grid-padding-left,75px)_repeat(5,1fr)] py-[5px]">
         {[0, 1, 2, 3, 4].map((idx) => {
           return (
-            <div className="time-picker" key={idx}>
+            <div
+              className={`flex flex-col items-center gap-y-2 ${idx === 0 ? "col-start-2" : ""}`}
+              key={idx}
+            >
               <Flatpickr
                 data-enable-time
                 options={{
