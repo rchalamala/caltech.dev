@@ -1,10 +1,17 @@
-import { useEffect, useState, createContext } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Planner from "./Planner";
-import { parseTimes } from "./Planner";
+import { parseTimes } from "./parseTimes";
 import Workspace from "./Workspace";
 import Modal from "./Modal";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
-import { motion } from "motion/react";
+import { LazyMotion, domAnimation, m } from "motion/react";
+import {
+  AllCourses,
+  AppState,
+  emptyWorkspace,
+  lengthenCourses,
+  shortenCourses,
+} from "./appContext";
 import DATA_FA2023 from "./data/IndexedTotalFA2022-23.json";
 import DATA_WI2023 from "./data/IndexedTotalWI2022-23.json";
 import DATA_SP2023 from "./data/IndexedTotalSP2022-23.json";
@@ -36,66 +43,6 @@ const courseDataSources: { [key: string]: { [key: string]: CourseData } } = {
   "/sp2026": DATA_SP2026,
   "/fa2027": DATA_FA2027,
 };
-
-export const AllCourses = createContext<CourseIndex>({});
-
-function emptyWorkspace() {
-  return {
-    courses: [],
-    arrangements: [],
-    arrangementIdx: null,
-    availableTimes: [
-      [new Date(2025, 0, 1, 8), new Date(2025, 0, 1, 23)],
-      [new Date(2025, 0, 2, 8), new Date(2025, 0, 2, 23)],
-      [new Date(2025, 0, 3, 8), new Date(2025, 0, 3, 23)],
-      [new Date(2025, 0, 4, 8), new Date(2025, 0, 4, 23)],
-      [new Date(2025, 0, 5, 8), new Date(2025, 0, 5, 23)],
-    ],
-  };
-}
-
-interface AppStateProps {
-  workspaces: Workspace[];
-  workspaceIdx: number;
-  setWorkspace: (idx: number) => void;
-
-  courses: CourseStorage[];
-  addCourse: (course: CourseStorage) => void;
-  removeCourse: (course: CourseStorage) => void;
-  toggleCourse: (course: CourseStorage) => void;
-  setCourses: (courses: CourseStorage[]) => void;
-
-  arrangements: CourseStorageShort[][];
-  arrangementIdx: Maybe<number>;
-  nextArrangement: () => void;
-  prevArrangement: () => void;
-  toggleSectionLock: (course: CourseStorage) => void;
-
-  availableTimes: Date[][];
-  updateAvailableTimes: (dayIdx: number, isStart: boolean, day: Date) => void;
-}
-
-/** Allows to easily add/remove courses to `state` */
-export const AppState = createContext<AppStateProps>({
-  workspaces: [emptyWorkspace()],
-  workspaceIdx: 0,
-  setWorkspace: () => null,
-
-  courses: [],
-  addCourse: () => null,
-  removeCourse: () => null,
-  toggleCourse: () => null,
-  setCourses: () => null,
-
-  arrangements: [],
-  arrangementIdx: null,
-  nextArrangement: () => null,
-  prevArrangement: () => null,
-  toggleSectionLock: () => null,
-
-  availableTimes: [],
-  updateAvailableTimes: () => null,
-});
 
 function sectionsIntersect(a: CourseStorage, b: CourseStorage): boolean {
   if (!a.enabled || !b.enabled) {
@@ -129,31 +76,6 @@ function sectionsIntersect(a: CourseStorage, b: CourseStorage): boolean {
     }
   }
   return false;
-}
-
-export function shortenCourses(courses: CourseStorage[]): CourseStorageShort[] {
-  return courses.map((storage) => {
-    return {
-      courseId: storage.courseData.id,
-      sectionId: storage.sectionId,
-      enabled: storage.enabled,
-      locked: storage.locked,
-    };
-  });
-}
-
-export function lengthenCourses(
-  shortened: CourseStorageShort[],
-  courseIndex: CourseIndex,
-): CourseStorage[] {
-  return shortened.map((storage) => {
-    return {
-      courseData: courseIndex[storage.courseId.toString()]!,
-      sectionId: storage.sectionId,
-      enabled: storage.enabled,
-      locked: storage.locked,
-    };
-  });
 }
 
 /** Takes a list of course requests and generates a list of possible arrangements.
@@ -277,17 +199,7 @@ function App() {
   // really basic routing
   let pathname = useReactPath();
   const realPath = pathname === "/" ? CURRENT_TERM : pathname;
-  const data = courseDataSources[realPath];
-  const [indexedCourses, setIndexedCourses] = useState({});
-
-  // load course data from a json url
-  useEffect(() => {
-    try {
-      setIndexedCourses(data);
-    } catch {
-      alert("Error loading course data");
-    }
-  }, [data]);
+  const indexedCourses: CourseIndex = courseDataSources[realPath] ?? {};
 
   // 5 blank workspaces by default bc I'm too lazy to implement dynamic tabs and stuff
   const localWorkspaces = localStorage.getItem("workspaces" + realPath);
@@ -617,102 +529,110 @@ function App() {
 
   const [modalOpen, setModalOpen] = useState(false);
 
+  const appStateValue = useMemo(
+    () => ({
+      workspaces,
+      workspaceIdx,
+      courses: courses,
+      addCourse,
+      removeCourse,
+      toggleCourse,
+      setCourses,
+      arrangements,
+      arrangementIdx,
+      nextArrangement,
+      prevArrangement,
+      availableTimes,
+      updateAvailableTimes,
+      setWorkspace,
+      toggleSectionLock,
+    }),
+    // every field above derives from these three values
+    [workspaces, workspaceIdx, indexedCourses],
+  );
+
   return (
     <AllCourses.Provider value={indexedCourses}>
-      <AppState.Provider
-        value={{
-          workspaces,
-          workspaceIdx,
-          courses: courses,
-          addCourse,
-          removeCourse,
-          toggleCourse,
-          setCourses,
-          arrangements,
-          arrangementIdx,
-          nextArrangement,
-          prevArrangement,
-          availableTimes,
-          updateAvailableTimes,
-          setWorkspace,
-          toggleSectionLock,
-        }}
-      >
-        <div className="sticky-help">
-          <motion.button
-            whileHover={{ rotate: 15 }}
-            className="help-button"
-            onClick={() => setModalOpen(true)}
-          >
-            <HelpOutlineIcon
-              className="text-orange-500 bg-transparent"
-              style={{ width: "auto", height: "auto" }}
-            />
-          </motion.button>
-          <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
-            <p>
-              Add courses from the search bar. An entry will then appear in the
-              workspace. You can click on the dropdown to select a section, and
-              the class will appear on the calendar. You can enable and disable
-              classes using the course toggle. To remove a class from your
-              workspace, press the X button.
-            </p>
-            <p>
-              In addition, this scheduler features an{" "}
-              <em>automatic section selector</em> for your convenience. To use,
-              simply unlock any number of courses in the workspace. This
-              scheduler will then calculate all possible arrangements of
-              sections for which none of the unlocked classes/sections will
-              overlap. Use the left and right arrows to navigate these sections.
-              The arrangements should automatically recalculate possible
-              sections every time you enable/disable, lock/unlock, or add/remove
-              a class. However, if a class is <em>locked</em>, we guarantee that
-              the section number will not be changed.
-            </p>
-            <p>
-              You can also limit sections be time. Above the calendar, you can
-              change the allowed time range for any day of the week. The course
-              scheduler should respect these times, and it will not generate
-              arrangements with courses that start before the first time or end
-              after the second. Note: If has a course doesn't have a time
-              (marked as A), then the scheduler will leave it blank.
-            </p>
-            <p>
-              We hope that this course schuduler makes your life easier! You can
-              find the source code{" "}
-              <Hyperlink
-                href="https://github.com/rchalamala/caltech.dev"
-                text="here"
+      <AppState.Provider value={appStateValue}>
+        <LazyMotion features={domAnimation} strict>
+          <div className="sticky-help">
+            <m.button
+              type="button"
+              aria-label="Help"
+              whileHover={{ rotate: 15 }}
+              className="help-button"
+              onClick={() => setModalOpen(true)}
+            >
+              <HelpOutlineIcon
+                className="text-orange-500 bg-transparent"
+                style={{ width: "auto", height: "auto" }}
               />
-              .
-            </p>
-            <p>
-              Pro tip: you can use data from previous terms by changing the url!
-              For example, if you would like to revisit <b>Fa</b>ll of{" "}
-              <b>2022-2023</b> (for whatever reason), simply navigate to
-              https://caltech.dev/<b>fa2023</b>.
-            </p>
-          </Modal>
-        </div>
-
-        <main className="py-5 mx-2 antialiased scroll-smooth selection:bg-orange-400 selection:text-black">
-          <div id="column-container">
-            <div className="column planner-column">
-              <Planner />
-            </div>
-            <Workspace term={realPath.substring(1)} />
+            </m.button>
+            <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
+              <p>
+                Add courses from the search bar. An entry will then appear in
+                the workspace. You can click on the dropdown to select a
+                section, and the class will appear on the calendar. You can
+                enable and disable classes using the course toggle. To remove a
+                class from your workspace, press the X button.
+              </p>
+              <p>
+                In addition, this scheduler features an{" "}
+                <em>automatic section selector</em> for your convenience. To
+                use, simply unlock any number of courses in the workspace. This
+                scheduler will then calculate all possible arrangements of
+                sections for which none of the unlocked classes/sections will
+                overlap. Use the left and right arrows to navigate these
+                sections. The arrangements should automatically recalculate
+                possible sections every time you enable/disable, lock/unlock, or
+                add/remove a class. However, if a class is <em>locked</em>, we
+                guarantee that the section number will not be changed.
+              </p>
+              <p>
+                You can also limit sections be time. Above the calendar, you can
+                change the allowed time range for any day of the week. The
+                course scheduler should respect these times, and it will not
+                generate arrangements with courses that start before the first
+                time or end after the second. Note: If has a course doesn't have
+                a time (marked as A), then the scheduler will leave it blank.
+              </p>
+              <p>
+                We hope that this course schuduler makes your life easier! You
+                can find the source code{" "}
+                <Hyperlink
+                  href="https://github.com/rchalamala/caltech.dev"
+                  text="here"
+                />
+                .
+              </p>
+              <p>
+                Pro tip: you can use data from previous terms by changing the
+                url! For example, if you would like to revisit <b>Fa</b>ll of{" "}
+                <b>2022-2023</b> (for whatever reason), simply navigate to
+                https://caltech.dev/<b>fa2023</b>.
+              </p>
+            </Modal>
           </div>
-        </main>
 
-        <footer className="footer">
-          <p>
-            Made with ❤️ by{" "}
-            <Hyperlink href="https://github.com/rchalamala" text="Rahul" />,{" "}
-            <Hyperlink href="https://github.com/ericlovesmath" text="Eric" />, &{" "}
-            <Hyperlink href="https://github.com/zack466" text="Zack" />
-          </p>
-          <p>Current term: {realPath.substring(1)}</p>
-        </footer>
+          <main className="py-5 mx-2 antialiased scroll-smooth selection:bg-orange-400 selection:text-black">
+            <div id="column-container">
+              <div className="column planner-column">
+                <Planner />
+              </div>
+              <Workspace term={realPath.substring(1)} />
+            </div>
+          </main>
+
+          <footer className="footer">
+            <p>
+              Made with ❤️ by{" "}
+              <Hyperlink href="https://github.com/rchalamala" text="Rahul" />,{" "}
+              <Hyperlink href="https://github.com/ericlovesmath" text="Eric" />,
+              & <Hyperlink href="https://github.com/zack466" text="Zack" />
+            </p>
+            <p>Current term: {realPath.substring(1)}</p>
+          </footer>
+        </LazyMotion>
       </AppState.Provider>
     </AllCourses.Provider>
   );

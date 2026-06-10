@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { use, useState } from "react";
 import Modal, { useModal } from "./Modal";
 import Select from "react-select";
 import { SingleValue } from "react-select";
@@ -9,8 +9,13 @@ import LockOpen from "@mui/icons-material/LockOpen";
 import Delete from "@mui/icons-material/Delete";
 import ArrowBack from "@mui/icons-material/ArrowBack";
 import ArrowForward from "@mui/icons-material/ArrowForward";
-import { shortenCourses, lengthenCourses, AllCourses, AppState } from "./App";
-import { motion } from "motion/react";
+import {
+  shortenCourses,
+  lengthenCourses,
+  AllCourses,
+  AppState,
+} from "./appContext";
+import { m } from "motion/react";
 
 import "./css/workspace.css";
 import { Collapse, IconButton, Switch } from "@mui/material";
@@ -144,7 +149,7 @@ END:VEVENT
 
 function SectionDropdown(props: { course: CourseStorage }) {
   const course = props.course;
-  const state = useContext(AppState);
+  const state = use(AppState);
 
   const onChange = (newSection: SingleValue<Maybe<SectionData>>) => {
     course.sectionId =
@@ -238,7 +243,7 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
   const sections = course.courseData.sections;
   const id = course.sectionId;
 
-  const state = useContext(AppState);
+  const state = use(AppState);
 
   const [expanded, setExpanded] = useState(true);
   const [animParent] = useAutoAnimate();
@@ -339,14 +344,14 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
                   <p>{id !== null ? sections[id].times : "Times"}</p>
                 </div>
                 <div className="workspace-entry-controls">
-                  <motion.button
+                  <m.button
                     whileHover={{ scale: 0.95 }}
                     whileTap={{ scale: 0.9 }}
                     className="py-1 font-bold text-white bg-orange-500 rounded-md workspace-entry-controls-info"
                     onClick={() => setInfoModalOpen(true)}
                   >
                     More Info
-                  </motion.button>
+                  </m.button>
                   <SectionDropdown course={course} />
                 </div>
               </div>
@@ -362,8 +367,8 @@ function WorkspaceEntry(props: WorkspaceEntryProps) {
 }
 
 function WorkspaceSearch() {
-  const state = useContext(AppState);
-  const indexedCourses = useContext(AllCourses);
+  const state = use(AppState);
+  const indexedCourses = use(AllCourses);
   const courses = Object.values(indexedCourses);
 
   // For some reason, options = [] on the second render, even though
@@ -419,7 +424,7 @@ function WorkspaceSearch() {
 }
 
 function WorkspaceScheduler() {
-  const state = useContext(AppState);
+  const state = use(AppState);
 
   const handleLeft = () => {
     state.prevArrangement();
@@ -450,11 +455,21 @@ function WorkspaceScheduler() {
   } else {
     return (
       <div className="workspace-scheduler">
-        <button className="small-button" onClick={handleLeft}>
+        <button
+          type="button"
+          aria-label="Previous arrangement"
+          className="small-button"
+          onClick={handleLeft}
+        >
           <ArrowBack style={{ width: "auto", height: "auto" }} />
         </button>
         <p className="workspace-scheduler-content">{`${displayIdx}/${total}`}</p>
-        <button className="small-button" onClick={handleRight}>
+        <button
+          type="button"
+          aria-label="Next arrangement"
+          className="small-button"
+          onClick={handleRight}
+        >
           <ArrowForward style={{ width: "auto", height: "auto" }} />
         </button>
       </div>
@@ -480,8 +495,8 @@ Clicking on the course will add it to the workspace and enable it (there will al
 From the workspace, you can enable/disable courses in addition to switching the section number */
 // TODO: import/export classes in plaintext or a human-readable format
 export default function Workspace({ term }: { term: string }) {
-  const state = useContext(AppState);
-  const indexedCourses = useContext(AllCourses);
+  const state = use(AppState);
+  const indexedCourses = use(AllCourses);
 
   const workspaceEntries = (provided: any) =>
     state.courses.map((course: CourseStorage, index: number) => (
@@ -517,7 +532,7 @@ export default function Workspace({ term }: { term: string }) {
         <p className="font-mono text-sm" style={{ wordBreak: "break-all" }}>
           {code}
         </p>
-        <motion.button
+        <m.button
           whileHover={{ scale: 0.95 }}
           whileTap={{ scale: 0.9 }}
           className="flex px-4 py-2 space-x-2 font-bold border-2 rounded-md"
@@ -539,7 +554,7 @@ export default function Workspace({ term }: { term: string }) {
           </svg>
 
           <p>Copy To Clipboard</p>
-        </motion.button>
+        </m.button>
       </div>
     );
   });
@@ -588,6 +603,7 @@ export default function Workspace({ term }: { term: string }) {
         {[0, 1, 2, 3, 4].map((idx) => {
           return (
             <button
+              type="button"
               key={idx}
               className={state.workspaceIdx === idx ? "enabled" : ""}
               onClick={() => state.setWorkspace(idx)}
@@ -693,13 +709,13 @@ export default function Workspace({ term }: { term: string }) {
 
 function ControlButton(props: { text: string; onClick: () => void }) {
   return (
-    <motion.button
+    <m.button
       className="px-2 py-1 font-bold transition-colors duration-300 bg-white border-2 rounded-md border-neutral-500 text-neutral-500 hover:border-orange-500 active:border-orange-700 hover:text-orange-500 active:text-orange-700"
       whileHover={{ scale: 0.95 }}
       whileTap={{ scale: 0.9 }}
       onClick={props.onClick}
     >
       {props.text}
-    </motion.button>
+    </m.button>
   );
 }

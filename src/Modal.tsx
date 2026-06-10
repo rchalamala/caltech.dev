@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, m } from "motion/react";
 
 import "./css/modal.css";
 
@@ -31,24 +31,28 @@ function Modal({ isOpen, onClose, children }: ModalProps) {
   return (
     <AnimatePresence mode="wait">
       {isOpen && (
-        <motion.div
+        <m.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           className="overflow-y-scroll flex items-center justify-center w-screen h-screen backdrop-blur-lg fixed top-0 left-0 z-[1000]"
         >
           <button
+            type="button"
+            aria-label="Close modal"
             className="w-full h-full z-[500] absolute top-0 left-0"
             onClick={onClose}
           />
-          <motion.div
+          <m.div
             initial={{ x: -100 }}
             animate={{ x: 0 }}
             exit={{ x: 100 }}
             className="relative flex flex-col space-y-4 bg-white p-16 rounded-md border-[1px] shadow-lg sm:w-[40%] w-[80%] h-fit z-[600]"
           >
             {children}
-            <motion.button
+            <m.button
+              type="button"
+              aria-label="Close modal"
               whileHover={{ scale: 0.95, rotate: 90 }}
               whileTap={{ scale: 0.9, rotate: 180 }}
               onClick={onClose}
@@ -68,9 +72,9 @@ function Modal({ isOpen, onClose, children }: ModalProps) {
                   d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-            </motion.button>
-          </motion.div>
-        </motion.div>
+            </m.button>
+          </m.div>
+        </m.div>
       )}
     </AnimatePresence>
   );
@@ -87,7 +91,7 @@ export function useModal(
   };
   return [
     () => setIsOpen(true),
-    <Modal isOpen={isOpen} onClose={onClose}>
+    <Modal key="modal" isOpen={isOpen} onClose={onClose}>
       {contents({ isOpen, onClose, children: null })}
     </Modal>,
   ];
