@@ -4,7 +4,7 @@ import { parseTimes } from "./Planner";
 import Workspace from "./Workspace";
 import Modal from "./Modal";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import DATA_FA2023 from "./data/IndexedTotalFA2022-23.json";
 import DATA_WI2023 from "./data/IndexedTotalWI2022-23.json";
 import DATA_SP2023 from "./data/IndexedTotalSP2022-23.json";

@@ -10,7 +10,7 @@ import Delete from "@mui/icons-material/Delete";
 import ArrowBack from "@mui/icons-material/ArrowBack";
 import ArrowForward from "@mui/icons-material/ArrowForward";
 import { shortenCourses, lengthenCourses, AllCourses, AppState } from "./App";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 import "./css/workspace.css";
 import { Collapse, IconButton, Switch } from "@mui/material";
