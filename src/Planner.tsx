@@ -1,6 +1,7 @@
 import "temporal-polyfill/global";
-import { useContext, useEffect, useMemo } from "react";
-import { AppState } from "./App";
+import { use, useEffect, useMemo } from "react";
+import { AppState } from "./appContext";
+import { parseTimes } from "./parseTimes";
 import { createViewWeek, CalendarConfig } from "@schedule-x/calendar";
 import { createEventsServicePlugin } from "@schedule-x/events-service";
 import { useCalendarApp, ScheduleXCalendar } from "@schedule-x/react";
@@ -45,47 +46,6 @@ function CourseToDates(courses: CourseStorage[]): DateData[] {
   }
 
   return dates;
-}
-
-type TimeInterval = {
-  start: Date;
-  end: Date;
-};
-
-export function parseTimes(times: string): Maybe<TimeInterval>[][] {
-  const ret: Maybe<TimeInterval>[][] = [[], [], [], [], []];
-  const day_to_i = ["M", "T", "W", "R", "F"]; // TODO: Include Sat/Sun Courses, OM Courses
-
-  // super hacky fix for a parsing bug when location is A
-  let times_clean = times.replace("\nA", "");
-  console.log(times_clean);
-
-  for (let line of times_clean.split(/[,\n]/)) {
-    const match = line.match(/([MTWRF]+) (\d\d):(\d\d) - (\d\d):(\d\d)/);
-    if (match !== null) {
-      //  An example match: [ "MWF 14:00 - 14:55", "MWF", "14", "00", "14", "55" ]
-      for (const day of match[1]) {
-        ret[day_to_i.indexOf(day)].push({
-          start: new Date(
-            2018,
-            0,
-            day_to_i.indexOf(day) + 1,
-            parseInt(match[2]),
-            parseInt(match[3]),
-          ),
-          end: new Date(
-            2018,
-            0,
-            day_to_i.indexOf(day) + 1,
-            // stupid hacky thing to avoid crashing when time is entered incorrectly in catalog (11pm instead of 11am)
-            parseInt(match[4]) === 23 ? 11 : parseInt(match[4]),
-            parseInt(match[5]),
-          ),
-        });
-      }
-    }
-  }
-  return ret;
 }
 
 const timeZone = Temporal.Now.timeZoneId();
@@ -173,7 +133,7 @@ function ScheduleCalendar({ calEvents }: { calEvents: DateData[] }) {
 /** Calendar shown on left side of screen
  * Extends from `App.tsx` */
 function Planner() {
-  const state = useContext(AppState);
+  const state = use(AppState);
 
   const calEvents: DateData[] = CourseToDates(
     state.courses.filter((course) => course.enabled),
