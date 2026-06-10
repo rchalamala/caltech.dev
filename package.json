@@ -30,14 +30,19 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "dev": "wrangler dev",
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "lint": "oxlint",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "verify": "npm run lint && npm run format:check && npm run build"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.0",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.1",
-    "eslint": "^8.46.0",
+    "oxlint": "^1.69.0",
+    "prettier": "^3.8.4",
     "tailwindcss": "^4.3.0",
     "typescript": "^5.7.2",
     "vite": "^7.2.4",

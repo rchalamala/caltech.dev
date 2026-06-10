@@ -18,10 +18,10 @@ import { useAutoAnimate } from "@formkit/auto-animate/react";
 import TERM_START_DATES from "./data/term_start_dates.json";
 
 const DEFAULT_COURSES: { [key: string]: string[] } = {
-  "fa": ["Ma 1 a", "Ph 1 a", "Ch 1 a", "CS 1"],
-  "wi": ["Ma 1 b", "Ph 1 b", "Ch 1 b", "CS 2"],
-  "sp": ["Ma 1 c", "Ph 1 c", "CS 3 x"],
-}
+  fa: ["Ma 1 a", "Ph 1 a", "Ch 1 a", "CS 1"],
+  wi: ["Ma 1 b", "Ph 1 b", "Ch 1 b", "CS 2"],
+  sp: ["Ma 1 c", "Ph 1 c", "CS 3 x"],
+};
 
 /** Fetches courses */
 function getCourse(
@@ -56,13 +56,19 @@ function getCourse(
 }
 
 function exportICS(term: string, courses: CourseStorage[]): string {
-  const termStartDate = new Date(( TERM_START_DATES as {[key: string] : string} )[term]);
+  const termStartDate = new Date(
+    (TERM_START_DATES as { [key: string]: string })[term],
+  );
 
   // Map weekdays to indices for easy comparison
   const dayMap = "MTWRFSU";
 
   // Helper function to get the first occurrence of a day after the term start date
-  function getFirstOccurrence(startDate: Date, dayOfWeek: string, timeString: string): Date {
+  function getFirstOccurrence(
+    startDate: Date,
+    dayOfWeek: string,
+    timeString: string,
+  ): Date {
     const date = new Date(startDate); // Copy the term start date
     const targetDay = dayMap.indexOf(dayOfWeek) + 1; // Get index for the weekday
     const currentDay = date.getDay();
@@ -72,33 +78,33 @@ function exportICS(term: string, courses: CourseStorage[]): string {
     date.setDate(date.getDate() + dayOffset); // Ensure we don't return the start date if it's the same day
 
     // Parse time (e.g., "09:00") and set the time explicitly using local time
-    const [hours, minutes] = timeString.split(':').map(Number);
+    const [hours, minutes] = timeString.split(":").map(Number);
     date.setHours(hours, minutes, 0, 0); // Set hours and minutes in the local timezone
-    
+
     return date;
   }
 
   // Flatten the courses and parse times with start and end times, matching locations
   const parsedEvents = courses
-    .filter(course => course.enabled)
-    .flatMap(course => {
+    .filter((course) => course.enabled)
+    .flatMap((course) => {
       return course.courseData.sections
-        .filter(section => section.number - 1 === course.sectionId) // Filter by selected section
-        .flatMap(section => {
-          const times = section.times.split('\n'); // Split multiple times on newline
-          const locations = section.locations.split('\n'); // Split multiple locations on newline
+        .filter((section) => section.number - 1 === course.sectionId) // Filter by selected section
+        .flatMap((section) => {
+          const times = section.times.split("\n"); // Split multiple times on newline
+          const locations = section.locations.split("\n"); // Split multiple locations on newline
 
           // Zip times and locations together
           return times.flatMap((time, index) => {
-            const location = locations[index] || 'Unknown'; // Match time with corresponding location
-            const [days, startTime, , endTime] = time.split(' '); // Separate days and time range
-            if (days === 'A') return []; // skip to-be-announced times
-            
-            return days.split('').map(day => ({
+            const location = locations[index] || "Unknown"; // Match time with corresponding location
+            const [days, startTime, , endTime] = time.split(" "); // Separate days and time range
+            if (days === "A") return []; // skip to-be-announced times
+
+            return days.split("").map((day) => ({
               name: course.courseData.number, // Use course number for the title
               location, // Set the matched location for this time
               startTime: getFirstOccurrence(termStartDate, day, startTime),
-              endTime: getFirstOccurrence(termStartDate, day, endTime) // Parse the end time
+              endTime: getFirstOccurrence(termStartDate, day, endTime), // Parse the end time
             }));
           });
         });
@@ -113,7 +119,7 @@ METHOD:PUBLISH
 `;
 
   // Generate the events in ICS format
-  parsedEvents.forEach(event => {
+  parsedEvents.forEach((event) => {
     const dtStart = event.startTime.toISOString().replace(/-|:|\.\d+/g, ""); // Convert to UTC in .ics format
     const dtEnd = event.endTime.toISOString().replace(/-|:|\.\d+/g, ""); // Convert to UTC in .ics format
 
@@ -134,7 +140,6 @@ END:VEVENT
 
   return icsContent;
 }
-
 
 function SectionDropdown(props: { course: CourseStorage }) {
   const course = props.course;
@@ -651,20 +656,23 @@ export default function Workspace({ term }: { term: string }) {
         />
         <ControlButton text="Import Workspace" onClick={importWorkspace} />
         <ControlButton text="Export Workspace" onClick={openExportModal} />
-        <ControlButton text="Export .ics" onClick={() => {
-          const icsContent = exportICS(term, state.courses);
+        <ControlButton
+          text="Export .ics"
+          onClick={() => {
+            const icsContent = exportICS(term, state.courses);
 
-          const blob = new Blob([icsContent], { type: 'text/calendar' });
+            const blob = new Blob([icsContent], { type: "text/calendar" });
 
-          const link = document.createElement('a');
-          link.href = URL.createObjectURL(blob);
-          link.download = `schedule_${term}.ics`;
+            const link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = `schedule_${term}.ics`;
 
-          document.body.appendChild(link);
-          link.click();
-          URL.revokeObjectURL(link.href);
-          document.body.removeChild(link);
-        }} />
+            document.body.appendChild(link);
+            link.click();
+            URL.revokeObjectURL(link.href);
+            document.body.removeChild(link);
+          }}
+        />
       </div>
       <b className="py-3">
         {`${units[0] + units[1] + units[2]} units (${units[0]}-${units[1]}-${units[2]})`}

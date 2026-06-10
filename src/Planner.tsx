@@ -58,7 +58,7 @@ export function parseTimes(times: string): Maybe<TimeInterval>[][] {
 
   // super hacky fix for a parsing bug when location is A
   let times_clean = times.replace("\nA", "");
-  console.log(times_clean)
+  console.log(times_clean);
 
   for (let line of times_clean.split(/[,\n]/)) {
     const match = line.match(/([MTWRF]+) (\d\d):(\d\d) - (\d\d):(\d\d)/);
@@ -127,10 +127,7 @@ function ScheduleCalendar({ calEvents }: { calEvents: DateData[] }) {
   const minHour =
     calEvents.length === 0
       ? 9
-      : Math.min(
-          ...calEvents.map((event) => event.start.getHours()),
-          9,
-        );
+      : Math.min(...calEvents.map((event) => event.start.getHours()), 9);
   const maxHour =
     calEvents.length === 0
       ? 16

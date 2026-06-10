@@ -6,7 +6,9 @@
 }
 
 .sx__week-grid__date-axis .sx__week-grid__date-number,
-.sx__week-grid__date-axis .sx__week-grid__date--is-today .sx__week-grid__date-number {
+.sx__week-grid__date-axis
+  .sx__week-grid__date--is-today
+  .sx__week-grid__date-number {
   display: none;
 }
 
