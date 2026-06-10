@@ -1,4 +1,10 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import {
+  useCallback,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useState,
+} from "react";
 import { useLocalStorage } from "usehooks-ts";
 import {
   AppStateProps,
@@ -74,6 +80,17 @@ export function useAppState(): {
     "workspaceIdx" + realPath,
     0,
   );
+
+  // useLocalStorage re-reads a changed key in a post-paint effect; reload
+  // before paint so the previous term's data never flashes
+  useLayoutEffect(() => {
+    const storedWorkspaces = localStorage.getItem("workspaces" + realPath);
+    setWorkspaces(
+      storedWorkspaces ? JSON.parse(storedWorkspaces) : defaultWorkspaces,
+    );
+    const storedIdx = localStorage.getItem("workspaceIdx" + realPath);
+    setWorkspaceIdx(storedIdx ? JSON.parse(storedIdx) : 0);
+  }, [realPath, defaultWorkspaces, setWorkspaces, setWorkspaceIdx]);
 
   const courses = workspaces[workspaceIdx].courses;
   const availableTimes: Date[][] = useMemo(
