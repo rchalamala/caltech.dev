@@ -1,6 +1,4 @@
-.planner {
-  margin: 10px;
-}
+/* third-party overrides: Schedule-X and flatpickr */
 
 /* the schedule is a single fixed week, so hide navigation chrome */
 .sx__calendar-header {
@@ -12,35 +10,9 @@
   display: none;
 }
 
-.time-picker {
-  display: flex;
-  flex-direction: column;
-  row-gap: 8px;
-  align-items: center;
-}
-
-.time-picker > input {
-  text-align: center;
-  max-width: 4rem;
-}
-
 .flatpickr-input {
   border: 1px solid lightgrey;
   border-radius: 4px;
-}
-
-.time-controls {
-  display: grid;
-  /* first column mirrors the calendar's time-axis gutter so each picker
-     sits exactly over its weekday column */
-  grid-template-columns: var(--sx-calendar-week-grid-padding-left, 75px) repeat(
-      5,
-      1fr
-    );
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.time-controls > .time-picker:first-of-type {
-  grid-column: 2;
+  max-width: 4rem;
+  text-align: center;
 }

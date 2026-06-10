@@ -633,10 +633,10 @@ function App() {
           toggleSectionLock,
         }}
       >
-        <div className="sticky-help">
+        <div className="fixed z-[999] m-2">
           <motion.button
             whileHover={{ rotate: 15 }}
-            className="help-button"
+            className="h-8 w-8 rounded-full border-none bg-white p-0"
             onClick={() => setModalOpen(true)}
           >
             <HelpOutlineIcon
@@ -691,22 +691,22 @@ function App() {
         </div>
 
         <main className="py-5 mx-2 antialiased scroll-smooth selection:bg-orange-400 selection:text-black">
-          <div id="column-container">
-            <div className="column planner-column">
+          <div className="flex flex-col md:flex-row">
+            <div className="flex-1">
               <Planner />
             </div>
             <Workspace term={realPath.substring(1)} />
           </div>
         </main>
 
-        <footer className="footer">
-          <p>
+        <footer className="m-auto flex flex-col justify-center gap-y-[10px] py-[30px]">
+          <p className="text-center">
             Made with ❤️ by{" "}
             <Hyperlink href="https://github.com/rchalamala" text="Rahul" />,{" "}
             <Hyperlink href="https://github.com/ericlovesmath" text="Eric" />, &{" "}
             <Hyperlink href="https://github.com/zack466" text="Zack" />
           </p>
-          <p>Current term: {realPath.substring(1)}</p>
+          <p className="text-center">Current term: {realPath.substring(1)}</p>
         </footer>
       </AppState.Provider>
     </AllCourses.Provider>
