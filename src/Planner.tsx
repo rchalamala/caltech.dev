@@ -112,10 +112,10 @@ function Planner() {
 
   return (
     <div>
-      <div className="time-controls">
+      <div className="ml-[65px] mr-5 flex flex-row justify-around py-[5px]">
         {[0, 1, 2, 3, 4].map((idx) => {
           return (
-            <div className="time-picker" key={idx}>
+            <div className="flex max-w-16 flex-col gap-y-2" key={idx}>
               <Flatpickr
                 data-enable-time
                 options={{
