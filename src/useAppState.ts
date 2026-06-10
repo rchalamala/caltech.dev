@@ -41,6 +41,26 @@ function useReactPath() {
   return path;
 }
 
+function loadWorkspaces(realPath: string): Workspace[] {
+  const stored = localStorage.getItem("workspaces" + realPath);
+  if (stored) {
+    return JSON.parse(stored);
+  }
+  // 5 blank workspaces by default bc I'm too lazy to implement dynamic tabs and stuff
+  return [
+    emptyWorkspace(),
+    emptyWorkspace(),
+    emptyWorkspace(),
+    emptyWorkspace(),
+    emptyWorkspace(),
+  ];
+}
+
+function loadWorkspaceIdx(realPath: string): number {
+  const stored = localStorage.getItem("workspaceIdx" + realPath);
+  return stored ? JSON.parse(stored) : 0;
+}
+
 export function useAppState(): {
   realPath: string;
   indexedCourses: CourseIndex;
@@ -54,23 +74,20 @@ export function useAppState(): {
     [realPath],
   );
 
-  // 5 blank workspaces by default bc I'm too lazy to implement dynamic tabs and stuff
-  const localWorkspaces = localStorage.getItem("workspaces" + realPath);
-  const [workspaces, setWorkspaces] = useState<Workspace[]>(
-    localWorkspaces
-      ? JSON.parse(localWorkspaces)
-      : [
-          emptyWorkspace(),
-          emptyWorkspace(),
-          emptyWorkspace(),
-          emptyWorkspace(),
-          emptyWorkspace(),
-        ],
+  const [workspaces, setWorkspaces] = useState<Workspace[]>(() =>
+    loadWorkspaces(realPath),
   );
-  const localWorkspaceIdx = localStorage.getItem("workspaceIdx" + realPath);
-  const [workspaceIdx, setWorkspaceIdx] = useState<number>(
-    localWorkspaceIdx ? JSON.parse(localWorkspaceIdx) : 0,
+  const [workspaceIdx, setWorkspaceIdx] = useState<number>(() =>
+    loadWorkspaceIdx(realPath),
   );
+
+  // Reload stored state when the term path changes
+  const [lastPath, setLastPath] = useState(realPath);
+  if (lastPath !== realPath) {
+    setLastPath(realPath);
+    setWorkspaces(loadWorkspaces(realPath));
+    setWorkspaceIdx(loadWorkspaceIdx(realPath));
+  }
 
   const courses = workspaces[workspaceIdx].courses;
   const availableTimes: Date[][] = useMemo(
@@ -169,7 +186,7 @@ export function useAppState(): {
         setArrayIdx(workspaces, workspaceIdx, {
           ...workspaces[workspaceIdx],
           courses: newCourses,
-          arrangements: generateCourseSections(newCourses, availableTimes),
+          arrangements: newArrangements,
           arrangementIdx: newArrangementIdx,
         }),
       );
