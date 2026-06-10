@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { useLocalStorage } from "usehooks-ts";
 import {
   AppStateProps,
   emptyWorkspace,
@@ -55,21 +56,23 @@ export function useAppState(): {
   );
 
   // 5 blank workspaces by default bc I'm too lazy to implement dynamic tabs and stuff
-  const localWorkspaces = localStorage.getItem("workspaces" + realPath);
-  const [workspaces, setWorkspaces] = useState<Workspace[]>(
-    localWorkspaces
-      ? JSON.parse(localWorkspaces)
-      : [
-          emptyWorkspace(),
-          emptyWorkspace(),
-          emptyWorkspace(),
-          emptyWorkspace(),
-          emptyWorkspace(),
-        ],
+  const defaultWorkspaces = useMemo(
+    () => [
+      emptyWorkspace(),
+      emptyWorkspace(),
+      emptyWorkspace(),
+      emptyWorkspace(),
+      emptyWorkspace(),
+    ],
+    [],
   );
-  const localWorkspaceIdx = localStorage.getItem("workspaceIdx" + realPath);
-  const [workspaceIdx, setWorkspaceIdx] = useState<number>(
-    localWorkspaceIdx ? JSON.parse(localWorkspaceIdx) : 0,
+  const [workspaces, setWorkspaces] = useLocalStorage<Workspace[]>(
+    "workspaces" + realPath,
+    defaultWorkspaces,
+  );
+  const [workspaceIdx, setWorkspaceIdx] = useLocalStorage<number>(
+    "workspaceIdx" + realPath,
+    0,
   );
 
   const courses = workspaces[workspaceIdx].courses;
@@ -81,15 +84,6 @@ export function useAppState(): {
       ]),
     [workspaces, workspaceIdx],
   );
-
-  // Save state to local storage
-  useEffect(() => {
-    localStorage.setItem("workspaces" + realPath, JSON.stringify(workspaces));
-    localStorage.setItem(
-      "workspaceIdx" + realPath,
-      JSON.stringify(workspaceIdx),
-    );
-  }, [workspaces, workspaceIdx, realPath]);
 
   const { arrangements, arrangementIdx } = workspaces[workspaceIdx];
 
@@ -139,7 +133,14 @@ export function useAppState(): {
         }),
       );
     },
-    [courses, availableTimes, workspaces, workspaceIdx, indexedCourses],
+    [
+      courses,
+      availableTimes,
+      workspaces,
+      workspaceIdx,
+      indexedCourses,
+      setWorkspaces,
+    ],
   );
 
   const removeCourse = useCallback(
@@ -174,7 +175,14 @@ export function useAppState(): {
         }),
       );
     },
-    [courses, availableTimes, workspaces, workspaceIdx, indexedCourses],
+    [
+      courses,
+      availableTimes,
+      workspaces,
+      workspaceIdx,
+      indexedCourses,
+      setWorkspaces,
+    ],
   );
 
   const toggleCourse = useCallback(
@@ -228,6 +236,7 @@ export function useAppState(): {
       workspaces,
       workspaceIdx,
       indexedCourses,
+      setWorkspaces,
     ],
   );
 
@@ -278,6 +287,7 @@ export function useAppState(): {
       workspaces,
       workspaceIdx,
       indexedCourses,
+      setWorkspaces,
     ],
   );
 
@@ -303,7 +313,7 @@ export function useAppState(): {
         arrangementIdx: newIdx,
       }),
     );
-  }, [workspaces, workspaceIdx, indexedCourses]);
+  }, [workspaces, workspaceIdx, indexedCourses, setWorkspaces]);
 
   const prevArrangement = useCallback(() => {
     const workspace = workspaces[workspaceIdx];
@@ -329,7 +339,7 @@ export function useAppState(): {
         arrangementIdx: newIdx,
       }),
     );
-  }, [workspaces, workspaceIdx, indexedCourses]);
+  }, [workspaces, workspaceIdx, indexedCourses, setWorkspaces]);
 
   const setCourses = useCallback(
     (courses: CourseStorage[]) => {
@@ -363,7 +373,7 @@ export function useAppState(): {
         }),
       );
     },
-    [availableTimes, workspaces, workspaceIdx, indexedCourses],
+    [availableTimes, workspaces, workspaceIdx, indexedCourses, setWorkspaces],
   );
 
   const setWorkspace = useCallback(
@@ -375,7 +385,7 @@ export function useAppState(): {
       }
       setWorkspaceIdx(newIdx);
     },
-    [workspaces, workspaceIdx],
+    [workspaces, workspaceIdx, setWorkspaceIdx],
   );
 
   const updateAvailableTimes = useCallback(
@@ -430,6 +440,7 @@ export function useAppState(): {
       workspaces,
       workspaceIdx,
       indexedCourses,
+      setWorkspaces,
     ],
   );
 
