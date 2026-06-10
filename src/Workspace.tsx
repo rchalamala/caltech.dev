@@ -61,41 +61,65 @@ function getCourse(
   return null;
 }
 
+// Campus timezone: catalog times are Pacific wall-clock times
+const CAMPUS_TZID = "America/Los_Angeles";
+const VTIMEZONE = [
+  "BEGIN:VTIMEZONE",
+  `TZID:${CAMPUS_TZID}`,
+  "BEGIN:STANDARD",
+  "DTSTART:19701101T020000",
+  "RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU",
+  "TZOFFSETFROM:-0700",
+  "TZOFFSETTO:-0800",
+  "TZNAME:PST",
+  "END:STANDARD",
+  "BEGIN:DAYLIGHT",
+  "DTSTART:19700308T020000",
+  "RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU",
+  "TZOFFSETFROM:-0800",
+  "TZOFFSETTO:-0700",
+  "TZNAME:PDT",
+  "END:DAYLIGHT",
+  "END:VTIMEZONE",
+].join("\r\n");
+
 function exportICS(term: string, courses: CourseStorage[]): string {
-  const termStartDate = new Date(
-    (TERM_START_DATES as { [key: string]: string })[term],
-  );
+  const [startYear, startMonth, startDay] = (
+    TERM_START_DATES as { [key: string]: string }
+  )[term]
+    .split("-")
+    .map(Number);
 
   // Map weekdays to indices for easy comparison
   const dayMap = "MTWRFSU";
 
-  // Helper function to get the first occurrence of a day after the term start date
+  // First occurrence of a weekday on/after the term start date, as Pacific
+  // wall-clock components [year, month, day, hour, minute]
   function getFirstOccurrence(
-    startDate: Date,
     dayOfWeek: string,
     timeString: string,
-  ): Date {
-    const date = new Date(startDate); // Copy the term start date
+  ): [number, number, number, number, number] {
+    const date = new Date(Date.UTC(startYear, startMonth - 1, startDay));
     const targetDay = dayMap.indexOf(dayOfWeek) + 1; // Get index for the weekday
-    const currentDay = date.getDay();
+    const dayOffset = (targetDay - date.getUTCDay() + 7) % 7;
+    date.setUTCDate(date.getUTCDate() + dayOffset);
 
-    // Move the date to the first occurrence of the target weekday
-    const dayOffset = (targetDay - currentDay + 7) % 7;
-    date.setDate(date.getDate() + dayOffset); // Ensure we don't return the start date if it's the same day
-
-    // Parse time (e.g., "09:00") and set the time explicitly using local time
     const [hours, minutes] = timeString.split(":").map(Number);
-    date.setHours(hours, minutes, 0, 0); // Set hours and minutes in the local timezone
-
-    return date;
+    return [
+      date.getUTCFullYear(),
+      date.getUTCMonth() + 1,
+      date.getUTCDate(),
+      hours,
+      minutes,
+    ];
   }
 
   // Flatten the courses and parse times with start and end times, matching locations
   const parsedEvents: {
     name: string;
     location: string;
-    startTime: Date;
-    endTime: Date;
+    startTime: [number, number, number, number, number];
+    endTime: [number, number, number, number, number];
   }[] = [];
   for (const course of courses) {
     if (!course.enabled) continue;
@@ -115,8 +139,8 @@ function exportICS(term: string, courses: CourseStorage[]): string {
           parsedEvents.push({
             name: course.courseData.number, // Use course number for the title
             location, // Set the matched location for this time
-            startTime: getFirstOccurrence(termStartDate, day, startTime),
-            endTime: getFirstOccurrence(termStartDate, day, endTime), // Parse the end time
+            startTime: getFirstOccurrence(day, startTime),
+            endTime: getFirstOccurrence(day, endTime), // Parse the end time
           });
         }
       });
@@ -127,18 +151,22 @@ function exportICS(term: string, courses: CourseStorage[]): string {
     parsedEvents.map((event) => ({
       title: event.name,
       location: event.location,
-      start: event.startTime.getTime(),
-      end: event.endTime.getTime(),
-      startInputType: "utc",
-      endInputType: "utc",
-      startOutputType: "utc",
-      endOutputType: "utc",
+      start: event.startTime,
+      end: event.endTime,
+      startInputType: "local",
+      endInputType: "local",
+      startOutputType: "local",
+      endOutputType: "local",
       recurrenceRule: "FREQ=WEEKLY;COUNT=10",
     })),
   );
   if (error || value == null) throw error ?? new Error("ICS export failed");
 
-  return value;
+  // Anchor the floating local times to the campus timezone
+  return value
+    .replace(/^BEGIN:VEVENT/m, `${VTIMEZONE}\r\nBEGIN:VEVENT`)
+    .replace(/^DTSTART:/gm, `DTSTART;TZID=${CAMPUS_TZID}:`)
+    .replace(/^DTEND:/gm, `DTEND;TZID=${CAMPUS_TZID}:`);
 }
 
 function SectionDropdown(props: { course: CourseStorage }) {
