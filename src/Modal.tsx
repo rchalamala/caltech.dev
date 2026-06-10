@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, m } from "motion/react";
 
-import "./css/modal.css";
-
 export interface ModalProps {
   isOpen: boolean;
   onClose: any;

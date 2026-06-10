@@ -170,7 +170,7 @@ export function useAppState(): {
         setArrayIdx(workspaces, workspaceIdx, {
           ...workspaces[workspaceIdx],
           courses: newCourses,
-          arrangements: generateCourseSections(newCourses, availableTimes),
+          arrangements: newArrangements,
           arrangementIdx: newArrangementIdx,
         }),
       );
