@@ -84,9 +84,11 @@ const VTIMEZONE = [
 ].join("\r\n");
 
 function exportICS(term: string, courses: CourseStorage[]): string {
-  const [startYear, startMonth, startDay] = (
-    TERM_START_DATES as { [key: string]: string }
-  )[term]
+  const termStartDate = (TERM_START_DATES as { [key: string]: string })[term];
+  if (!termStartDate) {
+    throw new Error(`No term start date is available for ${term}`);
+  }
+  const [startYear, startMonth, startDay] = termStartDate
     .split("-")
     .map(Number);
 
@@ -123,28 +125,28 @@ function exportICS(term: string, courses: CourseStorage[]): string {
   }[] = [];
   for (const course of courses) {
     if (!course.enabled) continue;
-    for (const section of course.courseData.sections) {
-      if (section.number - 1 !== course.sectionId) continue; // Filter by selected section
-      const times = section.times.split("\n"); // Split multiple times on newline
-      const locations = section.locations.split("\n"); // Split multiple locations on newline
+    if (course.sectionId === null) continue;
+    const section = course.courseData.sections[course.sectionId]; // sectionId is an array index
+    if (!section) continue;
+    const times = section.times.split("\n"); // Split multiple times on newline
+    const locations = section.locations.split("\n"); // Split multiple locations on newline
 
-      // Zip times and locations together
-      times.forEach((time, index) => {
-        const location = locations[index] || "Unknown"; // Match time with corresponding location
-        const [days, startTime, , endTime] = time.split(" "); // Separate days and time range
-        if (days === "A") return; // skip to-be-announced times
-        if (!startTime || !endTime) return; // skip malformed time entries
+    // Zip times and locations together
+    times.forEach((time, index) => {
+      const location = locations[index] || "Unknown"; // Match time with corresponding location
+      const [days, startTime, , endTime] = time.split(" "); // Separate days and time range
+      if (days === "A") return; // skip to-be-announced times
+      if (!startTime || !endTime) return; // skip malformed time entries
 
-        for (const day of days) {
-          parsedEvents.push({
-            name: course.courseData.number, // Use course number for the title
-            location, // Set the matched location for this time
-            startTime: getFirstOccurrence(day, startTime),
-            endTime: getFirstOccurrence(day, endTime), // Parse the end time
-          });
-        }
-      });
-    }
+      for (const day of days) {
+        parsedEvents.push({
+          name: course.courseData.number, // Use course number for the title
+          location, // Set the matched location for this time
+          startTime: getFirstOccurrence(day, startTime),
+          endTime: getFirstOccurrence(day, endTime), // Parse the end time
+        });
+      }
+    });
   }
 
   const { error, value } = createEvents(
@@ -692,7 +694,15 @@ export default function Workspace({ term }: { term: string }) {
         <ControlButton
           text="Export .ics"
           onClick={() => {
-            const icsContent = exportICS(term, state.courses);
+            let icsContent: string;
+            try {
+              icsContent = exportICS(term, state.courses);
+            } catch (e) {
+              window.alert(
+                e instanceof Error ? e.message : "ICS export failed",
+              );
+              return;
+            }
 
             const blob = new Blob([icsContent], { type: "text/calendar" });
 
