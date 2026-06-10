@@ -16,12 +16,30 @@ import {
   AppState,
 } from "./appContext";
 import { m } from "motion/react";
+import {
+  compressToEncodedURIComponent,
+  decompressFromEncodedURIComponent,
+} from "lz-string";
 
 import "./css/workspace.css";
 import { Collapse, IconButton, Switch } from "@mui/material";
 import { UnfoldLess, UnfoldMore } from "@mui/icons-material";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import TERM_START_DATES from "./data/term_start_dates.json";
+
+/** Decodes a share code, falling back to legacy base64 codes */
+function decodeShareCode(code: string): string {
+  const decompressed = decompressFromEncodedURIComponent(code);
+  if (decompressed) {
+    try {
+      JSON.parse(decompressed);
+      return decompressed;
+    } catch {
+      // fall through to legacy base64
+    }
+  }
+  return window.atob(code);
+}
 
 const DEFAULT_COURSES: { [key: string]: string[] } = {
   fa: ["Ma 1 a", "Ph 1 a", "Ch 1 a", "CS 1"],
@@ -528,7 +546,7 @@ export default function Workspace({ term }: { term: string }) {
     const shortened = shortenCourses(state.courses)
       .map((c) => [c.courseId, c.enabled, c.locked, c.sectionId])
       .flat();
-    const code = window.btoa(JSON.stringify(shortened));
+    const code = compressToEncodedURIComponent(JSON.stringify(shortened));
     const copy = () => {
       navigator.clipboard.writeText(code);
     };
@@ -571,7 +589,7 @@ export default function Workspace({ term }: { term: string }) {
       return;
     }
     try {
-      const shortened = JSON.parse(window.atob(code));
+      const shortened = JSON.parse(decodeShareCode(code));
       const courses: CourseStorageShort[] = [];
       for (let i = 0; i * 4 < shortened.length; i++) {
         courses.push({
