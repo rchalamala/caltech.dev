@@ -124,14 +124,6 @@ li {
   /* top: -12px; */
 }
 
-.workspace-entry-toggle .react-toggle-track {
-  border-radius: 20px;
-}
-
-.workspace-entry-toggle .react-toggle-thumb {
-  border-radius: 100%;
-}
-
 .workspace-entry-content {
   display: flex;
   flex-direction: row;
