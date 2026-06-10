@@ -3,6 +3,7 @@ import {
   useEffect,
   useLayoutEffect,
   useMemo,
+  useRef,
   useState,
 } from "react";
 import { useLocalStorage } from "usehooks-ts";
@@ -83,7 +84,12 @@ export function useAppState(): {
 
   // useLocalStorage re-reads a changed key in a post-paint effect; reload
   // before paint so the previous term's data never flashes
+  const lastPathRef = useRef(realPath);
   useLayoutEffect(() => {
+    if (lastPathRef.current === realPath) {
+      return;
+    }
+    lastPathRef.current = realPath;
     const storedWorkspaces = localStorage.getItem("workspaces" + realPath);
     setWorkspaces(
       storedWorkspaces ? JSON.parse(storedWorkspaces) : defaultWorkspaces,
