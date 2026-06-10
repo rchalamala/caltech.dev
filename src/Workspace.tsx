@@ -110,6 +110,7 @@ function exportICS(term: string, courses: CourseStorage[]): string {
         const location = locations[index] || "Unknown"; // Match time with corresponding location
         const [days, startTime, , endTime] = time.split(" "); // Separate days and time range
         if (days === "A") return; // skip to-be-announced times
+        if (!startTime || !endTime) return; // skip malformed time entries
 
         for (const day of days) {
           parsedEvents.push({
