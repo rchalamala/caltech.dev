@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from "react";
-import { AnimatePresence, m } from "motion/react";
+import { useState } from "react";
+import Dialog from "@mui/material/Dialog";
 
 export interface ModalProps {
   isOpen: boolean;
@@ -8,75 +8,47 @@ export interface ModalProps {
 }
 
 function Modal({ isOpen, onClose, children }: ModalProps) {
-  const onCloseRef = useRef(onClose);
-  onCloseRef.current = onClose;
-
-  useEffect(() => {
-    if (!isOpen) {
-      return;
-    }
-    const handler = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        e.preventDefault();
-        onCloseRef.current();
-      }
-    };
-
-    window.addEventListener("keydown", handler);
-    return () => {
-      window.removeEventListener("keydown", handler);
-    };
-  }, [isOpen]);
-
   return (
-    <AnimatePresence mode="wait">
-      {isOpen && (
-        <m.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className="overflow-y-scroll flex items-center justify-center w-screen h-screen backdrop-blur-lg fixed top-0 left-0 z-[1000]"
+    <Dialog
+      open={isOpen}
+      onClose={onClose}
+      slotProps={{
+        paper: {
+          className:
+            "relative flex flex-col space-y-4 bg-white p-16 rounded-md border-[1px] shadow-lg sm:w-[40%] w-[80%]",
+          sx: { maxWidth: "none", margin: 0 },
+        },
+        backdrop: {
+          sx: {
+            backdropFilter: "blur(16px)",
+            backgroundColor: "transparent",
+          },
+        },
+      }}
+    >
+      {children}
+      <button
+        type="button"
+        aria-label="Close modal"
+        onClick={onClose}
+        className="absolute p-0 m-0 font-bold text-white bg-red-500 rounded-full top-2 right-4"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="w-10 h-10"
         >
-          <button
-            type="button"
-            aria-label="Close modal"
-            className="w-full h-full z-[500] absolute top-0 left-0"
-            onClick={onClose}
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
           />
-          <m.div
-            initial={{ x: -100 }}
-            animate={{ x: 0 }}
-            exit={{ x: 100 }}
-            className="relative flex flex-col space-y-4 bg-white p-16 rounded-md border-[1px] shadow-lg sm:w-[40%] w-[80%] h-fit z-[600]"
-          >
-            {children}
-            <m.button
-              type="button"
-              aria-label="Close modal"
-              whileHover={{ scale: 0.95, rotate: 90 }}
-              whileTap={{ scale: 0.9, rotate: 180 }}
-              onClick={onClose}
-              className="absolute p-0 m-0 font-bold text-white bg-red-500 rounded-full top-2 right-4"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-10 h-10"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-            </m.button>
-          </m.div>
-        </m.div>
-      )}
-    </AnimatePresence>
+        </svg>
+      </button>
+    </Dialog>
   );
 }
 
