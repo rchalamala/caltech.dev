@@ -155,11 +155,11 @@ function Planner() {
     <div className="m-2.5">
       {/* first column mirrors the calendar's time-axis gutter so each picker
           sits exactly over its weekday column */}
-      <div className="grid grid-cols-[var(--sx-calendar-week-grid-padding-left,75px)_repeat(5,1fr)] py-[5px]">
+      <div className="grid grid-cols-[var(--sx-calendar-week-grid-padding-left,75px)_repeat(5,minmax(0,1fr))] py-[5px]">
         {[0, 1, 2, 3, 4].map((idx) => {
           return (
             <div
-              className={`flex flex-col items-center gap-y-2 ${idx === 0 ? "col-start-2" : ""}`}
+              className={`flex min-w-0 flex-col items-center gap-y-2 px-0.5 ${idx === 0 ? "col-start-2" : ""}`}
               key={idx}
             >
               <Flatpickr
