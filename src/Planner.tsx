@@ -1,8 +1,9 @@
-import { useContext } from "react";
+import "temporal-polyfill/global";
+import { useContext, useEffect, useMemo } from "react";
 import { AppState } from "./App";
 import { createViewWeek, CalendarConfig } from "@schedule-x/calendar";
+import { createEventsServicePlugin } from "@schedule-x/events-service";
 import { useCalendarApp, ScheduleXCalendar } from "@schedule-x/react";
-import "temporal-polyfill/global";
 import { Temporal } from "temporal-polyfill";
 import Flatpickr from "react-flatpickr";
 
@@ -112,6 +113,16 @@ function courseColors(id: number) {
   };
 }
 
+function toExternalEvents(calEvents: DateData[]) {
+  return calEvents.map((event, idx) => ({
+    id: `${event.id}-${idx}`,
+    title: event.title,
+    start: toZonedDateTime(event.start),
+    end: toZonedDateTime(event.end),
+    calendarId: `course-${event.id}`,
+  }));
+}
+
 function ScheduleCalendar({ calEvents }: { calEvents: DateData[] }) {
   const minHour =
     calEvents.length === 0
@@ -135,6 +146,8 @@ function ScheduleCalendar({ calEvents }: { calEvents: DateData[] }) {
     };
   }
 
+  const eventsService = useMemo(() => createEventsServicePlugin(), []);
+
   const calendar = useCalendarApp({
     views: [createViewWeek()],
     selectedDate: Temporal.PlainDate.from("2018-01-01"),
@@ -149,14 +162,13 @@ function ScheduleCalendar({ calEvents }: { calEvents: DateData[] }) {
       eventOverlap: false,
     },
     calendars,
-    events: calEvents.map((event, idx) => ({
-      id: `${event.id}-${idx}`,
-      title: event.title,
-      start: toZonedDateTime(event.start),
-      end: toZonedDateTime(event.end),
-      calendarId: `course-${event.id}`,
-    })),
+    events: toExternalEvents(calEvents),
+    plugins: [eventsService],
   });
+
+  useEffect(() => {
+    eventsService.set(toExternalEvents(calEvents));
+  }, [calEvents, eventsService]);
 
   return <ScheduleXCalendar calendarApp={calendar} />;
 }
@@ -170,9 +182,17 @@ function Planner() {
     state.courses.filter((course) => course.enabled),
   );
 
-  const calendarKey = calEvents
-    .map((event) => `${event.id}:${event.start.getTime()}`)
-    .join("|");
+  // remount the calendar only when its non-reactive config (day boundaries,
+  // per-course color calendars) changes; event changes update in place
+  const courseIds = [...new Set(calEvents.map((event) => event.id))].sort();
+  const hours = calEvents.flatMap((event) => [
+    event.start.getHours(),
+    event.end.getHours() + 1,
+  ]);
+  const calendarKey =
+    calEvents.length === 0
+      ? "empty"
+      : `${Math.min(...hours, 9)}-${Math.max(...hours, 16)}-${courseIds.join(",")}`;
 
   return (
     <div className="planner">
