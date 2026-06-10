@@ -12,7 +12,7 @@ import ArrowForward from "@mui/icons-material/ArrowForward";
 import { shortenCourses, lengthenCourses, AllCourses, AppState } from "./App";
 import { motion } from "framer-motion";
 
-import "react-toggle/style.css";
+import "./css/react-toggle.css";
 import "./css/workspace.css";
 import { Collapse, IconButton, Switch } from "@mui/material";
 import { UnfoldLess, UnfoldMore } from "@mui/icons-material";
