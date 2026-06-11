@@ -1,4 +1,4 @@
-import { use, useState } from "react";
+import { use, useEffect, useState } from "react";
 import Modal, { useModal } from "./Modal";
 import Select from "react-select";
 import { SingleValue } from "react-select";
@@ -418,6 +418,16 @@ function WorkspaceSearch() {
   if (firstLoad && options.length === 0) {
     options = courses;
   }
+
+  // catalogs load asynchronously; re-sync the options once courses arrive
+  // so the dropdown isn't stuck empty if the user touched it while loading
+  const courseCount = courses.length;
+  useEffect(() => {
+    if (courseCount > 0) {
+      setOptions(courses);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [courseCount]);
 
   const [selectedCourse, setCourse] = useState<Maybe<CourseData>>(null);
 
