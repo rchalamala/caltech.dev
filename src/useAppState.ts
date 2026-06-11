@@ -64,7 +64,9 @@ export function useAppState(): {
   const [indexedCourses, setIndexedCourses] = useState<CourseIndex>(
     () => getCachedCourseIndex(realPath) ?? {},
   );
-  useEffect(() => {
+  // sync from the cache before paint so indexedCourses never lags behind
+  // the workspace data when the term changes
+  useLayoutEffect(() => {
     let cancelled = false;
     const cached = getCachedCourseIndex(realPath);
     if (cached) {
