@@ -1,4 +1,4 @@
-import { use, useState } from "react";
+import { use, useEffect, useState } from "react";
 import Modal, { useModal } from "./Modal";
 import Select from "react-select";
 import { SingleValue } from "react-select";
@@ -419,6 +419,12 @@ function WorkspaceSearch() {
     options = courses;
   }
 
+  // catalogs load asynchronously; re-sync the options whenever the catalog
+  // changes so the dropdown never shows stale or empty results
+  useEffect(() => {
+    setOptions(Object.values(indexedCourses));
+  }, [indexedCourses]);
+
   const [selectedCourse, setCourse] = useState<Maybe<CourseData>>(null);
 
   const handleSelect = (courseData: SingleValue<CourseData>) => {
@@ -447,7 +453,9 @@ function WorkspaceSearch() {
     <Select
       isClearable
       className="my-3"
-      placeholder="Add a course..."
+      placeholder={
+        courses.length === 0 ? "Loading courses..." : "Add a course..."
+      }
       options={options}
       value={selectedCourse}
       getOptionLabel={(course) => `${course?.number} - ${course?.name}`}
