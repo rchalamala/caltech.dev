@@ -18,16 +18,18 @@ export default defineConfig({
     chunkSizeWarningLimit: 700,
     rollupOptions: {
       output: {
-        manualChunks: {
-          react: ["react", "react-dom", "react-dom/client"],
-          mui: ["@mui/material", "@mui/icons-material"],
-          schedulex: [
-            "@schedule-x/calendar",
-            "@schedule-x/react",
-            "@schedule-x/theme-default",
-            "@schedule-x/events-service",
-          ],
-          motion: ["motion"],
+        manualChunks(id: string) {
+          if (!id.includes("node_modules")) return;
+          if (/node_modules\/(react|react-dom|scheduler)\//.test(id))
+            return "react";
+          if (id.includes("node_modules/@mui/")) return "mui";
+          if (id.includes("node_modules/@schedule-x/")) return "schedulex";
+          if (
+            /node_modules\/(motion|framer-motion|motion-dom|motion-utils)\//.test(
+              id,
+            )
+          )
+            return "motion";
         },
       },
     },
