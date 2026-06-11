@@ -595,6 +595,10 @@ export default function Workspace({ term }: { term: string }) {
   });
 
   const importWorkspace = () => {
+    if (Object.keys(indexedCourses).length === 0) {
+      alert("Course data is still loading. Please try again in a moment.");
+      return;
+    }
     const code = prompt("Copy in the workspace code.") || "";
     if (code === "") {
       return;
@@ -689,6 +693,12 @@ export default function Workspace({ term }: { term: string }) {
         <ControlButton
           text="Default Schedule"
           onClick={() => {
+            if (Object.keys(indexedCourses).length === 0) {
+              alert(
+                "Course data is still loading. Please try again in a moment.",
+              );
+              return;
+            }
             state.setCourses(
               // Change based on term
               (DEFAULT_COURSES[term.substring(0, 2)] ?? []).flatMap((name) => {
