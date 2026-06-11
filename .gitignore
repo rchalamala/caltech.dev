@@ -141,6 +141,9 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
+# Wrangler local dev cache
+.wrangler/
+
 ### OSX ###
 # General
 .DS_Store
@@ -148,7 +151,7 @@ dist
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
 
 # Thumbnails
 ._*
