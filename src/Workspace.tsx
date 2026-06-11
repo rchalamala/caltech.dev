@@ -447,7 +447,9 @@ function WorkspaceSearch() {
     <Select
       isClearable
       className="my-3"
-      placeholder="Add a course..."
+      placeholder={
+        courses.length === 0 ? "Loading courses..." : "Add a course..."
+      }
       options={options}
       value={selectedCourse}
       getOptionLabel={(course) => `${course?.number} - ${course?.name}`}

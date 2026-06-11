@@ -15,6 +15,22 @@ export default defineConfig({
   build: {
     sourcemap: true,
     outDir: "dist",
+    chunkSizeWarningLimit: 700,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          react: ["react", "react-dom", "react-dom/client"],
+          mui: ["@mui/material", "@mui/icons-material"],
+          schedulex: [
+            "@schedule-x/calendar",
+            "@schedule-x/react",
+            "@schedule-x/theme-default",
+            "@schedule-x/events-service",
+          ],
+          motion: ["motion"],
+        },
+      },
+    },
   },
   server: {
     port: 3000,

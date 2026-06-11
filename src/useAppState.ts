@@ -14,7 +14,11 @@ import {
   shortenCourses,
 } from "./appContext";
 import { generateCourseSections } from "./scheduler";
-import { CURRENT_TERM, courseDataSources } from "./courseData";
+import {
+  CURRENT_TERM,
+  getCachedCourseIndex,
+  loadCourseIndex,
+} from "./courseData";
 
 function setArrayIdx<T>(arr: Array<T>, idx: number, element: T) {
   return arr.map((value, i) => {
@@ -57,10 +61,26 @@ export function useAppState(): {
   // really basic routing
   const pathname = useReactPath();
   const realPath = pathname === "/" ? CURRENT_TERM : pathname;
-  const indexedCourses: CourseIndex = useMemo(
-    () => courseDataSources[realPath] ?? {},
-    [realPath],
+  const [indexedCourses, setIndexedCourses] = useState<CourseIndex>(
+    () => getCachedCourseIndex(realPath) ?? {},
   );
+  useEffect(() => {
+    let cancelled = false;
+    const cached = getCachedCourseIndex(realPath);
+    if (cached) {
+      setIndexedCourses(cached);
+      return;
+    }
+    setIndexedCourses({});
+    loadCourseIndex(realPath).then((index) => {
+      if (!cancelled) {
+        setIndexedCourses(index);
+      }
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [realPath]);
 
   // 5 blank workspaces by default bc I'm too lazy to implement dynamic tabs and stuff
   const defaultWorkspaces = useMemo(
