@@ -6,12 +6,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [react(), svgr(), tsconfigPaths(), tailwindcss()],
-  css: {
-    lightningcss: {
-      // flatpickr's CSS contains legacy IE `@media (min-width:0\0)` hacks
-      errorRecovery: true,
-    },
-  },
   build: {
     sourcemap: true,
     outDir: "dist",
