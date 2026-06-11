@@ -72,11 +72,15 @@ export function useAppState(): {
       return;
     }
     setIndexedCourses({});
-    loadCourseIndex(realPath).then((index) => {
-      if (!cancelled) {
-        setIndexedCourses(index);
-      }
-    });
+    loadCourseIndex(realPath)
+      .then((index) => {
+        if (!cancelled) {
+          setIndexedCourses(index);
+        }
+      })
+      .catch((error: unknown) => {
+        console.error(`Failed to load course data for ${realPath}:`, error);
+      });
     return () => {
       cancelled = true;
     };
