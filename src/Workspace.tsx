@@ -419,15 +419,11 @@ function WorkspaceSearch() {
     options = courses;
   }
 
-  // catalogs load asynchronously; re-sync the options once courses arrive
-  // so the dropdown isn't stuck empty if the user touched it while loading
-  const courseCount = courses.length;
+  // catalogs load asynchronously; re-sync the options whenever the catalog
+  // changes so the dropdown never shows stale or empty results
   useEffect(() => {
-    if (courseCount > 0) {
-      setOptions(courses);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [courseCount]);
+    setOptions(Object.values(indexedCourses));
+  }, [indexedCourses]);
 
   const [selectedCourse, setCourse] = useState<Maybe<CourseData>>(null);
 
