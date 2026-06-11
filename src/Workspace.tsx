@@ -1,7 +1,5 @@
 import { use, useState } from "react";
 import Modal, { useModal } from "./Modal";
-import Select from "react-select";
-import { SingleValue } from "react-select";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 import { Fzf } from "fzf";
 import { createEvents } from "ics";
@@ -22,7 +20,13 @@ import {
   decompressFromEncodedURIComponent,
 } from "lz-string";
 
-import { Collapse, IconButton, Switch } from "@mui/material";
+import {
+  Autocomplete,
+  Collapse,
+  IconButton,
+  Switch,
+  TextField,
+} from "@mui/material";
 import { UnfoldLess, UnfoldMore } from "@mui/icons-material";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import TERM_START_DATES from "./data/term_start_dates.json";
@@ -193,9 +197,9 @@ function SectionDropdown(props: { course: CourseStorage }) {
   const course = props.course;
   const state = use(AppState);
 
-  const onChange = (newSection: SingleValue<Maybe<SectionData>>) => {
+  const onChange = (newSection: Maybe<SectionData>) => {
     course.sectionId =
-      newSection !== null
+      newSection != null
         ? course.courseData.sections.findIndex(
             (s) => s.number === newSection.number,
           )
@@ -206,27 +210,24 @@ function SectionDropdown(props: { course: CourseStorage }) {
 
   return (
     <div className="workspace-entry-section">
-      <Select
-        isClearable
-        placeholder=""
+      <Autocomplete
+        size="small"
         value={
           course.sectionId !== null
-            ? course.courseData.sections.find(
+            ? (course.courseData.sections.find(
                 (c) =>
                   c.number ===
                   course.courseData.sections[course.sectionId!].number,
-              )
+              ) ?? null)
             : null
         }
-        onChange={onChange}
+        onChange={(_event, newSection) => onChange(newSection)}
         options={course.courseData.sections}
         getOptionLabel={(section) => `${section.number}`}
-        isOptionSelected={(section) =>
-          course.sectionId !== null
-            ? section.number ===
-              course.courseData.sections[course.sectionId].number
-            : false
+        isOptionEqualToValue={(option, selected) =>
+          option.number === selected.number
         }
+        renderInput={(params) => <TextField {...params} aria-label="Section" />}
       />
     </div>
   );
@@ -409,20 +410,10 @@ function WorkspaceSearch() {
   const indexedCourses = use(AllCourses);
   const courses = Object.values(indexedCourses);
 
-  // For some reason, options = [] on the second render, even though
-  // courses = [...] by then and options should equal courses.
-  // I came up with this hacky solution to get around that...
-  // The dropdown options should re-render properly
-  let [options, setOptions] = useState<CourseData[]>(courses);
-  const [firstLoad, setFirstLoad] = useState(true);
-  if (firstLoad && options.length === 0) {
-    options = courses;
-  }
-
   const [selectedCourse, setCourse] = useState<Maybe<CourseData>>(null);
 
-  const handleSelect = (courseData: SingleValue<CourseData>) => {
-    setCourse(courseData as CourseData);
+  const handleSelect = (courseData: Maybe<CourseData>) => {
+    setCourse(courseData);
     if (courseData) {
       state.addCourse({
         courseData: courseData,
@@ -438,27 +429,26 @@ function WorkspaceSearch() {
     selector: (item) => `${item.number} ${item.name}`,
   });
 
-  const sortCourses = (input: string) => {
-    setOptions(fzf.find(input).map((item) => item.item));
-    setFirstLoad(false);
-  };
-
   return (
-    <Select
-      isClearable
+    <Autocomplete
+      size="small"
       className="my-3"
-      placeholder={
-        courses.length === 0 ? "Loading courses..." : "Add a course..."
-      }
-      options={options}
+      options={courses}
       value={selectedCourse}
-      getOptionLabel={(course) => `${course?.number} - ${course?.name}`}
-      onChange={handleSelect}
-      isOptionSelected={(course) => course.id === selectedCourse?.id}
-      onInputChange={sortCourses}
-      filterOption={() => {
-        return true;
-      }}
+      getOptionLabel={(course) => `${course.number} - ${course.name}`}
+      isOptionEqualToValue={(option, selected) => option.id === selected.id}
+      onChange={(_event, courseData) => handleSelect(courseData)}
+      filterOptions={(allOptions, { inputValue }) =>
+        inputValue ? fzf.find(inputValue).map((item) => item.item) : allOptions
+      }
+      renderInput={(params) => (
+        <TextField
+          {...params}
+          placeholder={
+            courses.length === 0 ? "Loading courses..." : "Add a course..."
+          }
+        />
+      )}
     />
   );
 }
