@@ -6,14 +6,44 @@ import { createViewWeek, CalendarConfig } from "@schedule-x/calendar";
 import { createEventsServicePlugin } from "@schedule-x/events-service";
 import { useCalendarApp, ScheduleXCalendar } from "@schedule-x/react";
 import { Temporal } from "temporal-polyfill";
-import Flatpickr from "react-flatpickr";
 
 import "@schedule-x/theme-default/dist/index.css";
-import "flatpickr/dist/themes/airbnb.css";
 
 import "./css/planner.css";
 
 const hasWeekendCourse = false;
+
+function formatTime(date: Date): string {
+  return `${String(date.getHours()).padStart(2, "0")}:${String(
+    date.getMinutes(),
+  ).padStart(2, "0")}`;
+}
+
+function TimeInput({
+  value,
+  onChange,
+  label,
+}: {
+  value: Date;
+  onChange: (day: Date) => void;
+  label: string;
+}) {
+  return (
+    <input
+      type="time"
+      className="planner-time-input"
+      aria-label={label}
+      value={formatTime(value)}
+      onChange={(e) => {
+        if (!e.target.value) return;
+        const [hours, minutes] = e.target.value.split(":").map(Number);
+        const day = new Date(value);
+        day.setHours(hours, minutes, 0, 0);
+        onChange(day);
+      }}
+    />
+  );
+}
 
 function CourseToDates(courses: CourseStorage[]): DateData[] {
   const dates: DateData[] = [];
@@ -162,27 +192,17 @@ function Planner() {
               className={`flex min-w-0 flex-col items-center gap-y-2 px-0.5 ${idx === 0 ? "col-start-2" : ""}`}
               key={idx}
             >
-              <Flatpickr
-                data-enable-time
-                options={{
-                  dateFormat: "H:i",
-                  enableTime: true,
-                  noCalendar: true,
-                }}
+              <TimeInput
+                label={`Day ${idx + 1} available start time`}
                 value={state.availableTimes[idx][0]}
-                onChange={([day]) => {
+                onChange={(day) => {
                   state.updateAvailableTimes(idx, true, day);
                 }}
               />
-              <Flatpickr
-                data-enable-time
-                options={{
-                  dateFormat: "H:i",
-                  enableTime: true,
-                  noCalendar: true,
-                }}
+              <TimeInput
+                label={`Day ${idx + 1} available end time`}
                 value={state.availableTimes[idx][1]}
-                onChange={([day]) => {
+                onChange={(day) => {
                   state.updateAvailableTimes(idx, false, day);
                 }}
               />

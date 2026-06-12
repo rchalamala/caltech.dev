@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { m } from "motion/react";
-import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
+import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import Modal from "./Modal";
 import Hyperlink from "./Hyperlink";
 
@@ -16,7 +16,7 @@ export default function HelpButton() {
         className="h-8 w-8 rounded-full border-none bg-white p-0"
         onClick={() => setModalOpen(true)}
       >
-        <HelpOutlineIcon
+        <HelpOutlineOutlinedIcon
           className="text-orange-500 bg-transparent"
           style={{ width: "auto", height: "auto" }}
         />

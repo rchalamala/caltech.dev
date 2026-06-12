@@ -14,7 +14,11 @@ import {
   shortenCourses,
 } from "./appContext";
 import { generateCourseSections } from "./scheduler";
-import { CURRENT_TERM, courseDataSources } from "./courseData";
+import {
+  CURRENT_TERM,
+  getCachedCourseIndex,
+  loadCourseIndex,
+} from "./courseData";
 
 function setArrayIdx<T>(arr: Array<T>, idx: number, element: T) {
   return arr.map((value, i) => {
@@ -57,10 +61,32 @@ export function useAppState(): {
   // really basic routing
   const pathname = useReactPath();
   const realPath = pathname === "/" ? CURRENT_TERM : pathname;
-  const indexedCourses: CourseIndex = useMemo(
-    () => courseDataSources[realPath] ?? {},
-    [realPath],
+  const [indexedCourses, setIndexedCourses] = useState<CourseIndex>(
+    () => getCachedCourseIndex(realPath) ?? {},
   );
+  // sync from the cache before paint so indexedCourses never lags behind
+  // the workspace data when the term changes
+  useLayoutEffect(() => {
+    let cancelled = false;
+    const cached = getCachedCourseIndex(realPath);
+    if (cached) {
+      setIndexedCourses(cached);
+      return;
+    }
+    setIndexedCourses({});
+    loadCourseIndex(realPath)
+      .then((index) => {
+        if (!cancelled) {
+          setIndexedCourses(index);
+        }
+      })
+      .catch((error: unknown) => {
+        console.error(`Failed to load course data for ${realPath}:`, error);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [realPath]);
 
   // 5 blank workspaces by default bc I'm too lazy to implement dynamic tabs and stuff
   const defaultWorkspaces = useMemo(
@@ -98,6 +124,8 @@ export function useAppState(): {
     setWorkspaceIdx(storedIdx ? JSON.parse(storedIdx) : 0);
   }, [realPath, defaultWorkspaces, setWorkspaces, setWorkspaceIdx]);
 
+  const catalogReady = Object.keys(indexedCourses).length > 0;
+
   const courses = workspaces[workspaceIdx].courses;
   const availableTimes: Date[][] = useMemo(
     () =>
@@ -113,6 +141,9 @@ export function useAppState(): {
   /** Helper functions to be sent sent through Context */
   const addCourse = useCallback(
     (newCourse: CourseStorage) => {
+      if (!catalogReady) {
+        return;
+      }
       const result = courses.find(
         (course) => course.courseData.id === newCourse.courseData.id,
       );
@@ -157,6 +188,7 @@ export function useAppState(): {
       );
     },
     [
+      catalogReady,
       courses,
       availableTimes,
       workspaces,
@@ -168,6 +200,9 @@ export function useAppState(): {
 
   const removeCourse = useCallback(
     (course: CourseStorage) => {
+      if (!catalogReady) {
+        return;
+      }
       let newCourses = courses.filter((currCourse) => currCourse !== course);
       const newArrangements = generateCourseSections(
         newCourses,
@@ -199,6 +234,7 @@ export function useAppState(): {
       );
     },
     [
+      catalogReady,
       courses,
       availableTimes,
       workspaces,
@@ -210,6 +246,9 @@ export function useAppState(): {
 
   const toggleCourse = useCallback(
     (newCourse: CourseStorage) => {
+      if (!catalogReady) {
+        return;
+      }
       let newCourses = courses.map((course) => {
         if (course.courseData.id === newCourse.courseData.id) {
           newCourse.enabled = !newCourse.enabled;
@@ -253,6 +292,7 @@ export function useAppState(): {
       );
     },
     [
+      catalogReady,
       courses,
       availableTimes,
       arrangementIdx,
@@ -265,6 +305,9 @@ export function useAppState(): {
 
   const toggleSectionLock = useCallback(
     (newCourse: CourseStorage) => {
+      if (!catalogReady) {
+        return;
+      }
       let newCourses = courses.map((course) => {
         if (course.courseData.id === newCourse.courseData.id) {
           newCourse.locked = !newCourse.locked;
@@ -304,6 +347,7 @@ export function useAppState(): {
       );
     },
     [
+      catalogReady,
       courses,
       availableTimes,
       arrangementIdx,
@@ -315,6 +359,9 @@ export function useAppState(): {
   );
 
   const nextArrangement = useCallback(() => {
+    if (!catalogReady) {
+      return;
+    }
     const workspace = workspaces[workspaceIdx];
     let newIdx = workspace.arrangementIdx;
     if (workspace.arrangements.length === 0) {
@@ -336,9 +383,12 @@ export function useAppState(): {
         arrangementIdx: newIdx,
       }),
     );
-  }, [workspaces, workspaceIdx, indexedCourses, setWorkspaces]);
+  }, [catalogReady, workspaces, workspaceIdx, indexedCourses, setWorkspaces]);
 
   const prevArrangement = useCallback(() => {
+    if (!catalogReady) {
+      return;
+    }
     const workspace = workspaces[workspaceIdx];
     let newIdx = workspace.arrangementIdx;
     if (workspace.arrangements.length === 0) {
@@ -362,10 +412,13 @@ export function useAppState(): {
         arrangementIdx: newIdx,
       }),
     );
-  }, [workspaces, workspaceIdx, indexedCourses, setWorkspaces]);
+  }, [catalogReady, workspaces, workspaceIdx, indexedCourses, setWorkspaces]);
 
   const setCourses = useCallback(
     (courses: CourseStorage[]) => {
+      if (!catalogReady) {
+        return;
+      }
       let newCourses = courses;
       const newArrangements = generateCourseSections(
         newCourses,
@@ -396,7 +449,14 @@ export function useAppState(): {
         }),
       );
     },
-    [availableTimes, workspaces, workspaceIdx, indexedCourses, setWorkspaces],
+    [
+      catalogReady,
+      availableTimes,
+      workspaces,
+      workspaceIdx,
+      indexedCourses,
+      setWorkspaces,
+    ],
   );
 
   const setWorkspace = useCallback(
@@ -413,6 +473,9 @@ export function useAppState(): {
 
   const updateAvailableTimes = useCallback(
     (dayIdx: number, isStart: boolean, day: Date) => {
+      if (!catalogReady) {
+        return;
+      }
       const newAvailableTimes = setArrayIdx(availableTimes, dayIdx, [
         isStart ? day : availableTimes[dayIdx][0],
         isStart ? availableTimes[dayIdx][1] : day,
@@ -456,6 +519,7 @@ export function useAppState(): {
       );
     },
     [
+      catalogReady,
       courses,
       availableTimes,
       arrangements,
