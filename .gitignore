@@ -141,6 +141,9 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
+# Wrangler local dev cache
+.wrangler/
+
 ### OSX ###
 # General
 .DS_Store
