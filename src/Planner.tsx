@@ -6,6 +6,8 @@ import { createViewWeek, CalendarConfig } from "@schedule-x/calendar";
 import { createEventsServicePlugin } from "@schedule-x/events-service";
 import { useCalendarApp, ScheduleXCalendar } from "@schedule-x/react";
 import { Temporal } from "temporal-polyfill";
+import { TimePicker } from "@mui/x-date-pickers/TimePicker";
+import dayjs from "dayjs";
 
 import "@schedule-x/theme-default/dist/index.css";
 
@@ -13,10 +15,20 @@ import "./css/planner.css";
 
 const hasWeekendCourse = false;
 
-function formatTime(date: Date): string {
-  return `${String(date.getHours()).padStart(2, "0")}:${String(
-    date.getMinutes(),
-  ).padStart(2, "0")}`;
+/** Extract a concise room label from the raw newline-separated locations string. */
+function shortLocation(raw: string): string {
+  if (!raw) return "";
+  const lines = raw
+    .split("\n")
+    .map((l) => l.trim())
+    .filter(Boolean);
+  // room entries: "387 LINDE", "B280 MRE", "115c BAX", "240A CNRB"
+  const rooms = lines.filter((l) => /^[A-Z]?\d+\w*\s+[A-Z]/.test(l));
+  if (rooms.length > 0) return rooms[0];
+  // fall back to building codes (short all-caps tokens)
+  const buildings = lines.filter((l) => /^[A-Z]{2,}$/.test(l));
+  if (buildings.length > 0) return buildings[0];
+  return "";
 }
 
 function TimeInput({
@@ -29,17 +41,29 @@ function TimeInput({
   label: string;
 }) {
   return (
-    <input
-      type="time"
-      className="planner-time-input"
-      aria-label={label}
-      value={formatTime(value)}
-      onChange={(e) => {
-        if (!e.target.value) return;
-        const [hours, minutes] = e.target.value.split(":").map(Number);
+    <TimePicker
+      value={dayjs(value)}
+      onChange={(newVal) => {
+        if (!newVal) return;
         const day = new Date(value);
-        day.setHours(hours, minutes, 0, 0);
+        day.setHours(newVal.hour(), newVal.minute(), 0, 0);
         onChange(day);
+      }}
+      ampm={false}
+      slotProps={{
+        textField: {
+          size: "small",
+          slotProps: { htmlInput: { "aria-label": label } },
+          sx: {
+            width: "5.5rem",
+            "& .MuiInputBase-input": {
+              p: "4px 8px",
+              fontSize: "0.8rem",
+              textAlign: "center",
+            },
+            "& .MuiInputAdornment-root": { display: "none" },
+          },
+        },
       }}
     />
   );
@@ -66,7 +90,8 @@ function CourseToDates(courses: CourseStorage[]): DateData[] {
       for (const interval of day) {
         dates.push({
           id: course.courseData.id,
-          title: course.courseData.number + " Section " + section.number,
+          title: course.courseData.number + " §" + section.number,
+          location: shortLocation(section.locations),
           start: interval!.start,
           end: interval!.end,
           courseData: course.courseData,
@@ -103,14 +128,26 @@ function courseColors(id: number) {
   };
 }
 
+function escapeHtml(s: string): string {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
 function toExternalEvents(calEvents: DateData[]) {
-  return calEvents.map((event, idx) => ({
-    id: `${event.id}-${idx}`,
-    title: event.title,
-    start: toZonedDateTime(event.start),
-    end: toZonedDateTime(event.end),
-    calendarId: `course-${event.id}`,
-  }));
+  return calEvents.map((event, idx) => {
+    const loc = event.location;
+    const html = loc
+      ? `<span class="sx-event-title">${escapeHtml(event.title)}</span><br/><span class="sx-event-location">${escapeHtml(loc)}</span>`
+      : `<span class="sx-event-title">${escapeHtml(event.title)}</span>`;
+
+    return {
+      id: `${event.id}-${idx}`,
+      title: event.title,
+      start: toZonedDateTime(event.start),
+      end: toZonedDateTime(event.end),
+      calendarId: `course-${event.id}`,
+      _customContent: { timeGrid: html },
+    };
+  });
 }
 
 function ScheduleCalendar({ calEvents }: { calEvents: DateData[] }) {

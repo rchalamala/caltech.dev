@@ -24,6 +24,7 @@ interface CourseData {
 interface DateData {
   id: number;
   title: string;
+  location: string;
   start: Date;
   end: Date;
   courseData: CourseData;
