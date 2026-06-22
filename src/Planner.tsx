@@ -6,6 +6,8 @@ import { createViewWeek, CalendarConfig } from "@schedule-x/calendar";
 import { createEventsServicePlugin } from "@schedule-x/events-service";
 import { useCalendarApp, ScheduleXCalendar } from "@schedule-x/react";
 import { Temporal } from "temporal-polyfill";
+import { TimePicker } from "@mui/x-date-pickers/TimePicker";
+import dayjs from "dayjs";
 
 import "@schedule-x/theme-default/dist/index.css";
 
@@ -29,12 +31,6 @@ function shortLocation(raw: string): string {
   return "";
 }
 
-function formatTime(date: Date): string {
-  return `${String(date.getHours()).padStart(2, "0")}:${String(
-    date.getMinutes(),
-  ).padStart(2, "0")}`;
-}
-
 function TimeInput({
   value,
   onChange,
@@ -45,17 +41,29 @@ function TimeInput({
   label: string;
 }) {
   return (
-    <input
-      type="time"
-      className="planner-time-input"
-      aria-label={label}
-      value={formatTime(value)}
-      onChange={(e) => {
-        if (!e.target.value) return;
-        const [hours, minutes] = e.target.value.split(":").map(Number);
+    <TimePicker
+      value={dayjs(value)}
+      onChange={(newVal) => {
+        if (!newVal) return;
         const day = new Date(value);
-        day.setHours(hours, minutes, 0, 0);
+        day.setHours(newVal.hour(), newVal.minute(), 0, 0);
         onChange(day);
+      }}
+      ampm={false}
+      slotProps={{
+        textField: {
+          size: "small",
+          slotProps: { htmlInput: { "aria-label": label } },
+          sx: {
+            width: "5.5rem",
+            "& .MuiInputBase-input": {
+              p: "4px 8px",
+              fontSize: "0.8rem",
+              textAlign: "center",
+            },
+            "& .MuiInputAdornment-root": { display: "none" },
+          },
+        },
       }}
     />
   );

@@ -12,22 +12,6 @@
   display: none;
 }
 
-.planner-time-input {
-  border: 1px solid lightgrey;
-  border-radius: 4px;
-  width: 100%;
-  min-width: 0;
-  max-width: 5.5rem;
-  text-align: center;
-  background-color: white;
-  font-size: 0.875rem;
-  line-height: 1.5;
-}
-
-.planner-time-input::-webkit-calendar-picker-indicator {
-  display: none;
-}
-
 /* custom event content */
 .sx-event-title {
   font-weight: 600;
