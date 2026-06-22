@@ -17,7 +17,7 @@
   border-radius: 4px;
   width: 100%;
   min-width: 0;
-  max-width: 4.5rem;
+  max-width: 5.5rem;
   text-align: center;
   background-color: white;
   font-size: 0.875rem;
@@ -25,5 +25,23 @@
 }
 
 .planner-time-input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+/* custom event content */
+.sx-event-title {
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1.2;
+}
+
+.sx-event-location {
+  font-size: 0.65rem;
+  opacity: 0.8;
+  line-height: 1.2;
+}
+
+/* hide the default time label Schedule-X renders inside events */
+.sx__time-grid-event .sx__time-grid-event-time {
   display: none;
 }

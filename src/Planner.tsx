@@ -13,6 +13,22 @@ import "./css/planner.css";
 
 const hasWeekendCourse = false;
 
+/** Extract a concise room label from the raw newline-separated locations string. */
+function shortLocation(raw: string): string {
+  if (!raw) return "";
+  const lines = raw
+    .split("\n")
+    .map((l) => l.trim())
+    .filter(Boolean);
+  // room entries look like "387 LINDE", "103 DWN", "106 ANB"
+  const rooms = lines.filter((l) => /^\d+\s+[A-Z]/.test(l));
+  if (rooms.length > 0) return rooms[0];
+  // fall back to building codes (short all-caps tokens)
+  const buildings = lines.filter((l) => /^[A-Z]{2,}$/.test(l));
+  if (buildings.length > 0) return buildings[0];
+  return "";
+}
+
 function formatTime(date: Date): string {
   return `${String(date.getHours()).padStart(2, "0")}:${String(
     date.getMinutes(),
@@ -66,7 +82,8 @@ function CourseToDates(courses: CourseStorage[]): DateData[] {
       for (const interval of day) {
         dates.push({
           id: course.courseData.id,
-          title: course.courseData.number + " Section " + section.number,
+          title: course.courseData.number + " §" + section.number,
+          location: shortLocation(section.locations),
           start: interval!.start,
           end: interval!.end,
           courseData: course.courseData,
@@ -103,14 +120,26 @@ function courseColors(id: number) {
   };
 }
 
+function escapeHtml(s: string): string {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
 function toExternalEvents(calEvents: DateData[]) {
-  return calEvents.map((event, idx) => ({
-    id: `${event.id}-${idx}`,
-    title: event.title,
-    start: toZonedDateTime(event.start),
-    end: toZonedDateTime(event.end),
-    calendarId: `course-${event.id}`,
-  }));
+  return calEvents.map((event, idx) => {
+    const loc = event.location;
+    const html = loc
+      ? `<span class="sx-event-title">${escapeHtml(event.title)}</span><br/><span class="sx-event-location">${escapeHtml(loc)}</span>`
+      : `<span class="sx-event-title">${escapeHtml(event.title)}</span>`;
+
+    return {
+      id: `${event.id}-${idx}`,
+      title: event.title,
+      start: toZonedDateTime(event.start),
+      end: toZonedDateTime(event.end),
+      calendarId: `course-${event.id}`,
+      _customContent: { timeGrid: html },
+    };
+  });
 }
 
 function ScheduleCalendar({ calEvents }: { calEvents: DateData[] }) {
