@@ -20,8 +20,8 @@ function shortLocation(raw: string): string {
     .split("\n")
     .map((l) => l.trim())
     .filter(Boolean);
-  // room entries look like "387 LINDE", "103 DWN", "106 ANB"
-  const rooms = lines.filter((l) => /^\d+\s+[A-Z]/.test(l));
+  // room entries: "387 LINDE", "B280 MRE", "115c BAX", "240A CNRB"
+  const rooms = lines.filter((l) => /^[A-Z]?\d+\w*\s+[A-Z]/.test(l));
   if (rooms.length > 0) return rooms[0];
   // fall back to building codes (short all-caps tokens)
   const buildings = lines.filter((l) => /^[A-Z]{2,}$/.test(l));
