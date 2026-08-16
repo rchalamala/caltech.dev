@@ -1,29 +1,33 @@
-/* third-party overrides: Schedule-X */
-
-/* the schedule is a single fixed week, so hide navigation chrome */
-.sx__calendar-header {
+.rbc-allday-cell {
   display: none;
 }
 
-.sx__week-grid__date-axis .sx__week-grid__date-number,
-.sx__week-grid__date-axis
-  .sx__week-grid__date--is-today
-  .sx__week-grid__date-number {
-  display: none;
+.rbc-time-view .rbc-header {
+  border-bottom: none;
 }
 
-.planner-time-input {
+.time-picker {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  max-width: 4rem;
+}
+
+.time-picker > input {
+  text-align: center;
+}
+
+.flatpickr-input {
   border: 1px solid lightgrey;
   border-radius: 4px;
-  width: 100%;
-  min-width: 0;
-  max-width: 4.5rem;
-  text-align: center;
-  background-color: white;
-  font-size: 0.875rem;
-  line-height: 1.5;
 }
 
-.planner-time-input::-webkit-calendar-picker-indicator {
-  display: none;
+.time-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 65px;
+  margin-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
