@@ -1,15 +1,11 @@
-import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 
-import "./css/tailwind.css";
+import "./css/index.css";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
 );
 
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-);
+// Remove StrictMode for react-beautiful-dnd
+root.render(<App />);
