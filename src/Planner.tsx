@@ -78,7 +78,10 @@ function CourseToDates(courses: CourseStorage[]): DateData[] {
   return dates;
 }
 
-const timeZone = Temporal.Now.timeZoneId();
+// Catalog times are floating wall-clock times; render them in a fixed zone and
+// tell Schedule-X to use the same one (its default is UTC, and a mismatch with
+// the browser zone shifts every event by the UTC offset)
+const timeZone = "UTC";
 
 function toZonedDateTime(date: Date): Temporal.ZonedDateTime {
   return Temporal.ZonedDateTime.from({
@@ -138,6 +141,7 @@ function ScheduleCalendar({ calEvents }: { calEvents: DateData[] }) {
   const calendar = useCalendarApp({
     views: [createViewWeek()],
     selectedDate: Temporal.PlainDate.from("2018-01-01"),
+    timezone: timeZone,
     firstDayOfWeek: 1,
     dayBoundaries: {
       start: `${String(minHour).padStart(2, "0")}:00`,
